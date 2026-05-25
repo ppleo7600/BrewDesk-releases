@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://brewdesk.io/logo.png" alt="BrewDesk Logo" width="80" />
+  <img src="https://brewdesk.io/logo.svg" alt="BrewDesk Logo" width="80" />
 
   # BrewDesk POS
 
