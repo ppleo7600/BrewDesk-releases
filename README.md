@@ -120,7 +120,7 @@ If it says "Apple M…" you want **arm64**. If it says "Intel" you want **x64**.
 |---|---|
 | 🌐 Website | [brewdesk.io](https://brewdesk.io) |
 | 📲 Web App | [brewdesk.io/app](https://brewdesk.io/app) |
-| 📧 Support | [support@brewdesk.io](mailto:support@brewdesk.io) |
+| 📧 Support | [info@brewdesk.io](mailto:info@brewdesk.io) |
 | 📦 Releases | [All releases](https://github.com/ppleo7600/BrewDesk-releases/releases) |
 
 ---
