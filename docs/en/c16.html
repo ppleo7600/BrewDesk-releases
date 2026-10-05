@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>16. Staff &amp; permissions · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4d590d17"></head>
+<title>16. Staff &amp; permissions · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aa7c1b86"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -25,10 +25,11 @@
 <a href="c14.html" class=""><span class="num">14</span>Multiple devices &amp; reliability</a>
 <a href="c15.html" class=""><span class="num">15</span>Working offline</a>
 <a href="c16.html" class="cur"><span class="num">16</span>Staff &amp; permissions</a>
-<a class="sub" href="#c16-add"><span class="num">16.1</span>Add a staff member</a>
-<a class="sub" href="#c16-edit"><span class="num">16.2</span>Change or remove someone — it&#x27;s all one popup now</a>
-<a class="sub" href="#c16-roles"><span class="num">16.3</span>Staff Permissions, the manager PIN &amp; the role chip</a>
-<a class="sub" href="#c16-pinreset"><span class="num">16.4</span>Forgot a PIN? Reset it yourself</a>
+<a class="sub" href="#c16-addon"><span class="num">16.1</span>Staff add-on ON vs OFF — what changes</a>
+<a class="sub" href="#c16-add"><span class="num">16.2</span>Add a staff member</a>
+<a class="sub" href="#c16-edit"><span class="num">16.3</span>Change or remove someone — it&#x27;s all one popup now</a>
+<a class="sub" href="#c16-roles"><span class="num">16.4</span>Staff Permissions, the manager PIN &amp; the role chip</a>
+<a class="sub" href="#c16-pinreset"><span class="num">16.5</span>Forgot a PIN? Reset it yourself</a>
 <a href="c17.html" class=""><span class="num">17</span>Reports &amp; closing the day</a>
 <a href="c18.html" class=""><span class="num">18</span>Receipts &amp; printers</a>
 <a href="c19.html" class=""><span class="num">19</span>Backups</a>
@@ -48,7 +49,22 @@
       <li>You can put a staff member's name on an order any time — even after the sale is done. (This is handy for salons.)</li>
     </ol>
     <div class="tip"><b>A role</b> is the set of things a person is allowed to do. For example, only a manager might be allowed to give refunds.</div>
-    <figure class="shot"><img src="../img/18-staff.png" alt="screenshot" loading="lazy"><figcaption><b>Staff &amp; PIN</b>① Add staff  ·  ② Idle Lock on/off (was "PIN Login")  ·  ③ Set PIN</figcaption></figure>
+    <figure class="shot"><img src="../img/18-staff.png" alt="screenshot" loading="lazy"><figcaption><b>Staff</b>① Add staff  ·  ② Idle Lock on/off (was "PIN Login")  ·  ③ Staff list</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-addon">Staff add-on ON vs OFF — what changes</h3>
+    <p class="intro">Staff features are fully on only when <b>both</b> are true: (1) your plan is <b>Pro or Business</b>, and (2) the <b>Staff toggle</b> in <code>Settings &rsaquo; Add-ons</code> is <b>on</b>. If either is missing, parts are locked as shown below.</p>
+    <figure class="shot"><img src="../img/50-staff-addon-on.png" alt="screenshot" loading="lazy"><figcaption><b>Add-on ON</b>① Staff toggle on  ·  ② Settings next to it opens staff settings</figcaption></figure>
+    <figure class="shot"><img src="../img/51-staff-addon-off.png" alt="screenshot" loading="lazy"><figcaption><b>Add-on OFF</b>① Staff toggle off  ·  ② Even on Pro, the staff-linked features rest</figcaption></figure>
+    <ul>
+      <li><b>ON</b>: the <b>Staff Sales</b> and <b>Attendance Log</b> tabs in Analytics open. Payment History gets an <b>All Staff</b> filter and the Close Day window shows staff chips. With <b>Idle Lock</b> also on, the register shows a <b>Select Profile</b> lock screen so each person switches to their own profile.</li>
+      <li><b>OFF</b>: those tabs show a lock, and the All Staff filter, Close Day staff chips and lock screen do not appear. Adding and viewing people in <code>Settings &rsaquo; Staff Permissions &rsaquo; Staff</code> still works on Pro, whatever the toggle.</li>
+      <li><b>Starter plan</b>: the Add-ons card shows an <b>Upgrade</b> button instead of a toggle. The Staff sub-tab shows only a lock, <b>"Staff management is Pro-only"</b> and an <b>Upgrade Pro</b> button.</li>
+    </ul>
+    <figure class="shot"><img src="../img/52-staff-locked-starter.png" alt="screenshot" loading="lazy"><figcaption><b>Starter plan</b>① Lock icon  ·  ② "Staff management is Pro-only"  ·  ③ Upgrade Pro</figcaption></figure>
+    <figure class="shot"><img src="../img/53-staff-analytics-on.png" alt="screenshot" loading="lazy"><figcaption><b>Analytics, add-on ON</b>① Staff Sales  ·  ② Attendance Log tabs are open</figcaption></figure>
+    <figure class="shot"><img src="../img/54-staff-analytics-off.png" alt="screenshot" loading="lazy"><figcaption><b>Analytics, add-on OFF</b>① Staff Sales  ·  ② Attendance Log tabs are locked</figcaption></figure>
+    <figure class="shot"><img src="../img/55-staff-lockscreen.png" alt="screenshot" loading="lazy"><figcaption><b>Lock screen</b>① Select Profile  ·  ② Pick a profile and enter the PIN</figcaption></figure>
+    <div class="tip"><b>Relation to the Scheduler:</b> Scheduler Staff Columns depend on the <b>Pro plan plus having staff accounts</b>, not on this toggle (see chapter 6). Starter has no Scheduler tab at all.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-add">Add a staff member</h3>
     <ol class="steps">
@@ -87,7 +103,7 @@
     </ol>
     <div class="tip"><b>These five really do block, right now.</b> Five of the boxes are wired end to end — untick one and the person is actually stopped, with a popup saying so: <b>refunds</b>, <b>managing discounts</b>, <b>recalculating a closing &amp; settling tips</b>, <b>adding staff &amp; resetting their PINs</b>, and <b>saving settings</b>. Opening a screen at all is also enforced — see the next two tips. Other rows on the page are stored and waiting; the page doesn't spell out which is which, so it's worth knowing.</div>
     <div class="tip"><b>Managers can no longer save settings by default.</b> This one changed: <b>"saving settings"</b> now starts <b>off</b> for managers. A manager can still open a settings screen and read it, but tapping Save brings up <b>"You don't have permission for this"</b> — <i>"Only the store owner can make this change. You can still view this screen."</i> If your manager used to save settings for you, tick that box here to give it back.</div>
-    <div class="tip"><b>You can hand a manager whole settings tabs.</b> Eleven settings tabs can be opened up to a manager — <b>Hours &amp; shifts</b>, <b>Receipts</b>, <b>Printers</b>, <b>Devices</b>, <b>Staff Permissions</b> (read-only), <b>Activity Log</b>, <b>Support</b>, <b>Tables</b>, <b>Waitlist</b>, <b>Reservations</b> and <b>Staff</b>. Fourteen stay <b>owner-only</b> no matter what, because they're the money and the identity of the shop: Store Info, Tax &amp; Service, Payments, Notifications, Add-ons, Tips, Order Types, Customers, Customer Portal, Scheduler, Display &amp; Branding, Loyalty, Google Drive and Messaging. Those don't have a box to tick.</div>
+    <div class="tip"><b>You can hand a manager whole settings tabs.</b> Eleven settings tabs can be opened up to a manager — <b>Hours &amp; Closures</b>, <b>Receipts</b>, <b>Printers</b>, <b>Devices</b>, <b>Staff Permissions</b> (read-only), <b>Activity Log</b>, <b>Support</b>, <b>Tables</b>, <b>Waitlist</b>, <b>Reservations</b> and <b>Staff</b>. Fourteen stay <b>owner-only</b> no matter what, because they're the money and the identity of the shop: Store Info, Tax &amp; Service, Payments, Notifications, Add-ons, Tips, Order Types, Customers, Customer Portal, Scheduler, Display &amp; Branding, Loyalty, Google Drive and Messaging. Those don't have a box to tick.</div>
     <div class="tip"><b>When someone hits a screen you switched off</b> they get told plainly, in place of the screen: <b>"The store owner turned this screen off for your role"</b> — <i>"Access to this screen was switched off for your role under Settings › Staff Permissions. Signing in again won't restore it — ask the store owner to turn it back on."</i> That last sentence matters: this is a setting, not a glitch, so logging out and back in won't help them.</div>
     <div class="tip"><b>Every save emails you.</b> Whenever permissions are saved, the store owner gets an email saying what changed — so nobody can quietly widen their own access. The same change only emails once a day.</div>
     <div class="tip"><b>Idle Lock off doesn't switch any of this off.</b> Turning <b>Idle Lock</b> off (under <code>Settings › Staff Permissions › Staff</code>) only stops the till locking itself — nothing more. Staff still sign in with their own PIN, the role chip still switches, the activity log still records who did what, and every permission on this page is still enforced. (Turning the <b>Staff</b> add-on off is the switch that stops people being told apart.)</div>
@@ -126,5 +142,5 @@
     <div class="tip"><b>0000 doesn't work anywhere.</b> Signing in with the default gets <b>"The default PIN (0000) can't be used to sign in."</b> — and now switching role with it is refused too: <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b> A forgotten reset can't quietly become an open door.</div>
   </div>
 <div class="pager"><a href="c15.html"><small>← Previous</small>15. Working offline</a><a class="nx" href="c17.html"><small>Next →</small>17. Reports &amp; closing the day</a></div></div></div></div>
-<script src="../assets/search.js?v=4d590d17"></script>
+<script src="../assets/search.js?v=aa7c1b86"></script>
 </body></html>

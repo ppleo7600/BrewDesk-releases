@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>16. 직원 &amp; 권한 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4d590d17"></head>
+<title>16. 직원 &amp; 권한 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aa7c1b86"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
-<div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없어요"></div></div>
+<div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없습니다"></div></div>
 <div class="langsw"><a class="" href="../en/c16.html">EN</a><a class="active" href="c16.html">한국어</a></div>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
@@ -25,10 +25,11 @@
 <a href="c14.html" class=""><span class="num">14</span>여러 대 기기 &amp; 안정성</a>
 <a href="c15.html" class=""><span class="num">15</span>오프라인으로 쓰기</a>
 <a href="c16.html" class="cur"><span class="num">16</span>직원 &amp; 권한</a>
-<a class="sub" href="#c16-add"><span class="num">16.1</span>직원 추가하기</a>
-<a class="sub" href="#c16-edit"><span class="num">16.2</span>직원 정보 고치기 · 내보내기 — 이제 팝업 하나로</a>
-<a class="sub" href="#c16-roles"><span class="num">16.3</span>직원 권한(Staff Permissions) · 매니저 PIN · 직책 칩</a>
-<a class="sub" href="#c16-pinreset"><span class="num">16.4</span>PIN을 잊었을 때 — 직접 다시 정하기</a>
+<a class="sub" href="#c16-addon"><span class="num">16.1</span>Staff 애드온 켬 vs 끔 — 무엇이 달라지나요</a>
+<a class="sub" href="#c16-add"><span class="num">16.2</span>직원 추가하기</a>
+<a class="sub" href="#c16-edit"><span class="num">16.3</span>직원 정보 고치기 · 내보내기 — 이제 팝업 하나로</a>
+<a class="sub" href="#c16-roles"><span class="num">16.4</span>직원 권한(Staff Permissions) · 매니저 PIN · 직책 칩</a>
+<a class="sub" href="#c16-pinreset"><span class="num">16.5</span>PIN을 잊었을 때 — 직접 다시 정하기</a>
 <a href="c17.html" class=""><span class="num">17</span>리포트 &amp; 하루 마감</a>
 <a href="c18.html" class=""><span class="num">18</span>영수증 &amp; 프린터</a>
 <a href="c19.html" class=""><span class="num">19</span>백업</a>
@@ -37,94 +38,109 @@
 <a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c16">
     <h3><span class="n">16</span>직원 &amp; 권한</h3>
-    <p class="intro">여기서 함께 일하는 사람들을 추가해요. 각자 할 수 있는 일을 고르고, 근무 시간을 기록할 수 있어요. (Pro나 Business 플랜이 필요해요.)</p>
-    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Add-ons › Staff</code>에서 켜요(<b>Pro</b> 애드온; 사장님만 켤 수 있어요).</p></div>
+    <p class="intro">이 기능으로 함께 일하는 사람들을 추가합니다. 각자 할 수 있는 일을 지정하고, 근무 시간을 기록할 수 있습니다. (Pro 또는 Business 플랜이 필요합니다.)</p>
+    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Add-ons › Staff</code>에서 켭니다(<b>Pro</b> 애드온; 사장님만 켤 수 있습니다).</p></div>
     <ol class="steps">
-      <li><b>Settings</b>로 가서 직원 페이지를 찾아요.</li>
-      <li><b>Add staff</b>를 탭해요. 사람 이름을 입력해요.</li>
-      <li>역할을 줘요. 역할이 앱에서 할 수 있는 일과 없는 일을 정해요.</li>
-      <li>아무도 안 쓸 때 계산대가 저절로 잠기게 하려면 <b>자리 비움 잠금</b>(Idle Lock)을 켜요. (예전 이름은 "PIN Login"이었어요.)</li>
-      <li><b>근무 기록(time clock)</b>을 켜면 직원이 탭해서 출퇴근을 찍어요. 근무 시간이 리포트에 들어가요.</li>
-      <li>직원 이름을 주문에 언제든 — 판매가 끝난 후에도 — 넣을 수 있어요. (미용실에 편리해요.)</li>
+      <li><b>Settings</b>로 이동해 직원 페이지를 찾습니다.</li>
+      <li><b>Add staff</b>를 탭합니다. 사람 이름을 입력합니다.</li>
+      <li>역할을 지정합니다. 역할이 앱에서 할 수 있는 일과 없는 일을 정합니다.</li>
+      <li>아무도 사용하지 않을 때 계산대가 자동으로 잠기게 하려면 <b>자리 비움 잠금</b>(Idle Lock)을 켭니다. (예전 이름은 "PIN Login"이었습니다.)</li>
+      <li><b>근무 기록(time clock)</b>을 켜면 직원이 탭해서 출퇴근을 기록합니다. 근무 시간이 리포트에 반영됩니다.</li>
+      <li>직원 이름을 주문에 언제든 — 판매가 끝난 후에도 — 넣을 수 있습니다. (미용실에 편리합니다.)</li>
     </ol>
-    <div class="tip"><b>역할</b>은 한 사람이 할 수 있는 일의 모음이에요. 예를 들어 매니저만 환불을 할 수 있게 할 수 있어요.</div>
-    <figure class="shot"><img src="../img/18-staff.png" alt="스크린샷" loading="lazy"><figcaption><b>직원 &amp; PIN</b>① Add staff  ·  ② Idle Lock 켜기/끄기(예전 "PIN Login")  ·  ③ Set PIN</figcaption></figure>
+    <div class="tip"><b>역할</b>은 한 사람이 할 수 있는 일의 모음입니다. 예를 들어 매니저만 환불을 할 수 있게 설정할 수 있습니다.</div>
+    <figure class="shot"><img src="../img/18-staff.png" alt="스크린샷" loading="lazy"><figcaption><b>직원(Staff)</b>① Add staff  ·  ② Idle Lock 켜기/끄기(예전 "PIN Login")  ·  ③ 직원 목록</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-addon">Staff 애드온 켬 vs 끔 — 무엇이 달라지나요</h3>
+    <p class="intro">직원 기능은 <b>두 가지 조건을 모두 충족해야</b> 완전히 켜집니다: ① 플랜이 <b>Pro 또는 Business</b>일 것, ② <code>Settings › Add-ons</code>의 <b>Staff 토글이 켜짐</b>일 것. 둘 중 하나라도 충족하지 못하면 아래와 같이 일부 기능이 잠깁니다.</p>
+    <figure class="shot"><img src="../img/50-staff-addon-on.png" alt="스크린샷" loading="lazy"><figcaption><b>애드온 켬</b>① Staff 토글 켜짐  ·  ② 옆의 Settings로 직원 설정 열기</figcaption></figure>
+    <figure class="shot"><img src="../img/51-staff-addon-off.png" alt="스크린샷" loading="lazy"><figcaption><b>애드온 끔</b>① Staff 토글 꺼짐  ·  ② Pro 플랜이라도 직원 연동 기능은 쉽니다</figcaption></figure>
+    <ul>
+      <li><b>켬</b>: 분석(Analytics)의 <b>Staff Sales</b>·<b>Attendance Log</b> 탭이 열립니다. 결제 내역에 <b>All Staff</b> 필터가 생기고, 마감(Close Day) 창에 직원 칩이 표시됩니다. <b>자리 비움 잠금</b>도 함께 켜 두면 계산대에 <b>Select Profile</b> 잠금 화면이 표시되어 직원이 자기 프로필로 전환합니다.</li>
+      <li><b>끔</b>: 위 탭들은 자물쇠로 잠기고, All Staff 필터·마감 직원 칩·잠금 화면은 나타나지 않습니다. 직원 목록(<code>Settings › Staff Permissions › Staff</code>)에서 사람을 추가하고 확인하는 것은 Pro 플랜이면 토글과 상관없이 가능합니다.</li>
+      <li><b>Starter 플랜</b>: Add-ons 카드에 토글 대신 <b>Upgrade</b> 버튼이 표시됩니다. Staff 서브탭에는 자물쇠와 <b>"Staff management is Pro-only"</b>, 그리고 <b>Upgrade Pro</b> 버튼만 표시됩니다.</li>
+    </ul>
+    <figure class="shot"><img src="../img/52-staff-locked-starter.png" alt="스크린샷" loading="lazy"><figcaption><b>Starter 플랜</b>① 잠금 표시  ·  ② "Staff management is Pro-only"  ·  ③ Upgrade Pro</figcaption></figure>
+    <figure class="shot"><img src="../img/53-staff-analytics-on.png" alt="스크린샷" loading="lazy"><figcaption><b>분석 — 애드온 켬</b>① Staff Sales  ·  ② Attendance Log 탭이 열려 있습니다</figcaption></figure>
+    <figure class="shot"><img src="../img/54-staff-analytics-off.png" alt="스크린샷" loading="lazy"><figcaption><b>분석 — 애드온 끔</b>① Staff Sales  ·  ② Attendance Log 탭이 잠겨 있습니다</figcaption></figure>
+    <figure class="shot"><img src="../img/55-staff-lockscreen.png" alt="스크린샷" loading="lazy"><figcaption><b>잠금 화면</b>① Select Profile  ·  ② 프로필을 골라 PIN 입력</figcaption></figure>
+    <div class="tip"><b>스케줄러와의 관계:</b> 스케줄러의 직원 열(Staff Columns)은 이 토글이 아니라 <b>Pro 플랜 + 등록된 직원 계정</b>이 있는지 여부에 따라 표시됩니다(6장 참고). Starter에는 스케줄러 탭 자체가 없습니다.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-add">직원 추가하기</h3>
     <ol class="steps">
-      <li><b>"Add staff"</b>를 탭해요. 양식이 열려요.</li>
-      <li>사람의 <b>이름(Name)</b>을 입력해요.</li>
-      <li><b>역할(Role)</b>을 골라요 — <b>"Manager"</b>(메뉴, 주문, 리포트 — 결제나 직원 변경은 안 됨) 또는 <b>"Cashier"</b>(주문 받기, 오늘 매출 보기).</li>
-      <li>4자리 <b>PIN</b>을 정하고 확인해요.</li>
-      <li><b>"Add staff"</b>를 탭해요. 이제 직원 목록에 나타나고 자기 PIN으로 로그인할 수 있어요.</li>
+      <li><b>"Add staff"</b>를 탭합니다. 양식이 열립니다.</li>
+      <li>사람의 <b>이름(Name)</b>을 입력합니다.</li>
+      <li><b>역할(Role)</b>을 선택합니다 — <b>"Manager"</b>(메뉴, 주문, 리포트 — 결제나 직원 변경은 불가) 또는 <b>"Cashier"</b>(주문 받기, 오늘 매출 보기).</li>
+      <li>4자리 <b>PIN</b>을 정하고 확인합니다.</li>
+      <li><b>"Add staff"</b>를 탭합니다. 이제 직원 목록에 표시되며 자기 PIN으로 로그인할 수 있습니다.</li>
     </ol>
     <figure class="shot"><img src="../img/41-staffmember.png" alt="스크린샷" loading="lazy"><figcaption><b>직원 추가</b>① 이름  ·  ② 역할 (Manager / Cashier)  ·  ③ PIN (4자리) + 확인  ·  ④ "Add staff"</figcaption></figure>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-edit">직원 정보 고치기 · 내보내기 — 이제 팝업 하나로</h3>
-    <p class="intro">이름 고치기, PIN 바꾸기, 그만둔 사람 숨기기 — 예전엔 같은 줄에 조작 방법이 넷으로 흩어져 있었어요. 이제 문은 하나예요: <b>그 사람을 탭하세요.</b></p>
+    <p class="intro">이름 고치기, PIN 바꾸기, 그만둔 사람 숨기기 — 예전에는 같은 줄에 조작 방법이 넷으로 흩어져 있었습니다. 이제 진입 방법은 하나입니다: <b>그 사람을 탭해 주세요.</b></p>
     <ol class="steps">
-      <li>직원 목록에서 <b>그 사람 줄 아무 데나 탭</b>하면 카드가 열려요.</li>
-      <li>맨 위에 이메일이 크게 보여요 — 사람을 헷갈리지 않게요. 필요하면 <b>이름(Name)</b>을 고쳐요.</li>
-      <li>맡은 일이 바뀌었으면 <b>역할(Role)</b>을 바꿔요. (사장님 본인 줄은 역할이 글자로만 보여요 — 여기서는 못 바꿔요.)</li>
-      <li>PIN을 새로 정하려면 <b>PIN (4자리)</b> 칸 <b>두 곳</b>에 모두 입력해요. <b>두 칸을 다 비워 두면 지금 PIN이 그대로 유지돼요</b> — 칸 아래에 <b>"비워 두면 기존 PIN 이 그대로 유지됩니다."</b>라고 항상 적혀 있어요.</li>
-      <li><b>"Save"</b>를 탭하면 끝이에요.</li>
+      <li>직원 목록에서 <b>그 사람 줄 아무 곳이나 탭</b>하면 카드가 열립니다.</li>
+      <li>맨 위에 이메일이 크게 표시됩니다 — 사람을 혼동하지 않도록 하기 위해서입니다. 필요하면 <b>이름(Name)</b>을 고칩니다.</li>
+      <li>맡은 일이 바뀌었다면 <b>역할(Role)</b>을 변경합니다. (사장님 본인 줄은 역할이 글자로만 표시되며 — 여기서는 변경할 수 없습니다.)</li>
+      <li>PIN을 새로 정하려면 <b>PIN (4자리)</b> 칸 <b>두 곳</b>에 모두 입력합니다. <b>두 칸을 모두 비워 두면 현재 PIN이 그대로 유지됩니다</b> — 칸 아래에 <b>"비워 두면 기존 PIN 이 그대로 유지됩니다."</b>라고 항상 표시됩니다.</li>
+      <li><b>"Save"</b>를 탭하면 완료됩니다.</li>
     </ol>
-    <div class="tip"><b>반쯤 친 PIN은 그냥 넘어가지 않아요.</b> 한 글자라도 넣으면 4자리를 다 채우고 두 번 똑같이 입력해야 저장돼요. 조용히 무시되는 PIN이 아예 없는 PIN보다 나빠요.</div>
-    <div class="tip"><b>지우기 전에 "숨기기"를 생각해 보세요.</b> <b>"Disable"</b>은 POS에서만 안 보이게 하고 지난 주문·근무 기록은 리포트에 그대로 남겨요. <b>"Enable"</b>로 다시 되돌릴 수 있어요. 이 버튼은 <b>사장님에게만</b> 보여요.</div>
-    <div class="tip"><b>사장(오너)으로 잘못 초대했나요?</b> 이제 오너도 지울 수 있어요 — 예전엔 되돌릴 방법이 아예 없었어요. 대신 두 가지는 여전히 막혀 있고, 막힐 때 이유를 알려줘요: <b>본인 계정</b>은 못 지우고, 그 매장의 <b>마지막 오너</b>도 못 지워요. 누구를 지우든 이름 확인을 한 번 받고, 이어서 <b>사장님 PIN</b>을 물어봐요(<b>"직원 제거에 사장님 PIN이 필요합니다."</b>).</div>
-    <p class="foot">참고: 사람을 지우는 것과 가게를 넘기는 것은 다른 일이에요. 매장을 양도하시려면 소유권 이전을 따로 문의해 주세요.</p>
+    <div class="tip"><b>입력이 덜 끝난 PIN은 그냥 넘어가지 않습니다.</b> 한 글자라도 입력하면 4자리를 모두 채우고 두 번 똑같이 입력해야 저장됩니다. 조용히 무시되는 PIN은 PIN이 아예 없는 것보다 나쁘기 때문입니다.</div>
+    <div class="tip"><b>삭제하기 전에 "숨기기"를 고려해 보세요.</b> <b>"Disable"</b>은 POS에서만 보이지 않게 하고 지난 주문·근무 기록은 리포트에 그대로 남깁니다. <b>"Enable"</b>로 다시 되돌릴 수 있습니다. 이 버튼은 <b>사장님에게만</b> 표시됩니다.</div>
+    <div class="tip"><b>사장(오너)으로 잘못 초대했나요?</b> 이제 오너도 삭제할 수 있습니다 — 예전에는 되돌릴 방법이 아예 없었습니다. 다만 두 가지는 여전히 막혀 있으며, 막힐 때 이유를 안내합니다: <b>본인 계정</b>은 삭제할 수 없고, 그 매장의 <b>마지막 오너</b>도 삭제할 수 없습니다. 누구를 삭제하든 이름 확인을 한 번 거치고, 이어서 <b>사장님 PIN</b>을 요청합니다(<b>"직원 제거에 사장님 PIN이 필요합니다."</b>).</div>
+    <p class="foot">참고: 사람을 삭제하는 것과 가게를 넘기는 것은 다른 일입니다. 매장을 양도하려면 소유권 이전을 따로 문의해 주세요.</p>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-roles">직원 권한(Staff Permissions) · 매니저 PIN · 직책 칩</h3>
-    <p class="intro"><b>매니저</b>와 <b>직원</b>이 어느 화면에서 무엇을 할 수 있는지 화면 단위로 정리한 설정 페이지예요. 이제 <b>체크를 켜고 끄고 저장할 수 있어요</b>. 화면도 새로 만들었어요 — 왼쪽은 큰 표, 오른쪽에는 PIN 카드가 세로로 붙어 있어요.</p>
-    <div class="activate"><div class="h">여는 곳</div><p><code>설정(Settings) › 직원 권한(Staff Permissions)</code>. 매니저도 열어서 볼 수 있지만, <b>바꾸고 저장하는 건 사장님만</b> 할 수 있어요. 위에 탭이 두 개 있어요 — <b>"Permissions"</b>(권한, 모든 플랜) · <b>"Staff"</b>(직원 관리, <b>Pro</b> 기능 — "Staff management is Pro-only").</p></div>
+    <p class="intro"><b>매니저</b>와 <b>직원</b>이 어느 화면에서 무엇을 할 수 있는지 화면 단위로 정리한 설정 페이지입니다. 이제 <b>체크를 켜고 끄고 저장할 수 있습니다</b>. 화면도 새로 만들었습니다 — 왼쪽은 큰 표, 오른쪽에는 PIN 카드가 세로로 배치되어 있습니다.</p>
+    <div class="activate"><div class="h">여는 곳</div><p><code>설정(Settings) › 직원 권한(Staff Permissions)</code>. 매니저도 열어서 볼 수 있지만, <b>변경하고 저장하는 것은 사장님만</b> 할 수 있습니다. 위에 탭이 두 개 있습니다 — <b>"Permissions"</b>(권한, 모든 플랜) · <b>"Staff"</b>(직원 관리, <b>Pro</b> 기능 — "Staff management is Pro-only").</p></div>
     <ol class="steps">
-      <li>표에는 칸이 딱 <b>두 개 — "Manager"(매니저)와 "Staff"(직원)</b>예요. 사장님 칸은 없어요. <b>"사장님은 언제나 모든 권한을 갖기"</b> 때문이에요("The owner always has every permission").</li>
-      <li>권한은 화면별로 묶여 있어요. 묶음을 탭하면 펼쳐지고, <b>"Expand all"</b>(전체 펼치기)을 누르면 한 번에 다 열려요.</li>
-      <li>해당 직책의 체크를 켜거나 꺼요. 묶음 제목에 지금 상태가 한눈에 보여요 — <b>"All on"</b>(전부 켜짐) · <b>"Partly on"</b>(일부 켜짐) · <b>"Off"</b>(꺼짐).</li>
-      <li>줄 옆의 색 알약을 눈여겨보세요: <b>"PIN approval"</b>(PIN 승인 — 매니저가 PIN을 먼저 입력해야 함) · <b>"Limited view"</b>(일부만 보임) · <b>"Restricted"</b>(막힘) · <b>"Open the page"</b>(그 화면이 아예 보이는지 말지를 정하는 줄).</li>
-      <li>목록이 길어 못 찾겠으면 <b>"Search permissions"</b>(권한 검색)를 쓰거나, <b>"Differences only"</b>(차이만 보기)를 켜서 매니저와 직원이 다른 줄만 볼 수 있어요.</li>
-      <li>다 골랐으면 설정 화면 위쪽의 <b>저장</b>을 누르세요. 아직 저장 안 된 줄이 몇 개인지 세어 주고, <b>"Discard changes"</b>(변경 취소)를 누르면 되돌아가요.</li>
+      <li>표에는 칸이 딱 <b>두 개 — "Manager"(매니저)와 "Staff"(직원)</b>입니다. 사장님 칸은 없습니다. <b>"사장님은 언제나 모든 권한을 갖기"</b> 때문입니다("The owner always has every permission").</li>
+      <li>권한은 화면별로 묶여 있습니다. 묶음을 탭하면 펼쳐지고, <b>"Expand all"</b>(전체 펼치기)을 누르면 한 번에 모두 열립니다.</li>
+      <li>해당 직책의 체크를 켜거나 끕니다. 묶음 제목에 현재 상태가 한눈에 표시됩니다 — <b>"All on"</b>(전부 켜짐) · <b>"Partly on"</b>(일부 켜짐) · <b>"Off"</b>(꺼짐).</li>
+      <li>줄 옆의 색 알약을 눈여겨봐 주세요: <b>"PIN approval"</b>(PIN 승인 — 매니저가 PIN을 먼저 입력해야 함) · <b>"Limited view"</b>(일부만 표시) · <b>"Restricted"</b>(차단) · <b>"Open the page"</b>(그 화면이 아예 보이는지 여부를 정하는 줄).</li>
+      <li>목록이 길어 찾기 어렵다면 <b>"Search permissions"</b>(권한 검색)를 사용하거나, <b>"Differences only"</b>(차이만 보기)를 켜서 매니저와 직원이 다른 줄만 볼 수 있습니다.</li>
+      <li>모두 선택했다면 설정 화면 위쪽의 <b>저장</b>을 눌러 주세요. 아직 저장되지 않은 줄이 몇 개인지 표시되며, <b>"Discard changes"</b>(변경 취소)를 누르면 되돌아갑니다.</li>
     </ol>
-    <div class="tip"><b>이 다섯 개는 지금 확실하게 막아요.</b> 다섯 항목은 끝까지 배선돼 있어서, 체크를 끄면 그 사람이 실제로 막히고 팝업으로 알려줘요: <b>환불</b>, <b>할인 관리</b>, <b>마감 재계산 · 팁 정산</b>, <b>직원 추가 · 직원 PIN 초기화</b>, <b>설정 저장</b>. 화면을 여는 것 자체도 집행돼요 — 아래 두 팁을 보세요. 나머지 줄은 저장만 되고 기다리는 상태예요. 화면에 이 구분이 표시되지 않으니 알아두시면 좋아요.</div>
-    <div class="tip"><b>매니저는 이제 기본적으로 설정을 저장할 수 없어요.</b> 이건 바뀐 점이에요 — <b>설정 저장</b> 권한이 매니저에게 기본 <b>꺼짐</b>으로 바뀌었어요. 매니저는 설정 화면을 열어서 볼 수는 있지만, Save를 누르면 <b>"You don't have permission for this"</b>(이 작업에 대한 권한이 없습니다) 팝업이 떠요 — <i>"이 변경은 매장 대표만 할 수 있습니다. 보기는 그대로 가능합니다."</i> 매니저가 대신 설정을 저장해 주던 매장이라면, 여기서 그 체크를 켜 주세요.</div>
-    <div class="tip"><b>설정 탭을 통째로 매니저에게 열어줄 수 있어요.</b> 매니저에게 열어줄 수 있는 설정 탭은 열한 개예요 — <b>Hours &amp; shifts</b>(영업시간·교대), <b>Receipts</b>(영수증), <b>Printers</b>(프린터), <b>Devices</b>(기기), <b>Staff Permissions</b>(직원 권한 — 보기 전용), <b>Activity Log</b>(활동 기록), <b>Support</b>(고객지원), <b>Tables</b>(테이블), <b>Waitlist</b>(대기 명단), <b>Reservations</b>(예약), <b>Staff</b>(직원). 반대로 열네 개는 무슨 일이 있어도 <b>대표 전용</b>이에요 — 돈과 매장의 신원에 해당하는 것들이라서요: Store Info, Tax &amp; Service, Payments, Notifications, Add-ons, Tips, Order Types, Customers, Customer Portal, Scheduler, Display &amp; Branding, Loyalty, Google Drive, Messaging. 이 탭들은 켜고 끄는 체크가 아예 없어요.</div>
-    <div class="tip"><b>사장님이 꺼 둔 화면에 들어가면</b> 화면 대신 이렇게 알려줘요: <b>"The store owner turned this screen off for your role"</b>(대표가 이 직책에서 이 화면을 꺼 두었습니다) — <i>"설정 › 직원 권한 화면에서 이 직책의 이 화면 접근이 꺼졌습니다. 다시 로그인해도 열리지 않습니다 — 매장 대표에게 다시 켜 달라고 요청하세요."</i> 마지막 문장이 중요해요. 고장이 아니라 설정이라서, 로그아웃하고 다시 들어와도 열리지 않아요.</div>
-    <div class="tip"><b>저장할 때마다 사장님께 메일이 가요.</b> 권한이 저장되면 무엇이 바뀌었는지 사장님 메일로 알려줘요 — 누가 조용히 자기 권한을 넓히는 일을 막기 위해서예요. 같은 변경은 하루 한 통만 보내요.</div>
-    <div class="tip"><b>「자리 비움 잠금」을 꺼도 이 권한들은 그대로 작동해요.</b> <b>자리 비움 잠금</b>(Idle Lock, <code>설정 › 직원 권한 › Staff</code>)을 끄면 <b>계산대가 저절로 잠기는 것만</b> 멈춰요. 그 외엔 아무것도 안 바뀌어요 — 직원은 여전히 자기 PIN으로 로그인하고, 직책 칩도 전환되고, 활동 기록에 누가 했는지 남고, 이 페이지의 권한도 전부 그대로 집행돼요. (사람을 구분하지 않게 만드는 스위치는 <b>Staff 애드온</b>을 끄는 거예요.)</div>
-    <p class="sub" style="margin:16px 0 4px"><b>PIN 카드 — 이제 이 페이지 오른쪽에 있어요</b></p>
-    <p class="intro"><b>사장님 PIN</b>과 <b>매니저 PIN</b> 카드가 이 페이지 오른쪽에 세로로 붙어 있어요. 카드마다 상태가 한눈에 보여요 — <b>"Set"</b>(설정됨) · <b>"Default 0000"</b>(기본값 0000) · <b>"Not set"</b>(미설정). 사장님 카드 아래에는 설정돼 있으면 <b>"10분 동안 안 쓰면 잠겨요"</b>(Locks after 10 min idle), 아직이면 <b>"설정하면 잠금 화면을 쓸 수 있어요"</b>라고 적혀요. 매니저 PIN이 있으면 그날 근무하는 사람이 계정을 따로 만들지 않고도 매니저 일을 할 수 있어요. 설정·변경은 <b>사장님만</b> 할 수 있어요. 매니저가 이 페이지를 열면 자물쇠 표시와 함께 <b>"Only the owner can change this card."</b>(이 카드는 대표만 바꿀 수 있습니다)라고 나와요.</p>
-    <div class="tip"><b>아직 0000이면 매니저 전환이 아예 막혀요.</b> 카드가 그렇게 알려줘요 — 상태 칩 <b>"Default 0000"</b>, 그 아래 <b>"바꾸기 전에는 매니저로 전환할 수 없어요"</b>. 매니저 PIN이 공장 기본값 0000인 동안에는 <b>이 계산대를 매니저로 바꿀 수가 없어요</b>. 0000을 입력하면 <b>"이 PIN은 아직 기본값 그대로라 직책 전환에 쓸 수 없어요. 새 PIN을 먼저 정해 주세요."</b>라고 막아요. 한 번 바꾸면 매니저 전환이 정상으로 돌아와요. (일부러 그렇게 했어요 — 매장 사람 모두가 아는 코드는 자물쇠가 아니니까요.)</div>
-    <div class="tip"><b>쓰기 전에 알아 두실 것:</b> 활동 기록에는 <b>"매니저"</b>까지만 남고 <b>누구인지</b>는 남지 않아요. 누가 했는지까지 알아야 한다면 직원별 계정(Pro)을 쓰세요.</div>
+    <div class="tip"><b>다음 다섯 가지는 현재 확실하게 차단됩니다.</b> 다섯 항목은 끝까지 연결되어 있어서, 체크를 끄면 그 사람이 실제로 차단되고 팝업으로 안내됩니다: <b>환불</b>, <b>할인 관리</b>, <b>마감 재계산 · 팁 정산</b>, <b>직원 추가 · 직원 PIN 초기화</b>, <b>설정 저장</b>. 화면을 여는 것 자체도 적용됩니다 — 아래 두 팁을 참고해 주세요. 나머지 줄은 저장만 되고 대기하는 상태입니다. 화면에 이 구분이 표시되지 않으므로 알아 두시기 바랍니다.</div>
+    <div class="tip"><b>매니저는 이제 기본적으로 설정을 저장할 수 없습니다.</b> 이는 변경된 점입니다 — <b>설정 저장</b> 권한이 매니저에게 기본 <b>꺼짐</b>으로 바뀌었습니다. 매니저는 설정 화면을 열어서 볼 수는 있지만, Save를 누르면 <b>"You don't have permission for this"</b>(이 작업에 대한 권한이 없습니다) 팝업이 표시됩니다 — <i>"이 변경은 매장 대표만 할 수 있습니다. 보기는 그대로 가능합니다."</i> 매니저가 대신 설정을 저장하던 매장이라면, 여기서 해당 체크를 켜 주세요.</div>
+    <div class="tip"><b>설정 탭을 통째로 매니저에게 열어 줄 수 있습니다.</b> 매니저에게 열어 줄 수 있는 설정 탭은 열한 개입니다 — <b>Hours &amp; Closures</b>(영업시간·교대), <b>Receipts</b>(영수증), <b>Printers</b>(프린터), <b>Devices</b>(기기), <b>Staff Permissions</b>(직원 권한 — 보기 전용), <b>Activity Log</b>(활동 기록), <b>Support</b>(고객지원), <b>Tables</b>(테이블), <b>Waitlist</b>(대기 명단), <b>Reservations</b>(예약), <b>Staff</b>(직원). 반대로 열네 개는 어떤 경우에도 <b>대표 전용</b>입니다 — 돈과 매장의 신원에 해당하는 항목들이기 때문입니다: Store Info, Tax &amp; Service, Payments, Notifications, Add-ons, Tips, Order Types, Customers, Customer Portal, Scheduler, Display &amp; Branding, Loyalty, Google Drive, Messaging. 이 탭들은 켜고 끄는 체크가 아예 없습니다.</div>
+    <div class="tip"><b>사장님이 꺼 둔 화면에 들어가면</b> 화면 대신 다음과 같이 안내합니다: <b>"The store owner turned this screen off for your role"</b>(대표가 이 직책에서 이 화면을 꺼 두었습니다) — <i>"설정 › 직원 권한 화면에서 이 직책의 이 화면 접근이 꺼졌습니다. 다시 로그인해도 열리지 않습니다 — 매장 대표에게 다시 켜 달라고 요청하세요."</i> 마지막 문장이 중요합니다. 고장이 아니라 설정이므로, 로그아웃하고 다시 들어와도 열리지 않습니다.</div>
+    <div class="tip"><b>저장할 때마다 사장님께 메일이 발송됩니다.</b> 권한이 저장되면 무엇이 바뀌었는지 사장님 메일로 알려 줍니다 — 누군가 조용히 자기 권한을 넓히는 일을 막기 위해서입니다. 같은 변경은 하루 한 통만 발송합니다.</div>
+    <div class="tip"><b>「자리 비움 잠금」을 꺼도 이 권한들은 그대로 작동합니다.</b> <b>자리 비움 잠금</b>(Idle Lock, <code>설정 › 직원 권한 › Staff</code>)을 끄면 <b>계산대가 자동으로 잠기는 기능만</b> 중단됩니다. 그 외에는 아무것도 바뀌지 않습니다 — 직원은 여전히 자기 PIN으로 로그인하고, 직책 칩도 전환되며, 활동 기록에 누가 했는지 남고, 이 페이지의 권한도 모두 그대로 적용됩니다. (사람을 구분하지 않게 만드는 스위치는 <b>Staff 애드온</b>을 끄는 것입니다.)</div>
+    <p class="sub" style="margin:16px 0 4px"><b>PIN 카드 — 이제 이 페이지 오른쪽에 있습니다</b></p>
+    <p class="intro"><b>사장님 PIN</b>과 <b>매니저 PIN</b> 카드가 이 페이지 오른쪽에 세로로 배치되어 있습니다. 카드마다 상태가 한눈에 표시됩니다 — <b>"Set"</b>(설정됨) · <b>"Default 0000"</b>(기본값 0000) · <b>"Not set"</b>(미설정). 사장님 카드 아래에는 설정되어 있으면 <b>"10분 동안 안 쓰면 잠겨요"</b>(Locks after 10 min idle), 아직 설정 전이면 <b>"설정하면 잠금 화면을 쓸 수 있어요"</b>라고 표시됩니다. 매니저 PIN이 있으면 그날 근무하는 사람이 계정을 따로 만들지 않고도 매니저 업무를 할 수 있습니다. 설정·변경은 <b>사장님만</b> 할 수 있습니다. 매니저가 이 페이지를 열면 자물쇠 표시와 함께 <b>"Only the owner can change this card."</b>(이 카드는 대표만 바꿀 수 있습니다)라고 표시됩니다.</p>
+    <div class="tip"><b>아직 0000이면 매니저 전환이 아예 차단됩니다.</b> 카드가 그렇게 안내합니다 — 상태 칩 <b>"Default 0000"</b>, 그 아래 <b>"바꾸기 전에는 매니저로 전환할 수 없어요"</b>. 매니저 PIN이 공장 기본값 0000인 동안에는 <b>이 계산대를 매니저로 전환할 수 없습니다</b>. 0000을 입력하면 <b>"이 PIN은 아직 기본값 그대로라 직책 전환에 쓸 수 없어요. 새 PIN을 먼저 정해 주세요."</b>라며 차단합니다. 한 번 변경하면 매니저 전환이 정상으로 돌아옵니다. (의도된 동작입니다 — 매장 사람 모두가 아는 코드는 자물쇠가 아니기 때문입니다.)</div>
+    <div class="tip"><b>사용하기 전에 알아 두실 점:</b> 활동 기록에는 <b>"매니저"</b>까지만 남고 <b>누구인지</b>는 남지 않습니다. 누가 했는지까지 알아야 한다면 직원별 계정(Pro)을 사용해 주세요.</div>
     <p class="sub" style="margin:16px 0 4px"><b>직책 칩 — 지금 이 포스가 누구인지 바꾸기</b></p>
     <ol class="steps">
-      <li>화면 위쪽을 보면 색깔 칩이 있어요 — 이 포스가 지금 무엇으로 동작하는지 알려줘요: <b>사장님</b>(주황) · <b>매니저</b>(파랑) · <b>직원</b>(회색).</li>
-      <li>칩을 탭하면 직책 3줄이 있는 작은 패널이 열려요.</li>
-      <li><b>내려가기</b>(예: 사장님 → 직원, 계산대를 직원에게 맡길 때)는 <b>탭 한 번</b>이면 돼요. PIN을 안 물어요 — 권한을 내려놓는 일이니까요.</li>
-      <li><b>올라가기</b>는 그 직책의 PIN을 물어요("매니저 PIN을 입력하세요"). 이 기기가 갈 수 없는 줄은 <b>누르기 전부터</b> 잠겨 보여서, 눌러도 안 되는 막다른 길로 가지 않아요.</li>
+      <li>화면 위쪽에 색깔 칩이 있습니다 — 이 포스가 현재 어떤 직책으로 동작하는지 알려 줍니다: <b>사장님</b>(주황) · <b>매니저</b>(파랑) · <b>직원</b>(회색).</li>
+      <li>칩을 탭하면 직책 3줄이 있는 작은 패널이 열립니다.</li>
+      <li><b>내려가기</b>(예: 사장님 → 직원, 계산대를 직원에게 맡길 때)는 <b>탭 한 번</b>이면 됩니다. PIN을 요청하지 않습니다 — 권한을 내려놓는 일이기 때문입니다.</li>
+      <li><b>올라가기</b>는 해당 직책의 PIN을 요청합니다("매니저 PIN을 입력하세요"). 이 기기가 갈 수 없는 줄은 <b>누르기 전부터</b> 잠겨 보이므로, 눌러도 되지 않는 막다른 길로 가지 않습니다.</li>
     </ol>
-    <div class="tip"><b>내려가는 길에 스스로 갇히지 않게 막아줘요.</b> 다시 올라올 수 있는 PIN이 하나도 없으면, 내려가기 자체가 미리 거부돼요 — <b>"Set the owner PIN first. Without it, this device could not switch back up after stepping down."</b>(대표 PIN을 먼저 설정하세요. 대표 PIN이 없으면 직책을 내린 뒤 이 기기가 다시 올라올 수 없어요.) 대표 PIN을 설정하면 다시 탭 한 번이면 돼요. (공장 기본값 0000인 PIN은 '돌아올 길'로 인정되지 않아요.)</div>
-    <div class="tip"><b>PIN을 다섯 번 틀렸다면?</b> 그 기기 하나만 <b>15분</b> 동안 PIN 전환이 멈춰요 — <b>"이 기기에서 PIN 시도가 너무 많아 몇 분간 잠겼습니다. 다른 기기와 개인 PIN 로그인은 영향을 받지 않습니다."</b> 뒷부분이 중요해요. 다른 계산대는 그대로 돌아가고, 자기 직원 PIN이 있는 사람은 평소처럼 로그인할 수 있어서 손님 줄은 계속 움직여요. 여러 번 틀린 사실은 사장님 메일로도 알려주고, 하루에 최대 한 통이에요.</div>
+    <div class="tip"><b>내려가는 도중 스스로 갇히지 않도록 막아 줍니다.</b> 다시 올라올 수 있는 PIN이 하나도 없으면, 내려가기 자체가 미리 거부됩니다 — <b>"Set the owner PIN first. Without it, this device could not switch back up after stepping down."</b>(대표 PIN을 먼저 설정하세요. 대표 PIN이 없으면 직책을 내린 뒤 이 기기가 다시 올라올 수 없어요.) 대표 PIN을 설정하면 다시 탭 한 번으로 가능합니다. (공장 기본값 0000인 PIN은 '돌아올 길'로 인정되지 않습니다.)</div>
+    <div class="tip"><b>PIN을 다섯 번 틀렸다면?</b> 그 기기 한 대만 <b>15분</b> 동안 PIN 전환이 중단됩니다 — <b>"이 기기에서 PIN 시도가 너무 많아 몇 분간 잠겼습니다. 다른 기기와 개인 PIN 로그인은 영향을 받지 않습니다."</b> 뒷부분이 중요합니다. 다른 계산대는 그대로 작동하고, 자기 직원 PIN이 있는 사람은 평소처럼 로그인할 수 있어 손님 줄은 계속 이어집니다. 여러 번 틀린 사실은 사장님 메일로도 알려 주며, 하루에 최대 한 통입니다.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-pinreset">PIN을 잊었을 때 — 직접 다시 정하기</h3>
-    <p class="intro">PIN이 기억에서 사라졌다고 지원팀에 전화하실 필요 없어요. PIN마다 돌아오는 길이 따로 있어요.</p>
+    <p class="intro">PIN이 기억나지 않는다고 지원팀에 전화하실 필요는 없습니다. PIN마다 복구 방법이 따로 있습니다.</p>
     <p class="sub" style="margin:16px 0 4px"><b>사장님 PIN — 이메일로 오는 코드</b></p>
-    <div class="activate"><div class="h">누르는 곳</div><p>화면 위쪽의 <b>직책 칩</b>을 탭하면 열리는 패널(직책을 바꿀 때 쓰는 그 패널)의 사장님 줄에 <b>"PIN을 잊으셨나요?"</b>(Forgot your PIN?)가 있어요. 이 기기에 <b>사장님으로 로그인</b>돼 있어야 해요.</p></div>
+    <div class="activate"><div class="h">누르는 곳</div><p>화면 위쪽의 <b>직책 칩</b>을 탭하면 열리는 패널(직책을 바꿀 때 쓰는 그 패널)의 사장님 줄에 <b>"PIN을 잊으셨나요?"</b>(Forgot your PIN?)가 있습니다. 이 기기에 <b>사장님으로 로그인</b>되어 있어야 합니다.</p></div>
     <ol class="steps">
-      <li><b>"PIN을 잊으셨나요?"</b>를 탭해요. 가입 이메일로 <b>6자리 코드</b>를 보내드려요 — <b>"가입 이메일로 6자리 코드를 보냈습니다. 아래에 코드와 새 PIN을 입력해 주세요."</b></li>
-      <li><b>이메일 인증 코드</b>를 입력하고, <b>새 PIN(4자리)</b>을 넣고 한 번 더 확인해요.</li>
-      <li><b>"새 PIN 설정"</b>을 탭하면 끝이에요 — <b>"오너 PIN이 재설정됐습니다. 다음부터 새 PIN을 사용하세요."</b></li>
+      <li><b>"PIN을 잊으셨나요?"</b>를 탭합니다. 가입 이메일로 <b>6자리 코드</b>를 보내 드립니다 — <b>"가입 이메일로 6자리 코드를 보냈습니다. 아래에 코드와 새 PIN을 입력해 주세요."</b></li>
+      <li><b>이메일 인증 코드</b>를 입력하고, <b>새 PIN(4자리)</b>을 넣고 한 번 더 확인합니다.</li>
+      <li><b>"새 PIN 설정"</b>을 탭하면 완료됩니다 — <b>"오너 PIN이 재설정됐습니다. 다음부터 새 PIN을 사용하세요."</b></li>
     </ol>
-    <div class="tip"><b>코드는 오래 기다려 주지 않아요.</b> <b>10분</b>이 지나면 만료되고, <b>5번 틀리면</b> 잠겨요 — <b>"시도 횟수를 초과했습니다. 코드를 새로 요청해 주세요."</b> 그냥 새 코드를 다시 받으시면 돼요. 너무 단순한 PIN도 거절해요 — <b>"너무 단순한 PIN이에요 — 다른 4자리를 골라 주세요."</b></div>
-    <div class="tip"><b>본인이 바꿔도 메일이 와요.</b> 사장님 PIN을 재설정하면 언제나 사장님 메일함으로 확인 메일이 가요. 내가 한 적 없는 메일이 왔다면 그게 가장 빠른 경고예요.</div>
-    <p class="sub" style="margin:16px 0 4px"><b>매니저 PIN — 사장님이 새로 정하면 돼요</b></p>
+    <div class="tip"><b>코드는 오래 유효하지 않습니다.</b> <b>10분</b>이 지나면 만료되고, <b>5번 틀리면</b> 잠깁니다 — <b>"시도 횟수를 초과했습니다. 코드를 새로 요청해 주세요."</b> 새 코드를 다시 받으시면 됩니다. 너무 단순한 PIN도 거절합니다 — <b>"너무 단순한 PIN이에요 — 다른 4자리를 골라 주세요."</b></div>
+    <div class="tip"><b>본인이 변경해도 메일이 발송됩니다.</b> 사장님 PIN을 재설정하면 언제나 사장님 메일함으로 확인 메일이 발송됩니다. 본인이 하지 않은 변경에 대한 메일이 왔다면 그것이 가장 빠른 경고입니다.</div>
+    <p class="sub" style="margin:16px 0 4px"><b>매니저 PIN — 사장님이 새로 정하면 됩니다</b></p>
     <ol class="steps">
-      <li><code>설정 › 직원 권한</code>을 열고 오른쪽의 <b>매니저 PIN</b> 카드를 찾으세요.</li>
-      <li><b>"Change PIN"</b>(PIN 변경 — 아직 없으면 <b>"Set PIN"</b>)을 누르고 새 코드를 입력하세요. <b>사장님만</b> 할 수 있어요.</li>
-      <li>카운터에 새 코드를 알려주세요.</li>
+      <li><code>설정 › 직원 권한</code>을 열고 오른쪽의 <b>매니저 PIN</b> 카드를 찾습니다.</li>
+      <li><b>"Change PIN"</b>(PIN 변경 — 아직 없으면 <b>"Set PIN"</b>)을 누르고 새 코드를 입력합니다. <b>사장님만</b> 할 수 있습니다.</li>
+      <li>카운터에 새 코드를 알려 주세요.</li>
     </ol>
-    <div class="tip"><b>매니저 PIN의 "0000으로 초기화" 버튼은 없어졌어요.</b> 예전엔 있었지만 이제 없고, 아쉬울 것도 없어요 — 0000으로 되돌리는 건 매장 사람 모두가 아는 코드를 남기는 것뿐이고, 0000은 어차피 쓸 수 없으니까요. 그냥 새 PIN을 바로 정하세요. 직원 한 명의 PIN은 다른 이야기예요 — <code>설정 › 직원 권한 › Staff</code>에서 그 직원을 열면 <b>"Reset to 0000"</b>(0000으로 초기화)이 그대로 있고, <b>사장님과 매니저</b> 둘 다 쓸 수 있어요. 초기화한 뒤에는 본인이 바로 새 PIN을 정하게 해 주세요.</div>
-    <div class="tip"><b>0000은 어디서도 안 통해요.</b> 기본값 그대로 로그인하려 하면 <b>"기본 PIN(0000)은 로그인에 사용할 수 없습니다."</b>라고 막아요. 그리고 이제 <b>직책 전환도</b> 거절돼요 — <b>"이 PIN은 아직 기본값 그대로라 직책 전환에 쓸 수 없어요. 새 PIN을 먼저 정해 주세요."</b> 초기화해 두고 잊은 PIN이 조용히 열린 문이 되면 안 되니까요.</div>
+    <div class="tip"><b>매니저 PIN의 "0000으로 초기화" 버튼은 없어졌습니다.</b> 예전에는 있었지만 이제 없으며, 아쉬울 것도 없습니다 — 0000으로 되돌리는 것은 매장 사람 모두가 아는 코드를 남기는 것일 뿐이고, 0000은 어차피 사용할 수 없기 때문입니다. 새 PIN을 바로 정해 주세요. 직원 한 명의 PIN은 다릅니다 — <code>설정 › 직원 권한 › Staff</code>에서 그 직원을 열면 <b>"Reset to 0000"</b>(0000으로 초기화)이 그대로 있으며, <b>사장님과 매니저</b> 모두 사용할 수 있습니다. 초기화한 뒤에는 본인이 바로 새 PIN을 정하도록 안내해 주세요.</div>
+    <div class="tip"><b>0000은 어디서도 사용할 수 없습니다.</b> 기본값 그대로 로그인하려 하면 <b>"기본 PIN(0000)은 로그인에 사용할 수 없습니다."</b>라며 차단합니다. 그리고 이제 <b>직책 전환도</b> 거절됩니다 — <b>"이 PIN은 아직 기본값 그대로라 직책 전환에 쓸 수 없어요. 새 PIN을 먼저 정해 주세요."</b> 초기화해 두고 잊은 PIN이 조용히 열린 문이 되어서는 안 되기 때문입니다.</div>
   </div>
 <div class="pager"><a href="c15.html"><small>← 이전</small>15. 오프라인으로 쓰기</a><a class="nx" href="c17.html"><small>다음 →</small>17. 리포트 &amp; 하루 마감</a></div></div></div></div>
-<script src="../assets/search.js?v=4d590d17"></script>
+<script src="../assets/search.js?v=aa7c1b86"></script>
 </body></html>
