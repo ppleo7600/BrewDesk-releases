@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17. 리포트 &amp; 하루 마감 · BrewDesk</title><link rel="stylesheet" href="../assets/manual.css"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
+<a class="navbrand" href="index.html"><span class="dot"></span>BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없어요"></div></div>
+<div class="langsw"><a class="" href="../en/c17.html">EN</a><a class="active" href="c17.html">한국어</a></div>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
+<a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
+<a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
+<a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
+<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 약속</a>
+<a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
+<a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
+<a href="c9.html" class=""><span class="num">9</span>환불</a>
+<a href="c10.html" class=""><span class="num">10</span>고객 &amp; 단골 혜택</a>
+<a href="c11.html" class=""><span class="num">11</span>QR 코드 주문</a>
+<a href="c12.html" class=""><span class="num">12</span>고객에게 메시지 보내기</a>
+<a href="c13.html" class=""><span class="num">13</span>기기 모드 &amp; 고객 디스플레이</a>
+<a href="c14.html" class=""><span class="num">14</span>여러 대 기기 &amp; 안정성</a>
+<a href="c15.html" class=""><span class="num">15</span>오프라인으로 쓰기</a>
+<a href="c16.html" class=""><span class="num">16</span>직원 &amp; 권한</a>
+<a href="c17.html" class="cur"><span class="num">17</span>리포트 &amp; 하루 마감</a>
+<a class="sub" href="#c17-export"><span class="num">17.1</span>매출 내보내기 (회계사용)</a>
+<a class="sub" href="#c17-supplementary"><span class="num">17.2</span>늦은 주문 &amp; 놓친 마감 (Additional Closing)</a>
+<a class="sub" href="#c17-drawer"><span class="num">17.3</span>현금 서랍 (Cash Drawer)</a>
+<a href="c18.html" class=""><span class="num">18</span>영수증 &amp; 프린터</a>
+<a href="c19.html" class=""><span class="num">19</span>백업</a>
+<a href="c20.html" class=""><span class="num">20</span>애드온 &amp; 추가 기능</a>
+<a href="c21.html" class=""><span class="num">21</span>플랜 &amp; 결제</a>
+<a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c17">
+    <h3><span class="n">17</span>리포트 &amp; 하루 마감</h3>
+    <p class="intro">하루가 끝나면 가게가 어땠는지 확인하고 하루를 "마감"해요. 그날의 숫자를 안전하게 고정해요. 방법이에요.</p>
+    <ol class="steps">
+      <li><b>Reports</b>를 탭해 매출, 결제 방식, 가장 잘 팔린 상품, 직원별 판매를 봐요.</li>
+      <li><b>일일 인사이트</b>를 읽어요. 하루를 쉬운 말로 짧게 정리하고 도움 되는 팁을 줘요. (Business 플랜은 매주 이메일로도 받아요.)</li>
+      <li>드로어의 현금을 세서 BrewDesk가 보여주는 숫자와 맞는지 확인해요. 넣은 돈은 더하고, 꺼낸 돈은 적어요.</li>
+      <li>현금이 맞으면 <b>Close Day</b>를 탭해요. 그날의 전체 요약인 Z-Report가 저장돼요.</li>
+    </ol>
+    <div class="tip"><b>하루 마감이 뭐예요?</b> 그날 일을 마무리하고 합계를 저장한다는 뜻일 뿐이에요. 매일 밤 하면 돈 기록이 깔끔하게 유지돼요.</div>
+    <div class="tip"><b>연습 때 넣은 주문은 숨기지 않고 표시해요.</b> 라이브 전환 전에 넣은 기록에는 <b>결제 내역</b>과 <b>마감 내역</b>에서 <b>"Sandbox data"</b>(샌드박스 자료) 배지가 붙어요 — <b>"이 매장이 라이브 전환되기 전, 연습 모드에서 기록된 자료입니다."</b> <b>통계(Analytics)</b> 화면은 한 걸음 더 나가서 <b>숫자 자체에서 아예 빼요</b>. 매출·건수·직원별 판매 모두 실제 영업분만 세요. 예전보다 합계가 낮아 보인다면 그 때문이고, 지금 숫자가 맞는 숫자예요.</div>
+    <div class="tip"><b>오늘 부분 환불이 있었나요?</b> Z-Report에 그날의 부분 환불 합계를 보여주는 <b>"Refunds"</b> 줄이 노란색으로 나타나요. 이 금액은 이미 아래 <b>Grand Total(총합계)</b>에 반영돼 있어요 — 이 줄은 사장님이나 회계사가 숫자를 맞춰보기 쉽도록 참고로 보여주는 거예요. 회계 내보내기 파일의 "Net Profit"은 이제 <b>"Net Revenue (after tax)"</b>로 이름이 바뀌었어요 — 원가(재료비 등)는 아직 빼지 않은 매출이라는 뜻이에요.</div>
+    <div class="tip"><b>오늘 서비스로 드린 게 있나요?</b> 마감 요약의 할인 줄 아래에 <b>따로 한 줄</b>이 생겼어요 — <b>"무료 제공 (3)"</b>(FREE ITEMS) 아래에 <b>"합계에서 차감되지 않음"</b>이라고 적혀요. 서비스는 할인과 달라요. 할인은 판매하면서 덜 받기로 한 돈이고, 서비스는 <b>돌아오는 것 없이 나간 재고</b>예요. 이 둘이 갈려 있어야 "한 잔쯤이야"가 일주일에 스무 잔이 된 걸 알아챌 수 있어요.</div>
+    <div class="tip"><b>현금을 동전 단위로 반올림하고 있나요?</b> 현금 결제 우수리(<b>7.3</b>)를 켜 두었다면 Payment Breakdown에 한 줄이 늘어요 — Total Payment Collected 바로 아래 <b>"Cash Rounding"</b>, 그 밑에 <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b>(현금 결제에서 안 받은 동전. 수금액 + 이 값 = 총 합계). 수금액과 총 합계가 다른 이유가 이 줄이고, 회계사에게 건네줄 숫자도 이거예요. 우수리를 껐거나 오늘 반올림된 게 없으면 이 줄은 아예 안 나와요.</div>
+    <div class="tip"><b>주문 취소는 항상 이유를 물어봐요.</b> 마감 때 남은 미결 주문을 취소하든, 한꺼번에 전부 취소하든, 매장에서 주문 하나를 취소하든 같은 상자가 떠요 — <b>계산 착오</b>(Wrong entry) · <b>손님 이탈</b>(Customer left) · <b>테스트</b>(Test order) · <b>직접 입력</b>(Other). 사유를 고르기 전에는 확인 버튼이 회색이에요. 이유가 안 적힌 취소가, 나중에 사장님이 제일 궁금해할 그 취소거든요.</div>
+    <div class="brag"><div class="h">이걸 자랑하세요</div><p><b>숫자를 쉬운 말로.</b> 일일 인사이트가 무슨 일이 있었고 다음에 뭘 하면 좋을지 알려줘요 — 숫자만 가득한 페이지가 아니라요.</p></div>
+    <figure class="shot"><img src="../img/04-reports.png" alt="스크린샷" loading="lazy"><figcaption><b>리포트 &amp; 일일 인사이트</b>① 오늘의 합계  ·  ② AI 인사이트  ·  ③ 매출 차트</figcaption></figure>
+    <figure class="shot"><img src="../img/05-closing.png" alt="스크린샷" loading="lazy"><figcaption><b>마감 리포트</b>① Close Now — 하루 마감 시작  ·  ② Auto-Close 토글  ·  ③ Accounting Export  ·  ④ 지난 Z-Report 보기</figcaption></figure><figure class="shot"><img src="../img/33-closeday.png" alt="스크린샷" loading="lazy"><figcaption><b>하루 마감 (Z-Report)</b>① 리포트 종류 (X = 중간, Z = 최종)  ·  ② 운영 요약(취소, 환불)  ·  ③ 총합계  ·  ④ Close Day</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-export">매출 내보내기 (회계사용)</h3>
+    <p class="intro">한 번 탭으로 숫자를 회계 담당자에게 넘겨요. 방법이에요.</p>
+    <ol class="steps">
+      <li><b>Closing Reports</b> 페이지에서 <b>"Accounting Export"</b>를 탭해요. 창이 열려요.</li>
+      <li>포함할 항목을 체크해요: <b>"Closing Report Summary"</b>, <b>"Daily Breakdown"</b>, <b>"All Transactions"</b>, 또는 바로 쓸 수 있는 <b>"QuickBooks Format"</b> / <b>"Xero Format"</b>.</li>
+      <li><b>"Download"</b>를 탭해 파일(CSV 또는 Excel)을 저장하거나, <b>"Save to Drive"</b>를 탭해 Google Drive로 보내요.</li>
+    </ol>
+    <div class="tip"><b>간편한 회계:</b> 기록이 간단해져요 — 그냥 파일을 회계사에게 건네세요.</div>
+    <figure class="shot"><img src="../img/40-export.png" alt="스크린샷" loading="lazy"><figcaption><b>회계 내보내기</b>① 포함할 항목  ·  ② 바로 쓸 수 있는 QuickBooks / Xero 형식  ·  ③ Save to Drive  ·  ④ Download</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">늦은 주문 &amp; 놓친 마감 (Additional Closing)</h3>
+    <p class="intro">마감 즈음 가끔 이런 일이 생겨요: 이미 마감한 뒤에 결제가 <b>나중에</b> 들어오거나, 하루 마감을 깜빡하는 경우예요. BrewDesk가 둘 다 처리해 줘요 — 그리고 원본 Z-Report는 절대 바꾸지 않아요.</p>
+    <p class="sub"><b>마감 후에 결제가 들어왔을 때 — 추가 마감(Additional Closing)</b></p>
+    <ol class="steps">
+      <li>이미 마감된 영업일에 결제를 받으면 BrewDesk가 먼저 알려줘요: <b>"이 영업일은 이미 마감되었습니다(This business day is already closed)."</b> 결제는 정상적으로 진행돼요.</li>
+      <li>잠시 뒤 안내가 떠요: <b>"추가 마감이 필요합니다(Additional Closing Needed)."</b> <b>"확인 후 마감(Review &amp; Close)"</b>을 탭하세요 (나중에 하려면 <b>"나중에(Not Now)"</b>).</li>
+      <li>나열된 늦은 주문을 확인하고 <b>"추가 마감 확정(Confirm Additional Closing)"</b>을 탭하세요. BrewDesk가 <b>"추가마감 #1(Additional Closing #1)"</b>이라는 별도 리포트로 저장해요 — 원본 Z-Report는 그대로예요.</li>
+    </ol>
+    <div class="tip"><b>영수증이 다시 필요하면?</b> 그 날의 마감 리포트를 열면 추가 마감마다 배지가 보여요 — 탭하면 <b>다시 인쇄</b>돼요. (추가 마감은 합계만 인쇄해요 — 결제 수단·카테고리 내역은 없어요.)</div>
+    <p class="sub"><b>하루 마감을 깜빡했을 때</b></p>
+    <ol class="steps">
+      <li>다음에 BrewDesk를 열면 <b>"마감하지 않은 영업일(Unclosed Business Days)"</b> 창이 놓친 날짜를 보여줘요. 그 날들을 마감할 때까지 새 주문·결제가 잠시 멈춰요.</li>
+      <li>맨 위 <b>"무엇을 해야 하나요?(What should I do?)"</b>를 읽으세요. 가장 쉬운 선택은 <b>"전체 자동 마감(Auto-Close All)"</b>이에요 — 놓친 날을 BrewDesk 예상 합계로 한 번에 마감해요(현금 세기는 건너뛰어요).</li>
+      <li>하나씩 확인하고 싶으면 <b>"하나씩 마감(Close One by One)"</b>을 탭하세요. 미결제 주문이 남은 날은 먼저 <b>"정산(Settle)"</b>으로 결제하거나 취소하세요.</li>
+    </ol>
+    <div class="tip"><b>이미 열려 있는 계산서는 그대로 결제할 수 있어요.</b> 멈추는 건 <b>새</b> 장사뿐이에요. 테이블에 이미 올라가 있는 주문은 <b>"Pay Now"</b>(지금 결제)와 <b>"Split"</b>(나눠 결제)이 그대로 열려 있어서, 돈을 받아 그 주문을 정리한 다음 마감하면 돼요.</div>
+    <div class="tip"><b>화면에 뜨는 숫자가 실제 숫자예요.</b> 미결제 주문 때문에 마감이 막히면, 포스가 실제로 기다리고 있는 주문이 몇 건인지 알려줘요 — 그걸 보고 어떤 걸 정리하면 되는지 알 수 있어요.</div>
+    <div class="tip"><b>왜 새 판매를 막나요?</b> 날짜 순서대로 마감해야 합계가 정확하게 맞아요 — 그래야 리포트와 회계사의 숫자가 늘 일치해요.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-drawer">현금 서랍 (Cash Drawer)</h3>
+    <p class="intro">서랍에 든 현금을 하루 단위로 맞춰볼 수 있어요. 아침에 시작 금액을 넣고, 중간에 넣거나 뺀 돈을 적고, 끝날 때 세어서 맞는지 확인해요.</p>
+    <div class="activate"><div class="h">여는 곳</div><p>화면 위 <b>관리(Manage)</b> 메뉴 → <b>"캐시 드로어"</b>(Cash Drawer). <b>사장님과 매니저만</b> 이 메뉴가 보여요.</p></div>
+    <ol class="steps">
+      <li>영업을 시작할 때 <b>"세션 시작"</b>(Start Session)을 탭하고, 서랍에 미리 넣어둔 <b>시작 금액</b>을 입력해요.</li>
+      <li>중간에 돈을 넣거나 빼면 <b>Pay In</b>(넣음) / <b>Pay Out</b>(뺌)으로 적어요 — 은행 입금, 팁 지급, 잔돈 채우기 같은 것들이에요.</li>
+      <li>마칠 때 <b>"세션 종료"</b>(END SESSION)를 탭하고 실제로 센 금액을 넣어요. 두 가지 방법 중에 고르면 돼요 — <b>"합계 입력"</b>(Enter Total)은 총액만 한 번 적는 방법, <b>"권종 세기"</b>(Count Denoms)는 <b>돈 종류마다 몇 장인지</b>만 넣으면 합계를 대신 계산해 주는 방법이에요.</li>
+      <li>BrewDesk가 <b>Expected</b>(있어야 할 돈) · <b>Counted</b>(센 돈) · <b>Variance</b>(차이)를 나란히 보여줘요. 현금 매출은 더하고, <b>"현금 환불"</b>(Cash Refunds)로 손님에게 돌려준 돈은 빼서 계산해요.</li>
+      <li>마지막으로 <b>Close Day</b>(하루 마감)를 하면 이 서랍 기록이 그날 Z-Report에 함께 들어가요.</li>
+    </ol>
+    <div class="tip"><b>세지 않으면 "차이 0"이 아니라 "안 셌음"으로 남아요.</b> 아무것도 입력하지 않고 끝내면 차액을 0으로 꾸며내지 않고 <b>"현금을 세지 않았습니다"</b>(Cash wasn't counted)라고 그대로 적혀요. 나중에 장부를 볼 때 "딱 맞았다"와 "안 세봤다"를 헷갈리지 않게 하려는 거예요.</div>
+    <div class="tip"><b>서랍이 저절로 안 열리나요?</b> 이유를 화면이 직접 알려줘요 — ① 영수증 프린터가 아직 없거나, ② 프린터의 현금 서랍 설정이 꺼져 있거나(<code>Settings › Printers</code>에서 켜요), ③ 이 기기가 추가 계산대(Sub POS)라서예요. 서랍이 안 열려도 <b>금액 기록은 그대로 남아요</b>.</div>
+    <div class="tip"><b>결제가 안 끝난 주문이 남아 있으면</b> 서랍을 닫을 때 한 번 더 물어봐요 — "아직 결제 안 된 주문이 N건 있습니다. 그래도 종료할까요?" 계산이 남았는데 서랍부터 닫는 실수를 막아줘요.</div>
+    <div class="tip"><b>마감 전에 서랍을 먼저 닫아도 괜찮아요.</b> 서랍을 세고 <b>세션 종료</b>를 누른 뒤 <b>Close Day</b>를 해도, 그날 센 금액과 차액이 마감 리포트와 인쇄물에 그대로 나와요.</div>
+    <div class="tip"><b>이제 열린 서랍이 있으면 마감이 안 돼요.</b> 돈통 세션이 아직 열려 있으면 <b>"마감하기"</b>(Close Day) 버튼이 회색으로 잠기고 빨간 줄이 떠요 — <b>"돈통 세션 N건이 아직 열려 있습니다 — 현금을 세고 세션을 종료한 뒤 마감하세요."</b> 마감은 돈까지 정리했다는 뜻이라서, 아무도 안 센 서랍을 두고 사인하게 두지 않아요.</div>
+    <div class="tip"><b>빠져나가는 길이 바로 옆에 있어요.</b> 그 안내 옆의 <b>"돈통 열기"</b>(Open drawer) 버튼을 누르면 바로 돈통 화면으로 가요. 현금을 세고 <b>세션 종료</b>를 누르면 마감 버튼이 다시 살아나요. 메뉴를 뒤질 필요가 없어요.</div>
+    <div class="tip"><b>누가 서랍을 안 닫고 퇴근했나요?</b> 돈통 화면이 <b>"닫지 않은 돈통이 N건 있습니다"</b>(N cash drawer(s) were never closed)라고 알려줘요 — <i>"누군가 돈통을 종료하지 않고 자리를 떴습니다. 지금은 셀 수 없으므로 여기서 닫으면 '세지 않음'으로 기록됩니다 — 숫자를 지어내지 않습니다."</i> <b>"세지 않고 닫기"</b>(Close without counting)를 누르면 막힌 게 풀려요. 그날 기록은 깔끔한 0이 아니라 <b>"현금을 세지 않았습니다"</b>로 정직하게 남아요.</div>
+    <div class="tip"><b>먼저 세고, 숫자는 그다음에.</b> 센 금액을 넣기 전까지 BrewDesk가 예상 합계를 가려요(그 합계를 이루는 현금 매출·현금 환불 줄도 함께요). 그 자리에는 <b>"센 금액을 넣으면 보입니다"</b>라고 적히고, 아래에 <i>"먼저 돈통을 세고 나면 숫자가 나옵니다. 세는 일이 맞추는 일이 되지 않게 하려는 것입니다."</i>라고 이유를 적어 둬요. <b>시재금과 입금·출금은 계속 보여요</b> — 사장님이나 직원이 직접 한 일이라 가릴 이유가 없거든요.</div>
+    <div class="tip"><b>돈이 안 맞으면 한 줄은 반드시 적어야 해요.</b> 차액이 0이 아니면 <b>"왜 차이가 났습니까?"</b>라고 묻고, 뭔가 적기 전에는 서랍을 닫을 수 없어요(공백만 넣는 건 안 돼요). <i>"종료 전에 한 줄만 적어 주세요. 사흘 뒤에는 아무도 기억하지 못합니다."</i>라고 알려주는데, 정말 그래요. 차액이 0이면 아무것도 묻지 않아요.</div>
+    <div class="tip"><b>돈통 담당자는 이제 "적는" 게 아니라 "고르는" 거예요.</b> 이름을 자유롭게 치던 칸이 없어졌어요. 직원 기능을 쓰면 <b>"돈통 담당"</b>(Drawer held by)에서 목록에서 고르고, 직원 기능을 안 쓰면 그냥 <b>"점주"</b>(Owner)라고 표시돼요 — <i>"직원 기능을 쓰지 않는 매장이라 이 돈통은 점주 책임입니다."</i> 입금·출금의 <b>"기록자"</b>(Recorded by) 칸도 이제 고칠 수 없고 같은 사람을 따라가요. "이 돈을 누가 꺼냈나"에 대한 답이 하나만 남게요.</div>
+    <div class="tip"><b>재료비 같은 걸로 현금이 나갔다면</b> 출금 사유에 <b>"경비 지출"</b>(Business expense)이 새로 생겼어요 — Safe Drop · Tip Out · Bank Drop · Other 옆에 있어요. 사유를 따로 두어야 월말에 "이 돈이 어디로 나갔나"를 실제로 세어볼 수 있어요.</div>
+    <div class="tip"><b>시재금을 잘못 넣었나요?</b> 아직 아무 일도 일어나지 않았을 때만 <b>"개시 시재 정정"</b>(Fix opening float) 버튼이 보여요 — 현금 결제도, 입금도, 출금도 없을 때요. 첫 현금 결제가 들어오면 버튼이 사라져요. 그때부터 시작 금액을 바꾸면 실제 차액이 조용히 다른 곳으로 옮겨가거든요. 그 뒤에는 <b>마감에서 차액 사유로 적어 주세요</b>. 정정한 내용은 덮어쓰지 않고 <b>기록으로 덧붙어요</b>(누가·언제·이전 값).</div>
+    <div class="tip"><b>닫을 수 없는 빨간 띠.</b> 돈통 변경이 서버에 닿지 않으면 <b>"이 돈통은 아직 저장되지 않았습니다"</b>가 떠요 — <i>"마지막 변경이 서버에 닿지 않았습니다. 지금 새로고침하면 시재·입출금·실사가 사라집니다. 인터넷을 확인하고 아무 변경이나 한 번 더 해 주세요."</i> 닫기 버튼은 <b>일부러</b> 안 넣었어요. 눌러서 없앨 수 있는 안내는 눌러서 없애고 잊어버리게 되고, 그 상태로 새로고침하면 그날 돈통이 통째로 사라지거든요.</div>
+  </div>
+<div class="pager"><a href="c16.html"><small>← 이전</small>16. 직원 &amp; 권한</a><a class="nx" href="c18.html"><small>다음 →</small>18. 영수증 &amp; 프린터</a></div></div></div></div>
+<script src="../assets/search.js"></script>
+</body></html>

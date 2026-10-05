@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18. 영수증 &amp; 프린터 · BrewDesk</title><link rel="stylesheet" href="../assets/manual.css"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
+<a class="navbrand" href="index.html"><span class="dot"></span>BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없어요"></div></div>
+<div class="langsw"><a class="" href="../en/c18.html">EN</a><a class="active" href="c18.html">한국어</a></div>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
+<a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
+<a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
+<a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
+<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 약속</a>
+<a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
+<a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
+<a href="c9.html" class=""><span class="num">9</span>환불</a>
+<a href="c10.html" class=""><span class="num">10</span>고객 &amp; 단골 혜택</a>
+<a href="c11.html" class=""><span class="num">11</span>QR 코드 주문</a>
+<a href="c12.html" class=""><span class="num">12</span>고객에게 메시지 보내기</a>
+<a href="c13.html" class=""><span class="num">13</span>기기 모드 &amp; 고객 디스플레이</a>
+<a href="c14.html" class=""><span class="num">14</span>여러 대 기기 &amp; 안정성</a>
+<a href="c15.html" class=""><span class="num">15</span>오프라인으로 쓰기</a>
+<a href="c16.html" class=""><span class="num">16</span>직원 &amp; 권한</a>
+<a href="c17.html" class=""><span class="num">17</span>리포트 &amp; 하루 마감</a>
+<a href="c18.html" class="cur"><span class="num">18</span>영수증 &amp; 프린터</a>
+<a class="sub" href="#c18-queue"><span class="num">18.1</span>주문 &amp; 대기 번호</a>
+<a href="c19.html" class=""><span class="num">19</span>백업</a>
+<a href="c20.html" class=""><span class="num">20</span>애드온 &amp; 추가 기능</a>
+<a href="c21.html" class=""><span class="num">21</span>플랜 &amp; 결제</a>
+<a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c18">
+    <h3><span class="n">18</span>영수증 &amp; 프린터</h3>
+    <p class="intro">BrewDesk는 손님용 영수증과 주방용 티켓을 인쇄할 수 있어요. 프린터를 단계별로 추가해봐요. 그리고 프린터가 막혀도 주문은 여전히 안전해요.</p>
+    <ol class="steps">
+      <li><code>Settings › Printers</code>를 열어요. <b>"Connected Printers"</b>와 <b>"Add USB Printer"</b>, <b>"Add Wi-Fi Printer"</b>, <b>"Add Printer"</b> 버튼이 보여요.</li>
+      <li><b>"Add Wi-Fi Printer"</b>(또는 <b>"Add USB Printer"</b>)를 탭해요. 프린터 창이 열려요.</li>
+      <li><b>"Printer Name"</b>을 입력해요. "Kitchen Printer" 같은 이름으로 프린터를 구분해요.</li>
+      <li><b>"Connection Type"</b>을 골라요 — USB 또는 Wi-Fi/LAN.</li>
+      <li><b>Wi-Fi의 경우:</b> 프린터의 <b>"IP Address"</b>(예: 192.168.1.50)와 <b>"Port"</b>(보통 9100)를 입력하고 <b>"Connect"</b>를 탭해요. IP 일부만 안다면 <b>"Search"</b>를 탭해 찾아요.</li>
+      <li><b>USB의 경우:</b> <b>"설치된 프린터 선택"</b>에서 <b>"프린터 목록 불러오기"</b>를 눌러 목록에서 프린터를 고르면 끝이에요. (BrewDesk 데스크탑 앱이 켜져 있어야 하고, 프린터는 OS에 설치돼 있어야 목록에 떠요.)</li>
+      <li><b>"Printer Role"</b>을 골라요: <b>"Receipt"</b>(손님 영수증) 또는 <b>"Kitchen"</b>(주방 티켓).</li>
+      <li>주방 프린터라면 <b>"Kitchen Print Mode"</b>를 골라요: <b>"Whole Order"</b>(주문당 티켓 1장) 또는 <b>"Per Item"</b>(상품당 티켓 1장). 여러 장이 필요하면 <b>"Print Copies"</b>를 정해요.</li>
+      <li><b>"Test"</b>를 탭해 테스트 페이지를 인쇄하고, <b>"Save"</b>를 탭해요.</li>
+    </ol>
+    <div class="tip"><b>세금 포함 가격인 매장이라면, 세금 줄에 표시가 붙어요.</b> 판매가에 세금이 이미 들어 있는 매장은 영수증·계산서의 세금 줄 라벨 뒤에 <b>"incl."</b>(포함)이 붙어 나와요. <b>금액도, 합계도 그대로예요</b> — 품목 금액에 세금 줄을 <b>더해서</b> 합계가 틀렸다고 오해하는 일을 막으려고 붙인 표시예요. 원래부터 포함돼 있었고, 이제 종이에도 그렇게 적히는 거예요.</div>
+    <div class="tip"><b>글자가 잘리거나 한글이 깨져 나오나요?</b> 프린터 창 아래쪽 <b>"인쇄가 이상한가요?(Printing looks wrong?)"</b>를 펼치고 <b>"테스트 영수증 출력"</b>을 누르세요. 영수증에 샘플이 인쇄되면 두 가지만 고르면 돼요 — ① <b>어느 블록이 깔끔하게 나왔나요?</b>(줄이 다음 줄로 안 넘어간 쪽을 고르세요) ② <b>[A]와 [B] 중 한글이 제대로 읽히는 쪽</b>. 숫자를 모르셔도 돼요. 눈으로 보고 고르기만 하면 끝이에요.</div>
+    <p class="foot">알아두기: 80mm 프린터의 기본 글자수는 <b>42자</b>예요. 대부분 이대로 잘 나오니, 인쇄가 멀쩡하면 이 부분은 건드리지 않으셔도 돼요. 둘 다 안 맞으면 <b>"직접 입력"</b>으로 영수증 맨 아래 눈금의 숫자(20~96)를 넣으세요.</p>
+    <div class="tip"><b>Wi-Fi 프린터에 「인쇄 확인 불가(No print confirmation)」가 보여요.</b> 어떤 Wi-Fi 프린터는 종이가 진짜 나왔는지 BrewDesk에 알려주지 못해요. 그 프린터 카드에 회색 안내가 떠요: <b>"인쇄 확인 불가"</b> — <i>이 프린터는 종이가 나왔는지 알려주지 못합니다. 인쇄 실패가 표시되지 않을 수 있습니다.</i> <b>"Test"</b>를 누르면 <i>"테스트 인쇄를 보냈습니다. 이 프린터는 인쇄 확인을 지원하지 않으니 종이가 나왔는지 확인하세요."</i>라고 나와요. 그러니 프린터를 직접 눈으로 확인해 주세요. 고장이 아니에요 — 프린터가 알려주지 못할 뿐이에요.</div>
+    <div class="tip"><b>프린터 IP 주소를 모르나요?</b> 괜찮아요. <b>"Search"</b>를 탭하면 BrewDesk가 네트워크를 뒤져 찾아요. Wi-Fi 프린터는 보통 포트 <b>9100</b>을 써요 — 잘 모르면 그대로 두세요.</div>
+    <div class="tip"><b>iPad인가요?</b> iPad 앱에서는 브라우저 도우미 없이 앱 안에서 바로 인쇄돼요. <b>Wi-Fi / LAN</b> 프린터를 같은 방법으로 추가하거나(<b>"Search"</b>로 찾기), <b>AirPrint</b> 프린터를 쓰면 돼요.</div>
+    <div class="tip"><b>주방 프린터가 없나요?</b> 괜찮아요. 설정된 게 없으면 BrewDesk가 주방 티켓을 그냥 건너뛰어요. 아무 문제 없어요.</div>
+    <div class="tip"><b>한 대로 두 가지를 다 하나요?</b> 한 프린터가 영수증과 주방 티켓을 모두 인쇄하는(겸용 모드) 경우에도 <b>"Per Item"</b>(항목별)을 켤 수 있어요 — 그러면 상품마다 주방 티켓이 한 장씩 나와요. 한 대로 전부 처리할 때 편리해요.</div>
+    <div class="tip"><b>평소 인쇄.</b> 프린터를 저장하면 결제할 때 영수증이 인쇄되고, 주문을 주방에 보내면 주방 티켓이 인쇄돼요. 한 장 더 필요해요? 주문을 열고 <b>Reprint</b>를 탭하세요. 인쇄가 실패하면 목록에서 기다려요 — <b>Retry</b>만 탭하세요. 주문은 절대 잃어버리지 않아요.</div>
+    <div class="brag"><div class="h">USB 프린터 — 설치된 드라이버로 (권장)</div><p>가장 쉬운 방법이에요. 프린터의 <b>드라이버를 평소처럼 설치</b>하고(Mac은 보통 자동, Windows는 제조사 드라이버), <b>BrewDesk 데스크탑 앱</b>을 켠 다음, <b>Settings › Printers › "Add USB Printer"</b>에서 <b>"설치된 프린터 선택"</b> › <b>"프린터 목록 불러오기"</b>로 프린터를 고르면 끝이에요. Wi-Fi / LAN 프린터도 이 과정이 필요 없어요.</p></div>
+    <figure class="shot"><img src="../img/17-printers.png" alt="스크린샷" loading="lazy"><figcaption><b>프린터</b>① Add Printer  ·  ② Add USB Printer  ·  ③ Add Wi-Fi Printer  ·  ④ 호환 프린터 &amp; 설정 가이드</figcaption></figure><figure class="shot"><img src="../img/38-addprinter.png" alt="스크린샷" loading="lazy"><figcaption><b>프린터 추가 — 위에서 아래로 채우기</b>① Printer Name  ·  ② Connection (USB 또는 Wi-Fi/LAN)  ·  ③ IP Address (Wi-Fi용)  ·  ④ Printer Role (Receipt / Kitchen)  ·  ⑤ Add Printer</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c18-queue">주문 &amp; 대기 번호</h3>
+    <p class="intro">카운터 서비스에서는 모든 주문에 번호가 붙어요. "A-005번 손님 나오세요!" 하고 부르기 좋아서 손님이 음료가 언제 준비됐는지 알 수 있어요. 설정하고 영수증에 표시하는 방법이에요.</p>
+    <ol class="steps">
+      <li><code>Settings › Tables</code>를 열고 <b>Counter Mode</b> 옵션을 찾아요.</li>
+      <li>모든 주문에 번호가 붙도록 <b>"Auto Order Number"</b>를 켜요.</li>
+      <li>원하면 <b>"Number Prefix"</b>를 정해요 — 예를 들어 <b>A-001</b>.</li>
+      <li>매일 번호를 다시 시작하려면 <b>"Daily Reset"</b>을 켜요. 아침마다 새로 시작해요.</li>
+      <li>번호가 주문 번호로 영수증에 인쇄돼요 — 예를 들어 <b>"ORDER: #ORD-1042"</b>.</li>
+    </ol>
+    <div class="tip"><b>주문 번호는 뭐에 쓰나요?</b> 완성된 음료를 알맞은 손님과 맞추는 쉬운 방법이에요 — 이름 대신 번호를 부르면 돼요.</div>
+    <p class="intro">영수증 모양도 <code>Settings › Receipts</code>에서 직접 디자인할 수 있어요. <b>"Receipt"</b>, <b>"Kitchen"</b>, <b>"Waitlist Ticket"</b> 탭이 있어요. 블록을 끌어다 큰 <b>"Queue Number"</b>, 맞춤 메시지, 환불 정책, 스탬프, QR 코드 같은 걸 보이거나 숨겨요. 오른쪽 실시간 미리보기가 인쇄될 모습을 그대로 보여줘요.</p>
+    <div class="tip"><b>번호를 크고 보기 좋게?</b> 영수증 빌더에서 <b>"Queue Number"</b> 블록을 켜요. 바꾸는 대로 오른쪽 미리보기가 갱신돼서 인쇄될 영수증 모습을 늘 볼 수 있어요.</div>
+    <figure class="shot"><img src="../img/16-receipts.png" alt="스크린샷" loading="lazy"><figcaption><b>영수증 빌더</b>① Receipt / Kitchen / Waitlist Ticket 탭  ·  ② Queue Number 블록 보이기  ·  ③ 영수증의 주문 번호 (#ORD-1042)  ·  ④ 저장</figcaption></figure>
+  </div>
+<div class="pager"><a href="c17.html"><small>← 이전</small>17. 리포트 &amp; 하루 마감</a><a class="nx" href="c19.html"><small>다음 →</small>19. 백업</a></div></div></div></div>
+<script src="../assets/search.js"></script>
+</body></html>

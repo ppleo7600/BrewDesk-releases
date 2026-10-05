@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3. 매장 설정하기 · BrewDesk</title><link rel="stylesheet" href="../assets/manual.css"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
+<a class="navbrand" href="index.html"><span class="dot"></span>BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없어요"></div></div>
+<div class="langsw"><a class="" href="../en/c3.html">EN</a><a class="active" href="c3.html">한국어</a></div>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
+<a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c3.html" class="cur"><span class="num">3</span>매장 설정하기</a>
+<a class="sub" href="#c3-tax"><span class="num">3.1</span>세금 설정</a>
+<a class="sub" href="#c3-closures"><span class="num">3.2</span>휴무 &amp; 특별 영업일</a>
+<a class="sub" href="#c3-status"><span class="num">3.3</span>서비스 상태 한눈에 보기</a>
+<a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
+<a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
+<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 약속</a>
+<a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
+<a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
+<a href="c9.html" class=""><span class="num">9</span>환불</a>
+<a href="c10.html" class=""><span class="num">10</span>고객 &amp; 단골 혜택</a>
+<a href="c11.html" class=""><span class="num">11</span>QR 코드 주문</a>
+<a href="c12.html" class=""><span class="num">12</span>고객에게 메시지 보내기</a>
+<a href="c13.html" class=""><span class="num">13</span>기기 모드 &amp; 고객 디스플레이</a>
+<a href="c14.html" class=""><span class="num">14</span>여러 대 기기 &amp; 안정성</a>
+<a href="c15.html" class=""><span class="num">15</span>오프라인으로 쓰기</a>
+<a href="c16.html" class=""><span class="num">16</span>직원 &amp; 권한</a>
+<a href="c17.html" class=""><span class="num">17</span>리포트 &amp; 하루 마감</a>
+<a href="c18.html" class=""><span class="num">18</span>영수증 &amp; 프린터</a>
+<a href="c19.html" class=""><span class="num">19</span>백업</a>
+<a href="c20.html" class=""><span class="num">20</span>애드온 &amp; 추가 기능</a>
+<a href="c21.html" class=""><span class="num">21</span>플랜 &amp; 결제</a>
+<a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c3">
+    <h3><span class="n">3</span>매장 설정하기</h3>
+    <p class="intro">이제 가게의 기본 정보를 채워봐요. 한 번만 하면 돼요. 천천히 — 한 칸씩 채워보세요.</p>
+    <ol class="steps">
+      <li>화면 위쪽의 <b>Settings</b>를 탭해요.</li>
+      <li><b>Store Info</b>를 탭해요.</li>
+      <li>가게 이름, 주소, 사용하는 화폐(달러나 파운드 같은)를 입력해요.</li>
+      <li><b>업종</b>이 맞는지 확인해요 (카페, 식당 등). 이걸로 테이블, 직원, PIN 로그인이 설정돼요.</li>
+      <li><b>Hours &amp; shifts</b>를 열고 가게가 문을 여는 시간을 입력해요. 이 시간으로 BrewDesk가 손님이 언제 테이블을 예약하고, 줄을 서고, 휴대폰으로 주문할 수 있는지 정해요.</li>
+      <li><b>세금(tax)</b> 설정을 열어요. BrewDesk가 알맞은 세금을 더해주니 계산할 필요 없어요.</li>
+      <li>로고와 아래쪽 감사 메시지 같은 영수증 정보를 추가해요.</li>
+      <li><b>Save</b>를 탭해요. 가게 설정이 끝났어요.</li>
+    </ol>
+    <div class="tip"><b>팁:</b> "세금"은 판매할 때 정부가 받는 추가 금액이에요. BrewDesk가 대신 계산해 주니 켜기만 하면 돼요.</div>
+    <div class="tip"><b>시간대(Timezone)는 한 번 더 확인해 주세요.</b> 지금 쓰는 기기의 시간대가 매장 설정과 다르면 화면 위에 띠가 떠요 — <i>"이 기기의 시간대(…)가 매장 설정(…)과 다릅니다. 영업일과 마감 보고서는 매장 설정을 따르니 값이 맞는지 확인해 주세요."</i> <b>"시간대 확인"</b>(Check time zone)을 누르면 그 설정으로 바로 가요. 시계가 실제로 다를 때만 뜨니까, 시간이 같은 두 도시 때문에 잔소리하지는 않아요. 메인 POS에서는 문구가 더 강해요 — 영업일을 재는 기준이 그 기기거든요.</div>
+    <p class="foot">알아두기: 나라마다 전자세금계산서·전자기록 의무가 달라서, 아직 지원하지 않는 나라가 있어요. 그런 나라를 고르고 저장하면 <b>"This country is not supported."</b>(이 국가는 지원되지 않습니다)라고 알려줘요. 목록에 없는 나라라면 지원팀에 문의해 주세요.</p>
+    <figure class="shot"><img src="../img/13-storeinfo.png" alt="스크린샷" loading="lazy"><figcaption><b>매장 정보</b>① 매장 이름  ·  ② 업종  ·  ③ 로고 / 브랜딩  ·  ④ 저장</figcaption></figure>
+    <figure class="shot"><img src="../img/14-hoursshifts.png" alt="스크린샷" loading="lazy"><figcaption><b>영업시간 &amp; 시프트</b>① 영업일  ·  ② 시프트 시간 바  ·  ③ 시프트 추가  ·  ④ 이 시프트에 허용되는 서비스 (예약 / 대기열 / QR)</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c3-tax">세금 설정</h3>
+    <p class="intro">세금은 판매할 때 정부가 받는 추가 금액이에요. 한 번만 설정하면 BrewDesk가 모든 판매에 알아서 더해줘요. 세율을 맞춰봐요.</p>
+    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Tax &amp; Service</code>를 열어요.</p></div>
+    <ol class="steps">
+      <li>BrewDesk가 지역 세율을 제안할 수 있지만, 확인은 사장님이 해요. <b>"Refresh Now"</b>를 탭해 제안 세율을 가져오거나, 직접 입력하세요.</li>
+      <li><b>"Percentage Rate (%)"</b>에 세율을 입력해요 — 예를 들어 8%면 <b>8</b>을 입력해요.</li>
+      <li>세금 표시 방식을 골라요. <b>"Tax Inclusive Pricing"</b>가 ON이면 표시 가격에 세금이 이미 포함돼요. OFF면 결제할 때 세금이 위에 더해져요.</li>
+      <li>선택: <b>"Service Charge"</b>(% 또는 정액)를 추가하고, 서비스 차지에 세금을 매길지 골라요.</li>
+      <li><b>"Save"</b>를 탭해요. 오른쪽 실시간 영수증 미리보기에 예시 계산이 나와서 제대로인지 확인할 수 있어요.</li>
+      <li>세율은 제안일 뿐이라는 안내가 떠요 — 세무사와 함께 확인하세요.</li>
+    </ol>
+    <div class="tip"><b>어떤 세율을 골라야 할지 모르겠다고요?</b> 걱정 마세요. "Refresh Now"로 제안을 받아 시작하고, 세무사나 회계사와 확인하세요. 언제든 바꿀 수 있어요.</div>
+    <div class="tip"><b>세금 포함(Tax Inclusive) 매장이라면:</b> "Tax Inclusive Pricing"이 켜져 있으면 영수증의 세금 줄이 이제 <b>"Tax (incl.)"</b>로 표시돼요 — 이미 가격에 세금이 포함돼 있다는 걸 손님이 바로 알 수 있어요.</div>
+    <div class="tip"><b>「세액 반올림」(Tax Amount Rounding) — 이름이 바뀌었어요.</b> 예전에 "Tax Rounding Rule"이던 설정이 이제 <b>"Tax Amount Rounding"(세액 반올림)</b>이고, 설명도 이렇게 바뀌었어요 — <i>"세액을 통화 최소단위로 떨어뜨리는 방법입니다 — 대부분 센트, 엔·원처럼 소수가 없는 통화는 1엔·1원 단위입니다. 손님이 무엇으로 내든 모든 주문에 적용됩니다."</i> 고를 수 있는 건 전과 같은 네 가지예요 — <b>"Standard (0.005 → Round Up)"</b>, <b>"Always Round Up"</b>, <b>"Always Round Down"</b>, <b>"No Rounding"</b>. 그 아래에 나라별 통상값이 참고로 떠요: <i>"Country default for … : … . Your setting is what the POS uses."</i> — 참고일 뿐이고, 사장님이 고른 값대로 계산돼요. 옆의 작은 칩 두 개로 현재 상태도 한눈에 보여요: <b>"prices include tax"</b>(가격에 세금 포함) 또는 <b>"tax added at checkout"</b>(결제 시 추가), 그리고 <b>"service charge is taxed"</b>(서비스 차지에 과세) 또는 <b>"service charge is not taxed"</b>. 이름만 바뀐 것이고 기존 세금 숫자는 그대로예요.</div>
+    <div class="tip"><b>현금 우수리와 헷갈리지 마세요.</b> 「세액 반올림」은 <b>세액 숫자</b> 이야기라 모든 판매에 적용돼요. <b>총액</b>을 실제로 있는 동전 단위에 맞추는 것 — 아무도 안 들고 다니는 1센트 같은 것 — 은 <code>Settings › Payments</code>의 별개 설정이고, 현금에만 적용돼요. <b>7.3</b>을 보세요.</div>
+    <p class="sub">품목마다 세금이 다르다면? 「세금 유형(Tax types)」</p>
+    <p class="intro">어떤 지역은 물건마다 세금이 달라요 — 예를 들어 식료품은 세금이 없고 따뜻한 음료는 세금이 붙는 식이에요. 그런 매장이라면 BrewDesk에 <b>세금 유형</b>을 몇 개 만들어 두고, 품목마다 알맞은 유형을 고르면 돼요. 모든 품목이 같은 세율이면 건너뛰셔도 돼요 — 아무것도 바뀌지 않아요.</p>
+    <div class="activate"><div class="h">어디서 찾나요?</div><p><code>Settings › Tax &amp; Service</code>에서 <b>"Tax types"</b> 카드를 찾아요. 필요한 지역(예: 캐나다)의 매장에 보이고, 일부 미국 매장은 직접 켜면 보여요. <i>(이 카드의 버튼 이름은 영어로 표시돼요.)</i></p></div>
+    <ol class="steps">
+      <li><b>"Set up tax types"</b>를 눌러요. 우리 지역의 기본 세금이 자동으로 채워져요. 다르게 되어 있으면 노란 안내 <i>"These taxes don't match the standard for your region."</i>가 나와요 — <b>"Use regional standard"</b>를 누르면 한 번에 고쳐져요.</li>
+      <li><b>"Taxes"</b> 아래에서 세금마다 <b>"Tax name"</b>(세금 이름)과 <b>"Tax rate (%)"</b>(세율)를 적어요. 다른 세금이 더 있으면 <b>"Add tax"</b>를 눌러요. 세율은 오직 여기서만 정해요.</li>
+      <li><b>"Tax types"</b> 아래에서 <b>"Add tax type"</b>을 누르고 <b>"Tax type name"</b>(유형 이름)을 적은 뒤, <b>"Taxes that apply"</b>(적용할 세금)에 체크해요. 세금이 전혀 없는 물건은 <b>"No tax (exempt)"</b>를 골라요.</li>
+      <li>유형 하나에는 <b>"Default"</b>(기본) 표시가 붙어요. 자기 유형이 없는 품목과 서비스 요금에 이 유형이 쓰여요.</li>
+      <li><b>Menu</b>로 가요. 카테고리에서는 <b>"Tax type for this category"</b>를, 품목에서는 <b>"Tax type"</b>을 골라요. 그 품목만 세금이 다르지 않다면 <b>"Follow category"</b>(카테고리 따라가기) 그대로 두세요.</li>
+    </ol>
+    <div class="tip"><b>BrewDesk가 추천해 줄 수도 있어요.</b> 같은 카테고리의 다른 품목들과 비슷해 보이면 <b>"Suggested: … — not confirmed"</b>가 보여요. <b>"Use this"</b>를 누르기 전에는 아무것도 바뀌지 않아요.</div>
+    <div class="tip"><b>작은 금액엔 세금을 덜 내는 지역.</b> 어떤 지역은 금액이 작으면 세금이 줄어요 — 예를 들어 온타리오는 $4 이하의 즉석 음식·음료에 세금 일부를 돌려줘요. <b>"Lower tax below an amount"</b> 아래 <b>"Use an amount condition"</b>을 켜고, 바뀌는 두 세금을 고르고, 기준을 <b>"Order total"</b>(주문 합계)로 할지 <b>"Each item's unit price"</b>(품목 단가)로 할지 골라요. 바로 아래에 이 규칙이 무슨 일을 하는지 쉬운 문장으로 보여줘요.</div>
+    <p class="foot">알아두면 좋아요: 영수증과 리포트에는 세금이 한 줄씩 따로 나와서, 이름이 같은 세금 두 개는 만들 수 없어요 — 이름을 바꾸라고 안내해요. 매사추세츠·로드아일랜드처럼 한도 <b>초과분에만</b> 세금을 매기는 곳은 금액 조건으로 똑같이 만들 수 없어서 경고가 떠요. 설정은 꼭 세무 전문가와 확인하세요.</p>
+    <figure class="shot"><img src="../img/15-tax.png" alt="스크린샷" loading="lazy"><figcaption><b>세금 &amp; 서비스</b>① 현재 세율  ·  ② Percentage Rate — 세율 입력  ·  ③ 저장  ·  ④ 실시간 영수증 미리보기</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c3-closures">휴무 &amp; 특별 영업일</h3>
+    <p class="intro">쉬는 날을 미리 등록해두면, 그날은 손님이 예약도 줄 서기도 온라인 주문도 할 수 없게 BrewDesk가 알아서 막아줘요. 명절, 직원 교육, 갑자기 문을 닫는 날 모두 여기서 정해요.</p>
+    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Hours &amp; shifts</code>(영업일 · 시간)를 열고 아래쪽 <b>"Holidays &amp; Special Days"</b>(휴무 &amp; 특별 영업일)를 보세요. 예약 애드온을 켜지 않아도 쓸 수 있어요. 화면 왼쪽은 달력, 오른쪽은 <b>보고 있는 달에 등록된 휴무 리스트</b>예요.</p></div>
+    <ol class="steps">
+      <li>리스트 위 <b>"+ Add"</b>를 탭하거나, 달력에서 날짜를 탭하거나, 리스트의 기존 항목을 탭해요 — 팝업이 열려요.</li>
+      <li>날짜를 골라요. <b>"One day"</b>(하루)면 날짜 하나, <b>"Date range"</b>(기간)면 시작일~종료일을 골라 연휴처럼 여러 날을 한 번에 등록해요(최대 31일).</li>
+      <li><b>"Closed all day"</b>(문을 닫습니다) 토글을 켜요. 켜면 <b>"Services to close"</b>(중지할 서비스)에서 무엇을 멈출지 골라요 — 예약, 대기열, 온라인·QR 주문. 하나만 멈추고 나머지는 열어둘 수도 있어요.</li>
+      <li><b>"Label"</b>(라벨)에 "추석", "직원 교육"처럼 짧게 적어요. <b>"Message shown to guests"</b>(손님에게 보일 안내)에 적은 문장은 손님 화면에 그대로 보여요.</li>
+      <li><b>Save</b>를 탭해요. 달력과 오른쪽 리스트에 바로 반영돼요.</li>
+    </ol>
+    <div class="tip"><b>"Closed all day"를 끄면 저장이 안 돼요.</b> 지금은 <b>휴무 등록만</b> 가능해요 — 특정 날만 다른 영업시간으로 여는 기능은 "Coming soon"(준비 중)으로 아직 저장할 수 없어요. 이전에 있던 <b>"Limited Capacity"</b>(일부 서비스 중지·날짜별 정원 제한) 옵션도 사라졌어요. 서비스별로 막고 싶으면 위 3단계의 체크박스를 쓰세요.</div>
+    <div class="tip"><b>그날 예약이 이미 있으면?</b> 저장할 때 팝업이 떠서 세 가지 중에 고르게 해줘요 — <b>"Leave as is"</b>(그대로 두기), <b>"Notify only"</b>(예약은 두고 휴무 안내만 보내기), <b>"Cancel all"</b>(전부 취소하고 안내). 휴무를 저장한다고 예약이 저절로 지워지지는 않아요. 사장님이 고르는 대로만 처리해요. <b>단, 기간(연휴)으로 등록할 때는</b> 이 팝업이 뜨지 않아요 — 저장 후 오른쪽 리스트에서 날짜별로 열어 안내하거나 취소하세요.</div>
+    <div class="tip"><b>지난달 항목도 고칠 수 있어요.</b> 리스트와 달력 모두 이전 달로 이동해 지난 휴무를 수정·삭제할 수 있어요. 항목을 지우려면 리스트 행의 삭제 아이콘을 탭하세요.</div>
+    <div class="tip"><b>매주 쉬는 요일</b>은 여기가 아니라 같은 화면 위쪽 <b>영업일</b>에서 꺼두면 돼요 — 그러면 매주 자동으로 휴무예요. 리스트에는 <b>"Regular"</b>(정기) 표시로 따로 보여요.</div>
+    <div class="tip"><b>"Repeat every year"</b>(매년 반복)는 <b>양력</b> 날짜로 반복돼요. 설·추석처럼 음력 명절은 해마다 날짜가 달라지니, 매년 직접 찍어주는 게 안전해요. 그리고 매년 반복은 예약은 실제로 막지만, <b>손님이 보는 예약 달력에는 아직 휴무로 표시되지 않아요</b> — 손님이 그 날짜를 고른 뒤에야 안내를 받으니 참고하세요.</div>
+    <div class="brag"><div class="h">이걸 자랑하세요</div><p><b>쉬는 날은 한 번만 등록하면 돼요.</b> 예약 페이지, 대기열, 손님 휴대폰 주문까지 전부 같이 닫혀요 — 각각 따로 끄러 다닐 필요가 없고, 연휴는 기간으로 한 번에 등록할 수 있어요.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c3-status">서비스 상태 한눈에 보기</h3>
+    <p class="intro">지금 손님이 예약을 할 수 있는지, 줄을 설 수 있는지, 휴대폰으로 주문할 수 있는지 — 버튼 하나로 바로 알 수 있어요. 손님이 "주문이 안 돼요"라고 말하기 전에 사장님이 먼저 알 수 있어요.</p>
+    <div class="activate"><div class="h">보는 곳</div><p>왼쪽 사이드바 <b>Table Map</b>(테이블 맵) 화면 위 툴바에 <b>Online Orders</b>(온라인 주문) · <b>Reservations</b>(예약) · <b>Waitlist</b>(대기열) 버튼 3개가 있어요. 따로 켤 것 없이 항상 보여요. (예전엔 화면 맨 위 바에 작은 표시(칩)로 있었는데, 지금은 테이블 맵의 큰 버튼으로 합쳐졌어요.)</p></div>
+    <ol class="steps">
+      <li>버튼 색으로 상태를 알려줘요 — <b>색이 있으면</b> 정상 운영 중, <b>회색이면</b> 사장님이 꺼둔 상태, <b>회색+시계 아이콘</b>이면 일시중지 중, <b>회색+자물쇠</b>면 플랜·결제 등으로 잠긴 상태예요.</li>
+      <li>버튼을 <b>탭</b>하면 <b>"지금 손님이 쓸 수 있는 것"</b> 창이 열려요.</li>
+      <li>창 안에 <b>왜</b> 닫혔는지 이유가 적혀 있어요 — 예: "오늘 휴무", "영업시간이 아님", "메인 POS가 오프라인 상태", "{플랜} 플랜이 필요합니다", "결제 설정이 필요합니다", "이번 달 주문 한도 초과".</li>
+      <li>잠깐만 멈추고 싶으면 아래 <b>"Pause for today…"</b>(오늘만 중단)를 탭해요.</li>
+      <li>멈출 서비스와 시간을 골라요 — <b>20분</b>, <b>60분</b>, <b>오늘 영업 끝까지</b>(다음 영업일 아침에 자동으로 다시 열려요), <b>내가 다시 켤 때까지</b>.</li>
+    </ol>
+    <div class="tip"><b>사이드 패널에서도 멈추고 켤 수 있어요.</b> 온라인 주문 · 예약 · 대기열 각 사이드 패널을 열면 맨 아래에 <b>"일시중지"</b>/<b>"다시 시작"</b> 버튼이 있어요. 테이블 맵 버튼을 누르는 것과 같은 창이 열려요.</div>
+    <div class="tip"><b>주방이 밀렸을 때 딱 좋아요.</b> "20분"으로 온라인 주문만 잠깐 멈추면, 매장 손님은 그대로 받으면서 밀린 주문만 정리할 수 있어요. 시간이 지나면 알아서 다시 열려요.</div>
+    <div class="tip"><b>바꿀 수 있는 사람.</b> 일시중지는 <b>사장님과 매니저</b>만 할 수 있어요. 다른 직원이 누르면 "권한이 없습니다"라고 알려줘요 — 상태를 보는 건 누구나 할 수 있어요.</div>
+    <div class="tip"><b>예약 애드온을 꺼둔 매장이라면</b> 예약 서비스 버튼 자체가 안 보여요 — 예약을 다시 보려면 애드온을 켜세요.</div>
+    <p class="foot">알아두기: 안내 문구는 손님 쪽 화면에도 그대로 보여요. 그래서 손님이 "왜 주문이 안 되지?" 하고 헤매지 않아요.</p>
+  </div>
+<div class="pager"><a href="c2.html"><small>← 이전</small>2. 빠른 시작 — 5분이면 바로 시작</a><a class="nx" href="c4.html"><small>다음 →</small>4. 메뉴 만들기</a></div></div></div></div>
+<script src="../assets/search.js"></script>
+</body></html>
