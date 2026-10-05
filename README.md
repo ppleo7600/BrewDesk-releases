@@ -9,6 +9,7 @@
   [![Website](https://img.shields.io/badge/website-brewdesk.io-10b981?style=for-the-badge)](https://brewdesk.io)
   [![Free Trial](https://img.shields.io/badge/free_trial-1_month-f59e0b?style=for-the-badge)](https://brewdesk.io/app?screen=signup)
   [![Platform](https://img.shields.io/badge/platform-macOS_%7C_Windows-0f172a?style=for-the-badge)](#-download)
+  [![User Manual](https://img.shields.io/badge/user_manual-EN_%7C_KO-0F4C3A?style=for-the-badge)](https://ppleo7600.github.io/BrewDesk-releases/)
 
 </div>
 
