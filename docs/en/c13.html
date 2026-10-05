@@ -10,11 +10,11 @@
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">Home</a>
 <a href="c1.html" class=""><span class="num">1</span>Welcome &amp; overview</a>
-<a href="c2.html" class=""><span class="num">2</span>Quick start — up and running in 5 minutes</a>
+<a href="c2.html" class=""><span class="num">2</span>Quick start</a>
 <a href="c3.html" class=""><span class="num">3</span>Setting up your store</a>
 <a href="c4.html" class=""><span class="num">4</span>Building your menu</a>
 <a href="c5.html" class=""><span class="num">5</span>Taking orders</a>
-<a href="c6.html" class=""><span class="num">6</span>Reservations &amp; appointments</a>
+<a href="c6.html" class=""><span class="num">6</span>Reservations &amp; Scheduler</a>
 <a href="c7.html" class=""><span class="num">7</span>Getting paid</a>
 <a href="c8.html" class=""><span class="num">8</span>Discounts &amp; promotions</a>
 <a href="c9.html" class=""><span class="num">9</span>Refunds</a>
@@ -35,24 +35,33 @@
 <a href="c22.html" class=""><span class="num">22</span>Troubleshooting &amp; support</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c13">
     <h3><span class="n">13</span>Device modes &amp; customer display</h3>
-    <p class="intro">When you open BrewDesk on a new device, it asks: <b>"How will you use this device?"</b> You pick one job for it. Here are all the choices:</p>
+    <p class="intro">Every BrewDesk device has one job. The first device in a shop automatically becomes the main till (Main POS); from the second device on, you pick one of the jobs below. Here they are:</p>
     <ol class="steps">
-      <li><b>Main POS</b> — your main till. This is your primary register.</li>
-      <li><b>Sub POS</b> — an extra till to help out. (Business plan.)</li>
+      <li><b>Main POS</b> — your main till, and there is only one per shop. To change it in a shop that already has one, use <b>Replace Main POS</b>, which needs an emailed verification code.</li>
+      <li><b>Sub POS</b> — an extra till to help out (<b>Register as new device</b>). You sign in with the owner's email and type a verification code. (Business plan; up to 3 tills including the main one.)</li>
       <li><b>Staff Ordering</b> — your staff take orders from any tablet or phone on your network, and the orders go straight to the main till. (Pro plan; it shows how many "slots used".)</li>
-      <li><b>Customer Display</b> — a second screen that shows customers their order.</li>
-      <li><b>Check-in</b> — a self-check-in screen for walk-in guests.</li>
+      <li><b>Customer Display</b> — a second screen that shows customers their order. (1 on Pro, up to 3 on Business.)</li>
+      <li><b>Waitlist Kiosk</b> — a self-check-in screen where walk-in guests add themselves to the waitlist. (This used to be called "Check-in".)</li>
       <li><b>Order Kiosk</b> — coming soon.</li>
     </ol>
-    <div class="activate"><div class="h">Where to turn it on</div><p>Staff Ordering and Customer Display are turned on in <code>Settings › Add-ons</code> (Devices section) — Staff Ordering is a <b>Pro</b> add-on. Then, on the other device, open it and pick that mode from "How will you use this device?".</p></div>
-    <figure class="shot"><img src="../img/37-staffsetup.png" alt="screenshot" loading="lazy"><figcaption><b>Choose how a device is used</b>① Main POS  ·  ② Staff Ordering (take orders from any tablet)  ·  ③ Customer Display  ·  ④ Check-in (self check-in for walk-ins)</figcaption></figure>
+    <div class="activate"><div class="h">Where to turn it on</div><p>Staff Ordering and Customer Display are first turned on at the main till, in <code>Settings › Add-ons</code> (Devices section) — Staff Ordering is a <b>Pro</b> add-on. Then register the new device like this:</p></div>
+    <ol class="steps">
+      <li>Open the BrewDesk app on the new device and connect it to the same shop Wi-Fi as the main till.</li>
+      <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
+      <li>A <b>"New device pairing request"</b> popup appears on the main till. Under <b>"Device role"</b> pick Staff Ordering, Customer Display or Waitlist Kiosk, then tap <b>"Approve."</b></li>
+      <li>The new device goes straight into the job you picked.</li>
+    </ol>
+    <div class="tip"><b>The main till chooses the job, not the new device.</b> A new device can't declare "I'm a staff ordering tablet" by itself. See <a href="c14.html#c14-pair">14.1</a> for the full steps and what to do if something goes wrong.</div>
+    <div class="tip"><b>A device signed in with the owner's email shows a choice screen.</b> "How will you use this device?" lists <b>Replace Main POS</b>, <b>Register as new device</b>, <b>Staff Ordering</b>, <b>Customer Display</b>, <b>Waitlist Kiosk</b> and Order Kiosk (coming soon). Replace Main POS and Register as new device go through an emailed verification code (the first device in a shop automatically becomes the main till); the Staff Ordering, Customer Display and Waitlist Kiosk cards lead into the same main-till approval described above.</div>
+    <figure class="shot"><img src="../img/37-staffsetup.png" alt="Device role selection screen" loading="lazy"><figcaption><b>Choose how a device is used</b>This screen was captured on a device where a Main POS is already registered, so the top card is Replace Main POS. ① Replace Main POS  ·  ② Staff Ordering (take orders from any tablet)  ·  ③ Customer Display  ·  ④ Waitlist Kiosk (self check-in for the waitlist). Register as new device, between ① and ②, adds an extra POS (Sub POS).</figcaption></figure>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-staff">Staff Ordering</h3>
     <p class="intro">Staff Ordering lets your team take orders from an extra tablet or phone. The orders fly straight to the main till. Here's how to set it up.</p>
     <ol class="steps">
-      <li>Turn on <b>Staff Ordering</b> in <code>Settings › Add-ons</code> (Devices section). It's a <b>Pro</b> add-on.</li>
-      <li>Open BrewDesk on the extra tablet or phone.</li>
-      <li>When it asks "How will you use this device?", choose <b>Staff Ordering</b>.</li>
+      <li>At the main till, turn on <b>Staff Ordering</b> in <code>Settings › Add-ons</code> (Devices section). It's a <b>Pro</b> add-on.</li>
+      <li>Open the BrewDesk app on the extra tablet or phone and connect it to the same shop Wi-Fi as the main till.</li>
+      <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
+      <li>In the popup on the main till, under <b>"Device role"</b>, choose <b>Staff Ordering</b> and <b>"Approve."</b> (Pro allows up to 3 Staff Ordering devices, Business has no limit; the registration screen shows "slots used".)</li>
       <li>Your staff sign in and start taking orders.</li>
       <li>Each order flows to the main till by itself. (This device has no payment screen and no owner settings — it's just for taking orders.)</li>
     </ol>
@@ -62,10 +71,11 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-display">Customer display</h3>
     <p class="intro">A customer display is a second screen that faces the customer. It shows them their order and the price as you add things. Here's how to set one up.</p>
-    <div class="activate"><div class="h">Where to turn it on</div><p>Turn it on in <code>Settings › Add-ons › Customer Display</code>, then on the spare device pick the <b>Customer Display</b> mode.</p></div>
+    <div class="activate"><div class="h">Where to turn it on</div><p>Turn it on at the main till in <code>Settings › Add-ons › Customer Display</code>, then pick <b>Customer Display</b> as the job when you register the spare device.</p></div>
     <ol class="steps">
-      <li>Find a spare tablet or screen and open BrewDesk on it.</li>
-      <li>When it asks what this device is for, choose <b>Customer display</b>.</li>
+      <li>Find a spare tablet or screen, open BrewDesk on it, and connect it to the same shop Wi-Fi as the main till.</li>
+      <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
+      <li>In the popup on the main till, under <b>"Device role"</b>, choose <b>Customer Display</b> and <b>"Approve."</b></li>
       <li>The screen joins up with your till by itself. No login needed.</li>
       <li>Now point the screen toward the customer. As you add items at the till, they show up on this screen too.</li>
       <li>The Pro plan lets you use 1 display. The Business plan lets you use up to 3.</li>

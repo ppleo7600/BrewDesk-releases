@@ -10,11 +10,11 @@
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
-<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작</a>
 <a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
 <a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
 <a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
-<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 약속</a>
+<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 스케줄러</a>
 <a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
 <a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">9</span>환불</a>
@@ -35,24 +35,33 @@
 <a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c13">
     <h3><span class="n">13</span>기기 모드 &amp; 고객 디스플레이</h3>
-    <p class="intro">새 기기에서 BrewDesk를 열면 다음과 같이 묻습니다: <b>"이 기기를 어떻게 쓰시겠어요?"</b> 한 가지 역할을 선택해 주세요. 선택지는 다음과 같습니다:</p>
+    <p class="intro">BrewDesk 기기는 저마다 한 가지 용도를 맡습니다. 매장의 첫 기기는 자동으로 메인 계산대(Main POS)가 되고, 그다음 기기부터는 아래 용도 중에서 고릅니다. 용도는 다음과 같습니다.</p>
     <ol class="steps">
-      <li><b>Main POS</b> — 메인 계산대. 주 계산대입니다.</li>
-      <li><b>Sub POS</b> — 도와주는 추가 계산대. (Business 플랜.)</li>
+      <li><b>Main POS</b> — 메인 계산대. 주 계산대이며 매장에 한 대뿐입니다. 이미 있는 매장에서 바꾸려면 <b>Replace Main POS</b>(메인 POS 교체)를 사용하며, 이메일 인증 코드가 필요합니다.</li>
+      <li><b>Sub POS</b> — 도와주는 추가 계산대(<b>Register as new device</b>). 사장님 이메일로 로그인하고 인증 코드를 입력해 등록합니다. (Business 플랜; 메인 계산대를 포함해 최대 3대.)</li>
       <li><b>Staff Ordering</b> — 직원이 매장 네트워크의 어떤 태블릿이나 휴대폰에서든 주문을 받고, 주문이 바로 메인 계산대로 전달됩니다. (Pro 플랜; 사용 중인 "slots used"를 표시합니다.)</li>
-      <li><b>Customer Display</b> — 손님에게 주문을 보여 주는 두 번째 화면.</li>
-      <li><b>Check-in</b> — 워크인 손님용 셀프 체크인 화면.</li>
+      <li><b>Customer Display</b> — 손님에게 주문을 보여 주는 두 번째 화면. (Pro 플랜 1대, Business 플랜 최대 3대.)</li>
+      <li><b>Waitlist Kiosk</b> — 워크인 손님이 직접 대기열에 이름을 올리는 셀프 체크인 화면. (이전에 "Check-in"이라고 부르던 화면입니다.)</li>
       <li><b>Order Kiosk</b> — 곧 출시.</li>
     </ol>
-    <div class="activate"><div class="h">켜는 곳</div><p>Staff Ordering과 Customer Display는 <code>Settings › Add-ons</code>(Devices 섹션)에서 켭니다 — Staff Ordering은 <b>Pro</b> 애드온입니다. 그런 다음 다른 기기에서 열고 "이 기기를 어떻게 쓰시겠어요?"에서 해당 모드를 선택해 주세요.</p></div>
-    <figure class="shot"><img src="../img/37-staffsetup.png" alt="스크린샷" loading="lazy"><figcaption><b>기기 용도 고르기</b>① Main POS  ·  ② Staff Ordering(어떤 태블릿에서든 주문 받기)  ·  ③ Customer Display  ·  ④ Check-in(워크인 셀프 체크인)</figcaption></figure>
+    <div class="activate"><div class="h">켜는 곳</div><p>Staff Ordering과 Customer Display는 먼저 메인 계산대의 <code>Settings › Add-ons</code>(Devices 섹션)에서 켭니다 — Staff Ordering은 <b>Pro</b> 애드온입니다. 그런 다음 새 기기에서 아래 순서로 등록합니다.</p></div>
+    <ol class="steps">
+      <li>새 기기에서 BrewDesk 앱을 열고, 메인 계산대와 같은 매장 Wi-Fi에 연결합니다.</li>
+      <li>로그인 화면 아래의 <b>"메인포스에 새기기로 등록"</b>(Register as a new device at Main POS)을 탭합니다.</li>
+      <li>메인 계산대에 <b>"새 기기 페어링 요청"</b> 팝업이 나타납니다. <b>"기기 용도"</b>에서 Staff Ordering · Customer Display · Waitlist Kiosk 중 하나를 고르고 <b>"승인"</b>을 탭합니다.</li>
+      <li>새 기기가 사장님이 고른 용도의 화면으로 자동으로 들어갑니다.</li>
+    </ol>
+    <div class="tip"><b>용도는 새 기기가 아니라 메인 계산대에서 정합니다.</b> 새 기기가 스스로 "나는 직원 주문용입니다"라고 정할 수 없습니다. 자세한 단계와 문제 해결 방법은 <a href="c14.html#c14-pair">14.1</a>을 참고해 주세요.</div>
+    <div class="tip"><b>사장님 이메일로 로그인한 기기에서는 용도 선택 화면이 나옵니다.</b> "이 기기를 어떻게 쓰시겠어요?"(How will you use this device?) 화면에 <b>Replace Main POS</b> · <b>Register as new device</b> · <b>Staff Ordering</b> · <b>Customer Display</b> · <b>Waitlist Kiosk</b> · Order Kiosk(곧 출시) 카드가 표시됩니다. Replace Main POS와 Register as new device는 이메일 인증 코드를 거치며(매장의 첫 기기라면 자동으로 메인 계산대가 됩니다), Staff Ordering · Customer Display · Waitlist Kiosk 카드는 위와 같은 메인 계산대 승인 흐름으로 이어집니다.</div>
+    <figure class="shot"><img src="../img/37-staffsetup.png" alt="기기 용도 선택 화면" loading="lazy"><figcaption><b>기기 용도 고르기</b>이미 메인 POS가 등록된 기기에서 본 화면이라 맨 위 카드가 Replace Main POS입니다. ① Replace Main POS(메인 POS 교체)  ·  ② Staff Ordering(어떤 태블릿에서든 주문 받기)  ·  ③ Customer Display  ·  ④ Waitlist Kiosk(대기열 셀프 체크인). ①과 ② 사이의 Register as new device는 추가 POS(Sub POS) 등록용입니다.</figcaption></figure>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-staff">Staff Ordering</h3>
     <p class="intro">Staff Ordering은 직원이 추가 태블릿이나 휴대폰에서 주문을 받을 수 있게 합니다. 주문은 바로 메인 계산대로 전달됩니다. 설정하는 방법은 다음과 같습니다.</p>
     <ol class="steps">
-      <li><code>Settings › Add-ons</code>(Devices 섹션)에서 <b>Staff Ordering</b>을 켭니다. <b>Pro</b> 애드온입니다.</li>
-      <li>추가 태블릿이나 휴대폰에서 BrewDesk를 엽니다.</li>
-      <li>"이 기기를 어떻게 쓰시겠어요?"라고 물으면 <b>Staff Ordering</b>을 선택합니다.</li>
+      <li>메인 계산대의 <code>Settings › Add-ons</code>(Devices 섹션)에서 <b>Staff Ordering</b>을 켭니다. <b>Pro</b> 애드온입니다.</li>
+      <li>추가 태블릿이나 휴대폰에서 BrewDesk 앱을 열고, 메인 계산대와 같은 매장 Wi-Fi에 연결합니다.</li>
+      <li>로그인 화면 아래의 <b>"메인포스에 새기기로 등록"</b>을 탭합니다.</li>
+      <li>메인 계산대 팝업의 <b>"기기 용도"</b>에서 <b>Staff Ordering</b>을 선택하고 <b>"승인"</b>합니다. (직원 주문 기기는 Pro 플랜 3대까지, Business 플랜은 제한이 없으며 등록 화면에 "slots used"로 표시됩니다.)</li>
       <li>직원이 로그인해서 주문을 받기 시작합니다.</li>
       <li>각 주문이 자동으로 메인 계산대로 전달됩니다. (이 기기에는 결제 화면도, 사장님 설정도 없습니다 — 주문만 받는 용도입니다.)</li>
     </ol>
@@ -62,10 +71,11 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-display">고객 디스플레이</h3>
     <p class="intro">고객 디스플레이는 손님을 향한 두 번째 화면입니다. 상품을 담는 동안 손님에게 주문과 가격을 보여 줍니다. 설정하는 방법은 다음과 같습니다.</p>
-    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Add-ons › Customer Display</code>에서 켜고, 여분 기기에서 <b>Customer Display</b> 모드를 선택해 주세요.</p></div>
+    <div class="activate"><div class="h">켜는 곳</div><p>메인 계산대의 <code>Settings › Add-ons › Customer Display</code>에서 켠 다음, 여분 기기를 등록할 때 용도로 <b>Customer Display</b>를 선택해 주세요.</p></div>
     <ol class="steps">
-      <li>여분 태블릿이나 화면을 준비해 BrewDesk를 엽니다.</li>
-      <li>이 기기의 용도를 물으면 <b>Customer display</b>를 선택합니다.</li>
+      <li>여분 태블릿이나 화면을 준비해 BrewDesk 앱을 열고, 메인 계산대와 같은 매장 Wi-Fi에 연결합니다.</li>
+      <li>로그인 화면 아래의 <b>"메인포스에 새기기로 등록"</b>을 탭합니다.</li>
+      <li>메인 계산대 팝업의 <b>"기기 용도"</b>에서 <b>Customer Display</b>를 선택하고 <b>"승인"</b>합니다.</li>
       <li>화면이 자동으로 계산대와 연결됩니다. 로그인은 필요 없습니다.</li>
       <li>이제 화면을 손님 쪽으로 돌려 놓습니다. 계산대에서 상품을 담으면 이 화면에도 표시됩니다.</li>
       <li>Pro 플랜은 디스플레이 1대, Business 플랜은 최대 3대까지 사용할 수 있습니다.</li>

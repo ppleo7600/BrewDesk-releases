@@ -10,11 +10,15 @@
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
-<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작</a>
 <a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
 <a href="c4.html" class="cur"><span class="num">4</span>메뉴 만들기</a>
+<a class="sub" href="#c4-items"><span class="num">4.1</span>카테고리 · 상품</a>
+<a class="sub" href="#c4-options"><span class="num">4.2</span>옵션 그룹 · 프리셋</a>
+<a class="sub" href="#c4-ai"><span class="num">4.3</span>AI 사진 · AI Fill</a>
+<a class="sub" href="#c4-import"><span class="num">4.4</span>가져오기 · 내보내기</a>
 <a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
-<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 약속</a>
+<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 스케줄러</a>
 <a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
 <a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">9</span>환불</a>
@@ -34,22 +38,36 @@
 <div class="main"><div class="wrap">  <div class="chap" id="c4">
     <h3><span class="n">4</span>메뉴 만들기</h3>
     <p class="intro">메뉴는 판매하는 상품의 목록으로, 주문 화면을 구성합니다. 상품을 추가하고 그룹으로 정리해 보겠습니다.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-items">카테고리 · 상품</h3>
     <ol class="steps">
-      <li>왼쪽 사이드바의 <b>Menu</b>를 탭합니다. 오른쪽 위에 "Add Category", "Add Item", "AI Fill", "Export", "Import", "Move" 버튼이 있습니다.</li>
+      <li>왼쪽 사이드바의 <b>Manage</b>(관리) › <b>Menu Items</b>(메뉴 항목)를 탭합니다. 오른쪽 위에 "AI Fill", "Export", "Import", "Move", "Add Item" 버튼이 있고, 카테고리 탭 줄의 맨 왼쪽에 "Add Category" 버튼이 있습니다.</li>
       <li>먼저 카테고리를 만듭니다. <b>"Add Category"</b>를 탭하고 "Coffee" 같은 이름을 입력해 저장합니다. (카테고리가 하나는 있어야 "Add Item"이 작동합니다.)</li>
       <li><b>"Add Item"</b>을 탭합니다. 옆에 패널이 열립니다. 상품 이름, 설명(선택), 카테고리, 가격, 재고 상태("In Stock" 토글)를 입력합니다.</li>
       <li>사진을 추가합니다. <b>"Upload"</b>로 본인의 사진을 사용하거나, <b>"AI Generate"</b>로 생성합니다.</li>
       <li><b>"Save"</b>를 탭합니다. 상품이 해당 카테고리에 표시됩니다.</li>
-      <li>더 보기 좋은 사진이 필요하다면 상품 패널에서 배경 스타일(Light / Dark / Scene)을 선택한 뒤 <b>"AI Generate"</b>를 탭합니다. 사진 3장이 생성되며, 마음에 드는 사진을 탭해 주세요.</li>
-      <li>선택지를 제공하려면 상품 패널에서 <b>옵션 그룹</b>(우유나 사이즈 같은)을 연결합니다. <b>"Add Group"</b>으로 그룹을 만들고, 타입(Single / Multi / Quantity)을 선택한 뒤 가격과 함께 선택지를 추가합니다.</li>
-      <li>이미 엑셀에 메뉴가 있다면 <b>"Import"</b>를 탭해 한 번에 가져옵니다. <b>"Export"</b>를 탭하면 메뉴를 엑셀로 내려받습니다.</li>
     </ol>
     <div class="tip"><b>카테고리란 무엇인가요?</b> 폴더와 같은 그룹입니다. 메뉴를 깔끔하게 정리해 상품을 쉽게 찾을 수 있게 합니다.</div>
-    <div class="tip"><b>"AI Fill"로 메뉴 전체를 한 번에.</b> <b>"AI Fill"</b>을 탭하고, 대상 상품(All items / Missing image only / 카테고리)을 선택하고, 생성할 항목(Image + Description / Image only / Description only)을 선택하고, 배경 스타일을 선택한 뒤 <b>"Generate"</b>를 탭합니다. 결과를 확인하고 적용해 주세요.</div>
+    <figure class="shot"><img src="../img/26-menu-additem.png" alt="메뉴 상품 추가" loading="lazy"><figcaption><b>메뉴 상품 추가</b>① Add Item  ·  ② 상품 정보(이름, 가격, 카테고리, 사진)  ·  ③ AI로 사진 생성  ·  ④ Add Category</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-options">옵션 그룹 · 프리셋</h3>
+    <ol class="steps">
+      <li>선택지를 제공하려면 상품 패널에서 <b>옵션 그룹</b>(우유나 사이즈 같은)을 연결합니다. <b>"Add Group"</b>으로 그룹을 만들고, 타입(Single / Multi / Quantity)을 선택한 뒤 가격과 함께 선택지를 추가합니다.</li>
+    </ol>
     <div class="tip"><b>미리 만들어진 옵션 그룹.</b> 그룹을 처음부터 만들기 번거롭다면 상품 패널에서 <b>"프리셋에서 추가(Add from Presets)"</b>를 탭합니다. <b>프리셋 라이브러리(Preset Library)</b>가 열리며, 카페용 <b>우유(Milk)</b>·<b>사이즈(Size)</b>·<b>온도(Temperature)</b>·<b>당도(Sweetness)</b>, 식당용 <b>맵기(Spice)</b>·<b>단백질(Protein)</b>·<b>사이드(Sides)</b> 같은 완성형 그룹이 있습니다. 카드를 탭하면 그룹 전체가 메뉴에 추가되고, 추가되면 <b>"추가됨(Added)"</b> 배지가 표시됩니다.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-ai">AI 사진 · AI Fill</h3>
+    <ol class="steps">
+      <li>더 보기 좋은 사진이 필요하다면 상품 패널에서 배경 스타일(Light / Dark / Scene)을 선택한 뒤 <b>"AI Generate"</b>를 탭합니다. 사진 3장이 생성되며, 마음에 드는 사진을 탭해 주세요.</li>
+    </ol>
+    <div class="tip"><b>"AI Fill"로 메뉴 전체를 한 번에.</b> <b>"AI Fill"</b>을 탭하고, 대상 상품(All items / Missing image only / Specific category)을 선택하고, 생성할 항목(Image + Description / Image only / Description only)을 선택하고, 배경 스타일(Light — Pure white studio / Dark — Dark charcoal / Scene — Café bokeh)을 선택한 뒤 <b>"Generate for N items"</b>(N개 항목 생성)를 탭합니다. 결과를 확인하고 <b>"Apply"</b>(적용)해 주세요.</div>
+    <figure class="shot"><img src="../img/27-ai-fill.png" alt="AI Fill — 메뉴 전체를 한 번에" loading="lazy"><figcaption><b>AI Fill — 메뉴 전체를 한 번에</b>① 어떤 상품  ·  ② 무엇을 만들지  ·  ③ 배경 스타일  ·  ④ Generate</figcaption></figure>
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>AI가 메뉴 전체를 작성하고, 상품 사진까지 생성합니다.</b> 빈 화면이 아니라, 몇 초 만에 가득 찬 메뉴로 시작할 수 있습니다.</p></div>
-    <figure class="shot"><img src="../img/26-menu-additem.png" alt="스크린샷" loading="lazy"><figcaption><b>메뉴 상품 추가</b>① Add Item  ·  ② 상품 정보(이름, 가격, 카테고리, 사진)  ·  ③ AI로 사진 생성  ·  ④ Add Category</figcaption></figure>
-    <figure class="shot"><img src="../img/27-ai-fill.png" alt="스크린샷" loading="lazy"><figcaption><b>AI Fill — 메뉴 전체를 한 번에</b>① 어떤 상품  ·  ② 무엇을 만들지  ·  ③ 배경 스타일  ·  ④ Generate</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-import">가져오기 · 내보내기</h3>
+    <ol class="steps">
+      <li>이미 엑셀에 메뉴가 있다면 <b>"Import"</b>를 탭해 한 번에 가져옵니다. <b>"Export"</b>를 탭하면 메뉴를 엑셀로 내려받습니다.</li>
+    </ol>
   </div>
 <div class="pager"><a href="c3.html"><small>← 이전</small>3. 매장 설정하기</a><a class="nx" href="c5.html"><small>다음 →</small>5. 주문 받기</a></div></div></div></div>
 <script src="../assets/search.js?v=aa7c1b86"></script>

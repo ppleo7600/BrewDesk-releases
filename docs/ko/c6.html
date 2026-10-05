@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>6. 예약 &amp; 약속 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aa7c1b86"></head>
+<title>6. 예약 &amp; 스케줄러 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aa7c1b86"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -10,12 +10,12 @@
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
-<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작</a>
 <a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
 <a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
 <a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
-<a href="c6.html" class="cur"><span class="num">6</span>예약 &amp; 약속</a>
-<a class="sub" href="#c6-waitlist"><span class="num">6.1</span>대기열 (테이블 대기 줄)</a>
+<a href="c6.html" class="cur"><span class="num">6</span>예약 &amp; 스케줄러</a>
+<a class="sub" href="#c6-waitlist"><span class="num">6.1</span>대기열(Waitlist)</a>
 <a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
 <a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">9</span>환불</a>
@@ -33,16 +33,16 @@
 <a href="c21.html" class=""><span class="num">21</span>플랜 &amp; 결제</a>
 <a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c6">
-    <h3><span class="n">6</span>예약 &amp; 약속</h3>
+    <h3><span class="n">6</span>예약 &amp; 스케줄러</h3>
     <p class="intro">예약은 손님이 오기 전에 테이블이나 시간을 미리 잡아 두는 것입니다. 모든 예약을 한 곳에 모아 둘 수 있습니다. 하나 추가해 보겠습니다.</p>
-    <div class="activate"><div class="h">켜는 곳</div><p>예약은 <code>Settings › Add-ons › Reservations</code>에서 켭니다(스위치를 눌러 주세요). 먼저 <b>Tables</b>가 켜져 있어야 합니다 — Tables가 꺼져 있으면 "Enable Both" 팝업이 표시되며, 그대로 누르면 됩니다. 미용실·스파 <b>Appointments</b> 예약은 같은 곳에 있는 <b>Pro</b> 애드온입니다.</p></div>
+    <div class="activate"><div class="h">켜는 곳</div><p>예약은 <code>Settings › Add-ons › Reservations</code>에서 켭니다(스위치를 눌러 주세요). 먼저 <b>Tables</b>가 켜져 있어야 합니다 — Tables가 꺼져 있으면 "Enable Both" 팝업이 표시되며, 그대로 누르면 됩니다. 미용실·스파의 직원·시간 예약은 같은 곳에 있는 <b>Scheduler</b>(스케줄러) 애드온으로 받으며, <b>Pro</b> 애드온입니다.</p></div>
     <p class="tip" style="margin-bottom:6px"><b>시작 전에:</b> <code>Settings › Hours &amp; Closures</code>에서 영업시간을 정해 주세요. 예약은 영업 중인 시프트 안에 드는 시간만 표시합니다 — 따라서 어떤 시간이 보이지 않으면 먼저 영업시간을 확인해 주세요.</p>
     <ol class="steps">
-      <li>예약 페이지를 엽니다. <b>Table Map</b>에서 <b>"Reservations"</b>(오른쪽 위)를 탭하거나 <b>Scheduler</b>를 엽니다.</li>
+      <li>예약 페이지를 엽니다. <b>Table Map</b>에서 <b>"Reservations"</b>(오른쪽 위)를 탭하거나, 위쪽 <b>Scheduler</b>(스케줄러) 탭을 엽니다. (Scheduler 탭은 Pro 플랜에서 Scheduler 애드온을 켠 경우에만 표시됩니다.)</li>
       <li>달력에서 원하는 날을 탭합니다.</li>
       <li><b>"New Reservation"</b>을 탭합니다. 양식이 열립니다.</li>
-      <li><b>손님 이름(Guest name)</b>, <b>전화(Phone)</b>, <b>인원(Party size)</b>, <b>날짜(Date)</b>, <b>시간(Time)</b>을 입력합니다.</li>
-      <li>선택 사항: <b>테이블(Table)</b>과 <b>직원(Staff)</b>을 선택하고 <b>메모(Note)</b>를 추가합니다. 미용실이나 스파라면 직원을 선택하는 것이 가장 중요합니다.</li>
+      <li><b>손님 이름(Guest Name)</b>, <b>전화(Phone)</b>(둘 다 필수), <b>날짜(Date)</b>, <b>시간(Time)</b>을 입력합니다. <b>이메일(Email)</b>은 선택이고, <b>소요 시간(Duration)</b>은 기본 1시간입니다. 식당·카페 같은 테이블 매장에서는 <b>인원(Guests)</b>도 선택합니다(1~4명, 5명 이상은 직접 입력). 미용실·스파 형태의 매장에는 인원 칸이 없습니다.</li>
+      <li>선택 사항: <b>테이블(Table)</b>(미용실·스파는 <b>Chair / Room</b>)과 <b>직원(Staff)</b>을 선택하고 <b>메모(Note)</b>를 추가합니다. 미용실이나 스파라면 직원을 선택하는 것이 가장 중요합니다.</li>
       <li><b>Save</b>를 탭합니다. 손님은 "예약되었습니다" 확인을 자동으로 받습니다 — 설정한 방식에 따라 이메일, SMS, WhatsApp으로 전달됩니다.</li>
       <li>예약 손님이 도착하면 예약 카드를 열고 <b>"Check In"</b>을 탭합니다. <b>"Seated"</b>로 바뀝니다 (필요하면 테이블도 배정합니다).</li>
       <li>예약 없이 들어온 손님이 있다면 <b>"Walk-in"</b> 옵션을 탭합니다 — 바로 손님을 앉힙니다.</li>
@@ -50,17 +50,17 @@
     <div class="tip"><b>착석한 예약은 자동으로 정리됩니다.</b> "Seated"(착석)로 바꾼 예약은 해당 테이블의 <b>결제가 끝나거나</b>, 주문을 <b>취소</b>하거나, <b>하루 마감</b>을 하면 자동으로 지난 예약으로 넘어갑니다. 예약 목록에 어제 손님이 계속 앉아 있는 것처럼 남지 않습니다.</div>
     <div class="tip"><b>오지 않은 손님, 마감할 때 한 번에 정리하기.</b> <code>설정(Settings) › 예약(Reservations) › Settings</code> 의 <b>Booking Policy &amp; Guest Portal</b> 카드에서 <b>"Auto No-Show on Close"</b>(마감 시 자동 노쇼 처리)를 켜 주세요. 켜면 <b>"마감할 때 그날 확정 상태로 남아있는 예약이 자동으로 노쇼로 처리되고, 각 손님에게 사유를 안내하는 이메일이 발송됩니다."</b> 기본값은 <b>꺼짐</b>입니다. 처리 대상은 아직 <b>Confirmed(확정)</b>로 남아 있는 예약뿐이며, 착석·완료·취소된 예약은 그대로 둡니다. 같은 날을 다시 마감해도 손님에게 메일이 두 번 발송되지 않습니다.</div>
     <p class="foot">손님이 받는 메일은 나무라는 어조가 아닙니다. 제목은 <b>"We couldn't confirm your visit"</b>(방문을 확인하지 못했습니다)이며, 자리를 비워 두었지만 도착을 확인하지 못해 기록을 남겼다는 사실과, 잘못되었다면 매장에 연락해 달라는 안내가 담겨 있습니다.</p>
-    <div class="tip"><b>Scheduler vs Reservations:</b> <b>Scheduler</b>는 미용실/스파 <b>약속</b>용입니다(직원과 시간으로 예약). <b>테이블 예약</b>은 식사용입니다(테이블에 앉는 일행). 같은 달력 영역을 사용하므로 모든 예약이 한 곳에 모입니다.</div>
+    <div class="tip"><b>Scheduler vs Reservations:</b> <b>Scheduler</b>(Pro · Scheduler 애드온)는 미용실/스파 <b>예약</b>용입니다(직원과 시간으로 예약). <b>테이블 예약</b>은 식사용입니다(테이블에 앉는 일행). 같은 달력 영역을 사용하므로 모든 예약이 한 곳에 모입니다.</div>
     <div class="tip"><b>스케줄러의 직원 열(Staff Columns):</b> 스케줄러에서 직원별 열이 표시되려면 <b>Pro 플랜</b>이고 <b>등록된 직원 계정</b>이 있어야 합니다. Staff 애드온 토글과는 별개입니다(16장 참고). 직원이 아직 없으면 안내 문구가 표시됩니다. Starter 플랜에는 스케줄러 탭이 없습니다.</div>
-    <figure class="shot"><img src="../img/56-scheduler-staff-columns.png" alt="스크린샷" loading="lazy"><figcaption><b>스케줄러 — 직원 열</b>① 직원별 열</figcaption></figure>
-    <figure class="shot"><img src="../img/57-scheduler-no-staff.png" alt="스크린샷" loading="lazy"><figcaption><b>스케줄러 — 직원 없음</b>① 직원을 먼저 추가하라는 안내</figcaption></figure>
+    <figure class="shot"><img src="../img/56-scheduler-staff-columns.png" alt="스케줄러 — 직원 열" loading="lazy"><figcaption><b>스케줄러 — 직원 열</b>① 직원별 열</figcaption></figure>
+    <figure class="shot"><img src="../img/57-scheduler-no-staff.png" alt="스케줄러 — 직원 없음" loading="lazy"><figcaption><b>스케줄러 — 직원 없음</b>① 직원을 먼저 추가하라는 안내</figcaption></figure>
     <div class="tip"><b>인터넷이 끊겨도 체크인은 가능합니다.</b> 인터넷이 없어도 <b>"Check In"</b>(체크인) · <b>"No Show"</b>(노쇼) · <b>취소</b>는 그대로 누를 수 있습니다. 화면에는 바로 반영되고, 연결되면 자동으로 전송됩니다. 제한되는 것은 <b>새 예약 만들기·수정</b>뿐이며, 이유도 화면에 안내됩니다 — <b>"인터넷이 끊긴 상태에서는 새 예약을 만들 수 없습니다 — 예약 달력은 매장 밖에서도 함께 쓰이기 때문에 이중예약이 날 수 있습니다. 연결된 뒤 다시 시도해 주세요."</b> 목록을 아예 받아오지 못하면 <b>"마지막으로 받은 목록입니다"</b>(Showing the last list received)라고 안내하며, 이전에 보던 예약은 그대로 남아 있습니다.</div>
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>예약 기능이 기본 내장.</b> 두 번째 앱도, 추가 비용도 필요하지 않습니다. 식당은 테이블을 예약하고, 미용실과 스파는 직원 시간을 예약합니다 — 모두 같은 달력에서 관리합니다.</p></div>
-    <figure class="shot"><img src="../img/23-reservations.png" alt="스크린샷" loading="lazy"><figcaption><b>예약 설정</b>① Settings / Special Days 탭  ·  ② 예약 규칙(슬롯, 인원, 예약 가능 기간)  ·  ③ 저장</figcaption></figure>
-    <figure class="shot"><img src="../img/29-reservation-new.png" alt="스크린샷" loading="lazy"><figcaption><b>새 예약</b>① Walk-in / Reservation  ·  ② 손님 이름 &amp; 전화  ·  ③ 날짜 &amp; 시간  ·  ④ Save Reservation</figcaption></figure>
+    <figure class="shot"><img src="../img/23-reservations.png" alt="예약 설정" loading="lazy"><figcaption><b>예약 설정</b>① Settings / Special Days 탭  ·  ② 예약 규칙(슬롯, 인원, 예약 가능 기간)  ·  ③ 저장</figcaption></figure>
+    <figure class="shot"><img src="../img/29-reservation-new.png" alt="새 예약" loading="lazy"><figcaption><b>새 예약</b>① Walk-in / Reservation  ·  ② 손님 이름 &amp; 전화  ·  ③ 날짜 &amp; 시간 (아래로 Duration, Chair / Room 칸이 이어집니다)  ·  ④ Save Reservation. 이 화면은 미용실·스파 형태이며, 식당은 Chair / Room 대신 테이블 칸과 인원(Guests) 칸이 표시됩니다.</figcaption></figure>
 
-    <h3 id="c6-waitlist" style="font-size:16px;margin:22px 0 4px">대기열 (테이블 대기 줄)</h3>
-    <p class="intro">대기열은 빈 테이블을 기다리는 손님들의 줄입니다. BrewDesk가 줄을 관리하고, 테이블이 준비되는 순간 손님에게 문자를 보냅니다 — 그래서 손님이 입구에 몰리지 않습니다.</p>
+    <h3 id="c6-waitlist" style="font-size:16px;margin:22px 0 4px">대기열(Waitlist)</h3>
+    <p class="intro">테이블을 기다리는 줄입니다. 대기열은 빈 테이블을 기다리는 손님들의 줄입니다. BrewDesk가 줄을 관리하고, 테이블이 준비되는 순간 손님에게 문자를 보냅니다 — 그래서 손님이 입구에 몰리지 않습니다.</p>
     <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Add-ons › Waitlist</code>에서 켭니다(스위치를 눌러 주세요). 먼저 <b>Tables</b>가 켜져 있어야 합니다 — 팝업이 표시되면 "Enable Both"를 눌러 주세요.</p></div>
     <ol class="steps">
       <li><b>Waitlist</b>를 엽니다. <b>Table Map</b>에서 <b>"Waitlist"</b>(오른쪽 위)를 탭합니다.</li>
@@ -73,7 +73,7 @@
     <div class="tip"><b>인터넷이 끊겨도 줄은 계속 운영됩니다.</b> 손님 추가 · 착석 · <b>No Show</b>(노쇼) · <b>취소</b>는 모두 오프라인에서도 가능합니다. <b>"이 기기에 저장했습니다"</b>(Saved on this device)라고 표시되며 연결되면 자동으로 전송됩니다 — 오프라인에서 추가한 손님의 <b>대기번호표는 전송된 뒤에 나옵니다</b>. 화면을 새로고침해도 줄은 사라지지 않습니다(기기에 저장되어 있습니다). 이때는 <b>"마지막으로 받은 목록입니다"</b>(Showing the last list received)라고 안내합니다. 인터넷이 필요한 것은 <b>"Notify"</b>(호출) 하나뿐입니다 — "테이블 준비됨" 문자는 연결될 때까지 발송되지 않으므로, 그동안은 이름을 불러 주세요.</div>
     <div class="tip"><b>테이블이 없는 매장이라면 — 부르고 바로 주문받기.</b> 테이블 맵 없이 카운터로 운영하는 매장에서는 손님 카드의 버튼이 <b>"Seat"</b>(착석) 대신 <b>"Start Order"</b>(주문 시작)로 표시됩니다. 누르면 착석 처리와 동시에 해당 손님의 주문 화면으로 바로 넘어갑니다. 장바구니에 담아 둔 항목이 있으면 먼저 확인합니다 — <b>"진행 중인 주문이 있습니다"</b>(Order in progress) → <b>"보류하고 시작"</b>(Hold &amp; start)을 누르면 담아 둔 아이템이 보류 목록으로 옮겨지므로 아무것도 잃지 않습니다.</div>
     <div class="tip"><b>키오스크에 우리 가게 이름이 표시됩니다.</b> <b>Waitlist Kiosk</b>(대기열 키오스크) 모드로 둔 태블릿은 화면 맨 위에 <b>매장 로고와 매장 이름</b>을 표시합니다 — <code>Settings › Store info</code>에 이미 등록해 둔 사진을 그대로 사용하므로 따로 올릴 필요가 없습니다. 전화번호 칸도 <b>매장 국가의 국가번호</b>(+82, +1, +66 …)로 미리 맞춰져 있어서 손님은 번호만 입력하면 됩니다.</div>
-    <figure class="shot"><img src="../img/44-waitlist.png" alt="screenshot" loading="lazy"><figcaption><b>대기열에 추가</b>① 손님 이름  ·  ② 인원 수  ·  ③ 전화(문자 발송용)  ·  ④ "Add to Waitlist"</figcaption></figure>
+    <figure class="shot"><img src="../img/44-waitlist.png" alt="대기열에 추가" loading="lazy"><figcaption><b>대기열에 추가</b>① 손님 이름  ·  ② 인원 수  ·  ③ 전화(문자 발송용)  ·  ④ "Add to Waitlist"</figcaption></figure>
   </div>
 <div class="pager"><a href="c5.html"><small>← 이전</small>5. 주문 받기</a><a class="nx" href="c7.html"><small>다음 →</small>7. 결제 받기</a></div></div></div></div>
 <script src="../assets/search.js?v=aa7c1b86"></script>

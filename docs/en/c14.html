@@ -10,11 +10,11 @@
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">Home</a>
 <a href="c1.html" class=""><span class="num">1</span>Welcome &amp; overview</a>
-<a href="c2.html" class=""><span class="num">2</span>Quick start — up and running in 5 minutes</a>
+<a href="c2.html" class=""><span class="num">2</span>Quick start</a>
 <a href="c3.html" class=""><span class="num">3</span>Setting up your store</a>
 <a href="c4.html" class=""><span class="num">4</span>Building your menu</a>
 <a href="c5.html" class=""><span class="num">5</span>Taking orders</a>
-<a href="c6.html" class=""><span class="num">6</span>Reservations &amp; appointments</a>
+<a href="c6.html" class=""><span class="num">6</span>Reservations &amp; Scheduler</a>
 <a href="c7.html" class=""><span class="num">7</span>Getting paid</a>
 <a href="c8.html" class=""><span class="num">8</span>Discounts &amp; promotions</a>
 <a href="c9.html" class=""><span class="num">9</span>Refunds</a>
@@ -25,7 +25,7 @@
 <a href="c14.html" class="cur"><span class="num">14</span>Multiple devices &amp; reliability</a>
 <a class="sub" href="#c14-pair"><span class="num">14.1</span>Add a device to your main till</a>
 <a class="sub" href="#c14-role"><span class="num">14.2</span>Change a device&#x27;s job &amp; check the link</a>
-<a class="sub" href="#c14-limit"><span class="num">14.3</span>When you&#x27;ve used up your devices — swap one out</a>
+<a class="sub" href="#c14-limit"><span class="num">14.3</span>When you hit the device limit</a>
 <a href="c15.html" class=""><span class="num">15</span>Working offline</a>
 <a href="c16.html" class=""><span class="num">16</span>Staff &amp; permissions</a>
 <a href="c17.html" class=""><span class="num">17</span>Reports &amp; closing the day</a>
@@ -38,9 +38,9 @@
     <h3><span class="n">14</span>Multiple devices &amp; reliability</h3>
     <p class="intro">You can use more than one device at the same time. If one breaks, another one keeps your shop open. Let's set up your devices.</p>
     <ol class="steps">
-      <li>Open BrewDesk on each device and sign in.</li>
-      <li>Give each device a job. Pick <b>main till</b> (your number-one device), <b>extra till</b> (a helper device), or <b>display</b> (a screen for customers).</li>
-      <li>Need to change a device's job later? You can do it from the dashboard, even from far away.</li>
+      <li>Sign in with the owner's email on the devices that will be your main till and extra tills. Staff Ordering tablets, customer displays and waitlist kiosks don't use the owner's email sign-in — you approve them at the main till (<a href="#c14-pair">14.1</a>).</li>
+      <li>Give each device a job. Pick <b>main till</b> (your number-one device), <b>extra till</b> (a helper device), <b>Staff Ordering</b>, <b>customer display</b> (a screen for customers), or <b>waitlist kiosk</b>.</li>
+      <li>Need to change a device's job later? Ask for the change on that device, then approve it at the main till (<a href="#c14-role">14.2</a>).</li>
       <li>You pick one device as your <b>main till</b> — it's your anchor. It does <b>not</b> hand off on its own. If it ever goes offline, BrewDesk alerts you at once so you can turn it back on or make another device the main till.</li>
       <li>See <a href="c13.html#c13">Chapter 13</a> to set a device's mode, including Staff Ordering.</li>
     </ol>
@@ -48,10 +48,10 @@
     <div class="tip"><b>Give each device a name.</b> In <code>Settings › Devices</code>, tap a device's name (or the little pencil next to it), type something like <i>"Counter 1"</i> or <i>"Bar iPad"</i>, and save. You'll see <i>"Device name updated."</i> The name shows on every device, so you always know which tablet is which. Your tills that connect only over the shop network can't be renamed.</div>
     <div class="tip"><b>Taking the main till off the list?</b> If QR or online ordering is on, BrewDesk warns you first: <i>"This is your Main POS. QR and online ordering are on — while no Main POS is connected, new customer orders can't be taken or printed in the kitchen."</i> It only warns — you can still go ahead. If you can, make another device the main till first.</div>
     <div class="brag"><div class="h">Show this off</div><p><b>Your till never dies.</b> Spill a drink on it? Grab any laptop or tablet and you're back in minutes. No special machines, and you're never locked in.</p></div>
-    <figure class="shot"><img src="../img/25-devices.png" alt="screenshot" loading="lazy"><figcaption><b>Devices</b>① Main POS (this device)  ·  ② Customer Display toggle  ·  ③ Exit PIN  ·  ④ Network Lock</figcaption></figure>
+    <figure class="shot"><img src="../img/25-devices.png" alt="Devices settings screen" loading="lazy"><figcaption><b>Devices</b>① Main POS (this device)  ·  ② Customer Display toggle  ·  ③ Exit PIN  ·  ④ Network Lock</figcaption></figure>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c14-pair">Add a device to your main till</h3>
-    <p class="intro">When you add a staff ordering tablet, a customer display, or a check-in screen, your main till finds it for you. There is no code to type and no setting to hunt for. It even works when the shop has no internet.</p>
+    <p class="intro">When you add a staff ordering tablet, a customer display, or a waitlist kiosk (self check-in) screen, your main till finds it for you. There is no code to type and no setting to hunt for. It even works when the shop has no internet.</p>
     <div class="activate"><div class="h">What you need</div><p>The new device must have the <b>BrewDesk app</b> installed (iPad, Android tablet, or desktop), and it must be on the <b>same shop Wi-Fi</b> as your main till. A page opened in a web browser can't be registered as a device — you'll see <b>"Add devices from the BrewDesk app"</b> instead.</p></div>
     <ol class="steps">
       <li>Open the BrewDesk app on the new device. On the sign-in screen, tap <b>"Register as a new device at Main POS."</b> If the device has no internet, it goes to this screen on its own.</li>
@@ -81,9 +81,9 @@
     <div class="tip"><b>Changing a device's job now needs your approval.</b> Whoever is holding the tablet can <i>ask</i>, but only the <b>main till</b> can say yes — so a guest or a passer-by can't quietly turn your kiosk into an ordering device. The request <b>expires after 2 minutes</b> ("This request expires in {seconds}s — approve now or ask the device to send a new one"); if it runs out, just ask again from the tablet.</div>
     <div class="tip"><b>Turning a device into a Sub POS asks twice.</b> A Sub POS can take money, so the main till warns you first — <b>"This device will be able to take payments."</b> / <i>"A Sub POS can ring up orders, take payment and issue refunds. Approve only a device you set up yourself."</i> Tap <b>"Continue"</b> to confirm. If you don't recognise the device, tap <b>"Deny."</b></div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-limit">When you've used up your devices — swap one out</h3>
-    <p class="intro">Your plan includes a certain number of tills and customer displays. When you reach that number, BrewDesk doesn't just refuse — it offers you a straight swap.</p>
-    <div class="activate"><div class="h">Where to find it</div><p><code>Settings › Devices</code> shows a warning strip at the top as soon as you <b>reach</b> the limit (not only when you go over it), counting what you're using: <b>POS 3/3</b>, <b>Customer display 1/1</b>. Each device also shows <b>"Last seen"</b>, so you can tell which one has been sitting in a drawer.</p></div>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-limit">When you hit the device limit</h3>
+    <p class="intro">Your plan includes a certain number of tills and customer displays. When you reach that number, BrewDesk doesn't just refuse — it offers you a straight swap of one device for another.</p>
+    <div class="activate"><div class="h">Where to find it</div><p><code>Settings › Devices</code> shows a warning strip at the top as soon as you <b>reach</b> the limit (not only when you go over it), counting what you're using — for example <b>POS 1/1</b> and <b>Customer display 1/1</b> on Pro, or <b>POS 3/3</b> and <b>Customer display 3/3</b> on Business. Each device also shows <b>"Last seen"</b>, so you can tell which one has been sitting in a drawer.</p></div>
     <ol class="steps">
       <li>Register the new till as usual. If you're at the limit you'll see <b>"You've reached your plan's device limit. Replace an existing device, or upgrade your plan to add more."</b></li>
       <li>A <b>"Replace a device"</b> picker opens, listing the devices you could retire. Pick one.</li>
@@ -92,7 +92,7 @@
     </ol>
     <div class="tip"><b>Your main till is never in that list.</b> Replacing the main till is a bigger deal, so it has its own route: the <b>"Replace Main POS"</b> card, which confirms and emails you a code first. The quick swap above is only for the extra devices.</div>
     <div class="tip"><b>We email you too.</b> On the web, when a device is turned away for hitting the limit, BrewDesk emails the store owner as well — the message says <b>"We've also emailed the store owner about this."</b> So if a member of staff hits this at 7am, you find out without them having to explain it.</div>
-    <div class="tip"><b>Staff Ordering has its own count.</b> Run out of Staff Ordering slots and the registration screen tells you plainly: <b>"All 2 Staff Ordering slots are in use (2/2). Release a device in Settings → Devices to add another."</b> If your plan doesn't include it at all: <b>"Staff Ordering isn't included in your current plan."</b></div>
+    <div class="tip"><b>Staff Ordering has its own count.</b> Pro includes 3 Staff Ordering slots (Business has no limit). Run out of slots and the registration screen tells you plainly: <b>"All 3 Staff Ordering slots are in use (3/3). Release a device in Settings → Devices to add another."</b> If your plan doesn't include it at all: <b>"Staff Ordering isn't included in your current plan."</b></div>
     <p class="foot">On an iPad or the desktop app the wording is slightly shorter and points you to your BrewDesk account on the web to change your plan — the swap itself works exactly the same.</p>
   </div>
 <div class="pager"><a href="c13.html"><small>← Previous</small>13. Device modes &amp; customer display</a><a class="nx" href="c15.html"><small>Next →</small>15. Working offline</a></div></div></div></div>

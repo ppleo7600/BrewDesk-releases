@@ -10,17 +10,19 @@
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
-<a href="c2.html" class=""><span class="num">2</span>빠른 시작 — 5분이면 바로 시작</a>
+<a href="c2.html" class=""><span class="num">2</span>빠른 시작</a>
 <a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
 <a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
 <a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
-<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 약속</a>
+<a href="c6.html" class=""><span class="num">6</span>예약 &amp; 스케줄러</a>
 <a href="c7.html" class=""><span class="num">7</span>결제 받기</a>
 <a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">9</span>환불</a>
 <a href="c10.html" class=""><span class="num">10</span>고객 &amp; 단골 혜택</a>
 <a href="c11.html" class=""><span class="num">11</span>QR 코드 주문</a>
 <a href="c12.html" class="cur"><span class="num">12</span>고객에게 메시지 보내기</a>
+<a class="sub" href="#c12-channels"><span class="num">12.1</span>채널 켜기 · 충전</a>
+<a class="sub" href="#c12-optin"><span class="num">12.2</span>손님 동의 · 템플릿</a>
 <a href="c13.html" class=""><span class="num">13</span>기기 모드 &amp; 고객 디스플레이</a>
 <a href="c14.html" class=""><span class="num">14</span>여러 대 기기 &amp; 안정성</a>
 <a href="c15.html" class=""><span class="num">15</span>오프라인으로 쓰기</a>
@@ -34,15 +36,21 @@
 <div class="main"><div class="wrap">  <div class="chap" id="c12">
     <h3><span class="n">12</span>고객에게 메시지 보내기</h3>
     <p class="intro">손님에게 영수증이나 짧은 메모를 보낼 수 있습니다. 손님이 선호하는 방식을 선택할 수 있습니다 — 이메일, WhatsApp, 문자.</p>
-    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Messaging</code>에서 WhatsApp &amp; SMS를 설정합니다. SMS는 사용한 만큼 결제합니다 — 잔액을 조금 충전하고("Top up SMS") 발송한 만큼만 지불합니다.</p></div>
+    <div class="activate"><div class="h">켜는 곳</div><p><code>Settings › Messaging</code>에서 이메일 · SMS · WhatsApp 세 채널을 한눈에 보고 관리합니다. WhatsApp은 애드온이 아니라 이 화면 안의 채널입니다. SMS와 WhatsApp은 사용한 만큼 결제합니다 — 크레딧을 조금 충전하고 발송한 만큼만 지불합니다.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c12-channels">채널 켜기 · 충전</h3>
+    <p class="intro">Messaging 화면의 <b>Usage</b> 탭에는 <b>Email</b>, <b>SMS</b>(Credit Balance), <b>WhatsApp</b>(WA Credit) 카드가 나란히 있습니다. 카드마다 남은 크레딧과 이번 달 발송 수, <b>Top Up</b> 버튼, <b>Auto Top-Up</b> 스위치가 있습니다.</p>
     <ol class="steps">
       <li><b>이메일</b>은 첫날부터 바로 사용할 수 있습니다. 영수증과 일일 리포트를 보내는 데 사용해 주세요.</li>
-      <li><b>WhatsApp</b>을 사용하려면 애드온 스토어에서 켭니다. 그러면 영수증, 보상, "테이블이 준비되었습니다" 메모를 보낼 수 있습니다.</li>
-      <li>일반 문자(<b>SMS</b>)를 보내려면 그 기능도 켭니다. 발송한 문자만큼만 지불합니다.</li>
-      <li>손님은 메시지를 받기 전에 항상 먼저 동의합니다. 손님이 STOP이라고 답하면 BrewDesk는 즉시 문자 발송을 중단합니다.</li>
+      <li><b>WhatsApp</b>은 애드온 스토어에서 켤 필요가 없습니다. WhatsApp 카드에서 채널을 켜고 크레딧을 충전하면 영수증, 보상, "테이블이 준비되었습니다" 메모를 보낼 수 있습니다. 채널을 켜면 설정을 마무리하라는 안내 메일이 오며, 충전하기 전에는 "Enabled · add credit to send"(활성화됨 · 보내려면 충전 필요)라고 표시됩니다.</li>
+      <li>일반 문자(<b>SMS</b>)도 같은 방식입니다. SMS 카드에서 충전해 두면 발송한 문자 건수만큼만 차감됩니다.</li>
+      <li>크레딧이 줄어들면 해당 카드 위쪽의 <b>Top Up</b>을 탭해 충전합니다. 매번 충전하기 번거롭다면 카드 아래의 <b>Auto Top-Up</b>을 켜고, 남은 건수가 얼마 아래로 내려가면 얼마를 충전할지 정해 둘 수 있습니다. (iPad · 데스크탑 앱에서는 결제 링크 대신 카드의 채널 켜기/끄기 스위치가 표시됩니다.)</li>
     </ol>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c12-optin">손님 동의 · 템플릿</h3>
+    <p class="intro">손님은 메시지를 받기 전에 항상 먼저 동의합니다. 손님이 STOP이라고 답하면 BrewDesk는 즉시 문자 발송을 중단합니다. 보내는 문구는 <b>Templates</b> 탭에서, 발송 결과는 <b>Log</b> 탭에서 확인합니다.</p>
     <div class="tip"><b>옵트인(Opt-in)</b>은 손님이 메시지를 받기로 선택하는 것입니다. 결정권은 항상 손님에게 있습니다.</div>
-    <figure class="shot"><img src="../img/21-messaging.png" alt="스크린샷" loading="lazy"><figcaption><b>메시징</b>① Usage / Templates / Log 탭  ·  ② Email / SMS / WhatsApp 크레딧  ·  ③ Top Up  ·  ④ Auto Top-Up</figcaption></figure>
+    <figure class="shot"><img src="../img/21-messaging.png" alt="메시징 설정 화면" loading="lazy"><figcaption><b>메시징</b>① Usage / Templates / Log 탭  ·  ② 카드별 남은 크레딧  ·  ③ Top Up  ·  ④ Auto Top-Up</figcaption></figure>
   </div>
 <div class="pager"><a href="c11.html"><small>← 이전</small>11. QR 코드 주문</a><a class="nx" href="c13.html"><small>다음 →</small>13. 기기 모드 &amp; 고객 디스플레이</a></div></div></div></div>
 <script src="../assets/search.js?v=aa7c1b86"></script>
