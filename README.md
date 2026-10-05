@@ -11,6 +11,7 @@
   [![Platform](https://img.shields.io/badge/platform-macOS_%7C_Windows-0f172a?style=for-the-badge)](#-download)
   [![User Manual](https://img.shields.io/badge/user_manual-EN_%7C_KO-0F4C3A?style=for-the-badge)](https://ppleo7600.github.io/BrewDesk-releases/)
 
+  **📖 [User Manual (English)](https://ppleo7600.github.io/BrewDesk-releases/en/index.html) · [사용 매뉴얼 (한국어)](https://ppleo7600.github.io/BrewDesk-releases/ko/index.html)**
 </div>
 
 ---
