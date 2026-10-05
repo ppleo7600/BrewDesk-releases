@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7. 결제 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aa7c1b86"></head>
+<title>7. 결제 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=c96b3127"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -9,10 +9,12 @@
 <div class="langsw"><a class="" href="../en/c7.html">EN</a><a class="active" href="c7.html">한국어</a></div>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
+<div class="part">1부 · 시작하기</div>
 <a href="c1.html" class=""><span class="num">1</span>환영 &amp; 한눈에 보기</a>
 <a href="c2.html" class=""><span class="num">2</span>빠른 시작</a>
 <a href="c3.html" class=""><span class="num">3</span>매장 설정하기</a>
 <a href="c4.html" class=""><span class="num">4</span>메뉴 만들기</a>
+<div class="part">2부 · 매일 쓰기</div>
 <a href="c5.html" class=""><span class="num">5</span>주문 받기</a>
 <a href="c6.html" class=""><span class="num">6</span>예약 &amp; 스케줄러</a>
 <a href="c7.html" class="cur"><span class="num">7</span>결제 받기</a>
@@ -22,8 +24,10 @@
 <a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">9</span>환불</a>
 <a href="c10.html" class=""><span class="num">10</span>고객 &amp; 단골 혜택</a>
+<div class="part">3부 · 더 많은 기능</div>
 <a href="c11.html" class=""><span class="num">11</span>QR 코드 주문</a>
 <a href="c12.html" class=""><span class="num">12</span>고객에게 메시지 보내기</a>
+<div class="part">4부 · 기기 · 관리</div>
 <a href="c13.html" class=""><span class="num">13</span>기기 모드 &amp; 고객 디스플레이</a>
 <a href="c14.html" class=""><span class="num">14</span>여러 대 기기 &amp; 안정성</a>
 <a href="c15.html" class=""><span class="num">15</span>오프라인으로 쓰기</a>
@@ -33,7 +37,13 @@
 <a href="c19.html" class=""><span class="num">19</span>백업</a>
 <a href="c20.html" class=""><span class="num">20</span>애드온 &amp; 추가 기능</a>
 <a href="c21.html" class=""><span class="num">21</span>플랜 &amp; 결제</a>
-<a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a></aside>
+<div class="part">5부 · 문제 해결</div>
+<a href="c22.html" class=""><span class="num">22</span>문제 해결 &amp; 지원</a>
+<div class="part">부록</div>
+<a href="c23.html" class=""><span class="num">23</span>직원 빠른 시작</a>
+<a href="c24.html" class=""><span class="num">24</span>설치 준비물 &amp; 네트워크</a>
+<a href="c25.html" class=""><span class="num">25</span>설치 체크리스트</a>
+<a href="c26.html" class=""><span class="num">26</span>용어집</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c7">
     <h3><span class="n">7</span>결제 받기</h3>
     <p class="intro">이제 결제를 받는 단계입니다. 현금은 오늘부터 받을 수 있습니다. 본인의 Stripe 계정을 연결하면 카드도 바로 받을 수 있습니다. BrewDesk는 카드 매출에 어떤 수수료도 더하지 않습니다.</p>
@@ -43,7 +53,7 @@
       <li>카드를 받으려면, 카드 단말기(Stripe 리더)가 연결되어 있을 때는 <b>Card</b>를 탭합니다. 연결되어 있지 않으면 <b>Visa</b>·<b>MasterCard</b>·<b>Amex</b> 같은 카드사 버튼이나 <b>Card (External)</b>이 표시되며, 별도 단말로 받은 결제를 <b>기록만 하는(Record Only)</b> 버튼입니다. (카드 단말 결제는 Stripe 계정을 먼저 연결해야 합니다 — 다음 단계 참고.)</li>
       <li>카드를 받으려면 <b>Settings › Payments</b>에서 본인의 Stripe 계정을 연결합니다. 연동은 무료입니다. 같은 화면에서 <b>Cash</b> · <b>Card (Record Only)</b> · <b>Voucher</b> 결제 수단을 켜고 끌 수 있습니다.</li>
       <li>결제 화면 위쪽의 <b>Full Pay</b>(전액 결제) / <b>Split Pay</b>(나눠 결제) 토글은, 기본인 Full Pay는 한 가지 수단으로 전액을 받고, Split Pay는 한 사람이 현금+카드처럼 나눠 낼 때 사용합니다.</li>
-      <li>한 계산서를 여러 명이 나눠서 내야 한다면 <b>Split</b>을 탭합니다. 똑같이(엔빵) 또는 상품별로 나눌 수 있으며, 각 몫마다 따로 팁도 받을 수 있습니다. 아래 <b>7.1</b>을 참고해 주세요.</li>
+      <li>한 계산서를 여러 명이 나눠서 내야 한다면 주문 화면 오른쪽 아래의 <b>Split</b> 버튼을 탭합니다. 똑같이(엔빵) 또는 상품별로 나눌 수 있으며, 각 몫마다 따로 팁도 받을 수 있습니다. 아래 <b>7.1</b>을 참고해 주세요.</li>
     </ol>
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>BrewDesk는 모든 플랜에서 카드 매출에 0%를 더합니다.</b> 대금은 본인의 Stripe 계정으로 바로 들어갑니다. BrewDesk는 중간에 끼어 일부를 가져가지 않습니다.<sup>*</sup></p></div>
     <figure class="shot"><img src="../img/42-payment.png" alt="결제 화면" loading="lazy"><figcaption><b>결제 화면</b>① 결제 금액(Total Due / Remaining)  ·  ② 결제 수단 — Cash, 카드사(Visa·MasterCard·Amex), Card (External), Voucher (카드 항목은 Record Only), 위쪽 Full Pay / Split Pay 토글  ·  ③ 키패드(받은 현금 입력)  ·  ④ "Pay with…"로 완료</figcaption></figure>
@@ -54,7 +64,7 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">계산서 나누기 · 엔빵</h3>
     <p class="intro">한 테이블이 각자 따로 계산하고자 할 때, BrewDesk가 계산서를 대신 나눠 줍니다. 두 가지 쉬운 방법이 있습니다: 사람 수대로 <b>똑같이(엔빵)</b> 나누거나, 각자 먹은 것만 내도록 <b>상품별로</b> 나눕니다. 몫마다 팁을 따로 받을 수 있고, 한 사람이 일부는 현금·일부는 카드로 낼 수도 있습니다.</p>
-    <div class="activate"><div class="h">어디서 찾나요</div><p><b>매장 식사(Table service)</b> 주문에서 상품을 주방으로 보낸 뒤 <b>Pay Now</b> → <b>Split</b>을 탭합니다. 나누기는 테이블 주문용이므로, 테이블의 상품이 전송된 뒤에 버튼이 표시됩니다. (분할 화면 버튼은 영어로 표시됩니다.)</p></div>
+    <div class="activate"><div class="h">어디서 찾나요</div><p><b>매장 식사(Table service)</b> 주문에서 상품을 주방으로 보낸 뒤, 주문 화면 오른쪽 아래의 <b>Disc</b> · <b>Bill</b> · <b>Split</b> · <b>Pay Now</b> 버튼 중 <b>Split</b>을 탭합니다(Pay Now를 누른 뒤의 결제 화면 안이 아닙니다). 나누기는 테이블 주문용이므로, 테이블의 상품이 전송된 뒤에 버튼이 표시됩니다. (분할 화면 버튼은 영어로 표시됩니다.)</p></div>
     <p class="sub"><b>똑같이 나누기 · 엔빵 (Even split)</b></p>
     <ol class="steps">
       <li><b>Split</b>을 탭하고 <b>Even split</b>을 선택합니다.</li>
@@ -62,12 +72,15 @@
       <li>이제 한 명씩 결제를 받습니다. 화면에 <b>"Person 1 of 4"</b>가 표시됩니다. 그 사람의 현금·카드를 받으면 <b>"Person 2 of 4"</b>로 넘어갑니다.</li>
       <li>마지막 사람까지 끝나면 <b>Start New Order</b>를 탭합니다 — 테이블이 정산되고 비워집니다.</li>
     </ol>
+    <figure class="shot"><img src="../img/76-order-sent.png" alt="주방 전송 후 계산서 버튼" loading="lazy"><figcaption><b>주문 화면 오른쪽 아래 버튼</b>① Disc — 할인  ·  ② Bill — 계산서  ·  ③ Split — 나눠 내기  ·  ④ Pay Now — 결제</figcaption></figure>
+    <figure class="shot"><img src="../img/77-split.png" alt="계산서 나누기 — Even split" loading="lazy"><figcaption><b>계산서 나누기 — 똑같이(Even split)</b>① 나눌 합계  ·  ② Even split / By item 선택  ·  ③ 인원 수 − / +  ·  ④ Start Split &amp; Collect</figcaption></figure>
     <p class="sub"><b>상품별로 나누기 (By item)</b></p>
     <ol class="steps">
       <li><b>Split</b>을 탭하고 <b>By item</b>을 선택합니다.</li>
       <li>이 사람이 낼 <b>상품을 체크</b>합니다. BrewDesk가 합계를 계산합니다. <b>Pay Selected</b>를 탭해 결제를 받습니다.</li>
       <li>"items left"(남은 상품) 수가 0이 될 때까지 다음 사람의 상품으로 반복합니다. 주문은 자동으로 마무리됩니다.</li>
     </ol>
+    <figure class="shot"><img src="../img/78-split-byitem.png" alt="계산서 나누기 — By item" loading="lazy"><figcaption><b>계산서 나누기 — 상품별(By item)</b>① By item 선택  ·  ② 낼 상품 체크  ·  ③ Start Item Split</figcaption></figure>
     <div class="tip"><b>일부는 현금, 일부는 카드로 낸다면?</b> 어느 몫이든 결제를 <b>Split Pay</b>로 전환합니다. 먼저 일부(예: 현금 $5)를 받으면 <b>Received</b>(받음)와 <b>Remaining</b>(남음)이 표시됩니다. 나머지를 카드로 받으면, Remaining이 $0이 될 때 그 몫이 완료됩니다.</div>
     <div class="tip"><b>현금 먼저, 카드 마지막.</b> <b>Split Pay</b> 몫에서 카드가 한 번 들어가면 <b>Cash</b> 버튼이 회색으로 바뀌고 안내가 표시됩니다 — <b>"Cash first, card last. A card payment has already been taken for this round, so no more cash can be added."</b>(현금 먼저, 카드 마지막입니다. 이 회차에 카드 결제가 이미 들어와서 현금은 더 받을 수 없습니다.) 따라서 현금부터 받고 카드로 마무리해 주세요. 수기로 기록한 카드도 단말로 받은 카드와 동일하게 적용됩니다. 전액 단일 결제와 미결 주문 정산에는 적용되지 않습니다.</div>
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>"엔빵"을 세 번의 탭으로.</b> 똑같이, 상품별로, 또는 같은 몫에 현금+카드를 섞어서 — BrewDesk가 계산을 대신 하고 각자에게 개별 영수증("Split 1 of 4")을 출력합니다. 계산기도, 테이블에서의 실랑이도 필요하지 않습니다.</p></div>
@@ -102,5 +115,5 @@
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>다른 가게처럼 반올림하면서, 장부에서는 한 푼도 잃지 않습니다.</b> 동전 단위를 한 번 정해 두면 모든 현금 총액이 실제로 있는 동전에 딱 맞게 떨어집니다. 넘긴 1센트까지 기록되고, 영수증에 출력되고, 마감에서 합이 맞습니다 — 회계사가 "그 잔돈이 어디 갔느냐"고 물을 일이 없습니다.</p></div>
   </div>
 <div class="pager"><a href="c6.html"><small>← 이전</small>6. 예약 &amp; 스케줄러</a><a class="nx" href="c8.html"><small>다음 →</small>8. 할인 &amp; 프로모션</a></div></div></div></div>
-<script src="../assets/search.js?v=aa7c1b86"></script>
+<script src="../assets/search.js?v=c96b3127"></script>
 </body></html>
