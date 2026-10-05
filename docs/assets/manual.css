@@ -131,6 +131,8 @@
 
 /* ── 사이트 레이아웃(좌측 목차 + 우측 본문) ── */
 html{scroll-behavior:smooth}
+.logo{display:inline-block;width:30px;height:30px;border-radius:8px;vertical-align:middle;margin-right:10px}
+header.hero .brand .logo{width:44px;height:44px;border-radius:11px}
 [id]{scroll-margin-top:76px}
 .topnav .navinner{display:flex;align-items:center;gap:16px;max-width:none;padding:0 18px;height:56px}
 .menubtn{display:none;background:none;border:0;color:#fff;font-size:22px;cursor:pointer;padding:4px 8px}
