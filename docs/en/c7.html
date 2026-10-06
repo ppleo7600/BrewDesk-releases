@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7. Getting paid · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=c96b3127"></head>
+<title>7. Getting paid · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aebbdb0d"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="Search the manual…" autocomplete="off" aria-label="Search the manual…"><div class="results" id="results" data-none="No results"></div></div>
-<div class="langsw"><a class="active" href="c7.html">EN</a><a class="" href="../ko/c7.html">한국어</a></div>
+<details class="langmenu"><summary aria-label="Language">English</summary><div class="langlist"><a class="active" hreflang="en" href="c7.html">English</a><a class="" hreflang="ko" href="../ko/c7.html">한국어</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">Home</a>
 <div class="part">Part 1 · Getting started</div>
@@ -28,60 +28,65 @@
 <div class="part">Part 3 · Running your store</div>
 <a href="c20.html" class=""><span class="num">12</span>Add-ons &amp; extras</a>
 <a href="c21.html" class=""><span class="num">13</span>Your plan &amp; billing</a>
-<a href="c16.html" class=""><span class="num">14</span>Staff &amp; permissions</a>
-<a href="c6.html" class=""><span class="num">15</span>Reservations &amp; Scheduler</a>
-<a href="c10.html" class=""><span class="num">16</span>Customers &amp; loyalty</a>
-<a href="c11.html" class=""><span class="num">17</span>QR code ordering</a>
-<a href="c12.html" class=""><span class="num">18</span>Messaging your customers</a>
-<a href="c19.html" class=""><span class="num">19</span>Backups</a>
+<a href="c29.html" class=""><span class="num">14</span>Owner app (check your store from your phone)</a>
+<a href="c16.html" class=""><span class="num">15</span>Staff &amp; permissions</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservations &amp; Scheduler</a>
+<a href="c10.html" class=""><span class="num">17</span>Customers &amp; loyalty</a>
+<a href="c11.html" class=""><span class="num">18</span>QR code ordering</a>
+<a href="c12.html" class=""><span class="num">19</span>Messaging your customers</a>
+<a href="c19.html" class=""><span class="num">20</span>Backups</a>
 <div class="part">Part 4 · Installation &amp; devices</div>
-<a href="c24.html" class=""><span class="num">20</span>Equipment &amp; network</a>
-<a href="c13.html" class=""><span class="num">21</span>Device modes &amp; customer display</a>
-<a href="c14.html" class=""><span class="num">22</span>Multiple devices &amp; reliability</a>
-<a href="c18.html" class=""><span class="num">23</span>Receipts &amp; printers</a>
-<a href="c27.html" class=""><span class="num">24</span>Going live</a>
-<a href="c25.html" class=""><span class="num">25</span>Installation checklist</a>
+<a href="c24.html" class=""><span class="num">21</span>Equipment &amp; network</a>
+<a href="c13.html" class=""><span class="num">22</span>Device modes &amp; customer display</a>
+<a href="c14.html" class=""><span class="num">23</span>Multiple devices &amp; reliability</a>
+<a href="c18.html" class=""><span class="num">24</span>Receipts &amp; printers</a>
+<a href="c27.html" class=""><span class="num">25</span>Going live</a>
+<a href="c25.html" class=""><span class="num">26</span>Installation checklist</a>
 <div class="part">Part 5 · Help</div>
-<a href="c22.html" class=""><span class="num">26</span>Troubleshooting &amp; support</a>
-<a href="c28.html" class=""><span class="num">27</span>FAQ</a>
-<a href="c26.html" class=""><span class="num">28</span>Glossary</a></aside>
+<a href="c22.html" class=""><span class="num">27</span>Troubleshooting &amp; support</a>
+<a href="c28.html" class=""><span class="num">28</span>FAQ</a>
+<a href="c26.html" class=""><span class="num">29</span>Glossary</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c7">
     <h3><span class="n">7</span>Getting paid</h3>
     <p class="intro">Now the fun part — getting paid. You can take cash today. You can take cards as soon as you link your own Stripe account. BrewDesk never adds a fee on top of your card sales.</p>
+    <figure class="shot"><img src="../img/42-payment.png" alt="Payment screen" loading="lazy"><figcaption><b>Payment screen</b>① Total due / Remaining  ·  ② Payment methods — Cash, card brands (Visa, MasterCard, Amex), Card (External), Voucher (the card ones say Record Only), with the Full Pay / Split Pay toggle above  ·  ③ Keypad (enter cash received)  ·  ④ "Pay with…" to finish</figcaption></figure>
     <ol class="steps">
       <li>Finish the order, then tap <b>Pay Now</b>. The Checkout screen opens.</li>
+    </ol>
+    <figure class="shot"><img src="../img/97-pay-cash.png" alt="Checkout — taking cash" loading="lazy"><figcaption><b>Checkout — taking cash</b>① Cash  ·  ② Amount received  ·  ③ Change to Return  ·  ④ Pay with … — Cash</figcaption></figure>
+    <ol class="steps" start="2">
       <li>To take cash, tap <b>Cash</b>. Type how much money the customer hands you. BrewDesk shows you the change to give back.</li>
       <li>To take a card: if a card reader (Stripe terminal) is connected, tap <b>Card</b>. If not, you'll see card-brand buttons such as <b>Visa</b>, <b>MasterCard</b> and <b>Amex</b>, plus <b>Card (External)</b> — these just <b>record</b> a card payment you took on a separate terminal (<b>Record Only</b>). (Reader payments need your Stripe account linked first — see the next step.)</li>
       <li>To take cards, link your own Stripe account in <b>Settings › Payments</b>. It's free to connect. On the same screen you can switch the <b>Cash</b>, <b>Card (Record Only)</b> and <b>Voucher</b> payment methods on or off.</li>
       <li>The <b>Full Pay</b> / <b>Split Pay</b> toggle at the top of the checkout screen: Full Pay (the default) takes the whole amount with one method; Split Pay is for one person paying part by cash and part by card.</li>
       <li>Need to split one bill between people? Tap the <b>Split</b> button at the bottom right of the order screen. You can split it evenly or by item — and each share can have its own tip. See <a href="#c7-split">Split the bill</a> just below.</li>
     </ol>
+    <figure class="shot"><img src="../img/98-pay-done.png" alt="Payment complete" loading="lazy"><figcaption><b>Payment complete</b>① Receipt preview  ·  ② Change to Return  ·  ③ Email Receipt / Send Receipt (Reprint prints again)  ·  ④ Start New Order</figcaption></figure>
     <div class="brag"><div class="h">Show this off</div><p><b>BrewDesk adds 0% on your card sales, on every plan.</b> Your money goes straight to your own Stripe account. BrewDesk never sits in the middle and never takes a slice.<sup>*</sup></p></div>
-    <figure class="shot"><img src="../img/42-payment.png" alt="Payment screen" loading="lazy"><figcaption><b>Payment screen</b>① Total due / Remaining  ·  ② Payment methods — Cash, card brands (Visa, MasterCard, Amex), Card (External), Voucher (the card ones say Record Only), with the Full Pay / Split Pay toggle above  ·  ③ Keypad (enter cash received)  ·  ④ "Pay with…" to finish</figcaption></figure>
     <p class="foot">* You pay Stripe's standard rate directly to them — BrewDesk adds 0% on top.</p>
-    <div class="tip"><b>Who gets the tip?</b> When a tip is added, BrewDesk asks you to choose which staff member earned it — tap <b>Assign staff</b> and pick a name. If just one server is on that table, they're picked for you automatically. If no one is chosen, the tip is saved under <b>"Store Manager"</b> so it's never lost.</div>
+    <div class="tip"><b>Who gets the tip?</b> When a tip is added, BrewDesk asks you to choose which staff member earned it — tap <b>Assign staff</b> and pick a name. If just one server is on that table, they're picked for you automatically. If no one is chosen, the tip is saved under <b>Store Manager</b> so it's never lost.</div>
     <div class="tip"><b>Recording a card by hand?</b> If you take cards on a separate terminal that isn't connected to BrewDesk, the card brands — <b>Visa</b>, <b>Mastercard</b>, <b>Amex</b> and so on — now sit right next to <b>Cash</b> on the payment screen. One tap records both that it was a card and which brand, with no extra step.</div>
-    <div class="tip"><b>The payment screen won't close while the card reader is working.</b> If you tap the <b>X</b> while a connected card reader is still charging the card, the screen stays put and tells you why: <b>"Card payment in progress"</b> — <i>"The reader is still charging this card. Wait until it finishes — closing now could take the money without recording it on the order."</i> It's a few seconds, and it's the difference between the money being on the order and the money just being gone. The X frees itself the moment the reader finishes, whether the card went through or not.</div>
+    <div class="tip"><b>The payment screen won't close while the card reader is working.</b> If you tap the <b>X</b> while a connected card reader is still charging the card, the screen stays put and tells you why: <b>Card payment in progress</b> — <i>"The reader is still charging this card. Wait until it finishes — closing now could take the money without recording it on the order."</i> It's a few seconds, and it's the difference between the money being on the order and the money just being gone. The X frees itself the moment the reader finishes, whether the card went through or not.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">Split the bill</h3>
     <p class="intro">When a table wants to pay separately, BrewDesk splits the bill for you. There are two easy ways: split it <b>evenly</b> between people, or split it <b>by item</b> so each person pays for what they had. Every share can add its own tip, and one person can even pay part cash and part card.</p>
     <div class="activate"><div class="h">Where to find it</div><p>On a <b>dine-in</b> order (Table service), send the items to the kitchen, then tap <b>Split</b> among the buttons at the bottom right of the order screen (<b>Disc</b> · <b>Bill</b> · <b>Split</b> · <b>Pay Now</b>) — it is not inside the checkout screen you reach with Pay Now. Splitting is for table orders, so the button appears once the table's items have been sent.</p></div>
     <p class="sub"><b>Split evenly (N빵)</b></p>
+    <figure class="shot"><img src="../img/76-order-sent.png" alt="Cart buttons after sending to the kitchen" loading="lazy"><figcaption><b>Buttons at the bottom right of the order screen</b>① Disc  ·  ② Bill  ·  ③ Split  ·  ④ Pay Now</figcaption></figure>
+    <figure class="shot"><img src="../img/77-split.png" alt="Split the Bill — Even split" loading="lazy"><figcaption><b>Split the bill — Even split</b>① Total to split  ·  ② Even split / By item  ·  ③ Number of people − / +  ·  ④ Start Split &amp; Collect</figcaption></figure>
     <ol class="steps">
       <li>Tap <b>Split</b>, then choose <b>Even split</b>.</li>
-      <li>Set the <b>number of people</b> with the − and + buttons. BrewDesk shows <b>"Each person pays"</b> underneath. Tap <b>Start Split &amp; Collect</b>.</li>
+      <li>Set the <b>number of people</b> with the − and + buttons. BrewDesk shows <b>Each person pays</b> underneath. Tap <b>Start Split &amp; Collect</b>.</li>
       <li>Now collect one share at a time. The screen says <b>"Person 1 of 4"</b>. Take their cash or card, and it moves on to <b>"Person 2 of 4"</b>, and so on.</li>
       <li>After the last person, tap <b>Start New Order</b> — the table is paid off and cleared.</li>
     </ol>
-    <figure class="shot"><img src="../img/76-order-sent.png" alt="Cart buttons after sending to the kitchen" loading="lazy"><figcaption><b>Buttons at the bottom right of the order screen</b>① Disc  ·  ② Bill  ·  ③ Split  ·  ④ Pay Now</figcaption></figure>
-    <figure class="shot"><img src="../img/77-split.png" alt="Split the Bill — Even split" loading="lazy"><figcaption><b>Split the bill — Even split</b>① Total to split  ·  ② Even split / By item  ·  ③ Number of people − / +  ·  ④ Start Split &amp; Collect</figcaption></figure>
     <p class="sub"><b>Split by item (아이템별)</b></p>
+    <figure class="shot"><img src="../img/78-split-byitem.png" alt="Split the Bill — By item" loading="lazy"><figcaption><b>Split the bill — By item</b>① By item  ·  ② Tick the items  ·  ③ Start Item Split</figcaption></figure>
     <ol class="steps">
       <li>Tap <b>Split</b>, then choose <b>By item</b>.</li>
       <li><b>Tick the items</b> this person is paying for. BrewDesk adds them up. Tap <b>Pay Selected</b> and take their payment.</li>
       <li>Repeat with the next person's items until the "items left" count reaches zero. The order finishes on its own.</li>
     </ol>
-    <figure class="shot"><img src="../img/78-split-byitem.png" alt="Split the Bill — By item" loading="lazy"><figcaption><b>Split the bill — By item</b>① By item  ·  ② Tick the items  ·  ③ Start Item Split</figcaption></figure>
     <div class="tip"><b>Part cash, part card?</b> On any share, switch the payment to <b>Split Pay</b>. Take the first part (say $5 cash) and BrewDesk shows <b>Received</b> and <b>Remaining</b>. Add a card for the rest — the share is done when Remaining reaches $0.</div>
     <div class="tip"><b>Cash first, card last.</b> On a <b>Split Pay</b> share, once any card has gone in, the <b>Cash</b> button goes grey and a note says <b>"Cash first, card last. A card payment has already been taken for this round, so no more cash can be added."</b> So take the cash part first, then finish with the card. This applies to a card you recorded by hand as well as one taken on a reader. Full single payments and settling an unpaid order are not affected.</div>
     <div class="brag"><div class="h">Show this off</div><p><b>"엔빵" in three taps.</b> Split evenly, split by item, or mix cash and card on the very same share — BrewDesk does the math and prints each person their own slip ("Split 1 of 4"). No calculator, no arguing at the table.</p></div>
@@ -89,32 +94,32 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-tip">Tips on orders you settle later</h3>
     <p class="intro">Sometimes an order is left unpaid and you settle it at the end of the day. If a tip is involved, BrewDesk now asks you about it before it takes the money — so a tip never quietly disappears.</p>
-    <div class="activate"><div class="h">Where to find it</div><p>At closing, tap an unpaid order and choose <b>"Settle unpaid order"</b>. The tip box is at the top of the payment screen.</p></div>
+    <div class="activate"><div class="h">Where to find it</div><p>At closing, tap an unpaid order and choose <b>Settle unpaid order</b>. The tip box is at the top of the payment screen.</p></div>
     <ol class="steps">
-      <li>If the order already has a tip on it, you see <b>"Tip recorded on this order"</b> with two buttons — <b>"Include tip"</b> or <b>"Exclude tip"</b>. You must pick one; BrewDesk will not take the payment until you do.</li>
-      <li>If there is no tip on the order but the customer tipped on your card terminal, use <b>"Add a tip"</b>. Type the amount and tap <b>"Apply"</b>.</li>
-      <li>If you use staff accounts, pick who gets it under <b>"Tip goes to"</b>. This is required — a tip with no name on it can't reach anyone.</li>
-      <li>Take the payment as normal. Tap <b>"Back to closing"</b> to carry on with the rest of your day.</li>
+      <li>If the order already has a tip on it, you see <b>"Tip recorded on this order"</b> with two buttons — <b>Include tip</b> or <b>Exclude tip</b>. You must pick one; BrewDesk will not take the payment until you do.</li>
+      <li>If there is no tip on the order but the customer tipped on your card terminal, use <b>Add a tip</b>. Type the amount and tap <b>Apply</b>.</li>
+      <li>If you use staff accounts, pick who gets it under <b>Tip goes to</b>. This is required — a tip with no name on it can't reach anyone.</li>
+      <li>Take the payment as normal. Tap <b>Back to closing</b> to carry on with the rest of your day.</li>
     </ol>
     <div class="tip"><b>Why ask at all?</b> Because a tip taken on a card terminal isn't in BrewDesk yet. If nobody types it in, your staff never see it. This one screen is where it gets in.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-cashrounding">Cash payment rounding</h3>
     <p class="intro">Cash Payment Rounding tidies up the odd coins. In a lot of countries the smallest coin is bigger than the last digit on the bill — nobody carries a 1-cent piece any more. So when a cash customer owes 10.03, you take 10.00 and let the 3 go. BrewDesk can now do that rounding for you, on cash payments only, and keep a record of every coin you let go.</p>
-    <div class="activate"><div class="h">Where to find it</div><p>Open <code>Settings › Payments</code> and scroll to <b>"Cash Payment Rounding"</b>. Only the store owner can open the Payments tab, so only the owner can set this. It starts <b>off</b> for every shop.</p></div>
+    <div class="activate"><div class="h">Where to find it</div><p>Open <code>Settings › Payments</code> and scroll to <b>Cash Payment Rounding</b>. Only the store owner can open the Payments tab, so only the owner can set this. It starts <b>off</b> for every shop.</p></div>
+    <figure class="shot"><img src="../img/19-payments.png" alt="Payments settings — payment methods &amp; cash rounding" loading="lazy"><figcaption><b>Payments settings — payment methods &amp; cash rounding</b>① Turn payment methods on/off  ·  ② Enable cash payment rounding  ·  ③ Rounding increment  ·  ④ Save</figcaption></figure>
     <ol class="steps">
-      <li>Turn on <b>"Enable cash payment rounding"</b>.</li>
-      <li>Type the <b>"Rounding increment"</b> — the smallest coin you actually handle (0.05, 10, 100, whatever it is where you are). <b>Leave it at 0 and the switch does nothing</b>, which is exactly what the hint under the box tells you.</li>
-      <li>Pick the <b>"Rounding direction"</b>: <b>"Nearest"</b> (up or down, whichever is closer), <b>"Round down"</b> (always in the customer's favour) or <b>"Round up"</b>.</li>
-      <li>Look at the grey note underneath. BrewDesk knows the usual practice for your country and says so: <i>"Common practice in this country: round to 0.05 using Nearest (legally required)."</i> Tap <b>"Apply"</b> and it fills in the increment and direction for you.</li>
+      <li>Turn on <b>Enable cash payment rounding</b>.</li>
+      <li>Type the <b>Rounding increment</b> — the smallest coin you actually handle (0.05, 10, 100, whatever it is where you are). <b>Leave it at 0 and the switch does nothing</b>, which is exactly what the hint under the box tells you.</li>
+      <li>Pick the <b>Rounding direction</b>: <b>Nearest</b> (up or down, whichever is closer), <b>Round down</b> (always in the customer's favour) or <b>Round up</b>.</li>
+      <li>Look at the grey note underneath. BrewDesk knows the usual practice for your country and says so: <i>"Common practice in this country: round to 0.05 using Nearest (legally required)."</i> Tap <b>Apply</b> and it fills in the increment and direction for you.</li>
       <li>Tap <b>Save</b> at the top of Settings.</li>
     </ol>
-    <figure class="shot"><img src="../img/19-payments.png" alt="Payments settings — payment methods &amp; cash rounding" loading="lazy"><figcaption><b>Payments settings — payment methods &amp; cash rounding</b>① Turn payment methods on/off  ·  ② Enable cash payment rounding  ·  ③ Rounding increment  ·  ④ Save</figcaption></figure>
     <div class="tip"><b>Cash only — and your tax doesn't move.</b> This only touches an order paid <b>entirely in cash</b>. Pay any part of it by card and the total stays exactly as it was. The tax amount is never recalculated, and card receipts print exactly as they did before. How the tax itself is rounded is a different setting, over in <code>Settings › Tax &amp; Service</code> (see <a href="c3.html#c3-tax">Set your tax</a>).</div>
     <div class="tip"><b>"Legally required" vs "common practice".</b> Some countries have a law about this (Singapore, Malaysia, Canada, Australia, New Zealand, Switzerland among them); in others it's just what shops do. Either way BrewDesk only <b>suggests</b> — nothing changes until you tap Apply and Save. A few countries are listed as having no rounding practice at all (<b>"This country has no cash-rounding practice."</b>), and one we haven't checked yet says <b>"This country has not been checked yet."</b></div>
-    <div class="tip"><b>The receipt shows the coins you let go.</b> On any order where rounding actually changed the total, a <b>"Cash Rounding"</b> line prints just above the change line — on the paper receipt and the emailed one. Orders that landed on a round number don't get the line at all, so nothing looks cluttered.</div>
-    <div class="tip"><b>And it ties out at closing.</b> Your closing report's Payment Breakdown gets a <b>"Cash Rounding"</b> line under Total Payment Collected, with the plain-words note <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b> That's the answer to "why is my drawer a few cents light?" — it isn't, you gave those coins away on purpose. You'll see the same figure on your payment history summary and on the Analytics cash card.</div>
+    <div class="tip"><b>The receipt shows the coins you let go.</b> On any order where rounding actually changed the total, a <b>Cash Rounding</b> line prints just above the change line — on the paper receipt and the emailed one. Orders that landed on a round number don't get the line at all, so nothing looks cluttered.</div>
+    <div class="tip"><b>And it ties out at closing.</b> Your closing report's Payment Breakdown gets a <b>Cash Rounding</b> line under Total Payment Collected, with the plain-words note <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b> That's the answer to "why is my drawer a few cents light?" — it isn't, you gave those coins away on purpose. You'll see the same figure on your payment history summary and on the Analytics cash card.</div>
     <div class="brag"><div class="h">Show this off</div><p><b>Round like the shop next door, without losing the pennies in your books.</b> Set the coin unit once and every cash total lands on a coin you actually have. Every rounded cent is still recorded, still on the receipt, and still adds up at closing — so your accountant never has to ask where the odd change went.</p></div>
   </div>
-<div class="pager"><a href="c5.html"><small>← Previous</small>6. Taking orders</a><a class="nx" href="c8.html"><small>Next →</small>8. Discounts &amp; promotions</a></div></div></div></div>
-<script src="../assets/search.js?v=c96b3127"></script>
+<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c3.html">3. Setting up your store</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c5.html"><small>← Previous</small>6. Taking orders</a><a class="nx" href="c8.html"><small>Next →</small>8. Discounts &amp; promotions</a></div></div></div></div>
+<script src="../assets/search.js?v=aebbdb0d"></script>
 </body></html>

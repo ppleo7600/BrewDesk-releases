@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>12. 애드온 &amp; 추가 기능 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=c96b3127"></head>
+<title>12. 애드온 &amp; 추가 기능 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aebbdb0d"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없습니다"></div></div>
-<div class="langsw"><a class="" href="../en/c20.html">EN</a><a class="active" href="c20.html">한국어</a></div>
+<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c20.html">English</a><a class="active" hreflang="ko" href="c20.html">한국어</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <div class="part">1부 · 시작하기</div>
@@ -27,41 +27,43 @@
 <a class="sub" href="#c20-toggle"><span class="num">12.1</span>애드온 켜고 끄기</a>
 <a class="sub" href="#c20-locked"><span class="num">12.2</span>잠긴 기능을 눌렀을 때</a>
 <a href="c21.html" class=""><span class="num">13</span>플랜 &amp; 결제</a>
-<a href="c16.html" class=""><span class="num">14</span>직원 &amp; 권한</a>
-<a href="c6.html" class=""><span class="num">15</span>예약 &amp; 스케줄러</a>
-<a href="c10.html" class=""><span class="num">16</span>고객 &amp; 단골 혜택</a>
-<a href="c11.html" class=""><span class="num">17</span>QR 코드 주문</a>
-<a href="c12.html" class=""><span class="num">18</span>고객에게 메시지 보내기</a>
-<a href="c19.html" class=""><span class="num">19</span>백업</a>
+<a href="c29.html" class=""><span class="num">14</span>사장님 앱 (휴대폰으로 매장 보기)</a>
+<a href="c16.html" class=""><span class="num">15</span>직원 &amp; 권한</a>
+<a href="c6.html" class=""><span class="num">16</span>예약 &amp; 스케줄러</a>
+<a href="c10.html" class=""><span class="num">17</span>고객 &amp; 단골 혜택</a>
+<a href="c11.html" class=""><span class="num">18</span>QR 코드 주문</a>
+<a href="c12.html" class=""><span class="num">19</span>고객에게 메시지 보내기</a>
+<a href="c19.html" class=""><span class="num">20</span>백업</a>
 <div class="part">4부 · 설치 · 기기</div>
-<a href="c24.html" class=""><span class="num">20</span>설치 준비물 &amp; 네트워크</a>
-<a href="c13.html" class=""><span class="num">21</span>기기 모드 &amp; 고객 디스플레이</a>
-<a href="c14.html" class=""><span class="num">22</span>여러 대 기기 &amp; 안정성</a>
-<a href="c18.html" class=""><span class="num">23</span>영수증 &amp; 프린터</a>
-<a href="c27.html" class=""><span class="num">24</span>라이브 전환</a>
-<a href="c25.html" class=""><span class="num">25</span>설치 체크리스트</a>
+<a href="c24.html" class=""><span class="num">21</span>설치 준비물 &amp; 네트워크</a>
+<a href="c13.html" class=""><span class="num">22</span>기기 모드 &amp; 고객 디스플레이</a>
+<a href="c14.html" class=""><span class="num">23</span>여러 대 기기 &amp; 안정성</a>
+<a href="c18.html" class=""><span class="num">24</span>영수증 &amp; 프린터</a>
+<a href="c27.html" class=""><span class="num">25</span>라이브 전환</a>
+<a href="c25.html" class=""><span class="num">26</span>설치 체크리스트</a>
 <div class="part">5부 · 도움말</div>
-<a href="c22.html" class=""><span class="num">26</span>문제 해결 &amp; 지원</a>
-<a href="c28.html" class=""><span class="num">27</span>자주 묻는 질문</a>
-<a href="c26.html" class=""><span class="num">28</span>용어집</a></aside>
+<a href="c22.html" class=""><span class="num">27</span>문제 해결 &amp; 지원</a>
+<a href="c28.html" class=""><span class="num">28</span>자주 묻는 질문</a>
+<a href="c26.html" class=""><span class="num">29</span>용어집</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c20">
     <h3><span class="n">12</span>애드온 &amp; 추가 기능</h3>
     <p class="intro">애드온은 켜고 끌 수 있는 추가 기능입니다. 모두 한 곳에서 관리하며, 사용하는 기능에 대해서만 결제합니다.</p>
     <h3 style="font-size:16px;margin:22px 0 4px" id="c20-toggle">애드온 켜고 끄기</h3>
+    <figure class="shot"><img src="../img/20-addons.png" alt="애드온 스토어 화면" loading="lazy"><figcaption><b>애드온 스토어</b>① 켜기/끄기 토글(초록 = 켜짐)  ·  ② Free / Pro+ 표시  ·  ③ 켠 개수/16 (설정 메뉴 Add-ons 옆 카운터)</figcaption></figure>
+    <figure class="shot"><img src="../img/117-addons-more.png" alt="애드온 목록" loading="lazy"><figcaption><b>애드온 목록</b>① 켜기/끄기 스위치  ·  ② Settings(애드온 설정)  ·  ③ Upgrade(Pro+ 애드온)</figcaption></figure>
     <ol class="steps">
       <li><code>Settings › Add-ons</code>를 엽니다. <b>Operations</b>, <b>Guest Experience</b>, <b>Devices</b>로 묶인 카드가 표시되며, 각 카드에는 켜기/끄기 스위치가 있습니다(초록색이면 켜진 상태입니다).</li>
-      <li>스위치를 탭하여 기능을 켜거나 끕니다. <b>무료</b> 애드온은 모든 플랜에서 작동하고, 일부(Online Ordering/QR, Loyalty, Staff, Scheduler(스케줄러) 등)는 <b>Pro</b> 플랜에서 제공되며, SMS는 사용한 만큼 결제됩니다.</li>
-      <li>일부 애드온은 다른 애드온이 먼저 켜져 있어야 합니다. 예를 들어 Tables가 꺼진 상태에서 Reservations를 켜면 "Reservations requires Tables" 팝업이 나타나며, 이때 <b>"Enable Both"</b>를 눌러 주세요. 다른 애드온이 필요로 하는 기능을 끄려고 하면 <b>"Disable All"</b>이 나타납니다.</li>
+      <li>스위치를 탭하여 기능을 켜거나 끕니다. <b>무료</b> 애드온은 모든 플랜에서 작동하고, 일부(Online Ordering/QR, Loyalty, Staff, Scheduler(스케줄러) 등)는 <span class="plan pro">Pro</span> 플랜에서 제공되며, SMS는 사용한 만큼 결제됩니다.</li>
+      <li>일부 애드온은 다른 애드온이 먼저 켜져 있어야 합니다. 예를 들어 Tables가 꺼진 상태에서 Reservations를 켜면 "Reservations requires Tables" 팝업이 나타나며, 이때 <b>Enable Both</b>를 눌러 주세요. 다른 애드온이 필요로 하는 기능을 끄려고 하면 <b>Disable All</b>이 나타납니다.</li>
       <li>왼쪽 설정 메뉴의 <b>Add-ons</b> 항목 옆에 작은 카운터("켠 개수/16")가 표시되어, 전체 16개 중 몇 개를 켰는지 보여 줍니다.</li>
       <li>문자(SMS)는 먼저 잔액을 소액 충전해 주세요(<a href="c12.html#c12">고객에게 메시지 보내기</a> 참고). 이후 실제로 발송한 문자 건수만큼만 차감됩니다.</li>
     </ol>
     <div class="tip"><b>"쓴 만큼 결제(Pay-as-you-go)"</b>는 정해진 월정액 대신 사용한 만큼 조금씩 지불한다는 뜻입니다. 잔액이 부족해지면 충전해 주세요.</div>
-    <figure class="shot"><img src="../img/20-addons.png" alt="애드온 스토어 화면" loading="lazy"><figcaption><b>애드온 스토어</b>① 켜기/끄기 토글(초록 = 켜짐)  ·  ② Free / Pro+ 표시  ·  ③ 켠 개수/16 (설정 메뉴 Add-ons 옆 카운터)</figcaption></figure>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c20-locked">잠긴 기능을 눌렀을 때</h3>
     <div class="tip"><b>직원이 잠긴 기능을 눌렀다면, 그 자리에서 사장님께 요청할 수 있습니다.</b> 웹에서 잠긴 기능(Staff Ordering · Customer Display · Waitlist Kiosk)을 누르면 다음과 같은 문구가 나타납니다 — <b>"{기능} 기능을 켜는 방법을 사장님 이메일로 보내드릴까요?"</b> → <b>"이메일 보내기"</b>(Send email). 사장님 메일함으로 안내가 발송되며, 직원은 손님 줄로 돌아가면 됩니다. 메일은 <b>기능마다 하루 한 통</b>만 발송되고, 다시 누르면 <b>"오늘 이미 보내드렸어요. 메일함을 확인해 주세요."</b>라는 문구가 나타납니다.</div>
     <p class="foot">아이패드·데스크탑 앱에서는 이메일 보내기 대신 안내 문구만 표시됩니다(앱스토어 정책 때문입니다). 플랜 변경은 웹의 BrewDesk 계정에서 진행해 주세요.</p>
   </div>
-<div class="pager"><a href="c15.html"><small>← 이전</small>11. 오프라인으로 쓰기</a><a class="nx" href="c21.html"><small>다음 →</small>13. 플랜 &amp; 결제</a></div></div></div></div>
-<script src="../assets/search.js?v=c96b3127"></script>
+<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c12.html">19. 고객에게 메시지 보내기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c15.html"><small>← 이전</small>11. 오프라인으로 쓰기</a><a class="nx" href="c21.html"><small>다음 →</small>13. 플랜 &amp; 결제</a></div></div></div></div>
+<script src="../assets/search.js?v=aebbdb0d"></script>
 </body></html>

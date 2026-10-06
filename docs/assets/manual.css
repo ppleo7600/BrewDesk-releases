@@ -176,3 +176,39 @@ header.hero .brand .logo{width:44px;height:44px;border-radius:11px}
   body.open .side{transform:none}
   .wrap{padding:0 14px 80px}
 }
+/* ── 언어 선택 메뉴 ── */
+.langmenu{position:relative;margin-left:auto;flex:none}
+.langmenu>summary{list-style:none;cursor:pointer;color:#D1FAE5;font-size:13px;font-weight:700;padding:6px 11px;border-radius:9px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);white-space:nowrap;user-select:none}
+.langmenu>summary::-webkit-details-marker{display:none}
+.langmenu>summary::after{content:' ▾';font-size:11px}
+.langmenu[open]>summary{background:var(--gold);color:#3A2D0C;border-color:var(--gold)}
+.langlist{position:absolute;right:0;top:40px;min-width:150px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 14px 34px -12px rgba(0,0,0,.35);padding:5px;z-index:300}
+.langlist a{display:block;padding:8px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:600}
+.langlist a:hover{background:var(--green-50)}
+.langlist a.active{background:var(--green-50);color:var(--green);font-weight:800}
+.searchbox{margin-left:auto}
+.langmenu{margin-left:0}
+@media (max-width:600px){
+  .topnav .navinner{gap:8px;padding:0 10px}
+  .navbrand{font-size:0;gap:0}
+  .navbrand .logo{margin-right:0}
+  .searchbox{min-width:0}
+  .langmenu>summary{padding:6px 8px}
+  .langlist{min-width:130px}
+}
+/* ── 장 끝: 관련 문서 + 도움 받기 ── */
+.endblock{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 0}
+.endblock .eb{background:var(--green-50);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.endblock .eb h4{margin:0 0 8px;font-size:14px;color:var(--green);font-weight:800}
+.endblock .eb ul{margin:0;padding-left:18px}
+.endblock .eb li{margin:3px 0;font-size:14px}
+.endblock .eb a{color:var(--green);font-weight:600}
+.endblock .eb p{margin:8px 0 0;font-size:13px;color:#33433C}
+@media (max-width:700px){.endblock{grid-template-columns:1fr}}
+/* ── 플랜 배지: <span class="plan pro|biz|free">Pro</span> ── */
+.plan{display:inline-block;font-size:11px;font-weight:800;line-height:1;padding:3px 8px;border-radius:999px;vertical-align:middle;margin:0 2px;letter-spacing:.02em;border:1px solid transparent}
+.plan.pro{background:#D1FAE5;color:#065F46;border-color:#6EE7B7}
+.plan.biz{background:var(--gold-100);color:#6B4E0E;border-color:var(--gold)}
+.plan.free{background:#EEF1EF;color:#5C6B64;border-color:#D5DBD7}
+/* ── 파트너 전용 띠 ── */
+.partnerbar{background:#7F1D1D;color:#fff;text-align:center;font-size:13px;font-weight:700;padding:6px 10px;letter-spacing:.02em}

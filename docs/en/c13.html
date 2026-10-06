@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>21. Device modes &amp; customer display · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=c96b3127"></head>
+<title>22. Device modes &amp; customer display · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aebbdb0d"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="Search the manual…" autocomplete="off" aria-label="Search the manual…"><div class="results" id="results" data-none="No results"></div></div>
-<div class="langsw"><a class="active" href="c13.html">EN</a><a class="" href="../ko/c13.html">한국어</a></div>
+<details class="langmenu"><summary aria-label="Language">English</summary><div class="langlist"><a class="active" hreflang="en" href="c13.html">English</a><a class="" hreflang="ko" href="../ko/c13.html">한국어</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">Home</a>
 <div class="part">Part 1 · Getting started</div>
@@ -25,60 +25,61 @@
 <div class="part">Part 3 · Running your store</div>
 <a href="c20.html" class=""><span class="num">12</span>Add-ons &amp; extras</a>
 <a href="c21.html" class=""><span class="num">13</span>Your plan &amp; billing</a>
-<a href="c16.html" class=""><span class="num">14</span>Staff &amp; permissions</a>
-<a href="c6.html" class=""><span class="num">15</span>Reservations &amp; Scheduler</a>
-<a href="c10.html" class=""><span class="num">16</span>Customers &amp; loyalty</a>
-<a href="c11.html" class=""><span class="num">17</span>QR code ordering</a>
-<a href="c12.html" class=""><span class="num">18</span>Messaging your customers</a>
-<a href="c19.html" class=""><span class="num">19</span>Backups</a>
+<a href="c29.html" class=""><span class="num">14</span>Owner app (check your store from your phone)</a>
+<a href="c16.html" class=""><span class="num">15</span>Staff &amp; permissions</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservations &amp; Scheduler</a>
+<a href="c10.html" class=""><span class="num">17</span>Customers &amp; loyalty</a>
+<a href="c11.html" class=""><span class="num">18</span>QR code ordering</a>
+<a href="c12.html" class=""><span class="num">19</span>Messaging your customers</a>
+<a href="c19.html" class=""><span class="num">20</span>Backups</a>
 <div class="part">Part 4 · Installation &amp; devices</div>
-<a href="c24.html" class=""><span class="num">20</span>Equipment &amp; network</a>
-<a href="c13.html" class="cur"><span class="num">21</span>Device modes &amp; customer display</a>
-<a class="sub" href="#c13-staff"><span class="num">21.1</span>Staff Ordering</a>
-<a class="sub" href="#c13-display"><span class="num">21.2</span>Customer display</a>
-<a href="c14.html" class=""><span class="num">22</span>Multiple devices &amp; reliability</a>
-<a href="c18.html" class=""><span class="num">23</span>Receipts &amp; printers</a>
-<a href="c27.html" class=""><span class="num">24</span>Going live</a>
-<a href="c25.html" class=""><span class="num">25</span>Installation checklist</a>
+<a href="c24.html" class=""><span class="num">21</span>Equipment &amp; network</a>
+<a href="c13.html" class="cur"><span class="num">22</span>Device modes &amp; customer display</a>
+<a class="sub" href="#c13-staff"><span class="num">22.1</span>Staff Ordering</a>
+<a class="sub" href="#c13-display"><span class="num">22.2</span>Customer display</a>
+<a href="c14.html" class=""><span class="num">23</span>Multiple devices &amp; reliability</a>
+<a href="c18.html" class=""><span class="num">24</span>Receipts &amp; printers</a>
+<a href="c27.html" class=""><span class="num">25</span>Going live</a>
+<a href="c25.html" class=""><span class="num">26</span>Installation checklist</a>
 <div class="part">Part 5 · Help</div>
-<a href="c22.html" class=""><span class="num">26</span>Troubleshooting &amp; support</a>
-<a href="c28.html" class=""><span class="num">27</span>FAQ</a>
-<a href="c26.html" class=""><span class="num">28</span>Glossary</a></aside>
+<a href="c22.html" class=""><span class="num">27</span>Troubleshooting &amp; support</a>
+<a href="c28.html" class=""><span class="num">28</span>FAQ</a>
+<a href="c26.html" class=""><span class="num">29</span>Glossary</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c13">
-    <h3><span class="n">21</span>Device modes &amp; customer display</h3>
+    <h3><span class="n">22</span>Device modes &amp; customer display</h3>
     <p class="intro">Every BrewDesk device has one job. The first device in a shop automatically becomes the main till (Main POS); from the second device on, you pick one of the jobs below. Here they are:</p>
     <ol class="steps">
       <li><b>Main POS</b> — your main till, and there is only one per shop. To change it in a shop that already has one, use <b>Replace Main POS</b>, which needs an emailed verification code.</li>
-      <li><b>Sub POS</b> — an extra till to help out (<b>Register as new device</b>). You sign in with the owner's email and type a verification code. (Business plan; up to 3 tills including the main one.)</li>
-      <li><b>Staff Ordering</b> — your staff take orders from any tablet or phone on your network, and the orders go straight to the main till. (Pro plan; it shows how many "slots used".)</li>
-      <li><b>Customer Display</b> — a second screen that shows customers their order. (1 on Pro, up to 3 on Business.)</li>
+      <li><b>Sub POS</b> — an extra till to help out (<b>Register as new device</b>). You sign in with the owner's email and type a verification code. (<span class="plan biz">Business</span> plan; up to 3 tills including the main one.)</li>
+      <li><b>Staff Ordering</b> — your staff take orders from any tablet or phone on your network, and the orders go straight to the main till. (<span class="plan pro">Pro</span> plan; it shows how many "slots used".)</li>
+      <li><b>Customer Display</b> — a second screen that shows customers their order. (1 on <span class="plan pro">Pro</span>, up to 3 on <span class="plan biz">Business</span>.)</li>
       <li><b>Waitlist Kiosk</b> — a self-check-in screen where walk-in guests add themselves to the waitlist. (This used to be called "Check-in".)</li>
       <li><b>Order Kiosk</b> — coming soon.</li>
     </ol>
-    <div class="activate"><div class="h">Where to turn it on</div><p>Staff Ordering and Customer Display are first turned on at the main till, in <code>Settings › Add-ons</code> (Devices section) — Staff Ordering is a <b>Pro</b> add-on. Then register the new device like this:</p></div>
+    <div class="activate"><div class="h">Where to turn it on</div><p>Staff Ordering and Customer Display are first turned on at the main till, in <code>Settings › Add-ons</code> (Devices section) — Staff Ordering is a <span class="plan pro">Pro</span> add-on. Then register the new device like this:</p></div>
+    <figure class="shot"><img src="../img/37-staffsetup.png" alt="Device role selection screen" loading="lazy"><figcaption><b>Choose how a device is used</b>This screen was captured on a device where a Main POS is already registered, so the top card is Replace Main POS. ① Replace Main POS  ·  ② Staff Ordering (take orders from any tablet)  ·  ③ Customer Display  ·  ④ Waitlist Kiosk (self check-in for the waitlist). Register as new device, between ① and ②, adds an extra POS (Sub POS).</figcaption></figure>
     <ol class="steps">
       <li>Open the BrewDesk app on the new device and connect it to the same shop Wi-Fi as the main till.</li>
       <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
-      <li>A <b>"New device pairing request"</b> popup appears on the main till. Under <b>"Device role"</b> pick Staff Ordering, Customer Display or Waitlist Kiosk, then tap <b>"Approve."</b></li>
+      <li>A <b>New device pairing request</b> popup appears on the main till. Under <b>Device role</b> pick Staff Ordering, Customer Display or Waitlist Kiosk, then tap <b>Approve</b>.</li>
       <li>The new device goes straight into the job you picked.</li>
     </ol>
     <div class="tip"><b>The main till chooses the job, not the new device.</b> A new device can't declare "I'm a staff ordering tablet" by itself. See <a href="c14.html#c14-pair">Add a device to your main till</a> for the full steps and what to do if something goes wrong.</div>
     <div class="tip"><b>A device signed in with the owner's email shows a choice screen.</b> "How will you use this device?" lists <b>Replace Main POS</b>, <b>Register as new device</b>, <b>Staff Ordering</b>, <b>Customer Display</b>, <b>Waitlist Kiosk</b> and Order Kiosk (coming soon). Replace Main POS and Register as new device go through an emailed verification code (the first device in a shop automatically becomes the main till); the Staff Ordering, Customer Display and Waitlist Kiosk cards lead into the same main-till approval described above.</div>
-    <figure class="shot"><img src="../img/37-staffsetup.png" alt="Device role selection screen" loading="lazy"><figcaption><b>Choose how a device is used</b>This screen was captured on a device where a Main POS is already registered, so the top card is Replace Main POS. ① Replace Main POS  ·  ② Staff Ordering (take orders from any tablet)  ·  ③ Customer Display  ·  ④ Waitlist Kiosk (self check-in for the waitlist). Register as new device, between ① and ②, adds an extra POS (Sub POS).</figcaption></figure>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-staff">Staff Ordering</h3>
     <p class="intro">Staff Ordering lets your team take orders from an extra tablet or phone. The orders fly straight to the main till. Here's how to set it up.</p>
     <ol class="steps">
-      <li>At the main till, turn on <b>Staff Ordering</b> in <code>Settings › Add-ons</code> (Devices section). It's a <b>Pro</b> add-on.</li>
+      <li>At the main till, turn on <b>Staff Ordering</b> in <code>Settings › Add-ons</code> (Devices section). It's a <span class="plan pro">Pro</span> add-on.</li>
       <li>Open the BrewDesk app on the extra tablet or phone and connect it to the same shop Wi-Fi as the main till.</li>
       <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
-      <li>In the popup on the main till, under <b>"Device role"</b>, choose <b>Staff Ordering</b> and <b>"Approve."</b> (Pro allows up to 3 Staff Ordering devices, Business has no limit; the registration screen shows "slots used".)</li>
+      <li>In the popup on the main till, under <b>Device role</b>, choose <b>Staff Ordering</b> and <b>Approve</b>. (Pro allows up to 3 Staff Ordering devices, Business has no limit; the registration screen shows "slots used".)</li>
       <li>Your staff sign in and start taking orders.</li>
       <li>Each order flows to the main till by itself. (This device has no payment screen and no owner settings — it's just for taking orders.)</li>
     </ol>
     <div class="tip"><b>Great for busy times:</b> staff can take orders right at the table, or walk down a long line so no one waits.</div>
     <div class="tip"><b>Orders always go through your main till.</b> A Staff Ordering tablet hands every order to the main till over your <b>shop Wi-Fi</b> — so it keeps working even when the internet is out, as long as the main till is switched on and on the same network.</div>
-    <div class="tip"><b>If it can't reach the main till</b> you'll see <b>"Not sent to the kitchen"</b> — <i>"Could not reach the Main POS. This order has not reached the kitchen yet."</i> Two buttons: <b>"Try again"</b> sends it once more (the same order can never go in twice), or <b>"Entered on Main POS"</b> if you gave up and typed it into the main till yourself. Only tap that second one if you really did — otherwise BrewDesk sends the order again later and it lands twice.</div>
+    <div class="tip"><b>If it can't reach the main till</b> you'll see <b>Not sent to the kitchen</b> — <i>"Could not reach the Main POS. This order has not reached the kitchen yet."</i> Two buttons: <b>Try again</b> sends it once more (the same order can never go in twice), or <b>Entered on Main POS</b> if you gave up and typed it into the main till yourself. Only tap that second one if you really did — otherwise BrewDesk sends the order again later and it lands twice.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-display">Customer display</h3>
     <p class="intro">A customer display is a second screen that faces the customer. It shows them their order and the price as you add things. Here's how to set one up.</p>
@@ -86,13 +87,13 @@
     <ol class="steps">
       <li>Find a spare tablet or screen, open BrewDesk on it, and connect it to the same shop Wi-Fi as the main till.</li>
       <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
-      <li>In the popup on the main till, under <b>"Device role"</b>, choose <b>Customer Display</b> and <b>"Approve."</b></li>
+      <li>In the popup on the main till, under <b>Device role</b>, choose <b>Customer Display</b> and <b>Approve</b>.</li>
       <li>The screen joins up with your till by itself. No login needed.</li>
       <li>Now point the screen toward the customer. As you add items at the till, they show up on this screen too.</li>
-      <li>The Pro plan lets you use 1 display. The Business plan lets you use up to 3.</li>
+      <li>The <span class="plan pro">Pro</span> plan lets you use 1 display. The <span class="plan biz">Business</span> plan lets you use up to 3.</li>
     </ol>
     <div class="tip"><b>Good to know:</b> a customer display only shows things. It can't take orders or send anything — it just shows the order to your customer.</div>
   </div>
-<div class="pager"><a href="c24.html"><small>← Previous</small>20. Equipment &amp; network</a><a class="nx" href="c14.html"><small>Next →</small>22. Multiple devices &amp; reliability</a></div></div></div></div>
-<script src="../assets/search.js?v=c96b3127"></script>
+<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c14.html">23. Multiple devices &amp; reliability</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c24.html"><small>← Previous</small>21. Equipment &amp; network</a><a class="nx" href="c14.html"><small>Next →</small>23. Multiple devices &amp; reliability</a></div></div></div></div>
+<script src="../assets/search.js?v=aebbdb0d"></script>
 </body></html>

@@ -39,6 +39,7 @@
   });
   document.addEventListener('click',function(e){ if(!e.target.closest('.searchbox')) res.style.display='none'; });
   document.addEventListener('keydown',function(e){ if(e.key==='/' && document.activeElement.tagName!=='INPUT'){e.preventDefault();box.focus()} });
+  document.addEventListener('click',function(e){ var lm=document.querySelector('.langmenu[open]'); if(lm && !e.target.closest('.langmenu')) lm.removeAttribute('open'); });
   var mb=document.getElementById('menubtn'); if(mb) mb.addEventListener('click',function(){document.body.classList.toggle('open')});
   var side=document.querySelector('.side a.cur'); if(side&&side.scrollIntoView) side.scrollIntoView({block:'center'});
 })();
