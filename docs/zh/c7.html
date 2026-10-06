@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7. 收款 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="搜索手册…" autocomplete="off" aria-label="搜索手册…"><div class="results" id="results" data-none="没有找到结果"></div></div>
+<details class="langmenu"><summary aria-label="语言">简体中文</summary><div class="langlist"><a class="" hreflang="en" href="../en/c7.html">English</a><a class="" hreflang="ko" href="../ko/c7.html">한국어</a><a class="active" hreflang="zh-CN" href="c7.html">简体中文</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">首页</a>
+<div class="part">第1部分 · 开始使用</div>
+<a href="c1.html" class=""><span class="num">1</span>欢迎与概览</a>
+<a href="c2.html" class=""><span class="num">2</span>快速开始</a>
+<a href="c3.html" class=""><span class="num">3</span>设置门店</a>
+<a href="c4.html" class=""><span class="num">4</span>创建菜单</a>
+<div class="part">第2部分 · 日常使用</div>
+<a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
+<a href="c5.html" class=""><span class="num">6</span>点单</a>
+<a href="c7.html" class="cur"><span class="num">7</span>收款</a>
+<a class="sub" href="#c7-split"><span class="num">7.1</span>分账</a>
+<a class="sub" href="#c7-tip"><span class="num">7.2</span>事后结清订单的小费</a>
+<a class="sub" href="#c7-cashrounding"><span class="num">7.3</span>现金收款取整</a>
+<a href="c8.html" class=""><span class="num">8</span>折扣与促销</a>
+<a href="c9.html" class=""><span class="num">9</span>退款</a>
+<a href="c17.html" class=""><span class="num">10</span>报表与日结</a>
+<a href="c15.html" class=""><span class="num">11</span>离线工作</a>
+<div class="part">第3部分 · 门店管理</div>
+<a href="c20.html" class=""><span class="num">12</span>附加功能与扩展</a>
+<a href="c21.html" class=""><span class="num">13</span>您的套餐与账单</a>
+<a href="c29.html" class=""><span class="num">14</span>店主 App（用手机查看您的门店）</a>
+<a href="c16.html" class=""><span class="num">15</span>员工与权限</a>
+<a href="c6.html" class=""><span class="num">16</span>预订与排程</a>
+<a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
+<a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
+<a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
+<a href="c19.html" class=""><span class="num">20</span>备份</a>
+<div class="part">第4部分 · 安装与设备</div>
+<a href="c24.html" class=""><span class="num">21</span>设备与网络</a>
+<a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
+<a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
+<a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
+<a href="c27.html" class=""><span class="num">25</span>正式营业</a>
+<a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
+<div class="part">第5部分 · 帮助</div>
+<a href="c22.html" class=""><span class="num">27</span>故障排除与支持</a>
+<a href="c28.html" class=""><span class="num">28</span>常见问题</a>
+<a href="c26.html" class=""><span class="num">29</span>术语表</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c7">
+    <h3><span class="n">7</span>收款</h3>
+    <p class="intro">接下来是最令人高兴的部分：收款。您今天就可以收取现金；一旦关联了您自己的 Stripe 账户，就可以收取银行卡付款。BrewDesk 绝不会在您的刷卡销售之上另外收费。</p>
+    <figure class="shot"><img src="../img/42-payment.png" alt="Payment screen" loading="lazy"><figcaption><b>Payment screen</b>（支付界面）① Total due（应付总额）/ Remaining（剩余）  ·  ② 支付方式：Cash（现金）、各卡品牌（Visa、MasterCard、Amex）、Card (External)（外部终端银行卡）、Voucher（代金券）（银行卡类标注为 Record Only），上方为 Full Pay / Split Pay 切换开关  ·  ③ 数字键盘（输入收到的现金）  ·  ④ “Pay with…” 完成支付</figcaption></figure>
+    <ol class="steps">
+      <li>完成订单后，点击 <b>Pay Now</b>（立即支付），打开结账界面。</li>
+    </ol>
+    <figure class="shot"><img src="../img/97-pay-cash.png" alt="Checkout — taking cash" loading="lazy"><figcaption><b>Checkout — taking cash</b>（结账：收取现金）① Cash  ·  ② Amount received（收到金额）  ·  ③ Change to Return（应找零金额）  ·  ④ Pay with … — Cash</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>收取现金时，点击 <b>Cash</b>（现金），输入顾客递来的金额。BrewDesk 会显示应找回的零钱。</li>
+      <li>收取银行卡时：如果已连接刷卡器（Stripe 终端），点击 <b>Card</b>（银行卡）。如果没有，则会看到 <b>Visa</b>、<b>MasterCard</b>、<b>Amex</b> 等卡品牌按钮，以及 <b>Card (External)</b>。这些按钮只是<b>记录</b>您在另一台独立终端上收取的银行卡付款（<b>Record Only</b>，仅记录）。（刷卡器支付需要先关联 Stripe 账户，见下一步。）</li>
+      <li>要收取银行卡付款，请在 <b>Settings › Payments</b> 中关联您自己的 Stripe 账户，连接是免费的。在同一界面中，您还可以开启或关闭 <b>Cash</b>（现金）、<b>Card (Record Only)</b>（银行卡（仅记录））和 <b>Voucher</b>（代金券）支付方式。</li>
+      <li>结账界面顶部的 <b>Full Pay</b>（全额支付）/ <b>Split Pay</b>（分单支付）切换开关：Full Pay（默认）用一种方式一次付清全款；Split Pay 适用于一个人一部分付现金、一部分刷卡。</li>
+      <li>需要把一张账单分给几个人付？点击点单界面右下角的 <b>Split</b>（分单）按钮。您可以平均分摊或按商品分摊，每一份还可以单独加小费。详见下方的<a href="#c7-split">分账</a>。</li>
+    </ol>
+    <figure class="shot"><img src="../img/98-pay-done.png" alt="Payment complete" loading="lazy"><figcaption><b>Payment complete</b>（支付完成）① 小票预览  ·  ② Change to Return  ·  ③ Email Receipt / Send Receipt（发送小票；Reprint 重新打印）  ·  ④ Start New Order（开始新订单）</figcaption></figure>
+    <div class="brag"><div class="h">值得展示</div><p><b>所有套餐的刷卡销售，BrewDesk 均加收 0%。</b>您的款项会直接进入您自己的 Stripe 账户，BrewDesk 绝不夹在中间，也绝不抽成。<sup>*</sup></p></div>
+    <p class="foot">* 您按 Stripe 的标准费率直接向其付费，BrewDesk 不会在此基础上额外加收。</p>
+    <div class="tip"><b>小费归谁？</b>添加小费时，BrewDesk 会请您选择是哪位员工获得的，点击 <b>Assign staff</b>（分配员工）并选择姓名。如果那张餐桌只有一位服务员，系统会自动为您选中。如果没有选择任何人，小费会记在 <b>Store Manager</b> 名下，不会丢失。</div>
+    <div class="tip"><b>手动记录银行卡付款？</b>如果您在未连接 BrewDesk 的独立终端上刷卡，<b>Visa</b>、<b>Mastercard</b>、<b>Amex</b> 等卡品牌现在会直接显示在支付界面 <b>Cash</b> 的旁边。点一下就同时记录了这是银行卡支付以及是哪个品牌，无需额外步骤。</div>
+    <div class="tip"><b>刷卡器工作时，支付界面不会关闭。</b>如果在已连接的刷卡器仍在扣款时点击 <b>X</b>，界面不会关闭，并会告诉您原因：<b>Card payment in progress</b>（银行卡支付进行中）：<i>"The reader is still charging this card. Wait until it finishes — closing now could take the money without recording it on the order."</i>（刷卡器仍在扣款。请等待完成，现在关闭可能会收了款却没有记录到订单上。）只需几秒钟，却关系到这笔钱是记在订单上还是凭空消失。刷卡器一完成（无论刷卡成功与否），X 就会自动恢复可用。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">分账</h3>
+    <p class="intro">当一桌客人想分开付款时，BrewDesk 可以帮您拆分账单。有两种简单的方式：在几个人之间<b>平均</b>分摊，或<b>按商品</b>分摊，让每个人只为自己点的东西付款。每一份都可以单独加小费，一个人甚至可以一部分付现金、一部分刷卡。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>在<b>堂食</b>订单（桌台服务）中，先把商品发送到厨房，然后点击点单界面右下角那排按钮（<b>Disc</b> · <b>Bill</b> · <b>Split</b> · <b>Pay Now</b>）中的 <b>Split</b>。它不在点击 Pay Now 后进入的结账界面里。分账只适用于桌台订单，因此要在该桌的商品发送之后才会出现该按钮。</p></div>
+    <p class="sub"><b>平均分摊（AA 制）</b></p>
+    <figure class="shot"><img src="../img/76-order-sent.png" alt="Cart buttons after sending to the kitchen" loading="lazy"><figcaption><b>Buttons at the bottom right of the order screen</b>（点单界面右下角的按钮）① Disc  ·  ② Bill（账单）  ·  ③ Split  ·  ④ Pay Now</figcaption></figure>
+    <figure class="shot"><img src="../img/77-split.png" alt="Split the Bill — Even split" loading="lazy"><figcaption><b>Split the bill — Even split</b>（分账：平均分摊）① 待分摊总额  ·  ② Even split（平均分摊）/ By item（按商品）  ·  ③ 人数 − / +  ·  ④ Start Split &amp; Collect（开始分摊并收款）</figcaption></figure>
+    <ol class="steps">
+      <li>点击 <b>Split</b>，然后选择 <b>Even split</b>（平均分摊）。</li>
+      <li>用 − 和 + 按钮设置<b>人数</b>。BrewDesk 会在下方显示 <b>Each person pays</b>（每人应付）。点击 <b>Start Split &amp; Collect</b>。</li>
+      <li>现在逐份收款。屏幕会显示 <b>"Person 1 of 4"</b>（第 1 位，共 4 位）。收取这位顾客的现金或刷卡后，会进入 <b>"Person 2 of 4"</b>，依此类推。</li>
+      <li>最后一位付完后，点击 <b>Start New Order</b>（开始新订单），这张餐桌即已结清并清空。</li>
+    </ol>
+    <p class="sub"><b>按商品分摊</b></p>
+    <figure class="shot"><img src="../img/78-split-byitem.png" alt="Split the Bill — By item" loading="lazy"><figcaption><b>Split the bill — By item</b>（分账：按商品）① By item  ·  ② 勾选商品  ·  ③ Start Item Split（开始按商品分账）</figcaption></figure>
+    <ol class="steps">
+      <li>点击 <b>Split</b>，然后选择 <b>By item</b>（按商品）。</li>
+      <li><b>勾选</b>这位顾客要付款的商品，BrewDesk 会为您合计。点击 <b>Pay Selected</b>（支付所选）并收取他们的款项。</li>
+      <li>对下一位顾客的商品重复同样的操作，直到“剩余商品”数量为零。订单随后会自动完成。</li>
+    </ol>
+    <div class="tip"><b>一部分现金、一部分刷卡？</b>在任何一份账单上，都可以把支付方式切换为 <b>Split Pay</b>。先收第一部分（比如 5 美元现金），BrewDesk 会显示 <b>Received</b>（已收到）和 <b>Remaining</b>（剩余）。再用银行卡支付剩余部分，当 Remaining 为 0 美元时这一份就付清了。</div>
+    <div class="tip"><b>先现金，后刷卡。</b>在 <b>Split Pay</b> 的某一份账单中，一旦刷过任何一张卡，<b>Cash</b> 按钮就会变灰，并提示 <b>"Cash first, card last. A card payment has already been taken for this round, so no more cash can be added."</b>（先现金，后刷卡。本轮已收取银行卡付款，不能再添加现金。）因此请先收现金部分，最后再刷卡。无论是手动记录的银行卡还是刷卡器收取的银行卡，此规则都适用。一次性全额支付和结清未付订单不受影响。</div>
+    <div class="brag"><div class="h">值得展示</div><p><b>三下点击搞定 AA 制。</b>平均分摊、按商品分摊，或在同一份账单上混用现金和银行卡，BrewDesk 自动计算，并为每个人打印各自的小票（“Split 1 of 4”）。无需计算器，也不用在餐桌上争论。</p></div>
+    <p class="foot">须知：如果您退款其中一份，小费仍归店铺所有（只退还商品金额），并且只要还有一笔分账仅付了一半，BrewDesk 就不允许您日结。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-tip">事后结清订单的小费</h3>
+    <p class="intro">有时订单未付款，要到当天结束时才结清。如果涉及小费，BrewDesk 现在会在收款之前先询问您，让小费不会悄悄丢失。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>日结时，点击一个未付款订单并选择 <b>Settle unpaid order</b>（结清未付订单）。小费框位于支付界面顶部。</p></div>
+    <ol class="steps">
+      <li>如果订单上已有小费，您会看到 <b>"Tip recorded on this order"</b>（此订单已记录小费）以及两个按钮：<b>Include tip</b>（包含小费）或 <b>Exclude tip</b>（不含小费）。您必须二选一，否则 BrewDesk 不会收款。</li>
+      <li>如果订单上没有小费，但顾客在您的刷卡终端上付了小费，请使用 <b>Add a tip</b>（添加小费）。输入金额并点击 <b>Apply</b>（应用）。</li>
+      <li>如果您使用员工账户，请在 <b>Tip goes to</b>（小费归属）下选择归属人。这是必填项，没有归属人的小费无法发给任何人。</li>
+      <li>照常收款。点击 <b>Back to closing</b>（返回日结）继续完成当天的其他工作。</li>
+    </ol>
+    <div class="tip"><b>为什么要询问？</b>因为在刷卡终端上收取的小费还没有记入 BrewDesk。如果没人录入，您的员工就永远看不到这笔小费。这一个界面就是录入小费的入口。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-cashrounding">现金收款取整</h3>
+    <p class="intro">Cash Payment Rounding（现金收款取整）用来处理零碎的硬币。在许多国家，最小的硬币面值大于账单的最后一位数，已经没人携带 1 分硬币了。所以当现金顾客应付 10.03 时，您收 10.00，那 3 就免了。BrewDesk 现在可以替您完成这样的取整（仅限现金付款），并记录您免掉的每一枚硬币。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>打开 <code>Settings › Payments</code>，向下滚动到 <b>Cash Payment Rounding</b>。只有店主能打开 Payments 标签页，所以只有店主能设置此项。每家店铺的初始状态都是<b>关闭</b>。</p></div>
+    <figure class="shot"><img src="../img/19-payments.png" alt="Payments settings — payment methods &amp; cash rounding" loading="lazy"><figcaption><b>Payments settings — payment methods &amp; cash rounding</b>（支付设置：支付方式与现金取整）① 开启/关闭各支付方式  ·  ② Enable cash payment rounding（启用现金收款取整）  ·  ③ Rounding increment（取整单位）  ·  ④ 保存</figcaption></figure>
+    <ol class="steps">
+      <li>开启 <b>Enable cash payment rounding</b>。</li>
+      <li>输入 <b>Rounding increment</b>，即您实际使用的最小硬币面值（0.05、10、100，视您所在地而定）。<b>如果保持为 0，这个开关不起任何作用</b>，输入框下方的提示正是这样告诉您的。</li>
+      <li>选择 <b>Rounding direction</b>（取整方向）：<b>Nearest</b>（就近取整，向上或向下取较近的）、<b>Round down</b>（向下取整，始终对顾客有利）或 <b>Round up</b>（向上取整）。</li>
+      <li>查看下方的灰色提示。BrewDesk 了解您所在国家的通行做法并会告知：<i>"Common practice in this country: round to 0.05 using Nearest (legally required)."</i>（本国通行做法：就近取整到 0.05（法律要求）。）点击 <b>Apply</b>，它会自动为您填入取整单位和方向。</li>
+      <li>点击设置页面顶部的 <b>Save</b>（保存）。</li>
+    </ol>
+    <div class="tip"><b>仅限现金，且税额不变。</b>它只作用于<b>全部用现金</b>支付的订单。只要订单中有任何一部分用银行卡支付，合计金额就保持原样。税额绝不会重新计算，银行卡小票的打印内容也与之前完全一样。税额本身如何取整是另一项设置，在 <code>Settings › Tax &amp; Service</code> 中（见<a href="c3.html#c3-tax">设置税费</a>）。</div>
+    <div class="tip"><b>“法律要求”与“通行做法”。</b>有些国家对此有法律规定（包括新加坡、马来西亚、加拿大、澳大利亚、新西兰、瑞士），在另一些国家则只是商家的惯例。无论哪种情况，BrewDesk 都只是<b>建议</b>，在您点击 Apply 和 Save 之前不会有任何改动。少数国家被列为完全没有取整惯例（<b>"This country has no cash-rounding practice."</b>，该国家没有现金取整惯例），而我们尚未核查的国家则显示 <b>"This country has not been checked yet."</b>（该国家尚未核查）。</div>
+    <div class="tip"><b>小票会显示您免掉的零头。</b>凡是取整确实改变了合计金额的订单，找零行的上方会打印一行 <b>Cash Rounding</b>，纸质小票和电子邮件小票都是如此。恰好是整数的订单则完全不会出现这一行，因此版面不会显得杂乱。</div>
+    <div class="tip"><b>日结时也能对上账。</b>日结报表的 Payment Breakdown（支付明细）在 Total Payment Collected 下会多出一行 <b>Cash Rounding</b>，并附有通俗说明 <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b>（现金付款中未收取的零头。已收款项 + 此项 = 合计总额。）这就回答了“为什么我的钱箱少了几分钱？”：并没有少，是您有意免掉了那些零头。同样的数字也会出现在支付记录汇总和 Analytics 的现金卡片上。</div>
+    <div class="brag"><div class="h">值得展示</div><p><b>像隔壁店一样取整，账目里却一分不丢。</b>只需设置一次硬币单位，每笔现金合计都会落在您实际拥有的硬币面值上。每一分取整的零头仍有记录、仍会印在小票上，并在日结时对得上账，您的会计永远不必问零钱去了哪里。</p></div>
+  </div>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c3.html">3. 设置门店</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c5.html"><small>← 上一页</small>6. 点单</a><a class="nx" href="c8.html"><small>下一页 →</small>8. 折扣与促销</a></div></div></div></div>
+<script src="../assets/search.js?v=4b1e5697"></script>
+</body></html>

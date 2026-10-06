@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10. 报表与日结 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="搜索手册…" autocomplete="off" aria-label="搜索手册…"><div class="results" id="results" data-none="没有找到结果"></div></div>
+<details class="langmenu"><summary aria-label="语言">简体中文</summary><div class="langlist"><a class="" hreflang="en" href="../en/c17.html">English</a><a class="" hreflang="ko" href="../ko/c17.html">한국어</a><a class="active" hreflang="zh-CN" href="c17.html">简体中文</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">首页</a>
+<div class="part">第1部分 · 开始使用</div>
+<a href="c1.html" class=""><span class="num">1</span>欢迎与概览</a>
+<a href="c2.html" class=""><span class="num">2</span>快速开始</a>
+<a href="c3.html" class=""><span class="num">3</span>设置门店</a>
+<a href="c4.html" class=""><span class="num">4</span>创建菜单</a>
+<div class="part">第2部分 · 日常使用</div>
+<a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
+<a href="c5.html" class=""><span class="num">6</span>点单</a>
+<a href="c7.html" class=""><span class="num">7</span>收款</a>
+<a href="c8.html" class=""><span class="num">8</span>折扣与促销</a>
+<a href="c9.html" class=""><span class="num">9</span>退款</a>
+<a href="c17.html" class="cur"><span class="num">10</span>报表与日结</a>
+<a class="sub" href="#c17-export"><span class="num">10.1</span>导出销售数据</a>
+<a class="sub" href="#c17-supplementary"><span class="num">10.2</span>迟到订单与漏结日期</a>
+<a class="sub" href="#c17-drawer"><span class="num">10.3</span>钱箱</a>
+<a href="c15.html" class=""><span class="num">11</span>离线工作</a>
+<div class="part">第3部分 · 门店管理</div>
+<a href="c20.html" class=""><span class="num">12</span>附加功能与扩展</a>
+<a href="c21.html" class=""><span class="num">13</span>您的套餐与账单</a>
+<a href="c29.html" class=""><span class="num">14</span>店主 App（用手机查看您的门店）</a>
+<a href="c16.html" class=""><span class="num">15</span>员工与权限</a>
+<a href="c6.html" class=""><span class="num">16</span>预订与排程</a>
+<a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
+<a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
+<a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
+<a href="c19.html" class=""><span class="num">20</span>备份</a>
+<div class="part">第4部分 · 安装与设备</div>
+<a href="c24.html" class=""><span class="num">21</span>设备与网络</a>
+<a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
+<a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
+<a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
+<a href="c27.html" class=""><span class="num">25</span>正式营业</a>
+<a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
+<div class="part">第5部分 · 帮助</div>
+<a href="c22.html" class=""><span class="num">27</span>故障排除与支持</a>
+<a href="c28.html" class=""><span class="num">28</span>常见问题</a>
+<a href="c26.html" class=""><span class="num">29</span>术语表</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c17">
+    <h3><span class="n">10</span>报表与日结</h3>
+    <p class="intro">每天结束时，您需要查看店铺的经营情况，并“关闭”当天，也就是日结。这样可以锁定当天的数据，确保安全。操作方法如下。</p>
+    <figure class="shot"><img src="../img/04-reports.png" alt="Stats screen with daily insights" loading="lazy"><figcaption><b>Stats &amp; daily insights</b>（统计与每日洞察）① Total Sales（总销售额）等汇总卡片  ·  ② Staff Sales（员工销售）与 Attendance Log（考勤记录）标签页（Starter 套餐中已锁定）  ·  ③ Revenue Trends（营收趋势）图表</figcaption></figure>
+    <figure class="shot"><img src="../img/05-closing.png" alt="Closing reports screen" loading="lazy"><figcaption><b>Closing reports</b>（日结报表）① Close Now（立即关闭）：开始日结  ·  ② Auto-Close 开关（自动结算）  ·  ③ Accounting Export（会计导出）  ·  ④ 查看过往的 Z报表</figcaption></figure><figure class="shot"><img src="../img/33-closeday.png" alt="Close Day (Z-Report) window" loading="lazy"><figcaption><b>Close the day (Z-Report)</b>（日结：Z报表）① 报表类型（X = 中期，Z = 最终）  ·  ② 合计总额（Grand total）  ·  ③ 操作汇总  ·  ④ Closed by（关闭人）：上一行是角色标签，下一行是员工标签（开启 Staff 附加功能后才会显示员工标签）  ·  ⑤ Close Day（日结）</figcaption></figure>
+    <figure class="shot"><img src="../img/104-closing-data.png" alt="Closing Reports — by day" loading="lazy"><figcaption><b>Closing Reports — by day</b>（按日查看的日结报表）① 日期范围  ·  ② 订单数 · Grand Total  ·  ③ View（查看，打开 Z报表）  ·  ④ Accounting Export</figcaption></figure>
+    <ol class="steps">
+      <li>打开 <b>Stats</b>（统计，默认进入 Revenue Overview 营收概览），查看销售额、顾客的支付方式、畅销商品，以及每位员工的销售情况。</li>
+      <li>阅读您的 <b>AI daily insights</b>（AI 每日洞察，<span class="plan pro">Pro</span> 及以上套餐）。这是一份用通俗语言写成的当日简报，并附有实用建议。（<span class="plan biz">Business</span> 套餐每周还会通过电子邮件收到一份。）</li>
+      <li>清点钱箱里的现金，核对是否与 BrewDesk 显示的数字一致。请加上您放入的款项，并记下取出的款项。</li>
+    </ol>
+    <figure class="shot"><img src="../img/105-zreport.png" alt="Z-Report" loading="lazy"><figcaption><b>Z-Report</b>（Z报表）① Z-Report (Final)（最终）  ·  ② Grand Total  ·  ③ Total Transactions（交易总数）  ·  ④ Payment Breakdown（支付明细）  ·  ⑤ Print（打印）· Export（导出）· Close（关闭）</figcaption></figure>
+    <ol class="steps" start="4">
+      <li>现金核对无误后，进入 <b>Manage › Closing History</b>（该界面标题为 Closing Reports），点击 <b>Close Now</b>，然后在打开的窗口中点击 <b>Close Day</b>（日结）。这样会保存一份完整的当日汇总，称为 Z报表。</li>
+    </ol>
+    <div class="tip"><b>什么是日结？</b>就是结束当天的工作并保存当天的合计数据。每晚坚持日结，可以让您的资金记录井井有条。</div>
+    <div class="tip"><b>练习订单会被标注，而不是隐藏。</b>正式营业之前录入的任何订单，现在在支付记录和日结记录中都带有 <b>Sandbox data</b> 标记：<b>"Recorded during practice mode, before this store went live."</b>（在练习模式下录入，早于本店正式营业。）<b>Stats</b> 界面更进一步，直接把它们排除在统计数字之外，因此您的销售额和员工销售只反映真实营业。如果您发现合计比以前低，原因就在于此，现在的数字才是正确的。</div>
+    <div class="tip"><b>今天发生过部分退款？</b>Z报表会为任何部分退款以琥珀色显示一行 <b>Refunds</b>（退款）。该金额已经计入其下方的 <b>Grand Total</b> 中，这一行只是为了让您或会计能清楚地对上账。在您从 Stats 下载的分析报表（CSV）中，“Net Profit” 现已改称 <b>Net Revenue (after tax)</b>（税后净营收），以提醒这是营收而非利润，因为其中没有扣除商品成本。Backup &amp; Restore 中的 Analytics Excel 文件可能仍使用旧名称。</div>
+    <div class="tip"><b>今天送出过东西？</b>日结汇总现在会在 Discounts 下方单独显示一行：<b>"FREE ITEMS (3)"</b>（赠送商品 (3)），下面注明 <b>Not deducted from total</b>（不计入合计扣减）。赠送与打折不同：折扣是您在一笔销售上主动让出的金额，赠送则是货物被拿走而没有任何回款。把它们分开显示，您才能发现“就送一份”什么时候变成了每周二十份。</div>
+    <div class="tip"><b>现金按最小硬币取整？</b>如果您开启了<a href="c7.html#c7-cashrounding">现金收款取整</a>，Payment Breakdown 会多出一行：<b>Cash Rounding</b>，就在 Total Payment Collected 下方，下面写着 <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b>（现金付款中未收取的零头。已收款项 + 此项 = 合计总额。）这一行说明了已收款项与合计总额为何不同，也是应交给会计的数字。如果未开启取整，或当天没有发生取整，这一行就完全不会出现。</div>
+    <div class="tip"><b>取消订单一定会询问原因。</b>无论是在日结时作废遗留的未付订单、一次性全部作废，还是在店内取消某个订单，都会弹出同样的小窗口：<b>Wrong entry</b>（录入错误）、<b>Customer left</b>（顾客离开）、<b>Test order</b>（测试订单）或 <b>Other (type a reason)</b>（其他，请输入原因）。在您选择之前，确认按钮一直是灰色的。没有原因的取消，恰恰是以后您最想问个明白的。</div>
+    <div class="brag"><div class="h">值得展示</div><p><b>用通俗的语言讲述您的数字。</b>每日洞察会告诉您发生了什么、接下来该做什么，而不只是一页堆满的数字。</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-export">导出销售数据</h3>
+    <p class="intro">一键把数据交给您的记账人员。操作方法如下。（该窗口的标题为 <b>Backup &amp; Restore</b>（备份与恢复），与<a href="c19.html#c19">备份</a>中介绍的是同一个窗口。）</p>
+    <figure class="shot"><img src="../img/40-export.png" alt="Accounting export window" loading="lazy"><figcaption><b>Accounting export — the window is titled "Backup &amp; Restore"</b>（会计导出：窗口标题为 “Backup &amp; Restore”）① 包含的内容  ·  ② 现成的 QuickBooks / Xero 格式  ·  ③ Save to Drive（连接 Google Drive 之后可用）  ·  ④ Download（下载）</figcaption></figure>
+    <ol class="steps">
+      <li>在 <b>Closing Reports</b> 页面（Manage › Closing History）点击 <b>Accounting Export</b>（会计导出），会打开标题为 <b>Backup &amp; Restore</b> 的窗口。</li>
+      <li>勾选要包含的内容：<b>Closing Report Summary</b>（日结报表摘要）、<b>Daily Breakdown</b>（每日明细）、<b>All Transactions</b>（所有交易），或现成的 <b>QuickBooks Format</b> / <b>Xero Format</b>。</li>
+      <li>点击 <b>Download</b>（下载）保存文件，或点击 <b>Save to Drive</b>（保存到 Drive）发送到您的 Google Drive。格式取决于您勾选的内容：Closing Report Summary 和 Daily Breakdown 为 Excel (.xlsx)；All Transactions、QuickBooks Format 和 Xero Format 为 CSV。</li>
+    </ol>
+    <div class="tip"><b>只有连接了 Google Drive，Save to Drive 才可用。</b>如果窗口顶部显示 “Google Drive not connected”，请点击旁边的 <b>Connect</b>（连接）（见<a href="c19.html#c19">备份</a>）。无论是否连接，<b>Download</b> 都可以使用。</div>
+    <div class="tip"><b>轻松记账：</b>这让您的记录变得简单，只需把文件交给会计即可。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">迟到订单与漏结日期</h3>
+    <p class="intro">日结前后有时会出现两种情况：某笔付款在您已经日结<b>之后</b>才到账，或者您干脆忘记了某一天的日结。BrewDesk 对这两种情况都能处理，并且绝不会更改您原来的 Z报表。</p>
+    <p class="sub"><b>日结之后才收到付款：补充结算（Additional Closing）</b></p>
+    <ol class="steps">
+      <li>如果您收取了一个已经日结的日期的付款，BrewDesk 会先提醒您：<b>"This business day is already closed."</b>（该营业日已结算。）付款仍会照常完成。</li>
+      <li>稍后会弹出提示：<b>Additional Closing Needed</b>（需要补充结算）。点击 <b>Review &amp; Close</b>（查看并结算），或点击 <b>Not Now</b>（暂不）以后再处理。</li>
+      <li>检查列出的迟到订单，然后点击 <b>Confirm Additional Closing</b>（确认补充结算）。BrewDesk 会保存一份单独的报表，名为 <b>"Additional Closing #1"</b>，您原来的 Z报表绝不会被改动。</li>
+    </ol>
+    <div class="tip"><b>需要重新打印？</b>打开那一天的日结报表，每次补充结算都会显示为一个标记，点击即可<b>重新打印</b>。（补充结算只打印合计，不含支付方式或分类明细。）</div>
+    <p class="sub"><b>您忘记了某一天的日结</b></p>
+    <figure class="shot"><img src="../img/67-unclosed.png" alt="未结算营业日" loading="lazy"><figcaption><b>Unclosed Business Days</b>（未结清营业日）① 提示新订单和付款已被阻止  ·  ② 仍未结清的日期  ·  ③ Close One by One（逐个结清）  ·  ④ Auto-Close All（全部自动结清）</figcaption></figure>
+    <ol class="steps">
+      <li>下次打开 BrewDesk 时，会出现 <b>Unclosed Business Days</b> 窗口，列出您漏掉的所有日期。在这些日期结清之前，新订单和付款会暂停。</li>
+      <li>阅读顶部的 <b>"What should I do?"</b>（我该怎么做？）。最简单的选择是 <b>Auto-Close All</b>，它会按 BrewDesk 预期的合计一次性结清所有漏掉的日期（跳过现金清点）。</li>
+      <li>想逐天核对？点击 <b>Close One by One</b>。如果某天仍有未付订单，请先点击 <b>Settle</b>（结算）支付或作废它们。</li>
+    </ol>
+    <div class="tip"><b>结清已开的账单仍然可以。</b>暂停的只是<b>新的</b>业务。已经在餐桌上的订单仍可结算，<b>Pay Now</b> 和 <b>Split</b> 仍然可用，因此您可以先收款、清掉订单，再进行日结。</div>
+    <div class="tip"><b>显示的数字就是真实数字。</b>如果因为还有账单未付而无法日结，提示会告诉您收银机实际在等待多少个订单，让您知道该去结清什么。</div>
+    <div class="tip"><b>为什么要阻止新的销售？</b>按顺序日结能保证您的合计数据真实可靠，让您的报表以及会计的数字始终对得上。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-drawer">钱箱</h3>
+    <p class="intro">您可以按班次核对钱箱里的现金：早上录入起始金额，记下您放入或取出的款项，下班时清点，看是否对得上。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>顶部的 <b>Manage</b>（管理）菜单 → <b>Cash Drawer</b>（钱箱）。只有<b>店主和经理</b>能看到这个菜单项。</p></div>
+    <figure class="shot"><img src="../img/66-manage-menu.png" alt="Manage menu" loading="lazy"><figcaption><b>Opening the cash drawer from the Manage menu</b>（从 Manage 菜单打开钱箱）① 侧边栏中的 Manage 图标  ·  ② Cash Drawer</figcaption></figure>
+    <figure class="shot"><img src="../img/65-cash-drawer.png" alt="Cash Drawer Session window" loading="lazy"><figcaption><b>Starting a cash drawer session</b>（开始钱箱会话）① SESSION / HISTORY 标签页  ·  ② Pay-In / Pay-Out 按钮  ·  ③ OPENING FLOAT（起始金额）  ·  ④ Start Session</figcaption></figure>
+    <ol class="steps">
+      <li>开店时，点击 <b>Start Session</b>（开始会话），输入您放入钱箱的<b>起始金额</b>（starting amount）。</li>
+      <li>白天里，把您放入或取出的款项记为 <b>Pay In</b>（存入）或 <b>Pay Out</b>（支出），例如存银行、分发小费、补充零钱等。</li>
+      <li>结束时，点击 <b>"END SESSION"</b>（结束会话），输入您实际清点的金额。有两种方式：<b>Enter Total</b>（输入总额）直接填写一个总数，或 <b>Count Denoms</b>（按面额清点）让您输入<b>每种纸币和硬币各有多少</b>，由系统为您汇总。</li>
+      <li>BrewDesk 会并排显示 <b>Expected</b>（预期）、<b>Counted</b>（已清点）和 <b>Variance</b>（差异）。现金销售会加入，以 <b>Cash Refunds</b>（现金退款）退还的款项会扣除。</li>
+      <li>然后点击 <b>Close Day</b>，钱箱数据会与其他内容一起写入当天的 Z报表。</li>
+    </ol>
+    <div class="tip"><b>未清点会记录为“未清点”，而不是“零差异”。</b>如果您不输入任何内容就结束，BrewDesk 不会凭空编出一个零差异，而是写下 <b>"Cash wasn't counted."</b>（未清点现金。）日后回看时，“账平了”和“根本没人清点”就不会看起来一样。</div>
+    <div class="tip"><b>钱箱没有自动弹开？</b>屏幕会告诉您原因：① 尚未设置小票打印机，② 主小票打印机上的钱箱设置已关闭（请在 <code>Settings › Printers</code> 中开启），或 ③ 此设备是副收银机。无论哪种情况，<b>您的数据仍会被记录</b>。</div>
+    <div class="tip"><b>如果仍有未付订单</b>，BrewDesk 在结束钱箱会话之前会再询问一次：“N unpaid order(s) still open for today. End the drawer session anyway?”（今天仍有 N 个未付订单。仍要结束钱箱会话吗？）这样可以避免您在还有账单待结时就把钱箱结掉。</div>
+    <div class="tip"><b>在日结之前先结束钱箱会话也可以。</b>先清点，点击 END SESSION，再进行 Close Day。您清点的金额和差异仍会显示在日结报表和打印件中。</div>
+    <div class="tip"><b>未结束的钱箱现在会让当天保持未结。</b>如果钱箱会话仍在进行，<b>Close Day</b> 按钮会变灰，并出现一行红字：<b>"N cash drawer session(s) still open — count and end the drawer to close the day."</b>（仍有 N 个钱箱会话未结束，请清点并结束钱箱后再日结。）日结意味着款项也已结清，所以 BrewDesk 不会让您为一个没人清点的钱箱签字结账。</div>
+    <div class="tip"><b>解决办法就在旁边。</b>在该提示旁边有一个 <b>Open drawer</b>（打开钱箱）按钮，点击它，清点现金，点击 <b>END SESSION</b>，Close Day 按钮就会恢复可用。您不必在各级菜单中到处寻找出路。</div>
+    <div class="tip"><b>有人没结束钱箱就下班了？</b>钱箱界面会显示 <b>"N cash drawer(s) were never closed"</b>（有 N 个钱箱从未结束）：<i>"Someone left without ending the drawer. You cannot count it now, so closing it here records it as not counted — no number is invented."</i>（有人没有结束钱箱就离开了。您现在无法清点，因此在此关闭将记为未清点，不会编造任何数字。）点击 <b>Close without counting</b>（不清点直接关闭）即可继续。当天会如实记为 <b>"Cash wasn't counted"</b>，而不是一个看似整齐的零。</div>
+    <div class="tip"><b>先清点，数字随后才出现。</b>在您输入清点金额之前，BrewDesk 会隐藏预期总额（以及构成它的现金销售和现金退款行），取而代之的是 <b>"Shown after you enter what you counted"</b>（输入实点金额后显示），下方还有 <i>"Count the drawer first, then the numbers appear. This is so the count stays a count."</i>（请先清点钱箱，数字才会出现。这样清点才是真正的清点。）您的起始金额以及存入、支出记录会一直显示，因为这些是您自己操作的，没有什么需要隐藏。</div>
+    <div class="tip"><b>如果钱对不上，必须写一行说明。</b>当差异不为零时，BrewDesk 会询问 <b>"Why is it different?"</b>（为什么会有差额？），在那里写下内容之前不允许您关闭钱箱（空格不算）。它提醒您：<i>"Write one line before closing. In three days nobody will remember."</i>（关闭前请写一行说明。三天后没人会记得。）这话没错。如果差异为零，则完全不会询问。</div>
+    <div class="tip"><b>钱箱归谁，是选出来的，不是打出来的。</b>原先的自由输入姓名框已取消。如果您使用员工账户，请在 <b>Drawer held by</b>（钱箱负责人）下从列表中选择负责人。如果您不使用员工账户，这里就直接显示 <b>Owner</b>（店主）：<i>"Staff accounts are off, so this drawer is under the owner."</i>（员工账户已关闭，因此该钱箱归店主负责。）存入或支出上的 <b>Recorded by</b>（记录人）框现在是只读的，并与同一人保持一致，因此“谁取走了那笔钱”永远只有一个答案。</div>
+    <div class="tip"><b>从钱箱里拿钱采购物资？</b>Pay-Out 现在增加了 <b>Business expense</b>（业务支出）这一原因，与 Safe Drop、Tip Out、Bank Drop 和 Other 并列。给它单独设一个原因，月底时您就能真正算清现金花到了哪里。</div>
+    <div class="tip"><b>起始金额输错了？</b>在尚未发生任何事情（没有现金销售、存入或支出）时，会出现 <b>Fix opening float</b>（更正备用金）按钮。第一笔现金销售之后它就会消失，因为那时再修改起始数字，会悄悄地把真实的差异转移到别处。从那时起，请在日结时的差异原因中说明。更正会以备注形式添加（谁、何时、旧数值），绝不会覆盖原始记录。</div>
+    <div class="tip"><b>一条无法关闭的红色横幅。</b>如果钱箱的更改没有传到服务器，您会看到 <b>"This drawer has not been saved"</b>（这个钱箱尚未保存）：<i>"The last change did not reach the server. If you refresh now, the float, pay-ins and count are gone. Check the network and make any change again."</i>（上次更改未能传到服务器。如果现在刷新，备用金、存入和清点数据都会丢失。请检查网络并重新进行一次更改。）这里特意没有关闭按钮。一条可以划掉的提示很容易被忘掉，而刷新页面会丢失当天的钱箱数据。</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c7.html">7. 收款</a></li><li><a href="c19.html">20. 备份</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c9.html"><small>← 上一页</small>9. 退款</a><a class="nx" href="c15.html"><small>下一页 →</small>11. 离线工作</a></div></div></div></div>
+<script src="../assets/search.js?v=4b1e5697"></script>
+</body></html>

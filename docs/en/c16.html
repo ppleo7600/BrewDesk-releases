@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>15. Staff &amp; permissions · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aebbdb0d"></head>
+<title>15. Staff &amp; permissions · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="Search the manual…" autocomplete="off" aria-label="Search the manual…"><div class="results" id="results" data-none="No results"></div></div>
-<details class="langmenu"><summary aria-label="Language">English</summary><div class="langlist"><a class="active" hreflang="en" href="c16.html">English</a><a class="" hreflang="ko" href="../ko/c16.html">한국어</a></div></details>
+<details class="langmenu"><summary aria-label="Language">English</summary><div class="langlist"><a class="active" hreflang="en" href="c16.html">English</a><a class="" hreflang="ko" href="../ko/c16.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c16.html">简体中文</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">Home</a>
 <div class="part">Part 1 · Getting started</div>
@@ -80,6 +80,8 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-add">Add a staff member</h3>
     <figure class="shot"><img src="../img/41-staffmember.png" alt="Add staff form" loading="lazy"><figcaption><b>Add a staff member</b>① Name  ·  ② Role (Manager / Cashier)  ·  ③ PIN (4 digits) + confirm  ·  ④ <b>Add staff</b></figcaption></figure>
+    <figure class="shot"><img src="../img/c16-staff-saved.png" alt="Right after saving a staff member" loading="lazy"><figcaption><b>Right after saving</b>① "added as staff" notice  ·  ② the new person in the list</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-staff-list.png" alt="Staff list" loading="lazy"><figcaption><b>Staff list (after adding)</b>① Add staff  ·  ② Idle Lock  ·  ③ staff list (role badge, status)</figcaption></figure>
     <ol class="steps">
       <li>Tap <b>Add staff</b>. A form opens.</li>
       <li>Type the person's <b>Name</b>.</li>
@@ -90,8 +92,9 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-edit">Edit or remove a person</h3>
     <p class="intro">Fixing a name, changing a PIN, hiding someone who left — these used to be four different little controls on the same row. Now there is one door: tap the person.</p>
+    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="Edit staff card" loading="lazy"><figcaption><b>Edit staff card (opens when you tap the staff name)</b>① Name  ·  ② Role  ·  ③ PIN (leave both blank to keep) · Reset · Revoke  ·  ④ Save</figcaption></figure>
     <ol class="steps">
-      <li>In your staff list, <b>tap anywhere on that person's row</b>. Their card opens.</li>
+      <li>In your staff list, <b>tap the staff name (anywhere on that person's row)</b>. The edit window opens.</li>
       <li>Their email is at the top so you can be sure it's the right person. Fix the <b>Name</b> if you need to.</li>
       <li>Change the <b>Role</b> if their job changed. (An owner's row shows the role as plain text — an owner's role can't be changed here.)</li>
       <li>To set a new PIN, type it in both <b>PIN (4 digits)</b> boxes. <b>Leave both boxes blank and the current PIN stays as it is</b> — the screen says so, right under the boxes.</li>
@@ -106,12 +109,13 @@
     <p class="intro">This settings page shows, screen by screen, what a <b>manager</b> and a <b>cashier</b> are each allowed to do — and now you can actually <b>tick the boxes and save</b>. The whole page was rebuilt: your two PIN cards sit side by side across the top, with the big table below.</p>
     <div class="activate"><div class="h">Where to find it</div><p><code>Settings › Staff Permissions</code>. Managers can open it and read it; <b>only the owner can change and save it</b>. Two tabs sit at the top — <b>Permissions</b> (everyone gets this) and <b>Staff</b> (a <span class="plan pro">Pro</span> feature: "Staff management is Pro-only").</p></div>
     <figure class="shot"><img src="../img/73-perms-table.png" alt="Staff Permissions screen" loading="lazy"><figcaption><b>Staff Permissions</b>① Owner PIN — Set PIN  ·  ② Manager PIN — Change PIN  ·  ③ Permissions / Staff tabs  ·  ④ Manager and Staff columns — ticks and padlocks (PIN approval)</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="Permissions table, open from the start" loading="lazy"><figcaption><b>Permissions table (open from the start)</b>① screen row (Manager and Staff columns)  ·  ② permission rows underneath  ·  ③ PIN approval marker</figcaption></figure>
     <ol class="steps">
-      <li>The table has exactly <b>two columns — "Manager" and "Staff"</b>. There's no owner column, because <b>"The owner always has every permission"</b>.</li>
-      <li>Permissions are grouped by screen. Tap a group to unfold it, or tap <b>Expand all</b> to open everything at once.</li>
-      <li>Tick or untick a box for that role. A group header tells you where it stands at a glance: <b>All on</b>, <b>Partly on</b> or <b>Off</b>.</li>
+      <li>The table has exactly <b>two columns — "Manager" and "Staff"</b>. There's no owner column, because the owner always has every permission.</li>
+      <li>The table is open from the start — there is nothing to fold or unfold. Permissions are <b>grouped by screen</b> (<b>Screens</b> · <b>Settings tabs</b> · <b>Available everywhere</b>), with the detailed permission rows right under each screen. A screen with no detailed permissions is just a single row.</li>
+      <li>Tick or untick a box for that role. The box on a screen row decides <b>whether that role can open the screen</b>; the boxes underneath decide the individual actions. A row you've changed from its default shows a reset marker.</li>
       <li>Watch the coloured pills next to some rows: <b>PIN approval</b> (a manager has to type a PIN first), <b>Limited view</b> (they see part of it), <b>Restricted</b> (blocked), and <b>Open the page</b> — the one that decides whether the screen appears at all.</li>
-      <li>Can't find something in a long list? Use <b>Search permissions</b>, or flip on <b>Differences only</b> to show just the rows where manager and staff differ.</li>
+      <li>A row with a padlock can't be changed, even by the owner (owner-only or fixed items). The table has no search box or "Differences only" switch, so scan it from top to bottom.</li>
       <li>Tap <b>Save</b> at the top of Settings when you're done. Unsaved rows are counted for you, and <b>Discard changes</b> puts everything back.</li>
     </ol>
     <div class="tip"><b>Every row you see in the table is really enforced.</b> Untick a box and that role is actually stopped, with a popup saying so. The table currently has <b>refunds</b>, <b>managing discounts</b>, <b>recalculating a closing &amp; settling tips</b>, <b>adding staff &amp; resetting their PINs</b> and <b>saving settings</b>, and opening a screen at all (<b>Open the page</b>) is enforced too — see the next two tips.</div>
@@ -125,6 +129,7 @@
     <div class="tip"><b>Still on 0000? Then Manager is shut.</b> The card says so — status chip <b>"Default 0000"</b> and, underneath, <b>"Can't switch to Manager until you change it"</b>. While the manager PIN is the factory 0000, <b>nobody can switch this till to Manager at all</b>: typing 0000 gets <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b> Change it once and Manager works. (This is on purpose — a shop-wide code everyone already knows isn't a lock.)</div>
     <div class="tip"><b>Worth knowing before you rely on it:</b> your activity log will say <b>Manager</b>, not <b>who</b>. If you need to know which person did something, give people their own staff accounts (<span class="plan pro">Pro</span>).</div>
     <p class="sub" style="margin:16px 0 4px"><b>The role chip — switching who this till is right now</b></p>
+    <figure class="shot"><img src="../img/c16-role-chip.png" alt="Role chip panel" loading="lazy"><figcaption><b>Role chip panel</b>① role chip (Owner)  ·  ② Owner · Manager · Staff row  ·  ③ Staff Settings</figcaption></figure>
     <ol class="steps">
       <li>Look at the top bar: there's a coloured chip showing what this POS is acting as — <b>Owner</b> (amber), <b>Manager</b> (blue) or <b>Staff</b> (grey).</li>
       <li>Tap it. A small panel opens with the three roles listed.</li>
@@ -146,6 +151,7 @@
     <div class="tip"><b>The code doesn't hang around.</b> It expires after <b>10 minutes</b>, and <b>5 wrong tries</b> lock it — you'll see <b>"Too many incorrect attempts. Request a new code."</b> Just send yourself a fresh one. Too simple a PIN is refused too: <b>"That PIN is too simple — choose a different 4 digits."</b></div>
     <div class="tip"><b>You get an email even when it was you.</b> Every owner PIN reset sends a confirmation to the owner's inbox. If one ever arrives and it wasn't you, that's your early warning.</div>
     <p class="sub" style="margin:16px 0 4px"><b>The manager PIN — the owner just sets a new one</b></p>
+    <figure class="shot"><img src="../img/c16-manager-pin.png" alt="Change manager PIN dialog" loading="lazy"><figcaption><b>Change manager PIN (open only)</b>① NEW PIN (4 DIGITS)  ·  ② CONFIRM PIN  ·  ③ Change PIN</figcaption></figure>
     <ol class="steps">
       <li>Open <code>Settings › Staff Permissions</code> and find the <b>manager PIN</b> card across the top.</li>
       <li>Tap <b>Change PIN</b> (or <b>Set PIN</b> if there isn't one yet) and type the new code. Owner only.</li>
@@ -155,5 +161,5 @@
     <div class="tip"><b>0000 doesn't work anywhere.</b> Signing in with the default gets <b>"The default PIN (0000) can't be used to sign in. Ask the owner to set a new PIN in Settings, or use ‘Forgot your PIN?’ there."</b> — and now switching role with it is refused too: <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b> A forgotten reset can't quietly become an open door.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c6.html">16. Reservations &amp; Scheduler</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c29.html"><small>← Previous</small>14. Owner app (check your store from your phone)</a><a class="nx" href="c6.html"><small>Next →</small>16. Reservations &amp; Scheduler</a></div></div></div></div>
-<script src="../assets/search.js?v=aebbdb0d"></script>
+<script src="../assets/search.js?v=4b1e5697"></script>
 </body></html>

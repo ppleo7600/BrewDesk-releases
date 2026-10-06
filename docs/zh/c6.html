@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>16. 预订与排程 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="搜索手册…" autocomplete="off" aria-label="搜索手册…"><div class="results" id="results" data-none="没有找到结果"></div></div>
+<details class="langmenu"><summary aria-label="语言">简体中文</summary><div class="langlist"><a class="" hreflang="en" href="../en/c6.html">English</a><a class="" hreflang="ko" href="../ko/c6.html">한국어</a><a class="active" hreflang="zh-CN" href="c6.html">简体中文</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">首页</a>
+<div class="part">第1部分 · 开始使用</div>
+<a href="c1.html" class=""><span class="num">1</span>欢迎与概览</a>
+<a href="c2.html" class=""><span class="num">2</span>快速开始</a>
+<a href="c3.html" class=""><span class="num">3</span>设置门店</a>
+<a href="c4.html" class=""><span class="num">4</span>创建菜单</a>
+<div class="part">第2部分 · 日常使用</div>
+<a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
+<a href="c5.html" class=""><span class="num">6</span>点单</a>
+<a href="c7.html" class=""><span class="num">7</span>收款</a>
+<a href="c8.html" class=""><span class="num">8</span>折扣与促销</a>
+<a href="c9.html" class=""><span class="num">9</span>退款</a>
+<a href="c17.html" class=""><span class="num">10</span>报表与日结</a>
+<a href="c15.html" class=""><span class="num">11</span>离线工作</a>
+<div class="part">第3部分 · 门店管理</div>
+<a href="c20.html" class=""><span class="num">12</span>附加功能与扩展</a>
+<a href="c21.html" class=""><span class="num">13</span>您的套餐与账单</a>
+<a href="c29.html" class=""><span class="num">14</span>店主 App（用手机查看您的门店）</a>
+<a href="c16.html" class=""><span class="num">15</span>员工与权限</a>
+<a href="c6.html" class="cur"><span class="num">16</span>预订与排程</a>
+<a class="sub" href="#c6-waitlist"><span class="num">16.1</span>排队候位</a>
+<a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
+<a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
+<a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
+<a href="c19.html" class=""><span class="num">20</span>备份</a>
+<div class="part">第4部分 · 安装与设备</div>
+<a href="c24.html" class=""><span class="num">21</span>设备与网络</a>
+<a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
+<a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
+<a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
+<a href="c27.html" class=""><span class="num">25</span>正式营业</a>
+<a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
+<div class="part">第5部分 · 帮助</div>
+<a href="c22.html" class=""><span class="num">27</span>故障排除与支持</a>
+<a href="c28.html" class=""><span class="num">28</span>常见问题</a>
+<a href="c26.html" class=""><span class="num">29</span>术语表</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c6">
+    <h3><span class="n">16</span>预订与排程</h3>
+    <p class="intro">预订是指顾客在到店之前先订好桌位或时间。您可以把所有预订集中在一个地方管理。我们来添加一个预订吧。</p>
+    <div class="activate"><div class="h">在哪里开启</div><p>在 <code>Settings › Add-ons › Reservations</code> 中开启预订（打开开关）。需要先开启<b>桌台</b>（Tables）——如果桌台未开启，会弹出“Enable Both”（同时启用）提示，点一下即可。美容美发、水疗类预订（按员工和时间）使用同一位置的<b>排程</b>（Scheduler）附加功能，它是 <span class="plan pro">Pro</span> 附加功能。</p></div>
+    <p class="tip" style="margin-bottom:6px"><b>开始之前：</b>请先在 <code>Settings › Hours &amp; Closures</code> 中设置营业时间。预订只会提供营业时段内的时间——所以如果看不到某个时间，请先检查营业时间。</p>
+    <figure class="shot"><img src="../img/56-scheduler-staff-columns.png" alt="排程：员工列" loading="lazy"><figcaption><b>Scheduler: staff columns</b>① 每位员工一列</figcaption></figure>
+    <figure class="shot"><img src="../img/57-scheduler-no-staff.png" alt="排程：没有员工" loading="lazy"><figcaption><b>Scheduler: no staff</b>① 提示先添加员工</figcaption></figure>
+    <figure class="shot"><img src="../img/23-reservations.png" alt="预订设置" loading="lazy"><figcaption><b>Reservation settings</b>① Settings / Special Days 标签页  ·  ② 预订规则（时段、人数、可预订时间范围）  ·  ③ 保存</figcaption></figure>
+    <figure class="shot"><img src="../img/29-reservation-new.png" alt="新预订" loading="lazy"><figcaption><b>New reservation</b>① Walk-in / Reservation  ·  ② 客人姓名和电话  ·  ③ 日期和时间（时长和 Chair / Room 在下方）  ·  ④ Save Reservation（保存预订）。这是美容美发/水疗的布局；餐厅会看到“Table”（桌号）框和“Guests”（客人数）框，而不是 Chair / Room。</figcaption></figure>
+    <ol class="steps">
+      <li>打开预订页面。在<b>桌台图</b>（Table Map）中点右上角的 <b>Reservations</b>（预订）——或者打开顶部的<b>排程</b>（Scheduler）标签页。（只有 <span class="plan pro">Pro</span> 套餐并开启了排程附加功能时，才会显示排程标签页。）</li>
+      <li>在日历上点选您要的日期。</li>
+      <li>点 <b>New Reservation</b>（新预订），会打开一个表单。</li>
+    </ol>
+    <figure class="shot"><img src="../img/108-resv-form.png" alt="新预订表单" loading="lazy"><figcaption><b>New Reservation form</b>① Walk-in / Reservation  ·  ② Guest Name（客人姓名，必填）  ·  ③ Phone（电话，必填）  ·  ④ Date · Time（日期 · 时间）  ·  ⑤ Save Reservation（保存预订）</figcaption></figure>
+    <ol class="steps" start="4">
+      <li>填写 <b>Guest Name</b>（客人姓名）、<b>Phone</b>（电话，两项必填）、<b>Date</b>（日期）和 <b>Time</b>（时间）。<b>Email</b> 可选，<b>Duration</b>（时长）默认为 1 小时。在餐厅、咖啡馆等有桌台的店里，您还需要选择<b>客人数</b>（Guests，1–4 人，或直接输入 5 人及以上）。美容美发、水疗类店铺没有客人数框。</li>
+      <li>可选：选择<b>桌号</b>（Table，美容美发和水疗店为 <b>Chair / Room</b>）和<b>员工</b>（Staff），并添加<b>备注</b>（Note）。对于美容美发或水疗店，选择员工是最重要的一步。只有添加了至少一位员工后，才会出现员工框。</li>
+      <li>点<b>保存</b>（Save）。客人会自动收到一条“预订成功”的确认——通过邮件、短信或 WhatsApp，取决于您的设置。</li>
+    </ol>
+    <figure class="shot"><img src="../img/109-resv-list.png" alt="预订列表" loading="lazy"><figcaption><b>Reservation list</b>① Reservations 按钮  ·  ② Upcoming / Seated / Past（即将到来 / 已入座 / 已过）  ·  ③ 预订卡片——点击打开  ·  ④ New Reservation（新预订）</figcaption></figure>
+    <ol class="steps" start="7">
+      <li>已预订的客人到店后，打开他们的预订卡片并点 <b>Check In</b>（到店签到）。状态会变为 <b>Seated</b>（已入座）（如有需要，还会为他们安排桌台）。</li>
+      <li>有人没预订就直接上门？点 <b>Walk-in</b> 选项——客人会立即入座。</li>
+    </ol>
+    <div class="tip"><b>已入座的预订会自动结束。</b>预订一旦变为 <b>Seated</b>（已入座），当该桌<b>结账付款</b>、订单被<b>取消</b>或您<b>日结</b>时，它会自动转入过往预订。再也不会有昨天的客人留在您的预订列表里了。</div>
+    <div class="tip"><b>没来的客人——打烊时一次标记完。</b>打开 <b>Auto No-Show on Close</b>（结账时自动标记未到店），它位于 <code>Settings › Reservations › Settings</code> 中的 <b>Booking Policy &amp; Guest Portal</b> 下。之后，正如说明所述：<b>“启用后，结账时会自动将当天仍为「已确认」状态的预订标记为「未到店」，并向每位顾客发送说明原因的通知邮件。”</b>该功能默认<b>关闭</b>，需要您手动打开。只有仍处于<b>已确认</b>状态的预订才会被处理——已入座、已完成和已取消的预订保持原样；同一天重复日结也不会给任何人重复发邮件。</div>
+    <p class="foot">发给客人的邮件语气平和，不带责备：主题是 <b>“We couldn't confirm your visit”</b>，内容说明桌位已为他们保留，但未能确认他们到店，并邀请客人在情况有误时联系您。</p>
+    <div class="tip"><b>排程与预订的区别：</b><b>排程</b>（<span class="plan pro">Pro</span>，排程附加功能）用于美容美发/水疗的<b>预约</b>（按员工和时间预订）。<b>桌位预订</b>用于堂食（一组客人占一张桌）。它们共用同一个日历区域，所以您的所有预订都在一个地方。</div>
+    <div class="tip"><b>排程的员工列：</b>排程中的按员工分列，只在 <b><span class="plan pro">Pro</span> 套餐</b>且您有<b>员工账户</b>时才会出现。这与员工附加功能的开关是分开的（请参阅<a href="c16.html#c16">员工与权限</a>）。如果还没有员工，会显示一条提示信息。Starter 套餐没有排程标签页。</div>
+    <div class="tip"><b>没有网络？签到照样可用。</b>网络中断时，您仍然可以点 <b>Check In</b>、<b>No Show</b>（未到店）或 <b>Cancel</b>（取消）——改动会立刻显示在屏幕上，联网后自动上传。只有<b>新建或修改预订</b>会被禁止，屏幕会告诉您原因：<b>“离线状态下无法创建新预订 — 预订日历同时也由店外写入，可能造成重复预订。请在恢复连接后重试。”</b>如果列表完全无法加载，您会看到 <b>“Showing the last list received”</b>（显示最后一次获取的列表），已有的预订仍会保留在屏幕上。</div>
+    <div class="brag"><div class="h">值得展示</div><p><b>预订功能内置。</b>您不需要再装一个应用，也不用额外付费。餐厅可以订桌位；美容美发店和水疗店可以订员工的时间——全都在同一个日历上。</p></div>
+
+    <h3 id="c6-waitlist" style="font-size:16px;margin:22px 0 4px">排队候位</h3>
+    <p class="intro">候位名单就是等空桌的顾客队伍。BrewDesk 帮您管理这支队伍，并在桌位准备好时第一时间给顾客发短信——他们就不必挤在您的门口了。</p>
+    <div class="activate"><div class="h">在哪里开启</div><p>在 <code>Settings › Add-ons › Waitlist</code> 中开启（打开开关）。需要先开启<b>桌台</b>（Tables）——如果弹出提示，请点 <b>Enable Both</b>（同时启用）。</p></div>
+    <figure class="shot"><img src="../img/44-waitlist.png" alt="加入候位名单" loading="lazy"><figcaption><b>Add to waitlist</b>① 顾客姓名  ·  ② 人数  ·  ③ 电话（方便发短信通知）  ·  ④ “Add to Waitlist”（加入候位名单）</figcaption></figure>
+    <ol class="steps">
+      <li>打开<b>候位名单</b>（Waitlist）。在<b>桌台图</b>中点右上角的 <b>Waitlist</b>。</li>
+      <li>点 <b>Add Guest</b>（添加顾客），会打开一个小表单。</li>
+      <li>填写顾客的<b>姓名</b>（Name）、<b>人数</b>（Party size，几位用餐）和<b>电话</b>（Phone，方便发短信通知）。您也可以添加备注，然后保存。</li>
+      <li>有桌位空出来时，找到该顾客并点 <b>Notify</b>（通知）。他们会收到一条“您的桌位已准备好”的短信（短信或 WhatsApp）。</li>
+      <li>然后安排他们入座——就完成了。</li>
+    </ol>
+    <div class="tip"><b>为什么要填电话？</b>顾客正是通过电话收到“桌位已准备好”的短信。没有电话的话，您就只能用老办法喊名字了。</div>
+    <div class="tip"><b>没有网络，队伍照样前进。</b>添加顾客、入座、<b>No Show</b>（未到店）和 <b>Cancel</b>（取消）在离线时都能用。您会看到 <b>“Saved on this device”</b>（已保存到本机），联网后会自动上传——离线添加的顾客要<b>上传之后才会拿到排队号</b>。刷新屏幕也不会丢掉队伍：它保存在设备上，您会看到 <b>“Showing the last list received”</b>（显示最后一次获取的列表）。唯一需要联网的是 <b>Notify</b>——“桌位已准备好”的短信要等恢复网络后才能发出，所以现在请直接喊这位顾客的名字。</div>
+    <div class="tip"><b>没有桌台？叫号后直接开始点单。</b>如果您的店是柜台模式（没有桌台图），顾客卡片上的按钮会显示 <b>Start Order</b>（开始点单），而不是 <b>Seat</b>（入座）。点击后，BrewDesk 会把他们标记为已入座，并直接带您进入该顾客的点单页面。如果购物篮里已有商品，系统会先询问——<b>Order in progress</b>（有正在进行的订单）→ 点 <b>Hold &amp; start</b>（挂单并开始），旧的购物篮会被放进您的挂单中，不会丢失。</div>
+    <div class="tip"><b>您的取号机显示您的店名。</b>在设为<b>候位名单自助机</b>（Waitlist Kiosk）的平板上，屏幕顶部现在会显示您的<b>店铺 Logo 和店名</b>——它使用您已在 <code>Settings › Store info</code> 中保存的图片，无需另外上传。电话框也会默认显示<b>您所在国家的区号</b>（+1、+82、+66 …），根据您店铺所在国家自动带出，顾客只需输入号码。</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c16.html">15. 员工与权限</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c16.html"><small>← 上一页</small>15. 员工与权限</a><a class="nx" href="c10.html"><small>下一页 →</small>17. 顾客与会员积分</a></div></div></div></div>
+<script src="../assets/search.js?v=4b1e5697"></script>
+</body></html>

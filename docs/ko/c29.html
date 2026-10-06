@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>14. 사장님 앱 (휴대폰으로 매장 보기) · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aebbdb0d"></head>
+<title>14. 사장님 앱 (휴대폰으로 매장 보기) · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없습니다"></div></div>
-<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c29.html">English</a><a class="active" hreflang="ko" href="c29.html">한국어</a></div></details>
+<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c29.html">English</a><a class="active" hreflang="ko" href="c29.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c29.html">简体中文</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <div class="part">1부 · 시작하기</div>
@@ -54,7 +54,7 @@
     <h3><span class="n">14</span>사장님 앱 (휴대폰으로 매장 보기)</h3>
     <p class="intro">매장에 없어도 휴대폰으로 오늘 매출, 지금 앉아 있는 테이블, 마감 리포트, 알림을 확인할 수 있습니다. <b>BrewDesk Owner</b>는 앱스토어에서 내려받는 앱이 아니라 휴대폰 브라우저로 여는 웹 앱이며, 홈 화면에 추가하면 일반 앱처럼 아이콘으로 열 수 있습니다. 로그인은 비밀번호 없이 이메일로 받는 6자리 코드로 합니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>휴대폰 브라우저(아이폰은 Safari, 안드로이드는 Chrome)에서 <code>brewdesk.io/owner</code> 를 엽니다. 매장 계산대 주소 뒤에 <code>/owner</code> 를 붙인 주소입니다. <b>매장 사장님 이메일</b>, 또는 사장님이 <a href="#c29-admins">관리자로 초대한 이메일</a>로 로그인할 수 있습니다.</p></div>
-    
+    <figure class="shot phone"><img src="../img/owner-01-login.png" alt="사장님 앱 로그인과 코드 입력 화면" loading="lazy"><figcaption><b>로그인 → 코드 입력</b>① EMAIL ADDRESS  ·  ② Send code  ·  ③ VERIFICATION CODE  ·  ④ Keep me signed in on this device  ·  ⑤ Resend code(타이머)</figcaption></figure>
     <ol class="steps">
       <li><code>brewdesk.io/owner</code> 를 엽니다. 화면에 <b>BrewDesk</b> 로고와 이메일 입력칸이 표시됩니다.</li>
       <li><b>EMAIL ADDRESS</b>(이메일 주소)에 매장 계정 이메일을 입력하고 <b>Send code</b>(코드 받기)를 누릅니다.</li>
@@ -68,7 +68,7 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-install">홈 화면에 추가하기</h3>
     <p class="intro">한 번 홈 화면에 추가해 두면 브라우저 주소를 입력하지 않고 <b>BrewDesk Owner</b> 아이콘으로 바로 열 수 있습니다. 앱스토어 설치는 필요하지 않습니다.</p>
-    
+    <figure class="shot phone"><img src="../img/owner-02b-ios-sheet.png" alt="홈 화면에 추가 안내" loading="lazy"><figcaption><b>홈 화면에 추가(아이폰)</b>① Add to Home Screen 배너  ·  ② Add  ·  ③ 3단계 안내(공유 → 홈 화면에 추가 → 추가)</figcaption></figure>
     <ol class="steps">
       <li><b>안드로이드(Chrome)</b>: 화면에 <b>Add BrewDesk Owner to your Home Screen</b>(BrewDesk Owner를 홈 화면에 추가하세요) 배너가 나타나면 <b>Add</b>(추가)를 누릅니다.</li>
       <li><b>아이폰(Safari)</b>: 안내 창의 순서대로 진행합니다 — Safari 아래쪽의 <b>공유</b> 버튼을 누르고, <b>홈 화면에 추가</b>를 선택한 뒤, 오른쪽 위의 <b>추가</b>를 누릅니다.</li>
@@ -79,8 +79,8 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-home">홈 &amp; 매장 대시보드</h3>
     <p class="intro">홈 화면은 오늘 하루를 한눈에 보여 줍니다. 매장을 하나 고르면 그 매장의 대시보드가 열리며, 화면은 15초마다 자동으로 새로 고쳐집니다. <span class="plan pro">Pro</span> <span class="plan biz">Business</span> 매장에서 이용할 수 있습니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>하단 탭 <b>Home</b>(홈). 매장이 여러 곳이면 화면 위쪽의 매장 이름 상자를 눌러 <b>All stores</b>(전체 매장)와 각 매장 사이를 오갈 수 있습니다.</p></div>
-    
-    
+    <figure class="shot phone"><img src="../img/owner-03-home.png" alt="여러 매장 홈 화면" loading="lazy"><figcaption><b>홈 — 전체 매장</b>① 매장 전환(All stores)  ·  ② Today · All stores 매출과 전날 대비  ·  ③ Orders · Avg ticket · vs yesterday · Open  ·  ④ Stores 목록(Starter 매장은 흐리게 잠김)  ·  ⑤ 하단 탭</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-04-dashboard.png" alt="매장 대시보드" loading="lazy"><figcaption><b>매장 대시보드(7D)</b>① Today / Yesterday / 7D / 30D  ·  ② 매출과 일별 그래프  ·  ③ Orders · Avg ticket  ·  ④ Payments(취소·환불)  ·  ⑤ Payment mix  ·  ⑥ Top Sellers  ·  ⑦ Peak hours</figcaption></figure>
     <ol class="steps">
       <li><b>여러 매장</b>이면 홈에 <b>Today · All stores</b>(오늘 · 전체 매장) 합계 매출, 전날 같은 시간 대비 증감, 주문 수, 객단가(<b>Avg ticket</b>), 영업 중인 매장 수가 표시됩니다. 그 아래 <b>Stores</b>(매장) 목록에서 매장을 누르면 그 매장의 대시보드가 열립니다.</li>
       <li>대시보드 위쪽의 <b>Today</b> · <b>Yesterday</b> · <b>7D</b> · <b>30D</b>(오늘 · 어제 · 7일 · 30일)로 기간을 고릅니다. 매출 숫자 옆에 이전 기간 대비 증감이 함께 표시됩니다.</li>
@@ -94,8 +94,8 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-live">실시간 — 지금 매장 상황</h3>
     <p class="intro">지금 손님이 앉아 있는 테이블, 들어온 온라인 주문, 오늘 예약을 매장 밖에서 확인합니다. 몇 가지는 휴대폰에서 바로 처리할 수도 있습니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>하단 탭 <b>Live</b>(실시간). 위쪽의 작은 탭은 매장에서 켜 둔 애드온에 따라 달라집니다 — <b>Dine-in</b>(홀)은 항상, <b>Online</b>(온라인)은 QR·온라인 주문을 켠 매장, <b>Reservations</b>(예약)은 예약·스케줄러를 켠 매장에만 보입니다(<a href="c20.html#c20">애드온 &amp; 추가 기능</a> 참고).</p></div>
-    
-    
+    <figure class="shot phone"><img src="../img/owner-05-live.png" alt="실시간 홀 탭" loading="lazy"><figcaption><b>실시간 — Dine-in</b>① Dine-in / Online / Reservations  ·  ② 사용 중 테이블·손님 수  ·  ③ 테이블 카드(경과 시간·금액)  ·  ④ Updated … 표시</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-06-live-reservations.png" alt="실시간 예약 탭" loading="lazy"><figcaption><b>실시간 — Reservations</b>① 날짜 바  ·  ② 예약 카드와 상태  ·  ③ Seat · No-show · Cancel</figcaption></figure>
     <ol class="steps">
       <li><b>Dine-in</b>(홀): 사용 중인 테이블 수와 손님 수, 테이블마다 앉은 지 얼마나 되었는지와 금액이 표시됩니다. 테이블을 누르면 그 테이블의 주문 내역이 열립니다. 10초마다 자동으로 새로 고쳐집니다.</li>
       <li><b>Online</b>(온라인): 들어온 픽업·배달·QR 주문이 <b>New</b>(신규)와 <b>Preparing</b>(준비 중)으로 나뉘어 표시됩니다. 신규 주문은 <b>Accept</b>(접수)를, 손님이 가져간 주문은 <b>Mark picked up</b>(픽업 완료)을 눌러 처리할 수 있습니다.</li>
@@ -106,8 +106,8 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-reports">리포트 &amp; AI 분석</h3>
     <p class="intro">계산대에서 하루를 마감하면 그 마감 리포트를 휴대폰에서 그대로 볼 수 있습니다. 마감 뒤에는 AI가 그날 영업을 정리한 분석도 함께 볼 수 있습니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>하단 탭 <b>Reports</b>(레포트)와 <b>AI</b>. 매장이 여러 곳이면 위쪽 매장 상자에서 매장을 먼저 고릅니다.</p></div>
-    
-    
+    <figure class="shot phone"><img src="../img/owner-07-reports.png" alt="일별 리포트" loading="lazy"><figcaption><b>리포트 — Daily</b>① Daily / Period / Z Report  ·  ② 날짜 선택  ·  ③ 요약 · 결제수단  ·  ④ Cash drawer reconciliation  ·  ⑤ Download (CSV)</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-08-ai.png" alt="AI 분석 탭" loading="lazy"><figcaption><b>AI 분석</b>① 날짜 선택  ·  ② Summary  ·  ③ Highlights  ·  ④ Recommendations</figcaption></figure>
     <ol class="steps">
       <li><b>Daily</b>(일별): 날짜를 고르면 그날 마감 리포트가 열립니다 — 총매출·순매출·세금·팁·할인, 주문 수·객단가, 취소·환불, 결제수단별 금액, 카테고리별 매출, 누가 마감했는지(<b>Closed by</b>)까지 표시됩니다.</li>
       <li>같은 화면의 <b>Cash drawer reconciliation</b>(돈통 정산)에서 시작 시재, 예상 금액, 실제 센 금액, 차이가 표시됩니다 — <b>Balanced</b>(일치), <b>Over</b>(남음), <b>Short</b>(모자람). 돈통 운영은 <a href="c17.html#c17-drawer">돈통 (Cash Drawer)</a>을 참고해 주세요.</li>
@@ -122,7 +122,7 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-alerts">알림 &amp; 이메일 링크</h3>
     <p class="intro">결제 실패, 구독 상태 변경, 환불 처리, 마감 보류, 새 AI 인사이트처럼 사장님이 알아야 할 일을 앱 안 알림함에 모아 보여 줍니다. 또 BrewDesk가 보내는 리포트·알림 메일의 버튼을 누르면 사장님 앱의 해당 화면이 바로 열립니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>화면 오른쪽 위의 <b>종 모양 아이콘</b>(<b>Alerts</b>, 알림). 읽지 않은 알림이 있으면 숫자가 표시됩니다.</p></div>
-    
+    <figure class="shot phone"><img src="../img/owner-09-alerts.png" alt="알림함" loading="lazy"><figcaption><b>알림함</b>① All / Unread  ·  ② 기간  ·  ③ 매장 필터  ·  ④ 읽지 않은 알림 카드</figcaption></figure>
     <ol class="steps">
       <li><b>All</b>(전체)과 <b>Unread</b>(읽지 않음)로 나눠 봅니다.</li>
       <li>기간(<b>Today</b> · <b>Last 7 days</b> · <b>Last 30 days</b>)과 매장(<b>All stores</b> 또는 매장 하나)으로 좁혀 볼 수 있습니다.</li>
@@ -135,7 +135,7 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-billing">결제 · 플랜 · 메시지 충전</h3>
     <p class="intro">플랜 변경, 결제 카드, 문자(SMS)·WhatsApp 메시지 잔액 충전, 최근 결제 내역을 휴대폰에서 처리합니다. <b>매장 오너만</b> 볼 수 있으며, 매니저로 로그인하면 이 탭이 나타나지 않습니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>하단 탭 <b>Billing</b>(결제). 매장이 여러 곳이면 먼저 전체 매장의 결제 목록이 나오고, 매장의 <b>Manage</b>(관리)를 누르면 그 매장의 결제 화면이 열립니다. 매장이 한 곳이면 바로 그 매장 화면이 열립니다.</p></div>
-    
+    <figure class="shot phone"><img src="../img/owner-10-billing.png" alt="매장 결제 화면" loading="lazy"><figcaption><b>매장 결제 화면</b>① Subscription 플랜 카드  ·  ② Details  ·  ③ Payment methods  ·  ④ Messages(Top up)  ·  ⑤ Recent payments</figcaption></figure>
     <ol class="steps">
       <li><b>Subscription</b>(구독)에서 현재 플랜과 다음 갱신일을 확인합니다. 각 플랜의 <b>Details</b>(자세히)를 누르면 포함된 기능 목록이 열립니다.</li>
       <li>플랜을 바꾸려면 원하는 플랜 카드의 <b>Upgrade to …</b>(… 로 업그레이드) 또는 <b>Switch to …</b>(… 로 변경)를 누릅니다. 안전한 결제 페이지(Stripe)가 열리며, 그곳에서 결제를 마칩니다.</li>
@@ -149,8 +149,9 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c29-admins">관리자 · 총판 · 지원</h3>
     <p class="intro">매장에 들르지 않고도 매니저에게 사장님 앱을 열어 주거나, 연결된 총판의 권한을 끊거나, 지원팀에 문의할 수 있습니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p>오른쪽 위 <b>톱니바퀴</b>(<b>Settings</b>, 설정) → <b>Store</b>(매장) 영역의 <b>Manage store (admins &amp; permissions)</b>(매장 관리 — 관리자·권한)와 <b>Installer partners</b>(총판 연결 관리). 이 두 줄은 <b>그 매장의 오너</b>에게만 보입니다.</p></div>
-    
-    
+    <figure class="shot phone"><img src="../img/owner-11a-admins-list.png" alt="관리자 목록" loading="lazy"><figcaption><b>관리자 목록</b>① 관리자 목록(역할·상태·Last login)  ·  ② Add Admin  ·  ③ Activity Log</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-11-admins.png" alt="관리자 추가 창" loading="lazy"><figcaption><b>Add Admin 창</b>① Name  ·  ② Email  ·  ③ Role  ·  ④ Send Invite(여기서는 누르지 않았습니다)</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-12-settings.png" alt="설정 화면" loading="lazy"><figcaption><b>설정</b>① Email  ·  ② Language  ·  ③ Keep me signed in on this device  ·  ④ Manage store · Installer partners  ·  ⑤ Support · My tickets  ·  ⑥ Add to Home Screen  ·  ⑦ Sign out</figcaption></figure>
     <ol class="steps">
       <li><b>Add Admin</b>(관리자 추가)을 누르고 <b>Name</b>(이름), <b>Email</b>(이메일), <b>Role</b>(역할)을 입력한 뒤 <b>Send Invite</b>(초대 보내기)를 누릅니다. 역할은 <b>Manager</b>(매니저 — 관리자 목록과 활동 이력 조회) 또는 <b>Owner</b>(오너 — 관리자 추가·삭제까지 가능)입니다.</li>
       <li>초대받은 사람이 그 이메일로 <code>brewdesk.io/owner</code> 에 로그인하면 상태가 <b>Invite pending</b>(초대 대기 중)에서 <b>Active</b>(활성)로 바뀝니다.</li>
@@ -164,5 +165,5 @@
     <p class="foot">총판 연결의 자세한 의미는 <a href="c21.html#c21-installer">총판 연결 · 해제</a>를 참고해 주세요. 다 쓴 뒤에는 설정 맨 아래 <b>Sign out</b>(로그아웃)으로 로그아웃할 수 있습니다.</p>
   </div>
 <div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c15.html">11. 오프라인으로 쓰기</a></li><li><a href="c17.html">10. 리포트 &amp; 하루 마감</a></li><li><a href="c20.html">12. 애드온 &amp; 추가 기능</a></li><li><a href="c6.html">16. 예약 &amp; 스케줄러</a></li><li><a href="c11.html">18. QR 코드 주문</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c21.html"><small>← 이전</small>13. 플랜 &amp; 결제</a><a class="nx" href="c16.html"><small>다음 →</small>15. 직원 &amp; 권한</a></div></div></div></div>
-<script src="../assets/search.js?v=aebbdb0d"></script>
+<script src="../assets/search.js?v=4b1e5697"></script>
 </body></html>

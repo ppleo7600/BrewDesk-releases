@@ -210,5 +210,7 @@ header.hero .brand .logo{width:44px;height:44px;border-radius:11px}
 .plan.pro{background:#D1FAE5;color:#065F46;border-color:#6EE7B7}
 .plan.biz{background:var(--gold-100);color:#6B4E0E;border-color:var(--gold)}
 .plan.free{background:#EEF1EF;color:#5C6B64;border-color:#D5DBD7}
+/* ── 휴대폰 세로 스크린샷(사장님 앱 등): 이미지만 좁게, figcaption 은 본문 폭 그대로 ── */
+.shot.phone img{max-width:340px;margin:0 auto;display:block}
 /* ── 파트너 전용 띠 ── */
 .partnerbar{background:#7F1D1D;color:#fff;text-align:center;font-size:13px;font-weight:700;padding:6px 10px;letter-spacing:.02em}

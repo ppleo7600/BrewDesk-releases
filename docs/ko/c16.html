@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>15. 직원 &amp; 권한 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=aebbdb0d"></head>
+<title>15. 직원 &amp; 권한 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없습니다"></div></div>
-<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c16.html">English</a><a class="active" hreflang="ko" href="c16.html">한국어</a></div></details>
+<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c16.html">English</a><a class="active" hreflang="ko" href="c16.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c16.html">简体中文</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <div class="part">1부 · 시작하기</div>
@@ -80,6 +80,8 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-add">직원 추가하기</h3>
     <figure class="shot"><img src="../img/41-staffmember.png" alt="직원 추가 양식" loading="lazy"><figcaption><b>직원 추가</b>① 이름  ·  ② 역할 (Manager / Cashier)  ·  ③ PIN (4자리) + 확인  ·  ④ <b>Add staff</b></figcaption></figure>
+    <figure class="shot"><img src="../img/c16-staff-saved.png" alt="직원 저장 직후 화면" loading="lazy"><figcaption><b>저장 직후</b>① "added as staff" 알림  ·  ② 목록에 새로 나타난 직원</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-staff-list.png" alt="직원 목록" loading="lazy"><figcaption><b>직원 목록(추가 후)</b>① Add staff  ·  ② Idle Lock  ·  ③ 직원 목록(역할 배지·상태)</figcaption></figure>
     <ol class="steps">
       <li><b>Add staff</b>를 탭합니다. 양식이 열립니다.</li>
       <li>사람의 <b>이름(Name)</b>을 입력합니다.</li>
@@ -90,8 +92,9 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-edit">직원 정보 수정·삭제</h3>
     <p class="intro">이름 고치기, PIN 바꾸기, 그만둔 사람 숨기기 — 예전에는 같은 줄에 조작 방법이 넷으로 흩어져 있었습니다. 이제 진입 방법은 하나입니다: <b>그 사람을 탭해 주세요.</b></p>
+    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="직원 정보 수정 카드" loading="lazy"><figcaption><b>직원 수정 카드(직원 이름을 탭하면 열림)</b>① 이름  ·  ② 역할  ·  ③ PIN (두 칸 비우면 유지) · Reset · Revoke  ·  ④ Save</figcaption></figure>
     <ol class="steps">
-      <li>직원 목록에서 <b>그 사람 줄 아무 곳이나 탭</b>하면 카드가 열립니다.</li>
+      <li>직원 목록에서 <b>직원 이름(그 사람 줄 아무 곳이나)을 탭</b>하면 수정 창이 열립니다.</li>
       <li>맨 위에 이메일이 크게 표시됩니다 — 사람을 혼동하지 않도록 하기 위해서입니다. 필요하면 <b>이름(Name)</b>을 고칩니다.</li>
       <li>맡은 일이 바뀌었다면 <b>역할(Role)</b>을 변경합니다. (사장님 본인 줄은 역할이 글자로만 표시되며 — 여기서는 변경할 수 없습니다.)</li>
       <li>PIN을 새로 정하려면 <b>PIN (4자리)</b> 칸 <b>두 곳</b>에 모두 입력합니다. <b>두 칸을 모두 비워 두면 현재 PIN이 그대로 유지됩니다</b> — 칸 아래에 <b>"비워 두면 기존 PIN 이 그대로 유지됩니다."</b>라고 항상 표시됩니다.</li>
@@ -106,12 +109,13 @@
     <p class="intro"><b>매니저</b>와 <b>직원</b>이 어느 화면에서 무엇을 할 수 있는지 화면 단위로 정리한 설정 페이지입니다. 이제 <b>체크를 켜고 끄고 저장할 수 있습니다</b>. 화면도 새로 만들었습니다 — 위쪽에는 PIN 카드 두 장이 가로로 나란히 있고, 그 아래에 큰 표가 있습니다.</p>
     <div class="activate"><div class="h">여는 곳</div><p><code>설정(Settings) › 직원 권한(Staff Permissions)</code>. 매니저도 열어서 볼 수 있지만, <b>변경하고 저장하는 것은 사장님만</b> 할 수 있습니다. 위에 탭이 두 개 있습니다 — <b>Permissions</b>(권한, 모든 플랜) · <b>Staff</b>(직원 관리, <span class="plan pro">Pro</span> 기능 — "Staff management is Pro-only").</p></div>
     <figure class="shot"><img src="../img/73-perms-table.png" alt="직원 권한 화면" loading="lazy"><figcaption><b>직원 권한 (Staff Permissions)</b>① Owner PIN — Set PIN  ·  ② Manager PIN — Change PIN  ·  ③ Permissions / Staff 탭  ·  ④ Manager · Staff 열의 체크와 자물쇠(PIN 승인)</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="권한 표 — 처음부터 펼쳐진 상태" loading="lazy"><figcaption><b>권한 표(처음부터 펼쳐진 상태)</b>① 화면 줄(Manager · Staff 두 칸)  ·  ② 그 아래 세부 권한 줄  ·  ③ PIN approval(PIN 승인) 표시</figcaption></figure>
     <ol class="steps">
-      <li>표에는 칸이 딱 <b>두 개 — "Manager"(매니저)와 "Staff"(직원)</b>입니다. 사장님 칸은 없습니다. <b>"사장님은 언제나 모든 권한을 갖기"</b> 때문입니다("The owner always has every permission").</li>
-      <li>권한은 화면별로 묶여 있습니다. 묶음을 탭하면 펼쳐지고, <b>Expand all</b>(전체 펼치기)을 누르면 한 번에 모두 열립니다.</li>
-      <li>해당 직책의 체크를 켜거나 끕니다. 묶음 제목에 현재 상태가 한눈에 표시됩니다 — <b>All on</b>(전부 켜짐) · <b>Partly on</b>(일부 켜짐) · <b>Off</b>(꺼짐).</li>
+      <li>표에는 칸이 딱 <b>두 개 — "Manager"(매니저)와 "Staff"(직원)</b>입니다. 사장님 칸은 없습니다. 사장님은 언제나 모든 권한을 갖기 때문입니다.</li>
+      <li>표는 처음부터 모두 펼쳐져 있어 접거나 펼칠 필요가 없습니다. 권한은 <b>화면별로 묶여</b> 있고(<b>Screens</b> · <b>Settings tabs</b> · <b>Available everywhere</b>), 화면 줄 아래에 세부 권한 줄이 이어집니다. 세부 권한이 없는 화면은 줄 하나로 끝납니다.</li>
+      <li>해당 직책의 체크를 켜거나 끕니다. 화면 줄의 체크는 <b>그 화면을 열 수 있는지</b>를, 그 아래 줄의 체크는 세부 작업을 정합니다. 기본값과 다르게 바꾼 줄에는 되돌리기 표시가 나타납니다.</li>
       <li>줄 옆의 색 알약을 눈여겨봐 주세요: <b>PIN approval</b>(PIN 승인 — 매니저가 PIN을 먼저 입력해야 함) · <b>Limited view</b>(일부만 표시) · <b>Restricted</b>(차단) · <b>Open the page</b>(그 화면이 아예 보이는지 여부를 정하는 줄).</li>
-      <li>목록이 길어 찾기 어렵다면 <b>Search permissions</b>(권한 검색)를 사용하거나, <b>Differences only</b>(차이만 보기)를 켜서 매니저와 직원이 다른 줄만 볼 수 있습니다.</li>
+      <li>자물쇠가 붙은 줄은 사장님이라도 바꿀 수 없는 줄입니다(사장님 전용 또는 고정 항목). 이 표에는 검색창이나 '차이만 보기' 스위치가 없으니, 표를 위에서 아래로 훑어 주세요.</li>
       <li>모두 선택했다면 설정 화면 위쪽의 <b>저장</b>을 눌러 주세요. 아직 저장되지 않은 줄이 몇 개인지 표시되며, <b>Discard changes</b>(변경 취소)를 누르면 되돌아갑니다.</li>
     </ol>
     <div class="tip"><b>표에 보이는 줄은 모두 실제로 적용됩니다.</b> 체크를 끄면 그 직책은 해당 작업이 실제로 차단되고 팝업으로 안내됩니다. 현재 표에는 <b>환불</b>, <b>할인 관리</b>, <b>마감 재계산 · 팁 정산</b>, <b>직원 추가 · 직원 PIN 초기화</b>, <b>설정 저장</b>이 있고, 화면을 여는 권한(<b>Open the page</b>)도 적용됩니다 — 아래 두 팁을 참고해 주세요.</div>
@@ -125,6 +129,7 @@
     <div class="tip"><b>아직 0000이면 매니저 전환이 아예 차단됩니다.</b> 카드가 그렇게 안내합니다 — 상태 칩 <b>"Default 0000"</b>, 그 아래 <b>"바꾸기 전에는 매니저로 전환할 수 없어요"</b>. 매니저 PIN이 공장 기본값 0000인 동안에는 <b>이 계산대를 매니저로 전환할 수 없습니다</b>. 0000을 입력하면 <b>"이 PIN은 아직 기본값 그대로라 직책 전환에 쓸 수 없어요. 새 PIN을 먼저 정해 주세요."</b>라며 차단합니다. 한 번 변경하면 매니저 전환이 정상으로 돌아옵니다. (의도된 동작입니다 — 매장 사람 모두가 아는 코드는 자물쇠가 아니기 때문입니다.)</div>
     <div class="tip"><b>사용하기 전에 알아 두실 점:</b> 활동 기록에는 <b>"매니저"</b>까지만 남고 <b>누구인지</b>는 남지 않습니다. 누가 했는지까지 알아야 한다면 직원별 계정(<span class="plan pro">Pro</span>)을 사용해 주세요.</div>
     <p class="sub" style="margin:16px 0 4px"><b>직책 칩 — 지금 이 포스가 누구인지 바꾸기</b></p>
+    <figure class="shot"><img src="../img/c16-role-chip.png" alt="직책 칩 패널" loading="lazy"><figcaption><b>직책 칩 패널</b>① 직책 칩(Owner)  ·  ② Owner · Manager · Staff 3줄  ·  ③ Staff Settings</figcaption></figure>
     <ol class="steps">
       <li>화면 위쪽에 색깔 칩이 있습니다 — 이 포스가 현재 어떤 직책으로 동작하는지 알려 줍니다: <b>사장님</b>(주황) · <b>매니저</b>(파랑) · <b>직원</b>(회색).</li>
       <li>칩을 탭하면 직책 3줄이 있는 작은 패널이 열립니다.</li>
@@ -146,6 +151,7 @@
     <div class="tip"><b>코드는 오래 유효하지 않습니다.</b> <b>10분</b>이 지나면 만료되고, <b>5번 틀리면</b> 잠깁니다 — <b>"시도 횟수를 초과했습니다. 코드를 새로 요청해 주세요."</b> 새 코드를 다시 받으시면 됩니다. 너무 단순한 PIN도 거절합니다 — <b>"너무 단순한 PIN이에요 — 다른 4자리를 골라 주세요."</b></div>
     <div class="tip"><b>본인이 변경해도 메일이 발송됩니다.</b> 사장님 PIN을 재설정하면 언제나 사장님 메일함으로 확인 메일이 발송됩니다. 본인이 하지 않은 변경에 대한 메일이 왔다면 그것이 가장 빠른 경고입니다.</div>
     <p class="sub" style="margin:16px 0 4px"><b>매니저 PIN — 사장님이 새로 정하면 됩니다</b></p>
+    <figure class="shot"><img src="../img/c16-manager-pin.png" alt="매니저 PIN 변경 창" loading="lazy"><figcaption><b>매니저 PIN 변경(열기만)</b>① NEW PIN (4 DIGITS)  ·  ② CONFIRM PIN  ·  ③ Change PIN</figcaption></figure>
     <ol class="steps">
       <li><code>설정 › 직원 권한</code>을 열고 위쪽의 <b>매니저 PIN</b> 카드를 찾습니다.</li>
       <li><b>Change PIN</b>(PIN 변경 — 아직 없으면 <b>Set PIN</b>)을 누르고 새 코드를 입력합니다. <b>사장님만</b> 할 수 있습니다.</li>
@@ -155,5 +161,5 @@
     <div class="tip"><b>0000은 어디서도 사용할 수 없습니다.</b> 기본값 그대로 로그인하려 하면 <b>"기본 PIN(0000)으로는 로그인할 수 없어요. 설정에서 새 PIN을 정해 달라고 요청하거나, 그곳의 ‘PIN을 잊으셨나요?’를 이용하세요."</b>라며 차단합니다. 그리고 이제 <b>직책 전환도</b> 거절됩니다 — <b>"이 PIN은 아직 기본값 그대로라 직책 전환에 쓸 수 없어요. 새 PIN을 먼저 정해 주세요."</b> 초기화해 두고 잊은 PIN이 조용히 열린 문이 되어서는 안 되기 때문입니다.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c6.html">16. 예약 &amp; 스케줄러</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c29.html"><small>← 이전</small>14. 사장님 앱 (휴대폰으로 매장 보기)</a><a class="nx" href="c6.html"><small>다음 →</small>16. 예약 &amp; 스케줄러</a></div></div></div></div>
-<script src="../assets/search.js?v=aebbdb0d"></script>
+<script src="../assets/search.js?v=4b1e5697"></script>
 </body></html>

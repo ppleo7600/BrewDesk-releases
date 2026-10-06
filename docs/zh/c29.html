@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>14. 店主 App（用手机查看您的门店） · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=4b1e5697"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="搜索手册…" autocomplete="off" aria-label="搜索手册…"><div class="results" id="results" data-none="没有找到结果"></div></div>
+<details class="langmenu"><summary aria-label="语言">简体中文</summary><div class="langlist"><a class="" hreflang="en" href="../en/c29.html">English</a><a class="" hreflang="ko" href="../ko/c29.html">한국어</a><a class="active" hreflang="zh-CN" href="c29.html">简体中文</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">首页</a>
+<div class="part">第1部分 · 开始使用</div>
+<a href="c1.html" class=""><span class="num">1</span>欢迎与概览</a>
+<a href="c2.html" class=""><span class="num">2</span>快速开始</a>
+<a href="c3.html" class=""><span class="num">3</span>设置门店</a>
+<a href="c4.html" class=""><span class="num">4</span>创建菜单</a>
+<div class="part">第2部分 · 日常使用</div>
+<a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
+<a href="c5.html" class=""><span class="num">6</span>点单</a>
+<a href="c7.html" class=""><span class="num">7</span>收款</a>
+<a href="c8.html" class=""><span class="num">8</span>折扣与促销</a>
+<a href="c9.html" class=""><span class="num">9</span>退款</a>
+<a href="c17.html" class=""><span class="num">10</span>报表与日结</a>
+<a href="c15.html" class=""><span class="num">11</span>离线工作</a>
+<div class="part">第3部分 · 门店管理</div>
+<a href="c20.html" class=""><span class="num">12</span>附加功能与扩展</a>
+<a href="c21.html" class=""><span class="num">13</span>您的套餐与账单</a>
+<a href="c29.html" class="cur"><span class="num">14</span>店主 App（用手机查看您的门店）</a>
+<a class="sub" href="#c29-install"><span class="num">14.1</span>添加到主屏幕</a>
+<a class="sub" href="#c29-home"><span class="num">14.2</span>首页与门店仪表盘</a>
+<a class="sub" href="#c29-live"><span class="num">14.3</span>实时——此刻正在发生什么</a>
+<a class="sub" href="#c29-reports"><span class="num">14.4</span>报表与 AI 分析</a>
+<a class="sub" href="#c29-alerts"><span class="num">14.5</span>提醒与邮件链接</a>
+<a class="sub" href="#c29-billing"><span class="num">14.6</span>账单、套餐与消息充值</a>
+<a class="sub" href="#c29-admins"><span class="num">14.7</span>管理员、安装合作伙伴与客服</a>
+<a href="c16.html" class=""><span class="num">15</span>员工与权限</a>
+<a href="c6.html" class=""><span class="num">16</span>预订与排程</a>
+<a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
+<a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
+<a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
+<a href="c19.html" class=""><span class="num">20</span>备份</a>
+<div class="part">第4部分 · 安装与设备</div>
+<a href="c24.html" class=""><span class="num">21</span>设备与网络</a>
+<a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
+<a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
+<a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
+<a href="c27.html" class=""><span class="num">25</span>正式营业</a>
+<a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
+<div class="part">第5部分 · 帮助</div>
+<a href="c22.html" class=""><span class="num">27</span>故障排除与支持</a>
+<a href="c28.html" class=""><span class="num">28</span>常见问题</a>
+<a href="c26.html" class=""><span class="num">29</span>术语表</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c29">
+    <h3><span class="n">14</span>店主 App（用手机查看您的门店）</h3>
+    <p class="intro">不在店里也没关系。您的手机可以显示今天的销售额、现在哪些桌台有客人、日结报表和提醒。<b>BrewDesk Owner</b> 不是 App Store 里的应用，而是在手机浏览器中打开的网页应用；添加到主屏幕后，就像其他应用一样用图标打开。它没有密码：您用发送到邮箱的 6 位验证码登录。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>在手机浏览器（iPhone 用 Safari，Android 用 Chrome）中打开 <code>brewdesk.io/owner</code>——也就是您收银机的网址后面加上 <code>/owner</code>。使用<b>店主的邮箱</b>登录，或使用店主<a href="#c29-admins">邀请为管理员</a>的邮箱登录。</p></div>
+    <figure class="shot phone"><img src="../img/owner-01-login.png" alt="店主 App 的登录与验证码界面" loading="lazy"><figcaption><b>登录 → 输入验证码</b>① EMAIL ADDRESS（电子邮箱）  ·  ② Send code（发送验证码）  ·  ③ VERIFICATION CODE（验证码）  ·  ④ Keep me signed in on this device（在此设备上保持登录状态）  ·  ⑤ Resend code（重新发送验证码，带倒计时）</figcaption></figure>
+    <ol class="steps">
+      <li>打开 <code>brewdesk.io/owner</code>。您会看到 <b>BrewDesk</b> 标志和一个邮箱输入框。</li>
+      <li>在 <b>EMAIL ADDRESS</b>（电子邮箱）下输入您门店账户的邮箱，然后点 <b>Send code</b>（发送验证码）。</li>
+      <li>在收件箱中找到 6 位验证码，输入到 <b>VERIFICATION CODE</b>（验证码）下，然后点 <b>Verify</b>（验证）。</li>
+      <li>在您自己的手机上，请保持 <b>Keep me signed in on this device</b>（在此设备上保持登录状态）开启——下次打开应用会直接进入，不需要验证码。在共用设备上请关闭它。</li>
+      <li>登录后：如果您只有<b>一家</b>门店，会直接打开它的仪表盘；如果有<b>多家</b>门店，会进入汇总所有门店的首页。</li>
+    </ol>
+    <div class="tip"><b>没收到验证码？</b>请先查看垃圾邮件箱，稍等片刻，再点 <b>Resend code</b>（重新发送验证码）——旁边的倒计时结束后才能点。邮箱输错了？点 <b>Change email</b>（更改邮箱），重新输入即可。</div>
+    <div class="tip"><b>更改应用语言。</b>点右上角的齿轮（<b>Settings</b>（设置））→ <b>Language</b>（语言），选择列表中的一种语言。金额以您门店的币种显示。</div>
+    <p class="foot">店主 App 主要用来<b>随时查看</b>您的门店。菜单、价格、员工 PIN 和设备设置仍然在收银机（POS）上修改。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-install">添加到主屏幕</h3>
+    <p class="intro">只需添加一次，以后就能通过图标打开 <b>BrewDesk Owner</b>，不必再输入网址。不需要 App Store。</p>
+    <figure class="shot phone"><img src="../img/owner-02b-ios-sheet.png" alt="添加到主屏幕的提示" loading="lazy"><figcaption><b>添加到主屏幕（iPhone）</b>① Add to Home Screen（添加到主屏幕）横幅  ·  ② Add（添加）  ·  ③ 三步指引（分享 → 添加到主屏幕 → 添加）</figcaption></figure>
+    <ol class="steps">
+      <li><b>Android（Chrome）</b>：出现 <b>Add BrewDesk Owner to your Home Screen</b>（将 BrewDesk Owner 添加到主屏幕）横幅时，点 <b>Add</b>（添加）。</li>
+      <li><b>iPhone（Safari）</b>：按屏幕上的三步操作——点 Safari 的 <b>Share</b>（分享）按钮，选择 <b>Add to Home Screen</b>（添加到主屏幕），再点右上角的 <b>Add</b>（添加）。</li>
+      <li>把横幅关掉了？随时可以从齿轮（<b>Settings</b>（设置））→ <b>Add to Home Screen (PWA)</b>（添加到主屏幕（PWA））里重新调出来。</li>
+    </ol>
+    <div class="tip"><b>在 iPhone 上，请从 Safari 添加。</b>其他浏览器应用可能没有“添加到主屏幕”，或者表现不同。如果主屏幕上的图标名称是 <b>BrewDesk Owner</b>，就说明添加正确。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-home">首页与门店仪表盘</h3>
+    <p class="intro">首页让您一眼看清今天的情况。选一家门店即可打开它的仪表盘；屏幕每 15 秒自动刷新一次。适用于 <span class="plan pro">Pro</span> <span class="plan biz">Business</span> 套餐的门店。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>底部标签 <b>Home</b>（首页）。如果有多家门店，点顶部附近的门店名称框，在 <b>All stores</b>（全部门店）和各家门店之间切换。</p></div>
+    <figure class="shot phone"><img src="../img/owner-03-home.png" alt="多门店首页" loading="lazy"><figcaption><b>首页——全部门店</b>① 门店切换器（All stores（全部门店））  ·  ② Today · All stores（今天 · 全部门店）销售额与昨天的对比  ·  ③ Orders（订单） · Avg ticket（平均客单价） · 较昨日 · Open（营业中）  ·  ④ Stores（门店）列表（Starter 门店模糊并带锁）  ·  ⑤ 底部标签</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-04-dashboard.png" alt="门店仪表盘" loading="lazy"><figcaption><b>门店仪表盘（7天）</b>① Today（今天） / Yesterday（昨天） / 7D（7天） / 30D（30天）  ·  ② 销售额与每日图表  ·  ③ Orders（订单） · Avg ticket（平均客单价）  ·  ④ Payments（支付，含已取消 · 已退款）  ·  ⑤ Payment mix（支付方式占比）  ·  ⑥ Top Sellers（畅销商品）  ·  ⑦ Peak hours（高峰时段）</figcaption></figure>
+    <ol class="steps">
+      <li><b>多家门店</b>：首页显示 <b>Today · All stores</b>（今天 · 全部门店）的总销售额、与昨天同一时间相比的变化、订单数、<b>Avg ticket</b>（平均客单价）以及正在营业的门店数。点 <b>Stores</b>（门店）列表中的某家门店，即可打开它的仪表盘。</li>
+      <li>在仪表盘顶部选择时间段：<b>Today</b>（今天） · <b>Yesterday</b>（昨天） · <b>7D</b>（7天） · <b>30D</b>（30天）。与上一时间段相比的变化显示在销售额旁边。</li>
+      <li>图表可在 <b>Hourly</b>（按小时）和 <b>Daily</b>（按天）之间切换。</li>
+      <li>向下滑动可看到 <b>Orders</b>（订单） · <b>Avg ticket</b>（平均客单价）、<b>Payments</b>（支付，含取消、退款和小费）、<b>Payment mix</b>（支付方式占比，刷卡与现金）、<b>Top Sellers</b>（畅销商品）和 <b>Peak hours</b>（高峰时段，过去 30 天每天每个时段的繁忙程度）。</li>
+    </ol>
+    <div class="tip"><b>看到 "Store POS offline"（门店 POS 离线）？</b>说明您门店的主收银台没有联网。店里仍可继续营业（参见<a href="c15.html#c15">离线工作</a>），但这些销售还没有同步上来，所以应用显示的数字比您实际收到的少。<b>最后同步</b>时间之后的销售，会在收银台重新联网后补齐。如果销售额看起来是零，请先看看有没有这个标记，不必着急。</div>
+    <div class="tip"><b>列表中模糊并带锁的门店</b>使用的是 <span class="plan free">Starter</span> 套餐。点它会显示 <b>Available on the Pro plan</b>（Pro 套餐专属功能）。您可以在底部的 <b>Billing</b>（账单）标签中更改套餐（参见<a href="#c29-billing">账单、套餐与消息充值</a>）。</div>
+    <p class="foot">一天的正式数字以您在收银台生成的日结报表为准。仪表盘显示的是一天还在进行中的数据——关于如何日结，请参阅<a href="c17.html#c17">报表与日结</a>。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-live">实时——此刻正在发生什么</h3>
+    <p class="intro">无论身在何处，都能看到已入座的桌台、进来的线上订单和今天的预订——有几项还能直接在手机上处理。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>底部标签 <b>Live</b>（实时）。顶部的小标签取决于您门店开启了哪些附加功能：<b>Dine-in</b>（堂食）始终显示，开启扫码/线上点餐后显示 <b>Online</b>（线上），开启预订或排程后显示 <b>Reservations</b>（预订）（参见<a href="c20.html#c20">附加功能与扩展</a>）。</p></div>
+    <figure class="shot phone"><img src="../img/owner-05-live.png" alt="实时——堂食标签" loading="lazy"><figcaption><b>实时——堂食</b>① Dine-in（堂食） / Online（线上） / Reservations（预订）  ·  ② 使用中的桌台 · 客人数  ·  ③ 桌台卡片（入座时间 · 金额）  ·  ④ “Updated …”更新提示</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-06-live-reservations.png" alt="实时——预订标签" loading="lazy"><figcaption><b>实时——预订</b>① 日期栏  ·  ② 带状态的预订卡片  ·  ③ Seat（入座） · No-show（未到） · Cancel（取消）</figcaption></figure>
+    <ol class="steps">
+      <li><b>Dine-in</b>（堂食）：显示有多少桌、多少位客人，以及每桌已入座多久和当前累计金额。点一桌可查看订单内容。每 10 秒刷新一次。</li>
+      <li><b>Online</b>（线上）：自取、外卖和扫码订单，分为 <b>New</b>（新订单）和 <b>Preparing</b>（备餐中）。对新订单点 <b>Accept</b>（接受），顾客取走后点 <b>Mark picked up</b>（标记为已取餐）。</li>
+      <li><b>Reservations</b>（预订）：用日期栏在各天之间切换，或打开日历跳转到某个日期。已确认的预订带有 <b>Seat</b>（入座） · <b>No-show</b>（未到） · <b>Cancel</b>（取消）按钮。</li>
+    </ol>
+    <div class="tip"><b>取消会通知客人。</b>点 <b>Cancel</b>（取消）时，会先询问 <b>Cancel this reservation?</b>（要取消此预订吗？），因为客人会收到通知。预订的日常管理请参阅<a href="c6.html#c6">预订与排程</a>；扫码订单请参阅<a href="c11.html#c11">二维码点单</a>。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-reports">报表与 AI 分析</h3>
+    <p class="intro">您在收银台日结之后，日结报表也会出现在手机上——还有一份 AI 撰写的当日总结。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>底部标签 <b>Reports</b>（报告）和 <b>AI</b>。如果有多家门店，请先在顶部的框里选好门店。</p></div>
+    <figure class="shot phone"><img src="../img/owner-07-reports.png" alt="每日报告" loading="lazy"><figcaption><b>报告——每日</b>① Daily（每日） / Period（按期间） / Z Report（Z 报告）  ·  ② 日期选择器  ·  ③ 汇总 · 支付方式  ·  ④ Cash drawer reconciliation（现金抽屉核对）  ·  ⑤ Download (CSV)（下载（CSV））</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-08-ai.png" alt="AI 标签" loading="lazy"><figcaption><b>AI 标签</b>① 日期选择器  ·  ② Summary（摘要）  ·  ③ Highlights（要点）  ·  ④ Recommendations（建议）</figcaption></figure>
+    <ol class="steps">
+      <li><b>Daily</b>（每日）：选择一个日期，打开当天的日结报表——总销售额和净销售额、税费、小费、折扣、订单数和平均客单价、取消与退款、各支付方式的金额、各分类的销售额，以及是谁日结的（<b>Closed by</b>（结账人））。</li>
+      <li>在同一屏幕上，<b>Cash drawer reconciliation</b>（现金抽屉核对）显示开店备用金、应有金额、清点金额和差额：<b>Balanced</b>（已平衡）、<b>Over</b>（超出）或 <b>Short</b>（短缺）。参见<a href="c17.html#c17-drawer">钱箱</a>。</li>
+      <li><b>Period</b>（按期间）：设置 <b>From</b>（起始）和 <b>To</b>（结束），查看这段时间内已日结各天的总计和逐日列表。</li>
+      <li><b>Z Report</b>（Z 报告）：与您的收银台打印的 Z 报表内容相同，按日期查看。</li>
+      <li>点底部的 <b>Download (CSV)</b>（下载（CSV）），可把当前查看的报告保存为 CSV 文件，用 Excel 打开。</li>
+      <li><b>AI</b> 标签默认打开您最近一个已日结的日子：<b>Summary</b>（摘要）、<b>Highlights</b>（要点）、<b>Recommendations</b>（建议）和 <b>Alerts</b>（提醒）。更改日期即可阅读更早的分析。</li>
+    </ol>
+    <div class="tip"><b>“No closing report for this date yet”（该日期暂无结算报告）</b>表示这一天还没有在收银台日结。报告和 AI 分析都是根据<b>已日结的日子</b>生成的。如果有一天忘了日结，请参阅<a href="c17.html#c17-supplementary">迟到订单与漏结日期</a>。</div>
+    <p class="foot">AI 分析属于 <span class="plan pro">Pro</span> 及以上套餐包含的 AI 智能洞察。如果要一次导出多天的数据，请在收银台使用<a href="c17.html#c17-export">导出销售数据</a>。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-alerts">提醒与邮件链接</h3>
+    <p class="intro">您需要知道的事——付款失败、订阅变更、退款、被搁置的日结、新的 AI 洞察——都会汇集到应用的提醒收件箱里。而 BrewDesk 报表和提醒邮件中的按钮，会在店主 App 里打开对应的页面。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>右上角的<b>铃铛图标</b>（<b>Alerts</b>（提醒））。铃铛上的数字表示未读提醒的数量。</p></div>
+    <figure class="shot phone"><img src="../img/owner-09-alerts.png" alt="提醒收件箱" loading="lazy"><figcaption><b>提醒收件箱</b>① All（全部） / Unread（未读）  ·  ② 时间段  ·  ③ 门店筛选  ·  ④ 未读提醒卡片</figcaption></figure>
+    <ol class="steps">
+      <li>在 <b>All</b>（全部）和 <b>Unread</b>（未读）之间切换。</li>
+      <li>按时间段（<b>Today</b>（今天） · <b>Last 7 days</b>（近 7 天） · <b>Last 30 days</b>（近 30 天））和门店（<b>All stores</b>（全部门店）或某一家门店）缩小范围。</li>
+      <li>点一条提醒即标记为已读；铃铛上的数字会减少。</li>
+    </ol>
+    <div class="tip"><b>没有手机推送通知。</b>您需要打开应用，到收件箱里查看提醒。紧急的事情（主收银台离线、付款失败等）仍会同时发到您的邮箱。</div>
+    <div class="tip"><b>从邮件按钮打开的页面是只读的。</b>每日报表、订阅变更、主收银台离线或客服回复等邮件中的按钮，无需登录就能打开该门店的页面，顶部会有一条 <b>Read-only view.</b>（只读视图。）提示条。您可以查看，但不能更改任何内容——如要更改，请点提示条上的 <b>Sign in to make changes</b>（登录后即可进行修改），并用验证码登录。邮件链接过一段时间会失效；失效后，直接登录应用即可。</div>
+    <p class="foot">邮件链接就像进入您门店页面的钥匙。请不要把这些邮件转发给任何人。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-billing">账单、套餐与消息充值</h3>
+    <p class="intro">更改套餐、管理已保存的银行卡、为短信和 WhatsApp 消息充值、查看最近的付款——全都可以在手机上完成。<b>仅限店主</b>：以经理身份登录时，不会显示这个标签。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>底部标签 <b>Billing</b>（账单）。如果有多家门店，会先看到所有门店的账单；点某家门店的 <b>Manage</b>（管理）即可打开它。只有一家门店时会直接打开。</p></div>
+    <figure class="shot phone"><img src="../img/owner-10-billing.png" alt="门店账单页面" loading="lazy"><figcaption><b>门店账单页面</b>① Subscription（订阅）套餐卡片  ·  ② Details（详情）  ·  ③ Payment methods（支付方式）  ·  ④ Messages（消息）（Top up（充值））  ·  ⑤ Recent payments（最近的付款）</figcaption></figure>
+    <ol class="steps">
+      <li>在 <b>Subscription</b>（订阅）下查看您当前的套餐和续订日期。点某个套餐的 <b>Details</b>（详情），可以看它包含什么。</li>
+      <li>要更改套餐，请点您想要的套餐上的 <b>Upgrade to …</b>（升级到…）或 <b>Switch to …</b>（切换到…）。会打开安全的支付页面（Stripe），在那里完成即可。</li>
+      <li><b>Payment methods</b>（支付方式）列出您已保存的银行卡。订阅或充值时会自动保存卡信息，所以这里无需添加——您只能<b>移除</b>（<b>Remove</b>（移除））不再需要的卡。</li>
+      <li>在 <b>Messages</b>（消息）下，可以看到剩余多少条短信和 WhatsApp 消息、本月已用多少条，然后点 <b>Top up</b>（充值）。金额在支付页面上选择，您还可以开启 <b>Auto top-up</b>，余额不足时自动补充。</li>
+      <li><b>Recent payments</b>（最近的付款）列出您过去的扣款。</li>
+    </ol>
+    <div class="tip"><b>如果由经销商（安装合作伙伴）负责您的账单</b>，您会看到一张 <b>Contact your reseller</b> 卡片，而不是套餐卡片和充值按钮。请让他们为您续订或充值。如果想自己向 BrewDesk 付款，请在 <b>Manage partners</b> 中断开他们（参见<a href="#c29-admins">管理员、安装合作伙伴与客服</a>）。</div>
+    <p class="foot">关于各套餐的区别和免费试用，请参阅<a href="c21.html#c21">您的套餐与账单</a>；关于消息的使用，请参阅<a href="c12.html#c12">向顾客发送消息</a>。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c29-admins">管理员、安装合作伙伴与客服</h3>
+    <p class="intro">不用到店里，您就可以让经理使用店主 App、切断某个安装合作伙伴的权限，或联系客服。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>右上角的<b>齿轮</b>（<b>Settings</b>（设置））→ 在 <b>Store</b>（门店）下：<b>Manage store (admins &amp; permissions)</b>（管理门店（管理员与权限））和 <b>Installer partners</b>。这两行只对<b>该门店的店主</b>显示。</p></div>
+    <figure class="shot phone"><img src="../img/owner-11a-admins-list.png" alt="管理员列表" loading="lazy"><figcaption><b>管理员列表</b>① 管理员列表（角色 · 状态 · Last login（最近登录））  ·  ② Add Admin（添加管理员）  ·  ③ Activity Log（活动记录）</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-11-admins.png" alt="添加管理员面板" loading="lazy"><figcaption><b>添加管理员面板</b>① Name（姓名）  ·  ② Email（邮箱）  ·  ③ Role（角色）  ·  ④ Send Invite（发送邀请，此处未点按）</figcaption></figure>
+    <figure class="shot phone"><img src="../img/owner-12-settings.png" alt="设置页面" loading="lazy"><figcaption><b>设置</b>① Email（邮箱）  ·  ② Language（语言）  ·  ③ Keep me signed in on this device（在此设备上保持登录状态）  ·  ④ Manage store（管理门店） · Installer partners  ·  ⑤ Support · My tickets（支持 · 我的工单）  ·  ⑥ Add to Home Screen（添加到主屏幕）  ·  ⑦ Sign out（退出登录）</figcaption></figure>
+    <ol class="steps">
+      <li>点 <b>Add Admin</b>（添加管理员），填写 <b>Name</b>（姓名）、<b>Email</b>（邮箱）和 <b>Role</b>（角色），然后点 <b>Send Invite</b>（发送邀请）。角色可以是 <b>Manager</b>（经理，可以查看管理员列表和活动记录）或 <b>Owner</b>（店主，还可以添加和移除管理员）。</li>
+      <li>被邀请的人用该邮箱登录 <code>brewdesk.io/owner</code> 后，状态会从 <b>Invite pending</b>（邀请待处理）变为 <b>Active</b>（已生效）。</li>
+      <li>要移除某人，点他名字旁边的 <b>Remove</b>（移除）并确认。您不能移除自己，也不能移除门店的最后一位店主。</li>
+      <li><b>Activity Log</b>（活动记录）会显示管理员的邀请与移除、角色变更、店主 App 登录、收银台登录，以及 PIN 的创建或修改。</li>
+      <li><b>Installer partners</b> 会显示当前连接的合作伙伴，以及他们最近一次访问您门店的时间。点 <b>Disconnect</b> 即切断他们的访问权限；会先弹出一个面板说明将会发生什么，点 <b>Keep connected</b> 可以退出。</li>
+      <li>需要帮助时，打开 <b>Support · My tickets</b>（支持 · 我的工单），点 <b>New inquiry</b>（新建问题）。选择门店和类型（问题反馈、功能建议或其他），填写主题和内容后发送。回复会出现在同一屏幕上，方便您继续沟通。这与收银台上的客服是同一份工单列表。</li>
+    </ol>
+    <div class="tip"><b>收银台 PIN 是另外的。</b>在这里添加管理员，只是让对方能进入<b>店主 App</b>。要登录收银台，他们仍需要在收银台上创建的员工 PIN——请参阅<a href="c16.html#c16">员工与权限</a>。</div>
+    <div class="tip"><b>经理看到的更少。</b>经理可以查看销售额、实时、报告、AI 和提醒，但看不到 <b>Billing</b>（账单）标签，也看不到门店管理和安装合作伙伴这两行。角色是按门店设置的，所以同一个人可以是 A 店的店主、B 店的经理。</div>
+    <p class="foot">关于安装合作伙伴连接的含义，请参阅<a href="c21.html#c21-installer">安装合作伙伴</a>。用完之后，<b>Sign out</b>（退出登录）在设置页面的底部。</p>
+  </div>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c15.html">11. 离线工作</a></li><li><a href="c17.html">10. 报表与日结</a></li><li><a href="c20.html">12. 附加功能与扩展</a></li><li><a href="c6.html">16. 预订与排程</a></li><li><a href="c11.html">18. 二维码点单</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c21.html"><small>← 上一页</small>13. 您的套餐与账单</a><a class="nx" href="c16.html"><small>下一页 →</small>15. 员工与权限</a></div></div></div></div>
+<script src="../assets/search.js?v=4b1e5697"></script>
+</body></html>
