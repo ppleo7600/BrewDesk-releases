@@ -196,6 +196,11 @@ header.hero .brand .logo{width:44px;height:44px;border-radius:11px}
   .langmenu>summary{padding:6px 8px}
   .langlist{min-width:130px}
 }
+/* ── 앱으로 돌아가기(비공개 사이트 전용) ── */
+.appback{display:inline-flex;align-items:center;gap:6px;min-height:44px;min-width:44px;box-sizing:border-box;padding:0 12px;border-radius:10px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);color:#fff;text-decoration:none;font-size:14px;font-weight:700;white-space:nowrap;flex:none}
+.appback:hover,.appback:focus-visible{background:#fff;color:var(--green)}
+.appback svg{width:18px;height:18px;flex:none}
+@media (max-width:600px){.appback{padding:0;justify-content:center;width:44px}.appback span{display:none}}
 /* ── 장 끝: 관련 문서 + 도움 받기 ── */
 .endblock{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 0}
 .endblock .eb{background:var(--green-50);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
