@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17. Clientes y fidelización · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c10.html">English</a><a class="" hreflang="ko" href="../ko/c10.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c10.html">简体中文</a><a class="active" hreflang="es" href="c10.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class="cur"><span class="num">17</span>Clientes y fidelización</a>
+<a class="sub" href="#c10-loyalty"><span class="num">17.1</span>Sellos de fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c10">
+    <h3><span class="n">17</span>Clientes y fidelización</h3>
+    <p class="intro">Esta parte ayuda a que sus clientes vuelvan. BrewDesk crea solo una lista de sus clientes, y usted puede premiar a quienes vuelven.</p>
+    <div class="activate"><div class="h">Dónde activarlo</div><p>Active los sellos de fidelización en <code>Settings › Add-ons › Loyalty / Stamps</code> (un complemento <span class="plan pro">Pro</span>); primero necesita <b>CRM/Customers</b> activado (toque <b>Enable Both</b> (Activar ambos) si se lo pregunta). Para la fila, active <code>Settings › Add-ons › Waitlist</code> (primero necesita <b>Tables</b> (Mesas) activado).</p></div>
+    <figure class="shot"><img src="../img/07-customers.png" alt="Clientes" loading="lazy"><figcaption><b>Clientes</b>① Add Customer  ·  ② búsqueda  ·  ③ totales (total / activos / nuevos)  ·  ④ una fila de cliente</figcaption></figure>
+    <figure class="shot"><img src="../img/106-pos-linkcustomer.png" alt="Vincular un cliente al pedido" loading="lazy"><figcaption><b>Vincular un cliente al pedido</b>① Link Customer  ·  ② buscar por nombre o teléfono  ·  ③ toque un resultado</figcaption></figure>
+    <ol class="steps">
+      <li>Simplemente tome pedidos como siempre. BrewDesk crea en silencio una lista de clientes a partir de esos pedidos.</li>
+    </ol>
+    <figure class="shot"><img src="../img/107-customer-detail.png" alt="Datos del cliente" loading="lazy"><figcaption><b>Datos del cliente</b>① toque un cliente de la lista  ·  ② nombre y contacto  ·  ③ Visits · Spent · Avg Order · Reservations  ·  ④ consentimiento  ·  ⑤ Edit Customer</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>Toque el nombre de un cliente en cualquier momento para ver con qué frecuencia ha venido.</li>
+      <li>¿Quiere premiar a los habituales? Active los <b>sellos de fidelización</b>. Esto le da a cada cliente una tarjeta de sellos digital (como una tarjeta de café en su teléfono).</li>
+      <li>Los clientes ganan un sello en cada visita. Después de juntar suficientes sellos, reciben un premio, como una bebida gratis.</li>
+      <li>¿Hay fila? Use la <b>lista de espera</b> para llevar la fila y luego envíe un mensaje cuando una mesa esté lista.</li>
+    </ol>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Su lista de clientes crece sola.</b> Sin papel y sin escribir nombres. Cada pedido suma en silencio a su lista de habituales y a su historial de visitas.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c10-loyalty">Sellos de fidelización</h3>
+    <p class="intro">Cómo configurarlo y cómo se ganan. Una tarjeta de sellos en el teléfono. Cada visita da un sello; con suficientes sellos se gana un premio. Así se configura y se usa.</p>
+    <figure class="shot"><img src="../img/39-loyalty.png" alt="Ajustes de fidelización" loading="lazy"><figcaption><b>Ajustes de fidelización</b>① pestañas <b>Overview</b> (Resumen) / <b>Settings</b> (Configuración)  ·  ② defina cuántos sellos se necesitan (Stamps Required)  ·  ③ Save</figcaption></figure>
+    <ol class="steps">
+      <li><b>Configúrelo.</b> Abra <code>Settings › Add-ons</code>, ponga la tarjeta <b>Loyalty / Stamps</b> (Fidelidad / Sellos) en <b>ON</b> y toque el botón <b>Settings</b> (Configuración) de la tarjeta. Se abre la pantalla <b>Loyalty</b> (Fidelidad) con dos pestañas: <b>Overview</b> (Resumen) y <b>Settings</b> (Configuración). Defina el número de sellos y el premio en la pestaña <b>Settings</b> (Configuración).</li>
+      <li>Elija cuántos sellos dan un premio (<b>Stamps Required</b> (Sellos requeridos), por ejemplo 10).</li>
+      <li>Elija el premio, un <b>Free Item</b> (Artículo gratis) o un <b>"% Discount"</b>, y póngale un nombre.</li>
+      <li>Elija cuánto dura el premio y toque <b>Save</b> (Guardar).</li>
+      <li><b>Cómo gana un sello un cliente:</b> al tomar su pedido, toque <b>Link Customer</b> (Vincular cliente) y elíjalo (o agréguelo). Cuando se paga el pedido, recibe un sello.</li>
+      <li><b>Canjear un premio:</b> cuando tiene suficientes sellos, aparece un premio en su siguiente pedido; toque <b>Use Reward</b> para descontarlo de la cuenta.</li>
+    </ol>
+    <div class="tip"><b>Actívelo primero:</b> la fidelización necesita primero el complemento <b>CRM/Customers</b> activado (se indica en el recuadro de arriba; toque <b>Enable Both</b> (Activar ambos) si se lo pregunta).</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c6.html">16. Reservas y agenda</a></li><li><a href="c11.html">18. Pedidos con código QR</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c6.html"><small>← Anterior</small>16. Reservas y agenda</a><a class="nx" href="c11.html"><small>Siguiente →</small>18. Pedidos con código QR</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

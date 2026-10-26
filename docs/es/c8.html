@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9. Descuentos y promociones · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c8.html">English</a><a class="" hreflang="ko" href="../ko/c8.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c8.html">简体中文</a><a class="active" hreflang="es" href="c8.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class="cur"><span class="num">9</span>Descuentos y promociones</a>
+<a class="sub" href="#c8-manual"><span class="num">9.1</span>Descuento rápido o producto gratis</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c8">
+    <h3><span class="n">9</span>Descuentos y promociones</h3>
+    <p class="intro">Un descuento resta dinero de una venta. Puede configurar happy hours y ofertas una sola vez, y BrewDesk hace las cuentas por usted en la caja.</p>
+    <figure class="shot"><img src="../img/06-discounts.png" alt="Descuentos" loading="lazy"><figcaption><b>Descuentos</b>① Add Discount  ·  ② tarjetas de totales (Active Promotions / Live Now / Automatic)  ·  ③ una tarjeta de descuento  ·  ④ ACTIVE activado/desactivado</figcaption></figure>
+    <figure class="shot"><img src="../img/28-discount-new.png" alt="Crear un descuento" loading="lazy"><figcaption><b>Crear un descuento</b>① nombre del descuento  ·  ② tipo y valor  ·  ③ programación  ·  ④ dónde se aplica</figcaption></figure>
+    <ol class="steps">
+      <li>Abra <b>Manage</b> (Gestionar) › <b>Discounts</b> (Descuentos) en la barra lateral izquierda y toque <b>Add Discount</b> (Agregar descuento). Se abre el formulario "Create Discount".</li>
+      <li>Escriba un <b>Discount Name</b> (Nombre del descuento).</li>
+      <li>Elija el <b>Discount Type</b> ("Percentage", como un 10 % de descuento, o "Fixed Amount", como $2 de descuento) y escriba el <b>Value</b> (Valor).</li>
+      <li>Configure el <b>Schedule</b> (Horario): fecha de inicio y de fin, "All Day" o un rango horario, "No End Date" si nunca termina, y la repetición (does not repeat / weekly / monthly / custom).</li>
+      <li>Elija dónde se aplica en <b>Applicable Scope</b> (Alcance aplicable): "All" los productos, o marque categorías o productos concretos con las casillas.</li>
+    </ol>
+    <figure class="shot"><img src="../img/100-disc-logic.png" alt="Lógica y aplicabilidad" loading="lazy"><figcaption><b>Logic & Applicability</b> (Lógica y aplicabilidad)① Item Level / Order Level  ·  ② Automatic Application  ·  ③ Manual Selection  ·  ④ Minimum Order Value  ·  ⑤ Allow Stacking</figcaption></figure>
+    <ol class="steps" start="6">
+      <li>Elija cómo se activa: <b>Automatic</b> (se descuenta solo al cobrar) o <b>Manual</b> (el personal toca "Apply Discount" al cobrar y lo elige).</li>
+      <li>Opcional: indique un <b>Minimum Order Value</b> y active <b>Allow Stacking</b> (Permitir acumulación) para que se pueda combinar con otros descuentos.</li>
+      <li>Toque <b>Save</b> (Guardar). Su descuento está listo.</li>
+    </ol>
+    <div class="tip"><b>Es bueno saberlo:</b> BrewDesk siempre calcula el impuesto después del descuento, así que el total siempre es correcto.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c8-manual">Descuento rápido o producto gratis</h3>
+    <p class="intro">Los descuentos configurados son para lo que ocurre todas las semanas. Esto es para algo puntual: un cliente habitual al que quiere atender bien, una bebida que tuvo que rehacer, un café para un amigo. Se hace directamente en el carrito, en unos tres toques.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>En el carrito: toque un producto y luego <b>Discount</b> (Descuento) o <b>Free</b> (Gratis) en esa línea. Para todo el pedido, toque el botón <b>Disc</b> (Desc) junto a Bill en la parte inferior.</p></div>
+    <figure class="shot"><img src="../img/75-disc-pad.png" alt="Teclado de descuento" loading="lazy"><figcaption><b>Teclado de descuento para todo el pedido (Disc)</b>① importe personalizado o un descuento guardado  ·  ② $ Amount / % Percent  ·  ③ teclado  ·  ④ Done</figcaption></figure>
+    <ol class="steps">
+      <li>Toque <b>Discount</b> (Descuento) en un producto, o <b>Disc</b> (Desc) para todo el pedido. Se abre un panel con teclado.</li>
+      <li>Elija cómo quiere ingresarlo: <b>Amount</b> (dinero de descuento) o <b>% Percent</b>.</li>
+      <li>Escriba el número en el teclado.</li>
+      <li>Toque un motivo: <b>Friend</b> (Amigo), <b>Apology</b> (Disculpa), <b>Staff</b> (Personal), <b>Tasting</b> (Degustación), <b>Mistake</b> (Error), o <b>"+ New"</b> para escribir el suyo. Sus propios motivos aparecerán la próxima vez.</li>
+      <li>Toque <b>Done</b> (Hecho). El total del carrito se actualiza al instante.</li>
+      <li>Para quitarlo, toque el mismo botón: ahora dice <b>Remove Discount</b> (o <b>Remove Free</b> (Quitar gratis)).</li>
+    </ol>
+    <figure class="shot"><img src="../img/101-pos-discounted.png" alt="Pedido con un descuento aplicado" loading="lazy"><figcaption><b>Pedido con un descuento aplicado</b>① botón Disc (contador de aplicados)  ·  ② línea de descuento: Student Discount (10%) −$1.00  ·  ③ total después del descuento</figcaption></figure>
+    <div class="tip"><b>¿Escribió el importe completo?</b> BrewDesk pregunta <b>"Full amount entered — record as Free instead?"</b> y ofrece <b>Record as Free</b> (Registrar como Gratis). Diga que sí: así sus informes distinguirán lo "regalado" de lo "descontado", que es lo que realmente quiere saber a fin de mes.</div>
+    <div class="tip"><b>¿Creó un descuento en Settings y lo marcó como "Manual"?</b> Aparece como un botón dentro de este panel cuando ajusta todo el pedido, así que el personal solo tiene que tocarlo en lugar de escribir. Si todavía no ha creado ninguno, hay un botón <b>Create discount</b> que lo lleva a la pantalla correcta.</div>
+    <div class="tip"><b>¿Cambió la cantidad después de aplicar el descuento?</b> El ajuste se borra y verá <b>"Adjustment cleared — quantity changed"</b>. Es a propósito: 2.000 de descuento en dos tazas no es lo mismo que 2.000 en cinco, y BrewDesk prefiere volver a preguntarle antes que adivinar en silencio.</div>
+    <p class="foot">Los productos gratis aparecen en su propia línea en el resumen de cierre; consulte <a href="c17.html#c17">Informes y cierre del día</a>.</p>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c17.html">11. Informes y cierre del día</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c7.html"><small>← Anterior</small>8. Cobrar</a><a class="nx" href="c9.html"><small>Siguiente →</small>10. Reembolsos</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

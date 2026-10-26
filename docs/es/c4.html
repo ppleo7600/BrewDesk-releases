@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4. Crear su menú · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c4.html">English</a><a class="" hreflang="ko" href="../ko/c4.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c4.html">简体中文</a><a class="active" hreflang="es" href="c4.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class="cur"><span class="num">4</span>Crear su menú</a>
+<a class="sub" href="#c4-items"><span class="num">4.1</span>Categorías y productos</a>
+<a class="sub" href="#c4-options"><span class="num">4.2</span>Grupos de opciones y plantillas</a>
+<a class="sub" href="#c4-ai"><span class="num">4.3</span>Fotos con IA y AI Fill</a>
+<a class="sub" href="#c4-import"><span class="num">4.4</span>Importar y exportar</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c4">
+    <h3><span class="n">4</span>Crear su menú</h3>
+    <p class="intro">Su menú es la lista de lo que vende. Llena la pantalla de pedidos. Agreguemos sus productos y ordenémoslos en grupos.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-items">Categorías y productos</h3>
+    <figure class="shot"><img src="../img/26-menu-additem.png" alt="Agregar un producto al menú" loading="lazy"><figcaption><b>Agregar un producto al menú</b>① Add Item  ·  ② datos del producto (nombre, precio, categoría, foto)  ·  ③ AI Generate para crear una foto  ·  ④ Add Category</figcaption></figure>
+    <ol class="steps">
+      <li>Toque <b>Manage</b> (Gestionar) › <b>Menu Items</b> (Artículos del menú) en la barra lateral izquierda. Arriba a la derecha verá los botones <b>AI Fill</b> (IA Rellenar), <b>Export</b> (Exportar), <b>Import</b> (Importar), "Move" y <b>Add Item</b> (Agregar artículo); <b>Add Category</b> (Agregar categoría) está en el extremo izquierdo de la fila de pestañas de categorías.</li>
+    </ol>
+    <figure class="shot"><img src="../img/84-menu-addcategory.png" alt="Panel de categoría" loading="lazy"><figcaption><b>Panel de categoría</b>① Add Category  ·  ② escriba el nombre de la categoría  ·  ③ canales de venta (POS · In-Store QR · Online)  ·  ④ asignar grupos de complementos  ·  ⑤ Save</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>Primero cree una categoría. Toque <b>Add Category</b> (Agregar categoría), escriba un nombre como "Café" y guarde. (Necesita al menos una categoría para que funcione <b>Add Item</b> (Agregar artículo)).</li>
+    </ol>
+    <figure class="shot"><img src="../img/85-menu-itemform.png" alt="Completar el producto" loading="lazy"><figcaption><b>Completar el producto</b>① Add Item  ·  ② Item Name  ·  ③ Category  ·  ④ Price ($)  ·  ⑤ Save</figcaption></figure>
+    <ol class="steps" start="3">
+      <li>Toque <b>Add Item</b> (Agregar artículo). Se abre un panel lateral. Complete: Item Name, Description (opcional), Category, Price y Stock Status (el interruptor "In Stock").</li>
+    </ol>
+    <figure class="shot"><img src="../img/86-menu-itemphoto.png" alt="Agregar una foto del producto" loading="lazy"><figcaption><b>Agregar una foto del producto</b>① Light / Dark / Scene (estilo de fondo de la foto)  ·  ② subir su propia foto  ·  ③ AI Generate  ·  ④ Save</figcaption></figure>
+    <ol class="steps" start="4">
+      <li>Agregue una foto. Toque <b>Upload</b> (Subir) para usar su propia imagen, o <b>AI Generate</b> (IA Generar) para crear una.</li>
+      <li>Toque <b>Save</b> (Guardar). El producto aparece en su categoría.</li>
+    </ol>
+    <div class="tip"><b>¿Qué es una categoría?</b> Es simplemente un grupo, como una carpeta. Mantiene su menú ordenado para que los productos sean fáciles de encontrar.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-options">Grupos de opciones y plantillas</h3>
+    <figure class="shot"><img src="../img/87-menu-addongroup.png" alt="Crear un grupo de complementos" loading="lazy"><figcaption><b>Crear un grupo de complementos</b>① Add Group  ·  ② Required (el cliente debe elegir uno)  ·  ③ nombres de las opciones y precios adicionales (p. ej. leche de avena 0.5)  ·  ④ Add Choice  ·  ⑤ Save</figcaption></figure>
+    <figure class="shot"><img src="../img/87b-menu-attach.png" alt="Asignar el grupo a un producto" loading="lazy"><figcaption><b>Asignar el grupo a un producto</b>① elegir el producto (Caffè Latte)  ·  ② el grupo ahora aparece en Addon Groups; REQ significa obligatorio  ·  ③ Save</figcaption></figure>
+    <ol class="steps">
+      <li>¿Quiere ofrecer opciones? Asigne <b>grupos de opciones</b> (como leche o tamaño) en el panel del producto. Los grupos se crean con <b>Add Group</b> (Agregar grupo): elija un tipo (Single / Multi / Quantity) y agregue opciones con precios.</li>
+    </ol>
+    <div class="tip"><b>Grupos de opciones listos para usar.</b> ¿No quiere crear grupos desde cero? En el panel del producto, toque <b>Add from Presets</b> para abrir la <b>Preset Library</b>: grupos listos como <b>Milk</b>, <b>Size</b> (Tamaño), <b>Temperature</b> y <b>Sweetness</b> para cafeterías, o <b>Spice</b>, <b>Protein</b> y <b>Sides</b> para restaurantes. Toque una tarjeta para agregar el grupo completo a su menú; muestra la etiqueta <b>Added</b> una vez agregado.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-ai">Fotos con IA y AI Fill</h3>
+    <figure class="shot"><img src="../img/27-ai-fill.png" alt="AI Fill: todo el menú de una vez" loading="lazy"><figcaption><b>AI Fill — todo el menú de una vez</b>① qué productos  ·  ② qué crear  ·  ③ estilo de fondo  ·  ④ Generate</figcaption></figure>
+    <ol class="steps">
+      <li>¿Quiere una foto más bonita? En el panel del producto, elija un estilo de fondo (Light / Dark / Scene) y toque <b>AI Generate</b> (IA Generar). Crea 3 fotos; toque la que le guste.</li>
+    </ol>
+    <div class="tip"><b>Haga todo el menú de una vez con "AI Fill".</b> Toque <b>AI Fill</b> (IA Rellenar), elija qué productos (All items / Missing image only / Specific category), elija qué crear (Image + Description / Image only / Description only), elija un estilo de fondo (Light — Pure white studio / Dark — Dark charcoal / Scene — Café bokeh) y luego toque <b>Generate for N items</b>. Revise los resultados y toque <b>Apply</b> (Aplicar).</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>La IA puede escribir todo su menú por usted, e incluso crear las fotos de los productos.</b> Así empieza con un menú completo en segundos, no con una pantalla en blanco.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-import">Importar y exportar</h3>
+    <figure class="shot"><img src="../img/88-menu-export.png" alt="Exportar" loading="lazy"><figcaption><b>Exportar</b>① pestaña Export  ·  ② marque qué incluir (Menu Items, Addon Groups, …)  ·  ③ Save to Drive  ·  ④ Download</figcaption></figure>
+    <figure class="shot"><img src="../img/89-menu-import.png" alt="Importar" loading="lazy"><figcaption><b>Importar</b>① pestaña Import  ·  ② elegir el archivo de copia de seguridad  ·  ③ Import</figcaption></figure>
+    <figure class="shot"><img src="../img/90-menu-aiimport.png" alt="AI Import: cualquier archivo" loading="lazy"><figcaption><b>AI Import — cualquier archivo</b>① pestaña AI Import  ·  ② elegir archivo (hoja de cálculo, CSV, PDF o una foto de un menú)</figcaption></figure>
+    <ol class="steps">
+      <li>¿Ya tiene un menú en una hoja de cálculo? Toque <b>Import</b> (Importar) para traerlo todo de una vez. Toque <b>Export</b> (Exportar) para descargar su menú como hoja de cálculo.</li>
+    </ol>
+    <figure class="shot"><img src="../img/91-menu-move.png" alt="Mover: reordenar" loading="lazy"><figcaption><b>Move — reordenar</b>① arrastre una categoría por su asa ⋮⋮  ·  ② arrastre un producto por su asa  ·  ③ Save</figcaption></figure>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c3.html">3. Configurar su tienda</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c3.html"><small>← Anterior</small>3. Configurar su tienda</a><a class="nx" href="c23.html"><small>Siguiente →</small>5. Inicio rápido para el personal</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

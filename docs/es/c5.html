@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>6. Tomar pedidos · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c5.html">English</a><a class="" hreflang="ko" href="../ko/c5.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c5.html">简体中文</a><a class="active" hreflang="es" href="c5.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class="cur"><span class="num">6</span>Tomar pedidos</a>
+<a class="sub" href="#c5-hold"><span class="num">6.1</span>Poner un pedido en espera</a>
+<a class="sub" href="#c5-tablemap"><span class="num">6.2</span>Crear su mapa de mesas</a>
+<a class="sub" href="#c5-move"><span class="num">6.3</span>Mover y unir mesas</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c5">
+    <h3><span class="n">6</span>Tomar pedidos</h3>
+    <p class="intro">Esta es la tarea principal: tomar un pedido. Funciona un poco distinto en las tiendas de mostrador y en las de mesas. Encuentre su caso a continuación.</p>
+    <figure class="shot"><img src="../img/02-pos.png" alt="Pantalla de pedidos" loading="lazy"><figcaption><b>Pantalla de pedidos</b>① menú: toque los productos para agregarlos  ·  ② pedido actual  ·  ③ Hold (dejar el pedido en espera)  ·  ④ Pay Now</figcaption></figure>
+    <figure class="shot"><img src="../img/92-pos-cart.png" alt="Un pedido con productos" loading="lazy"><figcaption><b>Un pedido con productos</b>① tarjeta del producto (contador de cantidad)  ·  ② productos en Current Order  ·  ③ Hold  ·  ④ Disc  ·  ⑤ Pay Now</figcaption></figure>
+    <figure class="shot"><img src="../img/95-pos-options.png" alt="Ventana de opciones" loading="lazy"><figcaption><b>Ventana de opciones</b>① Dine-in / Takeaway  ·  ② Milk Choice — REQUIRED  ·  ③ opciones (con precio adicional)  ·  ④ cantidad  ·  ⑤ Add to Order</figcaption></figure>
+    <ol class="steps">
+      <li><b>Si atiende en un mostrador:</b> toque cada producto que quiere el cliente. Se agrega al pedido al costado de la pantalla.</li>
+      <li>Toque el mismo producto otra vez para agregar más. El número aumenta.</li>
+      <li>Cuando el pedido esté listo, toque <b>Pay Now</b> (Pagar ahora) para cobrar.</li>
+    </ol>
+    <figure class="shot"><img src="../img/96-table-tap.png" alt="Después de tocar una mesa" loading="lazy"><figcaption><b>Después de tocar una mesa</b>① comensales + / −  ·  ② Start Order</figcaption></figure>
+    <ol class="steps" start="4">
+      <li><b>Si atiende en mesas:</b> abra el <b>mapa de mesas</b> (un dibujo de su salón). Toque la mesa donde está sentado el cliente. Así empieza su pedido.</li>
+      <li>Agregue sus productos de la misma manera: toque cada uno.</li>
+      <li>¿Necesita una nota especial para la cocina? Toque el producto y agregue una <b>nota del producto</b>, como "bien caliente" o "sin hielo".</li>
+      <li>¿Necesita parar y volver más tarde? Toque <b>Hold</b> (Retener). El pedido se guarda. Puede volver a abrirlo cuando quiera (consulte "Poner un pedido en espera" más abajo).</li>
+    </ol>
+    <div class="tip"><b>¿Para llevar?</b> Un pedido para llevar se mantiene separado de los pedidos de mesa, para que nunca se mezclen.</div>
+
+    <h3 id="c5-hold" style="font-size:16px;margin:22px 0 4px">Poner un pedido en espera</h3>
+    <p class="intro">Deje un pedido para más tarde. A veces no puede terminar un pedido de inmediato: un cliente se aparta o llega otra persona. <b>Hold</b> (Retener) le permite dejar el pedido en espera y volver a él. No se cobra nada y no se pierde nada.</p>
+    <ol class="steps">
+      <li>Mire la parte inferior del panel del pedido. Verá el botón <b>Hold</b> (Retener), justo al lado de <b>Disc</b> (descuento).</li>
+    </ol>
+    <figure class="shot"><img src="../img/93-pos-hold.png" alt="Panel de pedidos en espera" loading="lazy"><figcaption><b>Panel Hold Orders</b>① Save to Hold  ·  ② lista Saved Held Orders</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>Toque <b>Hold</b> (Retener). El pedido queda en espera <b>sin cobrar</b> a nadie. La pantalla se vacía para que pueda atender a la siguiente persona.</li>
+      <li>En una mesa, el pedido en espera queda vinculado a esa mesa, así que es fácil volver a encontrarlo.</li>
+    </ol>
+    <figure class="shot"><img src="../img/94-pos-hold-saved.png" alt="Un pedido en espera" loading="lazy"><figcaption><b>Un pedido en espera</b>① tarjeta del pedido en espera: tóquela para reabrirlo  ·  ② cerrar (X)</figcaption></figure>
+    <ol class="steps" start="4">
+      <li>Para recuperarlo, abra la <b>lista de pedidos en espera</b> y toque el pedido para <b>reanudarlo</b>.</li>
+      <li>El pedido vuelve tal como lo dejó. Agregue más productos si quiere y continúe con <b>Pay Now</b> (Pagar ahora).</li>
+    </ol>
+    <div class="tip"><b>¿Cuándo debo usar Hold?</b> Úselo cuando un cliente se aparta a buscar algo o cuando necesita empezar primero el pedido de otra persona. El pedido en espera aguarda seguro hasta que usted esté listo: no se pierde nada.</div>
+
+    <h3 id="c5-tablemap" style="font-size:16px;margin:22px 0 4px">Crear su mapa de mesas</h3>
+    <p class="intro">Si atiende en mesas, el mapa de mesas es un pequeño dibujo de su salón. Toca una mesa para empezar el pedido de esa mesa. Se configura una sola vez. Así se dibuja.</p>
+    <div class="activate"><div class="h">Dónde activarlo</div><p>El servicio a mesa está activado de forma predeterminada en los tipos de negocio Restaurante y Bar. En los demás, actívelo en <code>Settings › Add-ons › Tables</code> (accione el interruptor). El mapa de mesas solo aparece cuando el servicio a mesa está activado.</p></div>
+    <p class="tip" style="margin-bottom:6px"><b>Antes de empezar:</b> asegúrese de que el servicio a mesa esté activado (consulte el recuadro de arriba).</p>
+    <figure class="shot"><img src="../img/31-tables-setup.png" alt="Configurar mesas (Settings › Add-ons › Tables)" loading="lazy"><figcaption><b>Configurar mesas (Settings › Add-ons › Tables)</b>① el menú Settings: aquí están todas las opciones  ·  ② elija Counter Mode o Table Mode</figcaption></figure>
+    <figure class="shot"><img src="../img/01-tablemap.png" alt="Mapa de mesas" loading="lazy"><figcaption><b>Mapa de mesas</b>① una mesa: tóquela para empezar un pedido para comer en el local  ·  ② botón Reservations  ·  ③ pestaña Scheduler. La barra lateral verde de la izquierda es su menú principal.</figcaption></figure><figure class="shot"><img src="../img/35-tableedit.png" alt="Editar una mesa" loading="lazy"><figcaption><b>Editar una mesa</b>① toque una mesa en el mapa  ·  ② nombre y asientos  ·  ③ forma, tamaño y color  ·  ④ Done</figcaption></figure>
+    <ol class="steps">
+      <li>Abra el <b>Table Map</b> (Mapa de Mesas): toque <b>Tables</b> (Mesas) en la barra lateral izquierda. (Solo aparece cuando el servicio a mesa está activado).</li>
+      <li>Toque el ícono de engranaje junto a la pestaña <b>Table Map</b> (Mapa de Mesas) de arriba (<b>Edit Layout</b> (Editar diseño)) para entrar en el editor. Si todavía no tiene mesas, también puede tocar el botón <b>Open Editor</b> (Abrir editor) en el centro de la pantalla. Aquí es donde crea su salón.</li>
+      <li>En la barra de herramientas de arriba, toque la forma que quiere agregar: <b>Round</b> (Redonda), <b>Square</b> (Cuadrada), <b>Rect</b> o <b>Wall</b> (Pared), además de <b>Counter</b> (Mostrador), <b>Door</b> (Puerta) y <b>WC</b>. Aparece una mesa (o elemento) nueva.</li>
+      <li>Toque la mesa que agregó y se abrirá un panel de edición a la derecha. Defina su <b>Name</b> (como "T1" o "Patio 3"), el número de <b>Seats</b> (Asientos), la <b>Shape</b> (Forma), el <b>Size</b> (Tamaño) y el <b>Color</b>, y luego toque <b>Done</b> (Hecho). Verá cómo cambia la mesa a medida que elige.</li>
+      <li>Arrastre la mesa hasta donde realmente está en su salón.</li>
+      <li>Repita con cada mesa que tenga.</li>
+      <li>Cuando termine, toque el botón <b>Table Map</b> (volver) arriba a la izquierda para regresar al mapa. Ahora puede tocar una mesa para empezar un pedido para comer en el local.</li>
+    </ol>
+    <div class="tip"><b>No se complique.</b> El mapa no tiene que ser perfecto. Mientras pueda distinguir sus mesas, está bien. Puede mover las mesas cuando quiera.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c5-move">Mover y unir mesas</h3>
+    <p class="intro">Mueva y una mesas arrastrando y soltando. Los clientes cambian de idea. Alguien quiere pasarse a la terraza, o dos mesas deciden pagar juntas. En el mapa de mesas puede tomar todo el pedido de una mesa y soltarlo en otro lugar, sin volver a escribir nada.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>Está integrado en el <b>Table Map</b> (Mapa de Mesas). Funciona siempre que el <b>servicio a mesa</b> esté activado; no hay nada que activar.</p></div>
+    <p class="sub"><b>Mover un pedido a una mesa vacía</b></p>
+    <ol class="steps">
+      <li><b>Mantenga pulsada</b> una mesa ocupada un momento hasta que se levante, luego <b>arrástrela</b> hasta una mesa <b>vacía</b> y suéltela.</li>
+      <li>Un pequeño recuadro pregunta <b>"Move T1 to T3?"</b>; toque <b>Move</b> (Mover). Todo el pedido pasa a la nueva mesa y la mesa anterior queda vacía. El nombre de la mesa no cambia.</li>
+    </ol>
+    <p class="sub"><b>Unir dos mesas ocupadas en una sola cuenta</b></p>
+    <figure class="shot"><img src="../img/49-table-merge.png" alt="Unir mesas" loading="lazy"><figcaption><b>Unir mesas</b>① título "Move T1 onto T2?": T1 soltada sobre T2  ·  ② toque "Merge" para combinar ambas en una sola cuenta  ·  ③ "Cancel" para cancelar. Al soltar sobre una mesa vacía aparece en su lugar un "Move" más simple.</figcaption></figure>
+    <ol class="steps">
+      <li><b>Mantenga pulsada</b> una mesa ocupada y luego <b>arrástrela</b> sobre <b>otra mesa ocupada</b>.</li>
+      <li>El título del recuadro ahora dice <b>"Move T1 onto T2?"</b>, la opción <b>Move</b> (Mover) aparece en gris ("Move unavailable") y se muestra una tarjeta <b>Merge</b> (Unir): "T1 + T2 into one order on T2." Tóquela. Ambos pedidos pasan a ser una sola cuenta en la mesa sobre la que soltó, y la otra mesa queda vacía.</li>
+    </ol>
+    <div class="tip"><b>¿La soltó en la mesa equivocada?</b> Justo después de mover o unir aparece un botón <b>Undo</b> (Deshacer) durante unos <b>6 segundos</b>: tóquelo para dejar todo como estaba. (Undo no puede deshacer una unión una vez que se agregaron productos o se cobró dinero en la cuenta combinada).</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Mueva a todo un grupo con un dedo.</b> La mayoría de las cajas le obligan a anular el pedido y volver a marcarlo todo solo para cambiar de mesa. BrewDesk simplemente lo desliza, y un Undo de 6 segundos hace que un error del dedo nunca le cueste una venta.</p></div>
+    <p class="foot">Es bueno saberlo: soltar sobre una mesa <b>reservada</b> muestra primero una advertencia. Una cuenta unida conserva los descuentos de la mesa principal, y cada mesa sigue siendo un único pedido limpio.</p>
+    <div class="tip"><b>¿Una mesa aparece ocupada pero no tiene pedido?</b> A veces se abre una mesa (por ejemplo, con un escaneo de QR) pero no se hace ningún pedido, y queda marcada como ocupada. Toque esa mesa en el mapa y BrewDesk le ofrecerá <b>liberarla</b> (dejarla vacía de nuevo) o <b>abrir</b> un pedido nuevo. Liberarla solo funciona cuando la mesa no tiene ningún pedido ni pago, así que nunca puede perder una venta real.</div>
+
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c23.html">5. Inicio rápido para el personal</a></li><li><a href="c30.html">7. Configurar pagos con tarjeta · Conectar Stripe</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c23.html"><small>← Anterior</small>5. Inicio rápido para el personal</a><a class="nx" href="c30.html"><small>Siguiente →</small>7. Configurar pagos con tarjeta · Conectar Stripe</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

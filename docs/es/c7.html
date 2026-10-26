@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>8. Cobrar · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c7.html">English</a><a class="" hreflang="ko" href="../ko/c7.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c7.html">简体中文</a><a class="active" hreflang="es" href="c7.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class="cur"><span class="num">8</span>Cobrar</a>
+<a class="sub" href="#c7-split"><span class="num">8.1</span>Dividir la cuenta</a>
+<a class="sub" href="#c7-tip"><span class="num">8.2</span>Propinas en pedidos que cobra más tarde</a>
+<a class="sub" href="#c7-cashrounding"><span class="num">8.3</span>Redondeo de pagos en efectivo</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c7">
+    <h3><span class="n">8</span>Cobrar</h3>
+    <p class="intro">Ahora la parte divertida: cobrar. Puede aceptar efectivo desde hoy. Puede aceptar tarjetas en cuanto vincule su propia cuenta de Stripe. BrewDesk nunca agrega una comisión a sus ventas con tarjeta.</p>
+    <figure class="shot"><img src="../img/42-payment.png" alt="Pantalla de pago" loading="lazy"><figcaption><b>Pantalla de pago</b>① total a pagar / restante  ·  ② métodos de pago: Cash, marcas de tarjeta (Visa, MasterCard, Amex), Card (External), Voucher (las de tarjeta dicen Record Only), con el selector Full Pay / Split Pay arriba  ·  ③ teclado (ingrese el efectivo recibido)  ·  ④ "Pay with…" para terminar</figcaption></figure>
+    <ol class="steps">
+      <li>Termine el pedido y toque <b>Pay Now</b> (Pagar ahora). Se abre la pantalla Checkout.</li>
+    </ol>
+    <figure class="shot"><img src="../img/97-pay-cash.png" alt="Cobro en efectivo" loading="lazy"><figcaption><b>Cobro — recibir efectivo</b>① Cash  ·  ② importe recibido  ·  ③ Change to Return  ·  ④ Pay with … — Cash</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>Para cobrar en efectivo, toque <b>Cash</b> (Efectivo). Escriba cuánto dinero le entrega el cliente. BrewDesk le muestra el cambio que debe devolver.</li>
+      <li>Para cobrar con tarjeta: si hay un lector de tarjetas (terminal de Stripe) conectado, toque <b>Card</b> (Tarjeta). Si no, verá botones de marcas de tarjeta como <b>Visa</b>, <b>MasterCard</b> y <b>Amex</b>, además de <b>Card (External)</b> (Tarjeta (externa)); estos solo <b>registran</b> un pago con tarjeta que cobró en una terminal aparte (<b>Record Only</b> (Solo registro)). (Los pagos con lector necesitan primero su cuenta de Stripe vinculada; consulte el paso siguiente).</li>
+      <li>Para aceptar tarjetas, vincule su propia cuenta de Stripe en <b>Settings › Payments</b>. La conexión es gratuita. En la misma pantalla puede activar o desactivar los métodos de pago <b>Cash</b> (Efectivo), <b>Card (Record Only)</b> (Tarjeta (solo registro)) y <b>Voucher</b> (Cupón).</li>
+      <li>El selector <b>Full Pay</b> (Pago completo) / <b>Split Pay</b> (Dividir pago) en la parte superior de la pantalla de cobro: Full Pay (predeterminado) cobra todo el importe con un solo método; Split Pay es para cuando una persona paga una parte en efectivo y otra con tarjeta.</li>
+      <li>¿Necesita dividir una cuenta entre varias personas? Toque el botón <b>Split</b> abajo a la derecha de la pantalla de pedidos. Puede dividirla en partes iguales o por producto, y cada parte puede tener su propia propina. Consulte <a href="#c7-split">Dividir la cuenta</a> justo debajo.</li>
+    </ol>
+    <figure class="shot"><img src="../img/98-pay-done.png" alt="Pago completado" loading="lazy"><figcaption><b>Pago completado</b>① vista previa del recibo  ·  ② Change to Return  ·  ③ Email Receipt / Send Receipt (Reprint vuelve a imprimir)  ·  ④ Start New Order</figcaption></figure>
+    <div class="brag"><div class="h">Para presumir</div><p><b>BrewDesk no agrega ninguna comisión a sus ventas con tarjeta, en ningún plan.</b> Su dinero va directamente a su propia cuenta de Stripe. BrewDesk nunca se pone en medio ni se queda con una parte.<sup>*</sup></p></div>
+    <p class="foot">* Usted paga directamente a Stripe su tarifa estándar; BrewDesk no agrega nada.</p>
+    <div class="tip"><b>¿Para quién es la propina?</b> Cuando se agrega una propina, BrewDesk le pide elegir qué miembro del personal la ganó: toque <b>Assign staff</b> (Asignar personal) y elija un nombre. Si solo hay un mesero en esa mesa, se elige automáticamente. Si no se elige a nadie, la propina se guarda a nombre de <b>Store Manager</b> para que nunca se pierda.</div>
+    <div class="tip"><b>¿Registra una tarjeta a mano?</b> Si cobra con tarjeta en una terminal aparte que no está conectada a BrewDesk, las marcas de tarjeta (<b>Visa</b>, <b>Mastercard</b>, <b>Amex</b>, etc.) ahora están justo al lado de <b>Cash</b> (Efectivo) en la pantalla de pago. Un solo toque registra que fue con tarjeta y qué marca, sin pasos adicionales.</div>
+    <div class="tip"><b>La pantalla de pago no se cierra mientras el lector de tarjetas está trabajando.</b> Si toca la <b>X</b> mientras un lector conectado todavía está cobrando la tarjeta, la pantalla se mantiene y le explica por qué: <b>Card payment in progress</b> (Pago con tarjeta en curso) — <i>"The reader is still charging this card. Wait until it finishes — closing now could take the money without recording it on the order."</i> Son unos segundos, y es la diferencia entre que el dinero quede en el pedido o que simplemente desaparezca. La X se habilita en cuanto el lector termina, se haya aprobado la tarjeta o no.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">Dividir la cuenta</h3>
+    <p class="intro">Cuando una mesa quiere pagar por separado, BrewDesk divide la cuenta por usted. Hay dos formas sencillas: dividirla <b>en partes iguales</b> entre las personas o dividirla <b>por producto</b> para que cada uno pague lo que consumió. Cada parte puede agregar su propia propina, y una misma persona puede pagar una parte en efectivo y otra con tarjeta.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>En un pedido <b>para comer en el local</b> (servicio a mesa), envíe los productos a la cocina y luego toque <b>Split</b> entre los botones de abajo a la derecha de la pantalla de pedidos (<b>Disc</b> (Desc) · <b>Bill</b> (Cuenta) · <b>Split</b> · <b>Pay Now</b> (Pagar ahora)); no está dentro de la pantalla de cobro a la que llega con Pay Now. La división es para pedidos de mesa, así que el botón aparece una vez que se han enviado los productos de la mesa.</p></div>
+    <p class="sub"><b>Dividir en partes iguales</b></p>
+    <figure class="shot"><img src="../img/76-order-sent.png" alt="Botones del carrito después de enviar a la cocina" loading="lazy"><figcaption><b>Botones abajo a la derecha de la pantalla de pedidos</b>① Disc  ·  ② Bill  ·  ③ Split  ·  ④ Pay Now</figcaption></figure>
+    <figure class="shot"><img src="../img/77-split.png" alt="Dividir la cuenta en partes iguales" loading="lazy"><figcaption><b>Dividir la cuenta — Even split</b>① total a dividir  ·  ② Even split / By item  ·  ③ número de personas − / +  ·  ④ Start Split &amp; Collect</figcaption></figure>
+    <ol class="steps">
+      <li>Toque <b>Split</b> y elija <b>Even split</b>.</li>
+      <li>Indique el <b>número de personas</b> con los botones − y +. BrewDesk muestra <b>Each person pays</b> debajo. Toque <b>Start Split &amp; Collect</b>.</li>
+      <li>Ahora cobre una parte a la vez. La pantalla dice <b>"Person 1 of 4"</b>. Cobre su efectivo o tarjeta y pasa a <b>"Person 2 of 4"</b>, y así sucesivamente.</li>
+      <li>Después de la última persona, toque <b>Start New Order</b> (Iniciar nuevo pedido): la mesa queda pagada y liberada.</li>
+    </ol>
+    <p class="sub"><b>Dividir por producto</b></p>
+    <figure class="shot"><img src="../img/78-split-byitem.png" alt="Dividir la cuenta por producto" loading="lazy"><figcaption><b>Dividir la cuenta — By item</b>① By item  ·  ② marque los productos  ·  ③ Start Item Split</figcaption></figure>
+    <ol class="steps">
+      <li>Toque <b>Split</b> y elija <b>By item</b>.</li>
+      <li><b>Marque los productos</b> que paga esta persona. BrewDesk los suma. Toque <b>Pay Selected</b> y cobre su pago.</li>
+      <li>Repita con los productos de la siguiente persona hasta que el contador de "productos restantes" llegue a cero. El pedido se termina solo.</li>
+    </ol>
+    <div class="tip"><b>¿Parte en efectivo, parte con tarjeta?</b> En cualquier parte, cambie el pago a <b>Split Pay</b> (Dividir pago). Cobre la primera parte (por ejemplo, $5 en efectivo) y BrewDesk mostrará <b>Received</b> (Recibido) y <b>Remaining</b> (Pendiente). Agregue una tarjeta para el resto: la parte queda pagada cuando Remaining llega a $0.</div>
+    <div class="tip"><b>Primero el efectivo, al final la tarjeta.</b> En una parte con <b>Split Pay</b> (Dividir pago), una vez que entra cualquier tarjeta, el botón <b>Cash</b> (Efectivo) se pone gris y una nota dice <b>"Cash first, card last. A card payment has already been taken for this round, so no more cash can be added."</b>. Así que cobre primero la parte en efectivo y termine con la tarjeta. Esto se aplica tanto a una tarjeta registrada a mano como a una cobrada en un lector. Los pagos únicos completos y el cobro de un pedido pendiente no se ven afectados.</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Dividir la cuenta en tres toques.</b> Divida en partes iguales, por producto, o mezcle efectivo y tarjeta en la misma parte: BrewDesk hace las cuentas e imprime a cada persona su propio comprobante ("Split 1 of 4"). Sin calculadora ni discusiones en la mesa.</p></div>
+    <p class="foot">Es bueno saberlo: si reembolsa una parte, la propina se queda en la tienda (solo se devuelve el importe de los productos), y BrewDesk no le permite cerrar el día mientras una división esté a medio pagar.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-tip">Propinas en pedidos que cobra más tarde</h3>
+    <p class="intro">A veces un pedido queda sin pagar y usted lo cobra al final del día. Si hay una propina de por medio, ahora BrewDesk le pregunta por ella antes de cobrar, para que una propina nunca desaparezca sin que nadie lo note.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>Al cerrar, toque un pedido sin pagar y elija <b>Settle unpaid order</b>. El recuadro de la propina está en la parte superior de la pantalla de pago.</p></div>
+    <ol class="steps">
+      <li>Si el pedido ya tiene una propina, verá <b>"Tip recorded on this order"</b> con dos botones: <b>Include tip</b> o <b>Exclude tip</b>. Debe elegir uno; BrewDesk no cobrará hasta que lo haga.</li>
+      <li>Si el pedido no tiene propina pero el cliente dejó una en su terminal de tarjetas, use <b>Add a tip</b> (Agregar propina). Escriba el importe y toque <b>Apply</b> (Aplicar).</li>
+      <li>Si usa cuentas de personal, elija quién la recibe en <b>Tip goes to</b>. Es obligatorio: una propina sin nombre no le llega a nadie.</li>
+      <li>Cobre como siempre. Toque <b>Back to closing</b> para seguir con el resto del día.</li>
+    </ol>
+    <div class="tip"><b>¿Por qué preguntar?</b> Porque una propina cobrada en una terminal de tarjetas todavía no está en BrewDesk. Si nadie la ingresa, su personal nunca la ve. Esta pantalla es donde se ingresa.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-cashrounding">Redondeo de pagos en efectivo</h3>
+    <p class="intro">Cash Payment Rounding se encarga de las monedas sueltas. En muchos países la moneda más pequeña es mayor que el último dígito de la cuenta: ya nadie lleva monedas de 1 centavo. Así que cuando un cliente que paga en efectivo debe 10.03, usted cobra 10.00 y deja pasar los 3. Ahora BrewDesk puede hacer ese redondeo por usted, solo en pagos en efectivo, y llevar un registro de cada moneda que dejó pasar.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>Abra <code>Settings › Payments</code> y desplácese hasta <b>Cash Payment Rounding</b>. Solo el propietario de la tienda puede abrir la pestaña Payments, así que solo el propietario puede configurarlo. Empieza <b>desactivado</b> en todas las tiendas.</p></div>
+    <figure class="shot"><img src="../img/19-payments.png" alt="Configuración de pagos: métodos de pago y redondeo del efectivo" loading="lazy"><figcaption><b>Configuración de pagos — métodos de pago y redondeo del efectivo</b>① activar/desactivar métodos de pago  ·  ② Enable cash payment rounding  ·  ③ Rounding increment  ·  ④ Save</figcaption></figure>
+    <ol class="steps">
+      <li>Active <b>Enable cash payment rounding</b>.</li>
+      <li>Escriba el <b>Rounding increment</b>: la moneda más pequeña que realmente maneja (0.05, 10, 100, la que corresponda en su país). <b>Si lo deja en 0, el interruptor no hace nada</b>, que es justo lo que le indica la ayuda debajo del campo.</li>
+      <li>Elija la <b>Rounding direction</b>: <b>Nearest</b> (hacia arriba o hacia abajo, lo que esté más cerca), <b>Round down</b> (siempre a favor del cliente) o <b>Round up</b>.</li>
+      <li>Mire la nota gris de abajo. BrewDesk conoce la práctica habitual de su país y se la indica: <i>"Common practice in this country: round to 0.05 using Nearest (legally required)."</i> Toque <b>Apply</b> (Aplicar) y completa por usted el incremento y la dirección.</li>
+      <li>Toque <b>Save</b> (Guardar) en la parte superior de Settings.</li>
+    </ol>
+    <div class="tip"><b>Solo efectivo, y su impuesto no cambia.</b> Esto solo afecta a un pedido pagado <b>totalmente en efectivo</b>. Si cualquier parte se paga con tarjeta, el total queda exactamente igual. El importe del impuesto nunca se vuelve a calcular y los recibos de tarjeta se imprimen exactamente como antes. Cómo se redondea el propio impuesto es otra opción, en <code>Settings › Tax &amp; Service</code> (consulte <a href="c3.html#c3-tax">Configurar sus impuestos</a>).</div>
+    <div class="tip"><b>"Obligatorio por ley" frente a "práctica habitual".</b> Algunos países tienen una ley sobre esto (entre ellos Singapur, Malasia, Canadá, Australia, Nueva Zelanda y Suiza); en otros es solo lo que hacen las tiendas. En cualquier caso, BrewDesk solo lo <b>sugiere</b>: no cambia nada hasta que usted toque Apply y Save. Algunos países figuran sin ninguna práctica de redondeo (<b>"This country has no cash-rounding practice."</b>), y uno que todavía no hemos revisado dice <b>"This country has not been checked yet."</b>.</div>
+    <div class="tip"><b>El recibo muestra las monedas que dejó pasar.</b> En cualquier pedido en que el redondeo realmente cambió el total, se imprime una línea <b>Cash Rounding</b> justo encima de la línea del cambio, tanto en el recibo impreso como en el enviado por correo. Los pedidos que ya daban un número redondo no llevan esa línea, así que nada se ve recargado.</div>
+    <div class="tip"><b>Y cuadra en el cierre.</b> El desglose de pagos (Payment Breakdown) de su informe de cierre incluye una línea <b>Cash Rounding</b> bajo Total Payment Collected, con la nota en palabras sencillas <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b>. Esa es la respuesta a "¿por qué le faltan unos centavos a mi cajón?": no faltan, usted dejó pasar esas monedas a propósito. Verá la misma cifra en el resumen del historial de pagos y en la tarjeta de efectivo de Analytics.</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Redondee como la tienda de al lado, sin perder los centavos en sus cuentas.</b> Configure la unidad de moneda una vez y cada total en efectivo caerá en una moneda que realmente tiene. Cada centavo redondeado sigue registrado, sigue en el recibo y sigue cuadrando en el cierre, así que su contador nunca tendrá que preguntar adónde fue el cambio suelto.</p></div>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c3.html">3. Configurar su tienda</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c30.html"><small>← Anterior</small>7. Configurar pagos con tarjeta · Conectar Stripe</a><a class="nx" href="c8.html"><small>Siguiente →</small>9. Descuentos y promociones</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

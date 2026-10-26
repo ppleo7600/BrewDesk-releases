@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>16. Reservas y agenda · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c6.html">English</a><a class="" hreflang="ko" href="../ko/c6.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c6.html">简体中文</a><a class="active" hreflang="es" href="c6.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class="cur"><span class="num">16</span>Reservas y agenda</a>
+<a class="sub" href="#c6-waitlist"><span class="num">16.1</span>Lista de espera</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c6">
+    <h3><span class="n">16</span>Reservas y agenda</h3>
+    <p class="intro">Una reserva es cuando un cliente aparta una mesa o un horario antes de venir. Puede tener todas sus reservas en un solo lugar. Agreguemos una.</p>
+    <div class="activate"><div class="h">Dónde activarlo</div><p>Active Reservations en <code>Settings › Add-ons › Reservations</code> (accione el interruptor). Primero necesita <b>Tables</b> (Mesas) activado; si Tables está desactivado, una ventana ofrece "Enable Both": tóquelo. Las citas de salones y spas (por miembro del personal y horario) usan el complemento <b>Scheduler</b> (Programador), en el mismo lugar; es un complemento <span class="plan pro">Pro</span>.</p></div>
+    <p class="tip" style="margin-bottom:6px"><b>Antes de empezar:</b> configure su horario de atención en <code>Settings › Hours &amp; Closures</code>. Las reservas solo ofrecen horarios dentro de sus turnos abiertos, así que si no aparece un horario, revise primero su horario.</p>
+    <figure class="shot"><img src="../img/56-scheduler-staff-columns.png" alt="Agenda: columnas del personal" loading="lazy"><figcaption><b>Agenda: columnas del personal</b>① una columna por miembro del personal</figcaption></figure>
+    <figure class="shot"><img src="../img/57-scheduler-no-staff.png" alt="Agenda: sin personal" loading="lazy"><figcaption><b>Agenda: sin personal</b>① indicación para agregar primero al personal</figcaption></figure>
+    <figure class="shot"><img src="../img/23-reservations.png" alt="Ajustes de reservas" loading="lazy"><figcaption><b>Ajustes de reservas</b>① pestañas Settings / Special Days  ·  ② reglas de reserva (intervalo, tamaño del grupo, ventana)  ·  ③ Save</figcaption></figure>
+    <figure class="shot"><img src="../img/29-reservation-new.png" alt="Nueva reserva" loading="lazy"><figcaption><b>Nueva reserva</b>① Walk-in / Reservation  ·  ② nombre y teléfono del cliente  ·  ③ fecha y hora (Duration y Chair / Room aparecen debajo)  ·  ④ Save Reservation. Este es el diseño para salones/spas; los restaurantes ven un campo Table y un campo Guests en lugar de Chair / Room.</figcaption></figure>
+    <ol class="steps">
+      <li>Abra la página de reservas. Desde el <b>Table Map</b> (Mapa de Mesas), toque <b>Reservations</b> (arriba a la derecha), o abra la pestaña <b>Scheduler</b> (Programador) de arriba. (La pestaña Scheduler solo aparece en el plan <span class="plan pro">Pro</span> con el complemento Scheduler activado).</li>
+      <li>Toque el día que quiere en el calendario.</li>
+      <li>Toque <b>New Reservation</b> (Nueva reservación). Se abre un formulario.</li>
+    </ol>
+    <figure class="shot"><img src="../img/108-resv-form.png" alt="Formulario de nueva reserva" loading="lazy"><figcaption><b>Formulario New Reservation</b>① Walk-in / Reservation  ·  ② Guest Name (obligatorio)  ·  ③ Phone (obligatorio)  ·  ④ Date · Time  ·  ⑤ Save Reservation</figcaption></figure>
+    <ol class="steps" start="4">
+      <li>Complete <b>Guest Name</b> (Nombre del cliente), <b>Phone</b> (ambos obligatorios), <b>Date</b> (Fecha) y <b>Time</b> (Hora). <b>Email</b> (Correo) es opcional y <b>Duration</b> (Duración) empieza en 1 hora. En las tiendas con mesas, como restaurantes y cafeterías, también elige el número de <b>Guests</b> (de 1 a 4, o escriba 5 o más). Las tiendas de tipo salón o spa no tienen campo de número de personas.</li>
+      <li>Opcional: elija una <b>Table</b> (o una <b>Chair / Room</b> en salones y spas) y un miembro del <b>Staff</b> (Personal), y agregue una <b>Note</b> (Nota). En un salón o spa, elegir al miembro del personal es lo principal. El campo Staff solo aparece cuando se ha agregado al menos un miembro del personal.</li>
+      <li>Toque <b>Save</b> (Guardar). El cliente recibe automáticamente una confirmación de que tiene su reserva, por correo, SMS o WhatsApp, según lo que haya configurado.</li>
+    </ol>
+    <figure class="shot"><img src="../img/109-resv-list.png" alt="Lista de reservas" loading="lazy"><figcaption><b>Lista de reservas</b>① botón Reservations  ·  ② Upcoming / Seated / Past  ·  ③ tarjeta de reserva: tóquela para abrirla  ·  ④ New Reservation</figcaption></figure>
+    <ol class="steps" start="7">
+      <li>Cuando llega un cliente con reserva, abra su tarjeta de reserva y toque <b>Check In</b>. Pasa a <b>Seated</b> (y le asigna una mesa si hace falta).</li>
+      <li>¿Llega alguien sin reserva? Toque la opción <b>Walk-in</b> (Sin cita): sienta al cliente de inmediato.</li>
+    </ol>
+    <div class="tip"><b>Las reservas sentadas se cierran solas.</b> Una vez que una reserva está en <b>Seated</b> (Sentado), pasa sola a las reservas anteriores cuando se <b>paga</b> esa mesa, cuando se <b>cancela</b> el pedido o cuando <b>cierra el día</b>. Se acabaron los clientes de ayer en su lista de reservas.</div>
+    <div class="tip"><b>Clientes que nunca llegaron: márquelos todos al cerrar.</b> Active <b>Auto No-Show on Close</b> (No-show automático al cerrar) en <code>Settings › Reservations › Settings</code>, en <b>Booking Policy &amp; Guest Portal</b>. Entonces, como dice la descripción: <b>"closing the day automatically marks any still-Confirmed reservations from that day as No-Show, and sends each guest a notice email explaining why."</b>. Está <b>desactivado</b> hasta que lo active. Solo se modifican las reservas que siguen en <b>Confirmed</b> (Confirmada); las sentadas, completadas y canceladas quedan exactamente como están, y volver a cerrar el mismo día no envía correos dos veces.</div>
+    <p class="foot">El correo al cliente es objetivo, no un regaño: el asunto es <b>"We couldn't confirm your visit"</b>, dice que se reservó la mesa pero no se pudo confirmar la llegada, y lo invita a contactarlo si es un error.</p>
+    <div class="tip"><b>Agenda frente a reservas:</b> la <b>agenda</b> (<span class="plan pro">Pro</span>, complemento Scheduler) es para <b>citas</b> de salones/spas (reservadas por miembro del personal y horario). Las <b>reservas de mesa</b> son para restaurantes (un grupo en una mesa). Comparten el mismo calendario, así que todas sus reservas están en un solo lugar.</div>
+    <div class="tip"><b>Columnas de personal de la agenda:</b> las columnas por miembro del personal aparecen en la agenda solo en el <b>plan <span class="plan pro">Pro</span></b> y cuando tiene <b>cuentas de personal</b>. Esto es independiente del interruptor del complemento Staff (consulte <a href="c16.html#c16">Personal y permisos</a>). Si todavía no hay personal, se muestra un mensaje de ayuda. Starter no tiene pestaña de agenda.</div>
+    <div class="tip"><b>¿Sin internet? Los check-in siguen funcionando.</b> Con internet caído, puede seguir tocando <b>Check In</b>, <b>No Show</b> (No se presentó) o <b>Cancel</b> (Cancelar): el cambio aparece de inmediato en pantalla y se sube solo cuando vuelve la conexión. Solo se bloquea <b>crear o editar una reserva</b>, y la pantalla le explica por qué: <b>"Cannot create a reservation while offline — the booking calendar is also written from outside the store, so it could double-book. Reconnect and try again."</b>. Si la lista no se puede cargar, verá <b>"Showing the last list received,"</b> y las reservas que ya tenía siguen en pantalla.</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Las reservas vienen incluidas.</b> No necesita una segunda app ni pagar un extra. Los restaurantes reservan mesas; los salones y spas reservan el tiempo del personal, todo en el mismo calendario.</p></div>
+
+    <h3 id="c6-waitlist" style="font-size:16px;margin:22px 0 4px">Lista de espera</h3>
+    <p class="intro">Una lista de espera es la fila de clientes que esperan una mesa libre. BrewDesk lleva la fila por usted y envía un mensaje al cliente en cuanto su mesa está lista, para que no se amontonen en la puerta.</p>
+    <div class="activate"><div class="h">Dónde activarlo</div><p>Actívela en <code>Settings › Add-ons › Waitlist</code> (accione el interruptor). Primero necesita <b>Tables</b> (Mesas) activado; toque <b>Enable Both</b> (Activar ambos) si aparece la pregunta.</p></div>
+    <figure class="shot"><img src="../img/44-waitlist.png" alt="Agregar a la lista de espera" loading="lazy"><figcaption><b>Agregar a la lista de espera</b>① nombre del cliente  ·  ② tamaño del grupo  ·  ③ teléfono (para poder enviarle un mensaje)  ·  ④ "Add to Waitlist"</figcaption></figure>
+    <ol class="steps">
+      <li>Abra la <b>Waitlist</b> (Lista de espera). Desde el <b>Table Map</b> (Mapa de Mesas), toque <b>Waitlist</b> (arriba a la derecha).</li>
+      <li>Toque <b>Add Guest</b> (Agregar cliente). Se abre un formulario pequeño.</li>
+      <li>Ingrese el <b>Name</b> (Nombre) del cliente, el <b>Party size</b> (cuántas personas) y el <b>Phone</b> (para poder enviarle un mensaje). Agregue una nota si quiere y guarde.</li>
+      <li>Cuando se libere una mesa, busque a ese cliente y toque <b>Notify</b> (Notificar). Recibe un mensaje de "su mesa está lista" (SMS o WhatsApp).</li>
+      <li>Luego siéntelo, y listo.</li>
+    </ol>
+    <div class="tip"><b>¿Por qué agregar un número de teléfono?</b> El teléfono es la forma en que el cliente recibe el mensaje de "mesa lista". Sin él, tendría que llamarlo por su nombre a la antigua.</div>
+    <div class="tip"><b>La fila sigue avanzando sin internet.</b> Agregar un cliente, sentarlo, <b>No Show</b> (No se presentó) y <b>Cancel</b> (Cancelar) funcionan sin conexión. Verá <b>"Saved on this device"</b> y se sube solo cuando vuelve la conexión; un cliente agregado sin conexión recibe su <b>número de turno después de que se suba</b>. Actualizar la pantalla tampoco hace perder la fila: se guarda en el dispositivo y verá <b>"Showing the last list received."</b>. Lo único que necesita internet es <b>Notify</b> (Notificar): el mensaje de "su mesa está lista" no puede enviarse hasta que vuelva la conexión, así que por ahora llame a ese cliente por su nombre.</div>
+    <div class="tip"><b>¿Sin mesas? Llame al cliente y empiece su pedido.</b> Si su tienda funciona como mostrador (sin mapa de mesas), el botón de la tarjeta del cliente dice <b>Start Order</b> (Iniciar pedido) en lugar de <b>Seat</b> (Sentar). Tóquelo y BrewDesk lo marca como sentado y lo lleva directamente a la pantalla de pedidos de ese cliente. Si ya hay algo en el carrito, primero pregunta: <b>Order in progress</b> (Pedido en curso) → toque <b>Hold &amp; start</b> (Retener y comenzar) y el carrito anterior queda en sus pedidos en espera, así que no se pierde nada.</div>
+    <div class="tip"><b>Su quiosco lleva su nombre.</b> En una tableta configurada como <b>Waitlist Kiosk</b>, la parte superior de la pantalla ahora muestra el <b>logotipo y el nombre de su tienda</b>; usa la imagen que ya guardó en <code>Settings › Store info</code>, así que no hay nada adicional que subir. El campo de teléfono también se abre con el <b>código telefónico de su país</b> (+1, +82, +66…), tomado del país de su tienda, así que los clientes solo escriben su número.</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c16.html">15. Personal y permisos</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c16.html"><small>← Anterior</small>15. Personal y permisos</a><a class="nx" href="c10.html"><small>Siguiente →</small>17. Clientes y fidelización</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

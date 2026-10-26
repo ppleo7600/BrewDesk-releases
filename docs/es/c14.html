@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>23. Varios dispositivos y fiabilidad · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c14.html">English</a><a class="" hreflang="ko" href="../ko/c14.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c14.html">简体中文</a><a class="active" hreflang="es" href="c14.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class="cur"><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a class="sub" href="#c14-pair"><span class="num">23.1</span>Agregar un dispositivo a la caja principal</a>
+<a class="sub" href="#c14-role"><span class="num">23.2</span>Cambiar la función de un dispositivo y comprobar la conexión</a>
+<a class="sub" href="#c14-android"><span class="num">23.3</span>Usar una tableta Android para pedidos en mesa, pedidos del personal o una pantalla para clientes (próximamente)</a>
+<a class="sub" href="#c14-limit"><span class="num">23.4</span>Cuando llega al límite de dispositivos</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c14">
+    <h3><span class="n">23</span>Varios dispositivos y fiabilidad</h3>
+    <p class="intro">Puede usar más de un dispositivo al mismo tiempo. Si uno se avería, otro mantiene abierta su tienda. Configuremos sus dispositivos.</p>
+    <figure class="shot"><img src="../img/25-devices.png" alt="Pantalla de ajustes de dispositivos" loading="lazy"><figcaption><b>Dispositivos</b>① Main POS (este dispositivo)  ·  ② interruptor Customer Display (<span class="plan pro">Pro</span> y superiores)  ·  ③ Disconnect  ·  ④ nota: agregue dispositivos desde la app de BrewDesk</figcaption></figure>
+    <ol class="steps">
+      <li>Inicie sesión con el correo del propietario en los dispositivos que serán su caja principal y sus cajas adicionales. Las tabletas de pedidos del personal, las pantallas para clientes y los quioscos de lista de espera no usan el inicio de sesión con el correo del propietario: se aprueban en la caja principal (<a href="#c14-pair">Agregar un dispositivo a la caja principal</a>).</li>
+      <li>Asigne una función a cada dispositivo. Elija <b>caja principal</b> (su dispositivo número uno), <b>caja adicional</b> (un dispositivo de apoyo), <b>Staff Ordering</b> (Pedidos del Personal), <b>pantalla para clientes</b> (una pantalla para los clientes) o <b>quiosco de lista de espera</b>.</li>
+      <li>¿Necesita cambiar más tarde la función de un dispositivo? Pida el cambio en ese dispositivo y apruébelo en la caja principal (<a href="#c14-role">Cambiar la función de un dispositivo y comprobar la conexión</a>).</li>
+      <li>Usted elige un dispositivo como <b>caja principal</b>: es su ancla. <b>No</b> cede su función por sí sola. Si alguna vez se queda sin conexión, BrewDesk le avisa de inmediato para que pueda volver a encenderla o convertir otro dispositivo en la caja principal.</li>
+      <li>Consulte <a href="c13.html#c13">Modos de dispositivo y pantalla para clientes</a> para configurar el modo de un dispositivo, incluido Staff Ordering.</li>
+    </ol>
+    <div class="tip"><b>Si su caja principal se queda sin conexión.</b> Se le avisa de inmediato: una nota en su bandeja, un correo y un aviso en sus otras cajas. Sus otras cajas siguen funcionando, pero los pedidos por QR y en línea se pausan hasta que vuelva la caja principal (consulte <a href="c11.html#c11">Pedidos con código QR</a>). Para convertir otro dispositivo en la caja principal, lo cambia usted mismo y BrewDesk le envía un código por correo para confirmarlo: nada cambia en silencio.</div>
+    <div class="tip"><b>Ponga un nombre a cada dispositivo.</b> En <code>Settings › Devices</code>, toque el nombre de un dispositivo (o el pequeño lápiz al lado), escriba algo como <i>"Mostrador 1"</i> o <i>"iPad de la barra"</i> y guarde. Verá <i>"Device name updated."</i>. El nombre aparece en todos los dispositivos, así que siempre sabe qué tableta es cuál. Las cajas que se conectan solo por la red de la tienda no se pueden renombrar.</div>
+    <div class="tip"><b>¿Va a quitar la caja principal de la lista?</b> Si el pedido por QR o en línea está activado, BrewDesk primero le advierte: <i>"This is your Main POS. QR and online ordering are on — while no Main POS is connected, new customer orders can't be taken or printed in the kitchen."</i>. Solo es una advertencia: puede continuar igualmente. Si puede, convierta primero otro dispositivo en la caja principal.</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Su caja nunca se detiene.</b> ¿Se le derramó una bebida encima? Tome cualquier computadora portátil o tableta y vuelve a funcionar en minutos. Sin máquinas especiales y sin quedar atado a nada.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-pair">Agregar un dispositivo a la caja principal</h3>
+    <p class="intro">Cuando agrega una tableta de pedidos del personal, una pantalla para clientes o una pantalla de quiosco de lista de espera (registro propio), su caja principal la encuentra por usted. No hay código que escribir ni ajuste que buscar. Incluso funciona cuando la tienda no tiene internet.</p>
+    <div class="activate"><div class="h">Lo que necesita</div><p>El nuevo dispositivo debe tener instalada la <b>app de BrewDesk</b> (iPad o escritorio; la app de Android todavía no está disponible) y debe estar en el <b>mismo Wi-Fi de la tienda</b> que su caja principal. Una página abierta en un navegador web no se puede registrar como dispositivo; en su lugar verá <b>"Add devices from the BrewDesk app"</b>.</p></div>
+    <figure class="shot"><img src="../img/62-device-discover.png" alt="Pantalla para registrar un dispositivo nuevo" loading="lazy"><figcaption><b>Dispositivo nuevo buscando la caja principal (no encontrada)</b>① pantalla "Register as a new device at Main POS"  ·  ② Try again  ·  ③ volver al inicio de sesión</figcaption></figure>
+    <figure class="shot"><img src="../img/63-pair-approve.png" alt="Ventana de solicitud de vinculación de un dispositivo nuevo" loading="lazy"><figcaption><b>La ventana "New device pairing request" en la caja principal (pantalla de ejemplo)</b>① nombre y dirección IP del dispositivo  ·  ② Device role: elija su función  ·  ③ Deny  ·  ④ Approve</figcaption></figure>
+    <ol class="steps">
+      <li>Abra la app de BrewDesk en el nuevo dispositivo. En la pantalla de inicio de sesión, toque <b>"Register as a new device at Main POS."</b>. Si el dispositivo no tiene internet, va solo a esta pantalla.</li>
+      <li>Verá <b>"Looking for Main POS..."</b> y luego la solicitud se envía automáticamente. No hay nada más que tocar en el nuevo dispositivo: déjelo en <b>"Waiting for approval at the Main POS."</b>.</li>
+      <li>En su caja principal aparece sola una ventana llamada <b>New device pairing request</b>. Muestra qué dispositivo lo pidió, con su nombre y dirección.</li>
+      <li>En <b>Device role</b> (Rol del dispositivo), elija para qué es este dispositivo: <b>Staff Ordering</b> (Pedidos del Personal), <b>Customer Display</b> (Pantalla para clientes) o <b>Waitlist Kiosk</b> (registro propio). El botón de aprobar sigue desactivado hasta que elija uno.</li>
+      <li>Toque <b>Approve</b>. Si no reconoce el dispositivo, toque <b>Deny</b>.</li>
+      <li>El nuevo dispositivo muestra <b>New device registration complete</b> y pasa directamente a la función que le asignó.</li>
+    </ol>
+    <div class="tip"><b>La función la elige usted, no el nuevo dispositivo.</b> Un dispositivo nuevo no puede decirle a su caja "soy una tableta de pedidos del personal". Solo la persona que está en la caja principal elige la función, así que una tableta que alguien conecte a escondidas no puede decidir por sí sola qué puede hacer.</div>
+    <div class="tip"><b>Esto nunca crea una caja principal.</b> Su caja principal siempre se configura iniciando sesión con su correo, y BrewDesk le envía un código por correo para confirmar cuando la cambia. Las cajas adicionales (Sub POS) también se registran iniciando sesión con el correo y confirmando un código.</div>
+    <div class="tip"><b>¿Dice "Couldn't find the Main POS"?</b> Normalmente los dos dispositivos están en redes Wi-Fi distintas. Conéctese al <b>Wi-Fi de la tienda</b> (no al de invitados ni a un punto de acceso del teléfono) y toque <b>Try again</b> (Reintentar). Si la ventana tarda demasiado, verá <b>Request expired</b>; simplemente vuelva a empezar desde el nuevo dispositivo.</div>
+    <p class="foot">En la caja principal, <code>Settings › Devices</code> ahora muestra una guía <b>How to add a device</b> en lugar de botones de registro: el registro siempre empieza en el nuevo dispositivo.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-role">Cambiar la función de un dispositivo y comprobar la conexión</h3>
+    <p class="intro">Puede cambiar lo que hace un dispositivo ya vinculado, o comprobar si sigue comunicándose con su caja principal.</p>
+    <ol class="steps">
+      <li>En un dispositivo de pedidos del personal, toque el <b>ícono del modo del dispositivo</b> ("Switch device mode") en la parte superior de la pantalla.</li>
+      <li>Se abre <b>Change device role</b>. No necesita un código otra vez: este dispositivo ya está registrado.</li>
+      <li>Elija la nueva función: <b>Staff Ordering</b> (tomar pedidos desde cualquier dispositivo), <b>Customer Display</b> (mostrar los pedidos a los clientes) o <b>Waitlist Kiosk</b> (registro propio en la lista de espera).</li>
+      <li>Todavía no cambia nada en la tableta. Dice <b>"Waiting for Main POS approval"</b>: <i>"Ask the owner to approve this change on the Main POS screen. Nothing has changed on this device yet."</i></li>
+      <li>Vaya a su <b>caja principal</b>. Aparece sola una tarjeta con la etiqueta <b>"Role change — existing device"</b>: <i>"This device is already registered and is asking to change its role. Approving changes what it does; its login is not affected."</i>. Toque <b>Approve</b>, o <b>Deny</b> si no lo esperaba. Entonces la tableta cambia.</li>
+      <li>En la parte superior de esa ventana verá el estado de la conexión. <b>Connected to the main POS</b> significa que todo está bien. <b>No main POS connected</b> significa que todavía no la ha encontrado; toque <b>Check again</b> (Consultar de nuevo).</li>
+      <li>Para quitar este dispositivo por completo, toque <b>Log out &amp; unregister</b> en la parte inferior. Vuelve a la pantalla de inicio de sesión y, después de volver a iniciar sesión, puede elegir su función desde cero.</li>
+    </ol>
+    <div class="tip"><b>Cuando algo no parece estar bien: <b>Connection log</b>.</b> Toque el ícono del registro de conexión en la parte superior de la pantalla para ver, en una sola página, a qué tienda y función está registrado este dispositivo, cuánto tiempo lleva vinculado a la caja principal y cuántos pedidos todavía no se han enviado. Cuando contacte con soporte, use <b>Copy all</b> y péguelo: es la forma más rápida de obtener ayuda.</div>
+    <div class="tip"><b>Cambiar la función de un dispositivo ahora necesita su aprobación.</b> Quien tenga la tableta puede <i>pedirlo</i>, pero solo la <b>caja principal</b> puede aprobarlo, así que un cliente o alguien que pase no puede convertir en silencio su quiosco en un dispositivo de pedidos. La solicitud <b>caduca a los 2 minutos</b> ("This request expires in {seconds}s — approve now or ask the device to send a new one"); si se agota, simplemente vuelva a pedirlo desde la tableta.</div>
+    <div class="tip"><b>Convertir un dispositivo en Sub POS pide confirmación dos veces.</b> Un Sub POS puede cobrar dinero, así que la caja principal le advierte primero: <b>"This device will be able to take payments."</b> / <i>"A Sub POS can ring up orders, take payment and issue refunds. Approve only a device you set up yourself."</i>. Toque <b>Continue</b> (Continuar) para confirmar. Si no reconoce el dispositivo, toque <b>Deny</b>.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-android">Usar una tableta Android para pedidos en mesa, pedidos del personal o una pantalla para clientes (próximamente)</h3>
+    <p class="intro">Así se usa una tableta Android en su tienda para pedidos en mesa, pedidos del personal o una pantalla para clientes. La app de Android todavía no está en Google Play. Por ahora, su instalador le instala la app en la tableta; la publicación en Google Play llegará pronto.</p>
+    <div class="activate"><div class="h">Lo que necesita</div><p>(1) Una tableta Android (Android 7.0 o posterior). (2) La caja principal encendida y con conexión. (3) La tableta y la caja principal en el <b>mismo Wi-Fi de la tienda</b>. Si puede, conecte la caja principal al router con un cable LAN, y compruebe de antemano que la señal Wi-Fi sea suficiente donde están sus mesas.</p></div>
+    <ol class="steps">
+      <li><b>Instalar la app.</b> Su instalador instala la app de BrewDesk en la tableta. La instalación desde Google Play llegará pronto.</li>
+      <li><b>Encontrar la caja principal.</b> Abra la app en la tableta y toque <b>Register as a new device at Main POS</b> (Registrar como nuevo dispositivo en el POS principal). Muestra <b>Looking for Main POS...</b> y envía la solicitud automáticamente en cuanto la encuentra.</li>
+      <li><b>Comprobar el nombre de la tienda.</b> Si la tableta tiene una sesión iniciada en una tienda, muestra <b>Looking for the Main POS of (store)</b> y luego <b>Found: (store)</b>. Compruebe que sea su tienda. Si encuentra la caja principal de otra tienda, se detiene con <b>This Main POS belongs to another store</b>. Compruebe que esté en el Wi-Fi correcto de la tienda y toque <b>Try again</b> (Reintentar).</li>
+      <li><b>Aprobar en la caja principal.</b> La tableta muestra <b>Waiting for approval at the Main POS</b> con el tiempo restante. Cuando aparezca la ventana <b>New device pairing request</b> en la caja principal, elija el <b>Device role</b> (Rol del dispositivo) y toque <b>Approve</b> (consulte <a href="#c14-pair">Agregar un dispositivo a la caja principal</a>). La tableta muestra entonces <b>New device registration complete</b>.</li>
+      <li><b>Si cerró o no vio la ventana.</b> En la parte superior de la caja principal queda un aviso <b>(N) device(s) waiting for approval</b>. Toque <b>Review</b> (Revisar) para volver a abrir la ventana de aprobación. Si la solicitud desapareció, toque <b>Send request again</b> en la tableta.</li>
+    </ol>
+    <h3 style="font-size:14.5px;margin:18px 0 4px">Registrar varias tabletas a la vez</h3>
+    <p>Si enciende varias tabletas y envía una solicitud desde cada una, las solicitudes se ponen en cola en la caja principal. Una tienda puede tener hasta 32 solicitudes en espera (se aplica después de la actualización de la caja principal &middot; <b>próximamente</b>). Solicitar y aprobar una tableta a la vez es la forma más segura. Cada tableta recibe su propia función, así que compruebe el nombre del dispositivo al aprobar.</p>
+    <h3 style="font-size:14.5px;margin:18px 0 4px">La tableta queda fijada en la pantalla de la tienda</h3>
+    <p>Después de que su instalador la configure, la tableta abre sola la app de BrewDesk al reiniciarse, y los botones de Inicio y Recientes no permiten ir a otra app. Los clientes no pueden abrir otras apps. En algunas tabletas aparece una vez, después de cada reinicio, el aviso <b>App is pinned</b>; toque <b>Got it</b>. No aparece en las tabletas registradas con bloqueo total.</p>
+    <div class="tip"><b>Cuando necesite cambiar el Wi-Fi o la configuración.</b> No desbloquee la tableta usted mismo; contacte con su instalador o distribuidor. Ellos mantienen pulsada la esquina superior izquierda de la pantalla durante 3 segundos para abrir <b>Device admin</b>. Después de ingresar un PIN de propietario o de gerente, pueden usar <b>Wi-Fi settings</b>, <b>Device settings</b> y <b>Unlock app pinning</b>. La tableta se vuelve a bloquear cuando cierran la ventana o regresan a la app. Una tableta registrada sin iniciar sesión (aprobada en la caja principal) no puede verificar un PIN, así que cambie el dispositivo desde la caja principal o pida a su instalador que la recupere por USB.</div>
+    <div class="tip"><b>Si la tableta no encuentra la caja principal o no aparece la ventana de aprobación.</b>
+      <ul style="margin:6px 0 0 20px">
+        <li><b>Couldn't find the Main POS</b> &mdash; asegúrese de que la tableta no esté en el Wi-Fi de invitados ni en un punto de acceso del teléfono. Conéctela al mismo <b>Wi-Fi de la tienda</b> que la caja principal, asegúrese de que la app de la caja principal esté abierta y toque <b>Try again</b> (Reintentar).</li>
+        <li><b>No aparece la ventana de aprobación</b> &mdash; busque el aviso <b>(N) device(s) waiting for approval</b> en la caja principal. Si no está, toque <b>Send request again</b> en la tableta. Una solicitud puede perderse si la caja principal se estaba actualizando o se acaba de reiniciar. Las solicitudes caducan a los 2 minutos; si ve <b>Request expired</b>, vuelva a intentarlo.</li>
+        <li><b>Couldn't complete registration</b> (No se pudo completar el registro) &mdash; empiece de nuevo desde el principio.</li>
+        <li><b>Wi-Fi débil</b> &mdash; si la conexión se corta o es lenta cerca de las mesas, acerque el router o agregue un punto de acceso. Avise a su instalador o distribuidor.</li>
+        <li><b>Solo una tableta nunca se conecta</b> &mdash; es posible que el antivirus de la computadora de la caja principal esté bloqueando esa tableta. Contacte con su instalador o distribuidor.</li>
+      </ul></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-limit">Cuando llega al límite de dispositivos</h3>
+    <p class="intro">Su plan incluye un número determinado de cajas y pantallas para clientes. Cuando llega a ese número, BrewDesk no se limita a rechazarlo: le ofrece cambiar directamente un dispositivo por otro.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p><code>Settings › Devices</code> muestra una franja de advertencia en la parte superior en cuanto <b>llega</b> al límite (no solo cuando lo supera), con el recuento de lo que usa; por ejemplo, <b>POS 1/1</b> y <b>Customer display 1/1</b> en <span class="plan pro">Pro</span>, o <b>POS 3/3</b> y <b>Customer display 3/3</b> en <span class="plan biz">Business</span>. Cada dispositivo también muestra <b>Last seen</b>, para que sepa cuál ha estado guardado en un cajón.</p></div>
+    <ol class="steps">
+      <li>Registre la nueva caja como siempre. Si está en el límite, verá <b>"You've reached your plan's device limit. Replace an existing device, or upgrade your plan to add more."</b></li>
+      <li>Se abre un selector <b>Replace a device</b> (Reemplazar un dispositivo) con los dispositivos que podría retirar. Elija uno.</li>
+      <li>Eso es todo: el dispositivo anterior se desconecta y el nuevo ocupa su lugar en el acto.</li>
+      <li>¿No cambió nada en esa lista desde hace un rato? Si el dispositivo que eligió ya estaba desconectado, verá <b>"That device was already disconnected, or this list is out of date — refreshing the list."</b>. Vuelva a elegir de la lista actualizada.</li>
+    </ol>
+    <div class="tip"><b>Su caja principal nunca está en esa lista.</b> Reemplazar la caja principal es algo más importante, así que tiene su propio camino: la tarjeta <b>Replace Main POS</b> (Reemplazar POS principal), que primero pide confirmación y le envía un código por correo. El cambio rápido de arriba es solo para los dispositivos adicionales.</div>
+    <div class="tip"><b>También le enviamos un correo.</b> En la web, cuando se rechaza un dispositivo por llegar al límite, BrewDesk también envía un correo al propietario de la tienda; el mensaje dice <b>"We've also emailed the store owner about this."</b>. Así, si un empleado se encuentra con esto a las 7 de la mañana, usted se entera sin que tenga que explicárselo.</div>
+    <div class="tip"><b>Staff Ordering tiene su propio recuento.</b> Pro incluye 3 plazas de Staff Ordering (Business no tiene límite). Si se agotan las plazas, la pantalla de registro se lo dice claramente: <b>"All 3 Staff Ordering slots are in use (3/3). Release a device in Settings → Devices to add another."</b>. Si su plan no lo incluye en absoluto: <b>"Staff Ordering isn't included in your current plan."</b></div>
+    <p class="foot">En un iPad o en la app de escritorio el texto es un poco más corto y lo remite a su cuenta de BrewDesk en la web para cambiar de plan; el cambio en sí funciona exactamente igual.</p>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c13.html">22. Modos de dispositivo y pantalla para clientes</a></li><li><a href="c11.html">18. Pedidos con código QR</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c13.html"><small>← Anterior</small>22. Modos de dispositivo y pantalla para clientes</a><a class="nx" href="c18.html"><small>Siguiente →</small>24. Recibos e impresoras</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

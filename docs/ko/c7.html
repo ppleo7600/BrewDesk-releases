@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7. 결제 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>8. 결제 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
 <a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
 <div class="searchbox"><input id="q" type="search" placeholder="매뉴얼 검색…" autocomplete="off" aria-label="매뉴얼 검색…"><div class="results" id="results" data-none="결과가 없습니다"></div></div>
-<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c7.html">English</a><a class="active" hreflang="ko" href="c7.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c7.html">简体中文</a></div></details>
+<details class="langmenu"><summary aria-label="언어">한국어</summary><div class="langlist"><a class="" hreflang="en" href="../en/c7.html">English</a><a class="active" hreflang="ko" href="c7.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c7.html">简体中文</a><a class="" hreflang="es" href="../es/c7.html">Español</a></div></details>
 </div></nav>
 <div class="layout"><aside class="side"><a href="index.html" class="">홈</a>
 <div class="part">1부 · 시작하기</div>
@@ -17,36 +17,37 @@
 <div class="part">2부 · 매일 쓰기</div>
 <a href="c23.html" class=""><span class="num">5</span>직원 빠른 시작</a>
 <a href="c5.html" class=""><span class="num">6</span>주문 받기</a>
-<a href="c7.html" class="cur"><span class="num">7</span>결제 받기</a>
-<a class="sub" href="#c7-split"><span class="num">7.1</span>계산서 나누기 · 엔빵</a>
-<a class="sub" href="#c7-tip"><span class="num">7.2</span>나중에 정산하는 주문의 팁</a>
-<a class="sub" href="#c7-cashrounding"><span class="num">7.3</span>현금 결제 우수리</a>
-<a href="c8.html" class=""><span class="num">8</span>할인 &amp; 프로모션</a>
-<a href="c9.html" class=""><span class="num">9</span>환불</a>
-<a href="c17.html" class=""><span class="num">10</span>리포트 &amp; 하루 마감</a>
-<a href="c15.html" class=""><span class="num">11</span>오프라인으로 쓰기</a>
+<a href="c30.html" class=""><span class="num">7</span>카드 결제 준비 · Stripe 연결</a>
+<a href="c7.html" class="cur"><span class="num">8</span>결제 받기</a>
+<a class="sub" href="#c7-split"><span class="num">8.1</span>계산서 나누기 · 엔빵</a>
+<a class="sub" href="#c7-tip"><span class="num">8.2</span>나중에 정산하는 주문의 팁</a>
+<a class="sub" href="#c7-cashrounding"><span class="num">8.3</span>현금 결제 우수리</a>
+<a href="c8.html" class=""><span class="num">9</span>할인 &amp; 프로모션</a>
+<a href="c9.html" class=""><span class="num">10</span>환불</a>
+<a href="c17.html" class=""><span class="num">11</span>리포트 &amp; 하루 마감</a>
+<a href="c15.html" class=""><span class="num">12</span>오프라인으로 쓰기</a>
 <div class="part">3부 · 매장 관리</div>
-<a href="c20.html" class=""><span class="num">12</span>애드온 &amp; 추가 기능</a>
-<a href="c21.html" class=""><span class="num">13</span>플랜 &amp; 결제</a>
-<a href="c16.html" class=""><span class="num">14</span>직원 &amp; 권한</a>
-<a href="c6.html" class=""><span class="num">15</span>예약 &amp; 스케줄러</a>
-<a href="c10.html" class=""><span class="num">16</span>고객 &amp; 단골 혜택</a>
-<a href="c11.html" class=""><span class="num">17</span>QR 코드 주문</a>
-<a href="c12.html" class=""><span class="num">18</span>고객에게 메시지 보내기</a>
-<a href="c19.html" class=""><span class="num">19</span>백업</a>
+<a href="c20.html" class=""><span class="num">13</span>애드온 &amp; 추가 기능</a>
+<a href="c21.html" class=""><span class="num">14</span>플랜 &amp; 결제</a>
+<a href="c16.html" class=""><span class="num">15</span>직원 &amp; 권한</a>
+<a href="c6.html" class=""><span class="num">16</span>예약 &amp; 스케줄러</a>
+<a href="c10.html" class=""><span class="num">17</span>고객 &amp; 단골 혜택</a>
+<a href="c11.html" class=""><span class="num">18</span>QR 코드 주문</a>
+<a href="c12.html" class=""><span class="num">19</span>고객에게 메시지 보내기</a>
+<a href="c19.html" class=""><span class="num">20</span>백업</a>
 <div class="part">4부 · 설치 · 기기</div>
-<a href="c24.html" class=""><span class="num">20</span>설치 준비물 &amp; 네트워크</a>
-<a href="c13.html" class=""><span class="num">21</span>기기 모드 &amp; 고객 디스플레이</a>
-<a href="c14.html" class=""><span class="num">22</span>여러 대 기기 &amp; 안정성</a>
-<a href="c18.html" class=""><span class="num">23</span>영수증 &amp; 프린터</a>
-<a href="c27.html" class=""><span class="num">24</span>라이브 전환</a>
-<a href="c25.html" class=""><span class="num">25</span>설치 체크리스트</a>
+<a href="c24.html" class=""><span class="num">21</span>설치 준비물 &amp; 네트워크</a>
+<a href="c13.html" class=""><span class="num">22</span>기기 모드 &amp; 고객 디스플레이</a>
+<a href="c14.html" class=""><span class="num">23</span>여러 대 기기 &amp; 안정성</a>
+<a href="c18.html" class=""><span class="num">24</span>영수증 &amp; 프린터</a>
+<a href="c27.html" class=""><span class="num">25</span>라이브 전환</a>
+<a href="c25.html" class=""><span class="num">26</span>설치 체크리스트</a>
 <div class="part">5부 · 도움말</div>
-<a href="c22.html" class=""><span class="num">26</span>문제 해결 &amp; 지원</a>
-<a href="c28.html" class=""><span class="num">27</span>자주 묻는 질문</a>
-<a href="c26.html" class=""><span class="num">28</span>용어집</a></aside>
+<a href="c22.html" class=""><span class="num">27</span>문제 해결 &amp; 지원</a>
+<a href="c28.html" class=""><span class="num">28</span>자주 묻는 질문</a>
+<a href="c26.html" class=""><span class="num">29</span>용어집</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c7">
-    <h3><span class="n">7</span>결제 받기</h3>
+    <h3><span class="n">8</span>결제 받기</h3>
     <p class="intro">이제 결제를 받는 단계입니다. 현금은 오늘부터 받을 수 있습니다. 본인의 Stripe 계정을 연결하면 카드도 바로 받을 수 있습니다. BrewDesk는 카드 매출에 어떤 수수료도 더하지 않습니다.</p>
     <figure class="shot"><img src="../img/42-payment.png" alt="결제 화면" loading="lazy"><figcaption><b>결제 화면</b>① 결제 금액(Total Due / Remaining)  ·  ② 결제 수단 — Cash, 카드사(Visa·MasterCard·Amex), Card (External), Voucher (카드 항목은 Record Only), 위쪽 Full Pay / Split Pay 토글  ·  ③ 키패드(받은 현금 입력)  ·  ④ "Pay with…"로 완료</figcaption></figure>
     <ol class="steps">
@@ -101,6 +102,7 @@
       <li>평소처럼 결제를 받고, <b>"마감 화면으로"</b>(Back to closing)를 탭해 나머지 정리를 이어 갑니다.</li>
     </ol>
     <div class="tip"><b>왜 굳이 확인하나요?</b> 카드 단말에서 받은 팁은 BrewDesk 안에 아직 없습니다. 아무도 기록하지 않으면 직원은 그 팁을 확인할 수 없습니다. 이 화면이 그 팁이 입력되는 유일한 자리입니다.</div>
+    <div class="tip"><b>고객 화면에서 손님이 직접 팁을 고르게 하기.</b> 터치 고객 화면을 사용하신다면 팁 설정에서 <b>Customer picks tip on display</b>를 켭니다. 포스 팁 화면에서 <b>Let customer choose on display</b>를 누르면 고객 화면에 <b>Add a tip</b> 창과 금액(또는 <b>Custom</b> / <b>No tip</b>)이 표시되고, 손님이 확정할 때까지 포스에는 <i>"Customer is choosing on the display…"</i>가 나타납니다. 포스 팁 창은 지금처럼 그대로 사용할 수 있습니다.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-cashrounding">현금 결제 우수리</h3>
     <p class="intro">현금 결제 우수리(Cash Payment Rounding)는 잔돈 동전을 정리하는 설정입니다. 나라마다 가장 작은 동전이 계산서 끝자리보다 큰 경우가 많습니다 — 1센트 동전을 가지고 다니는 사람은 이제 거의 없습니다. 그래서 현금 손님이 10.03을 내야 할 때 10.00만 받고 3은 넘어갑니다. 이제 BrewDesk가 그 반올림을 대신 처리합니다. <b>현금 결제에만</b> 적용되며, 넘어간 동전은 한 푼도 빠짐없이 기록으로 남습니다.</p>
@@ -119,7 +121,7 @@
     <div class="tip"><b>마감에서도 정확히 맞습니다.</b> 마감 리포트의 Payment Breakdown에 Total Payment Collected 아래로 <b>Cash Rounding</b> 줄이 생기며, 쉬운 설명이 함께 표시됩니다 — <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b>(현금 결제에서 받지 않은 동전. 수금액 + 이 값 = 총 합계). "왜 서랍이 몇 센트 비어 있지?"에 대한 답이 이것입니다 — 비어 있는 것이 아니라 일부러 넘겨 준 동전입니다. 결제 내역 요약 카드와 Analytics 현금 카드에도 같은 금액이 표시됩니다.</div>
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>다른 가게처럼 반올림하면서, 장부에서는 한 푼도 잃지 않습니다.</b> 동전 단위를 한 번 정해 두면 모든 현금 총액이 실제로 있는 동전에 딱 맞게 떨어집니다. 넘긴 1센트까지 기록되고, 영수증에 출력되고, 마감에서 합이 맞습니다 — 회계사가 "그 잔돈이 어디 갔느냐"고 물을 일이 없습니다.</p></div>
   </div>
-<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c3.html">3. 매장 설정하기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">26. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">27. 자주 묻는 질문</a></li><li><a href="c26.html">28. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c5.html"><small>← 이전</small>6. 주문 받기</a><a class="nx" href="c8.html"><small>다음 →</small>8. 할인 &amp; 프로모션</a></div></div></div></div>
+<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c3.html">3. 매장 설정하기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c30.html"><small>← 이전</small>7. 카드 결제 준비 · Stripe 연결</a><a class="nx" href="c8.html"><small>다음 →</small>9. 할인 &amp; 프로모션</a></div></div></div></div>
 <script src="../assets/search.js?v=34d2fba9"></script>
 
 </body></html>

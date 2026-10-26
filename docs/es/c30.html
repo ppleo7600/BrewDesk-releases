@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7. Configurar pagos con tarjeta · Conectar Stripe · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c30.html">English</a><a class="" hreflang="ko" href="../ko/c30.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c30.html">简体中文</a><a class="active" hreflang="es" href="c30.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class="cur"><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a class="sub" href="#c30-country"><span class="num">7.1</span>Compruebe primero su país</a>
+<a class="sub" href="#c30-prepare"><span class="num">7.2</span>Tenga esto a mano</a>
+<a class="sub" href="#c30-steps"><span class="num">7.3</span>Pasos</a>
+<a class="sub" href="#c30-status"><span class="num">7.4</span>Cómo leer el estado de la conexión</a>
+<a class="sub" href="#c30-fee"><span class="num">7.5</span>Quién cobra qué</a>
+<a class="sub" href="#c30-next"><span class="num">7.6</span>Después de conectar</a>
+<a class="sub" href="#c30-disconnect"><span class="num">7.7</span>No desconecte solo para probar</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c30">
+    <h3><span class="n">7</span>Configurar pagos con tarjeta · Conectar Stripe</h3>
+    <p class="intro">Para aceptar pagos con tarjeta y pagos de pedidos en línea, conecte una vez a BrewDesk una cuenta de Stripe a nombre de su negocio. Suele tardar unos 15 minutos, o de 1 a 2 días hábiles si Stripe revisa documentos. Los pagos van directamente a su cuenta de Stripe y nunca pasan por BrewDesk.</p>
+    <div class="activate"><div class="h">Dónde</div><p>Abra <code>Settings › Payments</code>, desplácese hacia abajo hasta la tarjeta <b>Stripe Connect</b> y active su interruptor (antes de conectar dice <b>Card Payments Locked</b> (Pagos con tarjeta bloqueados)). La tarjeta no tiene un botón de conexión aparte: el interruptor es el botón. Debe haber iniciado sesión como propietario (Owner).</p></div>
+    <div class="tip"><b>La cuenta de Stripe es suya.</b> Aunque un revendedor le haya ayudado a configurar su tienda, conecte Stripe con sus propios datos y la cuenta bancaria de la tienda. Una vez conectada, usted tiene su propio acceso al panel de Stripe, y la cuenta que recibe el dinero es la titular de la cuenta de Stripe.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-country">Compruebe primero su país</h3>
+    <p class="intro">Según los 13 países donde se vende BrewDesk. En algunos países también funcionan los lectores de tarjetas (Stripe Terminal); en otros solo funcionan los pagos con tarjeta en línea y por QR; en algunos no funciona nada.</p>
+    <div class="card"><table>
+      <tr><th>Grupo</th><th>Países</th><th>Qué significa</th></tr>
+      <tr><td class="feat">Cuenta de Stripe + lector de tarjetas disponibles</td><td class="desc">Singapur · Australia · Nueva Zelanda · Japón · Malasia · Estados Unidos · Canadá (BrewDesk no se vende en Quebec)</td><td class="desc">Conéctela siguiendo este capítulo.</td></tr>
+      <tr><td class="feat">Solo cuenta de Stripe (sin lector de tarjetas)</td><td class="desc">Tailandia · Emiratos Árabes Unidos</td><td class="desc">Solo funcionan los pagos con tarjeta de pedidos en línea y por QR. No se pueden usar lectores de tarjetas en la tienda.</td></tr>
+      <tr><td class="feat">Stripe en versión preliminar (requiere contacto con ventas de Stripe)</td><td class="desc">Indonesia</td><td class="desc">En la práctica no hay registro abierto. Trátelo como se indica en la nota de abajo sobre países no admitidos.</td></tr>
+      <tr><td class="feat">No disponible en Stripe</td><td class="desc">Vietnam · Argentina · Sudáfrica</td><td class="desc">Sudáfrica usa la red de Paystack en lugar de Stripe, con la que BrewDesk no está integrado.</td></tr>
+    </table></div>
+    <p class="foot">Vigente a 2026-10 · puede cambiar según las circunstancias de Stripe. Fuentes: <a href="https://stripe.com/global" target="_blank" rel="noopener">stripe.com/global</a> · <a href="https://docs.stripe.com/terminal/payments/regional" target="_blank" rel="noopener">docs.stripe.com/terminal/payments/regional</a></p>
+    <div class="tip"><b>En las tiendas de países no admitidos</b>, cobre con tarjeta en su propia terminal aparte y regístrelo en el POS con el método de pago <b>Card</b> (Tarjeta), que solo registra el cobro. En ese caso, no conecte <b>Stripe Connect</b>.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-prepare">Tenga esto a mano</h3>
+    <div class="activate"><div class="h">Haga coincidir estos datos antes de conectar: el país no se puede cambiar después</div><p>El <b>país</b> de la cuenta de Stripe se fija la primera vez que conecta, a partir del <b>país configurado en la información de su tienda</b>. No cambie el país de la tienda después de conectar. Si el país está mal, tendrá que desconectar (Disconnect) y volver a conectar, así que <b>antes</b> de conectar, compruebe <b>Country</b> (País), la dirección y <b>Store Name</b> (Nombre de la tienda) en <code>Settings › Store Info</code>. El nombre de la tienda se envía a Stripe como nombre visible.</p></div>
+    <p class="intro">Stripe verifica su negocio y a su representante. Con esto a mano puede terminar de una sola vez.</p>
+    <div class="card"><table>
+      <tr><th>Lo que pide Stripe</th></tr>
+      <tr><td class="desc">☐ <b>Datos del negocio</b>: número de registro del negocio (UEN en Singapur · EIN en Estados Unidos · ABN en Australia · número SSM en Malasia, etc.), razón social y dirección registradas, tipo de negocio (persona física o empresa, igual que en el registro)</td></tr>
+      <tr><td class="desc">☐ <b>Sector y descripción de la tienda</b>, además de un sitio web o una red social (si no tiene, basta una descripción de la tienda)</td></tr>
+      <tr><td class="desc">☐ <b>Nombre que aparece en los estados de cuenta de tarjeta</b>: el nombre de la tienda que los clientes verán en su estado de cuenta</td></tr>
+      <tr><td class="desc">☐ <b>Identidad del representante</b>: identificación con foto (+ selfi), fecha de nacimiento, domicilio. En Singapur, <b>Singpass</b> es lo más rápido. Sin Singpass, use un NRIC, un FIN (Work Pass) o un pasaporte más un selfi; si el representante vive fuera de Singapur, solo se acepta el pasaporte.</td></tr>
+      <tr><td class="desc">☐ <b>En el caso de una empresa</b>, los datos de los propietarios con el 25 % o más y de los directores</td></tr>
+      <tr><td class="desc">☐ <b>Cuenta bancaria para los pagos</b>: a nombre de la tienda (del negocio), en un banco de ese país</td></tr>
+      <tr><td class="desc">☐ <b>Su propio correo</b> (uno que lea todos los días: allí llegan los correos de pagos, disputas y solicitudes de documentos) y <b>su teléfono a mano</b> (códigos de verificación, verificación en dos pasos)</td></tr>
+    </table></div>
+    <div class="tip"><b>Singapur:</b> la persona que figura como Owner o Director en ACRA BizFile debe ingresar los datos ella misma; solo así se completa sin una carta de autorización. Si lo completa un empleado u otra persona, Stripe pide una carta de autorización aparte, así que lo más rápido es que lo haga el propietario.</div>
+    <div class="tip"><b>No haga lo siguiente</b><br>① Crear la cuenta de Stripe con los datos o el correo de otra empresa o de otra persona: los pagos y la titularidad de la cuenta pasarían a ser suyos.<br>② Cambiar el país de la tienda después de conectar.<br>③ Desactivar el interruptor de conexión y pulsar <b>Disconnect</b> (Desconectar) solo para probar: los pagos con tarjeta se detienen de inmediato.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-steps">Pasos</h3>
+    <figure class="shot"><img src="../img/c30-connect-card.png" alt="Tarjeta Stripe Connect en Settings Payments, antes de conectar" loading="lazy"><figcaption><b>Settings › Payments — tarjeta Stripe Connect (antes de conectar)</b>El estado <b>Card Payments Locked</b> (Pagos con tarjeta bloqueados) y el interruptor a la derecha (desactivado).</figcaption></figure>
+    <ol class="steps">
+      <li>En BrewDesk, abra <code>Settings › Payments</code> y active el interruptor de la tarjeta <b>Stripe Connect</b>, más abajo. Se abre la página de registro de Stripe.</li>
+    </ol>
+    <figure class="shot"><img src="../img/c30-stripe-start.png" alt="Primera página de registro de Stripe" loading="lazy"><figcaption><b>Primera página de registro de Stripe</b>① <b>Email address</b> (Correo electrónico), ya completado con su correo · ② <b>Continue</b> (Continuar)</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>Compruebe que <b>Email address</b> (Correo electrónico) sea su propio correo y pulse <b>Continue</b> (Continuar). Si ya tiene una cuenta de Stripe, inicie sesión en ella; si no, cree una allí. Ingrese los códigos de verificación enviados por correo o teléfono y resuelva la comprobación contra bots (elegir imágenes) si aparece.</li>
+    </ol>
+    
+    <ol class="steps" start="3">
+      <li>Ingrese los datos del negocio: tipo de negocio, número de registro, razón social y dirección, sector (restaurante o cafetería), sitio web (o una descripción de la tienda) y el nombre que aparece en los estados de cuenta de tarjeta. Luego verifique al representante (identificación con foto; en Singapur, toque <b>Singpass</b> o suba una foto de la identificación y un selfi) y, en el caso de una empresa, ingrese los datos de los propietarios y directores.</li>
+    </ol>
+    
+    <ol class="steps" start="4">
+      <li>Ingrese la cuenta bancaria para los pagos. Debe ser una cuenta bancaria <b>a nombre de la tienda (del negocio)</b>, en ese país.</li>
+    </ol>
+    
+    <ol class="steps" start="5">
+      <li>Revise y envíe. Volverá automáticamente a la pantalla <code>Settings</code> de BrewDesk.</li>
+      <li>Si la ventana se cerró a mitad de camino o Stripe terminó la sesión, volverá a <b>Settings › Payments</b>. Si la tarjeta todavía dice <b>Card Payments Locked</b> (Pagos con tarjeta bloqueados), no se ha terminado. <b>Vuelva a activar el interruptor</b> y se reanudará donde se detuvo, en la misma cuenta de Stripe.</li>
+    </ol>
+    <div class="tip"><b>Cuando la conexión se completa</b>, se envía una vez un aviso <b>Stripe connected</b> al correo de la tienda. Una vez conectada, el método de pago <b>Card (Record Only)</b> (Tarjeta (solo registro)), que solo registra cobros, queda inactivo como "Superseded by Stripe": Stripe tiene prioridad; no es una falla.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-status">Cómo leer el estado de la conexión</h3>
+    <figure class="shot"><img src="../img/c30-status-enabled.png" alt="Charges Enabled, Onboarding Complete" loading="lazy"><figcaption><b>Conectada</b>① estado <b>Enabled</b> (Habilitado) y el interruptor activado · ② <b>Charges</b> (Cargos): Enabled · ③ <b>Onboarding</b> (Configuración inicial): Complete</figcaption></figure>
+    <ul>
+      <li>Cuando el interruptor está activado, <b>Charges</b> (Cargos) muestra <b>Enabled</b> (Habilitado) y <b>Onboarding</b> (Configuración inicial) muestra <b>Complete</b> (Completo), ha terminado. Se pueden aceptar pagos con tarjeta y pagos con tarjeta de pedidos en línea. En los países donde funcionan los lectores de tarjetas, continúe conectando un lector siguiendo <a href="c24.html#c24-card">Terminales de tarjeta</a>.</li>
+      <li>Si el interruptor está desactivado y la tarjeta dice <b>Card Payments Locked</b> (Pagos con tarjeta bloqueados), la conexión no está terminada o hay documentos en revisión. Si Stripe necesita más documentos, lo que hace falta se indica en el correo de Stripe o en su panel de Stripe. Revise su bandeja de entrada, envíe los documentos y luego vuelva a activar el interruptor para continuar. Suele tardar unos minutos, o de 1 a 2 días hábiles si hace falta una revisión.</li>
+    </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-fee">Quién cobra qué</h3>
+    <ul>
+      <li><b>La comisión de procesamiento de Stripe</b> la cobra Stripe directamente a su cuenta de Stripe. Para tarjetas nacionales de Singapur es del 3,4 % + S$0,50 (las tarjetas internacionales cuestan más).</li>
+      <li><b>La comisión de BrewDesk</b> es del 0 % en los pagos en la tienda y del 0,4 % solo en los pedidos en línea.</li>
+      <li>Para cubrir los costos de los pedidos en línea en el precio de su menú, use <b>Online price increase</b> (Aumento de precio en línea) en <a href="c11.html#c11">Pedidos con código QR</a>. Aumenta los precios del menú en línea en un porcentaje y deja sin cambios los precios en la tienda y por QR de mesa. Para un pedido promedio de S$8–20 sugerimos un 10 %.</li>
+    </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-next">Después de conectar</h3>
+    <ul>
+      <li>Para usar un lector de tarjetas, siga <a href="c24.html#c24-card">Terminales de tarjeta</a>: <b>Discover Readers</b> (Descubrir Lectores) → <b>Connect</b> (Conectar).</li>
+      <li>Para cobrar, consulte <a href="c7.html#c7">Cobrar</a>.</li>
+    </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-disconnect">No desconecte solo para probar</h3>
+    <p>Al desactivar el interruptor en una tarjeta conectada se abre la confirmación <b>Disconnect Stripe?</b> (¿Desconectar Stripe?). Pulsar <b>Disconnect</b> (Desconectar) allí elimina la cuenta conectada de Stripe y detiene de inmediato los pagos con tarjeta (el efectivo sigue funcionando). Solo el propietario puede hacerlo. Hágalo únicamente cuando el país esté mal y haya que volver a conectar la cuenta, y fuera del horario de atención. Puede volver a conectar en cualquier momento.</p>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c24.html">21. Equipos y red</a></li><li><a href="c11.html">18. Pedidos con código QR</a></li><li><a href="c7.html">8. Cobrar</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c5.html"><small>← Anterior</small>6. Tomar pedidos</a><a class="nx" href="c7.html"><small>Siguiente →</small>8. Cobrar</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

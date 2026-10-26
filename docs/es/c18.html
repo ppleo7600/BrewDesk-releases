@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>24. Recibos e impresoras · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c18.html">English</a><a class="" hreflang="ko" href="../ko/c18.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c18.html">简体中文</a><a class="active" hreflang="es" href="c18.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class="cur"><span class="num">24</span>Recibos e impresoras</a>
+<a class="sub" href="#c18-queue"><span class="num">24.1</span>Números de pedido y de turno</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c18">
+    <h3><span class="n">24</span>Recibos e impresoras</h3>
+    <p class="intro">BrewDesk puede imprimir recibos para los clientes y comandas para la cocina. Agreguemos una impresora paso a paso. Y si alguna vez una impresora se atasca, su pedido sigue a salvo.</p>
+    <figure class="shot"><img src="../img/17-printers.png" alt="Pantalla de ajustes de impresoras" loading="lazy"><figcaption><b>Impresoras</b>① Add Printer  ·  ② tarjeta de una impresora conectada (estado, función, Test)  ·  ③ Setup Guide  ·  ④ Print Log</figcaption></figure><figure class="shot"><img src="../img/38-addprinter.png" alt="Ventana para agregar una impresora" loading="lazy"><figcaption><b>Add Printer — complétela de arriba abajo</b>① Printer Name  ·  ② conexión (USB o Wi-Fi/LAN)  ·  ③ IP Address (para Wi-Fi)  ·  ④ Printer Role (Main Receipt / Kitchen / None)  ·  ⑤ Add Printer</figcaption></figure>
+    <figure class="shot"><img src="../img/111-printers-list.png" alt="Lista de impresoras y registro de impresión" loading="lazy"><figcaption><b>Lista de impresoras y Print Log</b>① Add Printer  ·  ② Test  ·  ③ interruptor In Use  ·  ④ filtro de Print Log (All / Success / Failed)  ·  ⑤ trabajo fallido: Retry · Check Network</figcaption></figure>
+    <ol class="steps">
+      <li>Abra <code>Settings › Printers</code>. Verá <b>Connected Printers</b> (Impresoras conectadas) y los botones <b>Add USB Printer</b> (Agregar impresora USB), <b>Add Wi-Fi Printer</b> (Agregar impresora Wi-Fi) y <b>Add Printer</b> (Agregar impresora).</li>
+      <li>Toque <b>Add Wi-Fi Printer</b> (o <b>Add USB Printer</b> (Agregar impresora USB)). Se abre la ventana de la impresora.</li>
+      <li>Escriba un <b>Printer Name</b> (Nombre de impresora), como "Impresora de cocina", para poder distinguir sus impresoras.</li>
+      <li>Elija un <b>Connection Type</b> (Tipo de conexión): USB o Wi-Fi/LAN.</li>
+      <li><b>Para Wi-Fi:</b> escriba la <b>IP Address</b> (Dirección IP) de la impresora (como 192.168.1.50) y el <b>Port</b> (normalmente 9100), y toque <b>Connect</b> (Conectar). Si solo conoce parte de la IP, toque <b>Search</b> (Buscar) para buscarla.</li>
+      <li><b>Para USB:</b> en <b>Select installed printer</b>, toque <b>Load printers</b> y elija su impresora de la lista. (La app de escritorio de BrewDesk debe estar abierta, y la impresora debe estar instalada en su sistema operativo para aparecer en la lista).</li>
+    </ol>
+    <figure class="shot"><img src="../img/112-addprinter-bottom.png" alt="Agregar impresora, parte inferior" loading="lazy"><figcaption><b>Add Printer — parte inferior</b>① Load printers  ·  ② Printer Role  ·  ③ Print Copies  ·  ④ Paper Width  ·  ⑤ Cash Drawer  ·  ⑥ Add Printer</figcaption></figure>
+    <ol class="steps" start="7">
+      <li>Elija el <b>Printer Role</b> (Rol de impresora): <b>Main Receipt</b> (recibos de clientes), <b>Kitchen</b> (comandas de cocina) o <b>None</b> (sin función).</li>
+      <li>Si es una impresora de cocina, elija un <b>Kitchen Print Mode</b> (Modo de impresión cocina): <b>Whole Order</b> (una comanda por pedido) o <b>Per Item</b> (una comanda por producto). Indique <b>Print Copies</b> (Copias de impresión) si quiere más de una copia.</li>
+      <li>Toque <b>Test Print</b> (Imprimir prueba) para imprimir una página de prueba y luego toque <b>Add Printer</b> (Agregar impresora) para guardarla.</li>
+    </ol>
+    <div class="tip"><b>¿Tienda con precios con impuesto incluido? Ahora la línea del impuesto lo dice.</b> Si sus precios ya incluyen el impuesto, el recibo y la cuenta imprimen la línea del impuesto con <b>"incl."</b> después del rótulo. El importe no cambió y el total tampoco; está ahí para que nadie sume la línea del impuesto a los productos y crea que el total está mal. Siempre estuvo incluido; ahora el papel lo dice.</div>
+    <div class="tip"><b>¿Se corta el texto o los caracteres que no son del inglés salen ilegibles?</b> Abra <b>"Printing looks wrong?"</b> cerca de la parte inferior de la ventana de la impresora y toque <b>Print test receipt</b> (Imprimir recibo de prueba). Se imprime un ejemplo y usted solo responde dos cosas mirándolo: ① <b>"Which block looked clean?"</b> (elija aquel en que las líneas no pasaron a la línea siguiente) y ② cuál de las líneas <b>[A]</b> y <b>[B]</b> puede leer realmente. No hay números que buscar: solo elige lo que se ve bien.</div>
+    <p class="foot">Es bueno saberlo: las impresoras de 80 mm ahora usan de forma predeterminada <b>42 caracteres</b> por línea, lo que sirve para la mayoría; si sus recibos se ven bien, no lo cambie. Si ningún bloque se ve bien, elija <b>Enter number</b> (Ingresar número) y escriba el número de la regla que aparece al final del recibo de prueba (20–96).</p>
+    <div class="tip"><b>"No print confirmation" en una impresora Wi-Fi.</b> Algunas impresoras Wi-Fi no pueden decirle a BrewDesk si realmente salió el papel. Su tarjeta muestra una nota gris: <b>No print confirmation</b> (Sin confirmación de impresión): <i>"This printer can't report whether paper came out. A ticket that fails to print won't be flagged."</i>. Al tocar <b>Test Print</b> (Imprimir prueba), verá <i>"Test page sent. This printer can't confirm printing — check that paper came out."</i>. Así que mire usted la impresora. No es una falla: simplemente su impresora no puede informar.</div>
+    <div class="tip"><b>¿No sabe la dirección IP de su impresora?</b> No hay problema. Toque <b>Search</b> (Buscar) y BrewDesk la busca en su red. Las impresoras Wi-Fi suelen usar el puerto <b>9100</b>; si no está seguro, déjelo como está.</div>
+    <div class="tip"><b>¿Usa un iPad?</b> La impresión funciona dentro de la app, sin ayudante de navegador. Simplemente agregue su impresora <b>Wi-Fi / LAN</b> de la misma manera (toque <b>Search</b> (Buscar) para encontrarla) o use una impresora <b>AirPrint</b>.</div>
+    <div class="tip"><b>¿No tiene impresora de cocina?</b> No pasa nada. Si no tiene una configurada, BrewDesk simplemente omite las comandas de cocina. Nada se rompe.</div>
+    <div class="tip"><b>¿Una impresora para ambas tareas?</b> Si una sola impresora imprime tanto los recibos como las comandas de cocina (modo combinado), igualmente puede activar <b>Per Item</b> (Por artículo) para que cada producto tenga su propia comanda; es útil cuando una sola máquina hace todo.</div>
+    <div class="tip"><b>Impresión diaria.</b> Una vez guardada una impresora, los recibos se imprimen al cobrar y las comandas de cocina al enviar un pedido a la cocina. ¿Necesita otra copia? Abra el pedido y toque <b>Reprint</b> (Reimprimir). Si alguna vez falla una impresión, queda en espera en una lista; solo toque <b>Retry</b> (Reintentar). El pedido nunca se pierde.</div>
+    <div class="brag"><div class="h">Impresora USB: use el controlador instalado (recomendado)</div><p>Esta es la forma fácil. Instale el <b>controlador de su impresora de la forma habitual</b> (en Mac suele ser automático; en Windows se usa el controlador del fabricante), abra la <b>app de escritorio de BrewDesk</b> y luego, en <b>Settings › Printers › "Add USB Printer"</b>, elija <b>Select installed printer</b> › <b>Load printers</b> y selecciónela. Las impresoras Wi-Fi / LAN tampoco necesitan este proceso.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c18-queue">Números de pedido y de turno</h3>
+    <p class="intro">En el servicio de mostrador, cada pedido recibe un número. Es ideal para anunciar "¡ahora atendemos el número A-005!" y que los clientes sepan cuándo está lista su bebida. Así se configura y se muestra en el recibo.</p>
+    <ol class="steps">
+      <li>Abra <code>Settings › Tables</code> y busque las opciones de <b>Counter Mode</b> (Modo mostrador).</li>
+      <li>Active <b>Auto Order Number</b> (Número de pedido automático) para que cada pedido tenga su propio número.</li>
+      <li>Defina un <b>Number Prefix</b> (Prefijo de número) si quiere; por ejemplo, <b>A-001</b>.</li>
+      <li>Active <b>Daily Reset</b> (Reinicio diario) para reiniciar la numeración cada día y empezar de cero cada mañana.</li>
+      <li>El número se imprime en el recibo como número de pedido; por ejemplo, <b>"ORDER: #TX-ORD-1042"</b>.</li>
+    </ol>
+    <div class="tip"><b>¿Para qué sirve el número de pedido?</b> Es la forma fácil de entregar una bebida terminada al cliente correcto: se llama al número en lugar del nombre.</div>
+    <p class="intro">También puede diseñar el aspecto de sus recibos en <code>Settings › Receipts</code>. Hay pestañas para <b>Receipt</b> (Recibo), <b>Kitchen</b> (Cocina), <b>Queue Number</b> (Número de turno) y <b>Waitlist Ticket</b> (Ticket de Espera). Arrastre bloques para mostrar u ocultar cosas como un <b>Queue Number</b> (Número de turno) grande, un mensaje personalizado, una política de reembolsos, un sello de fidelización o un código QR. La vista previa de la derecha muestra exactamente cómo se imprimirá.</p>
+    <div class="tip"><b>¿Quiere el número bien grande?</b> Active el bloque <b>Queue Number</b> (Número de turno) en el diseñador de recibos. La vista previa de la derecha se actualiza a medida que cambia las cosas, así que siempre ve cómo quedará el recibo impreso.</div>
+    <figure class="shot"><img src="../img/16-receipts.png" alt="Pantalla del diseñador de recibos" loading="lazy"><figcaption><b>Diseñador de recibos</b>① pestañas Receipt / Kitchen / Queue Number / Waitlist Ticket  ·  ② interruptor para mostrar / ocultar el bloque Queue Number  ·  ③ el número de pedido en el recibo (#TX-ORD-1042)  ·  ④ Save</figcaption></figure>
+    <figure class="shot"><img src="../img/113-receipt-kitchen.png" alt="Diseño de la comanda de cocina" loading="lazy"><figcaption><b>Diseño de la comanda de cocina</b>① pestaña Kitchen  ·  ② lista de bloques: toque para mostrar u ocultar  ·  ③ vista previa  ·  ④ 58mm / Save</figcaption></figure>
+    <figure class="shot"><img src="../img/114-receipt-waitlist.png" alt="Diseño del comprobante de lista de espera" loading="lazy"><figcaption><b>Diseño del comprobante de lista de espera</b>① pestaña Waitlist Ticket  ·  ② lista de bloques  ·  ③ vista previa  ·  ④ Test Print  ·  ⑤ Reset</figcaption></figure>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c14.html">23. Varios dispositivos y fiabilidad</a></li><li><a href="c27.html">25. Puesta en marcha</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c14.html"><small>← Anterior</small>23. Varios dispositivos y fiabilidad</a><a class="nx" href="c27.html"><small>Siguiente →</small>25. Puesta en marcha</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

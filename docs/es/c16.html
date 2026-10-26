@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>15. Personal y permisos · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c16.html">English</a><a class="" hreflang="ko" href="../ko/c16.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c16.html">简体中文</a><a class="active" hreflang="es" href="c16.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class="cur"><span class="num">15</span>Personal y permisos</a>
+<a class="sub" href="#c16-addon"><span class="num">15.1</span>Complemento Staff activado o desactivado</a>
+<a class="sub" href="#c16-add"><span class="num">15.2</span>Agregar un miembro del personal</a>
+<a class="sub" href="#c16-edit"><span class="num">15.3</span>Editar o quitar a una persona</a>
+<a class="sub" href="#c16-roles"><span class="num">15.4</span>Permisos, PIN de gerente y etiqueta de rol</a>
+<a class="sub" href="#c16-pinreset"><span class="num">15.5</span>¿Olvidó un PIN?</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c16">
+    <h3><span class="n">15</span>Personal y permisos</h3>
+    <p class="intro">Aquí agrega a las personas que trabajan para usted. Puede elegir qué puede hacer cada una y registrar sus horas de trabajo. (Requiere el plan <span class="plan pro">Pro</span> o <span class="plan biz">Business</span>).</p>
+    <div class="activate"><div class="h">Dónde activarlo</div><p>Actívelo en <code>Settings › Add-ons › Staff</code> (un complemento <span class="plan pro">Pro</span>; solo el propietario puede activarlo).</p></div>
+    <figure class="shot"><img src="../img/18-staff.png" alt="Pantalla de ajustes del personal" loading="lazy"><figcaption><b>Personal</b>① Add staff  ·  ② Idle Lock activado/desactivado (antes "PIN Login")  ·  ③ lista del personal</figcaption></figure>
+    <ol class="steps">
+      <li>Vaya a <b>Settings</b> (Configuración) y busque la página del personal.</li>
+      <li>Toque <b>Add staff</b> (Agregar personal). Escriba el nombre de la persona.</li>
+      <li>Asígnele un rol. El rol decide qué puede y qué no puede hacer en la app.</li>
+      <li>Active <b>Idle Lock</b> (Bloqueo por inactividad) si quiere que la caja se bloquee sola cuando nadie la usa. (Antes se llamaba "PIN Login").</li>
+      <li>Active el <b>reloj de asistencia</b> para que el personal pueda tocar para empezar y terminar su turno. Sus horas pasan solas a sus informes.</li>
+      <li>Puede poner el nombre de un miembro del personal en un pedido en cualquier momento, incluso después de terminada la venta. (Es útil para los salones).</li>
+    </ol>
+    <div class="tip"><b>Un rol</b> es el conjunto de cosas que una persona tiene permitido hacer. Por ejemplo, puede que solo un gerente tenga permiso para hacer reembolsos.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-addon">Complemento Staff activado o desactivado</h3>
+    <p class="intro">Las funciones de personal están completamente activas solo cuando se cumplen <b>ambas</b> condiciones: (1) su plan es <span class="plan pro">Pro</span> o <span class="plan biz">Business</span>, y (2) el <b>interruptor Staff</b> en <code>Settings &rsaquo; Add-ons</code> está <b>activado</b>. Si falta cualquiera de las dos, algunas partes quedan bloqueadas como se muestra abajo.</p>
+    <figure class="shot"><img src="../img/50-staff-addon-on.png" alt="Complemento Staff activado" loading="lazy"><figcaption><b>Complemento ACTIVADO</b>① interruptor Staff activado  ·  ② Settings al lado abre los ajustes del personal</figcaption></figure>
+    <figure class="shot"><img src="../img/51-staff-addon-off.png" alt="Complemento Staff desactivado" loading="lazy"><figcaption><b>Complemento DESACTIVADO</b>① interruptor Staff desactivado  ·  ② desaparece el botón Settings de al lado</figcaption></figure>
+    <figure class="shot"><img src="../img/52-staff-locked-starter.png" alt="Funciones de personal bloqueadas en el plan Starter" loading="lazy"><figcaption><b>Plan Starter</b>① ícono de candado  ·  ② "Staff management is Pro-only"  ·  ③ Upgrade Pro</figcaption></figure>
+    <figure class="shot"><img src="../img/53-staff-analytics-on.png" alt="Pestañas de personal en Stats con el complemento activado" loading="lazy"><figcaption><b>Stats, complemento ACTIVADO</b>① Staff Sales  ·  ② las pestañas Attendance Log están abiertas</figcaption></figure>
+    <figure class="shot"><img src="../img/54-staff-analytics-off.png" alt="Pestañas de personal en Stats con el complemento desactivado" loading="lazy"><figcaption><b>Stats, complemento DESACTIVADO</b>① Staff Sales  ·  ② las pestañas Attendance Log están bloqueadas</figcaption></figure>
+    <figure class="shot"><img src="../img/55-staff-lockscreen.png" alt="Pantalla de bloqueo de perfiles del personal" loading="lazy"><figcaption><b>Pantalla de bloqueo</b>① pantalla Select Profile  ·  ② elija un nombre y luego ingrese el PIN</figcaption></figure>
+    <ul>
+      <li><b>ACTIVADO</b>: se abren las pestañas <b>Staff Sales</b> (Ventas por Personal) y <b>Attendance Log</b> (Registro de Asistencia) de Stats (la pantalla Stats empieza en Revenue Overview). Payment History tiene un filtro <b>All Staff</b> (Todo el personal) y la ventana Close Day muestra etiquetas del personal. Con <b>Idle Lock</b> (Bloqueo por inactividad) también activado, la caja muestra una pantalla de bloqueo <b>Select Profile</b> para que cada persona cambie a su propio perfil.</li>
+      <li><b>DESACTIVADO</b>: esas pestañas muestran un candado, y no aparecen el filtro All Staff, las etiquetas del personal en Close Day ni la pantalla de bloqueo. Agregar y ver personas en <code>Settings &rsaquo; Staff Permissions &rsaquo; Staff</code> sigue funcionando en Pro, esté como esté el interruptor.</li>
+      <li><b>Plan Starter</b>: la tarjeta de complementos muestra un botón <b>Upgrade</b> (Actualizar) en lugar de un interruptor. La subpestaña Staff solo muestra un candado, <b>"Staff management is Pro-only"</b> y un botón <b>Upgrade Pro</b> (Actualizar a Pro).</li>
+    </ul>
+    <div class="tip"><b>Relación con la agenda (Scheduler):</b> las columnas de personal de la agenda dependen del <b>plan <span class="plan pro">Pro</span> más tener cuentas de personal</b>, no de este interruptor (consulte <a href="c6.html#c6">Reservas y agenda</a>). Starter no tiene ninguna pestaña de agenda.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-add">Agregar un miembro del personal</h3>
+    <figure class="shot"><img src="../img/41-staffmember.png" alt="Formulario para agregar personal" loading="lazy"><figcaption><b>Agregar un miembro del personal</b>① Name  ·  ② Role (Manager / Cashier)  ·  ③ PIN (4 dígitos) + confirmación  ·  ④ <b>Add staff</b> (Agregar personal)</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-staff-saved.png" alt="Justo después de guardar un miembro del personal" loading="lazy"><figcaption><b>Justo después de guardar</b>① aviso "added as staff"  ·  ② la nueva persona en la lista</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-staff-list.png" alt="Lista del personal" loading="lazy"><figcaption><b>Lista del personal (después de agregar)</b>① Add staff  ·  ② Idle Lock  ·  ③ lista del personal (etiqueta de rol, estado)</figcaption></figure>
+    <ol class="steps">
+      <li>Toque <b>Add staff</b> (Agregar personal). Se abre un formulario.</li>
+      <li>Escriba el <b>Name</b> (Nombre) de la persona.</li>
+      <li>Elija un <b>Role</b> (Rol): <b>Manager</b> (menú, pedidos, informes; sin cambios de facturación ni de personal) o <b>Cashier</b> (tomar pedidos, ver las ventas de hoy).</li>
+      <li>Defina un <b>PIN</b> de 4 dígitos y confírmelo.</li>
+      <li>Toque <b>Add staff</b> (Agregar personal). La persona aparece en su lista del personal y puede iniciar sesión con su PIN.</li>
+    </ol>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-edit">Editar o quitar a una persona</h3>
+    <p class="intro">Corregir un nombre, cambiar un PIN, ocultar a alguien que se fue: antes eran cuatro controles pequeños distintos en la misma fila. Ahora hay una sola puerta: toque a la persona.</p>
+    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="Tarjeta para editar personal" loading="lazy"><figcaption><b>Tarjeta para editar personal (se abre al tocar el nombre)</b>① Name  ·  ② Role  ·  ③ PIN (deje ambos en blanco para conservarlo) · Reset · Revoke  ·  ④ Save</figcaption></figure>
+    <ol class="steps">
+      <li>En su lista del personal, <b>toque el nombre (en cualquier parte de la fila de esa persona)</b>. Se abre la ventana de edición.</li>
+      <li>Su correo aparece arriba para que esté seguro de que es la persona correcta. Corrija el <b>Name</b> (Nombre) si es necesario.</li>
+      <li>Cambie el <b>Role</b> (Rol) si cambió su trabajo. (La fila de un propietario muestra el rol como texto simple: el rol de un propietario no se puede cambiar aquí).</li>
+      <li>Para definir un PIN nuevo, escríbalo en los dos campos <b>PIN (4 digits)</b> (PIN (4 dígitos)). <b>Si deja ambos campos en blanco, el PIN actual se mantiene</b>; la pantalla lo indica justo debajo de los campos.</li>
+      <li>Toque <b>Save</b> (Guardar). Eso es todo.</li>
+    </ol>
+    <div class="tip"><b>Los PIN a medio escribir no pasan.</b> Si escribe aunque sea un dígito, BrewDesk pide los cuatro y que lo escriba dos veces. Un PIN que se ignora en silencio es peor que no tener PIN.</div>
+    <div class="tip"><b>Oculte a alguien en lugar de eliminarlo.</b> <b>Disable</b> (Desactivar) lo quita del POS pero conserva sus pedidos y horas anteriores en sus informes. <b>Enable</b> (Activar) lo vuelve a habilitar. Solo el propietario ve estos botones.</div>
+    <div class="tip"><b>¿Invitó como propietario a la persona equivocada?</b> Ahora también puede quitar a un propietario; antes no había forma de deshacerlo. Dos cosas siguen sin ser posibles, y BrewDesk le dice cuál: no puede quitarse <b>a sí mismo</b> ni quitar al <b>último propietario</b> de la tienda. Quitar a cualquier persona le pide confirmar el nombre y luego el <b>PIN del propietario</b> ("Owner PIN required to remove staff member.").</div>
+    <p class="foot">Quitar a alguien no es lo mismo que traspasar la tienda. Si vende el negocio, consúltenos sobre la transferencia de la titularidad.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-roles">Permisos, PIN de gerente y etiqueta de rol</h3>
+    <p class="intro">Esta página de ajustes muestra, pantalla por pantalla, qué tiene permitido hacer un <b>gerente</b> y un <b>cajero</b>, y ahora realmente puede <b>marcar las casillas y guardar</b>. Toda la página se rehízo: sus dos tarjetas de PIN están una al lado de la otra en la parte superior, con la tabla grande debajo.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p><code>Settings › Staff Permissions</code>. Los gerentes pueden abrirla y leerla; <b>solo el propietario puede cambiarla y guardarla</b>. Hay dos pestañas arriba: <b>Permissions</b> (disponible para todos) y <b>Staff</b> (una función <span class="plan pro">Pro</span>: "Staff management is Pro-only").</p></div>
+    <figure class="shot"><img src="../img/73-perms-table.png" alt="Pantalla de permisos del personal" loading="lazy"><figcaption><b>Staff Permissions</b>① PIN del propietario: Set PIN  ·  ② PIN de gerente: Change PIN  ·  ③ pestañas Permissions / Staff  ·  ④ columnas Manager y Staff: marcas y candados (aprobación con PIN)</figcaption></figure>
+    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="Tabla de permisos, abierta desde el inicio" loading="lazy"><figcaption><b>Tabla de permisos (abierta desde el inicio)</b>① fila de pantalla (columnas Manager y Staff)  ·  ② filas de permisos debajo  ·  ③ marcador de aprobación con PIN</figcaption></figure>
+    <ol class="steps">
+      <li>La tabla tiene exactamente <b>dos columnas: "Manager" y "Staff"</b>. No hay columna para el propietario, porque el propietario siempre tiene todos los permisos.</li>
+      <li>La tabla está abierta desde el inicio: no hay nada que desplegar ni plegar. Los permisos están <b>agrupados por pantalla</b> (<b>Screens</b> · <b>Settings tabs</b> · <b>Available everywhere</b>), con las filas de permisos detallados justo debajo de cada pantalla. Una pantalla sin permisos detallados es una sola fila.</li>
+      <li>Marque o desmarque una casilla para ese rol. La casilla de una fila de pantalla decide <b>si ese rol puede abrir la pantalla</b>; las casillas de abajo deciden las acciones individuales. Una fila que cambió respecto de su valor predeterminado muestra un marcador para restablecerla.</li>
+      <li>Fíjese en las etiquetas de color junto a algunas filas: <b>PIN approval</b> (un gerente tiene que escribir primero un PIN), <b>Limited view</b> (ve una parte), <b>Restricted</b> (bloqueado) y <b>Open the page</b>, que decide si la pantalla aparece o no.</li>
+      <li>Una fila con candado no se puede cambiar, ni siquiera el propietario (elementos solo para el propietario o fijos). La tabla no tiene cuadro de búsqueda ni el interruptor "Differences only", así que revísela de arriba abajo.</li>
+      <li>Toque <b>Save</b> (Guardar) en la parte superior de Settings cuando termine. Las filas sin guardar se cuentan por usted, y <b>Discard changes</b> deja todo como estaba.</li>
+    </ol>
+    <div class="tip"><b>Cada fila que ve en la tabla se aplica realmente.</b> Si desmarca una casilla, ese rol queda realmente bloqueado, con una ventana que lo indica. Actualmente la tabla incluye <b>reembolsos</b>, <b>gestionar descuentos</b>, <b>recalcular un cierre y liquidar propinas</b>, <b>agregar personal y restablecer sus PIN</b> y <b>guardar ajustes</b>, y abrir una pantalla en sí (<b>Open the page</b>) también se aplica; consulte los dos consejos siguientes.</div>
+    <div class="tip"><b>Los gerentes ya no pueden guardar ajustes de forma predeterminada.</b> Esto cambió: <b>"guardar ajustes"</b> ahora empieza <b>desactivado</b> para los gerentes. Un gerente puede seguir abriendo y leyendo una pantalla de ajustes, pero al tocar Save aparece <b>"You don't have permission for this"</b>: <i>"Only the store owner can make this change. You can still view this screen."</i>. Si su gerente guardaba ajustes por usted, marque aquí esa casilla para devolverle el permiso.</div>
+    <div class="tip"><b>Puede darle a un gerente pestañas de ajustes completas.</b> Once pestañas de ajustes se pueden habilitar para un gerente: <b>Hours &amp; Closures</b> (Horario y Cierres), <b>Receipts</b> (Recibos), <b>Printers</b> (Impresoras), <b>Devices</b> (Dispositivos), <b>Staff Permissions</b> (solo lectura), <b>Activity Log</b> (Registro de Actividad), <b>Support</b> (Soporte), <b>Tables</b> (Mesas), <b>Waitlist</b> (Lista de espera), <b>Reservations</b> (Reservas) y <b>Staff</b> (Personal). Catorce quedan <b>solo para el propietario</b> pase lo que pase, porque son el dinero y la identidad de la tienda: Store Info, Tax &amp; Service, Payments, Notifications, Add-ons, Tips, Order Types, Customers, Customer Portal, Scheduler, Display &amp; Branding, Loyalty, Google Drive y Messaging. Esas no tienen casilla para marcar.</div>
+    <div class="tip"><b>Cuando alguien llega a una pantalla que usted desactivó</b>, se le informa con claridad en lugar de la pantalla: <b>"The store owner turned this screen off for your role"</b>: <i>"Access to this screen was switched off for your role under Settings › Staff Permissions. Signing in again won't restore it — ask the store owner to turn it back on."</i>. Esa última frase es importante: es una configuración, no una falla, así que cerrar sesión y volver a entrar no le servirá.</div>
+    <div class="tip"><b>Cada vez que se guarda, recibe un correo.</b> Siempre que se guardan los permisos, el propietario de la tienda recibe un correo con lo que cambió, para que nadie pueda ampliar en silencio su propio acceso. El mismo cambio solo envía un correo una vez al día.</div>
+    <div class="tip"><b>Desactivar Idle Lock no desactiva nada de esto.</b> Desactivar <b>Idle Lock</b> (en <code>Settings › Staff Permissions › Staff</code>) solo evita que la caja se bloquee sola, nada más. El personal sigue iniciando sesión con su propio PIN, la etiqueta de rol sigue cambiando, el registro de actividad sigue guardando quién hizo qué, y todos los permisos de esta página se siguen aplicando. (Desactivar el complemento <b>Staff</b> (Personal) es lo que deja de distinguir a las personas).</div>
+    <p class="sub" style="margin:16px 0 4px"><b>Las tarjetas de PIN, una al lado de la otra en la parte superior de esta página</b></p>
+    <p class="intro">Las tarjetas del <b>PIN del propietario</b> y del <b>PIN de gerente</b> están en esta misma página, una al lado de la otra en la parte superior. Cada una le muestra su estado de un vistazo: <b>Set</b> (Configurado), <b>"Default 0000"</b> o <b>Not set</b> (Sin configurar). Debajo de la tarjeta del propietario: <b>"Locks after 10 min idle"</b> una vez configurado, o <b>"Set it to enable the lock screen"</b> si no lo está. El PIN de gerente permite que quien esté de turno haga tareas de gerente sin necesitar una cuenta aparte; solo el propietario puede definirlo o cambiarlo. Un gerente que abre esta página ve un candado y <b>"Only the owner can change this card."</b></p>
+    <div class="tip"><b>¿Sigue en 0000? Entonces Manager está cerrado.</b> La tarjeta lo indica: etiqueta de estado <b>"Default 0000"</b> y, debajo, <b>"Can't switch to Manager until you change it"</b>. Mientras el PIN de gerente sea el 0000 de fábrica, <b>nadie puede cambiar esta caja a Manager</b>: al escribir 0000 aparece <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b>. Cámbielo una vez y Manager funciona. (Es a propósito: un código que conoce toda la tienda no es un candado).</div>
+    <div class="tip"><b>Conviene saberlo antes de confiar en esto:</b> su registro de actividad dirá <b>Manager</b> (Gerente), no <b>quién</b>. Si necesita saber qué persona hizo algo, dé a cada uno su propia cuenta de personal (<span class="plan pro">Pro</span>).</div>
+    <p class="sub" style="margin:16px 0 4px"><b>La etiqueta de rol: cambiar quién es esta caja ahora mismo</b></p>
+    <figure class="shot"><img src="../img/c16-role-chip.png" alt="Panel de la etiqueta de rol" loading="lazy"><figcaption><b>Panel de la etiqueta de rol</b>① etiqueta de rol (Owner)  ·  ② fila Owner · Manager · Staff  ·  ③ Staff Settings</figcaption></figure>
+    <ol class="steps">
+      <li>Mire la barra superior: hay una etiqueta de color que muestra como qué está actuando este POS: <b>Owner</b> (ámbar), <b>Manager</b> (azul) o <b>Staff</b> (gris).</li>
+      <li>Tóquela. Se abre un pequeño panel con los tres roles.</li>
+      <li><b>Bajar de rol</b> (de propietario a personal, por ejemplo, cuando entrega la caja a alguien) es un solo toque. Sin PIN: está cediendo poder, no tomándolo.</li>
+      <li><b>Subir de rol</b> pide el PIN de ese rol ("Enter the manager PIN"). Las filas a las que este dispositivo no puede acceder aparecen en gris antes de tocarlas, así que nunca llega a un callejón sin salida.</li>
+    </ol>
+    <div class="tip"><b>BrewDesk no le deja bloquearse al bajar de rol.</b> Si no hay un PIN válido con el que volver a subir, bajar de rol se rechaza antes de que ocurra: <b>"Set the owner PIN first. Without it, this device could not switch back up after stepping down."</b>. Configure su PIN de propietario y vuelve a ser un solo toque. (Un PIN que sigue en el 0000 de fábrica no cuenta como forma de volver).</div>
+    <div class="tip"><b>¿Escribió mal el PIN cinco veces?</b> Ese dispositivo pausa el cambio con PIN durante <b>15 minutos</b>: <b>"Too many PIN attempts on this device — it's locked for a few minutes. Other devices and personal PIN sign-in are not affected."</b>. Lea esa última parte: sus otras cajas siguen funcionando, y cualquiera con su propio PIN de personal puede iniciar sesión con normalidad, así que la fila sigue avanzando. El propietario también recibe un correo sobre los intentos fallidos repetidos, como máximo uno al día.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-pinreset">¿Olvidó un PIN?</h3>
+    <p class="intro">Nadie tiene que llamar a soporte porque alguien olvidó un PIN. Cada PIN tiene su propia forma de recuperarse.</p>
+    <p class="sub" style="margin:16px 0 4px"><b>El PIN del propietario: un código a su correo</b></p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>Toque la <b>etiqueta de rol</b> en la barra superior (el mismo panel que usa para cambiar de rol). En la fila del propietario hay <b>"Forgot your PIN?"</b>. Debe haber iniciado sesión como propietario en este dispositivo.</p></div>
+    <ol class="steps">
+      <li>Toque <b>"Forgot your PIN?"</b>. BrewDesk envía un <b>código de 6 dígitos</b> al correo de la cuenta: <b>"We sent a 6-digit code to your account email. Enter it below along with a new PIN."</b></li>
+      <li>Escriba el <b>Email code</b>, luego su <b>New PIN (4 digits)</b> (Nuevo PIN (4 dígitos)), y confírmelo.</li>
+      <li>Toque <b>Set new PIN</b>. Verá <b>"Owner PIN reset. Use the new PIN next time."</b></li>
+    </ol>
+    <div class="tip"><b>El código no dura mucho.</b> Caduca a los <b>10 minutos</b>, y <b>5 intentos fallidos</b> lo bloquean; verá <b>"Too many incorrect attempts. Request a new code."</b>. Simplemente pida uno nuevo. Un PIN demasiado simple también se rechaza: <b>"That PIN is too simple — choose a different 4 digits."</b></div>
+    <div class="tip"><b>Recibe un correo incluso cuando fue usted.</b> Cada restablecimiento del PIN del propietario envía una confirmación al buzón del propietario. Si alguna vez llega una y no fue usted, es su señal de alerta temprana.</div>
+    <p class="sub" style="margin:16px 0 4px"><b>El PIN de gerente: el propietario simplemente define uno nuevo</b></p>
+    <figure class="shot"><img src="../img/c16-manager-pin.png" alt="Ventana para cambiar el PIN de gerente" loading="lazy"><figcaption><b>Cambiar el PIN de gerente (solo abierto)</b>① NEW PIN (4 DIGITS)  ·  ② CONFIRM PIN  ·  ③ Change PIN</figcaption></figure>
+    <ol class="steps">
+      <li>Abra <code>Settings › Staff Permissions</code> y busque la tarjeta del <b>PIN de gerente</b> en la parte superior.</li>
+      <li>Toque <b>Change PIN</b> (o <b>Set PIN</b> (Configurar PIN) si todavía no hay uno) y escriba el nuevo código. Solo el propietario.</li>
+      <li>Comunique el nuevo código al mostrador.</li>
+    </ol>
+    <div class="tip"><b>El botón "Reset to 0000" ya no está en el PIN de gerente.</b> Antes estaba; ya no, y no hay nada que extrañar: restablecer a 0000 solo dejaba a la tienda con un código que todos conocían, y de todos modos 0000 no se puede usar. Simplemente defina el nuevo PIN directamente. El PIN de un miembro del personal es distinto: en <code>Settings › Staff Permissions › Staff</code>, abra a esa persona y <b>"Reset to 0000"</b> sigue ahí para usted; puede usarlo un propietario <b>o</b> un gerente. Pídale que defina su propio PIN inmediatamente después.</div>
+    <div class="tip"><b>0000 no funciona en ningún lado.</b> Al iniciar sesión con el predeterminado aparece <b>"The default PIN (0000) can't be used to sign in. Ask the owner to set a new PIN in Settings, or use ‘Forgot your PIN?’ there."</b>, y ahora cambiar de rol con él también se rechaza: <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b>. Un restablecimiento olvidado no puede convertirse en silencio en una puerta abierta.</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c6.html">16. Reservas y agenda</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c21.html"><small>← Anterior</small>14. Su plan y facturación</a><a class="nx" href="c6.html"><small>Siguiente →</small>16. Reservas y agenda</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

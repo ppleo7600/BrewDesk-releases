@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>18. Pedidos con código QR · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c11.html">English</a><a class="" hreflang="ko" href="../ko/c11.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c11.html">简体中文</a><a class="active" hreflang="es" href="c11.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class=""><span class="num">11</span>Informes y cierre del día</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class="cur"><span class="num">18</span>Pedidos con código QR</a>
+<a class="sub" href="#c11-ops"><span class="num">18.1</span>El día a día</a>
+<a class="sub" href="#c11-guest"><span class="num">18.2</span>Lo que ven los clientes</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c11">
+    <h3><span class="n">18</span>Pedidos con código QR</h3>
+    <p class="intro">Un código QR es ese pequeño cuadrado con un patrón que se escanea con la cámara del teléfono. Con él, los clientes pueden pedir y pagar desde su propio teléfono. No tienen que descargar nada. El pedido por QR es <b>solo para pedir</b>: los clientes ven el menú, agregan productos al carrito y pagan.</p>
+    <div class="activate"><div class="h">Dónde activarlo</div><p>Actívelo en <code>Settings › Add-ons › Online Ordering</code> (es el pedido por QR, un complemento <span class="plan pro">Pro</span>). Active el interruptor.</p></div>
+    <figure class="shot"><img src="../img/58-qr-addon.png" alt="Tarjeta Online Ordering en Add-ons" loading="lazy"><figcaption><b>Add-ons — tarjeta Online Ordering</b>① interruptor Online Ordering (activado)  ·  ② botón Settings de la tarjeta</figcaption></figure>
+    <figure class="shot"><img src="../img/59-qr-tables.png" alt="Pantalla de QR de mesa del portal del cliente" loading="lazy"><figcaption><b>Ajustes de pedidos por QR de mesa</b>① pestaña Table QR Ordering  ·  ② interruptor de QR fijo por mesa  ·  ③ imprimir todos los QR fijos  ·  ④ ver / imprimir el QR de cada mesa</figcaption></figure>
+    <figure class="shot"><img src="../img/60-qr-print.png" alt="Ventana del código QR fijo de mesa" loading="lazy"><figcaption><b>Código QR de mesa (para imprimir)</b>① número de mesa y código QR ("Scan to order")  ·  ② Print</figcaption></figure>
+    <figure class="shot"><img src="../img/61-qr-phone.png" alt="Pantalla del menú en el teléfono del cliente" loading="lazy"><figcaption><b>El teléfono del cliente (después de escanear)</b>① nombre de la tienda y número de mesa  ·  ② pestañas de categorías  ·  ③ tarjeta del menú: tóquela para agregar</figcaption></figure>
+    <ol class="steps">
+      <li>Vaya a la <b>tienda de complementos</b> en Settings y active el <b>pedido por QR</b>. (Requiere el plan <span class="plan pro">Pro</span> o <span class="plan biz">Business</span>).</li>
+      <li>BrewDesk crea un código QR para cada mesa. Toque para imprimirlos.</li>
+      <li>Ponga un código QR en cada mesa.</li>
+      <li>Un cliente apunta la cámara de su teléfono al código. Su menú se abre en el teléfono del cliente, sin descargar ninguna app.</li>
+      <li>El cliente ve el menú, agrega lo que quiere al carrito y paga. El pedido aparece solo en su caja.</li>
+    </ol>
+    <div class="tip"><b>No hace falta ninguna app.</b> El cliente usa la cámara normal de su teléfono. No tiene que instalar nada.</div>
+    <div class="tip"><b>Algo que debe saber:</b> la página de pedidos por QR es <b>solo para pedir y pagar</b>. Reservar una mesa (reservas) y unirse a la fila (lista de espera) <b>no</b> forman parte de la página QR; su personal los gestiona en el POS (consulte <a href="c6.html#c6">Reservas y agenda</a>). Así todo es más sencillo para el cliente.</div>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c11-ops">El día a día</h3>
+    <div class="tip"><b>Los pedidos por QR necesitan su caja principal encendida.</b> Los pedidos por QR (y en línea) entran a través de su caja principal. Si su caja principal está apagada o sin conexión, los nuevos pedidos por QR se pausan un momento y el cliente ve una breve nota de "vuelva a intentarlo en un momento"; el pedido se procesa en cuanto su caja principal vuelve.</div>
+    <div class="tip"><b>¿Crea el QR de una mesa fuera del horario?</b> Si imprime a mano el código QR de una mesa fuera de su horario de atención, BrewDesk le pide confirmar primero, para que nunca salga un código por error. Las asignaciones de mesa automáticas y masivas no se ven afectadas.</div>
+    <div class="tip"><b>No imprima nuevos QR de mesa mientras internet esté caído.</b> Si su caja no puede comunicarse con BrewDesk e intenta emitir un QR, primero lo detiene: <b>"Check the internet connection — can't issue a table QR."</b>. Un cliente que escaneara ese código haría un pedido al vacío: el pedido no llegaría a su caja. Tome usted los pedidos hasta que vuelva la conexión.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c11-guest">Lo que ven los clientes</h3>
+    <div class="tip"><b>Lo que ve el cliente:</b> en su teléfono, un cliente puede abrir <b>My Orders</b> (Mis pedidos) para ver los pedidos de hoy y anteriores, con una cuenta producto por producto. Después de pagar, debe <b>volver a escanear el QR</b> para empezar un pedido nuevo; así se evita agregar por accidente a un pedido ya pagado.</div>
+    <div class="tip"><b>Vista de galería o de lista.</b> Los clientes pueden cambiar el menú del teléfono entre una <b>vista de galería</b> (fotos grandes de la comida) y una lista simple. Los productos sin foto muestran el logotipo de su tienda, así que el menú siempre se ve ordenado. La vista que elija un cliente queda recordada en su teléfono.</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c6.html">16. Reservas y agenda</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c10.html"><small>← Anterior</small>17. Clientes y fidelización</a><a class="nx" href="c12.html"><small>Siguiente →</small>19. Enviar mensajes a sus clientes</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

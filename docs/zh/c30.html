@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7. 设置刷卡支付 · 连接 Stripe · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="搜索手册…" autocomplete="off" aria-label="搜索手册…"><div class="results" id="results" data-none="没有找到结果"></div></div>
+<details class="langmenu"><summary aria-label="语言">简体中文</summary><div class="langlist"><a class="" hreflang="en" href="../en/c30.html">English</a><a class="" hreflang="ko" href="../ko/c30.html">한국어</a><a class="active" hreflang="zh-CN" href="c30.html">简体中文</a><a class="" hreflang="es" href="../es/c30.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">首页</a>
+<div class="part">第1部分 · 开始使用</div>
+<a href="c1.html" class=""><span class="num">1</span>欢迎与概览</a>
+<a href="c2.html" class=""><span class="num">2</span>快速开始</a>
+<a href="c3.html" class=""><span class="num">3</span>设置门店</a>
+<a href="c4.html" class=""><span class="num">4</span>创建菜单</a>
+<div class="part">第2部分 · 日常使用</div>
+<a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
+<a href="c5.html" class=""><span class="num">6</span>点单</a>
+<a href="c30.html" class="cur"><span class="num">7</span>设置刷卡支付 · 连接 Stripe</a>
+<a class="sub" href="#c30-country"><span class="num">7.1</span>先确认您的国家</a>
+<a class="sub" href="#c30-prepare"><span class="num">7.2</span>请准备好以下内容</a>
+<a class="sub" href="#c30-steps"><span class="num">7.3</span>步骤</a>
+<a class="sub" href="#c30-status"><span class="num">7.4</span>查看连接状态</a>
+<a class="sub" href="#c30-fee"><span class="num">7.5</span>各方收取的费用</a>
+<a class="sub" href="#c30-next"><span class="num">7.6</span>连接之后</a>
+<a class="sub" href="#c30-disconnect"><span class="num">7.7</span>不要为了试一试而解除连接</a>
+<a href="c7.html" class=""><span class="num">8</span>收款</a>
+<a href="c8.html" class=""><span class="num">9</span>折扣与促销</a>
+<a href="c9.html" class=""><span class="num">10</span>退款</a>
+<a href="c17.html" class=""><span class="num">11</span>报表与日结</a>
+<a href="c15.html" class=""><span class="num">12</span>离线工作</a>
+<div class="part">第3部分 · 门店管理</div>
+<a href="c20.html" class=""><span class="num">13</span>附加功能与扩展</a>
+<a href="c21.html" class=""><span class="num">14</span>您的套餐与账单</a>
+<a href="c16.html" class=""><span class="num">15</span>员工与权限</a>
+<a href="c6.html" class=""><span class="num">16</span>预订与排程</a>
+<a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
+<a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
+<a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
+<a href="c19.html" class=""><span class="num">20</span>备份</a>
+<div class="part">第4部分 · 安装与设备</div>
+<a href="c24.html" class=""><span class="num">21</span>设备与网络</a>
+<a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
+<a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
+<a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
+<a href="c27.html" class=""><span class="num">25</span>正式营业</a>
+<a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
+<div class="part">第5部分 · 帮助</div>
+<a href="c22.html" class=""><span class="num">27</span>故障排除与支持</a>
+<a href="c28.html" class=""><span class="num">28</span>常见问题</a>
+<a href="c26.html" class=""><span class="num">29</span>术语表</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c30">
+    <h3><span class="n">7</span>设置刷卡支付 · 连接 Stripe</h3>
+    <p class="intro">要接受刷卡支付和在线订单支付，请将一个以您企业名义开设的 Stripe 账户连接到 BrewDesk，只需一次。通常需要约 15 分钟；如果 Stripe 审核资料，则需要 1–2 个工作日。款项直接进入您的 Stripe 账户，从不经过 BrewDesk。</p>
+    <div class="activate"><div class="h">位置</div><p>打开 <code>Settings › Payments</code>，向下滚动到 <b>Stripe Connect</b> 卡片并打开它的开关（连接前显示 <b>Card Payments Locked</b>（银行卡支付已锁定））。这张卡片没有单独的连接按钮；开关就是按钮。您需要以店主（Owner）身份登录。</p></div>
+    <div class="tip"><b>Stripe 账户属于您。</b>即使是经销商帮您设置的门店，也请用您自己的信息和门店的银行账户连接 Stripe。连接后，您拥有自己的 Stripe 后台登录，收款的账户就是 Stripe 账户的所有者。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-country">先确认您的国家</h3>
+    <p class="intro">以 BrewDesk 销售的 13 个国家为准。有些国家还可以使用读卡器（Stripe Terminal）；有些国家只能使用在线和二维码刷卡支付；有些国家都无法使用。</p>
+    <div class="card"><table>
+      <tr><th>分组</th><th>国家</th><th>含义</th></tr>
+      <tr><td class="feat">Stripe 账户 + 读卡器均可用</td><td class="desc">新加坡 · 澳大利亚 · 新西兰 · 日本 · 马来西亚 · 美国 · 加拿大（BrewDesk 不在魁北克销售）</td><td class="desc">按照本章进行连接。</td></tr>
+      <tr><td class="feat">仅 Stripe 账户（无读卡器）</td><td class="desc">泰国 · 阿拉伯联合酋长国</td><td class="desc">只能使用在线订单和二维码刷卡支付。无法使用店内读卡器。</td></tr>
+      <tr><td class="feat">Stripe 预览版（需联系 Stripe 销售）</td><td class="desc">印度尼西亚</td><td class="desc">实际上无法公开注册。请按下方不支持国家的说明处理。</td></tr>
+      <tr><td class="feat">Stripe 不可用</td><td class="desc">越南 · 阿根廷 · 南非</td><td class="desc">南非使用 Paystack 网络而不是 Stripe，BrewDesk 未与其集成。</td></tr>
+    </table></div>
+    <p class="foot">截至 2026-10 · 可能随 Stripe 的情况变化。来源：<a href="https://stripe.com/global" target="_blank" rel="noopener">stripe.com/global</a> · <a href="https://docs.stripe.com/terminal/payments/regional" target="_blank" rel="noopener">docs.stripe.com/terminal/payments/regional</a></p>
+    <div class="tip"><b>对于不支持国家的门店</b>，请使用您自己单独的刷卡终端收款，并在 POS 中用仅记录的 <b>Card</b>（银行卡） 支付方式记账。这种情况下请不要连接 <b>Stripe Connect</b>。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-prepare">请准备好以下内容</h3>
+    <div class="activate"><div class="h">连接前请核对以下内容——国家之后无法更改</div><p>Stripe 账户的<b>国家</b>在您首次连接时根据<b>门店信息中设置的国家</b>确定。连接后请不要更改门店的国家。如果国家有误，就必须解除连接（Disconnect）后重新连接，所以请在连接<b>之前</b>在 <code>Settings › Store Info</code> 中核对 <b>Country</b>（国家）、地址和 <b>Store Name</b>（门店名称）。门店名称会作为显示名称传给 Stripe。</p></div>
+    <p class="intro">Stripe 会验证您的企业及其代表人。准备好这些内容，就可以一次完成。</p>
+    <div class="card"><table>
+      <tr><th>Stripe 要求的内容</th></tr>
+      <tr><td class="desc">☐ <b>企业信息</b>——企业注册号（新加坡 UEN · 美国 EIN · 澳大利亚 ABN · 马来西亚 SSM 号码等）、注册的企业名称和地址、企业类型（个人或公司——与登记记录一致）</td></tr>
+      <tr><td class="desc">☐ <b>行业和门店介绍</b>，以及网站或社交媒体地址（没有的话写门店介绍即可）</td></tr>
+      <tr><td class="desc">☐ <b>银行卡账单上显示的名称</b>——顾客在银行卡账单上看到的门店名称</td></tr>
+      <tr><td class="desc">☐ <b>代表人身份</b>——带照片的证件（+ 自拍）、出生日期、住址。在新加坡使用 <b>Singpass</b> 最快。没有 Singpass 时，请使用 NRIC、FIN（Work Pass）或护照加自拍；如果代表人居住在新加坡境外，只接受护照。</td></tr>
+      <tr><td class="desc">☐ <b>如果是公司</b>，需提供持股 25% 及以上的股东和董事的信息</td></tr>
+      <tr><td class="desc">☐ <b>收款银行账户</b>——以门店（企业）名义开设、在该国银行的账户</td></tr>
+      <tr><td class="desc">☐ <b>您本人的邮箱</b>（每天都会查看的邮箱——收款、争议和资料要求的邮件都会发到这里）以及<b>手边的手机</b>（验证码、两步验证）</td></tr>
+    </table></div>
+    <div class="tip"><b>新加坡：</b>必须由 ACRA BizFile 上登记为 Owner 或 Director 的人亲自输入信息；这样才能在不需要授权书的情况下完成。如果由员工或其他人填写，Stripe 会另外要求授权书，所以由店主本人操作最快。</div>
+    <div class="tip"><b>请勿</b><br>① 用其他公司或其他人的信息或邮箱创建 Stripe 账户——款项和账户所有权都会归对方所有。<br>② 连接后更改门店的国家。<br>③ 只是为了试一试就关闭连接开关并点击 <b>Disconnect</b>（断开连接）——刷卡支付会立即停止。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-steps">步骤</h3>
+    <figure class="shot"><img src="../img/c30-connect-card.png" alt="Settings Payments 中连接前的 Stripe Connect 卡片" loading="lazy"><figcaption><b>Settings › Payments——Stripe Connect 卡片（连接前）</b>状态 <b>Card Payments Locked</b>（银行卡支付已锁定） 和右侧的开关（关闭）。</figcaption></figure>
+    <ol class="steps">
+      <li>在 BrewDesk 中打开 <code>Settings › Payments</code>，打开下方 <b>Stripe Connect</b> 卡片的开关。会打开 Stripe 的注册页面。</li>
+    </ol>
+    <figure class="shot"><img src="../img/c30-stripe-start.png" alt="Stripe 注册首页" loading="lazy"><figcaption><b>Stripe 注册首页</b>① 预先填入您邮箱的 <b>Email address</b>（邮箱地址） · ② <b>Continue</b>（继续）</figcaption></figure>
+    <ol class="steps" start="2">
+      <li>确认 <b>Email address</b>（邮箱地址） 是您本人的邮箱，然后点击 <b>Continue</b>（继续）。如果您已有 Stripe 账户，就登录该账户；没有的话在那里创建。输入通过邮件或手机发送的验证码，如果出现人机验证（选择图片），请完成验证。</li>
+    </ol>
+    
+    <ol class="steps" start="3">
+      <li>输入企业信息——企业类型、注册号、企业名称和地址、行业（餐厅或咖啡馆）、网站（或门店介绍）以及银行卡账单上显示的名称。然后验证代表人身份（带照片的证件；在新加坡点击 <b>Singpass</b>，或上传证件照片和自拍），如果是公司，还需输入股东和董事的信息。</li>
+    </ol>
+    
+    <ol class="steps" start="4">
+      <li>输入收款银行账户。必须是在该国、<b>以门店（企业）名义</b>开设的银行账户。</li>
+    </ol>
+    
+    <ol class="steps" start="5">
+      <li>核对并提交。会自动返回 BrewDesk 的 <code>Settings</code> 页面。</li>
+      <li>如果中途关闭了窗口或 Stripe 结束了会话，您会回到 <b>Settings › Payments</b>。如果卡片仍显示 <b>Card Payments Locked</b>（银行卡支付已锁定），说明尚未完成。<b>再次打开开关</b>，即可在同一个 Stripe 账户上从中断处继续。</li>
+    </ol>
+    <div class="tip"><b>连接成功后</b>，会向门店邮箱发送一次 <b>Stripe connected</b> 通知。连接后，仅记录的 <b>Card (Record Only)</b>（银行卡（仅记录）） 支付方式会以 "Superseded by Stripe" 状态变为停用——Stripe 优先；这不是故障。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-status">查看连接状态</h3>
+    <figure class="shot"><img src="../img/c30-status-enabled.png" alt="Charges Enabled, Onboarding Complete" loading="lazy"><figcaption><b>已连接</b>① 状态 <b>Enabled</b>（已启用），开关已打开 · ② <b>Charges</b>（费用）——Enabled · ③ <b>Onboarding</b>（初始设置）——Complete</figcaption></figure>
+    <ul>
+      <li>当开关打开、<b>Charges</b>（费用） 显示 <b>Enabled</b>（已启用） 且 <b>Onboarding</b>（初始设置） 显示 <b>Complete</b>（已完成） 时，即已完成。可以接受刷卡支付和在线订单刷卡支付。在可以使用读卡器的国家，请继续按照<a href="c24.html#c24-card">刷卡终端</a>连接读卡器。</li>
+      <li>如果开关关闭且卡片显示 <b>Card Payments Locked</b>（银行卡支付已锁定），说明连接尚未完成或资料正在审核中。如果 Stripe 需要更多资料，所需内容会显示在 Stripe 的邮件或您的 Stripe 后台中。请查看收件箱，提交资料后再次打开开关继续。通常需要几分钟；如需审核则需要 1–2 个工作日。</li>
+    </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-fee">各方收取的费用</h3>
+    <ul>
+      <li><b>Stripe 的手续费</b>由 Stripe 直接向您的 Stripe 账户收取。新加坡境内银行卡为 3.4% + S$0.50（境外银行卡费用更高）。</li>
+      <li><b>BrewDesk 的费用</b>：店内支付为 0%，仅在线订单收取 0.4%。</li>
+      <li>如需在菜单价格中覆盖在线订单的成本，请使用<a href="c11.html#c11">二维码点餐</a>中的 <b>Online price increase</b>（线上价格上调）。它会按百分比提高在线菜单价格，店内和桌台二维码价格保持不变。对于 S$8–20 的平均订单，我们建议设为 10%。</li>
+    </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-next">连接之后</h3>
+    <ul>
+      <li>要使用读卡器，请按照<a href="c24.html#c24-card">刷卡终端</a>操作：<b>Discover Readers</b>（发现读卡器） → <b>Connect</b>（连接）。</li>
+      <li>收款方法请参阅<a href="c7.html#c7">收款</a>。</li>
+    </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-disconnect">不要为了试一试而解除连接</h3>
+    <p>在已连接的卡片上关闭开关会打开 <b>Disconnect Stripe?</b>（断开 Stripe 连接？） 确认窗口。在那里点击 <b>Disconnect</b>（断开连接） 会删除 Stripe 关联账户并立即停止刷卡支付（现金仍可使用）。只有店主可以执行此操作。只有在国家设置错误、必须重新连接账户时，才在营业时间以外操作。您可以随时重新连接。</p>
+  </div>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c24.html">21. 设备与网络</a></li><li><a href="c11.html">18. 二维码点单</a></li><li><a href="c7.html">8. 收款</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c5.html"><small>← 上一页</small>6. 点单</a><a class="nx" href="c7.html"><small>下一页 →</small>8. 收款</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>11. Informes y cierre del día · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<body data-base="">
+<nav class="topnav"><div class="navinner">
+<button class="menubtn" id="menubtn" aria-label="Menú">☰</button>
+<a class="navbrand" href="index.html"><img class="logo" src="../assets/logo.svg" alt="">BrewDesk</a>
+<div class="searchbox"><input id="q" type="search" placeholder="Buscar en el manual…" autocomplete="off" aria-label="Buscar en el manual…"><div class="results" id="results" data-none="No hay resultados"></div></div>
+<details class="langmenu"><summary aria-label="Idioma">Español</summary><div class="langlist"><a class="" hreflang="en" href="../en/c17.html">English</a><a class="" hreflang="ko" href="../ko/c17.html">한국어</a><a class="" hreflang="zh-CN" href="../zh/c17.html">简体中文</a><a class="active" hreflang="es" href="c17.html">Español</a></div></details>
+</div></nav>
+<div class="layout"><aside class="side"><a href="index.html" class="">Inicio</a>
+<div class="part">Parte 1 · Primeros pasos</div>
+<a href="c1.html" class=""><span class="num">1</span>Bienvenida y visión general</a>
+<a href="c2.html" class=""><span class="num">2</span>Inicio rápido</a>
+<a href="c3.html" class=""><span class="num">3</span>Configurar su tienda</a>
+<a href="c4.html" class=""><span class="num">4</span>Crear su menú</a>
+<div class="part">Parte 2 · Uso diario</div>
+<a href="c23.html" class=""><span class="num">5</span>Inicio rápido para el personal</a>
+<a href="c5.html" class=""><span class="num">6</span>Tomar pedidos</a>
+<a href="c30.html" class=""><span class="num">7</span>Configurar pagos con tarjeta · Conectar Stripe</a>
+<a href="c7.html" class=""><span class="num">8</span>Cobrar</a>
+<a href="c8.html" class=""><span class="num">9</span>Descuentos y promociones</a>
+<a href="c9.html" class=""><span class="num">10</span>Reembolsos</a>
+<a href="c17.html" class="cur"><span class="num">11</span>Informes y cierre del día</a>
+<a class="sub" href="#c17-export"><span class="num">11.1</span>Exportar sus ventas</a>
+<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>Pedidos tardíos y días no cerrados</a>
+<a class="sub" href="#c17-drawer"><span class="num">11.3</span>Cajón de efectivo</a>
+<a href="c15.html" class=""><span class="num">12</span>Trabajar sin conexión</a>
+<div class="part">Parte 3 · Gestión de la tienda</div>
+<a href="c20.html" class=""><span class="num">13</span>Complementos y extras</a>
+<a href="c21.html" class=""><span class="num">14</span>Su plan y facturación</a>
+<a href="c16.html" class=""><span class="num">15</span>Personal y permisos</a>
+<a href="c6.html" class=""><span class="num">16</span>Reservas y agenda</a>
+<a href="c10.html" class=""><span class="num">17</span>Clientes y fidelización</a>
+<a href="c11.html" class=""><span class="num">18</span>Pedidos con código QR</a>
+<a href="c12.html" class=""><span class="num">19</span>Enviar mensajes a sus clientes</a>
+<a href="c19.html" class=""><span class="num">20</span>Copias de seguridad</a>
+<div class="part">Parte 4 · Instalación y dispositivos</div>
+<a href="c24.html" class=""><span class="num">21</span>Equipos y red</a>
+<a href="c13.html" class=""><span class="num">22</span>Modos de dispositivo y pantalla para clientes</a>
+<a href="c14.html" class=""><span class="num">23</span>Varios dispositivos y fiabilidad</a>
+<a href="c18.html" class=""><span class="num">24</span>Recibos e impresoras</a>
+<a href="c27.html" class=""><span class="num">25</span>Puesta en marcha</a>
+<a href="c25.html" class=""><span class="num">26</span>Lista de verificación de instalación</a>
+<div class="part">Parte 5 · Ayuda</div>
+<a href="c22.html" class=""><span class="num">27</span>Solución de problemas y soporte</a>
+<a href="c28.html" class=""><span class="num">28</span>Preguntas frecuentes</a>
+<a href="c26.html" class=""><span class="num">29</span>Glosario</a></aside>
+<div class="main"><div class="wrap">  <div class="chap" id="c17">
+    <h3><span class="n">11</span>Informes y cierre del día</h3>
+    <p class="intro">Al final del día revisa cómo le fue a la tienda y "cierra" el día. Esto fija las cifras del día para que queden seguras. Así se hace.</p>
+    <figure class="shot"><img src="../img/04-reports.png" alt="Pantalla de estadísticas con datos diarios" loading="lazy"><figcaption><b>Estadísticas y datos diarios</b>① Total Sales y las demás tarjetas de totales  ·  ② pestañas Staff Sales y Attendance Log (bloqueadas en el plan Starter)  ·  ③ gráfico Revenue Trends</figcaption></figure>
+    <figure class="shot"><img src="../img/05-closing.png" alt="Pantalla de informes de cierre" loading="lazy"><figcaption><b>Informes de cierre</b>① Close Now: iniciar el cierre del día  ·  ② interruptor Auto-Close  ·  ③ Accounting Export  ·  ④ ver un informe Z anterior</figcaption></figure><figure class="shot"><img src="../img/33-closeday.png" alt="Ventana de cierre del día (informe Z)" loading="lazy"><figcaption><b>Cerrar el día (informe Z)</b>① tipo de informe (X = provisional, Z = final)  ·  ② total general  ·  ③ resumen de la operación  ·  ④ Closed by: la fila superior son etiquetas de rol y la inferior, etiquetas del personal (las del personal aparecen cuando el complemento Staff está activado)  ·  ⑤ Close Day</figcaption></figure>
+    <figure class="shot"><img src="../img/104-closing-data.png" alt="Informes de cierre por día" loading="lazy"><figcaption><b>Closing Reports — por día</b>① rango de fechas  ·  ② Orders · Grand Total  ·  ③ View (abre el informe Z)  ·  ④ Accounting Export</figcaption></figure>
+    <ol class="steps">
+      <li>Abra <b>Stats</b> (empieza en Revenue Overview) para ver sus ventas, cómo pagaron los clientes, sus productos más vendidos y lo que vendió cada miembro del personal.</li>
+      <li>Lea sus <b>datos diarios con IA</b> (<span class="plan pro">Pro</span> y superiores). Es una nota breve en palabras sencillas sobre su día, con consejos útiles. (Los planes <span class="plan biz">Business</span> también reciben uno por correo cada semana).</li>
+      <li>Cuente el efectivo de su cajón y compruebe que coincida con la cifra que muestra BrewDesk. Agregue el dinero que haya puesto y anote el que haya retirado.</li>
+    </ol>
+    <figure class="shot"><img src="../img/105-zreport.png" alt="Informe Z" loading="lazy"><figcaption><b>Informe Z</b>① Z-Report (Final)  ·  ② Grand Total  ·  ③ Total Transactions  ·  ④ Payment Breakdown  ·  ⑤ Print · Export · Close</figcaption></figure>
+    <ol class="steps" start="4">
+      <li>Cuando el efectivo coincida, vaya a <b>Manage › Closing History</b> (la pantalla se titula Closing Reports), toque <b>Close Now</b> (Cerrar ahora) y luego <b>Close Day</b> (Cerrar día) en la ventana que se abre. Esto guarda un resumen completo del día, llamado informe Z.</li>
+    </ol>
+    <div class="tip"><b>¿Qué es cerrar el día?</b> Simplemente significa terminar la jornada y guardar los totales. Hacerlo cada noche mantiene ordenados sus registros de dinero.</div>
+    <div class="tip"><b>Los pedidos de práctica se marcan, no se ocultan.</b> Todo lo que registró antes de poner la tienda en marcha ahora lleva una etiqueta <b>Sandbox data</b> en su historial de pagos y en su historial de cierres: <b>"Recorded during practice mode, before this store went live."</b>. Su pantalla <b>Stats</b> (Estadísticas) va más allá y los deja fuera de las cifras, así que sus ventas y las ventas del personal son solo operaciones reales. Si sus totales parecen más bajos que antes, este es el motivo: ahora son correctos.</div>
+    <div class="tip"><b>¿Hizo un reembolso parcial hoy?</b> El informe Z muestra una línea <b>Refunds</b> (Reembolsos) en ámbar para los reembolsos parciales. Ese importe ya está incluido en el <b>Grand Total</b> (Gran Total) que aparece debajo; la línea está ahí solo para que las cifras cuadren con claridad para usted o su contador. En el informe de análisis que descarga desde Stats (CSV), "Net Profit" ahora se llama <b>Net Revenue (after tax)</b>, para recordar que es un ingreso, no una ganancia, ya que no se resta el costo de la mercadería. El archivo Excel de Analytics de Backup &amp; Restore puede seguir usando el nombre anterior.</div>
+    <div class="tip"><b>¿Regaló algo hoy?</b> El resumen de cierre ahora muestra una línea aparte bajo Discounts: <b>"FREE ITEMS (3)"</b> con <b>Not deducted from total</b> (No se resta del total) debajo. Gratis no es lo mismo que descontado: un descuento es dinero al que usted decidió renunciar en una venta; un regalo es mercadería que salió sin que entrara nada. Verlos por separado es como se da cuenta cuando "solo uno por cuenta de la casa" se convierte en veinte por semana.</div>
+    <div class="tip"><b>¿Redondea el efectivo a la moneda más cercana?</b> Si activó el <a href="c7.html#c7-cashrounding">redondeo de pagos en efectivo</a>, el desglose de pagos agrega una línea: <b>Cash Rounding</b>, justo debajo de Total Payment Collected, con <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b> debajo. Esa línea explica por qué difieren lo cobrado y el total general, y es la cifra que debe darle a su contador. Si el redondeo está desactivado, o hoy no se redondeó nada, la línea no aparece.</div>
+    <div class="tip"><b>Cancelar un pedido siempre pide un motivo.</b> Ya sea que anule un pedido pendiente al cerrar, los anule todos a la vez o cancele un pedido en el salón, aparece el mismo recuadro: <b>Wrong entry</b>, <b>Customer left</b>, <b>Test order</b> u <b>Other (type a reason)</b>. El botón de confirmar sigue en gris hasta que elija uno. Las cancelaciones sin motivo son precisamente las que después querrá poder explicar.</div>
+    <div class="brag"><div class="h">Para presumir</div><p><b>Sus cifras, explicadas en palabras sencillas.</b> Los datos diarios le dicen qué pasó y qué hacer a continuación, no solo una página llena de números.</p></div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-export">Exportar sus ventas</h3>
+    <p class="intro">Entregue sus cifras a su contador con un toque. Así se hace. (La ventana se titula <b>Backup &amp; Restore</b> (Copia y restauración), la misma que se describe en <a href="c19.html#c19">Copias de seguridad</a>).</p>
+    <figure class="shot"><img src="../img/40-export.png" alt="Ventana de exportación contable" loading="lazy"><figcaption><b>Exportación contable — la ventana se titula "Backup &amp; Restore"</b>① qué incluir  ·  ② formatos listos para QuickBooks / Xero  ·  ③ Save to Drive (después de conectar Google Drive)  ·  ④ Download</figcaption></figure>
+    <ol class="steps">
+      <li>En la página <b>Closing Reports</b> (Manage › Closing History), toque <b>Accounting Export</b> (Exportación contable). Se abre una ventana titulada <b>Backup &amp; Restore</b> (Copia y restauración).</li>
+      <li>Marque qué incluir: <b>Closing Report Summary</b> (Resumen del cierre), <b>Daily Breakdown</b> (Desglose diario), <b>All Transactions</b> (Todas las transacciones), o un formato listo <b>QuickBooks Format</b> (Formato QuickBooks) / <b>Xero Format</b> (Formato Xero).</li>
+      <li>Toque <b>Download</b> (Descargar) para guardar el archivo, o <b>Save to Drive</b> (Guardar en Drive) para enviarlo a su Google Drive. El formato depende de lo que marcó: Closing Report Summary y Daily Breakdown se generan como Excel (.xlsx); All Transactions, QuickBooks Format y Xero Format, como CSV.</li>
+    </ol>
+    <div class="tip"><b>Save to Drive solo funciona una vez conectado Google Drive.</b> Si la parte superior de la ventana dice "Google Drive not connected", toque <b>Connect</b> (Conectar) al lado (consulte <a href="c19.html#c19">Copias de seguridad</a>). <b>Download</b> (Descargar) funciona en cualquier caso.</div>
+    <div class="tip"><b>Contabilidad fácil:</b> esto simplifica sus registros; solo entregue el archivo a su contador.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">Pedidos tardíos y días no cerrados</h3>
+    <p class="intro">Alrededor del cierre a veces ocurren dos cosas: llega un pago <b>después</b> de haber cerrado el día, o simplemente olvidó cerrar un día. BrewDesk resuelve ambas, y nunca modifica su informe Z original.</p>
+    <p class="sub"><b>Llegó un pago después del cierre: cierre adicional</b></p>
+    <ol class="steps">
+      <li>Si cobra un pago de un día que ya está cerrado, BrewDesk primero le advierte: <b>"This business day is already closed."</b>. El pago se procesa igualmente con normalidad.</li>
+      <li>Un poco después aparece un aviso: <b>Additional Closing Needed</b> (Se necesita un cierre adicional). Toque <b>Review &amp; Close</b> (o <b>Not Now</b> (Ahora no) para hacerlo más tarde).</li>
+      <li>Revise los pedidos tardíos de la lista y toque <b>Confirm Additional Closing</b> (Confirmar Cierre Adicional). BrewDesk guarda un informe aparte llamado <b>"Additional Closing #1"</b>; su informe Z original nunca se toca.</li>
+    </ol>
+    <div class="tip"><b>¿Necesita el papel de nuevo?</b> Abra el informe de cierre de ese día: cada cierre adicional aparece como una etiqueta que puede tocar para <b>reimprimirlo</b>. (Los cierres adicionales imprimen solo los totales, sin desglose por método de pago ni por categoría).</div>
+    <p class="sub"><b>Olvidó cerrar un día</b></p>
+    <figure class="shot"><img src="../img/67-unclosed.png" alt="Días comerciales sin cerrar" loading="lazy"><figcaption><b>Unclosed Business Days</b> (Días no cerrados)① aviso de que los nuevos pedidos y pagos están bloqueados  ·  ② los días todavía abiertos  ·  ③ Close One by One  ·  ④ Auto-Close All</figcaption></figure>
+    <ol class="steps">
+      <li>La próxima vez que abra BrewDesk, una ventana <b>Unclosed Business Days</b> (Días no cerrados) muestra los días que no cerró. Los nuevos pedidos y pagos quedan en pausa hasta que se cierren esos días.</li>
+      <li>Lea <b>"What should I do?"</b> en la parte superior. La opción fácil es <b>Auto-Close All</b> (Cerrar todo automáticamente): cierra de una vez todos los días pendientes usando los totales esperados por BrewDesk (se omite el conteo de efectivo).</li>
+      <li>¿Prefiere revisar cada uno? Toque <b>Close One by One</b> (Cerrar uno por uno). Si un día todavía tiene pedidos sin pagar, toque <b>Settle</b> (Liquidar) para cobrarlos o anularlos primero.</li>
+    </ol>
+    <div class="tip"><b>Cobrar una cuenta que ya está abierta sigue funcionando.</b> Solo se pausan las operaciones <b>nuevas</b>. Un pedido que ya está en una mesa se puede seguir cobrando: <b>Pay Now</b> (Pagar ahora) y <b>Split</b> siguen disponibles, así que puede cobrar, cerrar el pedido y luego cerrar el día.</div>
+    <div class="tip"><b>La cifra que muestra es la real.</b> Si se rechaza el cierre porque una cuenta sigue sin pagar, el mensaje le dice cuántos pedidos está esperando realmente la caja, para que sepa qué tiene que cobrar.</div>
+    <div class="tip"><b>¿Por qué bloquear las ventas nuevas?</b> Cerrar los días en orden mantiene honestos sus totales, para que sus informes (y las cifras de su contador) siempre cuadren.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-drawer">Cajón de efectivo</h3>
+    <p class="intro">Puede cuadrar el efectivo de su cajón en cada turno. Ponga el monto inicial por la mañana, anote el dinero que agrega o retira y, al final, cuéntelo y vea si coincide.</p>
+    <div class="activate"><div class="h">Dónde encontrarlo</div><p>El menú <b>Manage</b> (Gestionar) de arriba → <b>Cash Drawer</b> (Cajón de efectivo). Solo el <b>propietario y los gerentes</b> ven esta opción del menú.</p></div>
+    <figure class="shot"><img src="../img/66-manage-menu.png" alt="Menú Manage" loading="lazy"><figcaption><b>Abrir el cajón de efectivo desde el menú Manage</b>① ícono Manage en la barra lateral  ·  ② Cash Drawer</figcaption></figure>
+    <figure class="shot"><img src="../img/65-cash-drawer.png" alt="Ventana de sesión del cajón de efectivo" loading="lazy"><figcaption><b>Iniciar una sesión del cajón de efectivo</b>① pestañas SESSION / HISTORY  ·  ② botones Pay-In / Pay-Out  ·  ③ OPENING FLOAT (monto inicial)  ·  ④ Start Session</figcaption></figure>
+    <ol class="steps">
+      <li>Al abrir, toque <b>Start Session</b> (Iniciar sesión) e ingrese el <b>monto inicial</b> que puso en el cajón.</li>
+      <li>Durante el día, anote el dinero que agrega o retira como <b>Pay In</b> o <b>Pay Out</b>: depósitos bancarios, reparto de propinas, reposición de cambio, etc.</li>
+      <li>Al final, toque <b>"END SESSION"</b> e ingrese lo que realmente contó. Hay dos formas: <b>Enter Total</b> (Ingresar total) para escribir un solo total, o <b>Count Denoms</b> (Contar denominaciones) para ingresar <b>cuántos billetes y monedas hay de cada valor</b> y que lo sume por usted.</li>
+      <li>BrewDesk muestra lado a lado <b>Expected</b> (Esperado), <b>Counted</b> (Contado) y <b>Variance</b> (Variación). Se suman las ventas en efectivo y se resta el dinero devuelto como <b>Cash Refunds</b> (Reembolsos en efectivo).</li>
+      <li>Luego toque <b>Close Day</b> (Cerrar día): las cifras del cajón pasan al informe Z de ese día junto con todo lo demás.</li>
+    </ol>
+    <div class="tip"><b>No contar se registra como "no contado", no como "diferencia cero".</b> Si termina sin ingresar nada, BrewDesk no inventa una diferencia de cero: escribe <b>"Cash wasn't counted."</b>. Así, cuando lo revise más adelante, "cuadró" y "nadie contó" no se verán igual.</div>
+    <div class="tip"><b>¿El cajón no se abre solo?</b> La pantalla le dice por qué: ① todavía no hay una impresora de recibos configurada, ② la opción del cajón de efectivo está desactivada en su impresora de recibos principal (actívela en <code>Settings › Printers</code>), o ③ este dispositivo es una caja secundaria (Sub POS). En cualquier caso, <b>sus cifras se siguen registrando</b>.</div>
+    <div class="tip"><b>Si todavía hay pedidos sin pagar abiertos</b>, BrewDesk pregunta una vez más antes de cerrar el cajón: "N unpaid order(s) still open for today. End the drawer session anyway?". Así evita cerrar el cajón mientras una cuenta sigue pendiente.</div>
+    <div class="tip"><b>Cerrar el cajón antes que el día está bien.</b> Cuéntelo, toque END SESSION y luego Close Day: lo que contó y la diferencia siguen apareciendo en el informe de cierre y en la impresión.</div>
+    <div class="tip"><b>Un cajón abierto ahora mantiene abierto el día.</b> Si una sesión del cajón sigue en curso, el botón <b>Close Day</b> (Cerrar día) aparece en gris y se muestra una línea roja: <b>"N cash drawer session(s) still open — count and end the drawer to close the day."</b>. Cerrar el día significa que el dinero también está cuadrado, así que BrewDesk no le deja dar por cerrado un cajón que nadie contó.</div>
+    <div class="tip"><b>La salida está ahí mismo.</b> Junto a ese mensaje hay un botón <b>Open drawer</b> (Abrir cajón): tóquelo, cuente el efectivo, toque <b>END SESSION</b> (FINALIZAR SESIÓN) y el botón Close Day vuelve a funcionar. Nunca tiene que buscar entre menús para desbloquearse.</div>
+    <div class="tip"><b>¿Alguien se fue sin cerrar el cajón?</b> La pantalla del cajón muestra <b>"N cash drawer(s) were never closed"</b>: <i>"Someone left without ending the drawer. You cannot count it now, so closing it here records it as not counted — no number is invented."</i> Toque <b>Close without counting</b> (Cerrar sin contar) y podrá continuar. El día queda registrado honestamente como <b>"Cash wasn't counted"</b> en lugar de un cero prolijo.</div>
+    <div class="tip"><b>Primero cuente; las cifras vienen después.</b> Hasta que escriba lo que contó, BrewDesk oculta el total esperado (y las líneas de ventas en efectivo y de reembolsos en efectivo que lo componen). En su lugar dice <b>"Shown after you enter what you counted"</b> y, debajo, <i>"Count the drawer first, then the numbers appear. This is so the count stays a count."</i>. Su fondo inicial y sus ingresos y retiros siguen visibles todo el tiempo: los hizo usted, así que no hay nada que ocultar.</div>
+    <div class="tip"><b>Si el dinero no coincide, se requiere una línea.</b> Cuando la diferencia no es cero, BrewDesk pregunta <b>"Why is it different?"</b> y no le deja cerrar el cajón hasta que escriba algo (un espacio en blanco no cuenta). Lo anima con <i>"Write one line before closing. In three days nobody will remember."</i>, y tiene razón. Si la diferencia es cero, no pregunta nada.</div>
+    <div class="tip"><b>A quién pertenece el cajón se elige, no se escribe.</b> El antiguo campo de texto libre para el nombre desapareció. Si usa cuentas de personal, elija a la persona de la lista en <b>Drawer held by</b> (Responsable del cajón). Si no usa cuentas de personal, simplemente dice <b>Owner</b> (Propietario): <i>"Staff accounts are off, so this drawer is under the owner."</i>. El campo <b>Recorded by</b> (Registrado por) de un ingreso o retiro ahora es de solo lectura y sigue a la misma persona, así que "quién sacó ese dinero" solo tiene una respuesta.</div>
+    <div class="tip"><b>¿Sale dinero del cajón para compras?</b> Ahora hay un motivo <b>Business expense</b> (Gasto del negocio) en Pay-Out, junto a Safe Drop, Tip Out, Bank Drop y Other. Dele su propio motivo y a fin de mes podrá sumar realmente adónde fue el efectivo.</div>
+    <div class="tip"><b>¿Escribió mal el fondo inicial?</b> Aparece un botón <b>Fix opening float</b> (Corregir fondo inicial) mientras todavía no haya pasado nada: ninguna venta en efectivo, ningún ingreso, ningún retiro. Después de la primera venta en efectivo desaparece, porque a esas alturas cambiar el monto inicial movería en silencio una diferencia real a otro lugar. A partir de ese momento, escríbalo en el motivo de la diferencia al cerrar. La corrección se agrega como nota (quién, cuándo, la cifra anterior); nunca sobrescribe el original.</div>
+    <div class="tip"><b>Una franja roja que no se puede descartar.</b> Si un cambio del cajón no llega al servidor, verá <b>"This drawer has not been saved"</b>: <i>"The last change did not reach the server. If you refresh now, the float, pay-ins and count are gone. Check the network and make any change again."</i>. A propósito no hay botón para cerrarla. Un mensaje que se puede deslizar es un mensaje que se olvida, y actualizar la página haría perder el cajón del día.</div>
+  </div>
+<div class="endblock"><div class="eb"><h4>Temas relacionados</h4><ul><li><a href="c7.html">8. Cobrar</a></li><li><a href="c19.html">20. Copias de seguridad</a></li></ul></div><div class="eb"><h4>¿Necesita más ayuda?</h4><ul><li><a href="c22.html">27. Solución de problemas y soporte</a></li><li><a href="c28.html">28. Preguntas frecuentes</a></li><li><a href="c26.html">29. Glosario</a></li></ul><p>Puede enviar un ticket de soporte desde la app en Settings › Support.</p></div></div><div class="pager"><a href="c9.html"><small>← Anterior</small>10. Reembolsos</a><a class="nx" href="c15.html"><small>Siguiente →</small>12. Trabajar sin conexión</a></div></div></div></div>
+<script src="../assets/search.js?v=34d2fba9"></script>
+
+</body></html>
