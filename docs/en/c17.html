@@ -23,8 +23,9 @@
 <a href="c9.html" class=""><span class="num">10</span>Refunds</a>
 <a href="c17.html" class="cur"><span class="num">11</span>Reports &amp; closing the day</a>
 <a class="sub" href="#c17-export"><span class="num">11.1</span>Export your sales</a>
-<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>Late orders &amp; automatic closing</a>
-<a class="sub" href="#c17-drawer"><span class="num">11.3</span>Cash drawer</a>
+<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>Late orders &amp; missed days</a>
+<a class="sub" href="#c17-unclosed-help"><span class="num">11.3</span>What to do when a day isn&#x27;t closed</a>
+<a class="sub" href="#c17-drawer"><span class="num">11.4</span>Cash drawer</a>
 <a href="c15.html" class=""><span class="num">12</span>Working offline</a>
 <div class="part">Part 3 · Running your store</div>
 <a href="c20.html" class=""><span class="num">13</span>Add-ons &amp; extras</a>
@@ -59,7 +60,7 @@
     </ol>
     <figure class="shot"><img src="../img/105-zreport.png" alt="Z-Report" loading="lazy"><figcaption><b>Z-Report</b>① Z-Report (Final)  ·  ② Grand Total  ·  ③ Total Transactions  ·  ④ Payment Breakdown  ·  ⑤ Print · Export · Close</figcaption></figure>
     <ol class="steps" start="4">
-      <li>Check that the cash matches. The business day closes automatically at the set early-morning time and saves a full summary of the day, called the Z-Report, so you don't close today by hand (in <b>Manage › Closing History</b>, <b>Close Now</b> is locked for today). Past closing reports can be viewed and reprinted on the same screen. → <a href="#c17-supplementary">Late orders &amp; automatic closing</a></li>
+      <li>When the cash matches, go to <b>Manage › Closing History</b> (the screen is titled Closing Reports), tap <b>Close Now</b>, then tap <b>Close Day</b> in the window that opens. This saves a full summary of the day, called the Z-Report.</li>
     </ol>
     <div class="tip"><b>What is closing the day?</b> It just means you finish up for the day and save the totals. Doing it each night keeps your money records tidy.</div>
     <div class="tip"><b>Practice orders are labelled, not hidden.</b> Anything you rang up before going live now carries a <b>Sandbox data</b> badge in your payment history and your closing history — <b>"Recorded during practice mode, before this store went live."</b> Your <b>Stats</b> screen goes further and leaves them out of the numbers altogether, so your sales figures and staff sales are only real trading. If your totals look lower than they used to, this is why — they're right now.</div>
@@ -80,8 +81,8 @@
     <div class="tip"><b>Save to Drive only works once Google Drive is connected.</b> If the top of the window says "Google Drive not connected", tap <b>Connect</b> next to it (see <a href="c19.html#c19">Backups</a>). <b>Download</b> works either way.</div>
     <div class="tip"><b>Easy bookkeeping:</b> this makes your records simple — just hand the file to your accountant.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">Late orders &amp; automatic closing</h3>
-    <p class="intro">Two things sometimes happen around closing: a payment lands <b>after</b> you've already closed the day, or a day closes on its own overnight. BrewDesk handles both — and never changes your original Z-Report.</p>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">Late orders &amp; missed days</h3>
+    <p class="intro">Two things sometimes happen around closing: a payment lands <b>after</b> you've already closed the day, or you simply forgot to close a day. BrewDesk handles both — and never changes your original Z-Report.</p>
     <p class="sub"><b>A payment came in after closing — Additional Closing</b></p>
     <ol class="steps">
       <li>If you take a payment for a day that's already closed, BrewDesk warns you first: <b>"This business day is already closed."</b> The payment still goes through as normal.</li>
@@ -89,16 +90,29 @@
       <li>Check the late orders listed, then tap <b>Confirm Additional Closing</b>. BrewDesk saves a separate report called <b>"Additional Closing #1"</b> — your original Z-Report is never touched.</li>
     </ol>
     <div class="tip"><b>Need the paper again?</b> Open that day's closing report — each additional closing shows as a badge you can tap to <b>reprint</b>. (Additional closings print totals only, no payment-method or category breakdown.)</div>
-    <p class="sub"><b>Forgot to close? It closes itself — and unpaid tables carry over</b></p>
+    <p class="sub"><b>You forgot to close a day</b></p>
+    <figure class="shot"><img src="../img/67-unclosed.png" alt="Unclosed business days" loading="lazy"><figcaption><b>Unclosed Business Days</b>① Notice that new orders and payments are blocked  ·  ② The days still open  ·  ③ Close One by One  ·  ④ Auto-Close All</figcaption></figure>
     <ol class="steps">
-      <li>BrewDesk <b>closes the business day automatically</b> at the set early-morning time, so a missed close never blocks new orders or payments the next day. For today, <b>Close Now</b> is locked in Closing History and the screen says <b>"Today is still open. It closes automatically."</b> — use <b>View today's sales</b> (the X-Report) to see the day so far.</li>
-      <li>Tables and orders that are still unpaid at closing aren't lost — they <b>carry over to the next business day</b>. The closing report shows a <b>"Unpaid orders moved to the next day"</b> line with the count and amount.</li>
-      <li>The next day, a strip at the top of the table screen says <b>"N unpaid tables from yesterday carried over to today"</b>, and those tables get a <b>Yesterday</b> badge. Tap <b>Go to table</b> or <b>Open order</b> to jump straight in and take payment. Once paid, the order appears in today's report on a <b>"Carried-over orders paid"</b> line along with its original day.</li>
-      <li>If you try to log out while unpaid tables remain, an <b>Unpaid tables</b> window appears. Tap <b>Settle now</b>, or <b>Continue anyway</b> to leave them for the next shift.</li>
-      <li>A guest order from QR or online that has $0 paid, was never sent to the kitchen and isn't a table order is tidied up as <b>Cancelled</b> at auto-close. Open or held orders that staff rang up at the POS are never cancelled — they carry over.</li>
+      <li>The next time you open BrewDesk, an <b>Unclosed Business Days</b> window lists any day you missed. New orders and payments pause until those days are closed.</li>
+      <li>Read <b>"What should I do?"</b> at the top. The easy choice is <b>Auto-Close All</b> — it closes every missed day at once using BrewDesk's expected totals (the cash count is skipped).</li>
+      <li>Prefer to check each one? Tap <b>Close One by One</b>. If a day still has unpaid orders, tap <b>Settle</b> to pay or void them first.</li>
     </ol>
-    <div class="tip"><b>Need to close a past day yourself?</b> Only the <b>owner or a manager</b> can close a past day. If that day still has unpaid orders you'll see "This day still has N unsettled orders. Settle them, then close." — pay or cancel them first. A day that's already closed shows "Already closed at" with the time.</div>
-    <div class="tip"><b>"Auto-close in progress"</b> may flash briefly. If you see <b>"Auto-close delayed — if this continues, please contact support"</b>, let BrewDesk support know. For a short window while the previous day is being finished you may also see "We're finishing up the previous business day. Please try again in a moment." — just retry in a moment.</div>
+    <div class="tip"><b>Paying off a bill that's already open still works.</b> Only <b>new</b> business pauses. An order that's already sitting on a table can still be settled — <b>Pay Now</b> and <b>Split</b> stay available, so you can take the money, clear the order, and then close the day.</div>
+    <div class="tip"><b>The number it shows is the real one.</b> If closing is refused because a bill is still unpaid, the message tells you how many orders the till is actually waiting on, so you know what to go and settle.</div>
+    <div class="tip"><b>Why block new sales?</b> Closing days in order keeps your totals honest, so your reports — and your accountant's numbers — always line up.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-unclosed-help">What to do when a day isn't closed</h3>
+    <p class="intro">What to check when auto-close runs late, or when a past day still has unpaid orders.</p>
+    <table class="tbl">
+      <tr><th>If you see</th><th>Do this</th></tr>
+      <tr><td class="feat"><b>"Auto-close in progress"</b></td><td class="desc">It's closing right now. Wait a moment; yesterday's report appears in Closing History when it's done.</td></tr>
+      <tr><td class="feat"><b>"Auto-close delayed — if this continues, please contact support"</b></td><td class="desc">If it's still there after a few minutes, tell BrewDesk support (Settings › Support). You can keep selling meanwhile.</td></tr>
+      <tr><td class="feat"><b>"We're finishing up the previous business day. Please try again in a moment."</b></td><td class="desc">Only shows for a short time while yesterday finishes. Repeat the same action in a moment.</td></tr>
+      <tr><td class="feat">A strip for yesterday's unpaid tables (<b>Yesterday</b> badge)</td><td class="desc">Closing worked and unpaid orders carried over. Tap <b>Go to table</b> to take payment, or cancel orders you don't need and pick a reason.</td></tr>
+      <tr><td class="feat">Closing a past day: <b>"This day still has N unsettled orders"</b></td><td class="desc">An owner or manager should pay or cancel those orders, then close again. Staff accounts can't close a past day.</td></tr>
+      <tr><td class="feat">Red bar: <b>"N order(s) were not saved — the server refused them"</b></td><td class="desc">Tap <b>Try again</b> first. If the card was already charged, the order is kept on this device — use <b>Discard</b> only if the payment was refunded or re-entered.</td></tr>
+    </table>
+    <div class="tip"><b>Left without closing the drawer?</b> The drawer session ends automatically at closing, but nobody counted it, so no difference is recorded for that day. Next time, count and close the drawer before you leave.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c17-drawer">Cash drawer</h3>
     <p class="intro">You can balance the cash in your drawer for each shift. Put in the starting amount in the morning, note any money you add or take out, then count it at the end and see if it matches.</p>

@@ -23,8 +23,9 @@
 <a href="c9.html" class=""><span class="num">10</span>退款</a>
 <a href="c17.html" class="cur"><span class="num">11</span>报表与日结</a>
 <a class="sub" href="#c17-export"><span class="num">11.1</span>导出销售数据</a>
-<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>迟到订单与自动日结</a>
-<a class="sub" href="#c17-drawer"><span class="num">11.3</span>钱箱</a>
+<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>迟到订单与漏结日期</a>
+<a class="sub" href="#c17-unclosed-help"><span class="num">11.3</span>日期未结时怎么办</a>
+<a class="sub" href="#c17-drawer"><span class="num">11.4</span>钱箱</a>
 <a href="c15.html" class=""><span class="num">12</span>离线工作</a>
 <div class="part">第3部分 · 门店管理</div>
 <a href="c20.html" class=""><span class="num">13</span>附加功能与扩展</a>
@@ -59,7 +60,7 @@
     </ol>
     <figure class="shot"><img src="../img/105-zreport.png" alt="Z-Report" loading="lazy"><figcaption><b>Z-Report</b>（Z报表）① Z-Report (Final)（最终）  ·  ② Grand Total  ·  ③ Total Transactions（交易总数）  ·  ④ Payment Breakdown（支付明细）  ·  ⑤ Print（打印）· Export（导出）· Close（关闭）</figcaption></figure>
     <ol class="steps" start="4">
-      <li>请核对现金是否一致。营业日会在设定的凌晨时间自动日结，并保存一份完整的当日汇总（称为 Z报表），因此无需手动为当天日结（在 <b>Manage › Closing History</b> 中，当天的 <b>Close Now</b> 会被锁定）。过去的日结报表可在同一界面查看和重新打印。→ <a href="#c17-supplementary">迟到订单与自动日结</a></li>
+      <li>现金核对无误后，进入 <b>Manage › Closing History</b>（该界面标题为 Closing Reports），点击 <b>Close Now</b>，然后在打开的窗口中点击 <b>Close Day</b>（日结）。这样会保存一份完整的当日汇总，称为 Z报表。</li>
     </ol>
     <div class="tip"><b>什么是日结？</b>就是结束当天的工作并保存当天的合计数据。每晚坚持日结，可以让您的资金记录井井有条。</div>
     <div class="tip"><b>练习订单会被标注，而不是隐藏。</b>正式营业之前录入的任何订单，现在在支付记录和日结记录中都带有 <b>Sandbox data</b> 标记：<b>"Recorded during practice mode, before this store went live."</b>（在练习模式下录入，早于本店正式营业。）<b>Stats</b> 界面更进一步，直接把它们排除在统计数字之外，因此您的销售额和员工销售只反映真实营业。如果您发现合计比以前低，原因就在于此，现在的数字才是正确的。</div>
@@ -80,8 +81,8 @@
     <div class="tip"><b>只有连接了 Google Drive，Save to Drive 才可用。</b>如果窗口顶部显示 “Google Drive not connected”，请点击旁边的 <b>Connect</b>（连接）（见<a href="c19.html#c19">备份</a>）。无论是否连接，<b>Download</b> 都可以使用。</div>
     <div class="tip"><b>轻松记账：</b>这让您的记录变得简单，只需把文件交给会计即可。</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">迟到订单与自动日结</h3>
-    <p class="intro">日结前后有时会出现两种情况：某笔付款在您已经日结<b>之后</b>才到账，或者某一天在夜间被自动日结。BrewDesk 对这两种情况都能处理，并且绝不会更改您原来的 Z报表。</p>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">迟到订单与漏结日期</h3>
+    <p class="intro">日结前后有时会出现两种情况：某笔付款在您已经日结<b>之后</b>才到账，或者您干脆忘记了某一天的日结。BrewDesk 对这两种情况都能处理，并且绝不会更改您原来的 Z报表。</p>
     <p class="sub"><b>日结之后才收到付款：补充结算（Additional Closing）</b></p>
     <ol class="steps">
       <li>如果您收取了一个已经日结的日期的付款，BrewDesk 会先提醒您：<b>"This business day is already closed."</b>（该营业日已结算。）付款仍会照常完成。</li>
@@ -89,16 +90,29 @@
       <li>检查列出的迟到订单，然后点击 <b>Confirm Additional Closing</b>（确认补充结算）。BrewDesk 会保存一份单独的报表，名为 <b>"Additional Closing #1"</b>，您原来的 Z报表绝不会被改动。</li>
     </ol>
     <div class="tip"><b>需要重新打印？</b>打开那一天的日结报表，每次补充结算都会显示为一个标记，点击即可<b>重新打印</b>。（补充结算只打印合计，不含支付方式或分类明细。）</div>
-    <p class="sub"><b>忘记日结也没关系：自动日结与顺延</b></p>
+    <p class="sub"><b>您忘记了某一天的日结</b></p>
+    <figure class="shot"><img src="../img/67-unclosed.png" alt="未结算营业日" loading="lazy"><figcaption><b>Unclosed Business Days</b>（未结清营业日）① 提示新订单和付款已被阻止  ·  ② 仍未结清的日期  ·  ③ Close One by One（逐个结清）  ·  ④ Auto-Close All（全部自动结清）</figcaption></figure>
     <ol class="steps">
-      <li>BrewDesk 会在设定的凌晨时间<b>自动为营业日日结</b>，因此即使漏结，也不会在第二天阻止新订单和付款。当天的日期在“日结记录”中 <b>Close Now</b> 会被锁定，并显示 <b>"Today is still open. It closes automatically."</b>（今天仍在营业，将自动日结。）——想查看当天截至目前的销售，请点击 <b>View today's sales</b>（即 X报表）。</li>
-      <li>日结时仍未付款的餐桌和订单不会丢失，而是<b>顺延到下一个营业日</b>。日结报表中会出现 <b>"Unpaid orders moved to the next day"</b>（顺延到次日的未付款订单）一行，显示数量和金额。</li>
-      <li>次日，餐桌画面顶部会出现提示条 <b>"N unpaid tables from yesterday carried over to today"</b>（昨天有 N 张未付款餐桌顺延到今天），这些餐桌带有 <b>Yesterday</b> 标记。点击 <b>Go to table</b>（前往餐桌）或 <b>Open order</b>（打开订单）即可直接收款。付款后，该订单会连同原营业日一起出现在今天报表的 <b>"Carried-over orders paid"</b>（已结清的顺延订单）一行。</li>
-      <li>如果还有未付款餐桌就想退出登录，会弹出 <b>Unpaid tables</b>（未付款餐桌）窗口。请点击 <b>Settle now</b>（立即结算），或点击 <b>Continue anyway</b>（仍然继续）留给下一班。</li>
-      <li>顾客通过二维码或线上下单、已付金额为 0、尚未送到厨房且不是桌台订单的，会在自动日结时被整理为 <b>Cancelled</b>（已取消）。员工在收银台下的未结或挂起订单不会被取消，而是顺延。</li>
+      <li>下次打开 BrewDesk 时，会出现 <b>Unclosed Business Days</b> 窗口，列出您漏掉的所有日期。在这些日期结清之前，新订单和付款会暂停。</li>
+      <li>阅读顶部的 <b>"What should I do?"</b>（我该怎么做？）。最简单的选择是 <b>Auto-Close All</b>，它会按 BrewDesk 预期的合计一次性结清所有漏掉的日期（跳过现金清点）。</li>
+      <li>想逐天核对？点击 <b>Close One by One</b>。如果某天仍有未付订单，请先点击 <b>Settle</b>（结算）支付或作废它们。</li>
     </ol>
-    <div class="tip"><b>需要自己为过去的日期日结？</b>只有<b>店主或经理</b>可以为过去的日期日结。如果那天仍有未付款订单，会提示 "This day still has N unsettled orders. Settle them, then close."（该日仍有 N 个未结订单，请结清后再日结）——请先付款或取消。已日结的日期会显示 "Already closed at" 及时间。</div>
-    <div class="tip"><b>"Auto-close in progress"</b>（自动日结进行中）可能短暂出现。如果看到 <b>"Auto-close delayed — if this continues, please contact support"</b>（自动日结延迟，若持续请联系支持），请告知 BrewDesk 支持。前一营业日收尾期间，也可能短暂提示 "We're finishing up the previous business day. Please try again in a moment."，稍后重试即可。</div>
+    <div class="tip"><b>结清已开的账单仍然可以。</b>暂停的只是<b>新的</b>业务。已经在餐桌上的订单仍可结算，<b>Pay Now</b> 和 <b>Split</b> 仍然可用，因此您可以先收款、清掉订单，再进行日结。</div>
+    <div class="tip"><b>显示的数字就是真实数字。</b>如果因为还有账单未付而无法日结，提示会告诉您收银机实际在等待多少个订单，让您知道该去结清什么。</div>
+    <div class="tip"><b>为什么要阻止新的销售？</b>按顺序日结能保证您的合计数据真实可靠，让您的报表以及会计的数字始终对得上。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-unclosed-help">日期未结时怎么办</h3>
+    <p class="intro">自动日结延迟，或过去的日期仍有未付款订单时，请按下表检查。</p>
+    <table class="tbl">
+      <tr><th>如果看到</th><th>请这样做</th></tr>
+      <tr><td class="feat"><b>"Auto-close in progress"</b>（自动日结进行中）</td><td class="desc">正在日结，请稍等。完成后昨天的报表会出现在日结记录中。</td></tr>
+      <tr><td class="feat"><b>"Auto-close delayed — if this continues, please contact support"</b></td><td class="desc">几分钟后仍显示，请告知 BrewDesk 支持（Settings › Support）。期间仍可继续销售。</td></tr>
+      <tr><td class="feat"><b>"We're finishing up the previous business day. Please try again in a moment."</b></td><td class="desc">仅在前一天收尾的短时间内出现，稍后重复同一操作即可。</td></tr>
+      <tr><td class="feat">昨天未付款餐桌的提示条（<b>Yesterday</b> 标记）</td><td class="desc">说明日结已正常完成，未付款订单已顺延。点击 <b>Go to table</b> 收款，或选择原因取消不需要的订单。</td></tr>
+      <tr><td class="feat">为过去的日期日结时提示 <b>"This day still has N unsettled orders"</b></td><td class="desc">请由店主或经理先付款或取消这些订单，再重新日结。员工账号不能为过去的日期日结。</td></tr>
+      <tr><td class="feat">红色提示条 <b>"N order(s) were not saved — the server refused them"</b></td><td class="desc">请先点击 <b>Try again</b>。如果银行卡已扣款，订单会保留在本设备上；仅在付款已退款或已重新录入时才使用 <b>Discard</b>。</td></tr>
+    </table>
+    <div class="tip"><b>没结束钱箱就下班了？</b>日结时钱箱会话会自动结束，但没人清点，所以当天不会记录差额。下次请在下班前清点并结束钱箱。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c17-drawer">钱箱</h3>
     <p class="intro">您可以按班次核对钱箱里的现金：早上录入起始金额，记下您放入或取出的款项，下班时清点，看是否对得上。</p>

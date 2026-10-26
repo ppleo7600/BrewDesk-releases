@@ -23,8 +23,9 @@
 <a href="c9.html" class=""><span class="num">10</span>환불</a>
 <a href="c17.html" class="cur"><span class="num">11</span>리포트 &amp; 하루 마감</a>
 <a class="sub" href="#c17-export"><span class="num">11.1</span>매출 내보내기</a>
-<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>늦은 주문 &amp; 자동 마감</a>
-<a class="sub" href="#c17-drawer"><span class="num">11.3</span>돈통 (Cash Drawer)</a>
+<a class="sub" href="#c17-supplementary"><span class="num">11.2</span>늦은 주문 &amp; 놓친 마감</a>
+<a class="sub" href="#c17-unclosed-help"><span class="num">11.3</span>마감이 안 됐을 때 대처</a>
+<a class="sub" href="#c17-drawer"><span class="num">11.4</span>돈통 (Cash Drawer)</a>
 <a href="c15.html" class=""><span class="num">12</span>오프라인으로 쓰기</a>
 <div class="part">3부 · 매장 관리</div>
 <a href="c20.html" class=""><span class="num">13</span>애드온 &amp; 추가 기능</a>
@@ -59,7 +60,7 @@
     </ol>
     <figure class="shot"><img src="../img/105-zreport.png" alt="Z-Report(마감 리포트)" loading="lazy"><figcaption><b>Z-Report(마감 리포트)</b>① Z-Report (Final)  ·  ② Grand Total  ·  ③ Total Transactions  ·  ④ Payment Breakdown(결제 수단별)  ·  ⑤ Print · Export · Close</figcaption></figure>
     <ol class="steps" start="4">
-      <li>현금이 맞는지 확인합니다. 영업일은 정해진 새벽 시각에 자동으로 마감되어 그날의 전체 요약인 Z-Report가 저장되므로, 오늘 날짜를 직접 마감할 필요가 없습니다(<b>관리 › 마감 이력(Closing History)</b>에서 오늘은 <b>Close Now</b>가 잠깁니다). 지난 날의 마감 리포트는 같은 화면에서 열람·재인쇄할 수 있습니다. → <a href="#c17-supplementary">늦은 주문 &amp; 자동 마감</a></li>
+      <li>현금이 맞으면 <b>관리 › 마감 이력(Closing History)</b>(화면 제목은 Closing Reports)에서 <b>Close Now</b>를 탭하고, 열린 창에서 <b>Close Day</b>를 탭합니다. 그날의 전체 요약인 Z-Report가 저장됩니다.</li>
     </ol>
     <div class="tip"><b>하루 마감이란 무엇인가요?</b> 그날의 영업을 마무리하고 합계를 저장하는 것을 뜻합니다. 매일 밤 마감하면 금전 기록을 깔끔하게 유지할 수 있습니다.</div>
     <div class="tip"><b>연습 때 입력한 주문은 숨기지 않고 표시합니다.</b> 라이브 전환 전에 입력한 기록에는 <b>결제 내역</b>과 <b>마감 내역</b>에서 <b>Sandbox data</b>(샌드박스 자료) 배지가 붙습니다 — <b>"이 매장이 라이브 전환되기 전, 연습 모드에서 기록된 자료입니다."</b> <b>통계(Stats)</b> 화면은 한 걸음 더 나아가 <b>숫자 자체에서 아예 제외합니다</b>. 매출·건수·직원별 판매 모두 실제 영업분만 집계됩니다. 이전보다 합계가 낮아 보인다면 그 때문이며, 현재 표시되는 숫자가 정확한 숫자입니다.</div>
@@ -80,8 +81,8 @@
     <div class="tip"><b>Save to Drive는 Google Drive를 먼저 연결해야 눌립니다.</b> 창 맨 위에 "Google Drive not connected"가 표시되면 옆의 <b>Connect</b>로 연결해 주세요(<a href="c19.html#c19">백업</a>). 연결하지 않아도 <b>Download</b>는 사용할 수 있습니다.</div>
     <div class="tip"><b>간편한 회계:</b> 기록 관리가 간단해집니다 — 파일을 회계사에게 전달해 주세요.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">늦은 주문 &amp; 자동 마감</h3>
-    <p class="intro">마감 시점에 다음과 같은 일이 가끔 발생합니다. 이미 마감한 뒤에 결제가 <b>나중에</b> 들어오거나, 하루 마감이 자동으로 이루어지는 경우입니다. BrewDesk는 두 경우를 모두 처리하며, 원본 Z-Report는 절대 변경하지 않습니다.</p>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-supplementary">늦은 주문 &amp; 놓친 마감</h3>
+    <p class="intro">마감 시점에 다음과 같은 일이 가끔 발생합니다. 이미 마감한 뒤에 결제가 <b>나중에</b> 들어오거나, 하루 마감을 깜빡하는 경우입니다. BrewDesk는 두 경우를 모두 처리하며, 원본 Z-Report는 절대 변경하지 않습니다.</p>
     <p class="sub"><b>마감 후에 결제가 들어왔을 때 — 추가 마감(Additional Closing)</b></p>
     <ol class="steps">
       <li>이미 마감된 영업일에 결제를 받으면 BrewDesk가 먼저 안내합니다: <b>"이 영업일은 이미 마감되었습니다(This business day is already closed)."</b> 결제는 정상적으로 진행됩니다.</li>
@@ -89,16 +90,29 @@
       <li>나열된 늦은 주문을 확인하고 <b>"추가 마감 확정(Confirm Additional Closing)"</b>을 탭해 주세요. BrewDesk가 <b>"추가마감 #1(Additional Closing #1)"</b>이라는 별도 리포트로 저장하며, 원본 Z-Report는 그대로 유지됩니다.</li>
     </ol>
     <div class="tip"><b>영수증이 다시 필요하신가요?</b> 해당 날짜의 마감 리포트를 열면 추가 마감마다 배지가 표시되며, 탭하면 <b>다시 인쇄</b>됩니다. (추가 마감은 합계만 인쇄되며 결제 수단·카테고리 내역은 포함되지 않습니다.)</div>
-    <p class="sub"><b>하루 마감을 깜빡해도 됩니다 — 자동 마감과 이월</b></p>
+    <p class="sub"><b>하루 마감을 깜빡했을 때</b></p>
+    <figure class="shot"><img src="../img/67-unclosed.png" alt="마감하지 않은 영업일 창" loading="lazy"><figcaption><b>마감하지 않은 영업일 (Unclosed Business Days)</b>① 새 주문·결제가 막힌다는 안내  ·  ② 마감되지 않은 날짜 목록  ·  ③ Close One by One — 하나씩 마감  ·  ④ Auto-Close All — 한 번에 마감</figcaption></figure>
     <ol class="steps">
-      <li>영업일은 정해진 새벽 시각에 BrewDesk가 <b>자동으로 마감</b>합니다. 직접 마감하지 않아도 다음 날 새 주문·결제가 막히지 않습니다. 마감 이력에서 오늘 날짜는 <b>Close Now</b>가 잠기고 <b>"오늘은 아직 진행 중입니다. 자동으로 마감됩니다(Today is still open. It closes automatically.)"</b>가 표시되며, 지금까지의 매출은 <b>View today's sales</b>(X-리포트)로 확인합니다.</li>
-      <li>마감 시점에 결제가 끝나지 않은 테이블·주문은 사라지지 않고 <b>다음 영업일로 이월</b>됩니다. 마감 리포트에는 <b>"Unpaid orders moved to the next day"</b>(다음 날로 넘어간 미결제 주문) 줄로 건수와 금액이 남습니다.</li>
-      <li>이튿날 테이블 화면 맨 위에 <b>"어제 미결제 테이블 N개가 오늘로 이월되었습니다"</b> 띠가 나타나고, 해당 테이블에는 <b>Yesterday</b> 배지가 붙습니다. <b>Go to table</b>(테이블로 이동) 또는 <b>Open order</b>(주문 열기)로 바로 가서 결제해 주세요. 이월된 주문을 결제하면 오늘 마감 리포트에 <b>"Carried-over orders paid"</b>(이월 주문 결제) 줄로 원래 영업일과 함께 기록됩니다.</li>
-      <li>미결제 테이블이 남은 채 로그아웃하려 하면 <b>미결제 테이블(Unpaid tables)</b> 창이 뜹니다. <b>Settle now</b>(지금 정산)를 탭하거나, 다음 근무조에게 남기려면 <b>Continue anyway</b>(그대로 계속)를 탭해 주세요.</li>
-      <li>손님이 QR·온라인으로 넣었지만 결제가 0원이고 주방에도 전달되지 않은 테이블 아닌 주문은, 자동 마감 때 <b>취소됨(Cancelled)</b>으로 정리됩니다. 직원이 포스에서 넣은 열린 주문·보류 주문은 취소되지 않고 이월됩니다.</li>
+      <li>다음에 BrewDesk를 열면 <b>"마감하지 않은 영업일(Unclosed Business Days)"</b> 창에 놓친 날짜가 표시됩니다. 해당 날짜를 마감할 때까지 새 주문·결제가 일시적으로 중단됩니다.</li>
+      <li>맨 위 <b>"무엇을 해야 하나요?(What should I do?)"</b>를 읽어 주세요. 가장 쉬운 선택은 <b>"전체 자동 마감(Auto-Close All)"</b>입니다 — 놓친 날을 BrewDesk의 예상 합계로 한 번에 마감합니다(현금 세기는 생략됩니다).</li>
+      <li>하나씩 확인하려면 <b>"하나씩 마감(Close One by One)"</b>을 탭해 주세요. 미결제 주문이 남은 날은 먼저 <b>"정산(Settle)"</b>으로 결제하거나 취소해 주세요.</li>
     </ol>
-    <div class="tip"><b>지난 날을 직접 마감해야 한다면?</b> 지난 날의 마감은 <b>사장님과 매니저만</b> 할 수 있습니다. 그 날에 미결제 주문이 남아 있으면 "이 날에 미정산 주문이 N건 있습니다. 정산한 뒤 마감해 주세요"라는 안내가 나오므로, 먼저 결제하거나 취소해 주세요. 이미 마감된 날은 "Already closed at 시각"으로 표시됩니다.</div>
-    <div class="tip"><b>"자동 마감 진행 중(Auto-close in progress)"</b>이 잠시 보일 수 있습니다. <b>"자동 마감이 지연되고 있습니다 — 계속되면 지원팀에 문의해 주세요"</b>가 나오면 BrewDesk 지원팀에 알려 주세요. 마감이 끝나기 전 짧은 시간(몇 시간 이내)에는 "이전 영업일을 마무리하는 중입니다. 잠시 후 다시 시도해 주세요" 안내가 나올 수 있으며, 잠시 뒤 다시 시도하면 됩니다.</div>
+    <div class="tip"><b>이미 열려 있는 계산서는 그대로 결제할 수 있습니다.</b> 중단되는 것은 <b>새</b> 판매뿐입니다. 테이블에 이미 올라가 있는 주문은 <b>Pay Now</b>(지금 결제)와 <b>Split</b>(나눠 결제)를 그대로 사용할 수 있으므로, 결제를 받아 해당 주문을 정리한 다음 마감하면 됩니다.</div>
+    <div class="tip"><b>화면에 표시되는 숫자가 실제 숫자입니다.</b> 미결제 주문 때문에 마감이 막히면 포스가 실제로 대기 중인 주문이 몇 건인지 알려 주며, 이를 보고 어떤 주문을 정리해야 하는지 알 수 있습니다.</div>
+    <div class="tip"><b>새 판매를 막는 이유는 무엇인가요?</b> 날짜 순서대로 마감해야 합계가 정확하게 맞으며, 그래야 리포트와 회계사의 숫자가 항상 일치합니다.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c17-unclosed-help">마감이 안 됐을 때 대처</h3>
+    <p class="intro">자동 마감이 늦어지거나 지난 날에 미결제 주문이 남아 있을 때의 확인 순서입니다.</p>
+    <table class="tbl">
+      <tr><th>이런 화면이 보이면</th><th>이렇게 하세요</th></tr>
+      <tr><td class="feat"><b>"자동 마감 진행 중(Auto-close in progress)"</b></td><td class="desc">마감 중입니다. 잠시 기다려 주세요. 마감이 끝나면 어제 리포트가 마감 이력에 나타납니다.</td></tr>
+      <tr><td class="feat"><b>"자동 마감이 지연되고 있습니다 — 계속되면 지원팀에 문의해 주세요"</b></td><td class="desc">몇 분 뒤에도 같으면 BrewDesk 지원팀(설정 › Support)에 알려 주세요. 매장 판매는 계속할 수 있습니다.</td></tr>
+      <tr><td class="feat"><b>"이전 영업일을 마무리하는 중입니다. 잠시 후 다시 시도해 주세요"</b></td><td class="desc">전날 마감이 끝나는 짧은 시간에만 나옵니다. 잠시 뒤 같은 동작을 다시 하면 됩니다.</td></tr>
+      <tr><td class="feat">어제 미결제 테이블 띠(<b>Yesterday</b> 배지)</td><td class="desc">마감이 정상으로 끝났고 미결제 주문이 이월된 것입니다. <b>Go to table</b>로 가서 결제하거나, 필요 없는 주문은 사유를 골라 취소해 주세요.</td></tr>
+      <tr><td class="feat">지난 날 마감 시 <b>"이 날에 미정산 주문이 N건 있습니다"</b></td><td class="desc">사장님이나 매니저가 해당 주문을 결제하거나 취소한 뒤 다시 마감해 주세요. 직원 계정은 지난 날을 마감할 수 없습니다.</td></tr>
+      <tr><td class="feat">상단 빨간 띠 <b>"주문 N건이 저장되지 않았습니다 — 서버가 거절했습니다"</b></td><td class="desc"><b>Try again</b>(다시 시도)을 먼저 탭해 주세요. 카드가 이미 결제됐다면 주문은 이 기기에 보관되어 있으니 <b>Discard</b>(버리기)는 결제가 환불됐거나 다시 입력했을 때만 쓰세요.</td></tr>
+    </table>
+    <div class="tip"><b>돈통을 닫지 않고 퇴근했다면?</b> 마감 때 돈통 세션이 자동으로 종료되지만 현금을 센 사람이 없어 그날의 차이는 기록되지 않습니다. 다음부터는 퇴근 전에 돈통을 세고 닫아 주세요.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c17-drawer">돈통 (Cash Drawer)</h3>
     <p class="intro">서랍에 든 현금을 하루 단위로 대조할 수 있습니다. 아침에 시작 금액을 입력하고, 중간에 넣거나 뺀 돈을 기록하고, 영업이 끝나면 세어서 맞는지 확인합니다.</p>
