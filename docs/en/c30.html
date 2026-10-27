@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7. Set up card payments · Connect Stripe · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>7. Card payment setup · Connect Stripe · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -17,14 +17,15 @@
 <div class="part">Part 2 · Everyday use</div>
 <a href="c23.html" class=""><span class="num">5</span>Staff quick start</a>
 <a href="c5.html" class=""><span class="num">6</span>Taking orders</a>
-<a href="c30.html" class="cur"><span class="num">7</span>Set up card payments · Connect Stripe</a>
-<a class="sub" href="#c30-country"><span class="num">7.1</span>Check your country first</a>
-<a class="sub" href="#c30-prepare"><span class="num">7.2</span>Have these ready</a>
-<a class="sub" href="#c30-steps"><span class="num">7.3</span>Steps</a>
-<a class="sub" href="#c30-status"><span class="num">7.4</span>Reading the connection status</a>
-<a class="sub" href="#c30-fee"><span class="num">7.5</span>Who charges what</a>
-<a class="sub" href="#c30-next"><span class="num">7.6</span>After connecting</a>
-<a class="sub" href="#c30-disconnect"><span class="num">7.7</span>Do not disconnect just to try it</a>
+<a href="c30.html" class="cur"><span class="num">7</span>Card payment setup · Connect Stripe</a>
+<a class="sub" href="#c30-prepare"><span class="num">7.1</span>① What to have ready (Singapore)</a>
+<a class="sub" href="#c30-steps"><span class="num">7.2</span>②③ Connect</a>
+<a class="sub" href="#c30-status"><span class="num">7.3</span>④ Check it&#x27;s done</a>
+<a class="sub" href="#c30-stuck"><span class="num">7.4</span>If you get stuck</a>
+<a class="sub" href="#c30-country"><span class="num">7.5</span>Which countries work</a>
+<a class="sub" href="#c30-fee"><span class="num">7.6</span>Who charges what</a>
+<a class="sub" href="#c30-next"><span class="num">7.7</span>After connecting</a>
+<a class="sub" href="#c30-disconnect"><span class="num">7.8</span>Don&#x27;t disconnect to &quot;test&quot;</a>
 <a href="c7.html" class=""><span class="num">8</span>Getting paid</a>
 <a href="c8.html" class=""><span class="num">9</span>Discounts &amp; promotions</a>
 <a href="c9.html" class=""><span class="num">10</span>Refunds</a>
@@ -51,87 +52,90 @@
 <a href="c28.html" class=""><span class="num">28</span>FAQ</a>
 <a href="c26.html" class=""><span class="num">29</span>Glossary</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c30">
-    <h3><span class="n">7</span>Set up card payments · Connect Stripe</h3>
-    <p class="intro">To take card payments and online-order payments, connect a Stripe account in your business's name to BrewDesk once. It usually takes about 15 minutes, or 1–2 business days if Stripe reviews documents. Payments go straight to your Stripe account and never pass through BrewDesk.</p>
-    <div class="activate"><div class="h">Where</div><p>Open <code>Settings › Payments</code> and scroll down to the <b>Stripe Connect</b> card and turn on its switch (before connecting it reads <b>Card Payments Locked</b>). The card has no separate connect button; the switch is the button. You need to be signed in as the Owner.</p></div>
-    <div class="tip"><b>The Stripe account is yours.</b> Even if a reseller helped set up your store, connect Stripe with your own details and the store's bank account. Once connected, you have your own Stripe Dashboard login, and the account that receives the money owns the Stripe account.</div>
+    <h3><span class="n">7</span>Card payment setup · Connect Stripe</h3>
+    <p class="intro">To take card, QR and online-order payments, connect a Stripe account in your store's name to BrewDesk <b>once</b>. Filling it in usually takes 15 minutes; if Stripe needs to review, allow 1–2 business days. Money goes straight to your Stripe account, never through BrewDesk.</p>
+    <div class="activate"><div class="h">4 steps at a glance</div><p>① Gather your documents → ② On the POS, open <code>Settings › Payments</code> and tap <b>Stripe</b> under <b>Payment providers</b> at the bottom → ③ Tap <b>Connect Stripe</b> and fill in Stripe's pages yourself → ④ Come back and check it says <b>Connected</b></p></div>
+    <div class="tip"><b>The Stripe account belongs to you, the owner.</b> Even if a reseller (distributor) installed BrewDesk for you, use your own details and your store's bank account. Do it on the Main POS while signed in as the Owner. It can't be done from the owner app on your phone.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-country">Check your country first</h3>
-    <p class="intro">Based on the 13 countries where BrewDesk is sold. In some countries card readers (Stripe Terminal) work as well; in others only online and QR card payments work; in some nothing works.</p>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-prepare">① What to have ready (Singapore)</h3>
+    <div class="activate"><div class="h">First check your store country and name — the country can't change after connecting</div><p>In <code>Settings › Store Info</code>, check that <b>Country</b>, address and <b>Store Name</b> are correct. The Stripe account's country is fixed from this value when you first connect.</p></div>
     <div class="card"><table>
-      <tr><th>Group</th><th>Countries</th><th>What it means</th></tr>
-      <tr><td class="feat">Stripe account + card reader both available</td><td class="desc">Singapore · Australia · New Zealand · Japan · Malaysia · United States · Canada (Quebec is not sold by BrewDesk)</td><td class="desc">Connect by following this chapter.</td></tr>
-      <tr><td class="feat">Stripe account only (no card reader)</td><td class="desc">Thailand · United Arab Emirates</td><td class="desc">Only online-order and QR card payments work. In-store card readers cannot be used.</td></tr>
-      <tr><td class="feat">Stripe preview (Stripe sales contact required)</td><td class="desc">Indonesia</td><td class="desc">Open sign-up is effectively not available. Handle it as in the note below for unsupported countries.</td></tr>
-      <tr><td class="feat">Not available on Stripe</td><td class="desc">Vietnam · Argentina · South Africa</td><td class="desc">South Africa uses the Paystack network instead of Stripe, which BrewDesk does not integrate with.</td></tr>
+      <tr><th>Item</th><th>Note</th></tr>
+      <tr><td class="feat">☐ UEN</td><td class="desc">Stripe looks up your ACRA record with the UEN. Enter the business name, address and business type <b>exactly as on ACRA BizFile</b>.</td></tr>
+      <tr><td class="feat">☐ The representative · Singpass</td><td class="desc">The person listed on ACRA as Owner or Director fills it in. <b>Singpass</b> is the fastest way to verify. Without Singpass: NRIC, FIN or passport (colour, original photo) plus a selfie. A representative living outside Singapore must use a passport.</td></tr>
+      <tr><td class="feat">☐ Payout bank account</td><td class="desc">A Singapore bank account in the <b>business's name</b>.</td></tr>
+      <tr><td class="feat">☐ Companies: owners and directors</td><td class="desc">Anyone owning 25% or more, and the directors. Stripe pre-fills them from ACRA — just confirm.</td></tr>
+      <tr><td class="feat">☐ Your email and phone</td><td class="desc">An email you read daily (payouts and document requests arrive there) and your phone for verification codes.</td></tr>
+      <tr><td class="feat">☐ Store description · statement name</td><td class="desc">Website or social link (or a short description) and the name that appears on customers' card statements.</td></tr>
     </table></div>
-    <p class="foot">As of 2026-10 · may change with Stripe's circumstances. Sources: <a href="https://stripe.com/global" target="_blank" rel="noopener">stripe.com/global</a> · <a href="https://docs.stripe.com/terminal/payments/regional" target="_blank" rel="noopener">docs.stripe.com/terminal/payments/regional</a></p>
-    <div class="tip"><b>For stores in unsupported countries</b>, take cards on your own separate card terminal and record them in the POS with the record-only <b>Card</b> payment method. Do not connect <b>Stripe Connect</b> in that case.</div>
+    <p class="foot">Source (Stripe): <a href="https://support.stripe.com/questions/2025-updates-to-singapore-verification-requirements" target="_blank" rel="noopener">Singapore verification requirements</a> · <a href="https://support.stripe.com/express/questions/2025-updates-to-singapore-verification-requirements-private-companies" target="_blank" rel="noopener">Private companies</a> · <a href="https://docs.stripe.com/acceptable-verification-documents?country=SG&amp;document-type=entity" target="_blank" rel="noopener">Accepted documents</a> · checked 2026-10</p>
+    <div class="tip"><b>If someone other than the representative fills it in</b>, Stripe asks for a Letter of Authority signed by the CEO or a Director (dated within 12 months). It's fastest if the owner does it.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-prepare">Have these ready</h3>
-    <div class="activate"><div class="h">Match these before connecting — the country cannot be changed later</div><p>The Stripe account's <b>country</b> is fixed when you first connect, from the <b>country set in your store info</b>. Do not change the store's country after connecting. If the country is wrong, you have to disconnect (Disconnect) and connect again, so <b>before</b> connecting, check <b>Country</b>, the address and <b>Store Name</b> on <code>Settings › Store Info</code>. The store name is passed to Stripe as the display name.</p></div>
-    <p class="intro">Stripe verifies your business and its representative. With these at hand you can finish in one go.</p>
-    <div class="card"><table>
-      <tr><th>What Stripe asks for</th></tr>
-      <tr><td class="desc">☐ <b>Business details</b> — business registration number (Singapore UEN · US EIN · Australia ABN · Malaysia SSM number, etc.), registered business name and address, business type (individual or company — the same as the registry record)</td></tr>
-      <tr><td class="desc">☐ <b>Industry and store description</b>, plus a website or social media address (a store description works if there is none)</td></tr>
-      <tr><td class="desc">☐ <b>Name shown on card statements</b> — the store name customers will see on their card statement</td></tr>
-      <tr><td class="desc">☐ <b>Identity of the representative</b> — photo ID (+ selfie), date of birth, home address. In Singapore, <b>Singpass</b> is the fastest. Without Singpass, use an NRIC, FIN (Work Pass) or passport plus a selfie; if the representative lives outside Singapore, only a passport is accepted.</td></tr>
-      <tr><td class="desc">☐ <b>For a company</b>, details of owners with 25% or more and of directors</td></tr>
-      <tr><td class="desc">☐ <b>Payout bank account</b> — in the store's (business's) name, at a bank in that country</td></tr>
-      <tr><td class="desc">☐ <b>Your own email</b> (one you read every day — payout, dispute and document-request emails go there) and <b>your phone in hand</b> (verification codes, two-step verification)</td></tr>
-    </table></div>
-    <div class="tip"><b>Singapore:</b> the person listed as Owner or Director on ACRA BizFile must enter the details themselves; only then does it finish without a Letter of Authorization. If staff or anyone else fills it in, Stripe asks for a separate Letter of Authorization, so it is quickest when the owner does it.</div>
-    <div class="tip"><b>Do not</b><br>① Create the Stripe account with another company's or another person's details or email — the payouts and the account ownership would become theirs.<br>② Change the store's country after connecting.<br>③ Turn the connection switch off and press <b>Disconnect</b> just to try it — card payments stop immediately.</div>
-
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-steps">Steps</h3>
-    <figure class="shot"><img src="../img/c30-connect-card.png" alt="Stripe Connect card on Settings Payments, before connecting" loading="lazy"><figcaption><b>Settings › Payments — Stripe Connect card (before connecting)</b>The status <b>Card Payments Locked</b> and the switch on the right (off).</figcaption></figure>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-steps">②③ Connect</h3>
+    <figure class="shot"><img src="../img/c30-v2-providers.png" alt="Settings Payments, Payment providers — Stripe Not connected" loading="lazy"><figcaption><b>Settings › Payments › Payment providers</b> — the Stripe row shows <b>Not connected</b></figcaption></figure>
     <ol class="steps">
-      <li>In BrewDesk, open <code>Settings › Payments</code> and turn on the switch on the <b>Stripe Connect</b> card further down. Stripe's sign-up page opens.</li>
+      <li>On the Main POS, open <code>Settings › Payments</code> and tap the <b>Stripe</b> row under <b>Payment providers</b> at the bottom.</li>
     </ol>
-    <figure class="shot"><img src="../img/c30-stripe-start.png" alt="Stripe sign-up first page" loading="lazy"><figcaption><b>Stripe sign-up first page</b>① <b>Email address</b>, pre-filled with your email · ② <b>Continue</b></figcaption></figure>
+    <figure class="shot"><img src="../img/c30-v2-modal-connect.png" alt="Stripe window — Connect Stripe button" loading="lazy"><figcaption><b>Stripe window (before connecting)</b> — the green <b>Connect Stripe</b> button</figcaption></figure>
     <ol class="steps" start="2">
-      <li>Check that <b>Email address</b> is your own email and press <b>Continue</b>. If you already have a Stripe account, sign in to it; if not, create one there. Enter the verification codes sent by email or phone, and solve the bot check (picking pictures) if it appears.</li>
+      <li>Tap <b>Connect Stripe</b>. Stripe's sign-up page opens.</li>
     </ol>
-    
+    <figure class="shot"><img src="../img/c30-stripe-start.png" alt="Stripe sign-up first page" loading="lazy"><figcaption><b>Stripe sign-up first page</b> ① <b>Email address</b> pre-filled with your email · ② <b>Continue</b></figcaption></figure>
     <ol class="steps" start="3">
-      <li>Enter the business details — business type, registration number, business name and address, industry (restaurant or café), website (or a store description), and the name shown on card statements. Then verify the representative (photo ID; in Singapore tap <b>Singpass</b> or upload an ID photo and a selfie) and, for a company, enter the owners' and directors' details.</li>
+      <li>Check the <b>Email address</b> is yours and tap <b>Continue</b>. Enter the codes sent to your phone and email.</li>
+      <li>Fill in what Stripe asks, in order — <b>UEN and business details</b> → <b>representative verification</b> (Singpass) → for companies, confirm <b>owners and directors</b> → <b>payout account</b>.</li>
+      <li>Submit on the last page. You return to BrewDesk's <b>Payments</b> screen automatically.</li>
     </ol>
-    
-    <ol class="steps" start="4">
-      <li>Enter the payout bank account. It must be a bank account <b>in the store's (business's) name</b>, in that country.</li>
-    </ol>
-    
-    <ol class="steps" start="5">
-      <li>Review and submit. You return to BrewDesk's <code>Settings</code> screen automatically.</li>
-      <li>If the window was closed halfway or Stripe ended the session, you land back on <b>Settings › Payments</b>. If the card still reads <b>Card Payments Locked</b>, it is not finished. <b>Turn the switch on again</b> and it resumes from where it stopped, on the same Stripe account.</li>
-    </ol>
-    <div class="tip"><b>When the connection succeeds</b>, a <b>Stripe connected</b> notice is emailed once to the store email. Once connected, the record-only <b>Card (Record Only)</b> payment method becomes inactive as "Superseded by Stripe" — Stripe takes priority; this is not a fault.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-status">Reading the connection status</h3>
-    <figure class="shot"><img src="../img/c30-status-enabled.png" alt="Charges Enabled, Onboarding Complete" loading="lazy"><figcaption><b>Connected</b>① Status <b>Enabled</b> and the switch on · ② <b>Charges</b> — Enabled · ③ <b>Onboarding</b> — Complete</figcaption></figure>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-status">④ Check it's done</h3>
+    <figure class="shot"><img src="../img/c30-v2-modal-connected.png" alt="Stripe window — Connected, Charges Enabled, Onboarding Complete" loading="lazy"><figcaption><b>Connected</b> — <b>Connected</b> at the top · <b>Charges</b> <b>Enabled</b> · <b>Onboarding</b> <b>Complete</b> (account number is an example)</figcaption></figure>
     <ul>
-      <li>When the switch is on, <b>Charges</b> shows <b>Enabled</b> and <b>Onboarding</b> shows <b>Complete</b>, you are done. Card payments and online-order card payments can be taken. In countries where card readers work, go on to connect a reader by following <a href="c24.html#c24-card">Card terminals</a>.</li>
-      <li>If the switch is off and the card reads <b>Card Payments Locked</b>, the connection is unfinished or documents are under review. If Stripe needs more documents, what is needed is shown in Stripe's email or in your Stripe Dashboard. Check your inbox, submit the documents, then turn the switch on again to continue. It usually takes a few minutes, or 1–2 business days if review is needed.</li>
+      <li>When the Stripe row says <b>Connected</b>, you're done. A <b>Stripe connected</b> email is sent to your store email once. <b>Charges</b> here means "able to take payments" (not fees).</li>
+      <li>Still <b>Not connected</b>? It isn't finished yet, or Stripe is reviewing. See <a href="#c30-stuck">If you get stuck</a>.</li>
+      <li>Once connected, <b>Stripe card</b> in Payment methods and the <b>Needs connection</b> cells in the table unlock. <b>Counter terminal · record only</b> (your own card terminal) keeps working alongside it.</li>
     </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-stuck">If you get stuck</h3>
+    <div class="card"><table>
+      <tr><th>If</th><th>Do this</th></tr>
+      <tr><td class="feat">You closed the window, or Stripe's page expired</td><td class="desc">Tap Payments › Stripe › <b>Connect Stripe</b> again. When Stripe's page reopens, fill in what's left.</td></tr>
+      <tr><td class="feat">Submitted, but still Not connected</td><td class="desc">Stripe is reviewing — usually minutes, up to 1–2 business days. Check your inbox for a Stripe email. If there's none, tap <b>Connect Stripe</b> once more to see if anything is left.</td></tr>
+      <tr><td class="feat">Stripe asks for more documents</td><td class="desc">Your Stripe Dashboard shows what's needed under <b>Settings › Business › Account status</b>. Upload documents <b>only there</b> (never by email).</td></tr>
+      <tr><td class="feat">An ID or document was rejected</td><td class="desc">Common reasons: a screenshot (not accepted — use an original photo or PDF), black-and-white photo, cropped edges, missing back side, expired, or a name that doesn't match what you entered. Fix and upload again.</td></tr>
+      <tr><td class="feat">Business name or directors "don't match"</td><td class="desc">Correct them to match ACRA BizFile exactly, including spelling and spacing. If the director or owner list differs, Stripe asks for a document from the last 12 months.</td></tr>
+      <tr><td class="feat">Asked for a Letter of Authority</td><td class="desc">Upload one signed by a Director, or have the representative listed on ACRA do it themselves.</td></tr>
+      <tr><td class="feat">Bank account can't be verified</td><td class="desc">Check it's in the business's name and the account number and bank are right. Personal accounts may be rejected.</td></tr>
+    </table></div>
+    <p class="foot">Source: <a href="https://docs.stripe.com/acceptable-verification-documents?country=SG&amp;document-type=entity" target="_blank" rel="noopener">Stripe accepted documents and rejection reasons</a></p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-country">Which countries work</h3>
+    <div class="card"><table>
+      <tr><th>Status</th><th>Countries</th><th>Notes</th></tr>
+      <tr><td class="feat">Stripe + card reader</td><td class="desc">Singapore · Australia · New Zealand · Japan · Malaysia · United States · Canada (BrewDesk is not sold in Quebec)</td><td class="desc">Follow this chapter.</td></tr>
+      <tr><td class="feat">Stripe only (no card reader)</td><td class="desc">Thailand · United Arab Emirates</td><td class="desc">QR and online-order card payments only.</td></tr>
+      <tr><td class="feat">Stripe preview (contact Stripe sales)</td><td class="desc">Indonesia</td><td class="desc">Regular sign-up effectively isn't available. Use it like a "not supported" country.</td></tr>
+      <tr><td class="feat">Not supported</td><td class="desc">Vietnam · Argentina · South Africa</td><td class="desc">Don't connect Stripe.</td></tr>
+    </table></div>
+    <p class="foot">As of 2026-10 · may change on Stripe's side. Sources: <a href="https://stripe.com/global" target="_blank" rel="noopener">stripe.com/global</a> · <a href="https://docs.stripe.com/terminal/payments/regional" target="_blank" rel="noopener">docs.stripe.com/terminal/payments/regional</a></p>
+    <div class="tip"><b>Stores in unsupported countries</b> take cards on their own card terminal and record them at the POS as <b>Counter terminal · record only</b>.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c30-fee">Who charges what</h3>
     <ul>
-      <li><b>Stripe's processing fee</b> is charged by Stripe directly to your Stripe account. For Singapore domestic cards it is 3.4% + S$0.50 (international cards cost more).</li>
+      <li><b>Stripe's processing fee</b> is taken by Stripe from your Stripe account. For domestic cards in Singapore it is 3.4% + S$0.50 (international cards cost more). Check the exact rates in your Stripe Dashboard.</li>
       <li><b>BrewDesk's fee</b> is 0% on in-store payments and 0.4% on online orders only.</li>
-      <li>To cover online-order costs in your menu price, use <b>Online price increase</b> in <a href="c11.html#c11">QR ordering</a>. It raises online menu prices by a percentage and leaves in-store and table QR prices unchanged. For an average order of S$8–20 we suggest 10%.</li>
+      <li>To cover the online-order fee in your prices, use <b>Online price increase</b> in <a href="c11.html#c11">QR ordering</a>.</li>
     </ul>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c30-next">After connecting</h3>
     <ul>
-      <li>To use a card reader, follow <a href="c24.html#c24-card">Card terminals</a>: <b>Discover Readers</b> → <b>Connect</b>.</li>
-      <li>For taking payments, see <a href="c7.html#c7">Getting paid</a>.</li>
+      <li>To use a card reader, connect it by following <a href="c24.html#c24-card">Card terminal</a>.</li>
+      <li>Choose which payments you take where in the Payment methods and "Where you accept" table on the same Payments screen. For taking payments, see <a href="c7.html#c7">Taking payments</a>.</li>
     </ul>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-disconnect">Do not disconnect just to try it</h3>
-    <p>Turning the switch off on a connected card opens a <b>Disconnect Stripe?</b> confirmation. Pressing <b>Disconnect</b> there deletes the Stripe connected account and stops card payments immediately (cash keeps working). Only the Owner can do this. Do it only when the country was wrong and the account must be connected again, and outside business hours. You can reconnect any time.</p>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-disconnect">Don't disconnect to "test"</h3>
+    <p>Tapping <b>Disconnect</b> at the bottom of the Stripe window and confirming deletes the Stripe connection and stops Stripe card and QR payments immediately (cash and record-only cards keep working). The owner app gets a payment alert. Only do it when you must reconnect because the country was wrong, and outside opening hours.</p>
   </div>
-<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c24.html">21. Equipment &amp; network</a></li><li><a href="c11.html">18. QR code ordering</a></li><li><a href="c7.html">8. Getting paid</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c5.html"><small>← Previous</small>6. Taking orders</a><a class="nx" href="c7.html"><small>Next →</small>8. Getting paid</a></div></div></div></div>
+<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c11.html">18. QR code ordering</a></li><li><a href="c24.html">21. Equipment &amp; network</a></li><li><a href="c7.html">8. Getting paid</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c5.html"><small>← Previous</small>6. Taking orders</a><a class="nx" href="c7.html"><small>Next →</small>8. Getting paid</a></div></div></div></div>
 <script src="../assets/search.js?v=34d2fba9"></script>
 
 </body></html>

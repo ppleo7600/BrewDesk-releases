@@ -18,13 +18,14 @@
 <a href="c23.html" class=""><span class="num">5</span>직원 빠른 시작</a>
 <a href="c5.html" class=""><span class="num">6</span>주문 받기</a>
 <a href="c30.html" class="cur"><span class="num">7</span>카드 결제 준비 · Stripe 연결</a>
-<a class="sub" href="#c30-country"><span class="num">7.1</span>나라별로 되는지 먼저 확인</a>
-<a class="sub" href="#c30-prepare"><span class="num">7.2</span>시작 전에 준비할 것</a>
-<a class="sub" href="#c30-steps"><span class="num">7.3</span>연결 순서</a>
-<a class="sub" href="#c30-status"><span class="num">7.4</span>연결 상태 읽기</a>
-<a class="sub" href="#c30-fee"><span class="num">7.5</span>수수료는 누가 받나요</a>
-<a class="sub" href="#c30-next"><span class="num">7.6</span>연결한 다음</a>
-<a class="sub" href="#c30-disconnect"><span class="num">7.7</span>연결 해제는 시험 삼아 하지 마세요</a>
+<a class="sub" href="#c30-prepare"><span class="num">7.1</span>① 시작 전에 챙길 것 (싱가포르 기준)</a>
+<a class="sub" href="#c30-steps"><span class="num">7.2</span>②③ 연결하기</a>
+<a class="sub" href="#c30-status"><span class="num">7.3</span>④ 끝났는지 확인</a>
+<a class="sub" href="#c30-stuck"><span class="num">7.4</span>막힐 때</a>
+<a class="sub" href="#c30-country"><span class="num">7.5</span>나라별로 되는지</a>
+<a class="sub" href="#c30-fee"><span class="num">7.6</span>수수료는 누가 받나요</a>
+<a class="sub" href="#c30-next"><span class="num">7.7</span>연결한 다음</a>
+<a class="sub" href="#c30-disconnect"><span class="num">7.8</span>연결 해제는 시험 삼아 하지 마세요</a>
 <a href="c7.html" class=""><span class="num">8</span>결제 받기</a>
 <a href="c8.html" class=""><span class="num">9</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">10</span>환불</a>
@@ -52,86 +53,89 @@
 <a href="c26.html" class=""><span class="num">29</span>용어집</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c30">
     <h3><span class="n">7</span>카드 결제 준비 · Stripe 연결</h3>
-    <p class="intro">카드 결제와 온라인 주문 결제를 받으려면 매장 이름으로 된 Stripe 계정을 BrewDesk 에 한 번 연결합니다. 보통 15분, 서류 검토가 걸리면 영업일 1~2일 걸립니다. 결제 대금은 BrewDesk 를 거치지 않고 매장 Stripe 계정으로 바로 들어갑니다.</p>
-    <div class="activate"><div class="h">연결하는 곳</div><p><code>Settings › Payments</code> 화면을 아래로 내리면 <b>Stripe Connect</b> 카드가 있습니다. 카드 오른쪽의 <b>스위치를 켭니다</b>(연결 전에는 <b>Card Payments Locked</b>(카드 결제 잠금)로 표시됩니다). 이 카드에는 따로 연결 버튼이 없고 스위치가 연결 버튼입니다. 대표(Owner) 계정으로 로그인해야 보입니다.</p></div>
-    <div class="tip"><b>Stripe 계정은 사장님 것입니다.</b> 설치를 도와준 판매자(총판)가 있어도 Stripe 는 사장님 본인 정보와 매장 계좌로 연결합니다. 연결하면 사장님이 자기 Stripe 대시보드 로그인을 갖게 되고, 대금이 들어가는 계좌가 Stripe 계정의 주인이 됩니다.</div>
+    <p class="intro">카드 · QR · 온라인 주문 결제를 받으려면 매장 이름으로 된 Stripe 계정을 BrewDesk 에 <b>한 번</b> 연결합니다. 입력은 보통 15분이고, Stripe 검토가 걸리면 영업일 1~2일 걸립니다. 결제 대금은 BrewDesk 를 거치지 않고 매장 Stripe 계정으로 바로 들어갑니다.</p>
+    <div class="activate"><div class="h">한눈에 4단계</div><p>① 서류 챙기기 → ② POS <code>Settings › Payments</code> 맨 아래 <b>Payment providers</b>(결제사 연동)에서 <b>Stripe</b> 누르기 → ③ <b>Connect Stripe</b> 누르고 Stripe 화면에 사장님이 직접 입력 → ④ 돌아와서 <b>Connected</b>(연결됨) 확인</p></div>
+    <div class="tip"><b>Stripe 계정은 사장님 것입니다.</b> 설치를 도와준 판매자(총판)가 있어도 사장님 본인 정보 · 매장 계좌로 만듭니다. 대표(Owner) 로그인으로 메인 POS 에서 합니다. 사장님 앱(휴대폰)에서는 연결할 수 없습니다.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-country">나라별로 되는지 먼저 확인</h3>
-    <p class="intro">BrewDesk 를 판매하는 13개국 기준입니다. 카드 리더(Stripe Terminal)까지 되는 나라가 있고, 온라인 · QR 카드 결제만 되는 나라, 아예 안 되는 나라가 있습니다.</p>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-prepare">① 시작 전에 챙길 것 (싱가포르 기준)</h3>
+    <div class="activate"><div class="h">먼저 매장 나라 · 이름 확인 — 나라는 연결 뒤에 못 바꿉니다</div><p><code>Settings › Store Info</code> 에서 <b>Country</b>(나라) · 주소 · <b>Store Name</b>(매장 이름)이 실제와 같은지 봅니다. Stripe 계정의 나라는 처음 연결할 때 이 값으로 고정됩니다.</p></div>
     <div class="card"><table>
-      <tr><th>구분</th><th>나라</th><th>안내</th></tr>
-      <tr><td class="feat">Stripe 계정 + 카드 리더 모두 가능</td><td class="desc">싱가포르 · 호주 · 뉴질랜드 · 일본 · 말레이시아 · 미국 · 캐나다 (퀘벡 주는 BrewDesk 미판매)</td><td class="desc">이 장의 순서대로 연결합니다.</td></tr>
-      <tr><td class="feat">Stripe 계정만 가능 (카드 리더 불가)</td><td class="desc">태국 · 아랍에미리트</td><td class="desc">온라인 주문 · QR 카드 결제만 됩니다. 매장 안 카드 리더는 쓸 수 없습니다.</td></tr>
-      <tr><td class="feat">Stripe 미리보기 (Stripe 영업 문의 필요)</td><td class="desc">인도네시아</td><td class="desc">일반 가입은 사실상 안 됩니다. 아래 「안 되는 나라」처럼 쓰세요.</td></tr>
-      <tr><td class="feat">Stripe 불가</td><td class="desc">베트남 · 아르헨티나 · 남아프리카공화국</td><td class="desc">남아프리카공화국은 Stripe 대신 Paystack 망을 쓰는데 BrewDesk 는 연동하지 않습니다.</td></tr>
+      <tr><th>준비물</th><th>메모</th></tr>
+      <tr><td class="feat">☐ UEN (사업자 등록번호)</td><td class="desc">Stripe 가 UEN 으로 ACRA 기록을 불러와 대조합니다. 사업자 이름 · 주소 · 사업 형태를 <b>ACRA BizFile 과 똑같이</b> 넣습니다.</td></tr>
+      <tr><td class="feat">☐ 대표자 본인 · Singpass</td><td class="desc">ACRA 에 Owner · Director 로 올라 있는 사람이 직접 입력합니다. <b>Singpass</b> 로 본인 확인하면 가장 빠릅니다. Singpass 를 못 쓰면 NRIC · FIN · 여권 중 하나(컬러, 원본 사진)와 셀카. 싱가포르 밖에 사는 대표자는 여권만 됩니다.</td></tr>
+      <tr><td class="feat">☐ 정산 은행 계좌</td><td class="desc"><b>매장(사업자) 명의</b>의 싱가포르 은행 계좌.</td></tr>
+      <tr><td class="feat">☐ 법인이면 소유자 · 이사</td><td class="desc">지분 25% 이상 소유자와 이사. Stripe 가 ACRA 에서 미리 채워 주니 맞는지만 확인합니다.</td></tr>
+      <tr><td class="feat">☐ 사장님 이메일 · 휴대폰</td><td class="desc">매일 보는 이메일(정산 · 서류 요청 메일이 옵니다), 인증 코드를 받을 휴대폰 실물.</td></tr>
+      <tr><td class="feat">☐ 매장 설명 · 카드 명세서 이름</td><td class="desc">웹사이트나 SNS 주소(없으면 매장 설명), 손님 카드 명세서에 찍힐 매장 이름.</td></tr>
     </table></div>
-    <p class="foot">2026-10 기준 · Stripe 사정에 따라 바뀔 수 있음. 출처: <a href="https://stripe.com/global" target="_blank" rel="noopener">stripe.com/global</a> · <a href="https://docs.stripe.com/terminal/payments/regional" target="_blank" rel="noopener">docs.stripe.com/terminal/payments/regional</a></p>
-    <div class="tip"><b>안 되는 나라의 매장</b>은 따로 쓰는 카드 단말로 카드를 받고, POS 에서는 기록 전용 <b>Card</b> 결제 수단으로 남깁니다. 이 경우 <b>Stripe Connect</b> 연결은 하지 않습니다.</div>
+    <p class="foot">근거(Stripe 공식): <a href="https://support.stripe.com/questions/2025-updates-to-singapore-verification-requirements" target="_blank" rel="noopener">싱가포르 확인 요건</a> · <a href="https://support.stripe.com/express/questions/2025-updates-to-singapore-verification-requirements-private-companies" target="_blank" rel="noopener">법인(Private company)</a> · <a href="https://docs.stripe.com/acceptable-verification-documents?country=SG&amp;document-type=entity" target="_blank" rel="noopener">인정 서류</a> · 2026-10 확인</p>
+    <div class="tip"><b>대표자가 아닌 사람이 입력하면</b> Stripe 가 CEO · Director 가 서명한 위임장(Letter of Authority, 12개월 이내)을 따로 요구합니다. 사장님이 직접 하시는 것이 가장 빠릅니다.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-prepare">시작 전에 준비할 것</h3>
-    <div class="activate"><div class="h">연결 전에 꼭 맞춰 둘 것 — 나라는 나중에 못 바꿉니다</div><p>Stripe 계정의 <b>나라</b>는 처음 연결할 때 <b>매장 정보에 설정된 나라</b>로 고정됩니다. 연결한 뒤에 매장 나라를 바꾸면 안 됩니다. 나라가 틀렸다면 연결을 해제(Disconnect)하고 다시 연결해야 하므로, 연결 <b>전에</b> <code>Settings › Store Info</code> 에서 <b>Country</b>(나라) · 주소 · <b>Store Name</b>(매장 이름)이 실제와 같은지 확인합니다. 매장 이름은 Stripe 의 표시 이름으로 넘어갑니다.</p></div>
-    <p class="intro">Stripe 가 매장과 대표자를 확인합니다. 아래를 옆에 두고 시작하면 한 번에 끝납니다.</p>
-    <div class="card"><table>
-      <tr><th>Stripe 가 요구하는 것</th></tr>
-      <tr><td class="desc">☐ <b>사업자 정보</b> — 사업자 등록번호(싱가포르 UEN · 미국 EIN · 호주 ABN · 말레이시아 SSM 등록번호 등), 등록된 사업자 이름 · 주소, 사업 형태(개인 · 법인 — 등록 기록과 같게)</td></tr>
-      <tr><td class="desc">☐ <b>업종 · 매장 설명</b>, 웹사이트 또는 SNS 주소 (없으면 매장 설명으로 대신)</td></tr>
-      <tr><td class="desc">☐ <b>카드 명세서에 표시될 이름</b> — 손님 카드 명세서에 찍힐 매장 이름</td></tr>
-      <tr><td class="desc">☐ <b>대표자 본인 확인</b> — 신분증(+ 셀카), 생년월일 · 집 주소. 싱가포르는 <b>Singpass</b> 가 가장 빠릅니다. Singpass 를 못 쓰면 NRIC · FIN(Work Pass) · 여권 중 하나와 셀카로 확인하고, 대표자가 싱가포르 밖에 살면 여권만 받습니다.</td></tr>
-      <tr><td class="desc">☐ <b>법인이면</b> 지분 25% 이상 소유자 · 이사 정보</td></tr>
-      <tr><td class="desc">☐ <b>정산 계좌</b> — 매장(사업자) 명의의 그 나라 은행 계좌</td></tr>
-      <tr><td class="desc">☐ <b>사장님 본인 이메일</b>(매일 보는 것 — 정산 · 분쟁 · 서류 요청 메일이 옵니다)과 <b>휴대폰 실물</b>(인증 코드 · 2단계 인증)</td></tr>
-    </table></div>
-    <div class="tip"><b>싱가포르</b>는 ACRA BizFile 에 Owner · Director 로 올라 있는 본인이 직접 입력해야 위임장(Letter of Authorization) 없이 끝납니다. 직원이나 다른 사람이 입력하면 위임장을 따로 요구받으니, 사장님이 직접 하시는 것이 가장 빠릅니다.</div>
-    <div class="tip"><b>하면 안 되는 것</b><br>① 매장이 아닌 다른 회사 · 다른 사람의 정보나 이메일로 Stripe 를 만들기 — 대금과 계정 주인이 그 사람이 됩니다.<br>② 연결한 뒤에 매장 나라 바꾸기.<br>③ 시험 삼아 연결 스위치를 껐다가 <b>Disconnect</b> 누르기 — 카드 결제가 바로 멈춥니다.</div>
-
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-steps">연결 순서</h3>
-    <figure class="shot"><img src="../img/c30-connect-card.png" alt="Settings Payments 의 Stripe Connect 카드 (연결 전)" loading="lazy"><figcaption><b>Settings › Payments — Stripe Connect 카드 (연결 전)</b>상태 <b>Card Payments Locked</b>(카드 결제 잠금)와 오른쪽 스위치(꺼짐)가 보입니다.</figcaption></figure>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-steps">②③ 연결하기</h3>
+    <figure class="shot"><img src="../img/c30-v2-providers.png" alt="Settings Payments 의 Payment providers — Stripe Not connected" loading="lazy"><figcaption><b>Settings › Payments › Payment providers</b>(결제사 연동) — Stripe 줄의 <b>Not connected</b>(연결 안 됨)</figcaption></figure>
     <ol class="steps">
-      <li>BrewDesk 에서 <code>Settings › Payments</code> 를 열고 아래쪽 <b>Stripe Connect</b> 카드의 스위치를 켭니다. Stripe 가입 페이지가 열립니다.</li>
+      <li>메인 POS 에서 <code>Settings › Payments</code> 를 열고 맨 아래 <b>Payment providers</b> 의 <b>Stripe</b> 줄을 누릅니다.</li>
+    </ol>
+    <figure class="shot"><img src="../img/c30-v2-modal-connect.png" alt="Stripe 창 — Connect Stripe 버튼" loading="lazy"><figcaption><b>Stripe 창 (연결 전)</b> — 아래 초록 <b>Connect Stripe</b>(Stripe 연결) 버튼</figcaption></figure>
+    <ol class="steps" start="2">
+      <li><b>Connect Stripe</b> 를 누릅니다. Stripe 가입 페이지가 열립니다.</li>
     </ol>
     <figure class="shot"><img src="../img/c30-stripe-start.png" alt="Stripe 가입 첫 페이지" loading="lazy"><figcaption><b>Stripe 가입 첫 페이지</b>① 사장님 이메일이 미리 채워진 <b>Email address</b> · ② <b>Continue</b></figcaption></figure>
-    <ol class="steps" start="2">
-      <li>첫 페이지의 <b>Email address</b> 가 사장님 이메일인지 확인하고 <b>Continue</b> 를 누릅니다. 이미 Stripe 계정이 있으면 그 계정으로 로그인하고, 없으면 그 자리에서 새로 만듭니다. 이메일 · 휴대폰으로 오는 인증 코드를 입력하고, 봇 확인(그림 고르기)이 나오면 직접 풉니다.</li>
-    </ol>
-    
     <ol class="steps" start="3">
-      <li>사업 정보를 입력합니다 — 사업 형태, 등록번호, 사업자 이름 · 주소, 업종(음식점 · 카페), 웹사이트(또는 매장 설명), 카드 명세서에 표시될 이름. 이어서 대표자 본인 확인(신분증 · 싱가포르는 <b>Singpass</b> 버튼 또는 신분증 사진과 셀카)과, 법인이면 소유자 · 이사 정보를 입력합니다.</li>
+      <li><b>Email address</b> 가 사장님 이메일인지 보고 <b>Continue</b>. 휴대폰 · 이메일로 온 인증 코드를 넣습니다.</li>
+      <li>Stripe 가 묻는 순서대로 입력합니다 — <b>UEN · 사업 정보</b> → <b>대표자 본인 확인</b>(Singpass) → 법인이면 <b>소유자 · 이사</b> 확인 → <b>정산 계좌</b>.</li>
+      <li>마지막 화면에서 제출하면 BrewDesk 의 <b>Payments</b> 화면으로 자동으로 돌아옵니다.</li>
     </ol>
-    
-    <ol class="steps" start="4">
-      <li>정산받을 은행 계좌를 입력합니다. <b>매장(사업자) 명의</b>의 그 나라 은행 계좌여야 합니다.</li>
-    </ol>
-    
-    <ol class="steps" start="5">
-      <li>입력 내용을 확인하고 제출합니다. 자동으로 BrewDesk 의 <code>Settings</code> 화면으로 돌아옵니다.</li>
-      <li>중간에 창을 닫았거나 Stripe 가 세션을 끊었으면 같은 <b>Settings › Payments</b> 로 돌아옵니다. 카드가 계속 <b>Card Payments Locked</b> 이면 아직 끝나지 않은 것입니다. <b>스위치를 다시 켜면</b> 같은 Stripe 계정에서 멈춘 곳부터 이어집니다.</li>
-    </ol>
-    <div class="tip"><b>연결에 성공하면</b> 매장 이메일로 <b>Stripe connected</b> 안내 메일이 한 번 갑니다. 연결되면 결제 수단의 기록 전용 <b>Card (Record Only)</b> 는 「Stripe 로 대체됨」으로 비활성이 됩니다. Stripe 가 우선하기 때문이며 고장이 아닙니다.</div>
 
-    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-status">연결 상태 읽기</h3>
-    <figure class="shot"><img src="../img/c30-status-enabled.png" alt="Charges Enabled, Onboarding Complete 상태" loading="lazy"><figcaption><b>연결 완료</b>① 상태 <b>Enabled</b>(활성)와 켜진 스위치 · ② <b>Charges</b> — Enabled(활성) · ③ <b>Onboarding</b> — Complete(완료)</figcaption></figure>
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-status">④ 끝났는지 확인</h3>
+    <figure class="shot"><img src="../img/c30-v2-modal-connected.png" alt="Stripe 창 — Connected, Charges Enabled, Onboarding Complete" loading="lazy"><figcaption><b>연결 완료</b> — 위 <b>Connected</b>(연결됨) · <b>Charges</b> <b>Enabled</b> · <b>Onboarding</b> <b>Complete</b> (계정 번호는 예시)</figcaption></figure>
     <ul>
-      <li>스위치가 켜지고 <b>Charges</b> 가 <b>Enabled</b>(활성), <b>Onboarding</b> 이 <b>Complete</b>(완료)로 보이면 끝입니다. 카드 결제와 온라인 주문 카드 결제를 받을 수 있습니다. 카드 리더가 되는 나라는 이어서 <a href="c24.html#c24-card">카드 단말</a>을 따라 리더를 연결합니다.</li>
-      <li>스위치가 꺼진 채 <b>Card Payments Locked</b> 이면 연결이 끝나지 않았거나 서류 검토 중입니다. Stripe 가 서류를 더 요구하면 Stripe 가 보낸 메일이나 Stripe 대시보드에 무엇이 필요한지 나옵니다. 메일함을 확인하고, 서류를 낸 뒤 스위치를 다시 켜서 이어갑니다. 보통 몇 분, 검토가 걸리면 영업일 1~2일입니다.</li>
+      <li>Stripe 줄이 <b>Connected</b>(연결됨)이면 끝입니다. 매장 이메일로 <b>Stripe connected</b> 메일이 한 번 갑니다. 이 창의 <b>Charges</b> 는 「결제 받기」 상태라는 뜻입니다(수수료가 아닙니다).</li>
+      <li>계속 <b>Not connected</b> 이면 아직 끝나지 않았거나 Stripe 검토 중입니다. 아래 <a href="#c30-stuck">막힐 때</a>를 보세요.</li>
+      <li>연결되면 결제수단의 <b>Stripe card</b> 와 받는 곳 표의 <b>Needs connection</b>(연결 필요) 칸이 풀립니다. 매장 카드 단말기로 받는 <b>Counter terminal · record only</b>(기록용 카드)도 그대로 함께 쓸 수 있습니다.</li>
     </ul>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-stuck">막힐 때</h3>
+    <div class="card"><table>
+      <tr><th>이럴 때</th><th>이렇게 하세요</th></tr>
+      <tr><td class="feat">중간에 창을 닫았다 · Stripe 화면이 만료됐다</td><td class="desc">Payments › Stripe › <b>Connect Stripe</b> 를 다시 누릅니다. Stripe 화면이 다시 열리면 남은 칸을 채웁니다.</td></tr>
+      <tr><td class="feat">제출했는데 계속 Not connected</td><td class="desc">Stripe 검토 중입니다. 보통 몇 분, 길면 영업일 1~2일. 사장님 메일함에 Stripe 메일이 왔는지 봅니다. 아무 메일이 없으면 <b>Connect Stripe</b> 를 한 번 더 눌러 남은 칸이 있는지 확인합니다.</td></tr>
+      <tr><td class="feat">Stripe 가 서류를 더 달라고 한다</td><td class="desc">Stripe 대시보드 <b>Settings › Business › Account status</b> 에 필요한 것이 나옵니다. 서류는 <b>그 화면에서만</b> 올립니다(메일로 보내지 않습니다).</td></tr>
+      <tr><td class="feat">신분증 · 서류가 거절됐다</td><td class="desc">흔한 이유: 화면 캡처(안 됨 — 원본 사진이나 PDF), 흑백 사진, 모서리가 잘림, 뒷면 빠짐, 만료, 이름이 입력값과 다름. 고쳐서 다시 올립니다.</td></tr>
+      <tr><td class="feat">사업자 이름 · 이사가 맞지 않는다고 한다</td><td class="desc">ACRA BizFile 과 철자 · 띄어쓰기까지 똑같이 고칩니다. 이사 · 소유자 목록이 다르면 12개월 이내 서류로 증명하라고 합니다.</td></tr>
+      <tr><td class="feat">대표자가 아니라서 위임장을 요구한다</td><td class="desc">Director 가 서명한 Letter of Authority 를 올리거나, ACRA 에 오른 대표자가 직접 다시 진행합니다.</td></tr>
+      <tr><td class="feat">은행 계좌가 확인되지 않는다</td><td class="desc">사업자 명의 계좌인지, 계좌 번호 · 은행이 맞는지 봅니다. 개인 계좌는 거절될 수 있습니다.</td></tr>
+    </table></div>
+    <p class="foot">거절 사유 근거: <a href="https://docs.stripe.com/acceptable-verification-documents?country=SG&amp;document-type=entity" target="_blank" rel="noopener">Stripe 인정 서류 · 거절 이유</a></p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c30-country">나라별로 되는지</h3>
+    <div class="card"><table>
+      <tr><th>구분</th><th>나라</th><th>안내</th></tr>
+      <tr><td class="feat">Stripe + 카드 리더</td><td class="desc">싱가포르 · 호주 · 뉴질랜드 · 일본 · 말레이시아 · 미국 · 캐나다 (퀘벡 주는 BrewDesk 미판매)</td><td class="desc">이 장대로 연결합니다.</td></tr>
+      <tr><td class="feat">Stripe 만 (카드 리더 불가)</td><td class="desc">태국 · 아랍에미리트</td><td class="desc">QR · 온라인 주문 카드 결제만 됩니다.</td></tr>
+      <tr><td class="feat">Stripe 미리보기 (영업 문의 필요)</td><td class="desc">인도네시아</td><td class="desc">일반 가입은 사실상 안 됩니다. 아래 「안 되는 나라」처럼 씁니다.</td></tr>
+      <tr><td class="feat">Stripe 불가</td><td class="desc">베트남 · 아르헨티나 · 남아프리카공화국</td><td class="desc">Stripe 연결을 하지 않습니다.</td></tr>
+    </table></div>
+    <p class="foot">2026-10 기준 · Stripe 사정에 따라 바뀔 수 있음. 출처: <a href="https://stripe.com/global" target="_blank" rel="noopener">stripe.com/global</a> · <a href="https://docs.stripe.com/terminal/payments/regional" target="_blank" rel="noopener">docs.stripe.com/terminal/payments/regional</a></p>
+    <div class="tip"><b>안 되는 나라의 매장</b>은 매장 카드 단말기로 카드를 받고, POS 에서는 <b>Counter terminal · record only</b>(기록용 카드)로 남깁니다.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c30-fee">수수료는 누가 받나요</h3>
     <ul>
-      <li><b>Stripe 결제 수수료</b>는 Stripe 가 매장 Stripe 계정에서 직접 받습니다. 싱가포르 국내 카드 기준 3.4% + S$0.50 입니다(해외 카드는 추가 요금이 있습니다).</li>
+      <li><b>Stripe 결제 수수료</b>는 Stripe 가 매장 Stripe 계정에서 직접 받습니다. 싱가포르 국내 카드 기준 3.4% + S$0.50 입니다(해외 카드는 추가 요금이 있습니다). 정확한 요율은 Stripe 대시보드에서 확인합니다.</li>
       <li><b>BrewDesk 수수료</b>는 매장에서 받는 결제는 0%, 온라인 주문만 0.4% 입니다.</li>
-      <li>온라인 주문의 수수료를 메뉴 가격으로 메우고 싶으면 <a href="c11.html#c11">QR 주문</a>의 <b>Online price increase</b>(온라인 가격 인상)를 쓰세요. 매장 · 테이블 QR 가격은 그대로 두고 온라인 메뉴만 % 만큼 올립니다. 평균 주문이 S$8~20 인 매장은 10% 를 권장합니다.</li>
+      <li>온라인 주문의 수수료를 메뉴 가격으로 메우고 싶으면 <a href="c11.html#c11">QR 주문</a>의 <b>Online price increase</b>(온라인 가격 인상)를 쓰세요.</li>
     </ul>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c30-next">연결한 다음</h3>
     <ul>
-      <li>카드 리더를 쓰려면 <a href="c24.html#c24-card">카드 단말</a>을 따라 <b>Discover Readers</b> → <b>Connect</b> 를 누릅니다.</li>
-      <li>결제 받는 방법은 <a href="c7.html#c7">결제 받기</a>를 보세요.</li>
+      <li>카드 리더를 쓰려면 <a href="c24.html#c24-card">카드 단말</a>을 따라 리더를 연결합니다.</li>
+      <li>어디서 어떤 결제를 받을지는 같은 Payments 화면의 결제수단 · 받는 곳 표에서 정합니다. 결제 받는 방법은 <a href="c7.html#c7">결제 받기</a>를 보세요.</li>
     </ul>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c30-disconnect">연결 해제는 시험 삼아 하지 마세요</h3>
-    <p>연결된 카드의 스위치를 끄면 <b>Disconnect Stripe?</b> 확인 창이 뜹니다. 여기서 <b>Disconnect</b>(연결 해제)를 누르면 Stripe 연결 계정이 삭제되어 카드 결제가 바로 멈춥니다(현금 결제는 그대로 됩니다). 대표(Owner)만 할 수 있습니다. 나라가 틀려 다시 연결해야 하는 경우에만, 영업 중이 아닐 때 하십시오. 다시 연결하는 것은 언제든 가능합니다.</p>
+    <p>Stripe 창 아래의 <b>Disconnect</b>(연결 해제)를 누르고 확인하면 Stripe 연결 계정이 삭제되어 Stripe 카드 · QR 결제가 바로 멈춥니다(현금 · 기록용 카드는 그대로 됩니다). 사장님 앱으로 결제 실패 알림이 갑니다. 나라가 틀려 다시 연결해야 하는 경우에만, 영업 중이 아닐 때 하십시오.</p>
   </div>
-<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c24.html">21. 설치 준비물 &amp; 네트워크</a></li><li><a href="c11.html">18. QR 코드 주문</a></li><li><a href="c7.html">8. 결제 받기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c5.html"><small>← 이전</small>6. 주문 받기</a><a class="nx" href="c7.html"><small>다음 →</small>8. 결제 받기</a></div></div></div></div>
+<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c11.html">18. QR 코드 주문</a></li><li><a href="c24.html">21. 설치 준비물 &amp; 네트워크</a></li><li><a href="c7.html">8. 결제 받기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c5.html"><small>← 이전</small>6. 주문 받기</a><a class="nx" href="c7.html"><small>다음 →</small>8. 결제 받기</a></div></div></div></div>
 <script src="../assets/search.js?v=34d2fba9"></script>
 
 </body></html>
