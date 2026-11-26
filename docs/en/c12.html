@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>19. Messaging your customers · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>19. Messaging your customers · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -33,6 +33,7 @@
 <a href="c12.html" class="cur"><span class="num">19</span>Messaging your customers</a>
 <a class="sub" href="#c12-channels"><span class="num">19.1</span>Turn on a channel &amp; top up</a>
 <a class="sub" href="#c12-optin"><span class="num">19.2</span>Opt-in &amp; templates</a>
+<a class="sub" href="#c12-sms-length"><span class="num">19.3</span>One text message, one length</a>
 <a href="c19.html" class=""><span class="num">20</span>Backups</a>
 <div class="part">Part 4 · Installation &amp; devices</div>
 <a href="c24.html" class=""><span class="num">21</span>Equipment &amp; network</a>
@@ -63,8 +64,18 @@
     <p class="intro">Customers always say yes first before you message them. If they ever reply STOP, BrewDesk stops texting them right away. You'll find the wording of each message in the <b>Templates</b> tab and what was sent in the <b>Log</b> tab.</p>
     <div class="tip"><b>Opt-in</b> means the customer chooses to get your messages. They are always in control.</div>
     <figure class="shot"><img src="../img/21-messaging.png" alt="Messaging settings screen" loading="lazy"><figcaption><b>Messaging</b>① Usage / Templates / Log tabs  ·  ② Credit left on each card  ·  ③ Top Up  ·  ④ Auto Top-Up</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c12-sms-length">One text message, one length</h3>
+    <p class="intro">A text that goes to a customer must always fit in <b>one message</b>: 160 characters for plain Latin text (GSM), or 70 as soon as even one other kind of character, such as Korean, is in it. When you edit a text in the <b>Templates</b> tab, BrewDesk counts as you type.</p>
+    <ol class="steps">
+      <li>At the bottom right of the box it shows <b>"N left in 1 message"</b>, and the line underneath shows the encoding, the number of messages and <b>characters/limit</b> (for example 58/70).</li>
+      <li>Go over the limit and a red warning appears: <b>"Over the 1-message limit by N. Texts that need 2 or more messages are not sent by SMS — the customer gets the email only. Shorten the text."</b> The counter then shows how far over you are (for example -12) in red.</li>
+      <li>The count uses <b>sample values</b> for the variables (customer name, store name and so on). Text inside <b>[[ ]]</b> is the optional closing line and is dropped first when a text is too long.</li>
+    </ol>
+    <div class="tip"><b>A text that would take two messages is not sent.</b> When it really goes out, a text that is too long is shortened in this order — closing line, then the customer's name, then the store name — and if it still doesn't fit, no text is sent and the customer gets the email only. So keep your wording short.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c11.html">18. QR code ordering</a></li><li><a href="c19.html">20. Backups</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c11.html"><small>← Previous</small>18. QR code ordering</a><a class="nx" href="c19.html"><small>Next →</small>20. Backups</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

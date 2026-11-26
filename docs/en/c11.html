@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>18. QR code ordering · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>18. QR code ordering · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -31,7 +31,8 @@
 <a href="c10.html" class=""><span class="num">17</span>Customers &amp; loyalty</a>
 <a href="c11.html" class="cur"><span class="num">18</span>QR code ordering</a>
 <a class="sub" href="#c11-ops"><span class="num">18.1</span>Running it day to day</a>
-<a class="sub" href="#c11-guest"><span class="num">18.2</span>What guests see</a>
+<a class="sub" href="#c11-online"><span class="num">18.2</span>Your online ordering store link</a>
+<a class="sub" href="#c11-guest"><span class="num">18.3</span>What guests see</a>
 <a href="c12.html" class=""><span class="num">19</span>Messaging your customers</a>
 <a href="c19.html" class=""><span class="num">20</span>Backups</a>
 <div class="part">Part 4 · Installation &amp; devices</div>
@@ -67,11 +68,18 @@
     <div class="tip"><b>Making a table's QR after hours?</b> If you print a table's QR code by hand outside your opening times, BrewDesk asks you to confirm first, so a code never goes out by mistake. Automatic and bulk seating aren't affected.</div>
     <div class="tip"><b>Don't print new table QRs while the internet is down.</b> If your till can't reach BrewDesk and you try to issue a QR, it stops you first: <b>"Check the internet connection — can't issue a table QR."</b> A guest who scanned that code would order into thin air — the order wouldn't arrive at your till. Take orders yourself until the connection is back.</div>
 
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c11-online">Your online ordering store link</h3>
+    <p class="intro">Online orders come in through the store link you give to guests (<code>brewdesk.io/s/your-store</code>), not through a QR code. Set it up in <code>Settings › Customer Portal › Online Order</code>.</p>
+    <div class="tip"><b>Choose what guests can do.</b> Under <b>What guests can do</b>, pick <b>Take orders</b> or <b>Menu only</b>. <b>Menu only</b> shows guests the menu and hides the cart, add-to-cart and checkout, which suits a digital menu board. The choice is tied to the <b>Online Order</b> switch in Add-ons — if Online Order is off there, the setting is locked to <b>Menu only</b> and a note says "Online Order is off, so guests only see the menu. Choose Take orders to turn it back on." It is separate from the QR ordering settings.</div>
+    <div class="tip"><b>A store address (Custom URL) is suggested for you.</b> If the <b>Store Link</b> card has no saved address yet, an address made from your store name is pre-filled in the <b>Custom URL</b> field with the note "Suggested from your store name. Tap Check to use it, or type your own." To use it, tap <b>Check</b> to see whether it is available; or type the address you prefer. If it is already in use, it says so.</div>
+    <div class="tip"><b>Store homepage.</b> On the <span class="plan biz">Business</span> plan you can turn this store link into a one-page store website (see <a href="c3.html#c3-homepage">Store homepage</a>).</div>
+
     <h3 style="font-size:16px;margin:22px 0 4px" id="c11-guest">What guests see</h3>
-    <div class="tip"><b>What the guest sees:</b> on their phone, a guest can open <b>My Orders</b> to see today's and earlier orders, with an item-by-item bill. After they pay, they need to <b>scan the QR again</b> to start a fresh order — this stops a paid order from being added to by accident.</div>
+    <div class="tip"><b>What the guest sees:</b> on their phone, a guest can open <b>My Orders</b> to see today's and earlier orders, with an item-by-item bill. Once the table has been paid, the guest's screen shows a <b>Start a new order</b> button. Tapping it starts a fresh order, the same as scanning the QR again, and nothing is added to the order that was already paid.</div>
     <div class="tip"><b>Gallery or list view.</b> Guests can switch the phone menu between a <b>gallery view</b> (big food photos) and a simple list. Items without a photo show your store logo instead, so the menu always looks tidy. Whichever view a guest picks is remembered on their phone.</div>
   </div>
-<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c6.html">16. Reservations &amp; Scheduler</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c10.html"><small>← Previous</small>17. Customers &amp; loyalty</a><a class="nx" href="c12.html"><small>Next →</small>19. Messaging your customers</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c6.html">16. Reservations &amp; Scheduler</a></li><li><a href="c3.html">3. Setting up your store</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c10.html"><small>← Previous</small>17. Customers &amp; loyalty</a><a class="nx" href="c12.html"><small>Next →</small>19. Messaging your customers</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

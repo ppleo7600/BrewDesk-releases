@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>8. Getting paid · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>8. Getting paid · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -19,9 +19,10 @@
 <a href="c5.html" class=""><span class="num">6</span>Taking orders</a>
 <a href="c30.html" class=""><span class="num">7</span>Card payment setup · Connect Stripe</a>
 <a href="c7.html" class="cur"><span class="num">8</span>Getting paid</a>
-<a class="sub" href="#c7-split"><span class="num">8.1</span>Split the bill</a>
-<a class="sub" href="#c7-tip"><span class="num">8.2</span>Tips on orders you settle later</a>
-<a class="sub" href="#c7-cashrounding"><span class="num">8.3</span>Cash payment rounding</a>
+<a class="sub" href="#c7-terminal"><span class="num">8.1</span>Card terminal set up by your distributor</a>
+<a class="sub" href="#c7-split"><span class="num">8.2</span>Split the bill</a>
+<a class="sub" href="#c7-tip"><span class="num">8.3</span>Tips on orders you settle later</a>
+<a class="sub" href="#c7-cashrounding"><span class="num">8.4</span>Cash payment rounding</a>
 <a href="c8.html" class=""><span class="num">9</span>Discounts &amp; promotions</a>
 <a href="c9.html" class=""><span class="num">10</span>Refunds</a>
 <a href="c17.html" class=""><span class="num">11</span>Reports &amp; closing the day</a>
@@ -67,6 +68,18 @@
     <div class="tip"><b>Who gets the tip?</b> When a tip is added, BrewDesk asks you to choose which staff member earned it — tap <b>Assign staff</b> and pick a name. If just one server is on that table, they're picked for you automatically. If no one is chosen, the tip is saved under <b>Store Manager</b> so it's never lost.</div>
     <div class="tip"><b>Recording a card by hand?</b> If you take cards on a separate terminal that isn't connected to BrewDesk, the card brands — <b>Visa</b>, <b>Mastercard</b>, <b>Amex</b> and so on — now sit right next to <b>Cash</b> on the payment screen. One tap records both that it was a card and which brand, with no extra step.</div>
     <div class="tip"><b>The payment screen won't close while the card reader is working.</b> If you tap the <b>X</b> while a connected card reader is still charging the card, the screen stays put and tells you why: <b>Card payment in progress</b> — <i>"The reader is still charging this card. Wait until it finishes — closing now could take the money without recording it on the order."</i> It's a few seconds, and it's the difference between the money being on the order and the money just being gone. The X frees itself the moment the reader finishes, whether the card went through or not.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-terminal">Card terminal set up by your distributor</h3>
+    <p class="intro">If your distributor has linked the card terminal at your counter to BrewDesk, you can see it and switch it on or off in <code>Settings › Payments</code>. Your distributor connects and configures the terminal; you can check its status and test the connection. The provider's name is shown exactly as your distributor linked it.</p>
+    <ol class="steps">
+      <li>In the <b>Payment providers</b> list on the payment settings screen, tap the terminal row. It shows the connection status and the time it was <b>last checked</b>.</li>
+      <li>On the <b>Status</b> tab, tap <b>Test connection</b> to check that the terminal is reachable. If it isn't, you'll see the reason and a prompt to ask your distributor to check the connection. Also make sure the terminal and the main POS are on the same Wi-Fi.</li>
+      <li>The <b>Connection log</b> tab shows today's attempts, approved payments and results that are unknown, plus the last 20 payments sent to the terminal. Card details are never shown.</li>
+      <li>Use the switch on the terminal card in the payment methods list above to turn it on or off. In the <b>Where you accept</b> table, only the methods you've turned on appear as columns, and the terminal has a cell on the POS row only.</li>
+    </ol>
+    <div class="tip"><b>Status labels:</b> <b>Connected</b>, <b>Not connected</b> and <b>Not tested yet</b>. If you see <b>Not connected</b>, ask your distributor to check the connection.</div>
+    <div class="tip"><b>Methods that aren't connected yet are locked.</b> If a card terminal or Stripe available to your store isn't connected yet, it shows in the payment methods list switched off, locked and tagged <b>Not connected</b>. Tap it for a prompt: for a card terminal, ask your distributor to connect it (an owner account also sees the linked distributor's company and email); for Stripe, connect it under <b>Payment providers</b>. Anything you had switched on before is kept and comes back once it's connected.</div>
+    <div class="tip"><b>The Where you accept table has changed.</b> It now shows only the methods you've switched on above — turned-off methods no longer appear dimmed, they're left out. If none are on, you'll just see "Turn on a payment method above to choose where it is accepted." Cash, Card (Record Only) and vouchers are taken at the POS only, and when switched on they appear as always-on cells on the POS row.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">Split the bill</h3>
     <p class="intro">When a table wants to pay separately, BrewDesk splits the bill for you. There are two easy ways: split it <b>evenly</b> between people, or split it <b>by item</b> so each person pays for what they had. Every share can add its own tip, and one person can even pay part cash and part card.</p>
@@ -121,6 +134,7 @@
     <div class="brag"><div class="h">Show this off</div><p><b>Round like the shop next door, without losing the pennies in your books.</b> Set the coin unit once and every cash total lands on a coin you actually have. Every rounded cent is still recorded, still on the receipt, and still adds up at closing — so your accountant never has to ask where the odd change went.</p></div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c3.html">3. Setting up your store</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c30.html"><small>← Previous</small>7. Card payment setup · Connect Stripe</a><a class="nx" href="c8.html"><small>Next →</small>9. Discounts &amp; promotions</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

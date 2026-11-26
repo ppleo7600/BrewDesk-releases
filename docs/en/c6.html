@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>16. Reservations &amp; Scheduler · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>16. Reservations &amp; Scheduler · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -28,7 +28,10 @@
 <a href="c21.html" class=""><span class="num">14</span>Your plan &amp; billing</a>
 <a href="c16.html" class=""><span class="num">15</span>Staff &amp; permissions</a>
 <a href="c6.html" class="cur"><span class="num">16</span>Reservations &amp; Scheduler</a>
-<a class="sub" href="#c6-waitlist"><span class="num">16.1</span>Waitlist</a>
+<a class="sub" href="#c6-calc"><span class="num">16.1</span>Reservation calculator — splitting reservation and walk-in tables</a>
+<a class="sub" href="#c6-save-notice"><span class="num">16.2</span>Notices when you save a booking</a>
+<a class="sub" href="#c6-online"><span class="num">16.3</span>When guests book online</a>
+<a class="sub" href="#c6-waitlist"><span class="num">16.4</span>Waitlist</a>
 <a href="c10.html" class=""><span class="num">17</span>Customers &amp; loyalty</a>
 <a href="c11.html" class=""><span class="num">18</span>QR code ordering</a>
 <a href="c12.html" class=""><span class="num">19</span>Messaging your customers</a>
@@ -77,6 +80,35 @@
     <div class="tip"><b>No internet? Check-ins still work.</b> With the internet down you can still tap <b>Check In</b>, <b>No Show</b> or <b>Cancel</b> — the change shows on screen straight away and uploads by itself when you're back online. Only <b>making or editing a booking</b> is blocked, and the screen tells you why: <b>"Cannot create a reservation while offline — the booking calendar is also written from outside the store, so it could double-book. Reconnect and try again."</b> If the list can't load at all you'll see <b>"Showing the last list received,"</b> and the bookings you already had stay on screen.</div>
     <div class="brag"><div class="h">Show this off</div><p><b>Bookings come built in.</b> You don't need a second app or an extra fee. Restaurants book tables; salons and spas book staff time — all on the same calendar.</p></div>
 
+    <h3 id="c6-calc" style="font-size:16px;margin:22px 0 4px">Reservation calculator — splitting reservation and walk-in tables</h3>
+    <p class="intro">The reservation calculator splits each shift's tables into <b>reservation tables (green)</b> and <b>walk-in tables (grey)</b>, and works out from that how many parties you can take and when their bookings can start. Bookings only fill the reservation tables and the walk-in tables stay free, so a reservation never takes the seat of a guest who simply walks in.</p>
+    <div class="activate"><div class="h">Where to find it</div><p>It is the <b>Reservation calculator</b> card at the top of <code>Settings › Reservations › Settings</code>. The Reservations add-on must be on.</p></div>
+    <ol class="steps">
+      <li>Pick the shift you want to set up from the shift tabs at the top. Each tab shows "Up to N · starts …". Shifts come from <code>Hours &amp; Closures</code>.</li>
+      <li>If you don't want bookings in that shift, turn off the <b>Take reservations</b> switch. A shift that is off shows <b>No reservations</b>.</li>
+      <li>In each seat-size row, tap the table blocks or use <b>−</b> / <b>+</b> to set how many tables are for reservations. For a quick start, use <b>Quick split</b>: <b>All for reservations</b> · <b>More (70%)</b> · <b>Half</b> · <b>Fewer (30%)</b>. The bar below shows the reservation / walk-in share.</li>
+      <li>Set <b>Time per party</b>. <b>Same for every party</b> uses one value; <b>By table size</b> lets you enter minutes for each table size (15 minutes or more). A booking uses the time of the smallest table that fits the party, and a party bigger than your largest table uses the largest table's time. The calculator then shows <b>Last booking</b> as the shift end minus that time.</li>
+      <li>Under <b>Booking times every</b>, choose how often booking times start (for example every 30 min). This applies to all shifts.</li>
+      <li><b>Shift occupancy</b> previews the reservation tables, the number of turns (<b>Turns</b>), the maximum number of parties and the start times for the current settings. It is a simulation to check your settings, not real bookings.</li>
+      <li>Save with the common <b>Save</b> of the settings screen — the card has no save button of its own. Until you save, the card shows a <b>Preview</b> tag and a "Not in use yet — save to start taking bookings by tables." notice.</li>
+    </ol>
+    <div class="tip"><b>No table map yet?</b> Under <b>Tables by size</b>, enter the number of seats and the number of tables, and add rows with <b>Add size</b>. If you create a table map later, you are asked to choose the reservation tables again; until you save, the same number of tables per size as before is used for reservations.</div>
+    <div class="tip"><b>When existing bookings no longer fit:</b> if saving would leave bookings you already took not fitting the new settings, a box says "N bookings already made would no longer fit these settings. They stay booked — please check them after saving." Choose <b>Cancel</b> to go back or <b>Save anyway</b>. Existing bookings are not cancelled.</div>
+    <div class="tip"><b>If no table is set for reservations:</b> a warning below the bar says guests can't book any time. Make at least one table green, or turn off <b>Take reservations</b> for that shift.</div>
+    <div class="tip"><b>Some settings disappear.</b> Once you save the calculator and run by tables, the <b>Slot Capacity (Pacing)</b> card is hidden because it is no longer used, and <b>Closing Buffer</b> is hidden too when every shift has a time per party. The booking time interval is set in the calculator card; a store that can't use that card (no shifts or tables, or no shift taking reservations) gets the same choice as <b>Booking time interval</b> under <b>Basic Booking Rules</b>. It is shown in one place at a time.</div>
+
+    <h3 id="c6-save-notice" style="font-size:16px;margin:22px 0 4px">Notices when you save a booking</h3>
+    <p class="intro">When staff save a booking, it is saved even if seats overlap or the time is outside business hours — the screen just tells you so.</p>
+    <ul>
+      <li><b>Seats overlap:</b> a yellow notice <b>"Saved — seats overlap"</b> appears with one reason — no free table fits this party at this time / this time is already fully booked / this time is outside reservation hours / seats could not be checked. The booking is saved in every case; adjust or check the tables as the notice says.</li>
+      <li><b>Outside business hours:</b> before saving you get a <b>"That time is outside business hours"</b> confirmation. If you go ahead, the booking is saved and a <b>"Booked outside business hours"</b> notice stays on screen after the window closes.</li>
+      <li><b>New booking on a closed day:</b> a line under the time field says "Closed day — you'll get a warning when you save."</li>
+    </ul>
+
+    <h3 id="c6-online" style="font-size:16px;margin:22px 0 4px">When guests book online</h3>
+    <div class="tip"><b>Confirm bookings automatically or approve them yourself.</b> In the <b>Booking Policy &amp; Guest Portal</b> card of <code>Settings › Reservations › Settings</code>, the <b>Auto-confirm Reservations</b> switch shows what it does right now: ON — new bookings are confirmed right away; <b>OFF — staff approve each booking in POS</b>. With it off, a booking a guest makes online isn't confirmed until staff approve it.</div>
+    <div class="tip"><b>What guests see when they can't book.</b> If they pick a time and no table fits their party, they see "No table is free for your party at this time. Please choose another time or change the number of guests." If the Reservations add-on or the customer portal is off, or online reservations are hidden for the online channel, they see "This store isn't taking online reservations right now. Please contact the store." and nothing is booked. Bookings staff enter in POS are not limited this way.</div>
+
     <h3 id="c6-waitlist" style="font-size:16px;margin:22px 0 4px">Waitlist</h3>
     <p class="intro">A waitlist is the line of guests waiting for a free table. BrewDesk holds the line for you, and texts a guest the moment their table is ready — so they don't have to crowd your door.</p>
     <div class="activate"><div class="h">Where to turn it on</div><p>Turn it on in <code>Settings › Add-ons › Waitlist</code> (flip the switch). It needs <b>Tables</b> on first — tap <b>Enable Both</b> if a pop-up asks.</p></div>
@@ -94,6 +126,7 @@
     <div class="tip"><b>Your kiosk wears your name.</b> On a tablet set to <b>Waitlist Kiosk</b>, the top of the screen now shows your <b>shop logo and shop name</b> — it uses the picture you already saved in <code>Settings › Store info</code>, so there is nothing extra to upload. The phone box also opens on <b>your country's dialling code</b> (+1, +82, +66 …), taken from your shop's country, so guests just type their number.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c16.html">15. Staff &amp; permissions</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c16.html"><small>← Previous</small>15. Staff &amp; permissions</a><a class="nx" href="c10.html"><small>Next →</small>17. Customers &amp; loyalty</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

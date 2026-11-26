@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3. Setting up your store · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>3. Setting up your store · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -16,6 +16,7 @@
 <a class="sub" href="#c3-tax"><span class="num">3.1</span>Set your tax</a>
 <a class="sub" href="#c3-closures"><span class="num">3.2</span>Holidays &amp; special days</a>
 <a class="sub" href="#c3-status"><span class="num">3.3</span>See your service status at a glance</a>
+<a class="sub" href="#c3-homepage"><span class="num">3.4</span>Store homepage Business</a>
 <a href="c4.html" class=""><span class="num">4</span>Building your menu</a>
 <div class="part">Part 2 · Everyday use</div>
 <a href="c23.html" class=""><span class="num">5</span>Staff quick start</a>
@@ -98,6 +99,7 @@
     <div class="tip"><b>BrewDesk may suggest one for you.</b> If an item looks like the others in its category, you'll see <b>"Suggested: … — not confirmed"</b>. Nothing changes until you tap <b>"Use this"</b>.</div>
     <div class="tip"><b>Lower tax on small amounts.</b> Some places charge less tax when the price is small — Ontario, for example, rebates part of the tax on prepared food and drinks of $4 or less. Turn on <b>Use an amount condition</b> under <b>Lower tax below an amount</b>, pick the two taxes it switches between, and choose whether to measure the <b>Order total</b> or <b>"Each item's unit price"</b>. A short sentence below it tells you in plain words what the rule will do.</div>
     <p class="foot">Good to know: receipts and reports show each tax on its own line, so two taxes can't share the same name — BrewDesk asks you to rename one. A few places (Massachusetts and Rhode Island) tax only the part above a limit; the amount condition can't copy that, so a warning appears there. Always check your setup with your tax advisor.</p>
+    <div class="tip"><b>Overlapping shifts trigger a warning.</b> When you save a shift in <code>Hours &amp; Closures</code> and another shift covers the same day and overlapping time, an <b>Overlapping shifts</b> window opens and lists the other shift's name, days and hours. It warns that when two or more shifts cover the same day and time, the scheduler may display them incorrectly. Choose <b>Cancel</b> to change the times, or <b>Save anyway</b> if the overlap is intended.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c3-closures">Holidays &amp; special days</h3>
     <p class="intro">Mark the days you're closed, and BrewDesk stops customers from booking a table, joining the queue, or ordering from their phone on that day. Public holidays, staff training, a sudden day off — you set them all here.</p>
@@ -132,8 +134,22 @@
     <div class="tip"><b>Who can change it.</b> Only the <b>owner and managers</b> can pause a service — anyone else gets a "you don't have permission" note. Everyone can still see the status.</div>
     <div class="tip"><b>If the Reservations add-on is off</b>, the Reservations button won't show at all — turn the add-on back on to see it again.</div>
     <p class="foot">Good to know: the reason wording also shows on your customers' screen, so they aren't left wondering why they can't order.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c3-homepage">Store homepage <span class="plan biz">Business</span></h3>
+    <p class="intro">Turn the store link you give to guests into a one-page store website: home, menu, reservations and how to find you. The name, logo, address, phone, hours and social links come straight from <b>Store Info</b>.</p>
+    <div class="activate"><div class="h">Where to turn it on</div><p>Turn on the switch on the <b>Homepage</b> card in <code>Settings › Add-ons › Homepage</code> (<span class="plan biz">Business</span> plan only). Then tap the card's <b>Settings</b>, or open <code>Settings › Customer Portal › Online Order</code>, to find the <b>Store homepage</b> card. On other plans that card only says "Available on the Business plan."</p></div>
+    <ol class="steps">
+      <li>Fill in the <b>One-line intro</b>. It is shown on the Home section and starts out as your welcome message. Changing it here does not change the welcome message itself.</li>
+      <li>Optionally add a <b>Subtitle</b>, and upload a <b>Cover photo</b> and a <b>Reservation photo</b>. They are cropped (16:9 and 4:3) and compressed when you upload; until you upload one, a default photo is used.</li>
+      <li>Optionally add a <b>Notice</b>. It appears as one line under the opening hours; leave it empty to hide it.</li>
+      <li>Choose the <b>Theme</b> (Light / Dark) and the <b>Point Color</b>. These are the same options as the POS appearance, and until you choose, your POS colors are used.</li>
+      <li>Tap <b>Save</b> on the settings screen.</li>
+    </ol>
+    <div class="tip"><b>What guests see.</b> A section menu at the top of the page lists <b>Home</b> · <b>Menu</b> · <b>Reserve</b> · <b>Visit us</b>. <b>Menu</b> appears when you take online orders or show a menu only, and <b>Reserve</b> only when the Reservations add-on is on and online reservations are open. The page also shows whether you are open now, on a break, or when you reopen.</div>
+    <div class="tip"><b>Where it applies.</b> The homepage is shown only to online guests who arrive through your store link. Table QR and counter QR codes go straight to the ordering screen without it. Turn the switch off and your current ordering page appears unchanged. The intro and notice are shown exactly as you write them — they are not translated.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c7.html">8. Getting paid</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c2.html"><small>← Previous</small>2. Quick start</a><a class="nx" href="c4.html"><small>Next →</small>4. Building your menu</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

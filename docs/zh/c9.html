@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>10. 退款 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>10. 退款 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -21,6 +21,8 @@
 <a href="c7.html" class=""><span class="num">8</span>收款</a>
 <a href="c8.html" class=""><span class="num">9</span>折扣与促销</a>
 <a href="c9.html" class="cur"><span class="num">10</span>退款</a>
+<a class="sub" href="#c9-status"><span class="num">10.1</span>付款记录中的订单状态</a>
+<a class="sub" href="#c9-email"><span class="num">10.2</span>退款确认邮件（顾客收到的邮件）</a>
 <a href="c17.html" class=""><span class="num">11</span>报表与日结</a>
 <a href="c15.html" class=""><span class="num">12</span>离线工作</a>
 <div class="part">第3部分 · 门店管理</div>
@@ -64,8 +66,24 @@
     </ol>
     <div class="tip"><b>什么是 PIN？</b>它是一个简短的保密代码，类似银行卡上的密码，可以防止误操作造成退款。</div>
     <div class="tip"><b>部分退款现在会打印部分小票。</b>退款单只列出您实际退钱的商品，下方的合计（小计、折扣、服务费、税费）现在也是<b>已退款的那一部分</b>，而不是原订单的数字。因此顾客把单据加起来，恰好就是退回到其银行卡上的金额。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c9-status">付款记录中的订单状态</h3>
+    <p class="intro"><b>Payment History</b>（付款记录）中订单卡片和订单详情里显示的状态，现在都会以您所选语言的文字显示。以前有些状态会直接显示内部名称。<b>挂单</b>（Held，英文界面为 "On Hold"）是暂时搁置的订单，<b>进行中</b>（Open）是尚未付款的订单，<b>已合并</b>（Merged）是与其他桌台订单合并为一的订单。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c9-email">退款确认邮件（顾客收到的邮件）</h3>
+    <p class="intro">退款完成后，BrewDesk 会自动向顾客发送一封<b>退款确认邮件</b>。只有订单关联了<b>登记了邮箱的顾客</b>时才会发送；没有邮箱的顾客不会收到。</p>
+    <div class="activate"><div class="h">在哪里开启或关闭</div><p><code>Settings › Notifications</code> 中<b>退款</b>栏下<b>退款确认</b>（“发出全额或部分退款时发送”）的邮件选项。默认开启。</p></div>
+    <ol class="steps">
+      <li>邮件主题是<b>“退款已处理 — 门店名称”</b>；部分退款则是<b>“部分退款已处理 — 门店名称”</b>。</li>
+      <li>邮件上方是<b>退款已处理</b>横幅（部分退款为<b>部分退款已处理</b>）、标题“您的退款已处理”，以及“您在门店名称的订单已退款。”</li>
+      <li>下方依次是<b>订单</b>（订单号）· <b>下单日期</b> · <b>退款类型</b>（全额退款 / 部分退款）· <b>商品</b>（部分退款时为已退款的商品）· <b>原订单总额</b> · <b>退款金额</b> · <b>原因</b>。原订单总额仅在适用时显示。</li>
+      <li>如果小费没有退还，会显示<b>保留的小费</b>一行，以及“小费 金额 已支付给为您服务的员工，不包含在本次退款中。”</li>
+      <li>最后是“根据支付服务商不同，退款可能需要 5–10 个工作日到账。”</li>
+    </ol>
+    <div class="tip"><b>邮件会按门店语言和日期格式发出。</b>主题和文字使用在 <code>Settings › Store Info</code> 中设定的<b>门店语言</b>，下单日期按门店时区和门店所在国家的日期格式显示。顾客收到的邮件中没有 BrewDesk 的支持和邮件偏好设置链接，也没有推广语，只显示发件门店的名称。收据邮件同样按门店语言发出，其小计和折扣行也已整理为可以对得上的形式。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c8.html">9. 折扣与促销</a></li><li><a href="c17.html">11. 报表与日结</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c8.html"><small>← 上一页</small>9. 折扣与促销</a><a class="nx" href="c17.html"><small>下一页 →</small>11. 报表与日结</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>4. Building your menu · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>4. Building your menu · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -15,9 +15,10 @@
 <a href="c3.html" class=""><span class="num">3</span>Setting up your store</a>
 <a href="c4.html" class="cur"><span class="num">4</span>Building your menu</a>
 <a class="sub" href="#c4-items"><span class="num">4.1</span>Categories &amp; items</a>
-<a class="sub" href="#c4-options"><span class="num">4.2</span>Option groups &amp; presets</a>
-<a class="sub" href="#c4-ai"><span class="num">4.3</span>AI photos &amp; AI Fill</a>
-<a class="sub" href="#c4-import"><span class="num">4.4</span>Import &amp; export</a>
+<a class="sub" href="#c4-salehours"><span class="num">4.2</span>Sale hours</a>
+<a class="sub" href="#c4-options"><span class="num">4.3</span>Option groups &amp; presets</a>
+<a class="sub" href="#c4-ai"><span class="num">4.4</span>AI photos &amp; AI Fill</a>
+<a class="sub" href="#c4-import"><span class="num">4.5</span>Import &amp; export</a>
 <div class="part">Part 2 · Everyday use</div>
 <a href="c23.html" class=""><span class="num">5</span>Staff quick start</a>
 <a href="c5.html" class=""><span class="num">6</span>Taking orders</a>
@@ -71,7 +72,21 @@
     </ol>
     <div class="tip"><b>What is a category?</b> It is just a group, like a folder. It keeps your menu tidy so items are easy to find.</div>
 
+        <div class="tip"><b>Minimum quantity on the first order.</b> Enter 2–99 in the <b>Min. quantity on first order</b> field in the item panel, and that item must be ordered at least that many times the first time it is added to an order. Leave it empty for no limit. Below the minimum, the POS will not send the order to the kitchen, and a guest ordering by QR cannot lower the quantity under it.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-salehours">Sale hours</h3>
+    <p class="intro">For items you only sell at certain times — a breakfast menu, a happy hour — set <b>Sale hours</b> and they hide themselves outside those times.</p>
+    <div class="activate"><div class="h">Where to find it</div><p>The <b>Sale hours</b> field in the category or item editor. The choices are <b>Always on sale</b> and <b>Set hours</b>; an item can also choose <b>Follow category</b> or <b>Set for this item</b>.</p></div>
+    <ol class="steps">
+      <li>Pick <b>Set hours</b>, then the days and a <b>Start</b> and <b>End</b> time. <b>Add time range</b> lets you add more than one range.</li>
+      <li>If the end is earlier than the start, it runs until that time the next day (for example 22:00 to 02:00).</li>
+      <li>Save. An item left on <b>Follow category</b> simply uses its category's hours.</li>
+    </ol>
+    <div class="tip"><b>What does it look like outside the hours?</b> Guests and staff order devices don't see it, and the main POS shows it dimmed as <b>Not on sale now</b>. If you really must sell it at the till, tap it and in the <b>"Not on sale right now"</b> window choose <b>Sell this once</b> to sell it on that order only. A staff PIN can't approve this; it takes a <b>manager or owner PIN</b>.</div>
+    <div class="tip"><b>Set your store time zone first.</b> Sale hours follow the store time zone, and they don't apply until it's set.</div>
+
     <h3 style="font-size:16px;margin:22px 0 4px" id="c4-options">Option groups &amp; presets</h3>
+    <div class="vbox"><p class="vlabel">Watch the video</p><div class="vgrid"><div class="vcard" data-vid="07KfSLWp7BA"><a class="vthumb" href="https://www.youtube.com/watch?v=07KfSLWp7BA" target="_blank" rel="noopener" aria-label="Play: Set up menu options (size, milk, toppings)"><img src="https://i.ytimg.com/vi/07KfSLWp7BA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Set up menu options (size, milk, toppings)</p></div></div><p class="vlabel" data-for="shorts">Short videos</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="CSOr1nCbUfk"><a class="vthumb" href="https://www.youtube.com/shorts/CSOr1nCbUfk" target="_blank" rel="noopener" aria-label="Play: Size options with their own prices"><img src="https://i.ytimg.com/vi/CSOr1nCbUfk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Size options with their own prices</p></div><div class="vcard vshort" data-vid="u9VEpGCeDtQ"><a class="vthumb" href="https://www.youtube.com/shorts/u9VEpGCeDtQ" target="_blank" rel="noopener" aria-label="Play: Make guests pick Hot or Iced"><img src="https://i.ytimg.com/vi/u9VEpGCeDtQ/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Make guests pick Hot or Iced</p></div><div class="vcard vshort" data-vid="9R6kYO8lSmk"><a class="vthumb" href="https://www.youtube.com/shorts/9R6kYO8lSmk" target="_blank" rel="noopener" aria-label="Play: Two extra shots on one drink"><img src="https://i.ytimg.com/vi/9R6kYO8lSmk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Two extra shots on one drink</p></div><div class="vcard vshort" data-vid="ZzQ7pJwJnnM"><a class="vthumb" href="https://www.youtube.com/shorts/ZzQ7pJwJnnM" target="_blank" rel="noopener" aria-label="Play: Toppings: at least 1, up to 3"><img src="https://i.ytimg.com/vi/ZzQ7pJwJnnM/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Toppings: at least 1, up to 3</p></div><div class="vcard vshort" data-vid="I3g07kwrY-0"><a class="vthumb" href="https://www.youtube.com/shorts/I3g07kwrY-0" target="_blank" rel="noopener" aria-label="Play: One option group, many drinks"><img src="https://i.ytimg.com/vi/I3g07kwrY-0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">One option group, many drinks</p></div><div class="vcard vshort" data-vid="Dvl5Id3ejwo"><a class="vthumb" href="https://www.youtube.com/shorts/Dvl5Id3ejwo" target="_blank" rel="noopener" aria-label="Play: Add options right from the menu item"><img src="https://i.ytimg.com/vi/Dvl5Id3ejwo/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Add options right from the menu item</p></div></div></div>
     <figure class="shot"><img src="../img/87-menu-addongroup.png" alt="Create an add-on group" loading="lazy"><figcaption><b>Create an add-on group</b>① Add Group  ·  ② Required (customer must pick one)  ·  ③ Choice names and extra prices (e.g. Oat milk 0.5)  ·  ④ Add Choice  ·  ⑤ Save</figcaption></figure>
     <figure class="shot"><img src="../img/87b-menu-attach.png" alt="Attach the group to an item" loading="lazy"><figcaption><b>Attach the group to an item</b>① Pick the item (Caffè Latte)  ·  ② The group now listed under Addon Groups — REQ means required  ·  ③ Save</figcaption></figure>
     <ol class="steps">
@@ -97,6 +112,7 @@
     <figure class="shot"><img src="../img/91-menu-move.png" alt="Move — reorder" loading="lazy"><figcaption><b>Move — reorder</b>① Drag a category chip by its ⋮⋮ handle  ·  ② Drag an item by its handle  ·  ③ Save</figcaption></figure>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c3.html">3. Setting up your store</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c3.html"><small>← Previous</small>3. Setting up your store</a><a class="nx" href="c23.html"><small>Next →</small>5. Staff quick start</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

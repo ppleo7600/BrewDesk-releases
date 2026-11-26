@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>18. QR 코드 주문 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>18. QR 코드 주문 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -31,7 +31,8 @@
 <a href="c10.html" class=""><span class="num">17</span>고객 &amp; 단골 혜택</a>
 <a href="c11.html" class="cur"><span class="num">18</span>QR 코드 주문</a>
 <a class="sub" href="#c11-ops"><span class="num">18.1</span>운영 시 주의</a>
-<a class="sub" href="#c11-guest"><span class="num">18.2</span>손님 화면</a>
+<a class="sub" href="#c11-online"><span class="num">18.2</span>온라인 주문 매장 링크</a>
+<a class="sub" href="#c11-guest"><span class="num">18.3</span>손님 화면</a>
 <a href="c12.html" class=""><span class="num">19</span>고객에게 메시지 보내기</a>
 <a href="c19.html" class=""><span class="num">20</span>백업</a>
 <div class="part">4부 · 설치 · 기기</div>
@@ -67,11 +68,18 @@
     <div class="tip"><b>영업시간 밖에 테이블 QR을 만드나요?</b> 영업시간이 아닌 때에 직접 테이블 QR 코드를 발급하면 BrewDesk가 먼저 확인을 요청합니다 — 실수로 코드가 발급되지 않도록 하기 위해서입니다. 좌석 자동·일괄 발급에는 영향이 없습니다.</div>
     <div class="tip"><b>인터넷이 끊겼을 때는 테이블 QR을 새로 발급하지 마십시오.</b> 계산대가 인터넷에 연결되지 않은 동안 QR을 발급하려고 하면 BrewDesk가 먼저 차단합니다 — <b>"인터넷 연결을 확인해 주세요 — QR 주문지를 발급할 수 없습니다"</b>(Check the internet connection — can't issue a table QR). 그 상태에서 손님이 스캔해 주문하면 그 주문이 계산대로 들어오지 않기 때문입니다. 연결이 돌아올 때까지는 직원이 직접 주문을 받아 주세요.</div>
 
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c11-online">온라인 주문 매장 링크</h3>
+    <p class="intro">온라인 주문은 QR이 아니라 손님에게 알려 주는 매장 링크(<code>brewdesk.io/s/매장주소</code>)로 들어오는 주문입니다. <code>Settings › Customer Portal › Online Order</code> 탭에서 설정합니다.</p>
+    <div class="tip"><b>손님이 할 수 있는 일을 고릅니다.</b> <b>What guests can do</b>(손님이 할 수 있는 일)에서 <b>Take orders</b>(주문 받기)와 <b>Menu only</b>(메뉴만 보기) 중 하나를 고릅니다. <b>Menu only</b>는 손님에게 메뉴만 보여 주고 장바구니·담기·결제를 숨기므로 디지털 메뉴판으로 쓰기 좋습니다. 이 선택은 Add-ons의 <b>Online Order</b> 스위치와 연동됩니다 — Add-ons에서 Online Order를 꺼 두었다면 <b>Menu only</b>로 고정되고 "Online Order가 꺼져 있어 손님은 메뉴만 봅니다. Take orders를 고르면 다시 켜집니다"라는 안내가 표시됩니다. QR 주문의 설정과는 서로 따로입니다.</div>
+    <div class="tip"><b>매장 주소(Custom URL)를 제안해 줍니다.</b> <b>Store Link</b> 카드에 저장된 주소가 아직 없으면, 매장 이름으로 만든 주소가 <b>Custom URL</b> 칸에 미리 채워지고 "매장 이름으로 만든 주소입니다. 확인을 눌러 쓰거나 직접 바꿀 수 있습니다"라는 안내가 나옵니다. 그대로 쓰려면 <b>확인</b>(Check)을 눌러 사용할 수 있는지 확인하고, 원하는 주소가 있으면 직접 입력해 주세요. 이미 쓰는 주소라면 사용 중이라고 안내합니다.</div>
+    <div class="tip"><b>매장 홈페이지.</b> <span class="plan biz">Business</span> 플랜에서는 이 매장 링크를 한 페이지짜리 매장 웹사이트로 바꿀 수 있습니다(<a href="c3.html#c3-homepage">매장 홈페이지</a> 참고).</div>
+
     <h3 style="font-size:16px;margin:22px 0 4px" id="c11-guest">손님 화면</h3>
-    <div class="tip"><b>손님 화면은 이렇게 표시됩니다:</b> 손님은 자기 휴대폰에서 <b>"내 주문(My Orders)"</b>을 열어 오늘과 이전 주문을 항목별 계산서와 함께 볼 수 있습니다. 결제한 뒤 새 주문을 하려면 <b>QR을 다시 스캔</b>해야 합니다 — 이미 결제된 주문에 실수로 항목이 추가되는 일을 막아 줍니다.</div>
+    <div class="tip"><b>손님 화면은 이렇게 표시됩니다:</b> 손님은 자기 휴대폰에서 <b>"내 주문(My Orders)"</b>을 열어 오늘과 이전 주문을 항목별 계산서와 함께 볼 수 있습니다. 결제가 끝난 테이블 화면에는 <b>Start a new order</b>(새 주문 시작) 버튼이 표시됩니다. 누르면 QR을 다시 스캔한 것과 같이 새 주문으로 시작하며, 이미 결제된 주문에는 아무것도 추가되지 않습니다.</div>
     <div class="tip"><b>갤러리 보기와 목록 보기.</b> 손님은 휴대폰 메뉴를 <b>갤러리 보기(Gallery, 큰 사진)</b>와 간단한 목록 사이에서 전환할 수 있습니다. 사진이 없는 항목은 대신 매장 로고가 표시되어 메뉴가 항상 깔끔합니다. 손님이 선택한 보기는 그 손님 휴대폰에 기억됩니다.</div>
   </div>
-<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c6.html">16. 예약 &amp; 스케줄러</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c10.html"><small>← 이전</small>17. 고객 &amp; 단골 혜택</a><a class="nx" href="c12.html"><small>다음 →</small>19. 고객에게 메시지 보내기</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c6.html">16. 예약 &amp; 스케줄러</a></li><li><a href="c3.html">3. 매장 설정하기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c10.html"><small>← 이전</small>17. 고객 &amp; 단골 혜택</a><a class="nx" href="c12.html"><small>다음 →</small>19. 고객에게 메시지 보내기</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

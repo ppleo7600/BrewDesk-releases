@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>19. 고객에게 메시지 보내기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>19. 고객에게 메시지 보내기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -33,6 +33,7 @@
 <a href="c12.html" class="cur"><span class="num">19</span>고객에게 메시지 보내기</a>
 <a class="sub" href="#c12-channels"><span class="num">19.1</span>채널 켜기 · 충전</a>
 <a class="sub" href="#c12-optin"><span class="num">19.2</span>손님 동의 · 템플릿</a>
+<a class="sub" href="#c12-sms-length"><span class="num">19.3</span>문자 한 통 글자 수</a>
 <a href="c19.html" class=""><span class="num">20</span>백업</a>
 <div class="part">4부 · 설치 · 기기</div>
 <a href="c24.html" class=""><span class="num">21</span>설치 준비물 &amp; 네트워크</a>
@@ -63,8 +64,18 @@
     <p class="intro">손님은 메시지를 받기 전에 항상 먼저 동의합니다. 손님이 STOP이라고 답하면 BrewDesk는 즉시 문자 발송을 중단합니다. 보내는 문구는 <b>Templates</b> 탭에서, 발송 결과는 <b>Log</b> 탭에서 확인합니다.</p>
     <div class="tip"><b>옵트인(Opt-in)</b>은 손님이 메시지를 받기로 선택하는 것입니다. 결정권은 항상 손님에게 있습니다.</div>
     <figure class="shot"><img src="../img/21-messaging.png" alt="메시징 설정 화면" loading="lazy"><figcaption><b>메시징</b>① Usage / Templates / Log 탭  ·  ② 카드별 남은 크레딧  ·  ③ Top Up  ·  ④ Auto Top-Up</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c12-sms-length">문자 한 통 글자 수</h3>
+    <p class="intro">손님에게 나가는 문자는 <b>항상 한 통</b>이어야 합니다. 영문 등(GSM 방식)은 160자, 한글처럼 다른 문자가 하나라도 들어가면 70자까지입니다. <b>Templates</b> 탭에서 문자 문구를 고치면 그 자리에서 글자 수를 알려 줍니다.</p>
+    <ol class="steps">
+      <li>입력칸 오른쪽 아래에 <b>"문자 1통까지 N자 남음"</b>이 표시되고, 아래 줄에는 인코딩 · 통 수 · <b>글자 수/한도</b>(예: 58/70)가 나옵니다.</li>
+      <li>한도를 넘으면 빨간 경고 <b>"문자 1통 한도를 N자 넘었습니다. 2통 이상이 되는 문자는 보내지 않고 손님에게 이메일로만 갑니다. 글을 줄여 주세요."</b>가 나타나고, 남은 글자 수 대신 넘친 글자 수(예: -12)가 빨갛게 표시됩니다.</li>
+      <li>이 글자 수는 변수(손님 이름·매장 이름 등)에 <b>예시 값</b>을 넣어 센 값입니다. <b>[[ ]]</b>로 감싼 부분은 맺음말이며, 글이 길면 가장 먼저 빠집니다.</li>
+    </ol>
+    <div class="tip"><b>두 통이 되는 문자는 보내지 않습니다.</b> 실제로 보낼 때도 한 통을 넘으면 맺음말 → 손님 이름 → 매장 이름 순으로 줄여 보고, 그래도 넘으면 문자는 보내지 않고 손님에게는 이메일로만 갑니다. 그러니 문구를 되도록 짧게 유지해 주세요.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c11.html">18. QR 코드 주문</a></li><li><a href="c19.html">20. 백업</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c11.html"><small>← 이전</small>18. QR 코드 주문</a><a class="nx" href="c19.html"><small>다음 →</small>20. 백업</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>6. 点单 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>6. 点单 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -18,8 +18,9 @@
 <a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
 <a href="c5.html" class="cur"><span class="num">6</span>点单</a>
 <a class="sub" href="#c5-hold"><span class="num">6.1</span>挂单</a>
-<a class="sub" href="#c5-tablemap"><span class="num">6.2</span>绘制桌台图</a>
-<a class="sub" href="#c5-move"><span class="num">6.3</span>移动与合并餐桌</a>
+<a class="sub" href="#c5-voidreason"><span class="num">6.2</span>取消已送到厨房的菜品</a>
+<a class="sub" href="#c5-tablemap"><span class="num">6.3</span>绘制桌台图</a>
+<a class="sub" href="#c5-move"><span class="num">6.4</span>移动与合并餐桌</a>
 <a href="c30.html" class=""><span class="num">7</span>刷卡收款准备 · 连接 Stripe</a>
 <a href="c7.html" class=""><span class="num">8</span>收款</a>
 <a href="c8.html" class=""><span class="num">9</span>折扣与促销</a>
@@ -83,6 +84,19 @@
     </ol>
     <div class="tip"><b>什么时候该用挂单？</b>顾客暂时走开去拿东西，或您需要先处理别人的订单时，都可以使用。暂存的订单会安全地等到您准备好，不会丢失任何内容。</div>
 
+    <h3 id="c5-voidreason" style="font-size:16px;margin:22px 0 4px">取消已送到厨房的菜品</h3>
+    <p class="intro">取消已经发送到厨房的菜品时，现在要先选择一个<b>原因</b>——点一下按钮即可，不用再手动输入。</p>
+    <div class="activate"><div class="h">什么时候出现</div><p>取消已发送到厨房的菜品时会打开。如果只是删除购物车里尚未发送的菜品，则不会出现。用经理 PIN 批准取消时，打开的也是同一个原因界面。</p></div>
+    <ol class="steps">
+      <li>会打开一个界面，显示 <b>“This item was already sent to kitchen”</b>（此项目已发送至厨房）和 <b>“Reason for void (required)”</b>（作废原因，必填）。</li>
+      <li>点其中一个按钮：<b>Wrong order</b>（下单错误）、<b>Customer changed mind</b>（顾客改变主意）或 <b>Out of stock</b>（售罄）。其他原因请点 <b>Other (type a reason)</b>（其他，填写原因），并输入<b>至少 2 个字</b>。</li>
+      <li>在 <b>“Recent reasons at this store”</b>（本店最近使用的原因）下，最多会显示本店最近用过的 6 个原因，点一下即可重复使用。</li>
+    </ol>
+    <div class="tip"><b>原因会打印在厨房取消单上。</b>正如界面所说——所选取消原因会一并打印在厨房取消单上——原因会以一行的形式打印在厨房打印机 VOID 单标题的正下方，厨房不必再追问为什么取消。同一个菜品再次取消时，厨房取消单也会正常打印。</div>
+    <div class="tip"><b>您可以选择取消人。</b>如果在 <code>Settings › Staff Permissions › Staff</code> 中开启了<b>选择取消人</b>，并且有两人或以上，此取消原因窗口的下方会出现<b>取消人</b>列表。默认是当前登录的人；选择其他人时不会再次询问对方的 PIN。详见<a href="c16.html#c16-voidchoose">选择取消人</a>。</div>
+    <div class="tip"><b>修改已发送的菜品也会记为取消。</b>在已发送到厨房的菜品上点 <b>Modify</b> 后，原来的那一行会被自动取消，原因记为<b>“修改菜品”</b>。这是由系统记录的原因，而不是您选择的，所以不会出现在<b>“本店最近使用的原因”</b>中。修改后的新一行会算作销售，因此金额不会被重复扣除。</div>
+
+
     <h3 id="c5-tablemap" style="font-size:16px;margin:22px 0 4px">绘制桌台图</h3>
     <p class="intro">如果您在餐桌服务，桌台图就是您店内空间的一幅小地图。点击某张餐桌即可开始该桌的订单。它只需设置一次，下面介绍如何绘制。</p>
     <div class="activate"><div class="h">在哪里开启</div><p>餐厅和酒吧业态默认开启桌台服务。其他业态请在 <code>Settings › Add-ons › Tables</code> 中开启（拨动开关）。只有开启桌台服务后才会显示桌台图。</p></div>
@@ -102,6 +116,7 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c5-move">移动与合并餐桌</h3>
     <p class="intro">通过拖放来移动和合并。顾客有时会改变主意，比如想换到露台，或者两桌决定一起结账。在桌台图上，您可以把一张餐桌的整个订单拿起来放到别处，无需重新输入任何内容。</p>
+    <div class="vbox"><p class="vlabel">观看视频</p><div class="vgrid"><div class="vcard" data-vid="2leVQZUdilI"><a class="vthumb" href="https://www.youtube.com/watch?v=2leVQZUdilI" target="_blank" rel="noopener" aria-label="播放: 合并两张桌子（以及撤销）"><img src="https://i.ytimg.com/vi/2leVQZUdilI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">合并两张桌子（以及撤销）</p></div></div><p class="vlabel" data-for="shorts">短视频</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="FEJFRSDCMZc"><a class="vthumb" href="https://www.youtube.com/shorts/FEJFRSDCMZc" target="_blank" rel="noopener" aria-label="播放: 两桌一单？长按、拖动、合并"><img src="https://i.ytimg.com/vi/FEJFRSDCMZc/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">两桌一单？长按、拖动、合并</p></div></div></div>
     <div class="activate"><div class="h">在哪里找到</div><p>此功能内置于<b>桌台图</b>中。只要开启了<b>桌台服务</b>就可以使用，无需额外开启任何设置。</p></div>
     <p class="sub"><b>把订单移到空桌</b></p>
     <ol class="steps">
@@ -120,7 +135,8 @@
     <div class="tip"><b>餐桌显示占用却没有订单？</b>有时餐桌被打开（例如被 QR 扫码打开）却没有下单，因此一直显示为占用。点击地图上的这张餐桌，BrewDesk 会提供<b>清除</b>（整理回空桌）或<b>开启</b>新订单的选项。只有当餐桌上没有订单也没有付款时才能清除，所以您绝不会丢失任何一笔真实的销售。</div>
 
   </div>
-<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c23.html">5. 员工快速入门</a></li><li><a href="c30.html">7. 刷卡收款准备 · 连接 Stripe</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c23.html"><small>← 上一页</small>5. 员工快速入门</a><a class="nx" href="c30.html"><small>下一页 →</small>7. 刷卡收款准备 · 连接 Stripe</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c16.html">15. 员工与权限</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c23.html"><small>← 上一页</small>5. 员工快速入门</a><a class="nx" href="c30.html"><small>下一页 →</small>7. 刷卡收款准备 · 连接 Stripe</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

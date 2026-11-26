@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>16. 预订与排程 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>16. 预订与排程 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -28,7 +28,10 @@
 <a href="c21.html" class=""><span class="num">14</span>您的套餐与账单</a>
 <a href="c16.html" class=""><span class="num">15</span>员工与权限</a>
 <a href="c6.html" class="cur"><span class="num">16</span>预订与排程</a>
-<a class="sub" href="#c6-waitlist"><span class="num">16.1</span>排队候位</a>
+<a class="sub" href="#c6-calc"><span class="num">16.1</span>预订计算器——划分预订桌与散客桌</a>
+<a class="sub" href="#c6-save-notice"><span class="num">16.2</span>保存预订时的提示</a>
+<a class="sub" href="#c6-online"><span class="num">16.3</span>客人在线预订时</a>
+<a class="sub" href="#c6-waitlist"><span class="num">16.4</span>排队候位</a>
 <a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
 <a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
 <a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
@@ -77,6 +80,35 @@
     <div class="tip"><b>没有网络？签到照样可用。</b>网络中断时，您仍然可以点 <b>Check In</b>、<b>No Show</b>（未到店）或 <b>Cancel</b>（取消）——改动会立刻显示在屏幕上，联网后自动上传。只有<b>新建或修改预订</b>会被禁止，屏幕会告诉您原因：<b>“离线状态下无法创建新预订 — 预订日历同时也由店外写入，可能造成重复预订。请在恢复连接后重试。”</b>如果列表完全无法加载，您会看到 <b>“Showing the last list received”</b>（显示最后一次获取的列表），已有的预订仍会保留在屏幕上。</div>
     <div class="brag"><div class="h">值得展示</div><p><b>预订功能内置。</b>您不需要再装一个应用，也不用额外付费。餐厅可以订桌位；美容美发店和水疗店可以订员工的时间——全都在同一个日历上。</p></div>
 
+    <h3 id="c6-calc" style="font-size:16px;margin:22px 0 4px">预订计算器——划分预订桌与散客桌</h3>
+    <p class="intro">预订计算器会把每个班次的桌子分成<b>预订桌（绿色）</b>和<b>散客桌（灰色）</b>，并据此算出可接待的预订组数和开始时间。预订只会占用预订桌，散客桌保持空闲，所以预订不会占掉直接上门的客人的座位。</p>
+    <div class="activate"><div class="h">在哪里找</div><p>位于 <code>Settings › Reservations › Settings</code> 顶部的 <b>Reservation calculator</b>（预订计算器）卡片。需要先开启 Reservations 附加功能。</p></div>
+    <ol class="steps">
+      <li>在顶部的班次标签中选择要设置的班次。每个标签会显示“最多 N 组 · 开始时间”。班次来自 <code>Hours &amp; Closures</code>。</li>
+      <li>如果该班次不想接受预订，请关闭 <b>Take reservations</b>（接受预订）开关。关闭的班次会显示 <b>No reservations</b>（不接受预订）。</li>
+      <li>在各座位大小的行中，点按桌子方块，或点 <b>−</b> / <b>+</b>，设置有几张桌子用于预订。想快速设置，可使用 <b>Quick split</b>（快速分配）：<b>All for reservations</b>（全部预订）· <b>More (70%)</b>（多预订）· <b>Half</b>（各一半）· <b>Fewer (30%)</b>（少预订）。下方的条形图会显示预订与散客的比例。</li>
+      <li>设置 <b>Time per party</b>（每桌用餐时间）。<b>Same for every party</b>（所有客人相同）使用同一个值；<b>By table size</b>（按桌型）则为每种桌型分别输入分钟数（不少于 15 分钟）。预订按能容纳该人数的最小桌型的时间计算；超过最大桌型的团体按最大桌型的时间计算。随后会显示 <b>Last booking</b>（最后预订），即班次结束时间减去该用餐时间。</li>
+      <li>在 <b>Booking times every</b>（预订时间间隔）中选择预订时间每隔多少分钟开始一次（例如每 30 分钟）。此项对所有班次通用。</li>
+      <li><b>Shift occupancy</b>（班次占用）会按当前设置预览预订桌数量、翻台次数（<b>Turns</b>）、最多可接待的组数和开始时间。这只是用于检查设置的模拟，并不是真实预订。</li>
+      <li>请使用设置页面通用的 <b>Save</b>（保存）按钮保存——该卡片没有单独的保存按钮。保存之前，卡片会显示 <b>Preview</b>（预览）标记和“Not in use yet — save to start taking bookings by tables.”（尚未启用，保存后才开始按桌位接受预订）的提示。</li>
+    </ol>
+    <div class="tip"><b>还没有桌位图？</b>在 <b>Tables by size</b>（按大小的桌数）中直接输入座位数和桌数，并用 <b>Add size</b>（添加大小）增加行。之后创建桌位图时，系统会提示您重新选择预订桌；在您再次保存之前，仍按之前每种桌型的相同数量用于预订。</div>
+    <div class="tip"><b>已有预订与新设置不符时：</b>如果保存后已接受的预订不再符合新设置，会弹出提示框：“N bookings already made would no longer fit these settings. They stay booked — please check them after saving.”（已有 N 个预订将不再符合这些设置；它们仍保持预订状态，请保存后检查）。可选择 <b>Cancel</b>（取消）返回，或点 <b>Save anyway</b>（仍然保存）。已有预订不会被取消。</div>
+    <div class="tip"><b>没有任何预订桌时：</b>条形图下方会出现警告，说明客人在任何时间都无法预订。请至少把一张桌子设为绿色，或关闭该班次的 <b>Take reservations</b>。</div>
+    <div class="tip"><b>设置页中的部分项目会隐藏。</b>保存计算器并按桌位运行后，不再使用的 <b>Slot Capacity (Pacing)</b> 卡片会被隐藏；如果每个班次都保存了用餐时间，<b>Closing Buffer</b> 也会隐藏。预订时间间隔在计算器卡片中设置；无法使用该卡片的店铺（没有班次或桌位，或没有接受预订的班次）会在 <b>Basic Booking Rules</b> 下看到同样的 <b>Booking time interval</b> 选项。同一时间只会显示在一处。</div>
+
+    <h3 id="c6-save-notice" style="font-size:16px;margin:22px 0 4px">保存预订时的提示</h3>
+    <p class="intro">员工保存预订时，即使座位重叠或时间不在营业时间内，预订也会被保存——屏幕只是把情况告诉您。</p>
+    <ul>
+      <li><b>座位重叠：</b>会出现黄色提示 <b>“已保存 — 座位重叠”</b>（Saved — seats overlap）及其中一个原因——该时间没有适合该人数的空桌 / 该时间已订满 / 不在预订时段内 / 无法检查座位。无论哪种情况预订都已保存，请按提示调整或检查桌位。</li>
+      <li><b>不在营业时间内：</b>保存前会出现 <b>“该时间不在营业时间内”</b> 的确认窗口。继续的话预订会被保存，窗口关闭后仍会保留 <b>“已在营业时间外预约”</b> 的提示。</li>
+      <li><b>在休息日新建预订：</b>时间栏下方会显示“休息日 — 保存时会显示提醒。”</li>
+    </ul>
+
+    <h3 id="c6-online" style="font-size:16px;margin:22px 0 4px">客人在线预订时</h3>
+    <div class="tip"><b>自动确认预订，还是由您逐个批准。</b>在 <code>Settings › Reservations › Settings</code> 的 <b>Booking Policy &amp; Guest Portal</b> 卡片中，<b>Auto-confirm Reservations</b> 开关下方会写明当前的行为：开启——新预订会立即确认；<b>关闭——员工需在 POS 中逐个批准预订</b>。关闭后，客人在线提交的预订要等员工批准后才会确认。</div>
+    <div class="tip"><b>客人无法预订时看到的提示。</b>如果客人选了时间但没有适合其人数的桌子，会看到“该时间没有适合您人数的空桌。请选择其他时间或更改人数。”如果 Reservations 附加功能或顾客门户已关闭，或在线渠道已隐藏预订，则会看到“该店铺目前不接受在线预订，请直接联系店铺。”，此时不会产生任何预订。员工在 POS 中录入的预订不受此限制。</div>
+
     <h3 id="c6-waitlist" style="font-size:16px;margin:22px 0 4px">排队候位</h3>
     <p class="intro">候位名单就是等空桌的顾客队伍。BrewDesk 帮您管理这支队伍，并在桌位准备好时第一时间给顾客发短信——他们就不必挤在您的门口了。</p>
     <div class="activate"><div class="h">在哪里开启</div><p>在 <code>Settings › Add-ons › Waitlist</code> 中开启（打开开关）。需要先开启<b>桌台</b>（Tables）——如果弹出提示，请点 <b>Enable Both</b>（同时启用）。</p></div>
@@ -94,6 +126,7 @@
     <div class="tip"><b>您的取号机显示您的店名。</b>在设为<b>候位名单自助机</b>（Waitlist Kiosk）的平板上，屏幕顶部现在会显示您的<b>店铺 Logo 和店名</b>——它使用您已在 <code>Settings › Store info</code> 中保存的图片，无需另外上传。电话框也会默认显示<b>您所在国家的区号</b>（+1、+82、+66 …），根据您店铺所在国家自动带出，顾客只需输入号码。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c16.html">15. 员工与权限</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c16.html"><small>← 上一页</small>15. 员工与权限</a><a class="nx" href="c10.html"><small>下一页 →</small>17. 顾客与会员积分</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

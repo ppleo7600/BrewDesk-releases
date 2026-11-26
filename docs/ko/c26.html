@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>29. 용어집 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>29. 용어집 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -90,14 +90,15 @@
       <tr><td class="feat">직책 칩 (role chip)</td><td class="desc">화면 위쪽의 색깔 칩으로, 지금 이 계산대가 <b>사장님</b>(주황) · <b>매니저</b>(파랑) · <b>직원</b>(회색) 중 어떤 직책으로 동작하는지 보여 줍니다. 탭하면 직책 전환과 타임 클락 패널이 열립니다. → <a href="c16.html#c16-roles">권한 · 직책 칩</a></td></tr>
       <tr><td class="feat">타임 클락 (Time Clock)</td><td class="desc">직원이 PIN으로 출근 · 퇴근을 기록하고 계산대 담당자를 정하는 패널입니다. 근무 시간은 리포트에 반영됩니다. → <a href="c23.html#c23">직원 빠른 시작</a> · <a href="c16.html#c16">직원 &amp; 권한</a></td></tr>
       <tr><td class="feat">자리 비움 잠금 (Idle Lock)</td><td class="desc">한동안 쓰지 않은 계산대를 <b>Select Profile</b> 잠금 화면으로 바꾸는 기능입니다. 예전 이름은 "PIN Login"이며, 꺼도 PIN 로그인과 권한은 그대로 작동합니다. → <a href="c16.html#c16">직원 &amp; 권한</a> · <a href="c16.html#c16-roles">권한</a></td></tr>
-      <tr><td class="feat">대표 PIN (사장님 PIN · Owner PIN)</td><td class="desc">사장님 직책으로 올라가거나 직원 제거 같은 중요한 작업을 승인하는 4자리 PIN입니다. 잊으면 가입 이메일로 받은 6자리 코드로 재설정합니다. → <a href="c16.html#c16-pinreset">PIN을 잊었을 때</a></td></tr>
-      <tr><td class="feat">매니저 PIN (Manager PIN)</td><td class="desc">계정 없이도 매니저 업무를 할 수 있게 하는 공용 PIN입니다. 사장님만 바꿀 수 있고, 기본값 0000인 동안에는 매니저로 전환할 수 없습니다. → <a href="c16.html#c16-roles">권한 · 매니저 PIN</a></td></tr>
-      <tr><td class="feat">직원 PIN</td><td class="desc">직원 한 명 한 명의 4자리 PIN입니다. 잠금 화면 로그인과 출퇴근 기록에 사용합니다. → <a href="c16.html#c16-add">직원 추가하기</a></td></tr>
+      <tr><td class="feat">매장 오너 PIN (대표 PIN · 사장님 PIN · Owner PIN)</td><td class="desc">사장님 직책으로 올라가거나 직원 제거 같은 중요한 작업을 승인하는 4자리 PIN입니다. 오너로 등록된 사람은 누구나 바꿀 수 있습니다. 잊으면 사장님 앱에서 새로 정하거나 가입 이메일로 받은 재설정 링크로 다시 정합니다. → <a href="c16.html#c16-pinreset">PIN을 잊었을 때</a></td></tr>
+      <tr><td class="feat">매장 매니저 PIN (Manager PIN)</td><td class="desc">계정 없이도 매니저 화면으로 바꿔 매니저 업무를 할 수 있게 하는 공용 PIN입니다. 사장님만 바꿀 수 있고, 기본값 0000인 동안에는 매니저로 전환할 수 없습니다. → <a href="c16.html#c16-roles">권한 · 매니저 PIN</a></td></tr>
+      <tr><td class="feat">개인 PIN (직원 PIN)</td><td class="desc">사람 한 명 한 명의 4자리 PIN으로, 매장 PIN과는 별개입니다. 잠금 화면 로그인과 출퇴근 기록에 사용합니다. → <a href="c16.html#c16-add">직원 추가하기</a></td></tr>
       <tr><td class="feat">플랜 (Starter · Pro · Business)</td><td class="desc"><b>Starter</b>는 무료, <b>Pro</b>와 <b>Business</b>는 한 달 무료 체험이 있습니다. 플랜에 따라 쓸 수 있는 기능과 기기 대수(계산대 · 고객 디스플레이 · 직원 주문 기기)가 다릅니다. → <a href="c21.html#c21">플랜 &amp; 결제</a> · <a href="c14.html#c14-limit">기기 한도</a></td></tr>
       <tr><td class="feat">총판 (Installer partner)</td><td class="desc">매장을 설치하고 이후에도 설정을 대신 관리해 주는 업체입니다. 사장님 승인으로 연결되며 사장님이 언제든 해제할 수 있습니다. → <a href="c21.html#c21-installer">총판 연결 · 해제</a></td></tr>
     </table></div>
   </div>
 <div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c13.html">22. 기기 모드 &amp; 고객 디스플레이</a></li><li><a href="c14.html">23. 여러 대 기기 &amp; 안정성</a></li><li><a href="c6.html">16. 예약 &amp; 스케줄러</a></li><li><a href="c27.html">25. 라이브 전환</a></li><li><a href="c5.html">6. 주문 받기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c28.html"><small>← 이전</small>28. 자주 묻는 질문</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

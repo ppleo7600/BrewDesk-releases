@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>11. Reports &amp; closing the day · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>11. Reports &amp; closing the day · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -57,6 +57,7 @@
       <li>Read your <b>AI daily insights</b> (<span class="plan pro">Pro</span> and above). This is a short note in plain words about your day, with helpful tips. (<span class="plan biz">Business</span> plans also get one by email each week.)</li>
       <li>Count the cash in your drawer and check it matches the number BrewDesk shows. Add any money you put in, and note any money you took out.</li>
     </ol>
+    <div class="tip"><b>The close button is always there — open orders are flagged when you press it.</b> It no longer greys out in advance. If unpaid orders are still open when you press close, you get <b>"There are open orders, so you can't close yet — settle the tables and press again"</b>. Settle (pay or cancel) the tables and press again. <b>Close today</b> in Closing History and the close button in Payment History work the same way, and the Closing History list is simpler now. Staff accounts still get <b>"Owner only."</b> when they press it.</div>
     <figure class="shot"><img src="../img/105-zreport.png" alt="Z-Report" loading="lazy"><figcaption><b>Z-Report</b>① Z-Report (Final)  ·  ② Grand Total  ·  ③ Total Transactions  ·  ④ Payment Breakdown  ·  ⑤ Print · Export · Close</figcaption></figure>
     <ol class="steps" start="4">
       <li>When the cash matches, go to <b>Manage › Closing History</b> (the screen is titled Closing Reports), tap <b>Close Now</b>, then tap <b>Close Day</b> in the window that opens. This saves a full summary of the day, called the Z-Report.</li>
@@ -68,6 +69,8 @@
     <div class="tip"><b>Rounding cash to the nearest coin?</b> If you switched on <a href="c7.html#c7-cashrounding">cash payment rounding</a>, the Payment Breakdown grows one line — <b>Cash Rounding</b>, right under Total Payment Collected, with <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b> underneath. That line is why collected and grand total differ, and it's the number to hand your accountant. If rounding is off, or nothing rounded today, the line doesn't appear at all.</div>
     <div class="tip"><b>Cancelling an order asks why — always.</b> Whether you void a leftover unpaid order at closing, void them all at once, or cancel an order out on the floor, the same little box appears: <b>Wrong entry</b>, <b>Customer left</b>, <b>Test order</b>, or <b>Other (type a reason)</b>. The confirm button stays greyed out until you pick one. Cancellations with no reason are exactly the ones you'll want an answer for later.</div>
     <div class="brag"><div class="h">Show this off</div><p><b>Your numbers, said in plain words.</b> Daily insights tell you what happened and what to do next — not just a page full of figures.</p></div>
+
+    <div class="tip"><b>Stats and data export are owner-only by default.</b> They're off for manager and staff accounts, and tapping them shows an owner-only notice. That covers Stats, the export buttons in Payment History and Closing Reports, the accounting file, and connecting or restoring from Google Drive. The owner can switch them on per role in <code>Settings › Staff Permissions</code>. How far back past closing reports reach also depends on the role: the <b>owner</b> has no limit, a <b>manager</b> sees the last 7 business days including today, and <b>staff</b> see only today's business day. Closing today and printing the closing report work as before.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c17-export">Export your sales</h3>
     <p class="intro">Hand your numbers to your bookkeeper in one tap. Here's how. (The window is titled <b>Backup &amp; Restore</b> — the same one described in <a href="c19.html#c19">Backups</a>.)</p>
@@ -97,6 +100,7 @@
       <li>Prefer to check each one? Tap <b>Close One by One</b>. If a day still has unpaid orders, tap <b>Settle</b> to pay or void them first.</li>
     </ol>
     <div class="tip"><b>Paying off a bill that's already open still works.</b> Only <b>new</b> business pauses. An order that's already sitting on a table can still be settled — <b>Pay Now</b> and <b>Split</b> stay available, so you can take the money, clear the order, and then close the day.</div>
+    <div class="tip" id="c17-unclosed-gate"><b>Unpaid orders from a past business day block the screen.</b> If an order went to the kitchen but was never paid, BrewDesk opens with a full-screen notice that shows only the list of unpaid orders, and it can't be dismissed. Open each order from the list and pay for it or cancel it; if you go back without finishing, the notice returns. Once everything is settled, that business day is closed automatically with no extra button, and a short message confirms the orders are settled. Staff order devices only see a message that the device can't be used right now, so settle the orders on the main POS.</div>
     <div class="tip"><b>The number it shows is the real one.</b> If closing is refused because a bill is still unpaid, the message tells you how many orders the till is actually waiting on, so you know what to go and settle.</div>
     <div class="tip"><b>Why block new sales?</b> Closing days in order keeps your totals honest, so your reports — and your accountant's numbers — always line up.</div>
 
@@ -127,6 +131,7 @@
     <div class="tip"><b>A red band you can't dismiss.</b> If a drawer change doesn't reach the server, you'll see <b>"This drawer has not been saved"</b> — <i>"The last change did not reach the server. If you refresh now, the float, pay-ins and count are gone. Check the network and make any change again."</i> There is no close button on purpose. A message you can swipe away is a message you'll forget, and refreshing the page would lose the day's drawer.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c7.html">8. Getting paid</a></li><li><a href="c19.html">20. Backups</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c9.html"><small>← Previous</small>10. Refunds</a><a class="nx" href="c15.html"><small>Next →</small>12. Working offline</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

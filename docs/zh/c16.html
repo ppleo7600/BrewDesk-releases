@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>15. 员工与权限 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>15. 员工与权限 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -30,8 +30,9 @@
 <a class="sub" href="#c16-addon"><span class="num">15.1</span>员工附加功能：开启与关闭的区别</a>
 <a class="sub" href="#c16-add"><span class="num">15.2</span>添加员工</a>
 <a class="sub" href="#c16-edit"><span class="num">15.3</span>修改或删除员工</a>
-<a class="sub" href="#c16-roles"><span class="num">15.4</span>权限、经理 PIN 与角色标签</a>
-<a class="sub" href="#c16-pinreset"><span class="num">15.5</span>忘记 PIN？</a>
+<a class="sub" href="#c16-voidchoose"><span class="num">15.4</span>选择取消人</a>
+<a class="sub" href="#c16-roles"><span class="num">15.5</span>权限、经理 PIN 与角色标签</a>
+<a class="sub" href="#c16-pinreset"><span class="num">15.6</span>忘记 PIN？</a>
 <a href="c6.html" class=""><span class="num">16</span>预订与排程</a>
 <a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
 <a href="c11.html" class=""><span class="num">18</span>二维码点单</a>
@@ -91,10 +92,10 @@
     </ol>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-edit">修改或删除员工</h3>
-    <p class="intro">改名字、换 PIN、隐藏已经离职的人——以前这是同一行里四个不同的小控件。现在只有一个入口：点一下这个人。</p>
-    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="员工编辑卡片" loading="lazy"><figcaption><b>员工编辑卡片（点员工姓名即可打开）</b>① Name（姓名）  ·  ② Role（角色）  ·  ③ PIN（两格都留空则保持不变） · Reset · Revoke PIN（撤销PIN码）  ·  ④ Save（保存）</figcaption></figure>
+    <p class="intro">改名字、换 PIN、隐藏已经离职的人——以前这是同一行里四个不同的小控件。现在只有一个入口：点这个人卡片上的 <b>Info</b> 按钮。</p>
+    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="员工编辑卡片" loading="lazy"><figcaption><b>员工编辑窗口（Info 标签）</b>① Name（姓名）  ·  ② Role（角色）  ·  ③ PIN（两格都留空则保持不变） · Reset · Revoke PIN（撤销PIN码）  ·  ④ Save（保存）</figcaption></figure>
     <ol class="steps">
-      <li>在员工列表中，<b>点员工姓名（该员工所在行的任意位置）</b>，就会打开编辑窗口。</li>
+      <li>员工列表为每个人显示一张卡片（两列），包含姓名、角色标记、状态（如“活跃”）、邮箱，以及<b>已设置 PIN</b>或<b>未设置 PIN</b>。点卡片上的 <b>Info</b> 按钮即可打开该员工的窗口。窗口顶部有三个标签——<b>Info</b>、<b>Sales</b> 和 <b>Attendance</b>——姓名、角色和 PIN 在 <b>Info</b> 标签中修改。（尚未接受邀请的人只有 Info 标签。）</li>
       <li>顶部会显示对方的邮箱，让您确认没有找错人。需要的话，修改<b>姓名</b>（Name）。</li>
       <li>如果对方的工作变了，修改<b>角色</b>（Role）。（店主所在的行只以文字显示角色——店主的角色在这里不能更改。）</li>
       <li>要设置新的 PIN，请在两个 <b>PIN（4位数字）</b>格中都输入。<b>两格都留空，则当前 PIN 保持不变</b>——格子下方会一直显示这句话（“留空则保持当前 PIN 不变。”）。</li>
@@ -104,29 +105,46 @@
     <div class="tip"><b>与其删除，不如先隐藏。</b><b>Disable</b>（停用）会让对方从 POS 上消失，但他们过去的订单和工时仍保留在您的报表中。<b>Enable</b>（启用）可以让他们回来。只有店主能看到这两个按钮。</div>
     <div class="tip"><b>把别人误邀请成了店主？</b>现在店主也可以被移除了——以前完全没有办法撤销。仍然有两件事做不到，BrewDesk 会告诉您原因：您不能移除<b>自己</b>，也不能移除门店的<b>最后一位店主</b>。移除任何人都会先请您确认姓名，然后要求输入<b>店主 PIN</b>（“移除员工需要店主 PIN。”）。</div>
     <p class="foot">移除某个人，和把门店转手是两回事。如果您要出售门店，请联系我们办理所有权转让。</p>
+    <p class="sub" style="margin:16px 0 4px"><b>Sales 与 Attendance 标签</b></p>
+    <p class="intro">在员工窗口的 <b>Sales</b> 标签中，可以看到对方的<b>小费</b>——合计、待结算小费和按日期列出的小费。在 <b>Attendance</b> 标签中，可以按日期看到排班、上班、下班和工时。时间范围可选今天、本周、本月或自定义（最多 92 天）。如需在统计中按相同的人员和时间范围查看更详细的数据，请点<b>在统计中查看详情</b>（只有能打开统计的角色才会显示）。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-voidchoose">选择取消人</h3>
+    <p class="intro">这个开关决定取消（Void）窗口是否显示<b>“取消人”</b>选择栏。它是 <code>Settings › Staff Permissions › Staff</code> 标签中的<b>选择取消人</b>，<b>默认关闭</b>。开关一点就会立即保存。</p>
+    <ol class="steps">
+      <li>只有在 Staff 附加功能开启时才会显示这个开关（<span class="plan pro">Pro</span> 或更高套餐）。</li>
+      <li>开启后，当有<b>两人或以上</b>（店主也算）时，取消原因窗口会出现<b>取消人</b>列表。默认选中当前用 PIN 登录的人，您也可以选其他人。</li>
+      <li>选择其他人时不会再次询问对方的 PIN。取消记录会同时保留您选择的人和该设备上登录的人。</li>
+    </ol>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-roles">权限、经理 PIN 与角色标签</h3>
-    <p class="intro">这个设置页面按屏幕列出 <b>经理</b>和<b>收银员</b>各自被允许做什么——而且现在您真的可以<b>勾选并保存</b>了。整个页面都重新做过：两张 PIN 卡片并排放在顶部，下面是一张大表格。</p>
+    <p class="intro">这个设置页面决定<b>经理</b>和<b>收银员</b>各自被允许做什么。您可以勾选并保存。页面布局已重新设计——先选择一个角色，该角色能做的事就会按分组显示出来。</p>
     <div class="activate"><div class="h">在哪里找到</div><p><code>Settings › Staff Permissions</code>。经理可以打开并查看；<b>只有店主可以更改并保存</b>。顶部有两个标签——<b>Permissions</b>（权限，所有套餐都有）和 <b>Staff</b>（员工，<span class="plan pro">Pro</span> 功能："Staff management is Pro-only"，即“员工管理仅限 Pro”）。</p></div>
-    <figure class="shot"><img src="../img/73-perms-table.png" alt="员工权限页面" loading="lazy"><figcaption><b>员工权限（Staff Permissions）</b>① Owner PIN（店主 PIN）——Set PIN（设置 PIN）  ·  ② Manager PIN（经理 PIN）——Change PIN（更改 PIN）  ·  ③ Permissions / Staff 标签  ·  ④ Manager 和 Staff 两列——勾选与锁形图标（PIN approval）</figcaption></figure>
-    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="权限表——从一开始就是展开的" loading="lazy"><figcaption><b>权限表（从一开始就是展开的）</b>① 屏幕行（Manager 和 Staff 两列）  ·  ② 下方的具体权限行  ·  ③ PIN approval 标记</figcaption></figure>
+    <figure class="shot"><img src="../img/73-perms-table.png" alt="员工权限页面" loading="lazy"><figcaption><b>员工权限（Staff Permissions）</b></figcaption></figure>
+    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="权限页面——某个角色的详细权限" loading="lazy"><figcaption><b>某个角色的详细权限</b></figcaption></figure>
     <ol class="steps">
-      <li>表格正好有<b>两列——“Manager”（经理）和“Staff”（员工）</b>。没有店主这一列，因为店主始终拥有全部权限。</li>
-      <li>表格从一开始就是完全展开的——没有需要折叠或展开的东西。权限<b>按屏幕分组</b>（<b>Screens</b> · <b>Settings tabs</b> · <b>Available everywhere</b>），具体的权限行就在对应屏幕的下面。没有具体权限的屏幕只有一行。</li>
-      <li>为对应角色勾选或取消勾选。屏幕行上的勾选决定<b>该角色能否打开这个屏幕</b>；下面各行的勾选决定各项具体操作。与默认值不同的行会显示一个还原标记。</li>
-      <li>留意某些行旁边的彩色标签：<b>PIN approval</b>（需要经理先输入 PIN）、<b>Limited view</b>（只能看到一部分）、<b>Restricted</b>（被禁止），以及 <b>Open the page</b>——它决定这个屏幕是否会出现。</li>
-      <li>带锁的行即使是店主也不能更改（店主专属或固定项目）。这张表没有搜索框，也没有“Differences only”开关，请从上到下浏览。</li>
-      <li>完成后，点设置页面顶部的 <b>Save</b>（保存）。尚未保存的行数会自动统计，点 <b>Discard changes</b> 可以全部还原。</li>
+      <li>先选择<b>角色</b>。左侧的角色列表（窄屏幕上是顶部的 <b>Role</b> 选择框）中有 <b>Owner</b>（店主，固定）、<b>Manager</b>（经理）和 <b>Staff</b>（员工），每个角色都显示人数以及“默认”或“固定”标记。店主始终可以执行所有操作，所以这个角色不能更改（“店主始终可以执行所有操作。”）。</li>
+      <li>中间的列表把权限分成<b>六个分组</b>——订单与支付 · 退款与折扣 · 菜单 · 报表 · 设置 · 员工。分组名称旁的勾选框可以一次性开启或关闭整个分组（只开启了一部分时显示为半选），右侧的数字（例如 3/5）是已开启的项目数。点分组名称，右侧会展开其中的具体项目。</li>
+      <li>勾选或取消勾选某个项目。对于已开启且分档的项目，右侧的选择框可以选<b>允许</b>、<b>需要审批</b>（经理需要先输入 PIN）或<b>受限</b>（只能看到一部分）。取消勾选即为<b>不允许</b>。</li>
+      <li>带锁的项目即使是店主也不能更改（店主专属或固定项目）。</li>
+      <li>在顶部的<b>搜索权限…</b>框中输入文字，列表就只显示匹配的项目。</li>
+      <li>底部一行会显示“更改将应用于此角色的全部 N 人。”设置完成后，点 <b>Save</b>（保存）。<b>Discard</b>（放弃）会还原尚未保存的更改。如果没保存就切换到另一个角色，BrewDesk 会询问“先保存更改吗？”。保存和放弃按钮位于此权限页面的底部。</li>
     </ol>
-    <div class="tip"><b>表格里您看到的每一行都是真正生效的。</b>取消勾选后，该角色会真的被拦住，并弹出提示。目前表格中有<b>退款</b>、<b>管理折扣</b>、<b>重新计算日结并结算小费</b>、<b>添加员工并重置其 PIN</b>和<b>保存设置</b>；而是否能打开某个屏幕（<b>Open the page</b>）也同样生效——请看接下来的两条提示。</div>
-    <div class="tip"><b>经理默认不能再保存设置了。</b>这一点有变化：<b>“保存设置”</b>对经理现在默认是<b>关闭</b>的。经理仍然可以打开并查看设置页面，但点 Save 时会弹出“您没有执行此操作的权限”——“只有店主可以进行此更改。您仍然可以查看此页面。”如果您的经理以前替您保存设置，请在这里勾选该项，把权限还给他。</div>
+    <div class="tip"><b>列表里您看到的每个项目都是真正生效的。</b>取消勾选后，该角色会真的被拦住，并弹出提示。目前列表中有<b>退款</b>、<b>管理折扣</b>、<b>重新计算日结并结算小费</b>、<b>添加员工并重置其 PIN</b>、<b>修改菜单和分类</b>（经理默认开启）、<b>保存设置</b>和<b>保存营业时间和班次</b>；而是否能打开某个屏幕同样生效——请看下面的提示。</div>
+    <div class="tip"><b>经理默认不能再保存设置了。</b><b>“保存设置”</b>对经理默认是<b>关闭</b>的。经理仍然可以打开并查看设置页面，但点 Save 时会弹出“您没有执行此操作的权限”——“只有店主可以进行此更改。您仍然可以查看此页面。”如果您的经理以前替您保存设置，请在这里勾选该项，把权限还给他。</div>
+    <div class="tip" id="c16-hours-write"><b>保存营业时间有单独的权限。</b><b>保存营业时间和班次</b>（保存营业时间、班次和固定休息日）与<b>保存设置</b>是分开的，位于“设置”分组中。经理默认也是<b>关闭</b>的，所以店主开启之前，经理不能保存 <code>Hours &amp; Closures</code>。此前已为经理开启<b>保存设置</b>的门店，会把相同的值沿用到这项权限，这些经理仍可继续保存。没有此权限的经理尝试保存营业时间时，会弹出上面的“您没有执行此操作的权限”提示。</div>
     <div class="tip"><b>您可以把整个设置标签交给经理。</b>有十一个设置标签可以向经理开放——<b>Hours &amp; Closures</b>（营业日 · 时间）、<b>Receipts</b>（收据）、<b>Printers</b>（打印机）、<b>Devices</b>（设备）、<b>Staff Permissions</b>（只读）、<b>Activity Log</b>（活动日志）、<b>Support</b>（支持）、<b>Tables</b>（桌台）、<b>Waitlist</b>（候位名单）、<b>Reservations</b>（预订）和 <b>Staff</b>（员工）。另外十四个无论如何都<b>仅限店主</b>，因为它们涉及店里的资金和身份：Store Info（门店信息）、Tax &amp; Service（税费与服务费）、Payments（支付）、Notifications（通知）、Add-ons（附加功能）、Tips（小费）、Order Types（订单类型）、Customers（顾客）、Customer Portal（顾客门户）、Scheduler（排程）、Display &amp; Branding、Loyalty（会员积分）、Google Drive 和 Messaging（消息）。这些标签没有可勾选的框。</div>
     <div class="tip"><b>当有人进入您已关闭的屏幕时</b>，会看到明确的提示，而不是该屏幕：“店主已为您的职位关闭了此页面”——“此页面的访问权限已在员工权限页面为您的职位关闭。重新登录也无法恢复 — 请联系店主重新开启。”最后一句很重要：这是一项设置，而不是故障，所以退出再登录也没用。</div>
     <div class="tip"><b>每次保存都会给您发邮件。</b>只要权限被保存，店主就会收到一封说明改动内容的邮件——这样就没有人能悄悄扩大自己的权限。相同的改动一天只发一封邮件。</div>
     <div class="tip"><b>关闭 Idle Lock 不会让这些权限失效。</b>关闭 <b>Idle Lock</b>（离开锁屏，位于 <code>Settings › Staff Permissions › Staff</code>）只会让收银机不再自动锁定——仅此而已。员工仍用自己的 PIN 登录，角色标签仍会切换，活动日志仍会记录谁做了什么，本页的每一项权限仍然生效。（关闭 <b>Staff</b> 附加功能才是让系统不再区分人员的开关。）</div>
-    <p class="sub" style="margin:16px 0 4px"><b>PIN 卡片——并排放在本页顶部</b></p>
-    <p class="intro"><b>店主 PIN</b> 和<b>经理 PIN</b> 卡片就在同一页面的顶部，左右并排。每张卡片一眼就能看出状态：<b>Set</b>（已设置）、<b>"Default 0000"</b>或 <b>Not set</b>（未设置）。店主卡片下方：设置后显示 <b>"Locks after 10 min idle"</b>（即“闲置 10 分钟后锁定”），尚未设置则显示 <b>"Set it to enable the lock screen"</b>（即“设置后即可启用锁屏”）。有了经理 PIN，当班的人不需要单独的账户就能处理经理的事务——只有店主可以设置或更改。经理打开本页时会看到一个锁形图标和 <b>"Only the owner can change this card."</b>（即“这张卡片只有店主可以更改。”）</p>
-    <div class="tip"><b>还是 0000？那经理就是关着的。</b>卡片会这样提示——状态标记 <b>"Default 0000"</b>，下方是 <b>"Can't switch to Manager until you change it"</b>（即“更改之前无法切换为经理”）。只要经理 PIN 还是出厂的 0000，<b>谁都无法把这台收银机切换为经理</b>：输入 0000 会提示“此 PIN 仍是默认值，无法用于切换职位。请先设置新的 PIN。”更改一次后，经理切换就恢复正常。（这是有意设计的——全店人人都知道的代码不算一把锁。）</div>
+    <p class="sub" style="margin:16px 0 4px"><b>三种 PIN——门店店主 PIN、门店经理 PIN、我的个人 PIN</b></p>
+    <p class="intro">PIN 卡片不再并排放在本页顶部，而是在角色窗口里——点角色列表中某个角色旁的<b>铅笔按钮</b>（或顶部 <b>Role</b> 选择框旁的铅笔按钮）即可打开。PIN 按用途分为三种。</p>
+    <ul>
+      <li><b>门店店主 PIN</b>——进入店主界面时使用。所有登记为店主的人都可以修改。在 Owner 角色窗口中。</li>
+      <li><b>门店经理 PIN</b>——把这台收银机切换到经理界面时使用。<b>只有店主</b>可以修改。在 Manager 角色窗口中。有了它，当班的人不需要单独的账户就能处理经理的事务。</li>
+      <li><b>我的个人 PIN</b>——用于 PIN 登录和上下班打卡的个人 PIN，与门店 PIN 无关。店主本人的在 Owner 角色窗口中设置；员工的个人 PIN 则在该员工编辑窗口的 PIN 格中设置（请参阅<a href="#c16-edit">修改或删除员工</a>）。</li>
+    </ul>
+    <p class="intro">每张卡片都会显示<b>已设置</b>或<b>尚未设置</b>。PIN 为 4 位数字，不能使用 1234 这类简单数字。在角色列表中，没有 PIN 的 Manager 行会带有<b>未设置 PIN</b>标记。经理打开角色窗口时会看到一个锁形图标和“只有店主可以更改此卡片。”</p>
+    <div class="tip"><b>还没设置经理 PIN？那经理就是关着的。</b>无论是从未设置，还是仍是出厂的 0000，卡片都会显示同一个状态——<b>“尚未设置”</b>，下方是“要切换为经理，请先设置经理 PIN 码”，按钮是 <b>Set Manager PIN</b>（设置经理 PIN 码）。在此之前，<b>谁都无法把这台收银机切换为经理</b>：输入 0000 会提示“此 PIN 仍是默认值，无法用于切换职位。请先设置新的 PIN。”设置一次新的 PIN 后，经理切换就恢复正常。（这是有意设计的——全店人人都知道的代码不算一把锁。）</div>
     <div class="tip"><b>依赖它之前请先了解：</b>您的活动日志只会记录<b>经理</b>，而不会记录<b>是谁</b>。如果您需要知道具体是哪个人做的，请给每个人单独的员工账户（<span class="plan pro">Pro</span>）。</div>
     <p class="sub" style="margin:16px 0 4px"><b>角色标签——切换这台收银机现在是谁在用</b></p>
     <figure class="shot"><img src="../img/c16-role-chip.png" alt="角色标签面板" loading="lazy"><figcaption><b>角色标签面板</b>① 角色标签（Owner）  ·  ② Owner · Manager · Staff 三行  ·  ③ Staff Settings（员工设置）</figcaption></figure>
@@ -141,19 +159,19 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-pinreset">忘记 PIN？</h3>
     <p class="intro">没有人需要因为忘了 PIN 而打电话给客服。每种 PIN 都有各自的找回方式。</p>
-    <p class="sub" style="margin:16px 0 4px"><b>店主 PIN——发到邮箱的验证码</b></p>
-    <div class="activate"><div class="h">在哪里找到</div><p>点顶部栏的<b>角色标签</b>（就是切换角色时用的那个面板）。店主这一行有 <b>"Forgot your PIN?"</b>（即“忘记 PIN？”）。您必须在这台设备上以店主身份登录。</p></div>
+    <p class="sub" style="margin:16px 0 4px"><b>店主 PIN——在店主 App 或通过邮件链接重新设置</b></p>
+    <div class="activate"><div class="h">在哪里找到</div><p>点顶部栏的<b>角色标签</b>（就是切换角色时用的那个面板），选择店主这一行，就会出现 PIN 键盘，键盘下方有 <b>"Forgot your PIN?"</b>（忘记 PIN？）。店主、经理、员工的屏幕上都能点，但<b>新 PIN 不能在收银台上直接设置。</b></p></div>
     <ol class="steps">
-      <li>点 <b>"Forgot your PIN?"</b>。BrewDesk 会向账户邮箱发送一个 <b>6 位验证码</b>："We sent a 6-digit code to your account email. Enter it below along with a new PIN."（即“我们已向您的账户邮箱发送 6 位验证码，请在下方输入验证码和新 PIN。”）</li>
-      <li>输入 <b>Email code</b>（邮箱验证码），再输入 <b>New PIN（4位数字）</b>（新 PIN）并确认。</li>
-      <li>点 <b>Set new PIN</b>（设置新 PIN）。您会看到 <b>"Owner PIN reset. Use the new PIN next time."</b>（即“店主 PIN 已重置，下次请使用新 PIN。”）</li>
+      <li>点 <b>"Forgot your PIN?"</b>，会给出两种办法。一是 BrewDesk 店主 App 的 <b>Settings › Owner PIN</b>（设置 › 店主 PIN），无需旧 PIN；二是<b>向店主邮箱发送重置链接</b>。</li>
+      <li>发送链接后，链接会发到注册时的账户邮箱，收件地址固定为该邮箱。收银台上只留下一行提示：设好新 PIN 后请在上方输入。</li>
+      <li>打开邮件中的链接，在<b>设置新的店主 PIN</b> 页面输入两次 4 位数字，点<b>保存 PIN</b>。然后在收银台用新 PIN 切换到店主模式即可。</li>
     </ol>
-    <div class="tip"><b>验证码有效期不长。</b>它在 <b>10 分钟</b>后过期，<b>输错 5 次</b>就会锁定——您会看到 <b>"Too many incorrect attempts. Request a new code."</b>（即“错误次数过多，请重新获取验证码。”）重新给自己发一个新的就行。过于简单的 PIN 也会被拒绝：<b>"That PIN is too simple — choose a different 4 digits."</b>（即“这个 PIN 太简单——请另选 4 位数字。”）</div>
-    <div class="tip"><b>即使是您本人操作，也会收到邮件。</b>每次重置店主 PIN，都会向店主的收件箱发送一封确认邮件。如果有一天收到了这样的邮件而那不是您做的，这就是您最早的警报。</div>
+    <div class="tip"><b>链接只能用一次，有效期不长。</b>链接 30 分钟内有效且只能使用一次。每小时最多发送 5 次。过于简单的 PIN 会被拒绝：<b>“该 PIN 码过于简单，请换一个 4 位数字。”</b></div>
+    <div class="tip"><b>即使是您本人操作，也会收到邮件。</b>每次更改店主 PIN，都会向店主的收件箱发送一封确认邮件。如果有一天收到了这样的邮件而那不是您做的，这就是您最早的警报。另外，现在在收银台上更改店主 PIN 需要先输入<b>当前 PIN</b>。</div>
     <p class="sub" style="margin:16px 0 4px"><b>经理 PIN——店主直接设置新的</b></p>
     <figure class="shot"><img src="../img/c16-manager-pin.png" alt="更改经理 PIN 的窗口" loading="lazy"><figcaption><b>更改经理 PIN（仅打开窗口）</b>① NEW PIN (4 DIGITS)  ·  ② CONFIRM PIN  ·  ③ Change PIN（更改 PIN）</figcaption></figure>
     <ol class="steps">
-      <li>打开 <code>Settings › Staff Permissions</code>，找到顶部的<b>经理 PIN</b> 卡片。</li>
+      <li>打开 <code>Settings › Staff Permissions</code>，点角色列表中 <b>Manager</b> 行的铅笔按钮，找到<b>门店经理 PIN</b> 卡片。</li>
       <li>点 <b>Change PIN</b>（更改 PIN；如果还没有，则是 <b>Set PIN</b>（设置 PIN））并输入新的代码。仅限店主。</li>
       <li>把新的代码告诉柜台。</li>
     </ol>
@@ -161,6 +179,7 @@
     <div class="tip"><b>0000 在任何地方都不能用。</b>用默认值登录会提示 <b>"The default PIN (0000) can't be used to sign in. Ask the owner to set a new PIN in Settings, or use ‘Forgot your PIN?’ there."</b>（即“默认 PIN（0000）不能用于登录。请让店主在设置中设置新的 PIN，或使用那里的‘忘记 PIN？’。”）——现在用它切换角色也会被拒绝：“此 PIN 仍是默认值，无法用于切换职位。请先设置新的 PIN。”被遗忘的重置不能悄悄变成一扇敞开的门。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c6.html">16. 预订与排程</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c21.html"><small>← 上一页</small>14. 您的套餐与账单</a><a class="nx" href="c6.html"><small>下一页 →</small>16. 预订与排程</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

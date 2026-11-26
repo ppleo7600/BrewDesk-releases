@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>22. Device modes &amp; customer display · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>22. Device modes &amp; customer display · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -37,6 +37,7 @@
 <a href="c13.html" class="cur"><span class="num">22</span>Device modes &amp; customer display</a>
 <a class="sub" href="#c13-staff"><span class="num">22.1</span>Staff Ordering</a>
 <a class="sub" href="#c13-display"><span class="num">22.2</span>Customer display</a>
+<a class="sub" href="#c13-online"><span class="num">22.3</span>Online Orders devices</a>
 <a href="c14.html" class=""><span class="num">23</span>Multiple devices &amp; reliability</a>
 <a href="c18.html" class=""><span class="num">24</span>Receipts &amp; printers</a>
 <a href="c27.html" class=""><span class="num">25</span>Going live</a>
@@ -54,6 +55,7 @@
       <li><b>Staff Ordering</b> — your staff take orders from any tablet or phone on your network, and the orders go straight to the main till. (<span class="plan pro">Pro</span> plan; it shows how many "slots used".)</li>
       <li><b>Customer Display</b> — a second screen that shows customers their order. (1 on <span class="plan pro">Pro</span>, up to 3 on <span class="plan biz">Business</span>.)</li>
       <li><b>Waitlist Kiosk</b> — a self-check-in screen where walk-in guests add themselves to the waitlist. (This used to be called "Check-in".)</li>
+      <li><b>Online Orders</b> — a screen that shows only the online order board. Staff accept online orders, mark them ready and hand them over. (<span class="plan pro">Pro</span> and above; it does not count toward your POS device limit. See <a href="#c13-online">Online Orders devices</a>.)</li>
       <li><b>Order Kiosk</b> — coming soon.</li>
     </ol>
     <div class="activate"><div class="h">Where to turn it on</div><p>Staff Ordering and Customer Display are first turned on at the main till, in <code>Settings › Add-ons</code> (Devices section) — Staff Ordering is a <span class="plan pro">Pro</span> add-on. Then register the new device like this:</p></div>
@@ -61,11 +63,11 @@
     <ol class="steps">
       <li>Open the BrewDesk app on the new device and connect it to the same shop Wi-Fi as the main till.</li>
       <li>On the sign-in screen, tap <b>"Register as a new device at Main POS."</b></li>
-      <li>A <b>New device pairing request</b> popup appears on the main till. Under <b>Device role</b> pick Staff Ordering, Customer Display or Waitlist Kiosk, then tap <b>Approve</b>.</li>
+      <li>A <b>New device pairing request</b> popup appears on the main till. Under <b>Device role</b> pick Staff Ordering, Customer Display, Waitlist Kiosk or Online Orders, then tap <b>Approve</b>.</li>
       <li>The new device goes straight into the job you picked.</li>
     </ol>
     <div class="tip"><b>The main till chooses the job, not the new device.</b> A new device can't declare "I'm a staff ordering tablet" by itself. See <a href="c14.html#c14-pair">Add a device to your main till</a> for the full steps and what to do if something goes wrong.</div>
-    <div class="tip"><b>A device signed in with the owner's email shows a choice screen.</b> "How will you use this device?" lists <b>Replace Main POS</b>, <b>Register as new device</b>, <b>Staff Ordering</b>, <b>Customer Display</b>, <b>Waitlist Kiosk</b> and Order Kiosk (coming soon). Replace Main POS and Register as new device go through an emailed verification code (the first device in a shop automatically becomes the main till); the Staff Ordering, Customer Display and Waitlist Kiosk cards lead into the same main-till approval described above.</div>
+    <div class="tip"><b>A device signed in with the owner's email shows a choice screen.</b> "How will you use this device?" lists <b>Replace Main POS</b>, <b>Register as new device</b>, <b>Staff Ordering</b>, <b>Customer Display</b>, <b>Waitlist Kiosk</b>, <b>Online Orders</b> and Order Kiosk (coming soon). Replace Main POS and Register as new device go through an emailed verification code (the first device in a shop automatically becomes the main till); the Staff Ordering, Customer Display, Waitlist Kiosk and Online Orders cards lead into the same main-till approval described above.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-staff">Staff Ordering</h3>
     <p class="intro">Staff Ordering lets your team take orders from an extra tablet or phone. The orders fly straight to the main till. Here's how to set it up.</p>
@@ -93,8 +95,20 @@
       <li>The <span class="plan pro">Pro</span> plan lets you use 1 display. The <span class="plan biz">Business</span> plan lets you use up to 3.</li>
     </ol>
     <div class="tip"><b>Good to know:</b> a customer display only shows things. It can't take orders or send anything — it just shows the order to your customer.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c13-online">Online Orders devices</h3>
+    <p class="intro">An Online Orders device is a tablet that shows only the online order board. While the till keeps selling, the person handling online orders accepts them on this device, marks them ready and hands them over. You register it like any other device, by approving it at the main till.</p>
+    <ol class="steps">
+      <li>First update the <b>BrewDesk desktop app</b> on the main till's computer to the latest version. If it is out of date, the Online Orders card on the new device is locked and shows an <b>Update needed</b> badge with a note to update the desktop app on the main POS first, and the main till's approval popup won't let you pick this role either.</li>
+      <li>On the new device, open the BrewDesk app, connect to the shop Wi-Fi and tap <b>"Register as a new device at Main POS"</b> (<a href="c14.html#c14-pair">Add a device to your main till</a>).</li>
+      <li>In the main till's popup, choose <b>Online Orders</b> under <b>Device role</b> and tap <b>Approve</b>.</li>
+      <li>When the new device shows <b>Staff sign-in</b>, enter a staff PIN. The online order board opens. Staff PIN sign-in needs the <span class="plan pro">Pro</span> plan, and PIN 0000 can't be used — change that PIN on the main till first.</li>
+    </ol>
+    <div class="tip"><b>What you can do on the board.</b> You're alerted with <b>New online order (N)</b> when one comes in. Orders can be filtered by status — New, Preparing, Ready, Done, Cancelled — and by type, Pickup or Delivery. On this screen you accept, mark ready and hand over. Cancelling or refunding a paid order is done at the main till with a manager PIN. If the connection drops, it keeps showing the last list, and delivery orders will appear here soon.</div>
+    <div class="tip"><b>It doesn't count toward your POS devices.</b> A registered Online Orders device appears in its own <b>Online Orders</b> section of <code>Settings › Devices</code> and does not use up a till slot. If the shop isn't taking online orders, the board is simply empty.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c14.html">23. Multiple devices &amp; reliability</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c24.html"><small>← Previous</small>21. Equipment &amp; network</a><a class="nx" href="c14.html"><small>Next →</small>23. Multiple devices &amp; reliability</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

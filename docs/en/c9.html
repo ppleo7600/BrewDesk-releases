@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>10. Refunds · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>10. Refunds · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -21,6 +21,8 @@
 <a href="c7.html" class=""><span class="num">8</span>Getting paid</a>
 <a href="c8.html" class=""><span class="num">9</span>Discounts &amp; promotions</a>
 <a href="c9.html" class="cur"><span class="num">10</span>Refunds</a>
+<a class="sub" href="#c9-status"><span class="num">10.1</span>Order status in Payment History</a>
+<a class="sub" href="#c9-email"><span class="num">10.2</span>Refund confirmation email (what the customer receives)</a>
 <a href="c17.html" class=""><span class="num">11</span>Reports &amp; closing the day</a>
 <a href="c15.html" class=""><span class="num">12</span>Working offline</a>
 <div class="part">Part 3 · Running your store</div>
@@ -64,8 +66,24 @@
     </ol>
     <div class="tip"><b>What is a PIN?</b> It is a short secret code, like the one on a bank card. It stops a refund from happening by mistake.</div>
     <div class="tip"><b>A partial refund now prints a partial receipt.</b> The refund slip lists only the items you gave money back for — and the totals underneath (subtotal, discount, service charge, tax) are now the <b>refunded share too</b>, not the original order's figures. So the customer can add the slip up and it comes to exactly what went back on their card.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c9-status">Order status in Payment History</h3>
+    <p class="intro">The status shown on order cards and in order details in <b>Payment History</b> now appears in plain words in your language. Before, some statuses showed their internal name. <b>On Hold</b> (Held) is an order set aside for a moment, <b>Open</b> is an order that isn't paid yet, and <b>Merged</b> is an order that was combined with another table's order.</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c9-email">Refund confirmation email (what the customer receives)</h3>
+    <p class="intro">After a refund, BrewDesk automatically emails the customer a <b>refund confirmation</b>. It's only sent when the order is linked to a <b>customer with an email address</b>; a customer with no email gets nothing.</p>
+    <div class="activate"><div class="h">Where to switch it on or off</div><p>The email box of <b>Refund Confirmation</b> ("Sent when a full or partial refund is issued") in the <b>Refunds</b> section of <code>Settings › Notifications</code>. It is on by default.</p></div>
+    <ol class="steps">
+      <li>The subject is <b>"Refund processed — store name"</b>, or <b>"Partial refund processed — store name"</b> for a partial refund.</li>
+      <li>At the top of the message are a <b>REFUND PROCESSED</b> banner (<b>PARTIAL REFUND PROCESSED</b> for a partial one), the title "Your Refund Has Been Processed", and "A refund has been issued for your order at store name."</li>
+      <li>Below are the rows <b>Order</b> (order number) · <b>Order Date</b> · <b>Refund Type</b> (Full Refund / Partial Refund) · <b>Items</b> (the refunded items, for a partial refund) · <b>Original Total</b> · <b>Refund Amount</b> · <b>Reason</b>. Original Total only appears when it applies.</li>
+      <li>If a tip was not refunded, a <b>Tip Retained</b> row appears with "The tip of amount was paid to the staff who served you and is not included in this refund."</li>
+      <li>It ends with "Please allow 5–10 business days for the refund to appear in your account, depending on your payment provider."</li>
+    </ol>
+    <div class="tip"><b>The email goes out in your store's language and date format.</b> The subject and wording follow the <b>store language</b> set in <code>Settings › Store Info</code>, and the order date uses your store's time zone and your country's date format. The customer's email has no BrewDesk support or email-preferences links and no promotional line — only the name of the store it came from. Receipt emails go out in your store language the same way, and their subtotal and discount lines were tidied so they add up.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c8.html">9. Discounts &amp; promotions</a></li><li><a href="c17.html">11. Reports &amp; closing the day</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c8.html"><small>← Previous</small>9. Discounts &amp; promotions</a><a class="nx" href="c17.html"><small>Next →</small>11. Reports &amp; closing the day</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

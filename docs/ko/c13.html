@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>22. 기기 모드 &amp; 고객 디스플레이 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>22. 기기 모드 &amp; 고객 디스플레이 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -37,6 +37,7 @@
 <a href="c13.html" class="cur"><span class="num">22</span>기기 모드 &amp; 고객 디스플레이</a>
 <a class="sub" href="#c13-staff"><span class="num">22.1</span>Staff Ordering</a>
 <a class="sub" href="#c13-display"><span class="num">22.2</span>고객 디스플레이</a>
+<a class="sub" href="#c13-online"><span class="num">22.3</span>Online Orders 기기</a>
 <a href="c14.html" class=""><span class="num">23</span>여러 대 기기 &amp; 안정성</a>
 <a href="c18.html" class=""><span class="num">24</span>영수증 &amp; 프린터</a>
 <a href="c27.html" class=""><span class="num">25</span>라이브 전환</a>
@@ -54,6 +55,7 @@
       <li><b>Staff Ordering</b> — 직원이 매장 네트워크의 어떤 태블릿이나 휴대폰에서든 주문을 받고, 주문이 바로 메인 계산대로 전달됩니다. (<span class="plan pro">Pro</span> 플랜; 사용 중인 "slots used"를 표시합니다.)</li>
       <li><b>Customer Display</b> — 손님에게 주문을 보여 주는 두 번째 화면. (<span class="plan pro">Pro</span> 플랜 1대, <span class="plan biz">Business</span> 플랜 최대 3대.)</li>
       <li><b>Waitlist Kiosk</b> — 워크인 손님이 직접 대기열에 이름을 올리는 셀프 체크인 화면. (이전에 "Check-in"이라고 부르던 화면입니다.)</li>
+      <li><b>Online Orders</b> — 온라인 주문 보드만 보여 주는 화면. 온라인 주문을 수락하고, 준비 완료로 바꾸고, 손님에게 전달하는 일을 합니다. (<span class="plan pro">Pro</span> 이상 플랜; POS 기기 한도에 포함되지 않습니다. <a href="#c13-online">Online Orders 기기</a> 참고.)</li>
       <li><b>Order Kiosk</b> — 곧 출시.</li>
     </ol>
     <div class="activate"><div class="h">켜는 곳</div><p>Staff Ordering과 Customer Display는 먼저 메인 계산대의 <code>Settings › Add-ons</code>(Devices 섹션)에서 켭니다 — Staff Ordering은 <span class="plan pro">Pro</span> 애드온입니다. 그런 다음 새 기기에서 아래 순서로 등록합니다.</p></div>
@@ -61,11 +63,11 @@
     <ol class="steps">
       <li>새 기기에서 BrewDesk 앱을 열고, 메인 계산대와 같은 매장 Wi-Fi에 연결합니다.</li>
       <li>로그인 화면 아래의 <b>"메인포스에 새기기로 등록"</b>(Register as a new device at Main POS)을 탭합니다.</li>
-      <li>메인 계산대에 <b>"새 기기 페어링 요청"</b> 팝업이 나타납니다. <b>"기기 용도"</b>에서 Staff Ordering · Customer Display · Waitlist Kiosk 중 하나를 고르고 <b>"승인"</b>을 탭합니다.</li>
+      <li>메인 계산대에 <b>"새 기기 페어링 요청"</b> 팝업이 나타납니다. <b>"기기 용도"</b>에서 Staff Ordering · Customer Display · Waitlist Kiosk · Online Orders 중 하나를 고르고 <b>"승인"</b>을 탭합니다.</li>
       <li>새 기기가 사장님이 고른 용도의 화면으로 자동으로 들어갑니다.</li>
     </ol>
     <div class="tip"><b>용도는 새 기기가 아니라 메인 계산대에서 정합니다.</b> 새 기기가 스스로 "나는 직원 주문용입니다"라고 정할 수 없습니다. 자세한 단계와 문제 해결 방법은 <a href="c14.html#c14-pair">새 기기를 메인 계산대에 붙이기</a>를 참고해 주세요.</div>
-    <div class="tip"><b>사장님 이메일로 로그인한 기기에서는 용도 선택 화면이 나옵니다.</b> "이 기기를 어떻게 쓰시겠어요?"(How will you use this device?) 화면에 <b>Replace Main POS</b> · <b>Register as new device</b> · <b>Staff Ordering</b> · <b>Customer Display</b> · <b>Waitlist Kiosk</b> · Order Kiosk(곧 출시) 카드가 표시됩니다. Replace Main POS와 Register as new device는 이메일 인증 코드를 거치며(매장의 첫 기기라면 자동으로 메인 계산대가 됩니다), Staff Ordering · Customer Display · Waitlist Kiosk 카드는 위와 같은 메인 계산대 승인 흐름으로 이어집니다.</div>
+    <div class="tip"><b>사장님 이메일로 로그인한 기기에서는 용도 선택 화면이 나옵니다.</b> "이 기기를 어떻게 쓰시겠어요?"(How will you use this device?) 화면에 <b>Replace Main POS</b> · <b>Register as new device</b> · <b>Staff Ordering</b> · <b>Customer Display</b> · <b>Waitlist Kiosk</b> · <b>Online Orders</b> · Order Kiosk(곧 출시) 카드가 표시됩니다. Replace Main POS와 Register as new device는 이메일 인증 코드를 거치며(매장의 첫 기기라면 자동으로 메인 계산대가 됩니다), Staff Ordering · Customer Display · Waitlist Kiosk · Online Orders 카드는 위와 같은 메인 계산대 승인 흐름으로 이어집니다.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-staff">Staff Ordering</h3>
     <p class="intro">Staff Ordering은 직원이 추가 태블릿이나 휴대폰에서 주문을 받을 수 있게 합니다. 주문은 바로 메인 계산대로 전달됩니다. 설정하는 방법은 다음과 같습니다.</p>
@@ -93,8 +95,20 @@
       <li><span class="plan pro">Pro</span> 플랜은 디스플레이 1대, <span class="plan biz">Business</span> 플랜은 최대 3대까지 사용할 수 있습니다.</li>
     </ol>
     <div class="tip"><b>알아 두면 좋습니다:</b> 고객 디스플레이는 보여 주기만 합니다. 주문을 받거나 무언가를 전송할 수 없습니다 — 손님에게 주문만 보여 줍니다.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c13-online">Online Orders 기기</h3>
+    <p class="intro">Online Orders 기기는 온라인 주문 보드만 보여 주는 태블릿입니다. 계산대에서 판매하는 동안 온라인 주문 담당 직원이 이 기기에서 주문을 수락하고, 준비 완료로 바꾸고, 손님에게 전달합니다. 등록은 다른 기기와 같이 메인 계산대의 승인으로 합니다.</p>
+    <ol class="steps">
+      <li>먼저 메인 계산대 컴퓨터의 <b>BrewDesk 데스크톱 앱</b>을 최신 버전으로 업데이트합니다. 오래된 버전이면 새 기기의 Online Orders 카드가 잠기고 <b>"업데이트 필요"</b>(Update needed) 배지와 함께 메인 계산대 앱을 먼저 업데이트하라는 안내가 표시됩니다. 메인 계산대의 승인 팝업에서도 이 용도는 선택할 수 없습니다.</li>
+      <li>새 기기에서 BrewDesk 앱을 열고 매장 Wi-Fi에 연결한 뒤 <b>"메인포스에 새기기로 등록"</b>을 탭합니다(<a href="c14.html#c14-pair">새 기기를 메인 계산대에 붙이기</a>).</li>
+      <li>메인 계산대 팝업의 <b>"기기 용도"</b>에서 <b>Online Orders</b>를 선택하고 <b>"승인"</b>합니다.</li>
+      <li>새 기기에 <b>"직원 로그인"</b>(Staff sign-in) 화면이 나타나면 직원 PIN을 입력합니다. 온라인 주문 보드가 열립니다. 직원 PIN 로그인은 <span class="plan pro">Pro</span> 플랜부터 가능하며, PIN 0000으로는 로그인할 수 없으니 메인 계산대에서 PIN을 먼저 바꿔 주세요.</li>
+    </ol>
+    <div class="tip"><b>보드에서 할 수 있는 일.</b> 새 온라인 주문이 들어오면 <b>"새 온라인 주문 (N)"</b>(New online order)으로 알려 줍니다. 주문은 새 주문 · 조리중 · 준비 완료 · 완료 · 취소 상태와 픽업 · 배달 유형으로 걸러 볼 수 있고, 이 화면에서는 수락 · 준비 완료 · 전달을 할 수 있습니다. 결제된 주문의 취소 · 환불은 메인 계산대에서 관리자 PIN으로 합니다. 연결이 끊기면 마지막 목록을 보여 주며, 배달 주문은 곧 이곳에 표시됩니다.</div>
+    <div class="tip"><b>POS 기기 수에 포함되지 않습니다.</b> 등록한 Online Orders 기기는 <code>Settings › Devices</code>의 <b>Online Orders</b> 구역에 따로 표시되며, 계산대 한도에 들어가지 않습니다. 매장이 온라인 주문을 받고 있지 않으면 보드는 비어 있습니다.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c14.html">23. 여러 대 기기 &amp; 안정성</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c24.html"><small>← 이전</small>21. 설치 준비물 &amp; 네트워크</a><a class="nx" href="c14.html"><small>다음 →</small>23. 여러 대 기기 &amp; 안정성</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

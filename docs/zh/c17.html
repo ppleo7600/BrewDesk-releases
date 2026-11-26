@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>11. 报表与日结 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>11. 报表与日结 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -57,6 +57,7 @@
       <li>阅读您的 <b>AI daily insights</b>（AI 每日洞察，<span class="plan pro">Pro</span> 及以上套餐）。这是一份用通俗语言写成的当日简报，并附有实用建议。（<span class="plan biz">Business</span> 套餐每周还会通过电子邮件收到一份。）</li>
       <li>清点钱箱里的现金，核对是否与 BrewDesk 显示的数字一致。请加上您放入的款项，并记下取出的款项。</li>
     </ol>
+    <div class="tip"><b>结账按钮始终显示——有未结订单时，点击后才会提示。</b>按钮不再提前变灰。如果还有未付款的订单，点击结账会提示“有未结账的订单，无法结账。请先处理桌台后再点击”。请先处理这些桌台（结账或取消）后再点一次。结账记录中的 <b>Close today</b>（今日结账）和付款记录中的结账按钮也是同样的做法，结账记录列表也变得更简洁。员工账户点击时仍会提示“仅限店主”。</div>
     <figure class="shot"><img src="../img/105-zreport.png" alt="Z-Report" loading="lazy"><figcaption><b>Z-Report</b>（Z报表）① Z-Report (Final)（最终）  ·  ② Grand Total  ·  ③ Total Transactions（交易总数）  ·  ④ Payment Breakdown（支付明细）  ·  ⑤ Print（打印）· Export（导出）· Close（关闭）</figcaption></figure>
     <ol class="steps" start="4">
       <li>现金核对无误后，进入 <b>Manage › Closing History</b>（该界面标题为 Closing Reports），点击 <b>Close Now</b>，然后在打开的窗口中点击 <b>Close Day</b>（日结）。这样会保存一份完整的当日汇总，称为 Z报表。</li>
@@ -68,6 +69,8 @@
     <div class="tip"><b>现金按最小硬币取整？</b>如果您开启了<a href="c7.html#c7-cashrounding">现金收款取整</a>，Payment Breakdown 会多出一行：<b>Cash Rounding</b>，就在 Total Payment Collected 下方，下面写着 <b>"Coins not taken on cash payments. Payment Collected + this = Grand Total."</b>（现金付款中未收取的零头。已收款项 + 此项 = 合计总额。）这一行说明了已收款项与合计总额为何不同，也是应交给会计的数字。如果未开启取整，或当天没有发生取整，这一行就完全不会出现。</div>
     <div class="tip"><b>取消订单一定会询问原因。</b>无论是在日结时作废遗留的未付订单、一次性全部作废，还是在店内取消某个订单，都会弹出同样的小窗口：<b>Wrong entry</b>（录入错误）、<b>Customer left</b>（顾客离开）、<b>Test order</b>（测试订单）或 <b>Other (type a reason)</b>（其他，请输入原因）。在您选择之前，确认按钮一直是灰色的。没有原因的取消，恰恰是以后您最想问个明白的。</div>
     <div class="brag"><div class="h">值得展示</div><p><b>用通俗的语言讲述您的数字。</b>每日洞察会告诉您发生了什么、接下来该做什么，而不只是一页堆满的数字。</p></div>
+
+    <div class="tip"><b>统计和数据导出默认只有店主可以使用。</b>经理和员工账号默认关闭，点击时会提示仅店主可用。这包括统计、付款记录和日结报告里的导出按钮、会计文件，以及 Google Drive 的连接与恢复。店主可以在 <code>设置 › 员工权限</code>中按角色打开。过往日结报告能查看多久也因角色而异：<b>店主</b>不受限制，<b>经理</b>可查看包括今天在内的最近 7 个营业日，<b>员工</b>只能看当天营业日。执行今日日结和打印日结报告不受影响。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c17-export">导出销售数据</h3>
     <p class="intro">一键把数据交给您的记账人员。操作方法如下。（该窗口的标题为 <b>Backup &amp; Restore</b>（备份与恢复），与<a href="c19.html#c19">备份</a>中介绍的是同一个窗口。）</p>
@@ -97,6 +100,7 @@
       <li>想逐天核对？点击 <b>Close One by One</b>。如果某天仍有未付订单，请先点击 <b>Settle</b>（结算）支付或作废它们。</li>
     </ol>
     <div class="tip"><b>结清已开的账单仍然可以。</b>暂停的只是<b>新的</b>业务。已经在餐桌上的订单仍可结算，<b>Pay Now</b> 和 <b>Split</b> 仍然可用，因此您可以先收款、清掉订单，再进行日结。</div>
+    <div class="tip" id="c17-unclosed-gate"><b>过往营业日留有未付款订单时，屏幕会被锁定。</b>如果订单已送到厨房但从未付款，打开 BrewDesk 时会出现全屏提示，只显示未付款订单列表，且无法关闭。请在列表中逐个打开订单并付款或取消；如果未处理就返回，提示会再次出现。全部处理完毕后，该营业日会自动日结，无需再点按钮，并会短暂显示订单已全部处理的消息。员工点单设备只会看到“当前无法使用”的提示，请在主 POS 上处理这些订单。</div>
     <div class="tip"><b>显示的数字就是真实数字。</b>如果因为还有账单未付而无法日结，提示会告诉您收银机实际在等待多少个订单，让您知道该去结清什么。</div>
     <div class="tip"><b>为什么要阻止新的销售？</b>按顺序日结能保证您的合计数据真实可靠，让您的报表以及会计的数字始终对得上。</div>
 
@@ -127,6 +131,7 @@
     <div class="tip"><b>一条无法关闭的红色横幅。</b>如果钱箱的更改没有传到服务器，您会看到 <b>"This drawer has not been saved"</b>（这个钱箱尚未保存）：<i>"The last change did not reach the server. If you refresh now, the float, pay-ins and count are gone. Check the network and make any change again."</i>（上次更改未能传到服务器。如果现在刷新，备用金、存入和清点数据都会丢失。请检查网络并重新进行一次更改。）这里特意没有关闭按钮。一条可以划掉的提示很容易被忘掉，而刷新页面会丢失当天的钱箱数据。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c7.html">8. 收款</a></li><li><a href="c19.html">20. 备份</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c9.html"><small>← 上一页</small>10. 退款</a><a class="nx" href="c15.html"><small>下一页 →</small>12. 离线工作</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

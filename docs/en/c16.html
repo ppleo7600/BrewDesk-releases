@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>15. Staff &amp; permissions · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>15. Staff &amp; permissions · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -30,8 +30,9 @@
 <a class="sub" href="#c16-addon"><span class="num">15.1</span>Staff add-on on vs off</a>
 <a class="sub" href="#c16-add"><span class="num">15.2</span>Add a staff member</a>
 <a class="sub" href="#c16-edit"><span class="num">15.3</span>Edit or remove a person</a>
-<a class="sub" href="#c16-roles"><span class="num">15.4</span>Permissions, manager PIN &amp; role chip</a>
-<a class="sub" href="#c16-pinreset"><span class="num">15.5</span>Forgot a PIN?</a>
+<a class="sub" href="#c16-voidchoose"><span class="num">15.4</span>Choose who cancelled</a>
+<a class="sub" href="#c16-roles"><span class="num">15.5</span>Permissions, manager PIN &amp; role chip</a>
+<a class="sub" href="#c16-pinreset"><span class="num">15.6</span>Forgot a PIN?</a>
 <a href="c6.html" class=""><span class="num">16</span>Reservations &amp; Scheduler</a>
 <a href="c10.html" class=""><span class="num">17</span>Customers &amp; loyalty</a>
 <a href="c11.html" class=""><span class="num">18</span>QR code ordering</a>
@@ -91,10 +92,10 @@
     </ol>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-edit">Edit or remove a person</h3>
-    <p class="intro">Fixing a name, changing a PIN, hiding someone who left — these used to be four different little controls on the same row. Now there is one door: tap the person.</p>
-    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="Edit staff card" loading="lazy"><figcaption><b>Edit staff card (opens when you tap the staff name)</b>① Name  ·  ② Role  ·  ③ PIN (leave both blank to keep) · Reset · Revoke  ·  ④ Save</figcaption></figure>
+    <p class="intro">Fixing a name, changing a PIN, hiding someone who left — these used to be four different little controls on the same row. Now there is one door: tap <b>Info</b> on that person's card.</p>
+    <figure class="shot"><img src="../img/c16-staff-edit.png" alt="Edit staff card" loading="lazy"><figcaption><b>Edit staff window (Info tab)</b>① Name  ·  ② Role  ·  ③ PIN (leave both blank to keep) · Reset · Revoke  ·  ④ Save</figcaption></figure>
     <ol class="steps">
-      <li>In your staff list, <b>tap the staff name (anywhere on that person's row)</b>. The edit window opens.</li>
+      <li>Your staff list shows one card per person (two columns) with name, role tag, status (such as Active), email, and <b>PIN set</b> or <b>PIN not set</b>. Tap <b>Info</b> on the card to open that person's window. It has three tabs at the top — <b>Info</b>, <b>Sales</b> and <b>Attendance</b> — and you change the name, role and PIN on the <b>Info</b> tab. (Someone who hasn't accepted their invitation yet only has the Info tab.)</li>
       <li>Their email is at the top so you can be sure it's the right person. Fix the <b>Name</b> if you need to.</li>
       <li>Change the <b>Role</b> if their job changed. (An owner's row shows the role as plain text — an owner's role can't be changed here.)</li>
       <li>To set a new PIN, type it in both <b>PIN (4 digits)</b> boxes. <b>Leave both boxes blank and the current PIN stays as it is</b> — the screen says so, right under the boxes.</li>
@@ -104,29 +105,46 @@
     <div class="tip"><b>Hide someone instead of deleting them.</b> <b>Disable</b> takes them off the POS but keeps their past orders and hours in your reports. <b>Enable</b> brings them back. Only the owner sees these buttons.</div>
     <div class="tip"><b>Invited the wrong person as an owner?</b> You can now remove an owner too — before, there was no way to undo that. Two things still can't happen, and BrewDesk tells you which: you can't remove <b>yourself</b>, and you can't remove the <b>last owner</b> of the shop. Removing anyone asks you to confirm the name, then asks for the <b>owner PIN</b> ("Owner PIN required to remove staff member.").</div>
     <p class="foot">Removing someone is not the same as handing the shop over. If you're selling the business, ask us about transferring ownership instead.</p>
+    <p class="sub" style="margin:16px 0 4px"><b>The Sales and Attendance tabs</b></p>
+    <p class="intro">On a person's <b>Sales</b> tab you can see their <b>tips</b> — the total, tips awaiting settlement, and tips by date. On the <b>Attendance</b> tab you can see, by date, scheduled time, clock in, clock out and hours. Choose Today, This week, This month or Custom (up to 92 days). To look deeper at the same person and period in Analytics, tap <b>View in Analytics</b> (shown only to roles that can open Analytics).</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c16-voidchoose">Choose who cancelled</h3>
+    <p class="intro">This switch decides whether the cancel (Void) window shows a <b>"Cancelled by"</b> field. It's <b>Choose who cancelled</b> on the <code>Settings › Staff Permissions › Staff</code> tab, and it is <b>off by default</b>. The switch saves the moment you tap it.</p>
+    <ol class="steps">
+      <li>The switch only appears while the Staff add-on is on (<span class="plan pro">Pro</span> or higher).</li>
+      <li>When it's on and there are <b>two or more people</b> (the owner counts), the cancel-reason window shows a <b>Cancelled by</b> list. The person signed in with their PIN is chosen by default, and you can pick someone else.</li>
+      <li>Picking someone else doesn't ask for their PIN again. The cancellation record keeps both the person you chose and the person signed in on that device.</li>
+    </ol>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-roles">Permissions, manager PIN &amp; role chip</h3>
-    <p class="intro">This settings page shows, screen by screen, what a <b>manager</b> and a <b>cashier</b> are each allowed to do — and now you can actually <b>tick the boxes and save</b>. The whole page was rebuilt: your two PIN cards sit side by side across the top, with the big table below.</p>
+    <p class="intro">This settings page decides what a <b>manager</b> and a <b>cashier</b> are each allowed to do. You can tick the boxes and save. The page has a new layout — pick a role first, and what that role can do appears in groups.</p>
     <div class="activate"><div class="h">Where to find it</div><p><code>Settings › Staff Permissions</code>. Managers can open it and read it; <b>only the owner can change and save it</b>. Two tabs sit at the top — <b>Permissions</b> (everyone gets this) and <b>Staff</b> (a <span class="plan pro">Pro</span> feature: "Staff management is Pro-only").</p></div>
-    <figure class="shot"><img src="../img/73-perms-table.png" alt="Staff Permissions screen" loading="lazy"><figcaption><b>Staff Permissions</b>① Owner PIN — Set PIN  ·  ② Manager PIN — Change PIN  ·  ③ Permissions / Staff tabs  ·  ④ Manager and Staff columns — ticks and padlocks (PIN approval)</figcaption></figure>
-    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="Permissions table, open from the start" loading="lazy"><figcaption><b>Permissions table (open from the start)</b>① screen row (Manager and Staff columns)  ·  ② permission rows underneath  ·  ③ PIN approval marker</figcaption></figure>
+    <figure class="shot"><img src="../img/73-perms-table.png" alt="Staff Permissions screen" loading="lazy"><figcaption><b>Staff Permissions</b></figcaption></figure>
+    <figure class="shot"><img src="../img/c16-perms-expanded.png" alt="Permissions screen — details for one role" loading="lazy"><figcaption><b>Details for one role</b></figcaption></figure>
     <ol class="steps">
-      <li>The table has exactly <b>two columns — "Manager" and "Staff"</b>. There's no owner column, because the owner always has every permission.</li>
-      <li>The table is open from the start — there is nothing to fold or unfold. Permissions are <b>grouped by screen</b> (<b>Screens</b> · <b>Settings tabs</b> · <b>Available everywhere</b>), with the detailed permission rows right under each screen. A screen with no detailed permissions is just a single row.</li>
-      <li>Tick or untick a box for that role. The box on a screen row decides <b>whether that role can open the screen</b>; the boxes underneath decide the individual actions. A row you've changed from its default shows a reset marker.</li>
-      <li>Watch the coloured pills next to some rows: <b>PIN approval</b> (a manager has to type a PIN first), <b>Limited view</b> (they see part of it), <b>Restricted</b> (blocked), and <b>Open the page</b> — the one that decides whether the screen appears at all.</li>
-      <li>A row with a padlock can't be changed, even by the owner (owner-only or fixed items). The table has no search box or "Differences only" switch, so scan it from top to bottom.</li>
-      <li>Tap <b>Save</b> at the top of Settings when you're done. Unsaved rows are counted for you, and <b>Discard changes</b> puts everything back.</li>
+      <li>Pick a <b>role</b> first. The role list on the left (on a narrow screen, the <b>Role</b> box at the top) has <b>Owner</b> (fixed), <b>Manager</b> and <b>Staff</b>, each with its number of people and a <b>Default</b> or <b>Fixed</b> tag. The owner can always do everything, so that role can't be changed ("The owner can always do everything.").</li>
+      <li>The middle list shows the permissions in <b>six groups</b> — Orders &amp; payments · Refunds &amp; discounts · Menu · Reports · Settings · Staff. The box beside a group name switches the whole group on or off (a half-filled box means only some items are on), and the number on the right (for example 3/5) is how many items are on. Tap a group name to open its items on the right.</li>
+      <li>Tick or untick an item. For an item you've turned on that has levels, a box on the right lets you choose <b>Allowed</b>, <b>Needs approval</b> (a manager has to type a PIN first) or <b>Limited</b> (they see part of it). Unticked means <b>Not allowed</b>.</li>
+      <li>An item with a padlock can't be changed, even by the owner (owner-only or fixed items).</li>
+      <li>Type in the <b>Search permissions…</b> box at the top to narrow the list to matching items.</li>
+      <li>The bottom line says "Changes apply to all N people with this role." When you're done, tap <b>Save</b>. <b>Discard</b> puts unsaved changes back. If you switch to another role without saving, BrewDesk asks "Save changes first?". Save and Discard are at the bottom of this permissions page.</li>
     </ol>
-    <div class="tip"><b>Every row you see in the table is really enforced.</b> Untick a box and that role is actually stopped, with a popup saying so. The table currently has <b>refunds</b>, <b>managing discounts</b>, <b>recalculating a closing &amp; settling tips</b>, <b>adding staff &amp; resetting their PINs</b> and <b>saving settings</b>, and opening a screen at all (<b>Open the page</b>) is enforced too — see the next two tips.</div>
-    <div class="tip"><b>Managers can no longer save settings by default.</b> This one changed: <b>"saving settings"</b> now starts <b>off</b> for managers. A manager can still open a settings screen and read it, but tapping Save brings up <b>"You don't have permission for this"</b> — <i>"Only the store owner can make this change. You can still view this screen."</i> If your manager used to save settings for you, tick that box here to give it back.</div>
+    <div class="tip"><b>Every item in the list is really enforced.</b> Untick a box and that role is actually stopped, with a popup saying so. The list currently has <b>refunds</b>, <b>managing discounts</b>, <b>recalculating a closing &amp; settling tips</b>, <b>adding staff &amp; resetting their PINs</b>, <b>editing the menu and categories</b> (on for managers by default), <b>saving settings</b> and <b>saving business hours and shifts</b>, and opening a screen at all is enforced too — see the tips below.</div>
+    <div class="tip"><b>Managers can no longer save settings by default.</b> <b>"Saving settings"</b> starts <b>off</b> for managers. A manager can still open a settings screen and read it, but tapping Save brings up <b>"You don't have permission for this"</b> — <i>"Only the store owner can make this change. You can still view this screen."</i> If your manager used to save settings for you, tick that box here to give it back.</div>
+    <div class="tip" id="c16-hours-write"><b>Saving business hours has its own permission.</b> <b>Save business hours and shifts</b> (saves business hours, shifts and regular closed days) is separate from <b>saving settings</b> and sits in the Settings group. It also starts <b>off</b> for managers, so a manager can't save <code>Hours &amp; Closures</code> until the owner turns it on. A store where the manager already had <b>saving settings</b> on carries that value over to this permission, so those managers can keep saving. A manager without it who tries to save business hours gets the "You don't have permission for this" popup above.</div>
     <div class="tip"><b>You can hand a manager whole settings tabs.</b> Eleven settings tabs can be opened up to a manager — <b>Hours &amp; Closures</b>, <b>Receipts</b>, <b>Printers</b>, <b>Devices</b>, <b>Staff Permissions</b> (read-only), <b>Activity Log</b>, <b>Support</b>, <b>Tables</b>, <b>Waitlist</b>, <b>Reservations</b> and <b>Staff</b>. Fourteen stay <b>owner-only</b> no matter what, because they're the money and the identity of the shop: Store Info, Tax &amp; Service, Payments, Notifications, Add-ons, Tips, Order Types, Customers, Customer Portal, Scheduler, Display &amp; Branding, Loyalty, Google Drive and Messaging. Those don't have a box to tick.</div>
     <div class="tip"><b>When someone hits a screen you switched off</b> they get told plainly, in place of the screen: <b>"The store owner turned this screen off for your role"</b> — <i>"Access to this screen was switched off for your role under Settings › Staff Permissions. Signing in again won't restore it — ask the store owner to turn it back on."</i> That last sentence matters: this is a setting, not a glitch, so logging out and back in won't help them.</div>
     <div class="tip"><b>Every save emails you.</b> Whenever permissions are saved, the store owner gets an email saying what changed — so nobody can quietly widen their own access. The same change only emails once a day.</div>
     <div class="tip"><b>Idle Lock off doesn't switch any of this off.</b> Turning <b>Idle Lock</b> off (under <code>Settings › Staff Permissions › Staff</code>) only stops the till locking itself — nothing more. Staff still sign in with their own PIN, the role chip still switches, the activity log still records who did what, and every permission on this page is still enforced. (Turning the <b>Staff</b> add-on off is the switch that stops people being told apart.)</div>
-    <p class="sub" style="margin:16px 0 4px"><b>The PIN cards — side by side across the top of this page</b></p>
-    <p class="intro">The <b>owner PIN</b> and <b>manager PIN</b> cards live on this same page, side by side across the top. Each one tells you its state at a glance: <b>Set</b>, <b>"Default 0000"</b> or <b>Not set</b>. Under the owner card: <b>"Locks after 10 min idle"</b> once it's set, or <b>"Set it to enable the lock screen"</b> if it isn't. The manager PIN lets whoever is on shift do manager things without a separate account for them — only the owner can set or change it. A manager opening this page sees a padlock and <b>"Only the owner can change this card."</b></p>
-    <div class="tip"><b>Still on 0000? Then Manager is shut.</b> The card says so — status chip <b>"Default 0000"</b> and, underneath, <b>"Can't switch to Manager until you change it"</b>. While the manager PIN is the factory 0000, <b>nobody can switch this till to Manager at all</b>: typing 0000 gets <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b> Change it once and Manager works. (This is on purpose — a shop-wide code everyone already knows isn't a lock.)</div>
+    <p class="sub" style="margin:16px 0 4px"><b>Three kinds of PIN — store owner PIN, store manager PIN, my personal PIN</b></p>
+    <p class="intro">The PIN cards no longer sit across the top of this page. They are inside the role window that opens when you tap the <b>pencil button</b> on a role in the role list (or the pencil button next to the <b>Role</b> box at the top). There are three kinds of PIN, by what they are used for.</p>
+    <ul>
+      <li><b>Store owner PIN</b> — used to open the owner screens. Anyone registered as an owner can change it. It's in the Owner role window.</li>
+      <li><b>Store manager PIN</b> — used to switch this till to the manager screens. <b>Only an owner</b> can change it. It's in the Manager role window. With it, whoever is on shift can do manager things without a separate account.</li>
+      <li><b>My personal PIN</b> — the PIN that shows it's you, for PIN login and clocking in and out. It's separate from the store PINs. Your own is set in the Owner role window; a staff member's personal PIN is set in the PIN boxes of that person's edit window (see <a href="#c16-edit">Edit or remove a person</a>).</li>
+    </ul>
+    <p class="intro">Each card shows <b>Set</b> or <b>Not set yet</b>. A PIN is 4 digits, and easy numbers like 1234 aren't allowed. In the role list, a Manager row with no PIN carries a <b>PIN not set</b> tag. A manager opening a role window sees a padlock and <b>"Only the owner can change this card."</b></p>
+    <div class="tip"><b>No manager PIN yet? Then Manager is shut.</b> Whether the PIN was never set or is still the factory 0000, the card shows the same status — <b>"Not set yet"</b> — with <b>"Set a Manager PIN first to switch to Manager"</b> underneath, and the button reads <b>Set Manager PIN</b>. Until then <b>nobody can switch this till to Manager at all</b>: typing 0000 gets <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b> Set a new PIN once and Manager works. (This is on purpose — a shop-wide code everyone already knows isn't a lock.)</div>
     <div class="tip"><b>Worth knowing before you rely on it:</b> your activity log will say <b>Manager</b>, not <b>who</b>. If you need to know which person did something, give people their own staff accounts (<span class="plan pro">Pro</span>).</div>
     <p class="sub" style="margin:16px 0 4px"><b>The role chip — switching who this till is right now</b></p>
     <figure class="shot"><img src="../img/c16-role-chip.png" alt="Role chip panel" loading="lazy"><figcaption><b>Role chip panel</b>① role chip (Owner)  ·  ② Owner · Manager · Staff row  ·  ③ Staff Settings</figcaption></figure>
@@ -141,19 +159,19 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c16-pinreset">Forgot a PIN?</h3>
     <p class="intro">Nobody has to phone support because a PIN went out of somebody's head. Each PIN has its own way back.</p>
-    <p class="sub" style="margin:16px 0 4px"><b>The owner PIN — a code to your email</b></p>
-    <div class="activate"><div class="h">Where to find it</div><p>Tap the <b>role chip</b> in the top bar (the same panel you use to switch role). On the owner row there's <b>"Forgot your PIN?"</b>. You must be signed in as the owner on this device.</p></div>
+    <p class="sub" style="margin:16px 0 4px"><b>The owner PIN — set a new one in the owner app or from an email link</b></p>
+    <div class="activate"><div class="h">Where to find it</div><p>Tap the <b>role chip</b> in the top bar (the same panel you use to switch role) and pick the owner row. The PIN keypad opens, with <b>"Forgot your PIN?"</b> under it. It's there on an owner, manager or staff screen alike, but <b>you don't choose the new PIN on the till itself.</b></p></div>
     <ol class="steps">
-      <li>Tap <b>"Forgot your PIN?"</b>. BrewDesk emails a <b>6-digit code</b> to the account email: <b>"We sent a 6-digit code to your account email. Enter it below along with a new PIN."</b></li>
-      <li>Type the <b>Email code</b>, then your <b>New PIN (4 digits)</b>, and confirm it.</li>
-      <li>Tap <b>Set new PIN</b>. You'll see <b>"Owner PIN reset. Use the new PIN next time."</b></li>
+      <li>Tap <b>"Forgot your PIN?"</b>. Two ways forward are shown. One is the BrewDesk Owner app: <b>Settings › Owner PIN</b>, where you don't need the old PIN. The other is <b>Email a reset link to the owner</b>.</li>
+      <li>If you send the link, it goes to the account email on file — the address can't be changed from the till. The till just keeps a note: <b>once a new PIN is set, enter it above</b>.</li>
+      <li>Open the link in the email, enter the 4-digit PIN twice on the <b>Set a new owner PIN</b> page and tap <b>Save PIN</b>. Then switch to owner mode on the till with the new PIN.</li>
     </ol>
-    <div class="tip"><b>The code doesn't hang around.</b> It expires after <b>10 minutes</b>, and <b>5 wrong tries</b> lock it — you'll see <b>"Too many incorrect attempts. Request a new code."</b> Just send yourself a fresh one. Too simple a PIN is refused too: <b>"That PIN is too simple — choose a different 4 digits."</b></div>
-    <div class="tip"><b>You get an email even when it was you.</b> Every owner PIN reset sends a confirmation to the owner's inbox. If one ever arrives and it wasn't you, that's your early warning.</div>
+    <div class="tip"><b>The link works once and doesn't last.</b> It's valid for 30 minutes and can be used one time. You can send at most 5 an hour. Too simple a PIN is refused: <b>"That PIN is too simple. Choose a different 4 digits."</b></div>
+    <div class="tip"><b>You get an email even when it was you.</b> Every owner PIN change sends a confirmation to the owner's inbox. If one ever arrives and it wasn't you, that's your early warning. And changing the owner PIN on the till itself now needs the <b>current PIN</b> first.</div>
     <p class="sub" style="margin:16px 0 4px"><b>The manager PIN — the owner just sets a new one</b></p>
     <figure class="shot"><img src="../img/c16-manager-pin.png" alt="Change manager PIN dialog" loading="lazy"><figcaption><b>Change manager PIN (open only)</b>① NEW PIN (4 DIGITS)  ·  ② CONFIRM PIN  ·  ③ Change PIN</figcaption></figure>
     <ol class="steps">
-      <li>Open <code>Settings › Staff Permissions</code> and find the <b>manager PIN</b> card across the top.</li>
+      <li>Open <code>Settings › Staff Permissions</code>, then tap the pencil button on the <b>Manager</b> row of the role list to find the <b>Store manager PIN</b> card.</li>
       <li>Tap <b>Change PIN</b> (or <b>Set PIN</b> if there isn't one yet) and type the new code. Owner only.</li>
       <li>Tell the counter the new code.</li>
     </ol>
@@ -161,6 +179,7 @@
     <div class="tip"><b>0000 doesn't work anywhere.</b> Signing in with the default gets <b>"The default PIN (0000) can't be used to sign in. Ask the owner to set a new PIN in Settings, or use ‘Forgot your PIN?’ there."</b> — and now switching role with it is refused too: <b>"This PIN is still the default, so it can't be used to switch roles. Set a new PIN first."</b> A forgotten reset can't quietly become an open door.</div>
   </div>
 <div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c6.html">16. Reservations &amp; Scheduler</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c21.html"><small>← Previous</small>14. Your plan &amp; billing</a><a class="nx" href="c6.html"><small>Next →</small>16. Reservations &amp; Scheduler</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

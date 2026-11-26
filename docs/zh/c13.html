@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>22. 设备模式与顾客显示屏 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>22. 设备模式与顾客显示屏 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -37,6 +37,7 @@
 <a href="c13.html" class="cur"><span class="num">22</span>设备模式与顾客显示屏</a>
 <a class="sub" href="#c13-staff"><span class="num">22.1</span>员工点单</a>
 <a class="sub" href="#c13-display"><span class="num">22.2</span>顾客显示屏</a>
+<a class="sub" href="#c13-online"><span class="num">22.3</span>Online Orders 设备</a>
 <a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
 <a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
 <a href="c27.html" class=""><span class="num">25</span>正式营业</a>
@@ -54,6 +55,7 @@
       <li><b>Staff Ordering</b>（员工点单）——员工可在您网络内的任何平板或手机上点单，订单会直接传送到主收银台。（<span class="plan pro">Pro</span> 套餐；会显示已使用多少个“slots”（点单位）。）</li>
       <li><b>Customer Display</b>（顾客显示屏）——向顾客展示其订单的第二块屏幕。（<span class="plan pro">Pro</span> 为 1 台，<span class="plan biz">Business</span> 最多 3 台。）</li>
       <li><b>Waitlist Kiosk</b>（候位名单自助机）——供到店客人自行加入候位名单的自助登记屏幕。（原名“Check-in”。）</li>
+      <li><b>Online Orders</b>（线上订单）——只显示线上订单看板的屏幕。员工在这里接受线上订单、标记备好并交付给顾客。（<span class="plan pro">Pro</span> 及以上套餐；不计入 POS 设备数量。参见<a href="#c13-online">Online Orders 设备</a>。）</li>
       <li><b>Order Kiosk</b>（点单自助机）——即将推出。</li>
     </ol>
     <div class="activate"><div class="h">在哪里开启</div><p>Staff Ordering 和 Customer Display 需先在主收银台上的 <code>Settings › Add-ons</code>（Devices 区域）中开启——Staff Ordering 是一项 <span class="plan pro">Pro</span> 附加功能。然后按以下方式注册新设备：</p></div>
@@ -61,11 +63,11 @@
     <ol class="steps">
       <li>在新设备上打开 BrewDesk 应用，并将其连接到与主收银台相同的门店 Wi-Fi。</li>
       <li>在登录界面，点击 <b>“Register as a new device at Main POS.”</b></li>
-      <li>主收银台上会弹出 <b>New device pairing request</b>（新设备配对请求）窗口。在 <b>Device role</b>（设备用途）下选择 Staff Ordering、Customer Display 或 Waitlist Kiosk，然后点击 <b>Approve</b>（批准）。</li>
+      <li>主收银台上会弹出 <b>New device pairing request</b>（新设备配对请求）窗口。在 <b>Device role</b>（设备用途）下选择 Staff Ordering、Customer Display、Waitlist Kiosk 或 Online Orders，然后点击 <b>Approve</b>（批准）。</li>
       <li>新设备会直接进入您所选择的用途。</li>
     </ol>
     <div class="tip"><b>由主收银台决定设备用途，而不是新设备。</b>新设备无法自行声明“我是员工点单平板”。完整步骤以及出现问题时的处理方法，请参见<a href="c14.html#c14-pair">将设备添加到主收银台</a>。</div>
-    <div class="tip"><b>使用店主邮箱登录的设备会显示选择界面。</b>“How will you use this device?”（您将如何使用此设备？）列出 <b>Replace Main POS</b>、<b>Register as new device</b>、<b>Staff Ordering</b>、<b>Customer Display</b>、<b>Waitlist Kiosk</b> 和 Order Kiosk（即将推出）。Replace Main POS 和 Register as new device 需通过邮件验证码完成（门店的第一台设备会自动成为主收银台）；Staff Ordering、Customer Display 和 Waitlist Kiosk 卡片则进入上面所述的同一个主收银台批准流程。</div>
+    <div class="tip"><b>使用店主邮箱登录的设备会显示选择界面。</b>“How will you use this device?”（您将如何使用此设备？）列出 <b>Replace Main POS</b>、<b>Register as new device</b>、<b>Staff Ordering</b>、<b>Customer Display</b>、<b>Waitlist Kiosk</b>、<b>Online Orders</b> 和 Order Kiosk（即将推出）。Replace Main POS 和 Register as new device 需通过邮件验证码完成（门店的第一台设备会自动成为主收银台）；Staff Ordering、Customer Display、Waitlist Kiosk 和 Online Orders 卡片则进入上面所述的同一个主收银台批准流程。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c13-staff">员工点单</h3>
     <p class="intro">员工点单让您的团队可以通过额外的平板或手机点单，订单会直接传送到主收银台。设置方法如下。</p>
@@ -93,8 +95,20 @@
       <li><span class="plan pro">Pro</span> 套餐可使用 1 块显示屏，<span class="plan biz">Business</span> 套餐最多可使用 3 块。</li>
     </ol>
     <div class="tip"><b>温馨提示：</b>顾客显示屏只用于显示，不能点单，也不能发送任何内容——它只是向顾客展示订单。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c13-online">Online Orders 设备</h3>
+    <p class="intro">Online Orders（线上订单）设备是只显示线上订单看板的平板。收银台继续销售的同时，负责线上订单的员工在这台设备上接单、标记备好并交付给顾客。注册方式与其他设备相同，由主收银台批准。</p>
+    <ol class="steps">
+      <li>先把主收银台电脑上的 <b>BrewDesk 桌面应用</b>更新到最新版本。如果版本过旧，新设备上的 Online Orders 卡片会被锁定，并显示<b>“需要更新”</b>（Update needed）标记，提示先更新主 POS 上的桌面应用；主收银台的批准弹窗中也无法选择这个用途。</li>
+      <li>在新设备上打开 BrewDesk 应用，连接门店 Wi-Fi，点击 <b>“Register as a new device at Main POS”</b>（参见<a href="c14.html#c14-pair">将设备添加到主收银台</a>）。</li>
+      <li>在主收银台的弹窗中，于 <b>Device role</b> 下选择 <b>Online Orders</b>，然后点击 <b>Approve</b>。</li>
+      <li>新设备显示<b>“员工登录”</b>（Staff sign-in）时，输入员工 PIN，线上订单看板就会打开。员工 PIN 登录需要 <span class="plan pro">Pro</span> 套餐，且不能使用 PIN 0000——请先在主收银台上更改该 PIN。</li>
+    </ol>
+    <div class="tip"><b>在看板上可以做什么。</b>有新的线上订单时，会以<b>“新线上订单（N）”</b>提醒。订单可按状态（新订单、制作中、已备好、已完成、已取消）和类型（自取、外送）筛选。在这个屏幕上可以接单、标记备好和交付；已付款订单的取消和退款需在主收银台上用店长 PIN 办理。连接断开时会继续显示最后的列表，外送订单即将在此显示。</div>
+    <div class="tip"><b>不计入 POS 设备数量。</b>已注册的 Online Orders 设备会单独显示在 <code>Settings › Devices</code> 的 <b>Online Orders</b> 区域，不占用收银机名额。如果门店没有开启线上订单，看板就是空的。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c14.html">23. 多台设备与可靠性</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c24.html"><small>← 上一页</small>21. 设备与网络</a><a class="nx" href="c14.html"><small>下一页 →</small>23. 多台设备与可靠性</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

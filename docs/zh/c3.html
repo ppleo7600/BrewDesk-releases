@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>3. 设置门店 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>3. 设置门店 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -16,6 +16,7 @@
 <a class="sub" href="#c3-tax"><span class="num">3.1</span>设置税费</a>
 <a class="sub" href="#c3-closures"><span class="num">3.2</span>节假日与特殊日期</a>
 <a class="sub" href="#c3-status"><span class="num">3.3</span>一眼看清服务状态</a>
+<a class="sub" href="#c3-homepage"><span class="num">3.4</span>店铺主页 Business</a>
 <a href="c4.html" class=""><span class="num">4</span>创建菜单</a>
 <div class="part">第2部分 · 日常使用</div>
 <a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
@@ -98,6 +99,7 @@
     <div class="tip"><b>BrewDesk 可能会为您推荐。</b>如果某个商品与同分类的其他商品相似，您会看到 <b>"Suggested: … — not confirmed"</b>（建议：… — 尚未确认）。在您点击 <b>"Use this"</b>（使用此项）之前，不会有任何改动。</div>
     <div class="tip"><b>小额商品适用较低税率。</b>有些地区在价格较低时税率更低，例如安大略省对 4 美元及以下的现制食品和饮品返还部分税款。请在 <b>Lower tax below an amount</b> 下开启 <b>Use an amount condition</b>，选择要切换的两种税，并选择按 <b>Order total</b>（订单合计）还是 <b>"Each item's unit price"</b>（每个商品的单价）来衡量。下方会有一句简短的话，用通俗的语言说明该规则的作用。</div>
     <p class="foot">须知：小票和报表会把每种税单独列一行，因此两种税不能同名，BrewDesk 会要求您为其中一个改名。少数地区（马萨诸塞州和罗德岛州）只对超过限额的部分征税，金额条件无法复制这种规则，因此会出现警告。请务必与您的税务顾问核对设置。</p>
+    <div class="tip"><b>班次重叠时会出现提醒。</b>在 <code>Hours &amp; Closures</code> 中保存班次时，如果同一天有另一个班次的时间与之重叠，会弹出 <b>Overlapping shifts</b>（班次重叠）窗口，列出该班次的名称、星期和时间，并提醒：当两个或更多班次覆盖同一天同一时间时，排班表可能显示不正确。要修改时间请点 <b>Cancel</b>（取消）；如果重叠是有意的，请点 <b>Save anyway</b>（仍然保存）。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c3-closures">节假日与特殊日期</h3>
     <p class="intro">标记您的休息日后，BrewDesk 会在当天阻止顾客预订餐桌、加入候位名单或用手机点单。法定节假日、员工培训、临时休息，都可以在这里设置。</p>
@@ -132,8 +134,22 @@
     <div class="tip"><b>谁可以更改。</b>只有<b>店主和经理</b>可以暂停服务，其他人会看到“您没有权限”的提示，但所有人都能查看状态。</div>
     <div class="tip"><b>如果关闭了预约附加功能</b>，Reservations 按钮将完全不显示，重新开启该附加功能后才会再次出现。</div>
     <p class="foot">须知：这些原因文字也会显示在顾客的屏幕上，让顾客不会疑惑为什么不能点单。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c3-homepage">店铺主页 <span class="plan biz">Business</span></h3>
+    <p class="intro">把您提供给客人的门店链接变成单页的门店网站：首页、菜单、预订和到店路线。店名、Logo、地址、电话、营业时间和社交链接都直接使用您在 <b>Store Info</b> 中填写的内容。</p>
+    <div class="activate"><div class="h">在哪里开启</div><p>在 <code>Settings › Add-ons › Homepage</code> 的 <b>Homepage</b>（主页）卡片上打开开关（仅限 <span class="plan biz">Business</span> 套餐）。开启后，点该卡片的 <b>Settings</b>，或打开 <code>Settings › Customer Portal › Online Order</code>，即可看到 <b>Store homepage</b>（店铺主页）卡片。其他套餐在该卡片上只会显示“Business 套餐可用。”</p></div>
+    <ol class="steps">
+      <li>填写 <b>One-line intro</b>（一句话介绍）。它显示在首页部分，初始内容是您的欢迎语。在这里修改不会改变欢迎语本身。</li>
+      <li>可选：填写 <b>Subtitle</b>（副标题），并上传 <b>Cover photo</b>（封面照片）和 <b>Reservation photo</b>（预订照片）。上传时会分别裁剪为 16:9 和 4:3 并压缩；在您上传之前，将使用默认照片。</li>
+      <li>可选：填写 <b>Notice</b>（公告）。它显示在营业时间下方的一行；留空则不显示。</li>
+      <li>选择 <b>Theme</b>（主题：浅色 / 深色）和 <b>Point Color</b>（强调色）。选项与 POS 的外观设置相同；在您选择之前，会沿用当前的 POS 颜色。</li>
+      <li>点设置页面上的 <b>Save</b>（保存）。</li>
+    </ol>
+    <div class="tip"><b>客人看到的内容。</b>页面顶部有分区菜单：<b>Home</b>（首页）· <b>Menu</b>（菜单）· <b>Reserve</b>（预订）· <b>Visit us</b>（到店）。<b>Menu</b> 在接受在线点单或仅显示菜单时出现，<b>Reserve</b> 仅在开启 Reservations 附加功能且在线预订开放时出现。页面还会显示您现在是否营业、是否在休息，以及何时恢复营业。</div>
+    <div class="tip"><b>适用范围。</b>主页只会显示给通过门店链接进入的在线客人。桌台二维码和柜台二维码不经过主页，直接进入点单页面。关闭开关后，会照常显示您现有的点单页面。一句话介绍和公告按您输入的原样显示，不会被翻译。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c7.html">8. 收款</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c2.html"><small>← 上一页</small>2. 快速开始</a><a class="nx" href="c4.html"><small>下一页 →</small>4. 创建菜单</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

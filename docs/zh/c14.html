@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>23. 多台设备与可靠性 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>23. 多台设备与可靠性 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -37,9 +37,10 @@
 <a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
 <a href="c14.html" class="cur"><span class="num">23</span>多台设备与可靠性</a>
 <a class="sub" href="#c14-pair"><span class="num">23.1</span>将设备添加到主收银台</a>
-<a class="sub" href="#c14-role"><span class="num">23.2</span>更改设备用途并检查连接</a>
-<a class="sub" href="#c14-android"><span class="num">23.3</span>将安卓平板用作桌台点餐、员工点餐或顾客屏幕（即将推出）</a>
-<a class="sub" href="#c14-limit"><span class="num">23.4</span>达到设备数量上限时</a>
+<a class="sub" href="#c14-guide"><span class="num">23.2</span>添加设备指南与设备详情</a>
+<a class="sub" href="#c14-role"><span class="num">23.3</span>更改设备用途并检查连接</a>
+<a class="sub" href="#c14-android"><span class="num">23.4</span>将安卓平板用作桌台点餐、员工点餐或顾客屏幕（即将推出）</a>
+<a class="sub" href="#c14-limit"><span class="num">23.5</span>达到设备数量上限时</a>
 <a href="c18.html" class=""><span class="num">24</span>小票与打印机</a>
 <a href="c27.html" class=""><span class="num">25</span>正式营业</a>
 <a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
@@ -50,10 +51,10 @@
 <div class="main"><div class="wrap">  <div class="chap" id="c14">
     <h3><span class="n">23</span>多台设备与可靠性</h3>
     <p class="intro">您可以同时使用多台设备。即使其中一台出故障，另一台也能让您的门店继续营业。下面开始设置您的设备。</p>
-    <figure class="shot"><img src="../img/25-devices.png" alt="Devices settings screen" loading="lazy"><figcaption><b>Devices</b>（设备管理）① 主收银台（本设备）  ·  ② Customer Display（顾客显示屏）开关（<span class="plan pro">Pro</span> 及以上）  ·  ③ 断开连接  ·  ④ 提示：请从 BrewDesk 应用添加设备</figcaption></figure>
+    <figure class="shot"><img src="../img/25-devices.png" alt="Devices settings screen" loading="lazy"><figcaption><b>Devices</b>（设备管理）① 主收银台（本设备）  ·  ② Customer Display（顾客显示屏）开关（<span class="plan pro">Pro</span> 及以上）  ·  ③ 断开连接  ·  ④ 提示：请从 BrewDesk 应用添加设备  ·  （此为早期画面——现在 ② 和 ③ 位于点按设备卡片后打开的设备详情窗口中）</figcaption></figure>
     <ol class="steps">
-      <li>在将作为主收银台和副收银机的设备上，使用店主的邮箱登录。员工点单平板、顾客显示屏和候位名单自助机不使用店主邮箱登录——您需要在主收银台上批准它们（<a href="#c14-pair">将设备添加到主收银台</a>）。</li>
-      <li>为每台设备指定用途。可选择<b>主收银台</b>（您的第一号设备）、<b>副收银机</b>（辅助设备）、<b>Staff Ordering</b>（员工点单）、<b>顾客显示屏</b>（面向顾客的屏幕）或<b>候位名单自助机</b>。</li>
+      <li>在将作为主收银台和副收银机的设备上，使用店主的邮箱登录。员工点单平板、顾客显示屏、候位名单自助机和线上订单设备不使用店主邮箱登录——您需要在主收银台上批准它们（<a href="#c14-pair">将设备添加到主收银台</a>）。</li>
+      <li>为每台设备指定用途。可选择<b>主收银台</b>（您的第一号设备）、<b>副收银机</b>（辅助设备）、<b>Staff Ordering</b>（员工点单）、<b>顾客显示屏</b>（面向顾客的屏幕）、<b>候位名单自助机</b>或<b>线上订单</b>（线上订单看板屏幕）。</li>
       <li>以后需要更改设备的用途？在该设备上提出更改请求，然后在主收银台上批准（<a href="#c14-role">更改设备用途并检查连接</a>）。</li>
       <li>您需要选定一台设备作为<b>主收银台</b>——它是您的核心设备，<b>不会</b>自动交接。如果它掉线，BrewDesk 会立即提醒您，以便您重新开机，或将另一台设备设为主收银台。</li>
       <li>要设置设备的模式（包括员工点单），请参见<a href="c13.html#c13">设备模式与顾客显示屏</a>。</li>
@@ -65,14 +66,14 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c14-pair">将设备添加到主收银台</h3>
     <p class="intro">添加员工点单平板、顾客显示屏或候位名单自助机（自助登记）屏幕时，主收银台会自动找到它。无需输入代码，也无需到处找设置。即使门店没有网络，也能使用。</p>
-    <div class="activate"><div class="h">您需要准备</div><p>新设备必须已安装 <b>BrewDesk 应用</b>（iPad 或桌面版；安卓应用暂不可用），并且必须与主收银台处于<b>同一个门店 Wi-Fi</b> 下。在网页浏览器中打开的页面无法注册为设备——您只会看到 <b>“Add devices from the BrewDesk app”</b>（请使用 BrewDesk 应用添加设备）。</p></div>
+    <div class="activate"><div class="h">您需要准备</div><p>新设备必须已安装 <b>BrewDesk 应用</b>（iPad 或桌面版；安卓应用暂不可用），并且必须与主收银台处于<b>同一个门店 Wi-Fi</b> 下。在网页浏览器中打开的页面无法注册为设备——您只会看到 <b>“Add devices from the BrewDesk app”</b>（请使用 BrewDesk 应用添加设备）。如果主收银台本身是在浏览器中打开的，则需要同一台电脑上的桌面应用保持运行（参见<a href="#c14-guide">添加设备指南与设备详情</a>）。</p></div>
     <figure class="shot"><img src="../img/62-device-discover.png" alt="Register as a new device screen" loading="lazy"><figcaption><b>新设备正在查找主POS（未找到）</b>① “Register as a new device at Main POS” 界面  ·  ② Try again（重试）  ·  ③ 返回登录</figcaption></figure>
     <figure class="shot"><img src="../img/63-pair-approve.png" alt="New device pairing request popup" loading="lazy"><figcaption><b>主POS上的“New device pairing request”弹窗（示例画面）</b>① 设备名称和 IP 地址  ·  ② Device role——选择设备用途  ·  ③ Deny（拒绝）  ·  ④ Approve（批准）</figcaption></figure>
     <ol class="steps">
       <li>在新设备上打开 BrewDesk 应用。在登录界面，点击 <b>“Register as a new device at Main POS.”</b> 如果设备没有网络，它会自动进入此界面。</li>
       <li>您会看到 <b>“Looking for Main POS...”</b>（正在查找主POS），随后请求会自动发送。新设备上无需再点击任何内容——让它停留在 <b>“Waiting for approval at the Main POS.”</b>（等待主POS批准）即可。</li>
       <li>主收银台上会自动弹出名为 <b>New device pairing request</b> 的窗口，显示是哪台设备发出的请求，以及它的名称和地址。</li>
-      <li>在 <b>Device role</b>（设备用途）下，选择这台设备的用途——<b>Staff Ordering</b>、<b>Customer Display</b> 或 <b>Waitlist Kiosk</b>（自助登记）。选定之前，批准按钮保持不可用。</li>
+      <li>在 <b>Device role</b>（设备用途）下，选择这台设备的用途——<b>Staff Ordering</b>、<b>Customer Display</b>、<b>Waitlist Kiosk</b>（自助登记）或 <b>Online Orders</b>（<a href="c13.html#c13-online">详情</a>）。选定之前，批准按钮保持不可用。</li>
       <li>点击 <b>Approve</b>。如果您不认识该设备，请点击 <b>Deny</b>。</li>
       <li>新设备会显示 <b>New device registration complete</b>（新设备注册完成），并直接进入您为它选择的用途。</li>
     </ol>
@@ -80,6 +81,15 @@
     <div class="tip"><b>这样永远不会生成主收银台。</b>主收银台始终通过邮箱登录来设置，更改时 BrewDesk 会通过邮件发送验证码供您确认。副收银机（Sub POS）同样通过邮箱登录并确认验证码来注册。</div>
     <div class="tip"><b>提示“Couldn't find the Main POS”？</b>通常是两台设备连接了不同的 Wi-Fi。请连接<b>门店 Wi-Fi</b>——不要使用访客 Wi-Fi，也不要使用手机热点——然后点击 <b>Try again</b>。如果弹窗停留时间过长，您会看到 <b>Request expired</b>（请求已过期）；只需从新设备重新开始即可。</div>
     <p class="foot">在主收银台上，<code>Settings › Devices</code> 现在显示的是 <b>How to add a device</b>（如何添加设备）指南，而不是注册按钮——注册始终从新设备开始。</p>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c14-guide">添加设备指南与设备详情</h3>
+    <p class="intro">这里介绍主收银台 <code>Settings › Devices</code> 顶部的 <b>How to add a device</b>（如何添加设备）指南，以及点按设备卡片后打开的设备详情窗口。</p>
+    <ol class="steps">
+      <li>指南默认折叠为一行，点击后展开第 1、2、3 步。在主收银台上，折叠行右侧会显示<b>主POS地址</b>（Main POS address，例如 192.168.0.7），展开后的第 2 步有复制按钮。如果新设备要求输入地址，请输入这个地址（通常只需最后一个数字）。</li>
+      <li>指南最下方会显示<b>浏览器设备地址</b>。想通过浏览器添加设备时，请在同一 Wi-Fi 下的浏览器中打开此地址。</li>
+      <li>点按设备卡片会打开<b>设备详情</b>窗口，显示连接状态（<b>Connected</b> 或 <b>Not connected</b>）、<b>Role</b>、<b>Address</b>、<b>App version</b>、<b>Last seen</b> 以及添加日期（<b>Added</b>）。窗口底部可以 <b>Disconnect</b>（断开连接），对于不是主收银台的 POS，还可以将其设为主收银台。本 POS 的 Customer Display 开关也在这个窗口中。</li>
+    </ol>
+    <div class="tip"><b>如果看到“请在这台电脑上保持打开 BrewDesk 桌面应用”</b>（Keep the BrewDesk desktop app running on this computer），说明主收银台是在浏览器中打开的，或桌面应用没有运行。只有这台电脑上的桌面应用保持运行，新设备才能找到这台主收银台并注册。请先打开桌面应用，再回到此页面查看。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c14-role">更改设备用途并检查连接</h3>
     <p class="intro">您可以更改已配对设备的用途，也可以检查它是否仍与主收银台保持通信。</p>
@@ -94,6 +104,7 @@
     </ol>
     <div class="tip"><b>当情况看起来不对劲时——<b>Connection log</b>（连接日志）。</b>点击屏幕顶部的连接日志图标，可在同一页面中看到这台设备注册在哪家门店、承担哪项用途、与主收银台已连接多久，以及有多少订单尚未上传。联系客服时，点击 <b>Copy all</b>（全部复制）并粘贴给客服——这是获得帮助最快的方式。</div>
     <div class="tip"><b>现在更改设备用途需要您的批准。</b>拿着平板的人可以<i>提出请求</i>，但只有<b>主收银台</b>才能批准——所以，客人或路人无法悄悄把您的自助机变成点单设备。该请求会在 <b>2 分钟后过期</b>（“This request expires in {seconds}s — approve now or ask the device to send a new one”）；如果超时，只需在平板上重新请求。</div>
+    <div class="tip"><b>桌台点单平板可以用 PIN 直接切换。</b>在桌台点单平板上点击设备切换图标时，会先出现 PIN 输入板。输入店主或经理的 PIN 后，无需主收银台批准，用途会立即更改；主收银台上会显示类似“Bar iPad 已从 员工点单 更改为 顾客显示屏（店主 已通过 PIN 确认）”的通知。若要改为副收银机（Sub POS）这类可以收款的用途，仍需按上文由主收银台批准。</div>
     <div class="tip"><b>将设备设为副收银机（Sub POS）需要确认两次。</b>副收银机可以收款，所以主收银台会先提醒您——<b>“This device will be able to take payments.”</b> / <i>“A Sub POS can ring up orders, take payment and issue refunds. Approve only a device you set up yourself.”</i>（副POS可以录入订单、收款和退款。请仅批准您自己设置的设备。）点击 <b>Continue</b>（继续）确认。如果您不认识该设备，请点击 <b>Deny</b>。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c14-android">将安卓平板用作桌台点餐、员工点餐或顾客屏幕（即将推出）</h3>
@@ -132,9 +143,11 @@
     <div class="tip"><b>主收银台永远不会出现在该列表中。</b>更换主收银台是一件更重大的事，因此有专门的途径：<b>Replace Main POS</b>（更换主POS）卡片，它会先确认，并通过邮件向您发送验证码。上述快速替换仅适用于其他设备。</div>
     <div class="tip"><b>我们也会给您发邮件。</b>在网页端，当设备因达到上限而被拒绝时，BrewDesk 也会向店主发送邮件——消息中写着 <b>“We've also emailed the store owner about this.”</b>（我们也已就此事向店主发送了邮件。）这样，即使员工早上 7 点遇到这种情况，您也能知道，而无需他们再解释。</div>
     <div class="tip"><b>员工点单有单独的计数。</b>Pro 包含 3 个员工点单位（Business 不限）。点单位用完时，注册界面会明确告诉您：<b>“All 3 Staff Ordering slots are in use (3/3). Release a device in Settings → Devices to add another.”</b>（3 个员工点单位均已占用（3/3）。请在“设置 → 设备”中释放一台设备后再添加。）如果您的套餐完全不包含该功能：<b>“Staff Ordering isn't included in your current plan.”</b>（当前方案不包含员工点单功能。）</div>
+    <div class="tip"><b>批准之前，BrewDesk 会先告诉您名额是否已满。</b>如果名额已用完，主收银台的 <b>New device pairing request</b> 弹窗会在您点击 <b>Approve</b> 之前显示黄色的<b>“设备名额已满”</b>（Device slots are full，含已用/上限）警告，批准按钮保持不可用。店主和经理还会看到 <b>Open device management</b>（打开设备管理）按钮；其他员工则会被提示联系店主。请先断开一台不再使用的设备，然后重新注册。新设备上也会显示<b>“设备名额已满”</b>，并提示在主 POS 上删除不再使用的设备后重新注册。名额遵循套餐上限（收银机和顾客显示屏），此外每家门店的设备列表最多容纳 32 台设备。Online Orders 设备不计入 POS 上限。</div>
     <p class="foot">在 iPad 或桌面应用上，提示语略为简短，并指引您前往网页上的 BrewDesk 账户更改套餐——替换操作本身完全相同。</p>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c13.html">22. 设备模式与顾客显示屏</a></li><li><a href="c11.html">18. 二维码点单</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c13.html"><small>← 上一页</small>22. 设备模式与顾客显示屏</a><a class="nx" href="c18.html"><small>下一页 →</small>24. 小票与打印机</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

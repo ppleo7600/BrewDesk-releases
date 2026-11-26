@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>8. 收款 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>8. 收款 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -19,9 +19,10 @@
 <a href="c5.html" class=""><span class="num">6</span>点单</a>
 <a href="c30.html" class=""><span class="num">7</span>刷卡收款准备 · 连接 Stripe</a>
 <a href="c7.html" class="cur"><span class="num">8</span>收款</a>
-<a class="sub" href="#c7-split"><span class="num">8.1</span>分账</a>
-<a class="sub" href="#c7-tip"><span class="num">8.2</span>事后结清订单的小费</a>
-<a class="sub" href="#c7-cashrounding"><span class="num">8.3</span>现金收款取整</a>
+<a class="sub" href="#c7-terminal"><span class="num">8.1</span>经销商为您设置的刷卡终端</a>
+<a class="sub" href="#c7-split"><span class="num">8.2</span>分账</a>
+<a class="sub" href="#c7-tip"><span class="num">8.3</span>事后结清订单的小费</a>
+<a class="sub" href="#c7-cashrounding"><span class="num">8.4</span>现金收款取整</a>
 <a href="c8.html" class=""><span class="num">9</span>折扣与促销</a>
 <a href="c9.html" class=""><span class="num">10</span>退款</a>
 <a href="c17.html" class=""><span class="num">11</span>报表与日结</a>
@@ -67,6 +68,18 @@
     <div class="tip"><b>小费归谁？</b>添加小费时，BrewDesk 会请您选择是哪位员工获得的，点击 <b>Assign staff</b>（分配员工）并选择姓名。如果那张餐桌只有一位服务员，系统会自动为您选中。如果没有选择任何人，小费会记在 <b>Store Manager</b> 名下，不会丢失。</div>
     <div class="tip"><b>手动记录银行卡付款？</b>如果您在未连接 BrewDesk 的独立终端上刷卡，<b>Visa</b>、<b>Mastercard</b>、<b>Amex</b> 等卡品牌现在会直接显示在支付界面 <b>Cash</b> 的旁边。点一下就同时记录了这是银行卡支付以及是哪个品牌，无需额外步骤。</div>
     <div class="tip"><b>刷卡器工作时，支付界面不会关闭。</b>如果在已连接的刷卡器仍在扣款时点击 <b>X</b>，界面不会关闭，并会告诉您原因：<b>Card payment in progress</b>（银行卡支付进行中）：<i>"The reader is still charging this card. Wait until it finishes — closing now could take the money without recording it on the order."</i>（刷卡器仍在扣款。请等待完成，现在关闭可能会收了款却没有记录到订单上。）只需几秒钟，却关系到这笔钱是记在订单上还是凭空消失。刷卡器一完成（无论刷卡成功与否），X 就会自动恢复可用。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-terminal">经销商为您设置的刷卡终端</h3>
+    <p class="intro">如果经销商已将您柜台上的刷卡终端关联到 BrewDesk，您可以在 <code>Settings › Payments</code> 中查看并开启或关闭它。终端的连接和配置由经销商完成，您可以查看其状态并测试连接。服务商名称与经销商关联时的名称一致。</p>
+    <ol class="steps">
+      <li>在支付设置界面的 <b>Payment providers</b>（支付服务商）列表中，点击终端所在的行。该行会显示连接状态和<b>上次检查</b>时间。</li>
+      <li>在 <b>Status</b>（状态）标签页中点击 <b>Test connection</b>（测试连接），检查终端能否连通。如果连不上，会显示原因，并提示您请经销商检查连接。同时请确认终端与主 POS 处于同一 Wi-Fi。</li>
+      <li><b>Connection log</b>（连接记录）标签页会显示今日尝试次数、已批准次数、结果未知的次数，以及最近 20 笔发往终端的付款。不会显示任何银行卡信息。</li>
+      <li>在上方支付方式列表的终端卡片上，用开关决定是否使用。在 <b>Where you accept</b>（收款渠道）表格中，只有您已开启的支付方式才会显示为列，终端仅在 POS 一行有对应的格子。</li>
+    </ol>
+    <div class="tip"><b>状态标签：</b><b>Connected</b>（已连接）、<b>Not connected</b>（未连接）、<b>Not tested yet</b>（尚未测试）。如果看到 <b>Not connected</b>（未连接），请联系经销商检查连接。</div>
+    <div class="tip"><b>尚未连接的支付方式会被锁定。</b>如果您的门店可用的刷卡终端或 Stripe 尚未连接，它们会在支付方式列表中显示为关闭并锁定，且带有 <b>Not connected</b>（未连接）标记。点击后会出现提示：刷卡终端请联系经销商连接（店主账户还会看到已关联经销商的公司名称和邮箱）；Stripe 请在 <b>Payment providers</b> 中连接。您此前开启过的设置会被保留，连接后自动恢复。</div>
+    <div class="tip"><b>Where you accept 表格已调整。</b>现在只显示您在上方开启的支付方式，已关闭的方式不再变灰显示，而是直接不出现。如果一个都没开，只会显示提示"请先在上方开启一种支付方式，再选择在哪里收款"。现金、Card (Record Only) 和代金券只能在 POS 收取，开启后会在 POS 一行显示为始终开启的格子。</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">分账</h3>
     <p class="intro">当一桌客人想分开付款时，BrewDesk 可以帮您拆分账单。有两种简单的方式：在几个人之间<b>平均</b>分摊，或<b>按商品</b>分摊，让每个人只为自己点的东西付款。每一份都可以单独加小费，一个人甚至可以一部分付现金、一部分刷卡。</p>
@@ -121,6 +134,7 @@
     <div class="brag"><div class="h">值得展示</div><p><b>像隔壁店一样取整，账目里却一分不丢。</b>只需设置一次硬币单位，每笔现金合计都会落在您实际拥有的硬币面值上。每一分取整的零头仍有记录、仍会印在小票上，并在日结时对得上账，您的会计永远不必问零钱去了哪里。</p></div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c3.html">3. 设置门店</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c30.html"><small>← 上一页</small>7. 刷卡收款准备 · 连接 Stripe</a><a class="nx" href="c8.html"><small>下一页 →</small>9. 折扣与促销</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>6. Taking orders · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>6. Taking orders · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -18,8 +18,9 @@
 <a href="c23.html" class=""><span class="num">5</span>Staff quick start</a>
 <a href="c5.html" class="cur"><span class="num">6</span>Taking orders</a>
 <a class="sub" href="#c5-hold"><span class="num">6.1</span>Hold an order</a>
-<a class="sub" href="#c5-tablemap"><span class="num">6.2</span>Build your table map</a>
-<a class="sub" href="#c5-move"><span class="num">6.3</span>Move &amp; merge tables</a>
+<a class="sub" href="#c5-voidreason"><span class="num">6.2</span>Cancelling an item the kitchen already has</a>
+<a class="sub" href="#c5-tablemap"><span class="num">6.3</span>Build your table map</a>
+<a class="sub" href="#c5-move"><span class="num">6.4</span>Move &amp; merge tables</a>
 <a href="c30.html" class=""><span class="num">7</span>Card payment setup · Connect Stripe</a>
 <a href="c7.html" class=""><span class="num">8</span>Getting paid</a>
 <a href="c8.html" class=""><span class="num">9</span>Discounts &amp; promotions</a>
@@ -83,6 +84,19 @@
     </ol>
     <div class="tip"><b>When should I use Hold?</b> Use it when a customer steps away to grab something, or when you need to start someone else's order first. The parked order waits safely until you're ready — nothing is lost.</div>
 
+    <h3 id="c5-voidreason" style="font-size:16px;margin:22px 0 4px">Cancelling an item the kitchen already has</h3>
+    <p class="intro">When you cancel an item that was already sent to the kitchen, you now pick a <b>reason</b> first — one tap on a button instead of typing one.</p>
+    <div class="activate"><div class="h">When it appears</div><p>It opens when you cancel an item that has already gone to the kitchen. It doesn't appear when you remove an item that is only in the cart and hasn't been sent. If a manager PIN approves the cancel, the same reason screen opens.</p></div>
+    <ol class="steps">
+      <li>A screen opens with <b>"This item was already sent to kitchen"</b> and <b>"Reason for void (required)"</b>.</li>
+      <li>Tap one of the buttons: <b>Wrong order</b>, <b>Customer changed mind</b> or <b>Out of stock</b>. For anything else, tap <b>Other (type a reason)</b> and type <b>at least 2 characters</b>.</li>
+      <li>Under <b>"Recent reasons at this store"</b> you'll see up to 6 reasons your store used lately. Tap one to reuse it.</li>
+    </ol>
+    <div class="tip"><b>The reason is printed on the kitchen cancel ticket.</b> As the screen says — <b>"The selected reason is printed on the kitchen cancel ticket."</b> — the reason prints as one line right under the title of the VOID ticket at the kitchen printer, so the kitchen doesn't have to ask why. Cancelling the same item a second time still prints its kitchen cancel ticket.</div>
+    <div class="tip"><b>You can choose who cancelled.</b> If <b>Choose who cancelled</b> is on under <code>Settings › Staff Permissions › Staff</code> and you have two or more people, a <b>Cancelled by</b> list appears at the bottom of this cancel-reason window. It starts on whoever is signed in; picking someone else doesn't ask for their PIN again. See <a href="c16.html#c16-voidchoose">Choose who cancelled</a>.</div>
+    <div class="tip"><b>Modifying a sent item is recorded as a cancellation too.</b> When you tap <b>Modify</b> on an item that already went to the kitchen, the original line is cancelled automatically and the reason is saved as <b>"Modified (item changed)"</b>. It's a reason the system records, not one you pick, so it doesn't show up under <b>"Recent reasons at this store"</b>. The new line you make is counted as a sale, so nothing is taken off twice.</div>
+
+
     <h3 id="c5-tablemap" style="font-size:16px;margin:22px 0 4px">Build your table map</h3>
     <p class="intro">If you serve at tables, the table map is a little picture of your room. You tap a table to start that table's order. You set it up once. Here's how to draw it.</p>
     <div class="activate"><div class="h">Where to turn it on</div><p>Table service is on by default for Restaurant and Bar business types. Otherwise turn it on in <code>Settings › Add-ons › Tables</code> (flip the switch). The table map only shows when table service is on.</p></div>
@@ -102,6 +116,7 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c5-move">Move &amp; merge tables</h3>
     <p class="intro">Move and merge by drag &amp; drop. Guests change their minds. Someone wants to move to the patio, or two tables decide to pay together. On the Table Map you can pick up a table's whole order and drop it somewhere else — nothing gets re-typed.</p>
+    <div class="vbox"><p class="vlabel">Watch the video</p><div class="vgrid"><div class="vcard" data-vid="2leVQZUdilI"><a class="vthumb" href="https://www.youtube.com/watch?v=2leVQZUdilI" target="_blank" rel="noopener" aria-label="Play: Merge two tables (and undo it)"><img src="https://i.ytimg.com/vi/2leVQZUdilI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Merge two tables (and undo it)</p></div></div><p class="vlabel" data-for="shorts">Short videos</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="FEJFRSDCMZc"><a class="vthumb" href="https://www.youtube.com/shorts/FEJFRSDCMZc" target="_blank" rel="noopener" aria-label="Play: Two tables, one bill? Hold, drag, merge"><img src="https://i.ytimg.com/vi/FEJFRSDCMZc/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Two tables, one bill? Hold, drag, merge</p></div></div></div>
     <div class="activate"><div class="h">Where to find it</div><p>It's built right into the <b>Table Map</b>. It works any time <b>Table service</b> is on — there's nothing to switch on.</p></div>
     <p class="sub"><b>Move an order to an empty table</b></p>
     <ol class="steps">
@@ -120,7 +135,8 @@
     <div class="tip"><b>A table looks busy but has no order?</b> Sometimes a table gets opened — for example by a QR scan — but no order is placed, so it stays marked as occupied. Tap that table on the map and BrewDesk offers to <b>clear</b> it (tidy it back to empty) or <b>open</b> a new order. Clearing only works when there's no order and no payment on the table, so you can never lose a real sale.</div>
 
   </div>
-<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c23.html">5. Staff quick start</a></li><li><a href="c30.html">7. Card payment setup · Connect Stripe</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c23.html"><small>← Previous</small>5. Staff quick start</a><a class="nx" href="c30.html"><small>Next →</small>7. Card payment setup · Connect Stripe</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c16.html">15. Staff &amp; permissions</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c22.html">27. Troubleshooting &amp; support</a></li><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c23.html"><small>← Previous</small>5. Staff quick start</a><a class="nx" href="c30.html"><small>Next →</small>7. Card payment setup · Connect Stripe</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

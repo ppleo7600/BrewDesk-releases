@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>6. 주문 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>6. 주문 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -18,8 +18,9 @@
 <a href="c23.html" class=""><span class="num">5</span>직원 빠른 시작</a>
 <a href="c5.html" class="cur"><span class="num">6</span>주문 받기</a>
 <a class="sub" href="#c5-hold"><span class="num">6.1</span>주문 보류(Hold)</a>
-<a class="sub" href="#c5-tablemap"><span class="num">6.2</span>테이블 맵 만들기</a>
-<a class="sub" href="#c5-move"><span class="num">6.3</span>테이블 이동 &amp; 합치기</a>
+<a class="sub" href="#c5-voidreason"><span class="num">6.2</span>주방에 나간 메뉴 취소하기</a>
+<a class="sub" href="#c5-tablemap"><span class="num">6.3</span>테이블 맵 만들기</a>
+<a class="sub" href="#c5-move"><span class="num">6.4</span>테이블 이동 &amp; 합치기</a>
 <a href="c30.html" class=""><span class="num">7</span>카드 결제 준비 · Stripe 연결</a>
 <a href="c7.html" class=""><span class="num">8</span>결제 받기</a>
 <a href="c8.html" class=""><span class="num">9</span>할인 &amp; 프로모션</a>
@@ -83,6 +84,19 @@
     </ol>
     <div class="tip"><b>언제 Hold를 사용하나요?</b> 손님이 무언가를 가지러 자리를 비웠을 때, 또는 다른 사람의 주문을 먼저 받아야 할 때 사용해 주세요. 보류한 주문은 준비될 때까지 안전하게 보관됩니다 — 아무것도 잃지 않습니다.</div>
 
+    <h3 id="c5-voidreason" style="font-size:16px;margin:22px 0 4px">주방에 나간 메뉴 취소하기</h3>
+    <p class="intro">이미 주방으로 전송한 메뉴를 취소하면 <b>취소 사유</b>를 먼저 고르게 됩니다. 이제 사유를 직접 쓰지 않아도 버튼 한 번으로 끝납니다.</p>
+    <div class="activate"><div class="h">나타나는 때</div><p>주방으로 이미 보낸 메뉴를 취소할 때 열립니다. 장바구니에만 담은(아직 보내지 않은) 메뉴를 지울 때는 나오지 않습니다. 매니저 PIN으로 취소를 승인하는 경우에도 같은 사유 화면이 열립니다.</p></div>
+    <ol class="steps">
+      <li><b>"이 항목은 이미 주방으로 전송되었습니다"</b> 안내와 함께 <b>"취소 사유 (필수)"</b> 화면이 열립니다.</li>
+      <li>버튼에서 <b>주문 실수</b>, <b>손님 변심</b>, <b>품절</b> 중 하나를 고릅니다. 다른 이유라면 <b>직접 입력</b>을 탭하고 <b>2자 이상</b> 적습니다.</li>
+      <li>그 아래 <b>"우리 매장 최근 사유"</b>에는 우리 매장에서 최근 쓴 사유가 최대 6개까지 나옵니다. 자주 쓰는 사유는 한 번 탭해서 고를 수 있습니다.</li>
+    </ol>
+    <div class="tip"><b>사유는 주방 취소 주문서에도 인쇄됩니다.</b> <b>"선택한 취소 사유는 주방 취소 주문서에 함께 인쇄됩니다"</b>라는 안내 그대로, 주방 프린터에 나오는 VOID 티켓 제목 바로 아래에 사유가 한 줄로 찍힙니다. 주방에서 "왜 취소됐지?" 하고 되물을 필요가 없습니다. 같은 메뉴를 두 번째로 취소해도 주방 취소 주문서가 정상적으로 나옵니다.</div>
+    <div class="tip"><b>취소한 직원을 고를 수 있습니다.</b> <code>설정 › 직원 권한 › Staff</code>에서 <b>취소한 직원 고르기</b>를 켜 두었고 직원이 두 명 이상이면, 이 취소 사유 창 아래쪽에 <b>취소한 직원</b> 목록이 나타납니다. 기본은 지금 로그인한 직원이며, 다른 사람을 골라도 PIN은 다시 묻지 않습니다. 자세한 내용은 <a href="c16.html#c16-voidchoose">취소한 직원 고르기</a>를 참고해 주세요.</div>
+    <div class="tip"><b>보낸 메뉴를 수정(Modify)하면 취소로도 기록됩니다.</b> 주방에 이미 보낸 메뉴에서 <b>Modify</b>(수정)를 누르면 원래 줄은 자동으로 취소 처리되고, 사유는 <b>"메뉴 수정"</b>(Modified (item changed))으로 남습니다. 이 사유는 직접 고르는 것이 아니라 시스템이 남기는 값이라 <b>"우리 매장 최근 사유"</b> 목록에는 나오지 않습니다. 수정한 새 줄은 판매로 잡히므로 금액이 이중으로 빠지지 않습니다.</div>
+
+
     <h3 id="c5-tablemap" style="font-size:16px;margin:22px 0 4px">테이블 맵 만들기</h3>
     <p class="intro">테이블에서 주문을 받는다면, 테이블 맵은 매장을 작게 그린 그림입니다. 테이블을 탭하면 해당 테이블의 주문이 시작됩니다. 한 번만 설정하면 됩니다. 그리는 방법은 다음과 같습니다.</p>
     <div class="activate"><div class="h">켜는 곳</div><p>식당과 바 업종은 테이블 서비스가 기본으로 켜져 있습니다. 그렇지 않으면 <code>Settings › Add-ons › Tables</code>에서 켭니다(스위치를 눌러 주세요). 테이블 맵은 테이블 서비스가 켜져 있을 때만 표시됩니다.</p></div>
@@ -102,6 +116,7 @@
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c5-move">테이블 이동 &amp; 합치기</h3>
     <p class="intro">드래그 &amp; 드롭으로 옮기고 합칩니다. 손님의 마음은 바뀔 수 있습니다. 누군가는 테라스로 옮기고 싶어 하고, 두 테이블이 함께 계산하기도 합니다. 테이블 맵에서는 테이블의 주문 전체를 집어서 다른 곳에 놓을 수 있습니다 — 다시 입력할 필요가 없습니다.</p>
+    <div class="vbox"><p class="vlabel">영상으로 보기</p><div class="vgrid"><div class="vcard" data-vid="2leVQZUdilI"><a class="vthumb" href="https://www.youtube.com/watch?v=2leVQZUdilI" target="_blank" rel="noopener" aria-label="재생: 테이블 합치기와 되돌리기"><img src="https://i.ytimg.com/vi/2leVQZUdilI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">테이블 합치기와 되돌리기</p></div></div><p class="vlabel" data-for="shorts">짧은 영상</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="FEJFRSDCMZc"><a class="vthumb" href="https://www.youtube.com/shorts/FEJFRSDCMZc" target="_blank" rel="noopener" aria-label="재생: 테이블 둘, 계산 하나? 누르고 끌어서 합치기"><img src="https://i.ytimg.com/vi/FEJFRSDCMZc/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">테이블 둘, 계산 하나? 누르고 끌어서 합치기</p></div></div></div>
     <div class="activate"><div class="h">어디서 찾나요</div><p><b>테이블 맵</b>에 기본으로 들어 있습니다. <b>테이블(Table service)</b>이 켜져 있으면 언제든 사용할 수 있으며, 따로 켤 필요가 없습니다.</p></div>
     <p class="sub"><b>주문을 빈 테이블로 옮기기 (이동)</b></p>
     <ol class="steps">
@@ -120,7 +135,8 @@
     <div class="tip"><b>주문이 없는데 테이블이 사용 중으로 표시된다면</b> 가끔 테이블이 열렸지만(예: QR 스캔) 주문이 들어가지 않아 사용 중 표시가 남는 경우가 있습니다. 지도에서 해당 테이블을 탭하면 BrewDesk가 <b>정리(clear, 빈 테이블로 되돌리기)</b>하거나 <b>새 주문 열기(open)</b>를 제안합니다. 정리는 주문도 결제도 없는 테이블에서만 가능하므로 실제 매출을 잃을 일이 없습니다.</div>
 
   </div>
-<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c23.html">5. 직원 빠른 시작</a></li><li><a href="c30.html">7. 카드 결제 준비 · Stripe 연결</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c23.html"><small>← 이전</small>5. 직원 빠른 시작</a><a class="nx" href="c30.html"><small>다음 →</small>7. 카드 결제 준비 · Stripe 연결</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c16.html">15. 직원 &amp; 권한</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c23.html"><small>← 이전</small>5. 직원 빠른 시작</a><a class="nx" href="c30.html"><small>다음 →</small>7. 카드 결제 준비 · Stripe 연결</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

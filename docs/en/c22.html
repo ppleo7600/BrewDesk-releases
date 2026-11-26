@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>27. Troubleshooting &amp; support · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>27. Troubleshooting &amp; support · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="Menu">☰</button>
@@ -41,12 +41,14 @@
 <a href="c25.html" class=""><span class="num">26</span>Installation checklist</a>
 <div class="part">Part 5 · Help</div>
 <a href="c22.html" class="cur"><span class="num">27</span>Troubleshooting &amp; support</a>
-<a class="sub" href="#c22-update"><span class="num">27.1</span>Automatic updates</a>
+<a class="sub" href="#c22-messages"><span class="num">27.1</span>Messages you may see about devices, printers and tables</a>
+<a class="sub" href="#c22-update"><span class="num">27.2</span>Automatic updates</a>
 <a href="c28.html" class=""><span class="num">28</span>FAQ</a>
 <a href="c26.html" class=""><span class="num">29</span>Glossary</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c22">
     <h3><span class="n">27</span>Troubleshooting &amp; support</h3>
     <p class="intro">Things go wrong sometimes — that's okay. Here are quick fixes for the most common ones, and how to ask us for help.</p>
+    <div class="vbox"><p class="vlabel">Watch the video</p><div class="vgrid"><div class="vcard" data-vid="-TTMriL5GPU"><a class="vthumb" href="https://www.youtube.com/watch?v=-TTMriL5GPU" target="_blank" rel="noopener" aria-label="Play: Printer stopped printing? What to check first"><img src="https://i.ytimg.com/vi/-TTMriL5GPU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Printer stopped printing? What to check first</p></div></div><p class="vlabel" data-for="shorts">Short videos</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="Bl7zYZAvIII"><a class="vthumb" href="https://www.youtube.com/shorts/Bl7zYZAvIII" target="_blank" rel="noopener" aria-label="Play: Printer stopped? Check this first"><img src="https://i.ytimg.com/vi/Bl7zYZAvIII/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">Printer stopped? Check this first</p></div></div></div>
     <figure class="shot"><img src="../img/80-account-menu.png" alt="Account menu" loading="lazy"><figcaption><b>Profile icon (D) menu — where to refresh</b>① Profile &amp; Account  ·  ② Check for updates — check for the newest version and refresh</figcaption></figure>
     <figure class="shot"><img src="../img/24-support.png" alt="Support screen" loading="lazy"><figcaption><b>Support</b>① Create New Ticket  ·  ② Start your first ticket</figcaption></figure>
     <ol class="steps">
@@ -63,6 +65,16 @@
     <div class="tip"><b>A support ticket</b> is just a message you send to our help team. Tell us what went wrong and we'll get back to you.</div>
     <div class="tip"><b>Buttons cut off, or text too small on a little tablet?</b> Open the account menu (top right) and look for <b>Display Scaling</b>. Leave it on <b>Auto</b> and BrewDesk fits the screen to your device by itself, showing you the percentage it picked. Switch to <b>Manual</b> if you'd rather choose the size yourself.</div>
     <div class="tip"><b>Not signed in, or helping someone who isn't?</b> There's a plain help page at <b>brewdesk.io/support</b> — no login needed. It has our email address, how long we usually take to reply, and answers to the questions we get most (offline, hardware, card payments, device limits, cancelling, where your data lives).</div>
+
+    <h3 id="c22-messages" style="font-size:16px;margin:22px 0 4px">Messages you may see about devices, printers and tables</h3>
+    <ol class="steps">
+      <li><b>"Device slots are full"</b> — shown when the approve button won't work in a new device's approval popup. Disconnect a device you no longer use, then register again (<a href="c14.html#c14-limit">When you hit the device limit</a>).</li>
+      <li><b>The Online Orders card on a new device is locked and says "Update needed"?</b> Update the BrewDesk desktop app on the main till's computer first (<a href="c13.html#c13-online">Online Orders devices</a>).</li>
+      <li><b>The Devices screen says "Keep the BrewDesk desktop app running on this computer"?</b> Open the desktop app on that same computer, then check the screen again (<a href="c14.html#c14-guide">The add-a-device guide &amp; device details</a>).</li>
+      <li><b>The cash drawer won't open and the screen says "This POS has no cash drawer"?</b> In <code>Settings › Printers</code>, open the receipt printer that has the cash drawer and pick this POS under <b>Used by POS</b>. If you see "The cash drawer only works on a receipt printer", change that printer's role to <b>Main Receipt</b> (<a href="c18.html#c18-pos-printer">Choose which printer each POS uses</a>).</li>
+      <li><b>A printer card is red and says "Not used by any POS"?</b> Nothing prints on that printer. Tap it and pick a POS under <b>Used by POS</b>, or make it the <b>Store default</b>.</li>
+      <li><b>Can't delete a table?</b> If the table has an open order you'll see a notice that the table has an open order and to settle or cancel it before deleting the table. If a Table Order device is linked to the table, the notice says to change that device's table first, then delete this table. Deal with it as the message says, then delete the table again.</li>
+    </ol>
 
     <h3 id="c22-update" style="font-size:16px;margin:22px 0 4px">Automatic updates</h3>
     <p class="intro">We improve BrewDesk all the time, and your till picks up the new version by itself. It never does that in the middle of a sale — here's exactly when it happens and what you'll see.</p>
@@ -89,7 +101,8 @@
     <div class="tip"><b>Taking its time?</b> After about 20 seconds you'll see <b>"Taking a little longer. You can leave it as is."</b> If it really can't fetch it: <b>"We couldn't get the new version right now. Please try again in a moment."</b> Nothing is broken and nothing is lost — carry on serving and try later.</div>
     <div class="tip"><b>After it updates, it tells you.</b> Next time the till starts you get a short note — <b>"This version includes improvements and fixes."</b> — so a screen that looks slightly different isn't a mystery.</div>
   </div>
-<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c7.html">8. Getting paid</a></li><li><a href="c15.html">12. Working offline</a></li><li><a href="c18.html">24. Receipts &amp; printers</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c25.html"><small>← Previous</small>26. Installation checklist</a><a class="nx" href="c28.html"><small>Next →</small>28. FAQ</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>Related topics</h4><ul><li><a href="c7.html">8. Getting paid</a></li><li><a href="c15.html">12. Working offline</a></li><li><a href="c18.html">24. Receipts &amp; printers</a></li><li><a href="c14.html">23. Multiple devices &amp; reliability</a></li><li><a href="c13.html">22. Device modes &amp; customer display</a></li></ul></div><div class="eb"><h4>Need more help?</h4><ul><li><a href="c28.html">28. FAQ</a></li><li><a href="c26.html">29. Glossary</a></li></ul><p>You can send a support ticket from the app under Settings › Support.</p></div></div><div class="pager"><a href="c25.html"><small>← Previous</small>26. Installation checklist</a><a class="nx" href="c28.html"><small>Next →</small>28. FAQ</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

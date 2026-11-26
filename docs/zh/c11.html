@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>18. 二维码点单 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>18. 二维码点单 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -31,7 +31,8 @@
 <a href="c10.html" class=""><span class="num">17</span>顾客与会员积分</a>
 <a href="c11.html" class="cur"><span class="num">18</span>二维码点单</a>
 <a class="sub" href="#c11-ops"><span class="num">18.1</span>日常运营</a>
-<a class="sub" href="#c11-guest"><span class="num">18.2</span>客人看到的内容</a>
+<a class="sub" href="#c11-online"><span class="num">18.2</span>在线点单的门店链接</a>
+<a class="sub" href="#c11-guest"><span class="num">18.3</span>客人看到的内容</a>
 <a href="c12.html" class=""><span class="num">19</span>向顾客发送消息</a>
 <a href="c19.html" class=""><span class="num">20</span>备份</a>
 <div class="part">第4部分 · 安装与设备</div>
@@ -67,11 +68,18 @@
     <div class="tip"><b>营业时间之外要生成桌台二维码？</b>如果您在营业时间之外手动打印某张桌台的二维码，BrewDesk 会先请您确认，避免二维码被误发出去。自动入座和批量入座不受影响。</div>
     <div class="tip"><b>网络中断时，请勿打印新的桌台二维码。</b>如果您的收银机无法连接 BrewDesk 时尝试生成二维码，系统会先拦截：<b>“Check the internet connection — can't issue a table QR.”</b>（请检查网络连接——无法生成桌台二维码。）扫描该二维码的客人下的单会石沉大海——订单不会到达您的收银机。网络恢复前，请由您自己为客人点单。</div>
 
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c11-online">在线点单的门店链接</h3>
+    <p class="intro">在线订单是通过您提供给客人的门店链接（<code>brewdesk.io/s/您的店铺</code>）进入的，而不是通过二维码。请在 <code>Settings › Customer Portal › Online Order</code> 中设置。</p>
+    <div class="tip"><b>选择客人可以做什么。</b>在 <b>What guests can do</b>（顾客可以做什么）下，选择 <b>Take orders</b>（接受下单）或 <b>Menu only</b>（仅显示菜单）。<b>Menu only</b> 只向客人展示菜单，并隐藏购物车、加入购物车和结账，适合当作电子菜单牌。这个选择与 Add-ons 中的 <b>Online Order</b> 开关联动——如果那里已关闭 Online Order，该选项会锁定为 <b>Menu only</b>，并提示 Online Order 已关闭，顾客只能查看菜单，选择 Take orders 即可重新开启。它与二维码点单的设置相互独立。</div>
+    <div class="tip"><b>系统会建议门店地址（Custom URL）。</b>如果 <b>Store Link</b> 卡片中还没有已保存的地址，系统会根据店名生成地址，预先填入 <b>Custom URL</b>（自定义 URL）栏，并提示“根据店名生成的建议地址。点击检查即可使用，也可以自行输入。”要使用它，请点 <b>Check</b>（检查）确认是否可用；也可以自己输入想要的地址。如果地址已被占用，会提示您。</div>
+    <div class="tip"><b>店铺主页。</b>在 <span class="plan biz">Business</span> 套餐中，您可以把这个门店链接变成单页的门店网站（参见<a href="c3.html#c3-homepage">店铺主页</a>）。</div>
+
     <h3 style="font-size:16px;margin:22px 0 4px" id="c11-guest">客人看到的内容</h3>
-    <div class="tip"><b>客人看到的内容：</b>客人可以在手机上打开 <b>My Orders</b>（我的订单），查看今天及以往的订单，以及逐项明细账单。付款后，他们需要<b>重新扫描二维码</b>才能开始新的订单——这样可以避免已付款的订单被误加菜品。</div>
+    <div class="tip"><b>客人看到的内容：</b>客人可以在手机上打开 <b>My Orders</b>（我的订单），查看今天及以往的订单，以及逐项明细账单。桌台付款完成后，客人的屏幕上会显示 <b>Start a new order</b>（开始新订单）按钮。点击后会像重新扫描二维码一样开始一个新订单，已付款的订单不会被追加任何内容。</div>
     <div class="tip"><b>图片视图或列表视图。</b>客人可以在手机菜单中切换<b>图片视图</b>（大幅美食照片）和简单列表。没有照片的菜品会显示您的门店标志，因此菜单看起来始终整洁。客人选择的视图会保存在其手机上。</div>
   </div>
-<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c6.html">16. 预订与排程</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c10.html"><small>← 上一页</small>17. 顾客与会员积分</a><a class="nx" href="c12.html"><small>下一页 →</small>19. 向顾客发送消息</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c6.html">16. 预订与排程</a></li><li><a href="c3.html">3. 设置门店</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c10.html"><small>← 上一页</small>17. 顾客与会员积分</a><a class="nx" href="c12.html"><small>下一页 →</small>19. 向顾客发送消息</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

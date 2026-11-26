@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>28. 常见问题 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>28. 常见问题 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -65,6 +65,8 @@
       <li><b>刷卡手续费是多少？</b>在所有套餐中，BrewDesk 不对您的刷卡销售额加收任何费用。款项直接进入您自己的 Stripe 账户；唯一的费用是 Stripe 的标准手续费，由您直接支付给 Stripe。关联 Stripe 在所有套餐中都是免费的。→ <a href="c7.html#c7">收款</a></li>
       <li><b>Card 按钮是灰色的，点不了。</b>说明您还没有关联 Stripe 账户。请在 <b>Settings › Payments</b> 中连接。在独立终端上刷的卡，仍可使用银行卡品牌按钮或 <b>Card (External)</b>（银行卡（外部终端））进行记录。→ <a href="c7.html#c7">收款</a></li>
       <li><b>员工可以退款吗？</b>退款必须由经理用其 PIN 批准后才能完成，所以员工无法单独操作。店主在 <b>Settings › Staff Permissions</b> 中决定哪些角色可以退款。→ <a href="c9.html#c9">退款</a> · <a href="c16.html#c16-roles">权限、经理 PIN 与角色标签</a></li>
+      <li><b>退款时顾客会收到邮件吗？</b>如果订单关联了登记了邮箱的顾客，会自动发送<b>退款确认邮件</b>（<b>Settings › Notifications</b> 中的<b>退款确认</b>，默认开启）。邮件按门店语言发出，包含退款类型、退款金额以及 5–10 个工作日的提示。→ <a href="c9.html#c9-email">退款确认邮件</a></li>
+      <li><b>顾客只收到了邮件，没有收到短信。</b>发给顾客的短信如果超过一条（纯拉丁字符 160 个字符，含韩文等则为 70 个字符），就不会发送，只会发邮件。请在 <b>Messaging › Templates</b> 中确认文字没有超出上限。→ <a href="c12.html#c12-sms-length">一条短信的字数</a></li>
       <li><b>我忘了日结。</b>下次打开 BrewDesk 时，会出现 <b>Unclosed Business Days</b>（未结清营业日）窗口，列出漏结的日期，并且在这些日期结清之前，新的销售会暂停。最简单的选择是 <b>Auto-Close All</b>（全部自动结清）；如果想自己逐天核对，请选择 <b>Close One by One</b>（逐个结清）。→ <a href="c17.html#c17-supplementary">迟到的订单与漏结的日期</a></li>
       <li><b>日结之后又收到一笔付款。</b>该笔付款会正常入账，随后您会看到 <b>Additional Closing Needed</b>（需要补充结算）。请核对并结算，BrewDesk 会将其保存为一份单独的补充结算报表——原来的 Z报表不会改变。→ <a href="c17.html#c17-supplementary">迟到的订单与漏结的日期</a></li>
       <li><b>Close Day（日结）按钮是灰色的。</b>说明仍有钱箱会话未结束，或还有未付款的订单。请使用提示信息旁边的 <b>Open drawer</b>（打开钱箱）清点现金并结束会话，或结清或取消未完成的订单，然后再次日结。→ <a href="c17.html#c17-drawer">钱箱</a></li>
@@ -82,12 +84,15 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c28-staff">员工、PIN 与数据</h3>
     <ol class="steps">
       <li><b>员工忘记了 PIN。</b>在 <b>Settings › Staff Permissions › Staff</b> 中打开该员工，点击 <b>“Reset to 0000”</b>（重置为 0000）。店主或经理均可操作。任何人都无法使用 0000 登录，所以请让他们立刻设置新的 PIN。→ <a href="c16.html#c16-pinreset">忘记 PIN？</a></li>
-      <li><b>我忘了店主 PIN 或经理 PIN。</b>忘记店主 PIN 时，在角色标签面板中点击 <b>“Forgot your PIN?”</b>（忘记 PIN？），并使用发送到注册邮箱的 6 位验证码设置新的 PIN。忘记经理 PIN 时，店主只需在 <b>Settings › Staff Permissions</b> 的经理 PIN 卡片上设置新的即可。→ <a href="c16.html#c16-pinreset">忘记 PIN？</a></li>
+      <li><b>我忘了店主 PIN 或经理 PIN。</b>忘记店主 PIN 时，在角色标签面板中点击 <b>“Forgot your PIN?”</b>（忘记 PIN？），按提示在店主 App（设置 › 店主 PIN）中设置新的 PIN，或让系统向注册邮箱发送重置链接。忘记经理 PIN 时，店主只需在<b>门店经理 PIN</b> 卡片上设置新的即可——在 <b>Settings › Staff Permissions</b> 中点 <b>Manager</b> 行的铅笔按钮打开它。→ <a href="c16.html#c16-pinreset">忘记 PIN？</a></li>
+      <li><b>经理无法保存营业时间。</b>保存营业时间、班次和固定休息日的权限（<b>保存营业时间和班次</b>）与<b>保存设置</b>是分开的，对经理默认关闭。店主可以在 <b>Settings › Staff Permissions</b> 中为 Manager 角色在“设置”分组里开启它。→ <a href="c16.html#c16-roles">保存营业时间</a></li>
+      <li><b>取消时可以选择是谁取消的吗？</b>可以。在 <b>Settings › Staff Permissions › Staff</b> 中开启<b>选择取消人</b>（默认关闭，需要 Staff 附加功能），当有两人或以上时，取消窗口会出现<b>取消人</b>列表。选择其他人时不会再次询问对方的 PIN。→ <a href="c16.html#c16-voidchoose">选择取消人</a></li>
       <li><b>如何备份门店数据？</b>在“设置”的备份页面中，点击 <b>Connect Google Drive</b>（连接 Google Drive）关联您自己的 Drive；此后 BrewDesk 会自动持续保存新的备份。要取回较早的副本，点击 <b>Restore</b>（恢复）并选择一个。需要交给会计的文件，请使用结算历史中的 <b>Accounting Export</b>（会计导出）。→ <a href="c19.html#c19">备份</a> · <a href="c17.html#c17-export">导出销售数据</a></li>
     </ol>
     <div class="tip"><b>这里没有您的问题？</b>在顶部的搜索框中输入关键词，或参阅<a href="c22.html#c22">故障排除与支持</a>了解如何提交支持工单。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c2.html">2. 快速开始</a></li><li><a href="c1.html">1. 欢迎与概览</a></li><li><a href="c27.html">25. 正式营业</a></li><li><a href="c21.html">14. 您的套餐与账单</a></li><li><a href="c20.html">13. 附加功能与扩展</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c22.html"><small>← 上一页</small>27. 故障排除与支持</a><a class="nx" href="c26.html"><small>下一页 →</small>29. 术语表</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

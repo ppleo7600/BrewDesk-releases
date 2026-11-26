@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>4. 创建菜单 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>4. 创建菜单 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -15,9 +15,10 @@
 <a href="c3.html" class=""><span class="num">3</span>设置门店</a>
 <a href="c4.html" class="cur"><span class="num">4</span>创建菜单</a>
 <a class="sub" href="#c4-items"><span class="num">4.1</span>分类与商品</a>
-<a class="sub" href="#c4-options"><span class="num">4.2</span>选项组与预设</a>
-<a class="sub" href="#c4-ai"><span class="num">4.3</span>AI 照片与 AI Fill</a>
-<a class="sub" href="#c4-import"><span class="num">4.4</span>导入与导出</a>
+<a class="sub" href="#c4-salehours"><span class="num">4.2</span>销售时间</a>
+<a class="sub" href="#c4-options"><span class="num">4.3</span>选项组与预设</a>
+<a class="sub" href="#c4-ai"><span class="num">4.4</span>AI 照片与 AI Fill</a>
+<a class="sub" href="#c4-import"><span class="num">4.5</span>导入与导出</a>
 <div class="part">第2部分 · 日常使用</div>
 <a href="c23.html" class=""><span class="num">5</span>员工快速入门</a>
 <a href="c5.html" class=""><span class="num">6</span>点单</a>
@@ -71,7 +72,21 @@
     </ol>
     <div class="tip"><b>什么是分类？</b>分类就是一个分组，像文件夹一样。它让菜单井井有条，方便查找商品。</div>
 
+        <div class="tip"><b>首次下单最低数量。</b>在商品编辑面板的 <b>Min. quantity on first order</b> 栏中填入 2–99，该商品第一次加入订单时数量必须不低于此值。留空表示不限制。数量低于最低值时，POS 无法发送到厨房，顾客扫码点单时数量也无法降到最低值以下。</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c4-salehours">销售时间</h3>
+    <p class="intro">早餐菜单、欢乐时光这类只在特定时间销售的商品，设置好<b>销售时间</b>后，时间之外会自动隐藏。</p>
+    <div class="activate"><div class="h">在哪里找到</div><p>分类或商品编辑窗口里的<b>销售时间</b>一栏。可选<b>始终销售</b>和<b>指定时间</b>；商品还可以选<b>跟随分类</b>或<b>单独设置</b>。</p></div>
+    <ol class="steps">
+      <li>选择<b>指定时间</b>，再选星期和<b>开始</b>、<b>结束</b>时间。点<b>添加时段</b>可以设置多个时段。</li>
+      <li>如果结束时间早于开始时间，就表示持续到次日该时间（例如 22:00 到 02:00）。</li>
+      <li>保存。商品保持<b>跟随分类</b>时，会直接沿用分类的时间。</li>
+    </ol>
+    <div class="tip"><b>时间之外是什么样？</b>顾客和员工点单设备看不到该商品，主 POS 上显示为灰色的<b>非销售时间</b>。如果在收银台确实要卖，点商品后在“现在不在销售时间内”窗口选<b>本次销售</b>，仅在该订单中销售。员工 PIN 无法批准，需要<b>经理或店主的 PIN</b>。</div>
+    <div class="tip"><b>请先设置门店时区。</b>销售时间以门店时区为准，未设置时区则不会生效。</div>
+
     <h3 style="font-size:16px;margin:22px 0 4px" id="c4-options">选项组与预设</h3>
+    <div class="vbox"><p class="vlabel">观看视频</p><div class="vgrid"><div class="vcard" data-vid="07KfSLWp7BA"><a class="vthumb" href="https://www.youtube.com/watch?v=07KfSLWp7BA" target="_blank" rel="noopener" aria-label="播放: 设置菜单选项（杯型、牛奶、加料）"><img src="https://i.ytimg.com/vi/07KfSLWp7BA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">设置菜单选项（杯型、牛奶、加料）</p></div></div><p class="vlabel" data-for="shorts">短视频</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="CSOr1nCbUfk"><a class="vthumb" href="https://www.youtube.com/shorts/CSOr1nCbUfk" target="_blank" rel="noopener" aria-label="播放: 每个杯型单独定价"><img src="https://i.ytimg.com/vi/CSOr1nCbUfk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">每个杯型单独定价</p></div><div class="vcard vshort" data-vid="u9VEpGCeDtQ"><a class="vthumb" href="https://www.youtube.com/shorts/u9VEpGCeDtQ" target="_blank" rel="noopener" aria-label="播放: 让顾客必须选热饮或冰饮"><img src="https://i.ytimg.com/vi/u9VEpGCeDtQ/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">让顾客必须选热饮或冰饮</p></div><div class="vcard vshort" data-vid="9R6kYO8lSmk"><a class="vthumb" href="https://www.youtube.com/shorts/9R6kYO8lSmk" target="_blank" rel="noopener" aria-label="播放: 一杯饮品加两份浓缩"><img src="https://i.ytimg.com/vi/9R6kYO8lSmk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">一杯饮品加两份浓缩</p></div><div class="vcard vshort" data-vid="ZzQ7pJwJnnM"><a class="vthumb" href="https://www.youtube.com/shorts/ZzQ7pJwJnnM" target="_blank" rel="noopener" aria-label="播放: 加料：至少选 1 个，最多 3 个"><img src="https://i.ytimg.com/vi/ZzQ7pJwJnnM/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">加料：至少选 1 个，最多 3 个</p></div><div class="vcard vshort" data-vid="I3g07kwrY-0"><a class="vthumb" href="https://www.youtube.com/shorts/I3g07kwrY-0" target="_blank" rel="noopener" aria-label="播放: 一个选项组，用于多款饮品"><img src="https://i.ytimg.com/vi/I3g07kwrY-0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">一个选项组，用于多款饮品</p></div><div class="vcard vshort" data-vid="Dvl5Id3ejwo"><a class="vthumb" href="https://www.youtube.com/shorts/Dvl5Id3ejwo" target="_blank" rel="noopener" aria-label="播放: 直接在菜品里添加选项"><img src="https://i.ytimg.com/vi/Dvl5Id3ejwo/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">直接在菜品里添加选项</p></div></div></div>
     <figure class="shot"><img src="../img/87-menu-addongroup.png" alt="Create an add-on group" loading="lazy"><figcaption><b>Create an add-on group</b>（创建选项组）① Add Group（添加选项组）  ·  ② Required（必选，顾客必须选一项）  ·  ③ 选项名称和加价（如燕麦奶 0.5）  ·  ④ Add Choice（添加选项）  ·  ⑤ 保存</figcaption></figure>
     <figure class="shot"><img src="../img/87b-menu-attach.png" alt="Attach the group to an item" loading="lazy"><figcaption><b>Attach the group to an item</b>（将选项组关联到商品）① 选择商品（Caffè Latte）  ·  ② 该选项组现已列在 Addon Groups 下，REQ 表示必选  ·  ③ 保存</figcaption></figure>
     <ol class="steps">
@@ -97,6 +112,7 @@
     <figure class="shot"><img src="../img/91-menu-move.png" alt="Move — reorder" loading="lazy"><figcaption><b>Move — reorder</b>（移动：调整顺序）① 拖动分类标签的 ⋮⋮ 手柄  ·  ② 拖动商品的手柄  ·  ③ 保存</figcaption></figure>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c3.html">3. 设置门店</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c3.html"><small>← 上一页</small>3. 设置门店</a><a class="nx" href="c23.html"><small>下一页 →</small>5. 员工快速入门</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

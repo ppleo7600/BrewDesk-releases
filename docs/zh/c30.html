@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>7. 刷卡收款准备 · 连接 Stripe · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>7. 刷卡收款准备 · 连接 Stripe · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -122,7 +122,8 @@
     <h3 style="font-size:16px;margin:22px 0 4px" id="c30-fee">手续费由谁收取</h3>
     <ul>
       <li><b>Stripe 手续费</b>由 Stripe 直接从门店 Stripe 账户扣除。新加坡本地卡为 3.4% + S$0.50（海外卡另有费用）。准确费率请在 Stripe 后台查看。</li>
-      <li><b>BrewDesk 手续费</b>：店内收款 0%，仅线上订单 0.4%。</li>
+      <li><b>集成费</b>（BrewDesk）：员工在 POS 上收款为 0%，顾客在线或扫码自行付款为 0.4%。银行卡、PayNow、PromptPay 相同。</li>
+      <li>例如新加坡 PayNow：Stripe 1.3% 加集成费 0.4%，<b>合计 1.7%</b>。小费不收集成费。</li>
       <li>想把线上订单手续费体现在价格中，可使用 <a href="c11.html#c11">扫码点单</a> 的 <b>Online price increase</b>。</li>
     </ul>
 
@@ -136,6 +137,7 @@
     <p>在 Stripe 窗口下方点 <b>Disconnect</b> 并确认后，Stripe 连接账户会被删除，Stripe 刷卡和扫码收款立即停止（现金和记录用刷卡不受影响），老板 App 会收到付款提醒。只有在国家设置错误需要重新连接时，且在非营业时间才这样做。</p>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c11.html">18. 二维码点单</a></li><li><a href="c24.html">21. 设备与网络</a></li><li><a href="c7.html">8. 收款</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c5.html"><small>← 上一页</small>6. 点单</a><a class="nx" href="c7.html"><small>下一页 →</small>8. 收款</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

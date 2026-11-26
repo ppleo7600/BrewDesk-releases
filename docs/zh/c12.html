@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>19. 向顾客发送消息 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>19. 向顾客发送消息 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -33,6 +33,7 @@
 <a href="c12.html" class="cur"><span class="num">19</span>向顾客发送消息</a>
 <a class="sub" href="#c12-channels"><span class="num">19.1</span>开启渠道并充值</a>
 <a class="sub" href="#c12-optin"><span class="num">19.2</span>同意接收与模板</a>
+<a class="sub" href="#c12-sms-length"><span class="num">19.3</span>一条短信的字数</a>
 <a href="c19.html" class=""><span class="num">20</span>备份</a>
 <div class="part">第4部分 · 安装与设备</div>
 <a href="c24.html" class=""><span class="num">21</span>设备与网络</a>
@@ -63,8 +64,18 @@
     <p class="intro">向顾客发送消息之前，必须先征得他们的同意。如果他们回复 STOP，BrewDesk 会立即停止向其发送短信。每条消息的措辞可在 <b>Templates</b>（模板）标签页中查看，发送记录则在 <b>Log</b> 标签页中。</p>
     <div class="tip"><b>Opt-in</b>（同意接收）是指顾客自行选择接收您的消息，他们始终拥有控制权。</div>
     <figure class="shot"><img src="../img/21-messaging.png" alt="Messaging settings screen" loading="lazy"><figcaption><b>Messaging</b>（消息）① Usage / Templates / Log 标签页  ·  ② 每张卡片的剩余额度  ·  ③ Top Up（充值）  ·  ④ Auto Top-Up（自动充值）</figcaption></figure>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c12-sms-length">一条短信的字数</h3>
+    <p class="intro">发给顾客的短信必须始终控制在<b>一条</b>以内：纯拉丁字符（GSM）最多 160 个字符，只要含有一个韩文等其他类型的字符，就只有 70 个字符。在 <b>Templates</b>（模板）标签页中编辑短信内容时，BrewDesk 会边输入边计数。</p>
+    <ol class="steps">
+      <li>输入框右下角会显示<b>“距 1 条短信上限还剩 N 字”</b>，下面一行显示编码、条数和<b>字数/上限</b>（例如 58/70）。</li>
+      <li>超出上限时会出现红色提示：<b>“已超出 1 条短信上限 N 字。需要 2 条或以上的短信不会通过 SMS 发送，顾客只会收到邮件。请缩短内容。”</b>计数处会用红色显示超出的字数（例如 -12）。</li>
+      <li>字数按变量（顾客姓名、门店名称等）的<b>示例值</b>计算。<b>[[ ]]</b> 中的内容是可选结尾，内容过长时会最先被删去。</li>
+    </ol>
+    <div class="tip"><b>需要两条的短信不会发送。</b>实际发送时，过长的短信会按“结尾 → 顾客姓名 → 门店名称”的顺序缩短，如果仍然放不下，就不发短信，顾客只会收到邮件。所以请尽量让文字简短。</div>
   </div>
 <div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c11.html">18. 二维码点单</a></li><li><a href="c19.html">20. 备份</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c11.html"><small>← 上一页</small>18. 二维码点单</a><a class="nx" href="c19.html"><small>下一页 →</small>20. 备份</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

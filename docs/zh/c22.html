@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>27. 故障排除与支持 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>27. 故障排除与支持 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -41,12 +41,14 @@
 <a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
 <div class="part">第5部分 · 帮助</div>
 <a href="c22.html" class="cur"><span class="num">27</span>故障排除与支持</a>
-<a class="sub" href="#c22-update"><span class="num">27.1</span>自动更新</a>
+<a class="sub" href="#c22-messages"><span class="num">27.1</span>设备、打印机和桌台相关的提示信息</a>
+<a class="sub" href="#c22-update"><span class="num">27.2</span>自动更新</a>
 <a href="c28.html" class=""><span class="num">28</span>常见问题</a>
 <a href="c26.html" class=""><span class="num">29</span>术语表</a></aside>
 <div class="main"><div class="wrap">  <div class="chap" id="c22">
     <h3><span class="n">27</span>故障排除与支持</h3>
     <p class="intro">有时难免出问题——没关系。这里列出最常见问题的快速解决办法，以及如何向我们寻求帮助。</p>
+    <div class="vbox"><p class="vlabel">观看视频</p><div class="vgrid"><div class="vcard" data-vid="-TTMriL5GPU"><a class="vthumb" href="https://www.youtube.com/watch?v=-TTMriL5GPU" target="_blank" rel="noopener" aria-label="播放: 打印机突然不出单？先检查这几项"><img src="https://i.ytimg.com/vi/-TTMriL5GPU/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">打印机突然不出单？先检查这几项</p></div></div><p class="vlabel" data-for="shorts">短视频</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="Bl7zYZAvIII"><a class="vthumb" href="https://www.youtube.com/shorts/Bl7zYZAvIII" target="_blank" rel="noopener" aria-label="播放: 打印机不动了？先查这个"><img src="https://i.ytimg.com/vi/Bl7zYZAvIII/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">打印机不动了？先查这个</p></div></div></div>
     <figure class="shot"><img src="../img/80-account-menu.png" alt="Account menu" loading="lazy"><figcaption><b>头像图标 (D) 菜单——刷新的位置</b>① Profile &amp; Account  ·  ② Check for updates——检查最新版本并刷新</figcaption></figure>
     <figure class="shot"><img src="../img/24-support.png" alt="Support screen" loading="lazy"><figcaption><b>Support</b>（支持）① Create New Ticket  ·  ② 开始您的第一个工单</figcaption></figure>
     <ol class="steps">
@@ -63,6 +65,16 @@
     <div class="tip"><b>支持工单</b>就是您发给我们帮助团队的一条消息。告诉我们哪里出了问题，我们会回复您。</div>
     <div class="tip"><b>小平板上按钮被截断，或文字太小？</b>打开账户菜单（右上角），找到 <b>Display Scaling</b>（显示缩放）。保持 <b>Auto</b>（自动），BrewDesk 会自动让画面适配您的设备，并显示它选择的百分比。如果您想自己选择大小，请切换到 <b>Manual</b>（手动）。</div>
     <div class="tip"><b>尚未登录，或在帮助未登录的人？</b>我们在 <b>brewdesk.io/support</b> 提供了一个简洁的帮助页面——无需登录。页面上有我们的邮箱地址、通常的回复时间，以及最常见问题的解答（离线、硬件、刷卡付款、设备数量上限、取消、数据存放位置）。</div>
+
+    <h3 id="c22-messages" style="font-size:16px;margin:22px 0 4px">设备、打印机和桌台相关的提示信息</h3>
+    <ol class="steps">
+      <li><b>“设备名额已满”</b>（Device slots are full）——新设备的批准弹窗中批准按钮无法点击时会出现。请先断开一台不再使用的设备，然后重新注册（参见<a href="c14.html#c14-limit">达到设备数量上限时</a>）。</li>
+      <li><b>新设备上的 Online Orders 卡片被锁定并显示“需要更新”？</b>请先更新主收银台电脑上的 BrewDesk 桌面应用（参见<a href="c13.html#c13-online">Online Orders 设备</a>）。</li>
+      <li><b>设备页面提示“请在这台电脑上保持打开 BrewDesk 桌面应用”？</b>请在同一台电脑上打开桌面应用，然后重新查看该页面（参见<a href="c14.html#c14-guide">添加设备指南与设备详情</a>）。</li>
+      <li><b>钱箱打不开，并提示“此POS没有钱箱”？</b>请在 <code>Settings › Printers</code> 中打开连接了钱箱的小票打印机，在 <b>Used by POS</b> 下选择此 POS。如果看到“钱箱仅在小票打印机上有效”，请把该打印机的角色改为 <b>Main Receipt</b>（参见<a href="c18.html#c18-pos-printer">为每台 POS 指定打印机</a>）。</li>
+      <li><b>打印机卡片变红并显示“Not used by any POS”？</b>这台打印机不会打印任何内容。请点按它，在 <b>Used by POS</b> 下选择一台 POS，或将它设为 <b>Store default</b>。</li>
+      <li><b>无法删除桌台？</b>如果桌台有未结账的订单，会提示请先结账或取消再删除桌台；如果桌台绑定了桌台点单设备，会提示请先在设备上更换桌台，再删除这个桌台。按提示处理后，再次删除即可。</li>
+    </ol>
 
     <h3 id="c22-update" style="font-size:16px;margin:22px 0 4px">自动更新</h3>
     <p class="intro">我们一直在改进 BrewDesk，您的收银机会自动获取新版本。它绝不会在销售进行到一半时更新——下面具体说明更新发生的时机以及您会看到什么。</p>
@@ -89,7 +101,8 @@
     <div class="tip"><b>耗时较长？</b>大约 20 秒后，您会看到 <b>“Taking a little longer. You can leave it as is.”</b>（还需要一点时间，放着就好。）如果确实无法获取：<b>“We couldn't get the new version right now. Please try again in a moment.”</b>（暂时无法获取新版本，请稍后再试。）没有出故障，也没有丢失任何数据——继续营业，稍后再试即可。</div>
     <div class="tip"><b>更新后，它会告诉您。</b>下次收银机启动时，您会看到一条简短的提示——<b>“This version includes improvements and fixes.”</b>（此版本包含性能改进和错误修复。）——这样，屏幕看起来略有不同时，您就不会感到疑惑。</div>
   </div>
-<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c7.html">8. 收款</a></li><li><a href="c15.html">12. 离线工作</a></li><li><a href="c18.html">24. 小票与打印机</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c25.html"><small>← 上一页</small>26. 安装检查清单</a><a class="nx" href="c28.html"><small>下一页 →</small>28. 常见问题</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c7.html">8. 收款</a></li><li><a href="c15.html">12. 离线工作</a></li><li><a href="c18.html">24. 小票与打印机</a></li><li><a href="c14.html">23. 多台设备与可靠性</a></li><li><a href="c13.html">22. 设备模式与顾客显示屏</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c25.html"><small>← 上一页</small>26. 安装检查清单</a><a class="nx" href="c28.html"><small>下一页 →</small>28. 常见问题</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

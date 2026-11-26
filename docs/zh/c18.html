@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>24. 小票与打印机 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>24. 小票与打印机 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="菜单">☰</button>
@@ -37,7 +37,8 @@
 <a href="c13.html" class=""><span class="num">22</span>设备模式与顾客显示屏</a>
 <a href="c14.html" class=""><span class="num">23</span>多台设备与可靠性</a>
 <a href="c18.html" class="cur"><span class="num">24</span>小票与打印机</a>
-<a class="sub" href="#c18-queue"><span class="num">24.1</span>订单号与叫号</a>
+<a class="sub" href="#c18-pos-printer"><span class="num">24.1</span>为每台 POS 指定打印机</a>
+<a class="sub" href="#c18-queue"><span class="num">24.2</span>订单号与叫号</a>
 <a href="c27.html" class=""><span class="num">25</span>正式营业</a>
 <a href="c25.html" class=""><span class="num">26</span>安装检查清单</a>
 <div class="part">第5部分 · 帮助</div>
@@ -47,6 +48,7 @@
 <div class="main"><div class="wrap">  <div class="chap" id="c18">
     <h3><span class="n">24</span>小票与打印机</h3>
     <p class="intro">BrewDesk 可以为顾客打印小票，也可以为厨房打印单据。让我们一步一步添加打印机。即使打印机卡纸，您的订单也依然安全。</p>
+    <div class="vbox"><p class="vlabel">观看视频</p><div class="vgrid"><div class="vcard" data-vid="ufujkEozZCA"><a class="vthumb" href="https://www.youtube.com/watch?v=ufujkEozZCA" target="_blank" rel="noopener" aria-label="播放: 设置 USB 小票打印机（Windows 和 Mac）"><img src="https://i.ytimg.com/vi/ufujkEozZCA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">设置 USB 小票打印机（Windows 和 Mac）</p></div><div class="vcard" data-vid="WdXuNDjwYZ8"><a class="vthumb" href="https://www.youtube.com/watch?v=WdXuNDjwYZ8" target="_blank" rel="noopener" aria-label="播放: 连接 Wi-Fi/网线小票打印机"><img src="https://i.ytimg.com/vi/WdXuNDjwYZ8/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">连接 Wi-Fi/网线小票打印机</p></div><div class="vcard" data-vid="rLcA4g9TaYo"><a class="vthumb" href="https://www.youtube.com/watch?v=rLcA4g9TaYo" target="_blank" rel="noopener" aria-label="播放: 饮品发到吧台打印机，餐食发到厨房打印机"><img src="https://i.ytimg.com/vi/rLcA4g9TaYo/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">饮品发到吧台打印机，餐食发到厨房打印机</p></div><div class="vcard" data-vid="2z7DQnFQroA"><a class="vthumb" href="https://www.youtube.com/watch?v=2z7DQnFQroA" target="_blank" rel="noopener" aria-label="播放: 一个菜品同时打印到两台打印机（吧台 + 厨房）"><img src="https://i.ytimg.com/vi/2z7DQnFQroA/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">一个菜品同时打印到两台打印机（吧台 + 厨房）</p></div><div class="vcard" data-vid="_M3YnK7npL0"><a class="vthumb" href="https://www.youtube.com/watch?v=_M3YnK7npL0" target="_blank" rel="noopener" aria-label="播放: 厨房漏单时重新打印"><img src="https://i.ytimg.com/vi/_M3YnK7npL0/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">厨房漏单时重新打印</p></div><div class="vcard" data-vid="IADwBmlW4zE" data-at="2026-11-07T09:00:00-05:00"><a class="vthumb" href="https://www.youtube.com/watch?v=IADwBmlW4zE" target="_blank" rel="noopener" aria-label="播放: 一台打印机同时打印小票和厨房单（含纸宽调整）"><img src="https://i.ytimg.com/vi/IADwBmlW4zE/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">一台打印机同时打印小票和厨房单（含纸宽调整）</p></div></div><p class="vlabel" data-for="shorts">短视频</p><div class="vgrid vshorts"><div class="vcard vshort" data-vid="tA0X7x33ck8"><a class="vthumb" href="https://www.youtube.com/shorts/tA0X7x33ck8" target="_blank" rel="noopener" aria-label="播放: 饮品去吧台，餐食去厨房"><img src="https://i.ytimg.com/vi/tA0X7x33ck8/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">饮品去吧台，餐食去厨房</p></div><div class="vcard vshort" data-vid="u1ofn0GCuLs"><a class="vthumb" href="https://www.youtube.com/shorts/u1ofn0GCuLs" target="_blank" rel="noopener" aria-label="播放: 一个菜品，两台打印机"><img src="https://i.ytimg.com/vi/u1ofn0GCuLs/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">一个菜品，两台打印机</p></div><div class="vcard vshort" data-vid="yosjZjqjWss"><a class="vthumb" href="https://www.youtube.com/shorts/yosjZjqjWss" target="_blank" rel="noopener" aria-label="播放: 厨房漏单？重新打印"><img src="https://i.ytimg.com/vi/yosjZjqjWss/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">厨房漏单？重新打印</p></div><div class="vcard vshort" data-vid="DcOy6LJHMU8" data-at="2026-11-07T12:00:00-05:00"><a class="vthumb" href="https://www.youtube.com/shorts/DcOy6LJHMU8" target="_blank" rel="noopener" aria-label="播放: 一台打印机打印小票和厨房单"><img src="https://i.ytimg.com/vi/DcOy6LJHMU8/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">一台打印机打印小票和厨房单</p></div><div class="vcard vshort" data-vid="R60JRB-XVdw" data-at="2026-11-07T15:00:00-05:00"><a class="vthumb" href="https://www.youtube.com/shorts/R60JRB-XVdw" target="_blank" rel="noopener" aria-label="播放: 小票文字被截断？调整纸宽"><img src="https://i.ytimg.com/vi/R60JRB-XVdw/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="vplay" aria-hidden="true"></span></a><p class="vcap">小票文字被截断？调整纸宽</p></div></div></div>
     <figure class="shot"><img src="../img/17-printers.png" alt="Printers settings screen" loading="lazy"><figcaption><b>Printers</b>（打印机）① Add Printer（添加打印机）  ·  ② 已连接的打印机卡片（状态、角色、Test）  ·  ③ Setup Guide  ·  ④ Print Log</figcaption></figure><figure class="shot"><img src="../img/38-addprinter.png" alt="Add Printer window" loading="lazy"><figcaption><b>Add Printer（添加打印机）——从上到下依次填写</b>① Printer Name（打印机名称）  ·  ② Connection（USB 或 Wi-Fi/LAN）  ·  ③ IP Address（Wi-Fi 打印机填写）  ·  ④ Printer Role（打印机角色：Main Receipt / Kitchen / None）  ·  ⑤ Add Printer</figcaption></figure>
     <figure class="shot"><img src="../img/111-printers-list.png" alt="Printer list & Print Log" loading="lazy"><figcaption><b>打印机列表与 Print Log</b>① Add Printer  ·  ② Test  ·  ③ In Use 开关  ·  ④ Print Log 筛选（All / Success / Failed）  ·  ⑤ 失败的任务——Retry · Check Network</figcaption></figure>
     <ol class="steps">
@@ -74,6 +76,18 @@
     <div class="tip"><b>日常打印。</b>打印机保存后，收款时会打印小票，将订单发送到厨房时会打印厨房单。需要再打印一份？打开订单并点击 <b>Reprint</b>（重新打印）。如果打印失败，任务会在列表中等待——只需点击 <b>Retry</b>（重试）。订单绝不会丢失。</div>
     <div class="brag"><div class="h">USB 打印机——使用已安装的驱动（推荐）</div><p>这是最简单的方法。按常规方式安装打印机的<b>驱动</b>（Mac 通常自动完成；Windows 使用厂商驱动），打开 <b>BrewDesk 桌面应用</b>，然后在 <b>Settings › Printers › “Add USB Printer”</b> 中选择 <b>Select installed printer</b> › <b>Load printers</b>，并选中它。Wi-Fi / LAN 打印机也不需要这个流程。</p></div>
 
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c18-pos-printer">为每台 POS 指定打印机</h3>
+    <p class="intro">如果门店有多台 POS，可以为每台 POS 分别指定出小票的打印机——例如主收银台用柜台打印机，副收银机（Sub POS）用吧台打印机。只有一台小票打印机时无需选择，所有 POS 都在这台上打印。</p>
+    <ol class="steps">
+      <li>在 <code>Settings › Printers</code> 中，点击一台小票打印机（<b>Printer Role</b>（打印机角色）为 <b>Main Receipt</b>）打开其窗口。</li>
+      <li>在 <b>Used by POS</b>（使用的 POS）下，点选要在这台打印机上打印的 POS，可以选择多台。这些 POS 的小票、账单、退款和 X/Z 报表都会在这里打印。</li>
+      <li>如果某台 POS 已指定给另一台打印机，会出现提示，说明它将转移到这台打印机。一台 POS 只能属于一台小票打印机，因此保存后它会从原来的打印机上移除。</li>
+      <li>有两台或以上小票打印机时，还会出现 <b>Store default</b>（门店默认）开关。未在任何打印机上选择的 POS，以及扫码 / 在线订单的小票，都会在 <b>Store default</b> 打印机上打印。门店默认始终只有一台，所以已开启的开关无法关闭；在另一台打印机上开启则会转移过去。</li>
+    </ol>
+    <div class="tip"><b>可以在打印机卡片上查看。</b>小票打印机的卡片会显示使用它的 POS——<b>Used by</b> 后面是 POS 名称；只有一台小票打印机或属于厨房打印机时，显示 <b>All POS</b>。有两台或以上小票打印机时，门店默认打印机上会有 <b>Store default</b> 标记。</div>
+    <div class="tip"><b>没有 POS 使用的打印机会出现警告。</b>有两台或以上小票打印机时，既不是门店默认、又没有指定 POS 的打印机，卡片会变红并显示 <b>Not used by any POS</b>（没有 POS 使用）一行。列表上方还会提示这台打印机不会打印任何内容，请点按打印机并选择一台 POS。</div>
+    <div class="tip"><b>钱箱可按小票打印机分别开启。</b>付款中含现金时，会弹开该 POS 所指定的小票打印机上的钱箱（未指定则使用 <b>Store default</b> 打印机）。补打小票（<b>Reprint</b>）时不会弹开。该选项只对处于 <b>In Use</b>（使用中）的小票打印机有效；在厨房打印机上会提示钱箱仅在小票打印机上有效，请将这台打印机的角色改为“主”后再开启。没有指定打印机的副收银机（Sub POS）不会弹开钱箱，点击 No Sale 时会提示此 POS 没有钱箱，请在“设置 › 打印机”中把此 POS 选到连接了钱箱的小票打印机上（<a href="c17.html#c17-drawer">钱箱</a>）。</div>
+
     <h3 style="font-size:16px;margin:22px 0 4px" id="c18-queue">订单号与叫号</h3>
     <p class="intro">在柜台服务模式下，每笔订单都有一个编号。这非常适合喊出“现在请 A-005 号取餐！”，让顾客知道饮品何时做好。下面介绍如何设置，并让它显示在小票上。</p>
     <ol class="steps">
@@ -85,12 +99,14 @@
     </ol>
     <div class="tip"><b>订单号有什么用？</b>这是把做好的饮品与正确顾客对应起来的简便方法——您喊编号，而不是喊姓名。</div>
     <p class="intro">您还可以在 <code>Settings › Receipts</code> 中设计小票的样式。其中有 <b>Receipt</b>（收据）、<b>Kitchen</b>（厨房）、<b>Queue Number</b>（叫号）和 <b>Waitlist Ticket</b>（排队票）几个标签页。拖动模块即可显示或隐藏诸如醒目的<b>叫号</b>、自定义留言、退款政策、会员印章或二维码等内容。右侧的实时预览会准确显示打印出来的效果。</p>
+    <div class="tip"><b>服务费现在是单独的区块。</b>小票编辑器的区块列表里新增了 <b>Service Charge</b>（服务费）一行，不再混在 <b>Tax Details</b>（税费明细）里打印。如果关闭这个区块，会提示“服务费区块已关闭”——有服务费的订单会出现各行相加与合计不符的情况，请保持开启。税率全为 0% 的门店（未登记税号）小票上不会打印税费行。</div>
     <div class="tip"><b>想让号码又大又醒目？</b>在小票编辑器中开启 <b>Queue Number</b> 模块。您修改设置时，右侧的预览会同步更新，让您始终清楚打印出来的小票是什么样子。</div>
     <figure class="shot"><img src="../img/16-receipts.png" alt="Receipt builder screen" loading="lazy"><figcaption><b>小票编辑器</b>① Receipt / Kitchen / Queue Number / Waitlist Ticket 标签页  ·  ② Queue Number 模块的显示 / 隐藏开关  ·  ③ 小票上的订单号（#TX-ORD-1042）  ·  ④ 保存</figcaption></figure>
     <figure class="shot"><img src="../img/113-receipt-kitchen.png" alt="Designing the kitchen ticket" loading="lazy"><figcaption><b>设计厨房单</b>① Kitchen 标签页  ·  ② 模块列表——点击即可显示或隐藏  ·  ③ 预览  ·  ④ 58mm / 保存</figcaption></figure>
     <figure class="shot"><img src="../img/114-receipt-waitlist.png" alt="Designing the waitlist ticket" loading="lazy"><figcaption><b>设计排队票</b>① Waitlist Ticket 标签页  ·  ② 模块列表  ·  ③ 预览  ·  ④ Test Print（测试打印）  ·  ⑤ Reset</figcaption></figure>
   </div>
-<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c14.html">23. 多台设备与可靠性</a></li><li><a href="c27.html">25. 正式营业</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c14.html"><small>← 上一页</small>23. 多台设备与可靠性</a><a class="nx" href="c27.html"><small>下一页 →</small>25. 正式营业</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<div class="endblock"><div class="eb"><h4>相关文档</h4><ul><li><a href="c17.html">11. 报表与日结</a></li></ul></div><div class="eb"><h4>还需要帮助吗？</h4><ul><li><a href="c22.html">27. 故障排除与支持</a></li><li><a href="c28.html">28. 常见问题</a></li><li><a href="c26.html">29. 术语表</a></li></ul><p>您可以在应用的“设置 › 支持（Support）”中提交工单。</p></div></div><div class="pager"><a href="c14.html"><small>← 上一页</small>23. 多台设备与可靠性</a><a class="nx" href="c27.html"><small>下一页 →</small>25. 正式营业</a></div></div></div></div>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>

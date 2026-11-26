@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>8. 결제 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=34d2fba9"></head>
+<title>8. 결제 받기 · BrewDesk</title><link rel="icon" type="image/svg+xml" href="../assets/logo.svg"><link rel="stylesheet" href="../assets/manual.css?v=187dc506"></head>
 <body data-base="">
 <nav class="topnav"><div class="navinner">
 <button class="menubtn" id="menubtn" aria-label="메뉴">☰</button>
@@ -19,9 +19,10 @@
 <a href="c5.html" class=""><span class="num">6</span>주문 받기</a>
 <a href="c30.html" class=""><span class="num">7</span>카드 결제 준비 · Stripe 연결</a>
 <a href="c7.html" class="cur"><span class="num">8</span>결제 받기</a>
-<a class="sub" href="#c7-split"><span class="num">8.1</span>계산서 나누기 · 엔빵</a>
-<a class="sub" href="#c7-tip"><span class="num">8.2</span>나중에 정산하는 주문의 팁</a>
-<a class="sub" href="#c7-cashrounding"><span class="num">8.3</span>현금 결제 우수리</a>
+<a class="sub" href="#c7-terminal"><span class="num">8.1</span>카드 단말기(총판 연결) 설정</a>
+<a class="sub" href="#c7-split"><span class="num">8.2</span>계산서 나누기 · 엔빵</a>
+<a class="sub" href="#c7-tip"><span class="num">8.3</span>나중에 정산하는 주문의 팁</a>
+<a class="sub" href="#c7-cashrounding"><span class="num">8.4</span>현금 결제 우수리</a>
 <a href="c8.html" class=""><span class="num">9</span>할인 &amp; 프로모션</a>
 <a href="c9.html" class=""><span class="num">10</span>환불</a>
 <a href="c17.html" class=""><span class="num">11</span>리포트 &amp; 하루 마감</a>
@@ -67,6 +68,18 @@
     <div class="tip"><b>팁은 누구에게 가나요?</b> 팁을 추가하면 BrewDesk가 어느 직원이 받는지 확인합니다 — <b>직원 배정(Assign staff)</b>을 탭해 이름을 선택해 주세요. 해당 테이블에 담당 직원이 한 명뿐이면 자동으로 선택됩니다. 아무도 선택하지 않으면 팁은 <b>"매장관리자(Store Manager)"</b> 앞으로 저장되어 사라지지 않습니다.</div>
     <div class="tip"><b>카드 결제를 수기로 기록하나요?</b> BrewDesk에 연결되지 않은 별도 단말기로 카드를 받는다면, 이제 카드사 — <b>Visa</b>·<b>Mastercard</b>·<b>Amex</b> 등 — 가 결제 화면에서 <b>현금(Cash)</b> 바로 옆에 표시됩니다. 한 번만 탭하면 카드였다는 것과 어느 카드사인지가 함께 기록됩니다 — 별도 단계가 없습니다.</div>
     <div class="tip"><b>카드 단말이 승인 중이면 결제 화면이 닫히지 않습니다.</b> 연결된 카드 단말이 아직 카드를 승인하는 중에 <b>X</b>를 눌러도 화면이 그대로 유지되며, 이유를 안내합니다 — <b>Card payment in progress</b>(카드 결제 진행 중), <i>"단말기가 아직 이 카드를 승인하는 중입니다. 끝날 때까지 기다려 주세요 — 지금 닫으면 돈만 나가고 주문에 기록되지 않을 수 있습니다."</i> 몇 초 동안의 대기이지만, 대금이 주문에 남는지 사라지는지가 갈리는 부분입니다. 단말 승인이 끝나면(성공이든 실패든) X는 바로 풀립니다.</div>
+
+    <h3 style="font-size:16px;margin:22px 0 4px" id="c7-terminal">카드 단말기(총판 연결) 설정</h3>
+    <p class="intro">총판이 매장 카운터의 카드 단말기를 BrewDesk에 연결해 준 매장에서는, 카드 단말기도 <code>Settings › Payments</code>에서 확인하고 켜고 끌 수 있습니다. 단말기의 연결과 설정은 총판이 합니다. 사장님은 상태를 보고 연결을 시험해 볼 수 있습니다. 결제사 이름은 총판이 연결한 이름 그대로 표시됩니다.</p>
+    <ol class="steps">
+      <li>결제 설정 화면의 <b>Payment providers</b>(결제사) 목록에서 단말기 줄을 탭합니다. 줄에는 연결 상태와 <b>마지막 확인</b> 시각이 표시됩니다.</li>
+      <li><b>Status</b>(상태) 탭에서 <b>Test connection</b>(연결 시험)을 탭하면 단말기와 연결되어 있는지 확인해 줍니다. 연결되지 않았다면 이유와 함께 총판에게 연결 확인을 요청하라는 안내가 표시됩니다. 단말기와 메인 포스가 같은 Wi-Fi에 있는지도 확인해 주세요.</li>
+      <li><b>Connection log</b>(연결 기록) 탭에서는 오늘 시도한 횟수·승인된 횟수·결과를 알 수 없는 횟수와 최근 20건의 단말기 결제를 볼 수 있습니다. 카드 번호 같은 카드 정보는 표시되지 않습니다.</li>
+      <li>위쪽 결제 수단 목록의 단말기 카드에서 스위치로 사용 여부를 정합니다. <b>Where you accept</b>(어디서 받나요) 표에는 켜 둔 결제 수단만 열로 나타나며, 단말기 결제는 포스 줄에만 칸이 있습니다.</li>
+    </ol>
+    <div class="tip"><b>상태 표시:</b> <b>Connected</b>(연결됨) · <b>Not connected</b>(연결 안 됨) · <b>Not tested yet</b>(아직 시험 전). <b>Not connected</b>가 보이면 총판에게 연결 확인을 요청해 주세요.</div>
+    <div class="tip"><b>아직 연결되지 않은 결제 수단은 잠겨 있습니다.</b> 이 매장이 쓸 수 있는 카드 단말기나 Stripe가 아직 연결되지 않았다면, 결제 수단 목록에서 꺼진 채 <b>Not connected</b> 표시와 함께 잠겨 보입니다. 탭하면 안내가 열립니다 — 카드 단말기는 총판에게 연결을 요청하고(사장님 계정에는 연결된 총판의 회사명과 이메일이 표시됩니다), Stripe는 <b>Payment providers</b>에서 연결합니다. 연결되기 전에 켜 두었던 설정은 지워지지 않고, 연결되면 그대로 돌아옵니다.</div>
+    <div class="tip"><b>Where you accept 표가 바뀌었습니다.</b> 이제 위에서 켜 둔 결제 수단만 열로 나타나며, 꺼 둔 수단은 흐리게 보이지 않고 표에서 빠집니다. 켜 둔 수단이 하나도 없으면 "위에서 결제 수단을 켜면 어디서 받을지 고를 수 있습니다"라는 안내만 표시됩니다. 현금·Card (Record Only)·바우처는 포스에서만 받으며, 켜 두면 포스 줄에 항상 켜진 칸으로 표시됩니다.</div>
 
     <h3 style="font-size:16px;margin:22px 0 4px" id="c7-split">계산서 나누기 · 엔빵</h3>
     <p class="intro">한 테이블이 각자 따로 계산하고자 할 때, BrewDesk가 계산서를 대신 나눠 줍니다. 두 가지 쉬운 방법이 있습니다: 사람 수대로 <b>똑같이(엔빵)</b> 나누거나, 각자 먹은 것만 내도록 <b>상품별로</b> 나눕니다. 몫마다 팁을 따로 받을 수 있고, 한 사람이 일부는 현금·일부는 카드로 낼 수도 있습니다.</p>
@@ -121,6 +134,7 @@
     <div class="brag"><div class="h">자랑할 만한 점</div><p><b>다른 가게처럼 반올림하면서, 장부에서는 한 푼도 잃지 않습니다.</b> 동전 단위를 한 번 정해 두면 모든 현금 총액이 실제로 있는 동전에 딱 맞게 떨어집니다. 넘긴 1센트까지 기록되고, 영수증에 출력되고, 마감에서 합이 맞습니다 — 회계사가 "그 잔돈이 어디 갔느냐"고 물을 일이 없습니다.</p></div>
   </div>
 <div class="endblock"><div class="eb"><h4>관련 문서</h4><ul><li><a href="c3.html">3. 매장 설정하기</a></li></ul></div><div class="eb"><h4>도움이 더 필요하신가요?</h4><ul><li><a href="c22.html">27. 문제 해결 &amp; 지원</a></li><li><a href="c28.html">28. 자주 묻는 질문</a></li><li><a href="c26.html">29. 용어집</a></li></ul><p>앱 설정 › 지원(Support)에서 문의 티켓을 보낼 수 있습니다.</p></div></div><div class="pager"><a href="c30.html"><small>← 이전</small>7. 카드 결제 준비 · Stripe 연결</a><a class="nx" href="c8.html"><small>다음 →</small>9. 할인 &amp; 프로모션</a></div></div></div></div>
-<script src="../assets/search.js?v=34d2fba9"></script>
+<script src="../assets/search.js?v=187dc506"></script>
+<script src="../assets/videos.js?v=187dc506"></script>
 
 </body></html>
